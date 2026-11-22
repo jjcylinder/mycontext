@@ -212,51 +212,39 @@ flowchart TB
 
 ## 增强后的图谱结构
 
-### 持久化图谱与无索引时的业务浏览视图
+### 方案 C 使用的原生工作图谱
+
+**方案 C 在同一张原生工作图谱上扩展了两处：写入时给主来源边增加可选的原文引证，查询时沿已有参与边找出相关事实，并核对两端的原文。** 与上游基线 `23c6f609` 相比，`Fact`、`Entity`、`Chunk`、`Scope` 以及下图的边类型均为原生定义。图中只展开与这两处增强有关的路径。[原生模型](kl-graph/kl_graph/models/types.py) · [底层改动清单](MyContext底层相对原生版的增强清单.md)
 
 ```mermaid
 flowchart TB
-    subgraph Native["原生 KL-Graph · 持久化"]
-        direction TB
-        F["Fact · 事实<br/>id · fact_type · text<br/>timestamp · confidence"]
-        E["Entity · 实体<br/>id · name<br/>entity_type"]
-        C["Chunk · 原文片段<br/>id · source_type<br/>source_ref"]
-        C2["另一片段"]
-        S["Scope · 来源容器<br/>id · scope_type<br/>title"]
-        F -->|ABOUT| E
-        F2["另一来源的事实 Fact"] -->|ABOUT| E
-        F2 -->|STATES| C2
-        F -->|STATES| C
-        C -->|"MENTIONS<br/>AUTHORED_BY"| E
-        C -->|PART_OF| S
-        C -->|"TEMPORAL<br/>REPLY_TO"| C2
-    end
-
-    subgraph Demo["业务浏览视图 · 缺索引时按原文生成"]
-        direction TB
-        R["业务关联<br/>type · certainty · scopes<br/>origin · evidence_ids"]
-        BA["起点业务实体<br/>id · name<br/>type · aliases"]
-        BB["终点业务实体<br/>id · name<br/>type · aliases"]
-        R -->|source_id| BA
-        R -->|target_id| BB
-    end
-
-    U["原文消息或段落<br/>record_id · occurred_at<br/>source_locator · content"]
-    F -.->|source_unit_id| U
-    C -.->|chunk_units| U
-    R -.->|evidence_ids| U
-
-    classDef native fill:#edf2ff,stroke:#7189ba,color:#162644;
-    classDef demo fill:#e7f6ee,stroke:#54876e,color:#12382b;
-    classDef source fill:#fff3da,stroke:#a17936,color:#483115;
-    class F,F2,E,C,C2,S native;
-    class R,BA,BB demo;
-    class U source;
+    F1["事实 A · Fact"] -->|"ABOUT · 查询① 顺向找实体"| E["共享实体 · Entity"]
+    F2["事实 B · Fact"] -->|"ABOUT · 查询② 逆向找事实 B"| E
+    F1 -->|"STATES · 主来源<br/>新增可选属性 source_quote"| C1["来源片段 A · Chunk"]
+    F2 -->|"STATES · 主来源<br/>新增可选属性 source_quote"| C2["来源片段 B · Chunk"]
+    C1 -->|PART_OF| S["来源容器 · Scope"]
+    C1 -.->|chunk_units| U1["原文记录 A"]
+    F1 -.->|"source_unit_id（可用时）"| U1
+    C2 -.->|chunk_units| U2["原文记录 B"]
+    F2 -.->|"source_unit_id（可用时）"| U2
+    linkStyle 0,1 stroke:#176856,stroke-width:3px
+    linkStyle 2,3 stroke:#945300,stroke-width:3px
 ```
 
-两个框内的实线分别表示原生核心边和应用层关联的端点。虚线表示查原文时使用的字段或索引。原生事实的两条追溯路径在来源单元上对账，应用层实体及关联通过各自的 `evidence_ids` 回查原文。原生相似关系和可选社区可参照原分析 4.3，当前 Demo 导入关闭周期优化。[原生图模型](kl-graph/kl_graph/models/types.py) · [业务关联字段](kl-graph/project_demo/context.py) · [证据追溯](kl-graph/project_demo/context.py)
+**读图时，实线箭头一律表示库中原生边的方向。** 绿色 `ABOUT` 边上的①②标出增强查询的读取顺序；尤其是②，库存方向仍是“事实 B → 实体”，查询从实体反查指向它的事实 B。棕色 `STATES` 边标出写入增强的位置。虚线表示原生的来源字段和片段成员映射，用来核对事实对应的消息或段落。
 
-### 无索引浏览视图中的业务关系方向
+| 在原图上的位置 | 增强版具体做什么 |
+| --- | --- |
+| **写入：事实 → 主来源片段** | 抽取时要求给出带条件和否定的支持原句；程序确认它在目标正文中逐字且唯一匹配后，在主 `STATES` 边上保存 `source_quote`，内含 `quote`、`start`、`end`。无法唯一匹配时，只保留片段出处。[抽取提示](kl-graph/kl_graph/ingest/llm_extractor.py) · [建边实现](kl-graph/kl_graph/ingest/pipeline.py) |
+| **查询：事实 A → 实体 ← 事实 B，再回到两端原文** | 新查询沿两条已有 `ABOUT` 边寻找共享非人员实体的事实，再利用两端各自的来源核验参与关系，返回可复查的路径。查询时还可按已定位的事实给出原文节选、限定句和聊天回复依据。图里的 A、B 无需另存一条直接关系。[共享实体查询](kl-graph/kl_graph/query/associated_sources.py) · [来源核验](kl-graph/kl_graph/query/source_graph.py) · [原文节选](kl-graph/kl_graph/query/fact_evidence.py) |
+
+以 X06 的实际记录读图：从来源 `AWR2-S02` 中的事实出发，沿①找到消息实体 `IM-W19`，沿②反查来源 `AWR2-S03` 中的事实，后者说明最终模型没有收到这条消息。两份材料被关联起来的依据是它们指向同一条消息；要判断消息是否已入索引，还需读取直接说明索引状态的 `XWR1-05`。[X06 关联路径与原文对照](kl-graph/evaluation-artifacts/eval-v5-association-tr03-x06/report.md)
+
+## 上下文查看页在缺少索引时怎样展示资料
+
+索引就绪时，“上下文查看”读取上述原生库；方案 C 的图谱查询也使用这个库。索引未就绪时，浏览页仍可扫描已导入的原文，按编号、别名和句式临时列出候选实体与关联，点击条目可回看依据。此时事实列表为空。候选关联仅用于浏览，不写回原生库；方案 C 仍要求原生索引就绪，不会切换到这些候选关系作答。[浏览页的数据来源](kl-graph/project_demo/context.py) · [方案 C 的索引就绪检查](kl-graph/project_demo/app.py)
+
+### 缺索引时页面可识别的关系方向
 
 ```mermaid
 flowchart TB
@@ -273,7 +261,7 @@ flowchart TB
 
 每条箭头表示代码可识别的一种端点组合，按具体原文生成实例。以 `verification_reference` 为例，它表示用例集与问题、配置或环境存在验证关联，是否通过需回看原文。其他同句对象可形成 `co_mentioned`，其端点顺序只用于去重。[关系方向及匹配条件](kl-graph/project_demo/context.py) · [共同提及去重](kl-graph/project_demo/context.py)
 
-## V3 实例
+### V3 缺索引浏览示例
 
 ```mermaid
 flowchart LR
