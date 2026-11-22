@@ -1,0 +1,29 @@
+{
+  "dataset": "project-a-v5-natural-app_focus-4f98497fe04be748",
+  "model": "chatgpt-codex-default",
+  "graph": "graph-3c10b57b3e8ace49",
+  "rubric": {
+    "version": "V5-rubric-1",
+    "eval_questions": 20,
+    "eval_points": 64,
+    "sha256": {
+      "questions.jsonl": "fafcd729126ff3718fab9e70f14503091a0104ecb8758d5678bc58a8548966e6",
+      "reference_answers.jsonl": "66ddbad8061a7e778539eb2190e394d2e2140a5cc683895b0cbd27b83f2a0724",
+      "应用关联参考.jsonl": "0a7b305266782f4a930f4768780aa5e4f4ec24bec0568796ecc2ee5e4d1656bf",
+      "应用问题及参考依据.md": "56ad53e0b962ae14b2217a00d181482dce587811155c406e591fa7609a544088"
+    }
+  },
+  "context_window": 32768,
+  "budget": 8192,
+  "max_output": 1800,
+  "questions": [
+    "TR03",
+    "X06"
+  ],
+  "arms": [
+    "off",
+    "on"
+  ],
+  "switch": "project_demo.context.related_evidence returns ([],[]) for off",
+  "frozen": "native ask response, vector and keyword rankings, exact-match model requests across arms"
+}

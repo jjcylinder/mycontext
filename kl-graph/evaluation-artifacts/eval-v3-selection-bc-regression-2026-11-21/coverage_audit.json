@@ -1,0 +1,596 @@
+[
+  {
+    "question_id": "TR04",
+    "mode": "B",
+    "stage_counts": {
+      "candidates": 289,
+      "ranked": 58,
+      "selected": 14
+    },
+    "facts": [
+      {
+        "text": "应用继续处理异常分支及模型问题样本，测试补TR-X03及整体语义回归。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      },
+      {
+        "text": "模型需QA-A27期望答案和判定说明分析BUG-S11。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      },
+      {
+        "text": "发布需单独确认正式环境升级，目前无已发布结论。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      }
+    ],
+    "rerank_calls": 3,
+    "rerank_usage": [
+      {
+        "prompt_tokens": 24889,
+        "completion_tokens": 1003,
+        "total_tokens": 25892
+      },
+      {
+        "prompt_tokens": 24956,
+        "completion_tokens": 999,
+        "total_tokens": 25955
+      },
+      {
+        "prompt_tokens": 20378,
+        "completion_tokens": 416,
+        "total_tokens": 20794
+      }
+    ],
+    "elapsed_ms": 97756,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0
+  },
+  {
+    "question_id": "TR04",
+    "mode": "C",
+    "stage_counts": {
+      "candidates": 298,
+      "ranked": 63,
+      "selected": 15
+    },
+    "facts": [
+      {
+        "text": "应用继续处理异常分支及模型问题样本，测试补TR-X03及整体语义回归。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      },
+      {
+        "text": "模型需QA-A27期望答案和判定说明分析BUG-S11。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      },
+      {
+        "text": "发布需单独确认正式环境升级，目前无已发布结论。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      }
+    ],
+    "rerank_calls": 3,
+    "rerank_usage": [
+      {
+        "prompt_tokens": 24885,
+        "completion_tokens": 1027,
+        "total_tokens": 25912
+      },
+      {
+        "prompt_tokens": 24960,
+        "completion_tokens": 1112,
+        "total_tokens": 26072
+      },
+      {
+        "prompt_tokens": 21183,
+        "completion_tokens": 435,
+        "total_tokens": 21618
+      }
+    ],
+    "elapsed_ms": 100681,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0
+  },
+  {
+    "question_id": "AM03",
+    "mode": "B",
+    "stage_counts": {
+      "candidates": 132,
+      "ranked": 32,
+      "selected": 15
+    },
+    "facts": [
+      {
+        "text": "新索引能找到消息，不代表REPORT-AM0830使用了新快照。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "旧产物仍以SN-AM07将10点当确定安排，需要新快照重跑并核对截止前消息。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "依赖数据与应用协作，尚无新产物复核通过记录。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      }
+    ],
+    "rerank_calls": 2,
+    "rerank_usage": [
+      {
+        "prompt_tokens": 24923,
+        "completion_tokens": 628,
+        "total_tokens": 25551
+      },
+      {
+        "prompt_tokens": 16817,
+        "completion_tokens": 1077,
+        "total_tokens": 17894
+      }
+    ],
+    "elapsed_ms": 62221,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0
+  },
+  {
+    "question_id": "AM03",
+    "mode": "C",
+    "stage_counts": {
+      "candidates": 147,
+      "ranked": 38,
+      "selected": 14
+    },
+    "facts": [
+      {
+        "text": "新索引能找到消息，不代表REPORT-AM0830使用了新快照。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "旧产物仍以SN-AM07将10点当确定安排，需要新快照重跑并核对截止前消息。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "依赖数据与应用协作，尚无新产物复核通过记录。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      }
+    ],
+    "rerank_calls": 2,
+    "rerank_usage": [
+      {
+        "prompt_tokens": 24923,
+        "completion_tokens": 653,
+        "total_tokens": 25576
+      },
+      {
+        "prompt_tokens": 18359,
+        "completion_tokens": 1126,
+        "total_tokens": 19485
+      }
+    ],
+    "elapsed_ms": 76023,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0
+  },
+  {
+    "question_id": "PO03",
+    "mode": "B",
+    "stage_counts": {
+      "candidates": 127,
+      "ranked": 19,
+      "selected": 14
+    },
+    "facts": [
+      {
+        "text": "两组检查范围不同，且未说明集合是否互斥，不能合为完整通过率。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "否定与条件检查尚未回归，事实问题仍存在。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "APP-A-12仅补数字检查，正式包未升级。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      }
+    ],
+    "rerank_calls": 2,
+    "rerank_usage": [
+      {
+        "prompt_tokens": 24990,
+        "completion_tokens": 873,
+        "total_tokens": 25863
+      },
+      {
+        "prompt_tokens": 16509,
+        "completion_tokens": 128,
+        "total_tokens": 16637
+      }
+    ],
+    "elapsed_ms": 58590,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0
+  },
+  {
+    "question_id": "PO03",
+    "mode": "C",
+    "stage_counts": {
+      "candidates": 139,
+      "ranked": 19,
+      "selected": 14
+    },
+    "facts": [
+      {
+        "text": "两组检查范围不同，且未说明集合是否互斥，不能合为完整通过率。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "否定与条件检查尚未回归，事实问题仍存在。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "APP-A-12仅补数字检查，正式包未升级。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      }
+    ],
+    "rerank_calls": 2,
+    "rerank_usage": [
+      {
+        "prompt_tokens": 24992,
+        "completion_tokens": 773,
+        "total_tokens": 25765
+      },
+      {
+        "prompt_tokens": 17707,
+        "completion_tokens": 275,
+        "total_tokens": 17982
+      }
+    ],
+    "elapsed_ms": 62991,
+    "used_graph_facts": 1,
+    "used_graph_relations": 0
+  },
+  {
+    "question_id": "X01",
+    "mode": "B",
+    "stage_counts": {
+      "candidates": 133,
+      "ranked": 69,
+      "selected": 14
+    },
+    "facts": [
+      {
+        "text": "翻译：格式及一个异常提示局部通过，整体无准入；模型样本、分支回归和发布待办。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      },
+      {
+        "text": "摘要：显式固定六例限定预演准入，隐式路由与内容问题仍待处理。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "早报：文件生成与静态预览可做，旧快照需重跑，未发送。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "公函：模板局部通过、仅草稿审阅，签署人及检查待办。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "周报：去重局部通过，周期和来源未修，尚无整体准入。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "润色：风格数字局部通过，事实保真未过，无任意文档准入。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "按登记分工分配应用、测试、数据、发布和模型协作，不虚构个人承诺或日期。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      }
+    ],
+    "rerank_calls": 2,
+    "rerank_usage": [
+      {
+        "prompt_tokens": 24889,
+        "completion_tokens": 1738,
+        "total_tokens": 26627
+      },
+      {
+        "prompt_tokens": 17770,
+        "completion_tokens": 1384,
+        "total_tokens": 19154
+      }
+    ],
+    "elapsed_ms": 118086,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0
+  },
+  {
+    "question_id": "X01",
+    "mode": "C",
+    "stage_counts": {
+      "candidates": 188,
+      "ranked": 85,
+      "selected": 15
+    },
+    "facts": [
+      {
+        "text": "翻译：格式及一个异常提示局部通过，整体无准入；模型样本、分支回归和发布待办。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      },
+      {
+        "text": "摘要：显式固定六例限定预演准入，隐式路由与内容问题仍待处理。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "早报：文件生成与静态预览可做，旧快照需重跑，未发送。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "公函：模板局部通过、仅草稿审阅，签署人及检查待办。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "周报：去重局部通过，周期和来源未修，尚无整体准入。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "润色：风格数字局部通过，事实保真未过，无任意文档准入。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "按登记分工分配应用、测试、数据、发布和模型协作，不虚构个人承诺或日期。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      }
+    ],
+    "rerank_calls": 2,
+    "rerank_usage": [
+      {
+        "prompt_tokens": 24889,
+        "completion_tokens": 2011,
+        "total_tokens": 26900
+      },
+      {
+        "prompt_tokens": 22370,
+        "completion_tokens": 1685,
+        "total_tokens": 24055
+      }
+    ],
+    "elapsed_ms": 132725,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0
+  },
+  {
+    "question_id": "X03",
+    "mode": "B",
+    "stage_counts": {
+      "candidates": 221,
+      "ranked": 97,
+      "selected": 15
+    },
+    "facts": [
+      {
+        "text": "已发布消息指项目B的APP-B-12；A正式仍APP-A-11。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "A预演APP-A-12包含候选ROUTE/LANG/DEDUP配置，各修补覆盖范围不同。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      },
+      {
+        "text": "结果需按项目、环境、应用包、模型和用例范围关联。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      }
+    ],
+    "rerank_calls": 3,
+    "rerank_usage": [
+      {
+        "prompt_tokens": 24967,
+        "completion_tokens": 1620,
+        "total_tokens": 26587
+      },
+      {
+        "prompt_tokens": 24523,
+        "completion_tokens": 1547,
+        "total_tokens": 26070
+      },
+      {
+        "prompt_tokens": 16432,
+        "completion_tokens": 939,
+        "total_tokens": 17371
+      }
+    ],
+    "elapsed_ms": 139581,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0
+  },
+  {
+    "question_id": "X03",
+    "mode": "C",
+    "stage_counts": {
+      "candidates": 251,
+      "ranked": 105,
+      "selected": 16
+    },
+    "facts": [
+      {
+        "text": "已发布消息指项目B的APP-B-12；A正式仍APP-A-11。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "A预演APP-A-12包含候选ROUTE/LANG/DEDUP配置，各修补覆盖范围不同。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      },
+      {
+        "text": "结果需按项目、环境、应用包、模型和用例范围关联。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      }
+    ],
+    "rerank_calls": 3,
+    "rerank_usage": [
+      {
+        "prompt_tokens": 24965,
+        "completion_tokens": 1884,
+        "total_tokens": 26849
+      },
+      {
+        "prompt_tokens": 24519,
+        "completion_tokens": 1672,
+        "total_tokens": 26191
+      },
+      {
+        "prompt_tokens": 18778,
+        "completion_tokens": 1017,
+        "total_tokens": 19795
+      }
+    ],
+    "elapsed_ms": 148837,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0
+  }
+]

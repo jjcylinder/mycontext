@@ -1,0 +1,1329 @@
+{
+  "summary": {
+    "visible_facts": 954,
+    "projected_records": 89,
+    "statuses": {
+      "projected": 89,
+      "full_text_unmatched_facts": 42
+    },
+    "original_characters": 27683,
+    "excerpt_characters": 5202,
+    "A04-S01": {
+      "content": "QA-A27仍缺期望答案和判定说明，覆盖部分翻译与公函模型问题。新摘要SEM-S09和润色POL-F08尚未补入该包。",
+      "spans": [
+        {
+          "start": 56,
+          "end": 115
+        }
+      ],
+      "fact_ids": [
+        "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+        "1b6692ac-508e-5e2c-b2ad-85f04fc040b1",
+        "22328808-7c56-5496-be6e-59942ee495fc",
+        "69769bf2-90b7-5e64-abc7-c157ae5e625f",
+        "9d8f95ce-eccd-5302-96d9-8bd20e9b487c",
+        "bbba2984-8f13-5261-8fda-3af413151aeb"
+      ],
+      "original_characters": 299
+    }
+  },
+  "records": {
+    "A05-S04": {
+      "matched_fact_ids": [
+        "0004f20f-7002-5d66-acd0-74ac8b841361",
+        "2e2ad2f5-6cdf-5c2a-9108-07451d381822",
+        "cada74a7-124f-57bb-b22d-3ec564e68cd1",
+        "d2367560-54ba-5140-97d5-8791492c3adc"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A05-S03": {
+      "matched_fact_ids": [
+        "5eab389b-8ac6-5592-a621-e4bbc0360fe1",
+        "79651987-0b2e-54e8-8036-622b7482211f",
+        "8c4d0fe5-0472-514f-9aba-48606e14c66f",
+        "94b2e2b1-3319-5d6a-a9ef-f96a188b8d07",
+        "b20ecbce-8a39-51c1-91c6-7475979093ca",
+        "b6e217dc-d436-5754-b6d9-baa482fbfda5",
+        "f83c8ae7-7e1f-5ccb-b467-6f4c74e1b73c",
+        "fd633242-58b6-51ab-b4ef-d0f679064679"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A05-S01": {
+      "matched_fact_ids": [
+        "e5320090-ff41-5f46-92d2-d72c574aeef8",
+        "e9bca9d9-2644-550c-8f53-4b77e2564e4f"
+      ],
+      "unmatched_fact_ids": [
+        "9d531373-7c22-51ce-a7b3-3d25dcfa8012"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "A04-S01": {
+      "matched_fact_ids": [
+        "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+        "1b6692ac-508e-5e2c-b2ad-85f04fc040b1",
+        "22328808-7c56-5496-be6e-59942ee495fc",
+        "69769bf2-90b7-5e64-abc7-c157ae5e625f",
+        "9d8f95ce-eccd-5302-96d9-8bd20e9b487c",
+        "bbba2984-8f13-5261-8fda-3af413151aeb"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A04-S03": {
+      "matched_fact_ids": [
+        "1ce7f0c0-5f1d-5d3d-b310-c37204c596bd",
+        "2495a4fa-487f-56c5-bc38-d202c7dab8d6",
+        "257b6fca-fd71-5b39-a66f-28e6bcbd44f2",
+        "59b481c8-cddc-545f-8003-8495b8a44bf2",
+        "84e9d113-542d-5916-b7be-eb5094a5f43f"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A04-S02": {
+      "matched_fact_ids": [
+        "25389c54-3987-5cf8-8970-c52ef79165ed",
+        "2b84ccab-a5c9-512d-9079-3e310b3ac522",
+        "362f0fe1-f22d-596e-b3f4-034070221bd4",
+        "3b5abe1a-4225-5b80-a2ff-622c38544977",
+        "9ab9b5ab-adf3-505d-9fbf-570fd71817af",
+        "fdc0fc5d-1c7d-57d6-b8c2-73ea6c61fb41"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A04-S04": {
+      "matched_fact_ids": [
+        "5780cf0b-033b-5564-a09e-bdb994cc6046",
+        "9e123464-ad96-5030-93e6-52af85a86791"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A03-S01": {
+      "matched_fact_ids": [
+        "024b9acb-5dbe-55cf-9005-4c692ab3e9a6",
+        "79558009-306d-5bf4-a6a9-e6087e9f12d3",
+        "87d5b92a-9fb0-56a6-9259-9dc82e7ae544",
+        "fc994147-445f-58a5-bea2-f474a9ffb9ec"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A03-S02": {
+      "matched_fact_ids": [
+        "4b552b12-c4f2-5c8f-9d37-90274a0c4a02",
+        "7d7479c7-fe1d-5473-b4f9-421aaaf965b3",
+        "8c3caefc-5c77-508a-9834-db98f2e1e75c",
+        "e320aed9-36a6-5647-b9a4-0ee838862c6d"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A03-S03": {
+      "matched_fact_ids": [
+        "1d0d0c10-ffb8-54cf-8251-9e49c293b4e9",
+        "28e75394-a0f5-5a16-be54-bad71de0c4b6",
+        "2de22790-8749-5d54-b59d-bd383752e7e9",
+        "916c5b26-fb87-5a4b-8805-c93a81bcac3b",
+        "b4863ae1-89c6-50a6-ae2e-c198d694fbd0",
+        "c485f822-46bc-5dfe-bfa1-bbc9c2e9e9fd"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A03-S04": {
+      "matched_fact_ids": [
+        "d318e35f-f7b4-5776-bdef-264bbb28a285",
+        "ed82087e-dbf2-584b-8a92-c5774ec7baaf",
+        "f7f589c3-ba74-5a5a-b81d-73da31759da2"
+      ],
+      "unmatched_fact_ids": [
+        "0f483ed2-092e-5b7c-ad19-745414ea90b8"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "NPO-S02": {
+      "matched_fact_ids": [
+        "41b4a499-c69e-5e15-b9df-3d437ca628ab",
+        "b5bba3cb-4d7d-5fd2-ab13-12a7980e7d47"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "NPO-S01": {
+      "matched_fact_ids": [
+        "f3c2a15e-6513-545b-97f7-e3d24a47cac6"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "APO2-S02": {
+      "matched_fact_ids": [
+        "4d72b1f2-dd05-5d44-8ff8-01ea97ce23a7",
+        "57032843-3004-5ebe-bc5f-9f363d5e2efe",
+        "753b2fc1-89c1-504b-b20b-ec71d8c79dfc"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "APO2-S03": {
+      "matched_fact_ids": [
+        "a5154d4b-fdbc-5812-9a18-11eb6fbb9e3b"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "APO2-S04": {
+      "matched_fact_ids": [
+        "93b20734-baf8-5a01-9b79-413310024e49"
+      ],
+      "unmatched_fact_ids": [
+        "52dfe353-c8b5-548c-aed6-23a3f3a82b4f"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "APO2-S01": {
+      "matched_fact_ids": [
+        "caecbd81-733f-5982-b93f-61f8602cce1c",
+        "da312c92-d621-57bb-8749-9ff795d5d659"
+      ],
+      "unmatched_fact_ids": [
+        "2d27ed45-d916-5f1b-9d36-ebcbda030cad"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "APO1-S01": {
+      "matched_fact_ids": [
+        "7b103179-836b-559c-9f0c-74721565a276",
+        "a3eff5be-a584-5ba4-9e50-c8d6840706c5"
+      ],
+      "unmatched_fact_ids": [
+        "06a609a7-2f09-587b-a85c-e0bfdf19bc3d",
+        "1996286c-b7f1-5b50-8c7e-379e40caf628"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "APO1-S04": {
+      "matched_fact_ids": [
+        "0f273cb5-8059-567b-affc-971ef743f199",
+        "48b608e7-26fe-55c6-93a4-e2dd415f852e",
+        "90319a19-4674-5782-a24c-f004c130080c",
+        "f6972371-2247-5797-a6e4-77f19b2abb76"
+      ],
+      "unmatched_fact_ids": [
+        "aa0f4198-5162-5709-a7f4-cbf3a5717e8a"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "APO1-S03": {
+      "matched_fact_ids": [],
+      "unmatched_fact_ids": [
+        "13af0cda-c4ca-5edf-aadf-18a7a0ab4596",
+        "1c27dcca-d46a-527f-9cbf-7ac8942296c4",
+        "8960ec81-38a4-55e6-8017-1b715ef58f74"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "APO1-S02": {
+      "matched_fact_ids": [
+        "22088e9a-012f-51e7-81b3-7cdd708dd2eb",
+        "eab489f4-11fe-53fc-bdcb-41978f0638b9"
+      ],
+      "unmatched_fact_ids": [
+        "e9c68abb-d0da-5e66-9cd2-a3dcff396826",
+        "fcf6d4b3-6e5d-594a-a1fb-6fb255d5cf0c"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "NWR-S03": {
+      "matched_fact_ids": [
+        "20fecc26-69a6-5238-8c8f-f07f7f8a390b",
+        "bd4c7459-cf83-5f38-9d8d-fd56b7248b40",
+        "bed79b64-729b-50a5-a032-125e6444c463"
+      ],
+      "unmatched_fact_ids": [
+        "51f2d280-d1d0-5911-bfbf-51ee7fc54907",
+        "7c128921-308a-546b-b961-67ed9e127f8b"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "NWR-S02": {
+      "matched_fact_ids": [
+        "32830e79-d729-5479-aabb-29d3b8e98042",
+        "4776dacc-5150-5919-9ba7-fe395f233286"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "NWR-S01": {
+      "matched_fact_ids": [
+        "411a8aea-6b17-52b8-b90a-42a4141d8b35"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "AWR2-S03": {
+      "matched_fact_ids": [
+        "4889a9ff-6a3f-5675-b81c-88dfc0186309",
+        "d454477a-efba-55b6-92a3-367405fe8e08"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "AWR2-S01": {
+      "matched_fact_ids": [
+        "4f1ed298-bbc2-5140-95e1-3726b2f73e25",
+        "91462ab4-79dc-5934-a7c8-1541bebf4190"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "AWR2-S02": {
+      "matched_fact_ids": [
+        "62554a40-fb1f-5610-9f64-6ceb3168cf95",
+        "6a905a67-521f-5d0f-acc6-d596b601f257"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "AWR1-S03": {
+      "matched_fact_ids": [
+        "3076782f-b31d-55e1-a576-331589711855",
+        "c5ee2eff-682b-59bc-9073-e13d5a2fe1b4"
+      ],
+      "unmatched_fact_ids": [
+        "08878e58-ef7a-54f2-9814-a52c91f61d0a",
+        "642a028a-4c8a-5f83-9e6e-3c8d6b7cdeba",
+        "6e3a4cf5-0fd3-5abe-a572-d24563de5764"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "AWR1-S04": {
+      "matched_fact_ids": [
+        "09a9a393-f954-5b9c-a7bd-c3452027c8d8",
+        "13d83a45-6aa0-5031-aec6-6284ea7634a2",
+        "18542b58-aad4-5250-addf-34dfbb3c682c",
+        "e61b0747-54fd-52cd-ab86-8fa164ca37f9"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "AWR1-S02": {
+      "matched_fact_ids": [
+        "12a3dfcb-6475-5dda-b8d7-ebbf1f7c056e",
+        "b5211280-7895-5cdd-824d-311240dcc170"
+      ],
+      "unmatched_fact_ids": [
+        "204aecf1-fcd2-524a-99e5-7d60a55c4aa9",
+        "75734076-920f-5edd-a880-fb3147776e40",
+        "8ec3c84f-0bcf-5f82-ab9b-855cdd5805b7"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "AWR1-S01": {
+      "matched_fact_ids": [
+        "24fdfb3c-c230-50da-9cdf-e632278aebef",
+        "9f98f014-9810-52ca-994c-6eda7b6aef84",
+        "c471c3fc-5d15-5ea4-8bea-656a30505603",
+        "d78822d7-c824-54a2-98ff-eea9368b99c4",
+        "ff606bf9-7dcc-52d8-be55-fddd773d712a"
+      ],
+      "unmatched_fact_ids": [
+        "34a39d09-eb0b-5de8-907a-5b98c5cad7b3"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "NLE-S03": {
+      "matched_fact_ids": [
+        "95f91b50-56cf-56cb-83eb-1d0912e0a495"
+      ],
+      "unmatched_fact_ids": [
+        "4da85283-7f86-5506-855f-a17a1aa6a220",
+        "4e83ea7d-4a76-5caa-9c19-fb07044dbc52",
+        "99248e08-f975-5c52-b749-a02f53a6c448",
+        "b774f613-039d-5445-aeed-e37585d0abaf",
+        "b8ef9092-7cf6-5715-abc2-4aa4be00246a"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "NLE-S02": {
+      "matched_fact_ids": [
+        "6acc5cdc-c812-51d7-8b86-59de66e57fde"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "NLE-S01": {
+      "matched_fact_ids": [
+        "eda85960-88f6-51e8-91ac-2bedb16f9545"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ALE2-S04": {
+      "matched_fact_ids": [
+        "01245bd8-7548-5e80-994e-afde88486cbc",
+        "937e8fe0-b5bb-56a7-b59e-f8c156a73105",
+        "f2051155-16c7-5f0e-9ddb-3b8244e23b02"
+      ],
+      "unmatched_fact_ids": [
+        "253edf36-0d2b-59f7-86b6-90975b45f076",
+        "4bab0eb9-db65-55b2-a387-b8d02dc04929",
+        "7b66f1a8-8d6e-59c9-bf52-1c5927638b12",
+        "eef430fb-40b0-569c-bf33-7a849c375f1c"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "ALE2-S03": {
+      "matched_fact_ids": [
+        "1cfeaaec-179a-58fe-abed-4f79bea6debe",
+        "2d246e37-b189-566c-8739-12ff19461e35",
+        "be14023b-e936-5e97-816b-ee9e7e34de55"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ALE2-S01": {
+      "matched_fact_ids": [
+        "312639fa-918f-55ad-9b02-2ddd526e528b",
+        "b97aa1fb-4159-5bf7-b4e5-a4972b382411"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ALE2-S02": {
+      "matched_fact_ids": [
+        "5a495b90-a691-524d-8f54-fde410a73de0",
+        "b20ca840-1610-5ec6-9c8f-3d29f554b42a"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ALE1-S03": {
+      "matched_fact_ids": [
+        "0b18335f-25d2-5b03-bedd-81048a437023",
+        "3276d6a6-405b-5894-8520-a61f9207669a",
+        "466d1aaa-10f5-53ae-88b8-f955e0fed5bc",
+        "ee5b8e66-dab6-5a81-8336-35b1284cd8e4"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ALE1-S01": {
+      "matched_fact_ids": [
+        "1209079c-f9c3-551f-b258-8f583dfebd00",
+        "37e7ffa3-7703-5c49-bb5d-aa5dd3599e91"
+      ],
+      "unmatched_fact_ids": [
+        "115cd0cb-ed4e-5716-97c2-340a012f50ce",
+        "18c3c08e-f010-51c9-9de7-1545f4c951f3",
+        "bf937357-ba83-5412-b8f3-a1fb2f8e48fd"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "ALE1-S04": {
+      "matched_fact_ids": [
+        "32a8b59b-d582-54ba-9e9d-c9953544a0fa",
+        "6e3c6aab-414e-527f-9f64-524b3f7a7e6b",
+        "c67ccb62-4e48-57d6-985d-32ef735dbc12",
+        "e5487f7b-cf1a-53ec-8a0e-4b1ea88c169c",
+        "fc9607b2-e338-544d-a5ab-9b3b23e54721"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ALE1-S02": {
+      "matched_fact_ids": [
+        "b1ba23d6-04ea-5397-b08f-ce0183264f41"
+      ],
+      "unmatched_fact_ids": [
+        "402dddb4-28ee-52ec-a2b3-3a3961fd2533",
+        "4944e1fd-4ccd-528c-a63a-2b631b9abedc",
+        "a277da2b-7d0f-54d7-a183-8f581de488ab"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "NAM-S01": {
+      "matched_fact_ids": [
+        "374a9b88-2696-50ef-9ffc-9e6cb388fa88"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "NAM-S03": {
+      "matched_fact_ids": [
+        "8981118f-e118-5b86-ad94-6073a744d913",
+        "e58949f5-e701-5c0f-a526-4e171b551426"
+      ],
+      "unmatched_fact_ids": [
+        "c422a475-5f96-5d47-ac2c-dc1ead418a7c",
+        "d6569de9-b1e5-5caa-a2e9-9a99bffea131"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "NAM-S02": {
+      "matched_fact_ids": [
+        "8fe083a1-6203-5c1d-a9e0-ae62f5d4e1af"
+      ],
+      "unmatched_fact_ids": [
+        "ea8bc8a0-f2a7-50bd-8ace-c7c058076d7d"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "AAM2-S03": {
+      "matched_fact_ids": [
+        "020758d2-064c-59f1-af09-110b989d422c",
+        "56fa555c-1970-5ac6-b0c0-b4299a4ed314"
+      ],
+      "unmatched_fact_ids": [
+        "07e91a2e-b93b-5eee-8009-5f69aa3a30cc",
+        "955a80d9-87f5-5059-8b33-34f483d4cef5"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "AAM2-S02": {
+      "matched_fact_ids": [
+        "e647050d-6811-548b-b0c1-f406bdb42cfc"
+      ],
+      "unmatched_fact_ids": [
+        "083b588a-799f-55bf-b82b-6fed15595598",
+        "f49ab198-0058-5c64-a0a6-040e8c934bcf"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "AAM2-S04": {
+      "matched_fact_ids": [
+        "3593ef48-7436-5487-8c5d-1448172219cc",
+        "37992dc2-19d9-53eb-9253-dec585c256c0",
+        "4b486ad5-2e7b-5f94-ac2b-3029c8554d6d",
+        "fe107926-e570-5dc3-83ca-18ff8c733aa9"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "AAM2-S01": {
+      "matched_fact_ids": [
+        "7fbf3a29-db7b-5650-a68e-233337ac12da",
+        "e147a24b-da3c-5a65-ab5b-278c184b897e"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "AAM1-S02": {
+      "matched_fact_ids": [
+        "f094db0c-0a4e-54c3-939e-0f488b05f665"
+      ],
+      "unmatched_fact_ids": [
+        "0ceb8d44-860f-5c8e-9693-92b0ae66f545",
+        "cd8859ca-8561-5794-89e2-20fe8126d5f3"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "AAM1-S01": {
+      "matched_fact_ids": [
+        "22d6e2a4-3bf6-50c4-af19-71d599194a6c"
+      ],
+      "unmatched_fact_ids": [
+        "14138dbd-417e-5915-b26a-85153153d935",
+        "25bcd43e-af39-5a9e-a6c7-a1d7760787df",
+        "38401d9d-6620-5ee6-b67d-16c0626ce987",
+        "d20924b9-139e-5f2d-85ba-39040bbe2ed0"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "AAM1-S03": {
+      "matched_fact_ids": [
+        "2c60bd11-7ad5-526c-8da1-66a69b6586cb",
+        "2e557368-3fe5-56b2-aa59-c2a10b8a57f6",
+        "3ebca961-8275-5f1a-abd1-11377aa32ef4",
+        "b4cce00e-c16e-5e2f-afa5-84fb183747c7"
+      ],
+      "unmatched_fact_ids": [
+        "4df5f0b5-c077-597c-9e4e-91ecb4858541",
+        "df721742-318f-5821-8dbc-4b0e97ede3f3"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "AAM1-S04": {
+      "matched_fact_ids": [
+        "57dea62a-6613-5d63-b80b-b0da6080d31f",
+        "5f856394-73cb-5a7a-81c0-3efa4cd64d66",
+        "790fb00c-4edc-5a78-b79b-98c2bb59d53c"
+      ],
+      "unmatched_fact_ids": [
+        "dda00514-54b5-503b-8c38-4472f2f99687"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "NSU-S02": {
+      "matched_fact_ids": [
+        "270500d8-1967-5a27-a352-686b9008132d",
+        "46a39fce-5d18-5ff9-9fee-02dac740bc78"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "NSU-S01": {
+      "matched_fact_ids": [
+        "b496e866-78b7-5f56-b841-42c75d34c771"
+      ],
+      "unmatched_fact_ids": [
+        "273fee42-8ca0-57d2-a4d8-edc213a49364"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "NSU-S03": {
+      "matched_fact_ids": [
+        "44d480a6-6f48-5873-8f3b-1e2cd93c3845",
+        "6aa9563b-0c62-56ac-99fa-abde9e9da59a",
+        "71da2022-cba3-5107-9fdf-627324ffd514"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ASU2-S03": {
+      "matched_fact_ids": [
+        "966b7f2c-9c71-5897-9c02-3042c30fbeb1",
+        "b2959151-a98d-5888-96a6-33931835d8ea",
+        "ed256235-47b9-5965-b518-fce0e189013e"
+      ],
+      "unmatched_fact_ids": [
+        "1e2381a7-60ab-5f44-8c11-62ab87081c82"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "ASU2-S02": {
+      "matched_fact_ids": [
+        "265ee2f7-c620-537f-a63f-a8e4dbcb60de",
+        "843b1365-ac90-5b1b-982c-ca6889408e8f"
+      ],
+      "unmatched_fact_ids": [
+        "2a60263d-713a-5d78-8181-166473a5bb33"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "ASU2-S04": {
+      "matched_fact_ids": [
+        "73f45823-43c6-5219-affd-ea59d30bdbf9",
+        "8ffcf85b-0fb1-5fb9-bc86-0e9e7778e0c6",
+        "c871c370-7121-554f-8282-181d9755d847"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ASU2-S01": {
+      "matched_fact_ids": [
+        "9967fb81-cc87-5463-bc0a-d07c177cfc94",
+        "9ea95ef0-4412-501c-9707-e3e15bb0f92e"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ASU1-S04": {
+      "matched_fact_ids": [
+        "0088eec5-0ba3-5466-aeda-286e594457cd",
+        "2063e380-930e-57d1-a85c-235df018c5a9",
+        "31282597-b745-59ba-b327-77b6941e6e4a",
+        "5345fcad-3a06-5dcb-8637-cec6b5313a9e",
+        "639e690f-8080-5a2e-9133-628ba8c76f83",
+        "905d9d0d-4203-5047-868a-bd6058d724a7"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ASU1-S01": {
+      "matched_fact_ids": [
+        "1c2603a2-159f-5044-af8f-c12a61fed059",
+        "7385278f-980e-5c67-ae80-593b4f305c37",
+        "cd6cb67d-e957-51a5-9069-0c4eab7b93f2"
+      ],
+      "unmatched_fact_ids": [
+        "0196b65c-719c-5ef9-95a2-df6a0b5ae08b",
+        "7d9e13b1-acae-5712-9bd1-38709ec737ba"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "ASU1-S02": {
+      "matched_fact_ids": [
+        "251ee964-c797-5386-bc38-39cefd7a4a7b",
+        "786bf65a-1042-510e-997f-6404199a6e06"
+      ],
+      "unmatched_fact_ids": [
+        "45f91050-af0f-5636-9043-390e1e372a9b",
+        "64010d1d-e862-5920-be46-a17157a11278"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "ASU1-S03": {
+      "matched_fact_ids": [
+        "6fad6922-d459-524f-ba3b-10dd9c2aaa73"
+      ],
+      "unmatched_fact_ids": [
+        "c511747e-148b-55fa-996b-155719e2692f",
+        "fdda3329-7c03-5f77-b7c5-99fab782fa6b",
+        "fe8a73b1-1f38-5935-b8e8-84ae3e9d143e"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "NTR-S02": {
+      "matched_fact_ids": [
+        "13cef26d-b894-5deb-84f5-f683dd9f72ed",
+        "e1f1a078-5a40-5baa-85f4-d14216c867d0"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "NTR-S01": {
+      "matched_fact_ids": [
+        "296d62e8-7bf4-5b27-8f04-5800bf525b64"
+      ],
+      "unmatched_fact_ids": [
+        "21b87d38-4abd-5496-9ccf-c1ba61d1ec8a"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "NTR-S03": {
+      "matched_fact_ids": [
+        "c29277ed-02a4-55d4-9766-0b3ade3c3d50",
+        "dbc1967a-3b2e-5731-95f7-fc86756b53d2"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ATR2-S03": {
+      "matched_fact_ids": [
+        "1dc2eb9e-9c12-5f41-aa00-c01b71d0f6ef",
+        "2be8642a-5cd6-5d0f-90cf-be043e1739a1",
+        "bf940ab7-49bf-5f26-8552-c01c1e4c22a3",
+        "c324e145-3e04-540f-a0b2-181e7c262c2c"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ATR2-S01": {
+      "matched_fact_ids": [
+        "369bbe19-1799-5d24-b1dd-413b1937f704",
+        "54c5bcb2-d503-5e3d-b106-70fb5aebba26",
+        "97bb13c1-21a3-54a1-8ba0-15756f5de4d3"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ATR2-S02": {
+      "matched_fact_ids": [
+        "3730cbbc-0a43-5898-8ae9-21d7f1a45230",
+        "afefb6ea-259f-5bf1-9049-e098b9a338ce",
+        "c0515642-1c16-5c1d-aa2f-4c05e167fbb3"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ATR2-S04": {
+      "matched_fact_ids": [
+        "408248fc-f91e-53d3-ad39-08dcb18fdbe4",
+        "ab71dc38-f8b6-5a32-aa5e-f54350f3f7f9"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ATR1-S04": {
+      "matched_fact_ids": [
+        "0f57f8cc-fc4d-5991-8122-d4780ed689b1",
+        "2def28a5-9ec1-5e15-82ad-4995804bbdac",
+        "4474b356-cce7-5625-999f-f65402b18aeb"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ATR1-S02": {
+      "matched_fact_ids": [
+        "62c96181-8fe6-5cbe-898b-08b60f1fe3bb"
+      ],
+      "unmatched_fact_ids": [
+        "181bda56-2888-50c7-ae74-8f762b1b346f",
+        "77c800de-1e33-5ff4-8544-28ddb38ed03a",
+        "b1001d8a-c104-5d16-b546-20fba021d973"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "ATR1-S01": {
+      "matched_fact_ids": [
+        "3472e7e0-6179-593a-b7c7-61396759fd1a",
+        "4b3bc8c3-8739-5a65-99af-31c1dea63c81",
+        "86d818a3-2605-56d3-a91d-51f69ad2f7dd",
+        "99916768-592d-54b4-946e-e2271c344e0f"
+      ],
+      "unmatched_fact_ids": [
+        "32937508-9aab-509a-abb7-94bbaece2007"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "ATR1-S03": {
+      "matched_fact_ids": [
+        "69bf5252-b890-5162-b3bb-17b6640ab350",
+        "c82fb83b-2e49-563b-bd00-7a8a67eac774",
+        "d2377a89-d698-5b14-b864-22338db31663",
+        "e197f887-9073-5cd3-aa71-2c876738fa82"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "M03-S03": {
+      "matched_fact_ids": [
+        "439f9c20-9b3e-5afd-a73d-021f32b95b60",
+        "55ceb3d9-3132-58d2-8afa-5c9fd79af99b",
+        "cbb62af9-df43-5c77-b08c-3108d183e178",
+        "e70fb4a9-5baa-58f0-9681-995a01085f13"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "M03-S02": {
+      "matched_fact_ids": [
+        "52e68420-ac35-5485-8f9f-078739902978",
+        "5e9a728e-d6be-5f68-adda-08c2c595b503",
+        "b5cb78c4-21a7-5676-aca1-c6cf87f7753d"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "M03-S01": {
+      "matched_fact_ids": [
+        "adea0f0d-b86a-58b8-ac91-c88513cf6a0a"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "APO0-S04": {
+      "matched_fact_ids": [
+        "428ae928-dfed-5447-8dca-d2e61ab2daae",
+        "4946a652-ab77-57b6-b9be-b19bdf57b023",
+        "6280cfc5-016a-5282-bb0b-78edade8ed3c"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "APO0-S03": {
+      "matched_fact_ids": [
+        "43500723-7185-526e-91b3-2f04d37392df"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "APO0-S01": {
+      "matched_fact_ids": [
+        "74e5c28a-d65c-573c-bded-69bc5b275c6f",
+        "9fe7fb06-7286-5a79-87ef-514f53e1da61",
+        "b6dc8e16-1d89-5eeb-aca0-e5315f2b2c16"
+      ],
+      "unmatched_fact_ids": [
+        "8f81bf98-f853-57e4-9839-62459a60a9ee"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "APO0-S02": {
+      "matched_fact_ids": [
+        "7970c98d-388a-540b-a7b1-2a3f61bd633b",
+        "a0ffdce3-3afa-5af0-bfb6-0bc88a5257c3",
+        "d7e92fd0-a2b8-55c2-b026-d726b157c153",
+        "e6c9ce27-d616-54e0-b34f-90331a0baedc"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "AWR0-S03": {
+      "matched_fact_ids": [
+        "01d80c08-9ee7-51eb-a939-77a76ff9ed6d",
+        "4156a5a7-490e-5bcd-9ada-afcc88e25047",
+        "92090cac-ba78-5eda-bc5a-5dfcf8eb36d7"
+      ],
+      "unmatched_fact_ids": [
+        "3194b399-a7ea-5003-b547-6e17347bc110",
+        "3f57f019-fb0b-5b52-8f50-8e12516ebdf1"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "AWR0-S01": {
+      "matched_fact_ids": [
+        "3c64b640-38b0-5c06-90f6-e80db6aec6d4",
+        "4613e300-46fb-5180-82b9-f2c54e889d1c",
+        "6397949b-9024-5c01-86ec-fce0cd171d08",
+        "73251704-5c8b-5363-97a8-a969a7ce3294"
+      ],
+      "unmatched_fact_ids": [
+        "0307adc6-7ad2-5a5b-966d-0427580c3285",
+        "ca2a3344-560e-57db-b508-5d77160712dd",
+        "d7713b3d-88cd-522a-aa3c-a6f75776ae8c",
+        "e3b07f9f-d2da-59af-879b-679fc169ac80"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "AWR0-S02": {
+      "matched_fact_ids": [
+        "0fb66480-ccdd-5441-bf13-95c051416117",
+        "2e732b78-0104-5567-b4c2-bd093339a441",
+        "33f7eb7e-54d5-5804-8de6-4c7bdc9c7f1e",
+        "7e10ed11-e72c-5e8d-bf4f-bd93ddecb5fe",
+        "c6cc533b-b040-5083-98ec-9a36a5642730"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "AWR0-S04": {
+      "matched_fact_ids": [
+        "69684dce-f843-531a-abef-acd048f32a41",
+        "8d26f84b-5847-54dd-9a86-775cef482ae8",
+        "b50c5815-028c-58e0-a9ba-5d6925812a29",
+        "bd386fff-9736-58ea-9a53-50005debc82c",
+        "bebcc862-30ad-595e-aa1f-f8a37d50c8c1",
+        "c89671e5-c87e-5eca-92f4-bac5382fa0e4",
+        "d3091057-bce0-5433-a681-58052ae11f42"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ALE0-S04": {
+      "matched_fact_ids": [
+        "214c7bfa-ce30-5099-9095-b6b05e667e1f",
+        "39c3efe5-f62c-56cf-8183-931b9fcdf555",
+        "40a5a9d1-ef0c-5471-9cd5-bf4c57bd3622",
+        "72ecdc59-cf8c-5e7c-be96-a4fb7f03c4ff",
+        "99fa86d5-ee7d-56fc-91e9-f7c77bbfd9d1"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ALE0-S03": {
+      "matched_fact_ids": [
+        "2ce1dc62-60ad-5816-82b9-61e343139be0",
+        "54970236-d1c9-5f0f-8bf4-0f56ba97e007",
+        "e6c616a7-f948-5ddf-8135-66a31d4e7df3"
+      ],
+      "unmatched_fact_ids": [
+        "addf9273-f001-55c6-8bd0-4818e420336b"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "ALE0-S01": {
+      "matched_fact_ids": [
+        "31c82cf9-bef2-5950-859d-b8ef0f3fa25a",
+        "8de44d40-86c6-549c-94ab-1535470a719f",
+        "cc393663-cca5-589d-9064-2b6c176109f5"
+      ],
+      "unmatched_fact_ids": [
+        "c03abf35-5ff4-5e8b-bc6e-21a363b140db"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "ALE0-S02": {
+      "matched_fact_ids": [
+        "43812c96-eaad-5aef-91bc-f43a79d6626c",
+        "dd87390c-852e-5aed-8ee0-c01719646438",
+        "df67b442-140f-527c-a554-9fcd3297c59b"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "AAM0-S03": {
+      "matched_fact_ids": [
+        "624c6efe-be20-535e-8dac-d5a6587e2e62"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "AAM0-S02": {
+      "matched_fact_ids": [
+        "0c40b004-4b32-5246-a2de-f3578cd216bb",
+        "682b7848-60bd-5982-8bf3-b9eebeac25b0",
+        "af33f8d0-4048-5e21-aac9-5f78543d2906",
+        "bb3749a8-9a57-5ce7-8858-8f99bacb6a64",
+        "bfe665ff-697f-56af-9d3a-daadf03e72ad",
+        "eefd7991-4707-50b6-8f21-3287e81170cd"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "AAM0-S04": {
+      "matched_fact_ids": [
+        "265382ea-ca01-58a0-951a-820c2a850040",
+        "29229795-4748-5515-a6ac-6122ae23a1d4",
+        "4dd9f249-c121-59ef-9bd8-8d62cb794349",
+        "b23ba28b-b18b-575a-9647-a9e552b72a85",
+        "d4c28673-f1f4-5ff4-8dc5-1eec79321f3b",
+        "fdbf1d76-9c02-5a7f-b2e2-6f005e717bc9"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "AAM0-S01": {
+      "matched_fact_ids": [
+        "7fe3c534-edb3-5f0c-81e4-d7b7a8e71328",
+        "8fbd1cbe-136f-50cc-bedf-1f10179c19a0",
+        "b689c5de-ecfb-5a43-987c-9e17b9b2d3b3",
+        "c3cc7b08-e718-5216-8ec9-a83554553cf1"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ASU0-S01": {
+      "matched_fact_ids": [
+        "077144fd-df33-571d-b9a4-4c5f1d436d47",
+        "3ac39dd9-dfaf-563f-af70-d09ec7e9bb2d",
+        "c879ee40-acd1-5b4c-bd43-5f9f5b57df94",
+        "d4311897-7284-511c-af87-b7184da49d6e"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ASU0-S02": {
+      "matched_fact_ids": [
+        "0cc39c6e-d187-55bb-9177-c16f9ee4901c",
+        "257c39c4-126b-5855-9e29-0d5b02eed88a",
+        "90f69e1f-9bb7-5bd6-a862-008eed45ce68",
+        "adedc8ad-21c5-55a7-a0a8-578174c00b0a"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D15-S02": {
+      "matched_fact_ids": [
+        "6b5836c1-575a-5f49-9528-e00a77861dff",
+        "7e3a448a-f6b9-531a-a658-b2f95d33a6d4"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D15-S03": {
+      "matched_fact_ids": [
+        "4f08de07-97fa-5853-8695-3efcaf44aea2",
+        "aececd1b-f4a9-5a67-82b7-f5605a2b064e",
+        "dff77c0c-54f6-5813-a249-0e7e6010e686"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ASU0-S04": {
+      "matched_fact_ids": [
+        "5ddfe13c-d9fa-5d20-bd2f-8eeaa35da607",
+        "c17c669e-7460-5500-b070-6c0b24b3447e",
+        "c2f51018-5a81-5a71-a793-e492f7289a5f",
+        "ff2700e4-c645-5155-b935-9b8cbe0bdaab"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ASU0-S03": {
+      "matched_fact_ids": [
+        "724d2f4e-91e4-5974-a70b-013a9fc5b806",
+        "ba9e6d4d-3a88-501e-a674-e2d98db1cc78",
+        "f89bc6ad-eba9-5e6a-974b-e1c166587237"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D15-S01": {
+      "matched_fact_ids": [
+        "83ba7f85-f320-5227-8687-507403970ca1",
+        "a4657721-c0a9-5539-96e4-bc51513d9616"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D15-S04": {
+      "matched_fact_ids": [
+        "a4e75e1f-69b5-5eef-ae60-9e4385fe0046",
+        "d0828569-0fcd-5d9f-8f8c-cc9f3286b387",
+        "ef6af79d-fc41-5e12-af36-3d7c7a025984"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ATR0-S01": {
+      "matched_fact_ids": [
+        "07866c32-2bfc-5144-89c6-12feea3f5ddc",
+        "1338d208-22ef-591a-8855-b7983bd7852b",
+        "1d6f35b1-2bc6-5f37-ad52-7d9dc4519e73",
+        "28fe38e2-c3d0-5c64-bd9e-3687ac9651fa"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ATR0-S02": {
+      "matched_fact_ids": [
+        "0cf862a2-3a8d-5dcb-b689-b2f6821ff9e6",
+        "0ed2c9b8-11c4-5695-8871-307a2308733d",
+        "355b38d1-d241-5eb7-a045-5318e27e89ac",
+        "77f3d7f6-e181-597f-8778-305393d897eb",
+        "f9c6a435-5a9d-5746-9e94-73fa26a3fc7e"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ATR0-S03": {
+      "matched_fact_ids": [
+        "2125fcf0-f956-5278-b577-7ed91a3ba5a8",
+        "55f6a5bd-1bd6-5260-a463-8dd60dee0790",
+        "77d6fda8-1cab-53ef-b226-b79ed92d7621",
+        "a3c9064d-f040-537f-a0b8-cfc539409be2"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D14-S02": {
+      "matched_fact_ids": [
+        "2f14cf8e-4f03-5284-9598-f1d452be65a3",
+        "480c5ce7-4202-5eee-9d8c-5969956f3b80",
+        "6d59523d-3dd1-5358-960a-4ccaf74c2d15"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "ATR0-S04": {
+      "matched_fact_ids": [
+        "5a7a705b-a2d6-50c3-bdd8-00b80b92c1bf",
+        "7ddb727e-71a2-52f4-8649-b31e8225c7df",
+        "ab17e2d2-b9cc-5533-aa5b-4b5baff89be5",
+        "c4013408-f7cc-56ff-9002-1ed0c90bffbc"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D14-S01": {
+      "matched_fact_ids": [
+        "8e6ba6f4-f25a-51ac-a3a8-4c3f04aa33a9",
+        "9e85ec74-4a66-5ec5-923d-ba8382ab1712",
+        "fe782dc8-d971-58ba-be59-a02ccd1dbee4"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A02-S02": {
+      "matched_fact_ids": [
+        "1e3efe9c-40f9-5199-8758-beec873668c6",
+        "2d30922b-25f0-5593-a514-4a9b98c1ce01",
+        "43a3b712-d91c-5171-9dfe-73cc4b444cdd",
+        "c4953249-f796-5214-b465-a4afe58b1863",
+        "c75d5bd2-1693-593e-83df-c8e948566d07"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A02-S03": {
+      "matched_fact_ids": [
+        "1d8bebf2-243e-5428-a5f8-bce0eb0629eb",
+        "2ec3d4ad-adfe-5b9d-b428-2b3565fb7d92",
+        "464fff73-7c8d-5c7d-a22e-3c46197887f3",
+        "46af64e0-f3ca-57e8-b134-84dbf5757ba8",
+        "53de590b-72a2-504b-be0e-06eadabe9c0d",
+        "85125111-94b5-5115-bfdf-74c54f083289",
+        "b21196b5-0981-5642-ab0a-0cf2ca9d4282"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A02-S01": {
+      "matched_fact_ids": [
+        "26ddae8e-3dea-5c5d-a123-f9e6c997e6c0",
+        "6a6cb258-911a-5ef5-80b7-b0b956865a4b",
+        "77fe6b23-59ee-535a-9db9-9431096ef0bd",
+        "85327fdc-3f80-564e-b9db-039036181b76",
+        "af3f989a-e11f-5c09-a481-ee6781cbb642"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A01-S02": {
+      "matched_fact_ids": [
+        "0085d67b-0cef-518d-8530-cfbf4f7d934e",
+        "0fa2f1c1-39a8-596f-a398-0abb108b881a",
+        "936b7f1e-a104-55e2-afab-b6165b95b514",
+        "a173ff8a-0ac8-5492-9f34-1aef34c30d89",
+        "db0766ba-0656-5fdf-bddb-c805a303fe56"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A01-S03": {
+      "matched_fact_ids": [
+        "17df96b4-c917-547d-810a-77b47cd4ddb7",
+        "2cb34925-f0e2-5737-866e-f665b20507f7",
+        "427cc891-d37b-5cda-a0ef-611e378ccbc7"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A01-S01": {
+      "matched_fact_ids": [
+        "1982ecaf-0e67-5729-832f-5362d151ea3a",
+        "a5d11afe-d723-5115-999e-9c484fc764cb",
+        "d62ad8f6-77b4-59a6-8608-e38711eb8f41",
+        "e8cbb876-495d-5541-820f-094905e5b23a"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A00-S01": {
+      "matched_fact_ids": [
+        "05cf9ef5-0ae8-5052-9846-b6b232afcf3a",
+        "1ad50676-a0f6-5639-bdb9-699e00d7890d",
+        "216062dd-d1fb-5d85-9f83-4c0d85321192",
+        "44e54d35-3ea3-5f4d-acc6-65a9c2d53be6",
+        "544d9b7b-23cf-55db-8e84-3b240f9040d3",
+        "e631f354-2a4e-5f03-beca-8e61b3b8fcc0"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A00-S03": {
+      "matched_fact_ids": [
+        "120953c9-23e3-54e6-a1c4-1b4c092cbec2",
+        "cb00cb76-1567-5435-9df1-f81ec77eed28",
+        "ebe0fac5-e759-58c9-afb2-6486577305b2"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "A00-S02": {
+      "matched_fact_ids": [
+        "17fea75d-03f7-5d67-a3dd-6fabe9190eb4",
+        "647fdb29-9f2e-5f5e-aa2b-df671c04a5c2",
+        "65cda754-402e-5626-9a0f-0ce00175f11f",
+        "b6474bbf-7c6d-5226-a1a5-a517458a39ee",
+        "ee40f2f8-c93e-58f6-b6f7-39aec26d86fc"
+      ],
+      "unmatched_fact_ids": [
+        "801d9a92-957d-543b-9b6e-d697bc8ca7db"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "D09-S03": {
+      "matched_fact_ids": [
+        "0c8853ef-73ea-5868-bcfc-ce59852486a1",
+        "4b0c43e6-69fa-5ce1-bf7c-8ff4e3762a44"
+      ],
+      "unmatched_fact_ids": [
+        "a773d817-9b7b-56e5-a41a-d93995a3d352",
+        "b0297592-87f6-5d32-a45c-5d0df1c9c38b"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "D09-S01": {
+      "matched_fact_ids": [
+        "1f57bfac-f90c-51a1-9902-e83a83e84625",
+        "4875766e-e060-56f6-8f3b-d7fc237a99a7",
+        "b8a8eda2-0997-53e7-b47a-980eba68f985"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D09-S04": {
+      "matched_fact_ids": [
+        "6f09fd32-420f-5b98-ae07-c47ea91ba333"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D09-S02": {
+      "matched_fact_ids": [
+        "4ebbe997-1013-54bd-9d4c-9763bb509101",
+        "6ef212ea-f306-5f68-9990-8d36d352436e"
+      ],
+      "unmatched_fact_ids": [
+        "33551322-3f32-52bd-92d1-cd1de4b46be3"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "D08-S01": {
+      "matched_fact_ids": [
+        "3241f6e3-af7a-566c-990c-73a5921226b3",
+        "f238a60f-af62-552b-88ac-76694e8deb10"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D08-S02": {
+      "matched_fact_ids": [
+        "329b4ea2-60ad-5ee1-b0bb-b3f3433da493",
+        "dccda7fa-2dad-519a-840f-886a8eeaae11"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D08-S03": {
+      "matched_fact_ids": [
+        "53dea747-26c4-59da-9cf8-f26219bc3df1",
+        "7ed9cfdc-16cb-597d-90b4-16808ce748ae",
+        "d9fef6a1-7f34-5c52-a72c-9897118927bf"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D08-S04": {
+      "matched_fact_ids": [
+        "5ee9c6f3-da3a-53ce-9c23-b5b8e66f1816"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D07-S03": {
+      "matched_fact_ids": [
+        "0c17eddf-3878-5bd7-a277-eb4503337641",
+        "22da096e-01d4-56ff-b0df-faac95f4dae0",
+        "b66086aa-4a3a-552e-b1f8-d605cdee3121"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D07-S01": {
+      "matched_fact_ids": [],
+      "unmatched_fact_ids": [
+        "160c03d2-766b-5ed0-9a1d-80e2bd14b08f",
+        "d7ef973e-baa4-5cbb-8699-78729d40baf2",
+        "d8e0bfbc-bfe4-53e1-aefa-c17a747bff55"
+      ],
+      "status": "full_text_unmatched_facts"
+    },
+    "D07-S04": {
+      "matched_fact_ids": [
+        "57aa581e-cddc-5129-bba3-ebe4e13ad718",
+        "e69fc192-2dc6-5325-8fa2-7d108ffdd012"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D07-S02": {
+      "matched_fact_ids": [
+        "5ef57697-dded-56c1-83cc-f0e9866b5546",
+        "8b434192-9ff2-5a77-bb05-8dbba6bf55bc",
+        "a6067bf0-dfc8-5824-8887-b5d7e39bb008"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D06-S02": {
+      "matched_fact_ids": [
+        "1e69642f-65a1-5cc2-8246-02ca15dae672",
+        "396269d4-24bd-5890-92ad-0561895c06be",
+        "6875c03b-27d0-5510-bc24-4505cbf2292d",
+        "87d30644-3113-5a9a-bfeb-1472a3921029"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    },
+    "D06-S01": {
+      "matched_fact_ids": [
+        "7c247318-305f-52ba-aea4-d49f2084f8f4",
+        "835575cd-b47a-5fb3-a048-9703afd4d026",
+        "86d596d2-1428-5cc6-95de-176111a6ae71"
+      ],
+      "unmatched_fact_ids": [],
+      "status": "projected"
+    }
+  }
+}

@@ -164,8 +164,13 @@ class Embedder:
         return None
 
     def embed_one(self, text: str) -> list[float]:
-        """Embed a single text."""
-        return self._embed([text])[0]
+        """Embed a retrieval query, with an optional model-specific instruction."""
+        return self._embed([self._query_text(text)])[0]
+
+    @staticmethod
+    def _query_text(text: str) -> str:
+        instruction = cfg.services.embedding.query_instruction
+        return f"Instruct: {instruction}\nQuery:{text}" if instruction else text
 
     async def _aembed(self, texts: list[str]) -> list[list[float]]:
         """Async single-request embed with the same retry policy as ``_embed``.
@@ -202,7 +207,7 @@ class Embedder:
 
     async def aembed_one(self, text: str) -> list[float]:
         """Async embed of a single text (query path)."""
-        return (await self._aembed([text]))[0]
+        return (await self._aembed([self._query_text(text)]))[0]
 
     def embed_batch(self, texts: list[str]) -> list[list[float]]:
         """Embed a batch of texts (respects batch_size + concurrency)."""

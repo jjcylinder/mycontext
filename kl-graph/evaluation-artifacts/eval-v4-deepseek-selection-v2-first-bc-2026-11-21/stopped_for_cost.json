@@ -1,0 +1,39 @@
+{
+  "reason": "用户明确质疑全面重读的草率决策与成本；停止调度与服务，不继续模型评测。",
+  "completed": [
+    {
+      "question_id": "TR04",
+      "mode": "C",
+      "status": "completed"
+    },
+    {
+      "question_id": "AM03",
+      "mode": "C",
+      "status": "completed"
+    },
+    {
+      "question_id": "PO03",
+      "mode": "C",
+      "status": "completed"
+    }
+  ],
+  "interrupted": [
+    {
+      "question_id": "X01",
+      "mode": "C",
+      "run_id": "849b9c1d-abcd-415a-ad20-12ab109233c1",
+      "saved_status": "failed",
+      "note": "用户质疑成本后终止本地服务；不作为完成答卷评分。"
+    },
+    {
+      "question_id": "X03",
+      "mode": "C",
+      "run_id": "f05995b2-874e-4734-bf14-3ff627452353",
+      "saved_status": "failed",
+      "note": "用户质疑成本后终止本地服务；不作为完成答卷评分。"
+    }
+  ],
+  "B_submitted": false,
+  "current_code": "Full candidate rereading disabled by default; explicit diagnostic-only rank_evidence(review_unselected=True).",
+  "offline_tests": "14 selection tests passed; no additional model calls"
+}

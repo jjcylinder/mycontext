@@ -1,0 +1,27 @@
+{
+  "profile": "app_focus",
+  "answer_model_alias": "chatgpt-codex-default",
+  "codex_model_argument": null,
+  "embedding": "Qwen/Qwen3-Embedding-0.6B",
+  "dimensions": 1024,
+  "graph_marker": "graph-abc47ce2060b88a7",
+  "dataset_sha256": "d3af7d624eb6e2cb72ba918e5a73fe0c783f1316d13806cbd52254df4778566a",
+  "source_sha256": {
+    "kl_graph/query/fact_evidence.py": "53693000059a1bb626fb8d85c8e67b8b01098abd92e777d72cc58f4f523cdf05",
+    "kl_graph/query/source_graph.py": "3100695255b31be64919fa45d0903be03d5814c60252f084f6de1789faccbac8",
+    "kl_graph/ingest/llm_extractor.py": "1d7dd7891400bf96122cfffe8dc3460901ab056b4bed42a0c4872175bd3611f8",
+    "kl_graph/ingest/extraction_strategy.py": "fd9ca373e7535f0c6906dd8297a346886133bab6e5bb45964fac7c1a2d3f10a3",
+    "kl_graph/ingest/pipeline.py": "8a0876ee44ba1eaf32d4f55ac33c19a3ccf3a5bdc4339fdf1f157d5191a2d289",
+    "kl_server.py": "d08eb653b4e341c8768159e8c7d5700e55521ecb3e6424a164dffe53bb8c72ce",
+    "project_demo/app.py": "96f494e23c5f03309d2654ce6a312cb7524330b844b255f96f914be85b36f446",
+    "project_demo/context.py": "6d418ab74b3bfe3549d6c4c07c5db2c0e1b5afe743f748899a7318e9dbc057b3",
+    "project_demo/answer.py": "1c87a51b404f60fe6c5b74adb928194bbbf2bdd56a2a3374989f3df638682b79",
+    "project_demo/selection.py": "164f0769ca79b64f8e173766d23bb0506140c7f7efcecb2d15f050e2331c3b28",
+    "project_demo/codex_bridge.py": "3fab2d6ec208623ea2bebabbb516563f610d59b8a1d9a323a629e3a417ab867f",
+    "project_demo/model_setup.py": "28462cc728aa4e46b8b6456d4f331c65bb495302f4411bb13d9f8b9e97a42452",
+    "project_demo/evaluate.py": "650476878c301addc4d00edef3473e28022d167c63328383b7bbcca703b219e7",
+    "project_demo/local_embedding.py": "7c3bc4b121a9a133edde3881765cc94a0aa2a4fcab38482016649ace7f223320",
+    "kl_graph/query/count_comparison.py": "3462e950f5c88553385ebba0977f1beb91f960b458d9599e44e4c57e7f98e961"
+  },
+  "ready_sha256": "fa462b8482b84eb7061cbf2b485e715bf10a34fbaf5772c3666ea88d361967d5"
+}

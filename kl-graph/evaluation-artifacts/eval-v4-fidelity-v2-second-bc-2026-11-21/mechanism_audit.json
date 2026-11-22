@@ -1,0 +1,427 @@
+[
+  {
+    "question_id": "SU04",
+    "mode": "B",
+    "run_id": "8877272b-a47a-4504-b8a6-35755ff5d3e8",
+    "preflight_tokens": 3467,
+    "selected_records": 11,
+    "omitted_necessary_groups": 1,
+    "audit_batches": 1,
+    "audit_added_groups": 0,
+    "audit_new_sources": [],
+    "audit_new_sources_in_final_input": [],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [],
+    "projection_counts": {
+      "projected": 0,
+      "full_text_unmatched_facts": 0,
+      "no_projection": 0
+    }
+  },
+  {
+    "question_id": "SU04",
+    "mode": "C",
+    "run_id": "fd1c4cb6-45d9-4a13-9df6-649d7a53be6f",
+    "preflight_tokens": 3210,
+    "selected_records": 12,
+    "omitted_necessary_groups": 8,
+    "audit_batches": 1,
+    "audit_added_groups": 2,
+    "audit_new_sources": [
+      "A04-S02",
+      "ASU1-S03"
+    ],
+    "audit_new_sources_in_final_input": [
+      "A04-S02",
+      "ASU1-S03"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [
+      "ASU1-S03",
+      "ASU2-S03",
+      "A05-S01",
+      "ASU1-S01",
+      "ASU1-S02"
+    ],
+    "projection_counts": {
+      "projected": 74,
+      "full_text_unmatched_facts": 38,
+      "no_projection": 0
+    }
+  },
+  {
+    "question_id": "LE03",
+    "mode": "B",
+    "run_id": "0437630b-dd27-4174-9248-c255b29a32db",
+    "preflight_tokens": 2891,
+    "selected_records": 9,
+    "omitted_necessary_groups": 4,
+    "audit_batches": 1,
+    "audit_added_groups": 2,
+    "audit_new_sources": [
+      "A05-S04",
+      "ALE1-S03"
+    ],
+    "audit_new_sources_in_final_input": [
+      "A05-S04",
+      "ALE1-S03"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [],
+    "projection_counts": {
+      "projected": 0,
+      "full_text_unmatched_facts": 0,
+      "no_projection": 0
+    },
+    "ALE2-S02_selected": true
+  },
+  {
+    "question_id": "LE03",
+    "mode": "C",
+    "run_id": "3bfcf978-bcfc-418b-80e6-96ae0da66998",
+    "preflight_tokens": 1862,
+    "selected_records": 10,
+    "omitted_necessary_groups": 3,
+    "audit_batches": 1,
+    "audit_added_groups": 2,
+    "audit_new_sources": [
+      "A04-S01",
+      "ALE0-S03"
+    ],
+    "audit_new_sources_in_final_input": [
+      "A04-S01",
+      "ALE0-S03"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [
+      "ALE2-S04",
+      "ALE0-S03"
+    ],
+    "projection_counts": {
+      "projected": 84,
+      "full_text_unmatched_facts": 41,
+      "no_projection": 0
+    },
+    "ALE2-S02_selected": true
+  },
+  {
+    "question_id": "WR04",
+    "mode": "B",
+    "run_id": "340e9650-db6e-4c10-a472-24ee322da165",
+    "preflight_tokens": 4117,
+    "selected_records": 13,
+    "omitted_necessary_groups": 2,
+    "audit_batches": 1,
+    "audit_added_groups": 1,
+    "audit_new_sources": [
+      "AWR0-S03"
+    ],
+    "audit_new_sources_in_final_input": [
+      "AWR0-S03"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [],
+    "projection_counts": {
+      "projected": 0,
+      "full_text_unmatched_facts": 0,
+      "no_projection": 0
+    }
+  },
+  {
+    "question_id": "WR04",
+    "mode": "C",
+    "run_id": "ae86a6c2-dcd0-47ca-9158-5139e4cbd9de",
+    "preflight_tokens": 3705,
+    "selected_records": 15,
+    "omitted_necessary_groups": 4,
+    "audit_batches": 1,
+    "audit_added_groups": 2,
+    "audit_new_sources": [
+      "AWR0-S03",
+      "XWR1-05"
+    ],
+    "audit_new_sources_in_final_input": [
+      "AWR0-S03",
+      "XWR1-05"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [
+      "A00-S02",
+      "AWR0-S03",
+      "AWR1-S03",
+      "AWR1-S02",
+      "AWR1-S01"
+    ],
+    "projection_counts": {
+      "projected": 88,
+      "full_text_unmatched_facts": 42,
+      "no_projection": 0
+    }
+  },
+  {
+    "question_id": "X05",
+    "mode": "B",
+    "run_id": "189b3b6c-e8dc-47bc-9c54-63684d775516",
+    "preflight_tokens": 8048,
+    "selected_records": 29,
+    "omitted_necessary_groups": 27,
+    "audit_batches": 1,
+    "audit_added_groups": 11,
+    "audit_new_sources": [
+      "AAM1-S03",
+      "ALE2-S02",
+      "APO1-S01",
+      "APO1-S02",
+      "ASU0-S02",
+      "ASU1-S03",
+      "ASU2-S04",
+      "ATR1-S01",
+      "ATR1-S04",
+      "AWR2-S02",
+      "NLE-S02",
+      "XAM2-08",
+      "XAM3-05",
+      "XAM3-07",
+      "XLE2-05",
+      "XLE3-05",
+      "XLE3-06",
+      "XSU1-04",
+      "XSU2-07",
+      "XTR1-05",
+      "XTR1-08",
+      "XWR2-08",
+      "XWR3-06"
+    ],
+    "audit_new_sources_in_final_input": [
+      "XWR3-06"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [],
+    "projection_counts": {
+      "projected": 0,
+      "full_text_unmatched_facts": 0,
+      "no_projection": 0
+    },
+    "A04-S01_model_text": "查阅登记时，可先对照包内目录和实际可打开的材料，区分样本是否收录、内容是否可读，以及是否具备据此作出判定的条件。QA-A27仍缺期望答案和判定说明，覆盖部分翻译与公函模型问题。新摘要SEM-S09和润色POL-F08尚未补入该包。对已收录但缺少判定依据的样本，可按各自的输入与任务要求核对需要补充的内容。翻译问题可关注关键信息是否保留、术语是否一致，公函问题可关注格式和措辞是否符合该条请求。若表达允许有多种写法，建议在判定说明中写清哪些要素必须保留、哪些差异可以接受，便于复核时理解判定口径。对暂未收录的材料，可在目录上单列待补项，待归入后再核对文件及对应关系，避免仅凭材料名称推断包内覆盖范围。"
+  },
+  {
+    "question_id": "X05",
+    "mode": "C",
+    "run_id": "e6bc8c75-f3f6-44d6-a390-ccb0de9cd70d",
+    "preflight_tokens": 8160,
+    "selected_records": 57,
+    "omitted_necessary_groups": 21,
+    "audit_batches": 1,
+    "audit_added_groups": 15,
+    "audit_new_sources": [
+      "A00-S03",
+      "A01-S04",
+      "A03-S01",
+      "A03-S03",
+      "A03-S04",
+      "ALE1-S03",
+      "ALE2-S03",
+      "APO1-S01",
+      "APO1-S02",
+      "APO2-S01",
+      "APO2-S04",
+      "ASU0-S03",
+      "ASU1-S03",
+      "ASU2-S01",
+      "ATR1-S03",
+      "AWR1-S03",
+      "NAM-S03",
+      "T17-07",
+      "XAM2-06",
+      "XAM2-08",
+      "XLE2-05",
+      "XLE3-05",
+      "XSH2-02",
+      "XSH2-07",
+      "XSU1-04",
+      "XSU1-05",
+      "XTR1-08",
+      "XWR2-02"
+    ],
+    "audit_new_sources_in_final_input": [
+      "A00-S03",
+      "A03-S04",
+      "ALE1-S03",
+      "ALE2-S03",
+      "APO1-S01",
+      "APO1-S02",
+      "ASU0-S03",
+      "ASU1-S03",
+      "ATR1-S03",
+      "AWR1-S03",
+      "T17-07",
+      "XAM2-06",
+      "XAM2-08",
+      "XLE2-05",
+      "XLE3-05",
+      "XSH2-02",
+      "XSH2-07",
+      "XSU1-04",
+      "XSU1-05",
+      "XTR1-08",
+      "XWR2-02"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [
+      "ASU1-S03",
+      "APO1-S01",
+      "ALE2-S04",
+      "D09-S02",
+      "APO1-S02",
+      "D09-S03",
+      "AWR1-S03",
+      "AAM2-S02",
+      "A03-S04",
+      "ASU2-S02",
+      "AAM1-S04"
+    ],
+    "projection_counts": {
+      "projected": 89,
+      "full_text_unmatched_facts": 41,
+      "no_projection": 0
+    },
+    "A04-S01_model_text": "QA-A27仍缺期望答案和判定说明，覆盖部分翻译与公函模型问题。新摘要SEM-S09和润色POL-F08尚未补入该包。"
+  },
+  {
+    "question_id": "X07",
+    "mode": "B",
+    "run_id": "d1456fdd-0386-4678-a824-fd7cce587e25",
+    "preflight_tokens": 8068,
+    "selected_records": 27,
+    "omitted_necessary_groups": 19,
+    "audit_batches": 1,
+    "audit_added_groups": 16,
+    "audit_new_sources": [
+      "A00-S03",
+      "A01-S03",
+      "A04-S02",
+      "AAM0-S01",
+      "AAM0-S02",
+      "AAM0-S03",
+      "AAM1-S02",
+      "AAM2-S01",
+      "ALE2-S02",
+      "APO0-S01",
+      "ASU0-S03",
+      "ASU1-S02",
+      "ASU1-S03",
+      "ATR1-S02",
+      "AWR1-S01",
+      "AWR1-S02",
+      "AWR2-S01",
+      "AWR2-S03",
+      "D08-S02",
+      "D08-S03",
+      "NSU-S02",
+      "NTR-S02"
+    ],
+    "audit_new_sources_in_final_input": [
+      "AAM0-S01",
+      "AAM0-S02",
+      "AAM0-S03",
+      "AAM1-S02",
+      "AAM2-S01",
+      "ALE2-S02",
+      "APO0-S01",
+      "ASU1-S02",
+      "ASU1-S03",
+      "ATR1-S02",
+      "AWR2-S01",
+      "AWR2-S03",
+      "NSU-S02"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [],
+    "projection_counts": {
+      "projected": 0,
+      "full_text_unmatched_facts": 0,
+      "no_projection": 0
+    }
+  },
+  {
+    "question_id": "X07",
+    "mode": "C",
+    "run_id": "031f7b06-f713-4af9-8fb8-934bb7e5bd3b",
+    "preflight_tokens": 8123,
+    "selected_records": 46,
+    "omitted_necessary_groups": 21,
+    "audit_batches": 1,
+    "audit_added_groups": 15,
+    "audit_new_sources": [
+      "A00-S01",
+      "A00-S03",
+      "AAM0-S01",
+      "AAM0-S02",
+      "AAM0-S03",
+      "AAM1-S02",
+      "ALE0-S03",
+      "APO0-S01",
+      "APO0-S02",
+      "APO2-S03",
+      "ASU0-S03",
+      "ASU1-S02",
+      "ASU2-S01",
+      "ASU2-S03",
+      "ATR1-S01",
+      "ATR1-S02",
+      "AWR1-S01",
+      "AWR1-S02",
+      "AWR2-S01",
+      "AWR2-S02",
+      "AWR2-S03",
+      "D08-S02",
+      "D08-S03"
+    ],
+    "audit_new_sources_in_final_input": [
+      "A00-S01",
+      "AAM0-S01",
+      "AAM0-S02",
+      "AAM0-S03",
+      "AAM1-S02",
+      "ALE0-S03",
+      "APO0-S01",
+      "APO0-S02",
+      "APO2-S03",
+      "ASU0-S03",
+      "ASU1-S02",
+      "ASU2-S01",
+      "ASU2-S03",
+      "ATR1-S01",
+      "ATR1-S02",
+      "AWR1-S01",
+      "AWR1-S02",
+      "AWR2-S01",
+      "AWR2-S02",
+      "AWR2-S03"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [
+      "AAM1-S02",
+      "ALE2-S04",
+      "ALE0-S03",
+      "ASU1-S02",
+      "A00-S02",
+      "ASU2-S03",
+      "A05-S01",
+      "AWR1-S03",
+      "ATR1-S01",
+      "AAM2-S02",
+      "A03-S04",
+      "AWR1-S01",
+      "APO0-S01",
+      "ATR1-S02",
+      "AWR1-S02",
+      "AAM1-S04"
+    ],
+    "projection_counts": {
+      "projected": 84,
+      "full_text_unmatched_facts": 39,
+      "no_projection": 0
+    }
+  }
+]

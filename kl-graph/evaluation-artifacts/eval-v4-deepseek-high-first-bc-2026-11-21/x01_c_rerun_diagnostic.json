@@ -1,0 +1,10 @@
+{
+  "source_id": "AAM1-S04",
+  "in_candidates": true,
+  "in_batch_groups": false,
+  "in_pre_audit_groups": false,
+  "in_ranked_groups": false,
+  "selected": false,
+  "final_tokens": 5709,
+  "selected_records": 32
+}

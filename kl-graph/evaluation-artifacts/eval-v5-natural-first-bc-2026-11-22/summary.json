@@ -1,0 +1,126 @@
+{
+  "dataset_id": "project-a-v5-natural-app_focus-4f98497fe04be748",
+  "rubric": "V5-rubric-1",
+  "scores": {
+    "TR04": {
+      "B": {
+        "points": 2,
+        "possible": 3,
+        "complete": false,
+        "passed": false,
+        "extra": "把两条异常分支的复测状态都列作无法确认；原文 ATR2-S02、XTR2-04 已分别界定加密与损坏分支。",
+        "wall_seconds": 160.609996,
+        "cache_hits": 0
+      },
+      "C": {
+        "points": 2,
+        "possible": 3,
+        "complete": false,
+        "passed": false,
+        "extra": "",
+        "wall_seconds": 143.054703,
+        "cache_hits": 1
+      }
+    },
+    "AM03": {
+      "B": {
+        "points": 2,
+        "possible": 3,
+        "complete": false,
+        "passed": false,
+        "extra": "",
+        "wall_seconds": 72.768649,
+        "cache_hits": 0
+      },
+      "C": {
+        "points": 2,
+        "possible": 3,
+        "complete": false,
+        "passed": false,
+        "extra": "",
+        "wall_seconds": 61.869,
+        "cache_hits": 1
+      }
+    },
+    "PO03": {
+      "B": {
+        "points": 2,
+        "possible": 3,
+        "complete": false,
+        "passed": false,
+        "extra": "",
+        "wall_seconds": 65.06526,
+        "cache_hits": 0
+      },
+      "C": {
+        "points": 3,
+        "possible": 3,
+        "complete": true,
+        "passed": true,
+        "extra": "",
+        "wall_seconds": 83.608357,
+        "cache_hits": 1
+      }
+    },
+    "X01": {
+      "B": {
+        "points": 5,
+        "possible": 7,
+        "complete": false,
+        "passed": false,
+        "extra": "",
+        "wall_seconds": 216.583437,
+        "cache_hits": 0
+      },
+      "C": {
+        "points": 7,
+        "possible": 7,
+        "complete": true,
+        "passed": true,
+        "extra": "",
+        "wall_seconds": 193.311268,
+        "cache_hits": 1
+      }
+    },
+    "X03": {
+      "B": {
+        "points": 3,
+        "possible": 3,
+        "complete": true,
+        "passed": true,
+        "extra": "",
+        "wall_seconds": 218.070731,
+        "cache_hits": 0
+      },
+      "C": {
+        "points": 3,
+        "possible": 3,
+        "complete": true,
+        "passed": true,
+        "extra": "",
+        "wall_seconds": 175.924188,
+        "cache_hits": 1
+      }
+    }
+  },
+  "aggregate": {
+    "B": {
+      "points": 14,
+      "possible": 19,
+      "complete": 1,
+      "passed": 1,
+      "n": 5,
+      "mean_wall_seconds": 146.6,
+      "cache_hits": 0
+    },
+    "C": {
+      "points": 17,
+      "possible": 19,
+      "complete": 3,
+      "passed": 3,
+      "n": 5,
+      "mean_wall_seconds": 131.6,
+      "cache_hits": 5
+    }
+  }
+}

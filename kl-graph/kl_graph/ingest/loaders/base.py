@@ -59,6 +59,12 @@ def iter_records(source_dir: Path, record_type: str | None = None) -> Iterator[d
             yield rec
 
 
+def source_record(data: dict) -> dict:
+    """Read an adapter's optional, source-native provenance fields."""
+    metadata = data.get("source_record")
+    return metadata if isinstance(metadata, dict) else {}
+
+
 def scope_title(scope: dict | None) -> str:
     """Best-effort human title for a scope across product shapes.
 

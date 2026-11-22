@@ -1,0 +1,18 @@
+{
+  "mode": "reuse_existing_graph",
+  "fact_extraction_model": "ChatGPT via Codex (historical snapshot)",
+  "query_llm_model": "deepseek-flash",
+  "source_graph": "data/project_demo/v4-longform-runtime/datasets/project-a-v4-expanded-app_focus-d3af7d624eb6e2cb/graph-abc47ce2060b88a7",
+  "dataset_id": "project-a-v4-expanded-app_focus-d3af7d624eb6e2cb",
+  "source_knowledge_sha256": "661874ce2dad86481e2b27f60612d295c2d9526d6c642c28d7f58c8baed2f069",
+  "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+  "embedding_dimensions": 1024,
+  "counts": {
+    "units": 349,
+    "chunks": 161,
+    "facts": 965,
+    "entities": 182,
+    "edges": 3013
+  },
+  "note": "用户明确要求暂时沿用ChatGPT事实和图谱；本次未重新抽取。原索引未覆盖，复制快照用于DeepSeek查询。"
+}

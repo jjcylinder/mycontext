@@ -1,0 +1,78 @@
+{
+  "run_id": "af20a693-2d93-4d1e-bd62-0cbb2a275f7b",
+  "status": "completed",
+  "stage": "completed",
+  "error": null,
+  "created_at": "2026-11-22T02:50:51.001290+00:00",
+  "kind": "import",
+  "profile": "app_focus",
+  "dataset_id": "project-a-v4-expanded-app_focus-d3af7d624eb6e2cb",
+  "updated_at": "2026-11-22T02:50:51.053425+00:00",
+  "import_stats": {
+    "dataset_id": "project-a-v4-expanded-app_focus-d3af7d624eb6e2cb",
+    "digest": "d3af7d624eb6e2cb72ba918e5a73fe0c783f1316d13806cbd52254df4778566a",
+    "profile": "app_focus",
+    "record_count": 349,
+    "source_counts": {
+      "chat": 208,
+      "meeting": 21,
+      "document": 120
+    },
+    "cutoff": "2026-11-20T23:59:00+08:00",
+    "native": {
+      "native_run_id": "df8e5059-9af9-4a12-95e0-c09e80c21728",
+      "counts": {
+        "units_discovered": 349,
+        "units_skipped": 0,
+        "units_processed": 349,
+        "chunks_created": 161,
+        "extraction_total": 349,
+        "extraction_succeeded": 349,
+        "extraction_failed": 0
+      },
+      "knowledge": {
+        "messages": 20,
+        "entities": 182,
+        "facts": 965,
+        "edges": 3013
+      },
+      "elapsed_ms": 1966426,
+      "graph_backend": "sqlite",
+      "vector_backend": "zvec"
+    }
+  },
+  "result": {
+    "dataset_id": "project-a-v4-expanded-app_focus-d3af7d624eb6e2cb",
+    "digest": "d3af7d624eb6e2cb72ba918e5a73fe0c783f1316d13806cbd52254df4778566a",
+    "profile": "app_focus",
+    "record_count": 349,
+    "source_counts": {
+      "chat": 208,
+      "meeting": 21,
+      "document": 120
+    },
+    "cutoff": "2026-11-20T23:59:00+08:00",
+    "native": {
+      "native_run_id": "df8e5059-9af9-4a12-95e0-c09e80c21728",
+      "counts": {
+        "units_discovered": 349,
+        "units_skipped": 0,
+        "units_processed": 349,
+        "chunks_created": 161,
+        "extraction_total": 349,
+        "extraction_succeeded": 349,
+        "extraction_failed": 0
+      },
+      "knowledge": {
+        "messages": 20,
+        "entities": 182,
+        "facts": 965,
+        "edges": 3013
+      },
+      "elapsed_ms": 1966426,
+      "graph_backend": "sqlite",
+      "vector_backend": "zvec"
+    },
+    "graph_status": "ready"
+  }
+}

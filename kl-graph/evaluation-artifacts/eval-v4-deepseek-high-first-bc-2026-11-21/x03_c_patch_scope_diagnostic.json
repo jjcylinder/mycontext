@@ -1,0 +1,26 @@
+{
+  "sources": [
+    {
+      "source_id": "A03-S02",
+      "in_candidates": true,
+      "in_batch_groups": false,
+      "in_ranked_groups": false,
+      "selected": false
+    },
+    {
+      "source_id": "AWR1-S04",
+      "in_candidates": true,
+      "in_batch_groups": false,
+      "in_ranked_groups": false,
+      "selected": false
+    },
+    {
+      "source_id": "AWR2-S01",
+      "in_candidates": true,
+      "in_batch_groups": false,
+      "in_ranked_groups": false,
+      "selected": false
+    }
+  ],
+  "preflight_tokens": 5129
+}

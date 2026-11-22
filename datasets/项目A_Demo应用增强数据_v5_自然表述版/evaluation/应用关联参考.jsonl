@@ -1,0 +1,33 @@
+{"subject": "SK-TR", "relation": "关联任务", "object": "CASE-T17", "evidence": ["A02-S01"]}
+{"subject": "SK-SU", "relation": "关联任务", "object": "CASE-S24", "evidence": ["A02-S01"]}
+{"subject": "SK-AM", "relation": "关联任务", "object": "CASE-AM09", "evidence": ["A02-S02"]}
+{"subject": "SK-LE", "relation": "关联任务", "object": "CASE-L08", "evidence": ["A02-S02"]}
+{"subject": "SK-WR", "relation": "关联任务", "object": "CASE-W21", "evidence": ["A02-S03"]}
+{"subject": "SK-PO", "relation": "关联任务", "object": "CASE-P16", "evidence": ["A02-S03"]}
+{"subject": "ENV-A-DEMO", "relation": "应用包", "object": "APP-A-11", "evidence": ["A00-S01"]}
+{"subject": "ENV-A-PREVIEW", "relation": "应用包", "object": "APP-A-12", "evidence": ["A00-S02"]}
+{"subject": "APP-A-12", "relation": "预演模型", "object": "M-A12", "evidence": ["A05-S01"]}
+{"subject": "ENV-B-DEMO", "relation": "应用包", "object": "APP-B-12", "evidence": ["A00-S04"]}
+{"subject": "SU-EX06", "relation": "限定演示环境", "object": "ENV-A-PREVIEW", "evidence": ["ASU2-S03"]}
+{"subject": "SU-IM04", "relation": "含内容问题", "object": "SEM-S09", "evidence": ["ASU1-S04", "ASU0-S03"]}
+{"subject": "TR-X02", "relation": "异常语言补丁", "object": "LANG-02", "evidence": ["ATR1-S04"]}
+{"subject": "TR-X03", "relation": "回归状态", "object": "未完成", "evidence": ["ATR1-S04"]}
+{"subject": "CASE-AM09", "relation": "生成任务", "object": "JOB-AM0830", "evidence": ["AAM0-S01"]}
+{"subject": "JOB-AM0830", "relation": "快照", "object": "SN-AM07", "evidence": ["AAM1-S03"]}
+{"subject": "REPORT-AM0830", "relation": "仍绑定", "object": "SN-AM07", "evidence": ["AAM1-S04"]}
+{"subject": "IM-AM0750", "relation": "索引时间", "object": "08:20", "evidence": ["AAM1-S03"]}
+{"subject": "LET-F06", "relation": "源于", "object": "模板默认文号", "evidence": ["ALE0-S02", "ALE1-S03"]}
+{"subject": "LET-S08", "relation": "出现于", "object": "模型原始输出", "evidence": ["ALE0-S03", "ALE1-S03"]}
+{"subject": "CASE-W21", "relation": "周期", "object": "week", "evidence": ["AWR0-S01"]}
+{"subject": "CASE-R06", "relation": "周期", "object": "month", "evidence": ["AWR0-S01"]}
+{"subject": "CASE-W21", "relation": "调用组件", "object": "report-writer", "evidence": ["AWR1-S03"]}
+{"subject": "CASE-R06", "relation": "调用组件", "object": "report-writer", "evidence": ["AWR0-S01"]}
+{"subject": "POL-NUM02", "relation": "检查范围", "object": "数字日期", "evidence": ["APO0-S02"]}
+{"subject": "POL-LOCK01", "relation": "检查范围", "object": "否定条件", "evidence": ["APO0-S02"]}
+{"subject": "STYLE-P06", "relation": "检查范围", "object": "行文语气", "evidence": ["APO0-S02"]}
+{"subject": "U21", "relation": "身份", "object": "应用林工", "evidence": ["A01-S01", "XTR1-02"]}
+{"subject": "U26", "relation": "身份", "object": "模型林工", "evidence": ["A01-S03", "XTR1-04"]}
+{"subject": "QA-A27", "relation": "尚未纳入", "object": "SEM-S09", "evidence": ["A04-S01"]}
+{"subject": "QA-A27", "relation": "尚未纳入", "object": "POL-F08", "evidence": ["A04-S01"]}
+{"subject": "ROUTE-03", "relation": "已验证范围", "object": "SU-EX06", "evidence": ["A03-S01"]}
+{"subject": "LANG-02", "relation": "已验证范围", "object": "TR-X02", "evidence": ["A03-S02"]}

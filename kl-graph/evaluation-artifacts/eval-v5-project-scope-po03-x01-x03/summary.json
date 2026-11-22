@@ -1,0 +1,70 @@
+{
+  "dataset": "project-a-v5-natural-app_focus-4f98497fe04be748",
+  "rubric": "V5-rubric-1",
+  "aggregate": {
+    "B": {
+      "points": 8,
+      "possible": 13,
+      "all_points": 0,
+      "passed": 0,
+      "n": 3
+    },
+    "C": {
+      "points": 13,
+      "possible": 13,
+      "all_points": 3,
+      "passed": 3,
+      "n": 3
+    }
+  },
+  "scores": {
+    "PO03": {
+      "B": {
+        "points": 2,
+        "possible": 3,
+        "all_points": false,
+        "passed": false,
+        "extra": ""
+      },
+      "C": {
+        "points": 3,
+        "possible": 3,
+        "all_points": true,
+        "passed": true,
+        "extra": ""
+      }
+    },
+    "X01": {
+      "B": {
+        "points": 4,
+        "possible": 7,
+        "all_points": false,
+        "passed": false,
+        "extra": ""
+      },
+      "C": {
+        "points": 7,
+        "possible": 7,
+        "all_points": true,
+        "passed": true,
+        "extra": ""
+      }
+    },
+    "X03": {
+      "B": {
+        "points": 2,
+        "possible": 3,
+        "all_points": false,
+        "passed": false,
+        "extra": ""
+      },
+      "C": {
+        "points": 3,
+        "possible": 3,
+        "all_points": true,
+        "passed": true,
+        "extra": ""
+      }
+    }
+  }
+}

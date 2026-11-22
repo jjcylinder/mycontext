@@ -1,0 +1,1500 @@
+[
+  {
+    "cohort": "历史五题",
+    "qid": "TR04",
+    "mode": "B",
+    "run": "00e6a5b3-b4ae-4b38-ab2a-6399cd448974",
+    "candidate_digest": "f5a279c765516864dd3096f04f35c72d96ab21c7967eee72b5767afd5831ed30",
+    "candidates": 333,
+    "peak_total": 21803,
+    "peak_thinking": 21073,
+    "peak_nonthinking": 1063,
+    "fits": {
+      "4096": false,
+      "8192": false,
+      "16384": false,
+      "24576": true,
+      "32768": true,
+      "65536": true
+    },
+    "calls": [
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "db7071a9cd0c53243d2e881878fc8cd5c39cab203836b7e5562f6ed1fa0d2fb0",
+        "trace": "9e1039e752444d219188440be6578456.json",
+        "cache_hit": false,
+        "total": 21803,
+        "thinking": 21073,
+        "nonthinking": 730,
+        "returned_ids": [
+          "A00-S03",
+          "A02-S01",
+          "A03-S03",
+          "A03-S04",
+          "A05-S03",
+          "ATR0-S01",
+          "ATR0-S02",
+          "ATR0-S03",
+          "ATR0-S04",
+          "ATR2-S01",
+          "ATR2-S02",
+          "ATR2-S03",
+          "ATR2-S04",
+          "D07-S01",
+          "NTR-S03",
+          "XSH1-04",
+          "XSH1-08",
+          "XTR3-03",
+          "XTR3-07"
+        ]
+      },
+      {
+        "stage": "global_ranking",
+        "request_hash": "71d5dcad9e4b4459f893d773b2fbc881950feaf48e092d078cd728af9aaa7513",
+        "trace": "b8ae67f6a06840019cf80de34d9dfadc.json",
+        "cache_hit": false,
+        "total": 15956,
+        "thinking": 14893,
+        "nonthinking": 1063,
+        "returned_ids": [
+          "A00-S03",
+          "A02-S01",
+          "A03-S03",
+          "A03-S04",
+          "A05-S03",
+          "ATR0-S01",
+          "ATR0-S02",
+          "ATR0-S03",
+          "ATR0-S04",
+          "ATR2-S01",
+          "ATR2-S02",
+          "ATR2-S03",
+          "ATR2-S04",
+          "D07-S01",
+          "NTR-S03",
+          "XSH1-04",
+          "XSH1-08",
+          "XTR3-07"
+        ]
+      },
+      {
+        "stage": "coverage_audit",
+        "request_hash": "dbacd12a37bb21cce82522429ccfbbe364fd2c62be19656f48efa9daeef4200b",
+        "trace": "62db19141b0c47818cc38cb0b208c3e6.json",
+        "cache_hit": false,
+        "total": 3308,
+        "thinking": 3302,
+        "nonthinking": 6,
+        "returned_ids": []
+      }
+    ],
+    "watch": {
+      "D08-S02": {
+        "candidate": true,
+        "stages_returning_id": [],
+        "final": false,
+        "content": null
+      },
+      "ATR0-S04": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "问题交接时，可按需要核查的内容准备材料。格式问题可附源文档与译文中对应的版面位置，便于查看变化发生在哪个元素上。异常提示问题可附触发步骤及提示文本，便于在相同条件下复查。译义问题可圈出存在争议的片段，并保留判断语义所需的上下文。格式及异常提示由应用周工处理；译义问题由应用提供期望答案后交模型林工分析；整体回归由测试陈工组织。准备期望答案时，可说明源文中哪些含义必须保留，以及哪些表达允许随上下文调整，便于后续分析差异。若同一份材料同时出现版面和语义现象，可分别标明各自的复查位置。组织回归时，可把各项问题的触发条件与观察点列入检查记录，便于复查时定位对应页面或语段。"
+      },
+      "ATR2-S03": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "查阅待跟进项时，可分别在缺陷记录、用例资料和环境记录中定位对应条目。若要安排后续核查，建议先查看每项预期补充的材料，再根据材料是否齐备选择核查方式。缺陷项可从已有描述入手，确认可用于复核的输入和触发条件；用例项可查阅当前版本的资料，定位判定依据应补充的位置。BUG-S11仍未解决；QA-A27期望答案和判定说明缺失；LANG-02尚未部署ENV-A-DEMO。后续若补齐用例资料，可把期望输出与具体判定条件对应起来，避免只凭文案相似度给出结论。环境项可在具备部署记录后核对目标环境和实际版本，再判断是否具备开展相关验证的条件。若需要更新跟进状态，可在各自条目中附上对应依据，便于查阅者按编号追溯。"
+      }
+    }
+  },
+  {
+    "cohort": "历史五题",
+    "qid": "TR04",
+    "mode": "C",
+    "run": "bcc4a62e-3ef4-4fec-b86a-24f3fb4f28b6",
+    "candidate_digest": "f5a279c765516864dd3096f04f35c72d96ab21c7967eee72b5767afd5831ed30",
+    "candidates": 333,
+    "peak_total": 18067,
+    "peak_thinking": 17064,
+    "peak_nonthinking": 1003,
+    "fits": {
+      "4096": false,
+      "8192": false,
+      "16384": false,
+      "24576": true,
+      "32768": true,
+      "65536": true
+    },
+    "calls": [
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "db7071a9cd0c53243d2e881878fc8cd5c39cab203836b7e5562f6ed1fa0d2fb0",
+        "trace": "96633377d60049c9a9faea20de297816.json",
+        "cache_hit": false,
+        "total": 13994,
+        "thinking": 13106,
+        "nonthinking": 888,
+        "returned_ids": [
+          "A00-S03",
+          "A01-S01",
+          "A01-S03",
+          "A03-S03",
+          "A03-S04",
+          "ATR0-S01",
+          "ATR0-S02",
+          "ATR0-S03",
+          "ATR0-S04",
+          "ATR2-S01",
+          "ATR2-S02",
+          "ATR2-S03",
+          "ATR2-S04",
+          "T03-05",
+          "T04-07",
+          "XSH1-04",
+          "XSH1-08",
+          "XTR2-07",
+          "XTR3-03",
+          "XTR3-06",
+          "XTR3-07"
+        ]
+      },
+      {
+        "stage": "global_ranking",
+        "request_hash": "2428eaf94626c70700c7e2a5b8ab0e2e950381259bb7590e80876554b0c8d677",
+        "trace": "4702a1c25d3f4870876f16524f0fc318.json",
+        "cache_hit": false,
+        "total": 18067,
+        "thinking": 17064,
+        "nonthinking": 1003,
+        "returned_ids": [
+          "A00-S03",
+          "A01-S01",
+          "A01-S03",
+          "A03-S03",
+          "A03-S04",
+          "A05-S03",
+          "ATR0-S02",
+          "ATR0-S03",
+          "ATR0-S04",
+          "ATR2-S01",
+          "ATR2-S02",
+          "ATR2-S03",
+          "NTR-S03",
+          "T16-02",
+          "T16-07",
+          "XSH1-04",
+          "XSH1-06",
+          "XSH1-08",
+          "XTR3-07"
+        ]
+      },
+      {
+        "stage": "coverage_audit",
+        "request_hash": "54596452cb83e033004ce3180d0fe4136078b20432813e88883a34e664e026f8",
+        "trace": "d30fbd8f84ac4ee095ffef29d8f71b01.json",
+        "cache_hit": false,
+        "total": 8174,
+        "thinking": 8073,
+        "nonthinking": 101,
+        "returned_ids": [
+          "ATR0-S01",
+          "ATR2-S01"
+        ]
+      }
+    ],
+    "watch": {
+      "D08-S02": {
+        "candidate": true,
+        "stages_returning_id": [],
+        "final": false,
+        "content": null
+      },
+      "ATR0-S04": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "格式及异常提示由应用周工处理；译义问题由应用提供期望答案后交模型林工分析；整体回归由测试陈工组织。"
+      },
+      "ATR2-S03": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "BUG-S11仍未解决；QA-A27期望答案和判定说明缺失；LANG-02尚未部署ENV-A-DEMO。"
+      }
+    }
+  },
+  {
+    "cohort": "历史五题",
+    "qid": "AM03",
+    "mode": "B",
+    "run": "7dfdc8f2-e15b-4f35-8b07-dc7bc92c6095",
+    "candidate_digest": "f457c6b9d954cbed824bff31dbd196eed367519816c0ef9fb807e2977f4148e4",
+    "candidates": 197,
+    "peak_total": 14574,
+    "peak_thinking": 13830,
+    "peak_nonthinking": 744,
+    "fits": {
+      "4096": false,
+      "8192": false,
+      "16384": true,
+      "24576": true,
+      "32768": true,
+      "65536": true
+    },
+    "calls": [
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "e85b0f64aa8f02e8cecd3206c5dea70d7a0ea96238863e1cbd16dfb4de5a3cc6",
+        "trace": "1f8528ffba824f9698ede51bfb5b0571.json",
+        "cache_hit": false,
+        "total": 8061,
+        "thinking": 7407,
+        "nonthinking": 654,
+        "returned_ids": [
+          "AAM0-S01",
+          "AAM0-S02",
+          "AAM0-S04",
+          "AAM1-S01",
+          "AAM1-S02",
+          "AAM1-S03",
+          "AAM1-S04",
+          "AAM2-S01",
+          "AAM2-S02",
+          "AAM2-S03",
+          "AAM2-S04",
+          "XAM1-08",
+          "XAM2-06",
+          "XAM2-07",
+          "XAM2-08",
+          "XAM3-02",
+          "XAM3-03",
+          "XAM3-05",
+          "XAM3-06",
+          "XAM3-07",
+          "XSH2-06",
+          "XSH2-07"
+        ]
+      },
+      {
+        "stage": "global_ranking",
+        "request_hash": "1c99b4095a44e3a1d2a977d01ecf69a87340fba0498f1987fdef13d090a74b78",
+        "trace": "29bebfeacd19460192d869b6805e714f.json",
+        "cache_hit": false,
+        "total": 14574,
+        "thinking": 13830,
+        "nonthinking": 744,
+        "returned_ids": [
+          "AAM0-S01",
+          "AAM0-S04",
+          "AAM1-S01",
+          "AAM1-S02",
+          "AAM1-S03",
+          "AAM1-S04",
+          "AAM2-S01",
+          "AAM2-S02",
+          "AAM2-S03",
+          "AAM2-S04",
+          "XAM1-08",
+          "XAM2-06",
+          "XAM2-07",
+          "XAM2-08",
+          "XAM3-05",
+          "XAM3-06",
+          "XAM3-07",
+          "XSH2-07"
+        ]
+      },
+      {
+        "stage": "coverage_audit",
+        "request_hash": "ec3bfe8a945b565a63b3068c106b1a9646a54af5786c20bf3d5037bfbc7565e5",
+        "trace": "6af36e599a1142ed9599c7c63bc5dc2d.json",
+        "cache_hit": false,
+        "total": 1250,
+        "thinking": 1244,
+        "nonthinking": 6,
+        "returned_ids": []
+      }
+    ],
+    "watch": {
+      "AAM1-S04": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "复核时可把当前检索结果与既有早报的生成记录放在一起看。检索结果说明查询时能看到哪些材料，早报关联的快照可用来追溯成稿所依据的材料范围。08:25已能检索到IM-AM0750；原REPORT-AM0830仍绑定旧快照SN-AM07，本次没有以新快照重跑。send.status=not_requested。若需要查看新材料会怎样影响摘要，可考虑发起一次独立的生成调用，并保存对应的快照标识、文案和引用，便于比较时间措辞或待确认条件是否有变化。比较时可保留当前成稿作为核对依据，让每个版本都能追溯到对应的生成记录。若复核只涉及文案内容，可将发送状态作为单独的检查项。需要核实对外流转情况时，可查询发送环节的记录，并区分请求是否发起与发送结果是否返回。"
+      }
+    }
+  },
+  {
+    "cohort": "历史五题",
+    "qid": "AM03",
+    "mode": "C",
+    "run": "d35f485d-f3dd-459e-9763-a94314448fbe",
+    "candidate_digest": "d37201ce293ca83c424a74e5c9705dc0e38e8dc45bfc7e2527166b6bfa1db22e",
+    "candidates": 222,
+    "peak_total": 14251,
+    "peak_thinking": 13573,
+    "peak_nonthinking": 678,
+    "fits": {
+      "4096": false,
+      "8192": false,
+      "16384": true,
+      "24576": true,
+      "32768": true,
+      "65536": true
+    },
+    "calls": [
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "68eb513427fbe958ae3d6d11789d4886829c86b08aac96f7a438783d4f3a5c8d",
+        "trace": "b2947e2bf1de438eba725ea735e9a59b.json",
+        "cache_hit": false,
+        "total": 11725,
+        "thinking": 11189,
+        "nonthinking": 536,
+        "returned_ids": [
+          "AAM0-S01",
+          "AAM0-S03",
+          "AAM0-S04",
+          "AAM1-S01",
+          "AAM1-S02",
+          "AAM1-S03",
+          "AAM1-S04",
+          "AAM2-S03",
+          "AAM2-S04",
+          "XAM2-07",
+          "XAM2-08",
+          "XAM3-06",
+          "XAM3-07"
+        ]
+      },
+      {
+        "stage": "global_ranking",
+        "request_hash": "ff65015dc9558eceb0f33c35c736e48ae5333b6c86d5517297f132ea80d5dc6b",
+        "trace": "42fbe83d1dfa4349978855a5dc8dd6d4.json",
+        "cache_hit": false,
+        "total": 14251,
+        "thinking": 13573,
+        "nonthinking": 678,
+        "returned_ids": [
+          "AAM0-S01",
+          "AAM0-S02",
+          "AAM0-S04",
+          "AAM1-S01",
+          "AAM1-S02",
+          "AAM1-S03",
+          "AAM1-S04",
+          "AAM2-S02",
+          "AAM2-S03",
+          "AAM2-S04",
+          "XAM2-06",
+          "XAM2-07",
+          "XAM3-02",
+          "XAM3-05",
+          "XAM3-06",
+          "XAM3-07",
+          "XSH2-07"
+        ]
+      },
+      {
+        "stage": "coverage_audit",
+        "request_hash": "0df0f52e747cefb105df2cee03464eb05776cb430776af680361777aed9600a6",
+        "trace": "32ec60a711914a1fb38783222053d28e.json",
+        "cache_hit": false,
+        "total": 3516,
+        "thinking": 3421,
+        "nonthinking": 95,
+        "returned_ids": [
+          "XAM2-07",
+          "XAM2-08"
+        ]
+      }
+    ],
+    "watch": {
+      "AAM1-S04": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "复核时可把当前检索结果与既有早报的生成记录放在一起看。检索结果说明查询时能看到哪些材料，早报关联的快照可用来追溯成稿所依据的材料范围。08:25已能检索到IM-AM0750；原REPORT-AM0830仍绑定旧快照SN-AM07，本次没有以新快照重跑。send.status=not_requested。若需要查看新材料会怎样影响摘要，可考虑发起一次独立的生成调用，并保存对应的快照标识、文案和引用，便于比较时间措辞或待确认条件是否有变化。比较时可保留当前成稿作为核对依据，让每个版本都能追溯到对应的生成记录。若复核只涉及文案内容，可将发送状态作为单独的检查项。需要核实对外流转情况时，可查询发送环节的记录，并区分请求是否发起与发送结果是否返回。"
+      }
+    }
+  },
+  {
+    "cohort": "历史五题",
+    "qid": "PO03",
+    "mode": "B",
+    "run": "df7f44b4-8344-491d-8d4d-81134f6a663b",
+    "candidate_digest": "04cc3abc7869e0202089322c179753aed75f3c500f78aea9956bec9a3b9692e0",
+    "candidates": 176,
+    "peak_total": 12454,
+    "peak_thinking": 11888,
+    "peak_nonthinking": 566,
+    "fits": {
+      "4096": false,
+      "8192": false,
+      "16384": true,
+      "24576": true,
+      "32768": true,
+      "65536": true
+    },
+    "calls": [
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "47e8812515acc3465d242e0c24efd25c084b364cc116134b4b2df0eb7e5b17ac",
+        "trace": "687d812aa28f433a8335a293409e9537.json",
+        "cache_hit": false,
+        "total": 6292,
+        "thinking": 5907,
+        "nonthinking": 385,
+        "returned_ids": [
+          "APO0-S02",
+          "APO0-S04",
+          "APO1-S04",
+          "APO2-S02",
+          "APO2-S03",
+          "APO2-S04",
+          "XPO2-03",
+          "XPO2-06",
+          "XPO2-07"
+        ]
+      },
+      {
+        "stage": "global_ranking",
+        "request_hash": "47adcde4fbf57446a9471d49387c1f3968e9051d2a7082b392455775effcc8c0",
+        "trace": "400b69f4ce6a4d729685f98d2759c6e5.json",
+        "cache_hit": false,
+        "total": 12454,
+        "thinking": 11888,
+        "nonthinking": 566,
+        "returned_ids": [
+          "APO0-S02",
+          "APO0-S04",
+          "APO1-S04",
+          "APO2-S02",
+          "APO2-S03",
+          "APO2-S04",
+          "XPO2-03",
+          "XPO2-06",
+          "XPO2-07"
+        ]
+      }
+    ],
+    "watch": {
+      "APO0-S02": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "检查时可先把修订稿与源文按事项对齐。若润色时拆分或合并了句子，可沿同一事项追踪相关词句在修订稿中的位置，便于查找修饰对象随语序变化而发生偏移的地方。POL-LOCK01为拟、尚未、待确认等约束检查；POL-NUM02为数字日期检查；STYLE-P06为6个只检查行文与语气的样例。核对状态措辞时，可查看状态词所限定的动作，以及后续句子是否沿用了同一前提。数字和日期可连同单位、起止关系及对应事项一起核对。若数值相同但出现在别的事项下，可标出前后位置供复核。查看行文与语气样例时，可从句间过渡、措辞是否得体和指代是否清晰入手。若遇到超出样例检查范围的疑点，可另记待核事项，以免样例记录承担额外的判断。"
+      },
+      "APO1-S04": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "阅读这段验证记录时，可先看每项检查覆盖的内容，再看它的执行状态。数字日期项适合核对文字中的数值和日期是否保留。行文评审的记录可用于判断表达是否通顺。若需要判断事实约束的覆盖情况，还需查阅对应回归项的记录，确认哪些内容已有结果、哪些仍待核实。整理时可把检查范围和结果放在同一处，便于读者直接看清通过结论适用于哪些内容。APP-A-12加入数字日期检查，POL-NUM02两条通过；POL-LOCK01尚未完成回归。STYLE-P06六条行文评审通过，不检查上述事实约束。后续若补做回归，可在用例中逐项对照表示确定程度的用词、条件限制和确认状态，并记录差异所在的位置。这样更新验证记录时，每项状态都能对应到具体检查内容，便于复核。"
+      },
+      "APO2-S02": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "后续定位可从状态记录、样例对照和环境信息入手。状态记录可用于核对相关事项的关闭情况，样例对照可用于查看否定表达和条件从句在改写前后的含义，环境信息可用于确认复核所用的检查器与使用场景是否对应。记录中涉及环境时，建议注明所指环境，便于回查。POL-F08尚未关闭；POL-LOCK01否定和条件回归未完成，正式环境未升级检查器。准备补查样例时，可将包含否定或条件的句子连同相邻语句一并查看。否定表达可核对其作用对象和覆盖范围，尤其是句子拆开或语序调整之后。条件表达可核对前提仍约束哪项操作，以及例外是否仍对应同一情形。若需要更新回归记录，可分别查阅对应的状态依据、样例结果和环境版本信息，再填写有依据的内容。"
+      }
+    }
+  },
+  {
+    "cohort": "历史五题",
+    "qid": "PO03",
+    "mode": "C",
+    "run": "ac77b0e2-acce-4396-91a4-2ca6f8759739",
+    "candidate_digest": "ffa060f690cc7cdd9a8292853b714949e84034df1db09692eafd6440b8726197",
+    "candidates": 198,
+    "peak_total": 13760,
+    "peak_thinking": 13162,
+    "peak_nonthinking": 598,
+    "fits": {
+      "4096": false,
+      "8192": false,
+      "16384": true,
+      "24576": true,
+      "32768": true,
+      "65536": true
+    },
+    "calls": [
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "9f3e8176ff01928548a629bea5e84b129c274aa1e217ad19ae79b712f1527974",
+        "trace": "a15620696712477f93a1487faa359a28.json",
+        "cache_hit": false,
+        "total": 8858,
+        "thinking": 8400,
+        "nonthinking": 458,
+        "returned_ids": [
+          "APO0-S02",
+          "APO0-S03",
+          "APO0-S04",
+          "APO1-S02",
+          "APO1-S04",
+          "APO2-S02",
+          "APO2-S03",
+          "APO2-S04",
+          "XPO2-03",
+          "XPO2-06",
+          "XPO2-07",
+          "XPO2-08",
+          "XPO3-07"
+        ]
+      },
+      {
+        "stage": "global_ranking",
+        "request_hash": "bc5395e2f857402e734f7dbbf86936508cdb733b4b73c1fc608ae7afa1d20e7a",
+        "trace": "d8e27e962fee40d3a17da6a5fde2c148.json",
+        "cache_hit": false,
+        "total": 13760,
+        "thinking": 13162,
+        "nonthinking": 598,
+        "returned_ids": [
+          "A04-S02",
+          "APO0-S02",
+          "APO0-S03",
+          "APO0-S04",
+          "APO1-S02",
+          "APO1-S04",
+          "APO2-S01",
+          "APO2-S02",
+          "APO2-S03",
+          "APO2-S04",
+          "XPO2-03",
+          "XPO2-06",
+          "XPO2-07",
+          "XPO3-06"
+        ]
+      },
+      {
+        "stage": "coverage_audit",
+        "request_hash": "d4288fc61203d441d40efb575924d8324d3af534401fa7bca132cccb12510351",
+        "trace": "3447f9693483487fab1d62a0fe516349.json",
+        "cache_hit": false,
+        "total": 2759,
+        "thinking": 2753,
+        "nonthinking": 6,
+        "returned_ids": []
+      }
+    ],
+    "watch": {
+      "APO0-S02": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "POL-LOCK01为拟、尚未、待确认等约束检查；POL-NUM02为数字日期检查；STYLE-P06为6个只检查行文与语气的样例。"
+      },
+      "APO1-S04": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "阅读这段验证记录时，可先看每项检查覆盖的内容，再看它的执行状态。数字日期项适合核对文字中的数值和日期是否保留。行文评审的记录可用于判断表达是否通顺。若需要判断事实约束的覆盖情况，还需查阅对应回归项的记录，确认哪些内容已有结果、哪些仍待核实。整理时可把检查范围和结果放在同一处，便于读者直接看清通过结论适用于哪些内容。APP-A-12加入数字日期检查，POL-NUM02两条通过；POL-LOCK01尚未完成回归。STYLE-P06六条行文评审通过，不检查上述事实约束。后续若补做回归，可在用例中逐项对照表示确定程度的用词、条件限制和确认状态，并记录差异所在的位置。这样更新验证记录时，每项状态都能对应到具体检查内容，便于复核。"
+      },
+      "APO2-S02": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "POL-F08尚未关闭；POL-LOCK01否定和条件回归未完成，正式环境未升级检查器。"
+      }
+    }
+  },
+  {
+    "cohort": "历史五题",
+    "qid": "X01",
+    "mode": "C",
+    "run": "55569035-290d-4ab6-8269-988d8e248895",
+    "candidate_digest": "51d7c1b04e95cd412dac900bb5d16dac594874030b6afd38ae7b7871f6ee3f03",
+    "candidates": 237,
+    "peak_total": 15556,
+    "peak_thinking": 14150,
+    "peak_nonthinking": 1406,
+    "fits": {
+      "4096": false,
+      "8192": false,
+      "16384": true,
+      "24576": true,
+      "32768": true,
+      "65536": true
+    },
+    "calls": [
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "1b5750d2d4c980ca5f36d79a703f0ac455847d5c2581529334b85a4a2f53dd7c",
+        "trace": "a7452e463b23425e850d3583f91d3665.json",
+        "cache_hit": false,
+        "total": 10388,
+        "thinking": 9730,
+        "nonthinking": 658,
+        "returned_ids": [
+          "AAM0-S04",
+          "AAM2-S01",
+          "AAM2-S02",
+          "AAM2-S03",
+          "AAM2-S04",
+          "ALE0-S04",
+          "ALE2-S01",
+          "ALE2-S02",
+          "APO0-S04",
+          "APO2-S01",
+          "APO2-S02",
+          "APO2-S04",
+          "ASU0-S04",
+          "ASU2-S01",
+          "ASU2-S02",
+          "ASU2-S03",
+          "ASU2-S04",
+          "ATR0-S03",
+          "ATR0-S04",
+          "ATR2-S01",
+          "ATR2-S02",
+          "ATR2-S03",
+          "AWR0-S04",
+          "AWR1-S04",
+          "AWR2-S01",
+          "AWR2-S02",
+          "AWR2-S04"
+        ]
+      },
+      {
+        "stage": "global_ranking",
+        "request_hash": "652d3eb63e2dcebe33a8f969f0c1381da3a202b892d60881c000b16517d820ac",
+        "trace": "a35e116880184fa19901fecb571451e1.json",
+        "cache_hit": false,
+        "total": 15556,
+        "thinking": 14150,
+        "nonthinking": 1406,
+        "returned_ids": [
+          "A03-S01",
+          "A03-S03",
+          "A05-S01",
+          "A05-S03",
+          "AAM0-S04",
+          "AAM2-S01",
+          "AAM2-S02",
+          "AAM2-S04",
+          "ALE0-S04",
+          "ALE2-S01",
+          "ALE2-S02",
+          "APO0-S04",
+          "APO1-S04",
+          "APO2-S02",
+          "APO2-S04",
+          "ASU0-S04",
+          "ASU1-S04",
+          "ASU2-S04",
+          "ATR0-S02",
+          "ATR0-S03",
+          "ATR0-S04",
+          "ATR2-S01",
+          "ATR2-S02",
+          "ATR2-S03",
+          "ATR2-S04",
+          "AWR0-S04",
+          "AWR1-S04",
+          "AWR2-S02",
+          "AWR2-S04",
+          "M03-S02"
+        ]
+      },
+      {
+        "stage": "coverage_audit",
+        "request_hash": "a14a9ca07fdb570dd4cc12211b294c5a0eadfad82d65a35c80c35728a2064b8f",
+        "trace": "e5ed392c1851427a9d39926557553150.json",
+        "cache_hit": false,
+        "total": 10158,
+        "thinking": 10017,
+        "nonthinking": 141,
+        "returned_ids": [
+          "AAM2-S03",
+          "ASU2-S03"
+        ]
+      }
+    ],
+    "watch": {
+      "AAM1-S04": {
+        "candidate": true,
+        "stages_returning_id": [],
+        "final": false,
+        "content": null
+      }
+    }
+  },
+  {
+    "cohort": "历史五题",
+    "qid": "X03",
+    "mode": "C",
+    "run": "85aef7f1-6439-4347-a931-32134c130a32",
+    "candidate_digest": "2f6a3a8e129f7fb3dd260314a7f974a44daa5d7b3c33a18f7e3f2dc54bf5f37b",
+    "candidates": 293,
+    "peak_total": 13841,
+    "peak_thinking": 13704,
+    "peak_nonthinking": 1143,
+    "fits": {
+      "4096": false,
+      "8192": false,
+      "16384": true,
+      "24576": true,
+      "32768": true,
+      "65536": true
+    },
+    "calls": [
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "66e24ccb31180cc14130a2ddacadee555896f1f6567b88434f0773db1943868c",
+        "trace": "2a70517c9d424f7ebd11a662aea6f783.json",
+        "cache_hit": false,
+        "total": 9628,
+        "thinking": 8485,
+        "nonthinking": 1143,
+        "returned_ids": [
+          "A00-S01",
+          "A00-S02",
+          "A01-S03",
+          "A03-S01",
+          "A03-S03",
+          "A03-S04",
+          "A05-S01",
+          "A05-S03",
+          "A05-S04",
+          "AAM2-S02",
+          "AAM2-S04",
+          "ALE1-S04",
+          "ALE2-S02",
+          "ALE2-S03",
+          "APO2-S02",
+          "APO2-S04",
+          "ASU1-S04",
+          "ASU2-S02",
+          "ASU2-S03",
+          "ASU2-S04",
+          "ATR2-S03",
+          "ATR2-S04",
+          "AWR2-S02",
+          "AWR2-S04",
+          "XSH1-01",
+          "XSH1-04",
+          "XSH1-06",
+          "XSH1-07",
+          "XSH1-08",
+          "XSU3-03",
+          "XSU3-05",
+          "XSU3-07",
+          "XWR3-03"
+        ]
+      },
+      {
+        "stage": "global_ranking",
+        "request_hash": "0dcb2ab869fea4bc60fbeae2ca14e447abd4ce5184f698197fccba15239b69c1",
+        "trace": "841270e07b214586a705d3fb096d652d.json",
+        "cache_hit": false,
+        "total": 12729,
+        "thinking": 11763,
+        "nonthinking": 966,
+        "returned_ids": [
+          "A00-S02",
+          "A01-S03",
+          "A03-S01",
+          "A03-S03",
+          "A03-S04",
+          "A05-S01",
+          "A05-S04",
+          "AAM2-S02",
+          "AAM2-S04",
+          "ALE2-S02",
+          "ALE2-S03",
+          "APO2-S02",
+          "APO2-S04",
+          "ASU1-S04",
+          "ASU2-S04",
+          "ATR2-S03",
+          "ATR2-S04",
+          "AWR2-S02",
+          "AWR2-S04",
+          "XSH1-01",
+          "XSH1-02",
+          "XSH1-04",
+          "XSH1-06",
+          "XSH1-07",
+          "XSH1-08",
+          "XTR3-07"
+        ]
+      },
+      {
+        "stage": "coverage_audit",
+        "request_hash": "880d412029992e9947e7b68b5426ca992af2c550198ef929214444e29604ccfd",
+        "trace": "f30e64ee66ec4cada9655d556b6830c8.json",
+        "cache_hit": false,
+        "total": 13841,
+        "thinking": 13704,
+        "nonthinking": 137,
+        "returned_ids": [
+          "A00-S01",
+          "A00-S02"
+        ]
+      }
+    ],
+    "watch": {
+      "AWR1-S04": {
+        "candidate": true,
+        "stages_returning_id": [],
+        "final": false,
+        "content": null
+      }
+    }
+  },
+  {
+    "cohort": "历史五题",
+    "qid": "X01",
+    "mode": "B",
+    "run": "f74ff63e-ccc1-4524-b41c-65662e559811",
+    "candidate_digest": "dc13791f0bac8f0f6b3b3ceb0d853390326cb05ce581da1710fd7311e925c525",
+    "candidates": 206,
+    "peak_total": 14954,
+    "peak_thinking": 13863,
+    "peak_nonthinking": 1195,
+    "fits": {
+      "4096": false,
+      "8192": false,
+      "16384": true,
+      "24576": true,
+      "32768": true,
+      "65536": true
+    },
+    "calls": [
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "e58d47c037f75719073931b4441cb48b4b90516d687a8ed1b3812e136708b322",
+        "trace": "c2b534fd399540f7ac226cf2976c041f.json",
+        "cache_hit": false,
+        "total": 14954,
+        "thinking": 13863,
+        "nonthinking": 1091,
+        "returned_ids": [
+          "A02-S04",
+          "AAM0-S04",
+          "AAM1-S04",
+          "AAM2-S01",
+          "AAM2-S02",
+          "AAM2-S04",
+          "ALE0-S04",
+          "ALE1-S04",
+          "ALE2-S01",
+          "ALE2-S02",
+          "APO0-S02",
+          "APO0-S04",
+          "APO2-S01",
+          "APO2-S02",
+          "ASU0-S03",
+          "ASU0-S04",
+          "ASU2-S01",
+          "ASU2-S03",
+          "ASU2-S04",
+          "ATR0-S03",
+          "ATR0-S04",
+          "ATR2-S01",
+          "ATR2-S02",
+          "ATR2-S03",
+          "AWR0-S04",
+          "AWR1-S04",
+          "AWR2-S01",
+          "AWR2-S02",
+          "AWR2-S04",
+          "NPO-S03",
+          "NTR-S03",
+          "XLE2-08"
+        ]
+      },
+      {
+        "stage": "global_ranking",
+        "request_hash": "90fea416bdedf67380ee668b86ea13beb0946d86df4b675eb2d13023cd85ec78",
+        "trace": "8b6ace90b2b046c0829834120a87b7e4.json",
+        "cache_hit": false,
+        "total": 9357,
+        "thinking": 8162,
+        "nonthinking": 1195,
+        "returned_ids": [
+          "A02-S04",
+          "AAM0-S04",
+          "AAM1-S04",
+          "AAM2-S01",
+          "AAM2-S02",
+          "AAM2-S04",
+          "ALE0-S04",
+          "ALE1-S04",
+          "ALE2-S01",
+          "ALE2-S02",
+          "APO0-S02",
+          "APO0-S04",
+          "APO2-S01",
+          "APO2-S02",
+          "ASU0-S03",
+          "ASU0-S04",
+          "ASU2-S01",
+          "ASU2-S03",
+          "ASU2-S04",
+          "ATR0-S03",
+          "ATR0-S04",
+          "ATR2-S01",
+          "ATR2-S02",
+          "ATR2-S03",
+          "AWR0-S04",
+          "AWR1-S04",
+          "AWR2-S01",
+          "AWR2-S02",
+          "AWR2-S04",
+          "NPO-S03",
+          "NTR-S03"
+        ]
+      },
+      {
+        "stage": "coverage_audit",
+        "request_hash": "6ef3890a3e11a42d4a5b2d98a75baa4f6d8bf5ee2bf834603a8448c0720386c9",
+        "trace": "d187ec84c11a4bb4ba8cf2bd99e97841.json",
+        "cache_hit": false,
+        "total": 881,
+        "thinking": 875,
+        "nonthinking": 6,
+        "returned_ids": []
+      }
+    ],
+    "watch": {
+      "AAM1-S04": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": false,
+        "content": null
+      }
+    }
+  },
+  {
+    "cohort": "历史五题",
+    "qid": "X03",
+    "mode": "B",
+    "run": "ef7e8894-8cd7-4e3e-a7ad-61ac214149d9",
+    "candidate_digest": "1079fdb66933b3f5d49b13e974f927bca6d600dea6517c2477762492f7239396",
+    "candidates": 263,
+    "peak_total": 19533,
+    "peak_thinking": 19527,
+    "peak_nonthinking": 1200,
+    "fits": {
+      "4096": false,
+      "8192": false,
+      "16384": false,
+      "24576": true,
+      "32768": true,
+      "65536": true
+    },
+    "calls": [
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "760f0324ba7b2589764e7b2c34d9833c3724fc3418889c1db3526b544dbec00f",
+        "trace": "26f4789deddd4d8f893fe4bdf1cf2701.json",
+        "cache_hit": false,
+        "total": 8890,
+        "thinking": 7690,
+        "nonthinking": 1200,
+        "returned_ids": [
+          "A00-S02",
+          "A01-S03",
+          "A03-S01",
+          "A03-S03",
+          "A03-S04",
+          "A05-S01",
+          "A05-S02",
+          "A05-S03",
+          "A05-S04",
+          "AAM1-S04",
+          "AAM2-S02",
+          "AAM2-S04",
+          "ALE1-S04",
+          "ALE2-S02",
+          "APO2-S01",
+          "APO2-S04",
+          "ASU2-S01",
+          "ASU2-S02",
+          "ASU2-S03",
+          "ATR2-S03",
+          "ATR2-S04",
+          "AWR1-S04",
+          "AWR2-S02",
+          "AWR2-S04",
+          "NSU-S03",
+          "XSH1-01",
+          "XSH1-02",
+          "XSH1-04",
+          "XSH1-05",
+          "XSH1-06",
+          "XSH1-07"
+        ]
+      },
+      {
+        "stage": "global_ranking",
+        "request_hash": "e4951b536396e43211fb9d125dda4c63a9e776d8f4f028517293131a99accd08",
+        "trace": "524d65aded144d37bfca507861f8a5c2.json",
+        "cache_hit": false,
+        "total": 12539,
+        "thinking": 11555,
+        "nonthinking": 984,
+        "returned_ids": [
+          "A00-S02",
+          "A01-S03",
+          "A03-S01",
+          "A03-S03",
+          "A03-S04",
+          "A05-S01",
+          "A05-S03",
+          "A05-S04",
+          "AAM1-S04",
+          "AAM2-S04",
+          "ALE1-S04",
+          "ALE2-S02",
+          "APO2-S01",
+          "APO2-S04",
+          "ASU2-S02",
+          "ASU2-S03",
+          "ATR2-S03",
+          "ATR2-S04",
+          "AWR2-S02",
+          "AWR2-S04",
+          "NSU-S03",
+          "XSH1-01",
+          "XSH1-02"
+        ]
+      },
+      {
+        "stage": "coverage_audit",
+        "request_hash": "b8da6ad3c615abbb9a7de1ccd142c66fc0c1537babcb30b6b5f2852b6c7cde59",
+        "trace": "b9272faa92024b3ab72ff13ebdda86d5.json",
+        "cache_hit": false,
+        "total": 19533,
+        "thinking": 19527,
+        "nonthinking": 6,
+        "returned_ids": []
+      }
+    ],
+    "watch": {
+      "AWR1-S04": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking"
+        ],
+        "final": false,
+        "content": null
+      }
+    }
+  },
+  {
+    "cohort": "当前首题",
+    "qid": "TR04",
+    "mode": "B",
+    "run": "27ea409b-bc30-4a9b-b656-33bd6987a60f",
+    "candidate_digest": "f5a279c765516864dd3096f04f35c72d96ab21c7967eee72b5767afd5831ed30",
+    "candidates": 333,
+    "peak_total": 21676,
+    "peak_thinking": 20862,
+    "peak_nonthinking": 935,
+    "fits": {
+      "4096": false,
+      "8192": false,
+      "16384": false,
+      "24576": true,
+      "32768": true,
+      "65536": true
+    },
+    "calls": [
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "9c969937a32637094cb017e710de4475aa1f43cf2ae213680eeffce5cb6709dd",
+        "trace": "2c83826634d4455cbe3833aab73fbe2f.json",
+        "cache_hit": false,
+        "total": 12200,
+        "thinking": 11265,
+        "nonthinking": 935,
+        "returned_ids": [
+          "A00-S02",
+          "A03-S02",
+          "A03-S03",
+          "A03-S04",
+          "A04-S01",
+          "A05-S03",
+          "ATR0-S04",
+          "ATR1-S04",
+          "ATR2-S02",
+          "ATR2-S03",
+          "ATR2-S04",
+          "M03-S02",
+          "NTR-S03",
+          "T04-02",
+          "T04-03",
+          "T04-04",
+          "T04-06",
+          "T04-07",
+          "T16-01",
+          "T16-03",
+          "T16-06",
+          "T16-08",
+          "XSH1-04",
+          "XSH1-05",
+          "XSH1-08",
+          "XSH2-03",
+          "XTR2-07",
+          "XTR3-02",
+          "XTR3-03",
+          "XTR3-05",
+          "XTR3-07"
+        ]
+      },
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "4d79b59a352e75d4a78902f066248343031886f4628137b87be3510d01dbb810",
+        "trace": "40d428f2a4d3490198d59c3e1ead026b.json",
+        "cache_hit": false,
+        "total": 15163,
+        "thinking": 14561,
+        "nonthinking": 602,
+        "returned_ids": [
+          "A04-S03",
+          "ATR0-S02",
+          "ATR0-S03",
+          "ATR1-S01",
+          "ATR1-S03",
+          "ATR2-S01",
+          "D08-S01",
+          "D08-S02",
+          "D08-S03",
+          "D09-S01",
+          "D09-S02",
+          "D09-S04",
+          "XTR1-08",
+          "XTR2-01"
+        ]
+      },
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "14cdab0140faa17c822a74fd9e36f6c6b16714aabbe2251a9b87345f5bffb0a9",
+        "trace": "a7daff9eb63b4676ad681edf314603c9.json",
+        "cache_hit": false,
+        "total": 8881,
+        "thinking": 8517,
+        "nonthinking": 364,
+        "returned_ids": [
+          "XTR1-01",
+          "XTR1-02",
+          "XTR1-06",
+          "XTR1-07",
+          "XTR2-02",
+          "XTR2-03",
+          "XTR2-04",
+          "XTR2-05"
+        ]
+      },
+      {
+        "stage": "global_ranking",
+        "request_hash": "01d58bf0392fa60170111ea9bd290f85bd8dda18e3cbbdf59d528b0d0d049e7b",
+        "trace": "891971160bf44e6d8d805b2c64cea017.json",
+        "cache_hit": false,
+        "total": 21676,
+        "thinking": 20862,
+        "nonthinking": 814,
+        "returned_ids": [
+          "A00-S02",
+          "A03-S03",
+          "A03-S04",
+          "A04-S01",
+          "ATR0-S04",
+          "ATR1-S04",
+          "ATR2-S01",
+          "ATR2-S02",
+          "ATR2-S03",
+          "ATR2-S04",
+          "D08-S03",
+          "M03-S02",
+          "T04-02",
+          "T04-03",
+          "T16-01",
+          "T16-03",
+          "T16-08",
+          "XSH1-04",
+          "XSH1-08",
+          "XTR2-07",
+          "XTR3-07"
+        ]
+      },
+      {
+        "stage": "coverage_audit",
+        "request_hash": "6a23055c49678a6952bde0af41b6057442eb9853104202e76f9335c25973baca",
+        "trace": "0624efdf2c0f4403ae4e9f8eaf3b1ced.json",
+        "cache_hit": false,
+        "total": 19467,
+        "thinking": 19161,
+        "nonthinking": 306,
+        "returned_ids": [
+          "A03-S02",
+          "ATR0-S02",
+          "ATR1-S01",
+          "D09-S02",
+          "D09-S04"
+        ]
+      }
+    ],
+    "watch": {
+      "D08-S02": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking"
+        ],
+        "final": false,
+        "content": null
+      },
+      "ATR0-S04": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "问题交接时，可按需要核查的内容准备材料。格式问题可附源文档与译文中对应的版面位置，便于查看变化发生在哪个元素上。异常提示问题可附触发步骤及提示文本，便于在相同条件下复查。译义问题可圈出存在争议的片段，并保留判断语义所需的上下文。格式及异常提示由应用周工处理；译义问题由应用提供期望答案后交模型林工分析；整体回归由测试陈工组织。准备期望答案时，可说明源文中哪些含义必须保留，以及哪些表达允许随上下文调整，便于后续分析差异。若同一份材料同时出现版面和语义现象，可分别标明各自的复查位置。组织回归时，可把各项问题的触发条件与观察点列入检查记录，便于复查时定位对应页面或语段。"
+      },
+      "ATR2-S03": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "查阅待跟进项时，可分别在缺陷记录、用例资料和环境记录中定位对应条目。若要安排后续核查，建议先查看每项预期补充的材料，再根据材料是否齐备选择核查方式。缺陷项可从已有描述入手，确认可用于复核的输入和触发条件；用例项可查阅当前版本的资料，定位判定依据应补充的位置。BUG-S11仍未解决；QA-A27期望答案和判定说明缺失；LANG-02尚未部署ENV-A-DEMO。后续若补齐用例资料，可把期望输出与具体判定条件对应起来，避免只凭文案相似度给出结论。环境项可在具备部署记录后核对目标环境和实际版本，再判断是否具备开展相关验证的条件。若需要更新跟进状态，可在各自条目中附上对应依据，便于查阅者按编号追溯。"
+      }
+    }
+  },
+  {
+    "cohort": "当前首题",
+    "qid": "TR04",
+    "mode": "C",
+    "run": "3387514a-deb8-4f88-af2b-f4178f6dfab1",
+    "candidate_digest": "f5a279c765516864dd3096f04f35c72d96ab21c7967eee72b5767afd5831ed30",
+    "candidates": 333,
+    "peak_total": 21313,
+    "peak_thinking": 20288,
+    "peak_nonthinking": 1025,
+    "fits": {
+      "4096": false,
+      "8192": false,
+      "16384": false,
+      "24576": true,
+      "32768": true,
+      "65536": true
+    },
+    "calls": [
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "9c969937a32637094cb017e710de4475aa1f43cf2ae213680eeffce5cb6709dd",
+        "trace": "2c83826634d4455cbe3833aab73fbe2f.json",
+        "cache_hit": true,
+        "total": 12200,
+        "thinking": 11265,
+        "nonthinking": 935,
+        "returned_ids": [
+          "A00-S02",
+          "A03-S02",
+          "A03-S03",
+          "A03-S04",
+          "A04-S01",
+          "A05-S03",
+          "ATR0-S04",
+          "ATR1-S04",
+          "ATR2-S02",
+          "ATR2-S03",
+          "ATR2-S04",
+          "M03-S02",
+          "NTR-S03",
+          "T04-02",
+          "T04-03",
+          "T04-04",
+          "T04-06",
+          "T04-07",
+          "T16-01",
+          "T16-03",
+          "T16-06",
+          "T16-08",
+          "XSH1-04",
+          "XSH1-05",
+          "XSH1-08",
+          "XSH2-03",
+          "XTR2-07",
+          "XTR3-02",
+          "XTR3-03",
+          "XTR3-05",
+          "XTR3-07"
+        ]
+      },
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "4d79b59a352e75d4a78902f066248343031886f4628137b87be3510d01dbb810",
+        "trace": "40d428f2a4d3490198d59c3e1ead026b.json",
+        "cache_hit": true,
+        "total": 15163,
+        "thinking": 14561,
+        "nonthinking": 602,
+        "returned_ids": [
+          "A04-S03",
+          "ATR0-S02",
+          "ATR0-S03",
+          "ATR1-S01",
+          "ATR1-S03",
+          "ATR2-S01",
+          "D08-S01",
+          "D08-S02",
+          "D08-S03",
+          "D09-S01",
+          "D09-S02",
+          "D09-S04",
+          "XTR1-08",
+          "XTR2-01"
+        ]
+      },
+      {
+        "stage": "candidate_ranking",
+        "request_hash": "14cdab0140faa17c822a74fd9e36f6c6b16714aabbe2251a9b87345f5bffb0a9",
+        "trace": "a7daff9eb63b4676ad681edf314603c9.json",
+        "cache_hit": true,
+        "total": 8881,
+        "thinking": 8517,
+        "nonthinking": 364,
+        "returned_ids": [
+          "XTR1-01",
+          "XTR1-02",
+          "XTR1-06",
+          "XTR1-07",
+          "XTR2-02",
+          "XTR2-03",
+          "XTR2-04",
+          "XTR2-05"
+        ]
+      },
+      {
+        "stage": "global_ranking",
+        "request_hash": "1dde511fcf2cf6c58fa2e0a0bb73d1454f99802c208ac4c5d5814a4faadc6f19",
+        "trace": "2fdab90f7d8b44809c09c1d4f6ce7991.json",
+        "cache_hit": false,
+        "total": 21313,
+        "thinking": 20288,
+        "nonthinking": 1025,
+        "returned_ids": [
+          "A03-S03",
+          "A03-S04",
+          "A04-S01",
+          "A04-S03",
+          "A05-S03",
+          "ATR0-S04",
+          "ATR2-S01",
+          "ATR2-S02",
+          "ATR2-S03",
+          "D08-S03",
+          "D09-S04",
+          "M03-S02",
+          "NTR-S03",
+          "T16-02",
+          "T16-03",
+          "T16-06",
+          "T16-07",
+          "T16-08",
+          "XSH1-04",
+          "XSH1-06",
+          "XSH1-08",
+          "XSH2-03",
+          "XTR3-06",
+          "XTR3-07"
+        ]
+      },
+      {
+        "stage": "coverage_audit",
+        "request_hash": "8bef0df75bd43d2f1b0a0165c0dc08f3cc12444c9dbf446cf35e19af1f606d8e",
+        "trace": "186c6e14ef424b2ba3861e91b30efbff.json",
+        "cache_hit": false,
+        "total": 16978,
+        "thinking": 16726,
+        "nonthinking": 252,
+        "returned_ids": [
+          "ATR1-S01",
+          "ATR1-S03",
+          "ATR1-S04",
+          "ATR2-S01",
+          "ATR2-S02",
+          "D08-S01",
+          "D08-S02"
+        ]
+      }
+    ],
+    "watch": {
+      "D08-S02": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "coverage_audit"
+        ],
+        "final": true,
+        "content": "应用团队提交导出模板TPL-AR-02供格式复测，BUG-F04只跟踪导出格式。"
+      },
+      "ATR0-S04": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "格式及异常提示由应用周工处理；译义问题由应用提供期望答案后交模型林工分析；整体回归由测试陈工组织。"
+      },
+      "ATR2-S03": {
+        "candidate": true,
+        "stages_returning_id": [
+          "candidate_ranking",
+          "global_ranking"
+        ],
+        "final": true,
+        "content": "BUG-S11仍未解决；QA-A27期望答案和判定说明缺失；LANG-02尚未部署ENV-A-DEMO。"
+      }
+    }
+  }
+]

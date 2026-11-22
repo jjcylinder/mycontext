@@ -1,0 +1,41 @@
+{
+  "completed_answers": 10,
+  "unique_question_mode_pairs": 10,
+  "modes": [
+    "B",
+    "C"
+  ],
+  "retries": 0,
+  "code_fingerprints_unchanged": true,
+  "question_ids": [
+    "SU04",
+    "LE03",
+    "WR04",
+    "X05",
+    "X07"
+  ],
+  "disjoint_from_first_tier": true,
+  "corpus_questions_and_references_unchanged": true,
+  "all_final_estimates_within_budget": true,
+  "all_global_reviews_completed": true,
+  "citation_ids_all_in_selected_evidence": true,
+  "final_prompt_matches_selected_evidence_or_exact_excerpt": true,
+  "projected_record_occurrences": 80,
+  "validated_source_spans": 80,
+  "su04_identical_final_inputs": false,
+  "model_input_sha256": {
+    "SU04B": "c1b347aaa512c7c6458eff9259d0c5d88537149e80e9e43ea88070513f8a6f3c",
+    "SU04C": "df42511a90f0c0e7a21f86f3f54d1fca28471c5ab4c0ac11504968b6bbe717e8",
+    "LE03B": "e8d11ab73d9185110678b59df7335e2e7033a8432690876dbd674eccea5b1685",
+    "LE03C": "c1d7fbab6c07e90ad48b1c5c85de86d87aa97c8cdaa7a6450afd050caf26286e",
+    "WR04B": "0fa74949887190252a79d30dcbd74127761c7b0d95ceed53a33f56726beb8802",
+    "WR04C": "f3a9782119156eb2130053cc8f6f5a4d21aa2e9e30c6cb61d4ec61210a521c14",
+    "X05B": "ce6a83fae5d1e2aa5583d970c687601155406dc6156cf0c1c07d0b00084d2650",
+    "X05C": "cf0ed999c9fd15e275fc1a856ab203ff606f99c242a75ad84ed745b0d14ff109",
+    "X07B": "28d87bb95cefa8c04e892265c55c1ecc0829c1e06d5c2b91c633e6f00f36f3bc",
+    "X07C": "8e27a7fcdd4b2790b62562ccfdfccfa019f43ba21274fe8218bd0c1daf479a17"
+  },
+  "reviewer": "assistant",
+  "independent_blind_review": false,
+  "caveat": "Exact offsets and valid citations do not by themselves prove semantic completeness or entailment."
+}

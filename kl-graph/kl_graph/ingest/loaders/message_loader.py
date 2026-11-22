@@ -29,6 +29,7 @@ from kl_graph.ingest.loaders.base import (
     load_scopes,
     scope_chat_kind,
     scope_title,
+    source_record,
     to_unix_ms,
 )
 from kl_graph.models.types import Chunk
@@ -199,6 +200,9 @@ def load_all_messages(chat_dir: Path, *, current_user: str = "") -> list[Chunk]:
             metadata["conversation_title"] = title
         if chat_kind:
             metadata["chat_kind"] = chat_kind
+        provenance = source_record(data)
+        if provenance:
+            metadata["source_record"] = provenance
         # Extraction targets exclude the inlined quote so a reply does not
         # restate the quoted message as a new fact. The quote remains in the
         # stored retrieval chunk and is supplied separately as read-only context.
@@ -226,6 +230,7 @@ def load_all_messages(chat_dir: Path, *, current_user: str = "") -> list[Chunk]:
             ),
             source_type="message",
             timestamp=to_unix_ms(data.get("createTime")),
+            source_ref=provenance.get("source_locator"),
             metadata=metadata,
         ))
 

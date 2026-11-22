@@ -1,0 +1,17 @@
+{
+  "profile": "app_focus",
+  "split": "eval",
+  "modes": [
+    "B",
+    "C"
+  ],
+  "second_tier": false,
+  "question_ids": [
+    "TR04",
+    "AM03",
+    "PO03",
+    "X01",
+    "X03"
+  ],
+  "dataset_id": "project-a-v4-expanded-app_focus-d3af7d624eb6e2cb"
+}

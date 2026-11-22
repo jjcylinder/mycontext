@@ -1,0 +1,38 @@
+{
+  "dataset_id": "project_a_application_v5_natural",
+  "cutoff": "2026-11-20T23:59:00+08:00",
+  "cutoff_basis": "用户指定",
+  "primary_focus": "应用Skill进展核查，其次模型依赖；不是六类Skill的功能实测",
+  "profiles": {
+    "app_focus": {
+      "records": [
+        "normalized/application_focus.jsonl"
+      ],
+      "purpose": "六类应用及必要模型背景；扩写正文；B/C 使用相同输入"
+    },
+    "full_v3": {
+      "records": [
+        "normalized/records.jsonl"
+      ],
+      "purpose": "兼容原 profile 名称；选取当前版本的全部模拟业务材料"
+    },
+    "full_with_report": {
+      "records": [
+        "normalized/records.jsonl",
+        "normalized/seed_report_records.jsonl"
+      ],
+      "purpose": "扩写模拟材料加原样保留的非模拟周报；外发限制不变"
+    }
+  },
+  "schema": "Demo自定义原文中间格式，不是MyContext DWS",
+  "excluded": [
+    "evaluation/",
+    "audit/",
+    "tools/",
+    "README.md",
+    "dataset.json"
+  ],
+  "dedup": "各profile只选一个；corpus、application_added、focus和records是替代或重叠表示，不混合导入",
+  "baseline_dataset_id": "project_a_application_v4_expanded",
+  "grading_rubric_sha256": "2727ff0ed088497c3a4a60e45ed0a3625b27dcc2a34af20b80d3025dcc41f388"
+}

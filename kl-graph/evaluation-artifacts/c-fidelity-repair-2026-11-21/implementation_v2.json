@@ -1,0 +1,79 @@
+{
+  "dataset_root": "/home/jcylinder/codex/datasets/项目A_Demo应用增强数据_v4_长文版",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "embedding_dimensions": 1024,
+  "question_ids": [
+    "TR04",
+    "AM03",
+    "PO03",
+    "X01",
+    "X03",
+    "SU04",
+    "LE03",
+    "WR04",
+    "X05",
+    "X07"
+  ],
+  "modes": [
+    "B",
+    "C"
+  ],
+  "code_sha256": {
+    "project_demo/selection.py": "25611b4dfcae71eb4e456d8173f2ea3d8fb1bf8c3e3858ac4b24f53094b2f442",
+    "project_demo/validate_expanded_dataset.py": "410a6731ca9830ef263246d3062719031c26b90fa8a845192ba1f8db5c46cfd2",
+    "project_demo/fact_evidence.py": "3df96d944ea3bd875273e29e741a9703968629ea1732e59aca5d769671ca5ff3",
+    "project_demo/context.py": "ff29378ba10d3a56b6999dce2b76e5a83fd33c9e26ec68199f2174944e98d5ce",
+    "project_demo/local_embedding.py": "7c3bc4b121a9a133edde3881765cc94a0aa2a4fcab38482016649ace7f223320",
+    "project_demo/codex_bridge.py": "3fab2d6ec208623ea2bebabbb516563f610d59b8a1d9a323a629e3a417ab867f",
+    "project_demo/model_setup.py": "28462cc728aa4e46b8b6456d4f331c65bb495302f4411bb13d9f8b9e97a42452",
+    "project_demo/__init__.py": "40bb0788e021ea21b0a8d9fac5bbe8c21c75d50a783388e0f439db299dbd6e93",
+    "project_demo/evaluate.py": "650476878c301addc4d00edef3473e28022d167c63328383b7bbcca703b219e7",
+    "project_demo/runtime.py": "f7c3cb8697205768638ddf44141678103295f7b93e6bdabd61ce84ba7cd49f01",
+    "project_demo/answer.py": "93fe1ef0454f628158532b183e2afc23fcbcd3936207b2bead76ec3dfc78abed",
+    "project_demo/expand_dataset.py": "ff4fcca14fc2a1039b8c0fc456c0e5c3e872c810c6f62f298d297f59c3525b98",
+    "project_demo/dataset.py": "0083a785c34e1797808e24e28e385ac7d1a3ca265084be6ebfc20c833170fc48",
+    "project_demo/app.py": "7198cf761aec0bca57b14a427474f3a5c5f070ef2fda6ce496b8ec4f560d79d0",
+    "kl_graph/ingest/embedder.py": "a25fa4f6f33f60cf1d60fd69e084fd19c2406e199daf0247d6d69fa744e3028d",
+    "kl_graph/config.py": "3d87461ff8066f9be23ec33c2a7c5ead2b60c7c601a650a117d5f0f71ff0671b",
+    "config.default.yaml": "f2cf17a39b35623c439648470ee094b6810cffa709ab5a55e37a90f09c2aae5a"
+  },
+  "context_window": 32768,
+  "evidence_budget": 8192,
+  "output_budget": 1800,
+  "token_estimator": "o200k_base with local framing reserve, not exact Codex total usage",
+  "common_changes": [
+    "明确项目范围供重排判断",
+    "全局重排后复核初筛必要但遗漏的证据组",
+    "保留相同检索与最终输入预算",
+    "装入预算时移除粗粒度方面标签数量加分，按语义排名排序"
+  ],
+  "c_specific_changes": [
+    "跨句指代支持的连续原文句组定位",
+    "未匹配业务事实时回退全文",
+    "记录逐来源的匹配和回退审计"
+  ],
+  "references_sent_to_model": false,
+  "grading_rule": "与上一轮相同：全部必要要点正确且无关键错误才计完整答对；部分答对单列，接受等价证据。助手评审，非独立盲评。",
+  "unit_tests": {
+    "passed": 24,
+    "excluded_A_tests": 2
+  },
+  "tier": "both sequentially",
+  "frozen_at_utc": "2026-11-21T10:49:06.277055+00:00",
+  "comparison_to_previous": "修改selection.py、fact_evidence.py与answer.py；语料、索引、模型及预算未变。",
+  "first_tier_question_ids": [
+    "TR04",
+    "AM03",
+    "PO03",
+    "X01",
+    "X03"
+  ],
+  "input_file_sha256": {
+    "normalized/records.jsonl": "c8cacfa9b488b106f63763b9aa5a2f3591b3827951c5d0b4dbf9b68d836e63cf",
+    "evaluation/questions.jsonl": "fafcd729126ff3718fab9e70f14503091a0104ecb8758d5678bc58a8548966e6"
+  },
+  "reference_file_sha256": "c08c7d3e7da7a0701797b5bd5c251e88698da8ab531a1447f842729e57c4e6db",
+  "reference_hash_note": "仅对参考文件计算字节校验和；参考内容在全部答卷完成后用于人工评审。",
+  "execution_mode": "same_question_BC_parallel; questions and tiers sequential",
+  "version": "fidelity_v2"
+}

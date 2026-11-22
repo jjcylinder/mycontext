@@ -1,0 +1,770 @@
+{
+  "frozen_code_and_inputs_unchanged": true,
+  "answers": [
+    {
+      "question_id": "TR04",
+      "mode": "B",
+      "run_id": "00e6a5b3-b4ae-4b38-ab2a-6399cd448974",
+      "status": "completed",
+      "error": null,
+      "preflight_tokens": 4942,
+      "sources": 18,
+      "answer_usage": {
+        "input_tokens": 4350,
+        "output_tokens": 10698,
+        "elapsed_ms": 296118,
+        "cost": null
+      },
+      "model_usage": {
+        "prompt_tokens": 4350,
+        "completion_tokens": 10698,
+        "total_tokens": 15048,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 8513
+        },
+        "provider_usage": {
+          "input_tokens": 4094,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 256,
+          "output_tokens": 10698,
+          "service_tier": "standard",
+          "output_tokens_details": {
+            "thinking_tokens": 8513
+          }
+        }
+      },
+      "selection_calls": 3,
+      "selection_cache_hits": 0,
+      "validation_repairs": 0,
+      "validation_errors": [],
+      "selection_usage": {
+        "prompt_tokens": 59519,
+        "completion_tokens": 41067,
+        "total_tokens": 100586
+      },
+      "graph_facts": 0,
+      "graph_relations": 0,
+      "projection": null,
+      "global_ranking": "completed"
+    },
+    {
+      "question_id": "TR04",
+      "mode": "C",
+      "run_id": "bcc4a62e-3ef4-4fec-b86a-24f3fb4f28b6",
+      "status": "completed",
+      "error": null,
+      "preflight_tokens": 3388,
+      "sources": 20,
+      "answer_usage": {
+        "input_tokens": 3357,
+        "output_tokens": 16240,
+        "elapsed_ms": 336967,
+        "cost": null
+      },
+      "model_usage": {
+        "prompt_tokens": 3357,
+        "completion_tokens": 16240,
+        "total_tokens": 19597,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 14345
+        },
+        "provider_usage": {
+          "input_tokens": 3101,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 256,
+          "output_tokens": 16240,
+          "service_tier": "standard",
+          "output_tokens_details": {
+            "thinking_tokens": 14345
+          }
+        }
+      },
+      "selection_calls": 3,
+      "selection_cache_hits": 0,
+      "validation_repairs": 0,
+      "validation_errors": [],
+      "selection_usage": {
+        "prompt_tokens": 60473,
+        "completion_tokens": 40235,
+        "total_tokens": 100708
+      },
+      "graph_facts": 7,
+      "graph_relations": 0,
+      "projection": {
+        "projected_records": 13,
+        "fact_ids": [
+          "07866c32-2bfc-5144-89c6-12feea3f5ddc",
+          "0cf862a2-3a8d-5dcb-b689-b2f6821ff9e6",
+          "0ed2c9b8-11c4-5695-8871-307a2308733d",
+          "120953c9-23e3-54e6-a1c4-1b4c092cbec2",
+          "1338d208-22ef-591a-8855-b7983bd7852b",
+          "17df96b4-c917-547d-810a-77b47cd4ddb7",
+          "1982ecaf-0e67-5729-832f-5362d151ea3a",
+          "1d0d0c10-ffb8-54cf-8251-9e49c293b4e9",
+          "1d6f35b1-2bc6-5f37-ad52-7d9dc4519e73",
+          "1dc2eb9e-9c12-5f41-aa00-c01b71d0f6ef",
+          "2125fcf0-f956-5278-b577-7ed91a3ba5a8",
+          "28e75394-a0f5-5a16-be54-bad71de0c4b6",
+          "28fe38e2-c3d0-5c64-bd9e-3687ac9651fa",
+          "2be8642a-5cd6-5d0f-90cf-be043e1739a1",
+          "2cb34925-f0e2-5737-866e-f665b20507f7",
+          "2de22790-8749-5d54-b59d-bd383752e7e9",
+          "355b38d1-d241-5eb7-a045-5318e27e89ac",
+          "369bbe19-1799-5d24-b1dd-413b1937f704",
+          "3730cbbc-0a43-5898-8ae9-21d7f1a45230",
+          "427cc891-d37b-5cda-a0ef-611e378ccbc7",
+          "54c5bcb2-d503-5e3d-b106-70fb5aebba26",
+          "55f6a5bd-1bd6-5260-a463-8dd60dee0790",
+          "5a7a705b-a2d6-50c3-bdd8-00b80b92c1bf",
+          "5eab389b-8ac6-5592-a621-e4bbc0360fe1",
+          "77d6fda8-1cab-53ef-b226-b79ed92d7621",
+          "77f3d7f6-e181-597f-8778-305393d897eb",
+          "79651987-0b2e-54e8-8036-622b7482211f",
+          "7ddb727e-71a2-52f4-8649-b31e8225c7df",
+          "8c4d0fe5-0472-514f-9aba-48606e14c66f",
+          "916c5b26-fb87-5a4b-8805-c93a81bcac3b",
+          "94b2e2b1-3319-5d6a-a9ef-f96a188b8d07",
+          "97bb13c1-21a3-54a1-8ba0-15756f5de4d3",
+          "a3c9064d-f040-537f-a0b8-cfc539409be2",
+          "a5d11afe-d723-5115-999e-9c484fc764cb",
+          "ab17e2d2-b9cc-5533-aa5b-4b5baff89be5",
+          "afefb6ea-259f-5bf1-9049-e098b9a338ce",
+          "b20ecbce-8a39-51c1-91c6-7475979093ca",
+          "b4863ae1-89c6-50a6-ae2e-c198d694fbd0",
+          "b6e217dc-d436-5754-b6d9-baa482fbfda5",
+          "bf940ab7-49bf-5f26-8552-c01c1e4c22a3",
+          "c0515642-1c16-5c1d-aa2f-4c05e167fbb3",
+          "c29277ed-02a4-55d4-9766-0b3ade3c3d50",
+          "c324e145-3e04-540f-a0b2-181e7c262c2c",
+          "c4013408-f7cc-56ff-9002-1ed0c90bffbc",
+          "c485f822-46bc-5dfe-bfa1-bbc9c2e9e9fd",
+          "cb00cb76-1567-5435-9df1-f81ec77eed28",
+          "d62ad8f6-77b4-59a6-8608-e38711eb8f41",
+          "dbc1967a-3b2e-5731-95f7-fc86756b53d2",
+          "e8cbb876-495d-5541-820f-094905e5b23a",
+          "ebe0fac5-e759-58c9-afb2-6486577305b2",
+          "f83c8ae7-7e1f-5ccb-b467-6f4c74e1b73c",
+          "f9c6a435-5a9d-5746-9e94-73fa26a3fc7e",
+          "fd633242-58b6-51ab-b4ef-d0f679064679"
+        ],
+        "original_characters": 4027,
+        "excerpt_characters": 777
+      },
+      "global_ranking": "completed"
+    },
+    {
+      "question_id": "AM03",
+      "mode": "B",
+      "run_id": "7dfdc8f2-e15b-4f35-8b07-dc7bc92c6095",
+      "status": "completed",
+      "error": null,
+      "preflight_tokens": 3832,
+      "sources": 18,
+      "answer_usage": {
+        "input_tokens": 3506,
+        "output_tokens": 7292,
+        "elapsed_ms": 169707,
+        "cost": null
+      },
+      "model_usage": {
+        "prompt_tokens": 3506,
+        "completion_tokens": 7292,
+        "total_tokens": 10798,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5809
+        },
+        "provider_usage": {
+          "input_tokens": 3378,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 128,
+          "output_tokens": 7292,
+          "service_tier": "standard",
+          "output_tokens_details": {
+            "thinking_tokens": 5809
+          }
+        }
+      },
+      "selection_calls": 3,
+      "selection_cache_hits": 0,
+      "validation_repairs": 0,
+      "validation_errors": [],
+      "selection_usage": {
+        "prompt_tokens": 43862,
+        "completion_tokens": 23885,
+        "total_tokens": 67747
+      },
+      "graph_facts": 0,
+      "graph_relations": 0,
+      "projection": null,
+      "global_ranking": "completed"
+    },
+    {
+      "question_id": "AM03",
+      "mode": "C",
+      "run_id": "d35f485d-f3dd-459e-9763-a94314448fbe",
+      "status": "completed",
+      "error": null,
+      "preflight_tokens": 3933,
+      "sources": 18,
+      "answer_usage": {
+        "input_tokens": 3743,
+        "output_tokens": 10186,
+        "elapsed_ms": 234483,
+        "cost": null
+      },
+      "model_usage": {
+        "prompt_tokens": 3743,
+        "completion_tokens": 10186,
+        "total_tokens": 13929,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 8539
+        },
+        "provider_usage": {
+          "input_tokens": 3231,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 512,
+          "output_tokens": 10186,
+          "service_tier": "standard",
+          "output_tokens_details": {
+            "thinking_tokens": 8539
+          }
+        }
+      },
+      "selection_calls": 3,
+      "selection_cache_hits": 0,
+      "validation_repairs": 0,
+      "validation_errors": [],
+      "selection_usage": {
+        "prompt_tokens": 49346,
+        "completion_tokens": 29492,
+        "total_tokens": 78838
+      },
+      "graph_facts": 7,
+      "graph_relations": 0,
+      "projection": {
+        "projected_records": 4,
+        "fact_ids": [
+          "0c40b004-4b32-5246-a2de-f3578cd216bb",
+          "265382ea-ca01-58a0-951a-820c2a850040",
+          "29229795-4748-5515-a6ac-6122ae23a1d4",
+          "3593ef48-7436-5487-8c5d-1448172219cc",
+          "37992dc2-19d9-53eb-9253-dec585c256c0",
+          "4b486ad5-2e7b-5f94-ac2b-3029c8554d6d",
+          "4dd9f249-c121-59ef-9bd8-8d62cb794349",
+          "682b7848-60bd-5982-8bf3-b9eebeac25b0",
+          "7fe3c534-edb3-5f0c-81e4-d7b7a8e71328",
+          "8fbd1cbe-136f-50cc-bedf-1f10179c19a0",
+          "af33f8d0-4048-5e21-aac9-5f78543d2906",
+          "b23ba28b-b18b-575a-9647-a9e552b72a85",
+          "b689c5de-ecfb-5a43-987c-9e17b9b2d3b3",
+          "bb3749a8-9a57-5ce7-8858-8f99bacb6a64",
+          "bfe665ff-697f-56af-9d3a-daadf03e72ad",
+          "c3cc7b08-e718-5216-8ec9-a83554553cf1",
+          "d4c28673-f1f4-5ff4-8dc5-1eec79321f3b",
+          "eefd7991-4707-50b6-8f21-3287e81170cd",
+          "fdbf1d76-9c02-5a7f-b2e2-6f005e717bc9",
+          "fe107926-e570-5dc3-83ca-18ff8c733aa9"
+        ],
+        "original_characters": 1196,
+        "excerpt_characters": 241
+      },
+      "global_ranking": "completed"
+    },
+    {
+      "question_id": "PO03",
+      "mode": "B",
+      "run_id": "df7f44b4-8344-491d-8d4d-81134f6a663b",
+      "status": "completed",
+      "error": null,
+      "preflight_tokens": 2412,
+      "sources": 9,
+      "answer_usage": {
+        "input_tokens": 2131,
+        "output_tokens": 7849,
+        "elapsed_ms": 148937,
+        "cost": null
+      },
+      "model_usage": {
+        "prompt_tokens": 2131,
+        "completion_tokens": 7849,
+        "total_tokens": 9980,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6845
+        },
+        "provider_usage": {
+          "input_tokens": 2003,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 128,
+          "output_tokens": 7849,
+          "service_tier": "standard",
+          "output_tokens_details": {
+            "thinking_tokens": 6845
+          }
+        }
+      },
+      "selection_calls": 2,
+      "selection_cache_hits": 0,
+      "validation_repairs": 0,
+      "validation_errors": [],
+      "selection_usage": {
+        "prompt_tokens": 33811,
+        "completion_tokens": 18746,
+        "total_tokens": 52557
+      },
+      "graph_facts": 0,
+      "graph_relations": 0,
+      "projection": null,
+      "global_ranking": "completed"
+    },
+    {
+      "question_id": "PO03",
+      "mode": "C",
+      "run_id": "ac77b0e2-acce-4396-91a4-2ca6f8759739",
+      "status": "completed",
+      "error": null,
+      "preflight_tokens": 3313,
+      "sources": 14,
+      "answer_usage": {
+        "input_tokens": 3132,
+        "output_tokens": 5410,
+        "elapsed_ms": 189442,
+        "cost": null
+      },
+      "model_usage": {
+        "prompt_tokens": 3132,
+        "completion_tokens": 5410,
+        "total_tokens": 8542,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4544
+        },
+        "provider_usage": {
+          "input_tokens": 2876,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 256,
+          "output_tokens": 5410,
+          "service_tier": "standard",
+          "output_tokens_details": {
+            "thinking_tokens": 4544
+          }
+        }
+      },
+      "selection_calls": 3,
+      "selection_cache_hits": 0,
+      "validation_repairs": 0,
+      "validation_errors": [],
+      "selection_usage": {
+        "prompt_tokens": 42703,
+        "completion_tokens": 25377,
+        "total_tokens": 68080
+      },
+      "graph_facts": 8,
+      "graph_relations": 0,
+      "projection": {
+        "projected_records": 6,
+        "fact_ids": [
+          "25389c54-3987-5cf8-8970-c52ef79165ed",
+          "2b84ccab-a5c9-512d-9079-3e310b3ac522",
+          "362f0fe1-f22d-596e-b3f4-034070221bd4",
+          "3b5abe1a-4225-5b80-a2ff-622c38544977",
+          "428ae928-dfed-5447-8dca-d2e61ab2daae",
+          "43500723-7185-526e-91b3-2f04d37392df",
+          "4946a652-ab77-57b6-b9be-b19bdf57b023",
+          "4d72b1f2-dd05-5d44-8ff8-01ea97ce23a7",
+          "57032843-3004-5ebe-bc5f-9f363d5e2efe",
+          "6280cfc5-016a-5282-bb0b-78edade8ed3c",
+          "753b2fc1-89c1-504b-b20b-ec71d8c79dfc",
+          "7970c98d-388a-540b-a7b1-2a3f61bd633b",
+          "9ab9b5ab-adf3-505d-9fbf-570fd71817af",
+          "a0ffdce3-3afa-5af0-bfb6-0bc88a5257c3",
+          "a5154d4b-fdbc-5812-9a18-11eb6fbb9e3b",
+          "d7e92fd0-a2b8-55c2-b026-d726b157c153",
+          "e6c9ce27-d616-54e0-b34f-90331a0baedc",
+          "fdc0fc5d-1c7d-57d6-b8c2-73ea6c61fb41"
+        ],
+        "original_characters": 1776,
+        "excerpt_characters": 277
+      },
+      "global_ranking": "completed"
+    },
+    {
+      "question_id": "X01",
+      "mode": "C",
+      "run_id": "55569035-290d-4ab6-8269-988d8e248895",
+      "status": "completed",
+      "error": null,
+      "preflight_tokens": 5709,
+      "sources": 32,
+      "answer_usage": {
+        "input_tokens": 5492,
+        "output_tokens": 16436,
+        "elapsed_ms": 304306,
+        "cost": null
+      },
+      "model_usage": {
+        "prompt_tokens": 5492,
+        "completion_tokens": 16436,
+        "total_tokens": 21928,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 13719
+        },
+        "provider_usage": {
+          "input_tokens": 5236,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 256,
+          "output_tokens": 16436,
+          "service_tier": "standard",
+          "output_tokens_details": {
+            "thinking_tokens": 13719
+          }
+        }
+      },
+      "selection_calls": 3,
+      "selection_cache_hits": 0,
+      "validation_repairs": 0,
+      "validation_errors": [],
+      "selection_usage": {
+        "prompt_tokens": 56419,
+        "completion_tokens": 36102,
+        "total_tokens": 92521
+      },
+      "graph_facts": 6,
+      "graph_relations": 0,
+      "projection": {
+        "projected_records": 25,
+        "fact_ids": [
+          "0088eec5-0ba3-5466-aeda-286e594457cd",
+          "024b9acb-5dbe-55cf-9005-4c692ab3e9a6",
+          "09a9a393-f954-5b9c-a7bd-c3452027c8d8",
+          "0cf862a2-3a8d-5dcb-b689-b2f6821ff9e6",
+          "0ed2c9b8-11c4-5695-8871-307a2308733d",
+          "13d83a45-6aa0-5031-aec6-6284ea7634a2",
+          "18542b58-aad4-5250-addf-34dfbb3c682c",
+          "1d0d0c10-ffb8-54cf-8251-9e49c293b4e9",
+          "1dc2eb9e-9c12-5f41-aa00-c01b71d0f6ef",
+          "2063e380-930e-57d1-a85c-235df018c5a9",
+          "2125fcf0-f956-5278-b577-7ed91a3ba5a8",
+          "214c7bfa-ce30-5099-9095-b6b05e667e1f",
+          "265382ea-ca01-58a0-951a-820c2a850040",
+          "28e75394-a0f5-5a16-be54-bad71de0c4b6",
+          "29229795-4748-5515-a6ac-6122ae23a1d4",
+          "2be8642a-5cd6-5d0f-90cf-be043e1739a1",
+          "2de22790-8749-5d54-b59d-bd383752e7e9",
+          "312639fa-918f-55ad-9b02-2ddd526e528b",
+          "31282597-b745-59ba-b327-77b6941e6e4a",
+          "355b38d1-d241-5eb7-a045-5318e27e89ac",
+          "3593ef48-7436-5487-8c5d-1448172219cc",
+          "369bbe19-1799-5d24-b1dd-413b1937f704",
+          "3730cbbc-0a43-5898-8ae9-21d7f1a45230",
+          "37992dc2-19d9-53eb-9253-dec585c256c0",
+          "39c3efe5-f62c-56cf-8183-931b9fcdf555",
+          "408248fc-f91e-53d3-ad39-08dcb18fdbe4",
+          "40a5a9d1-ef0c-5471-9cd5-bf4c57bd3622",
+          "428ae928-dfed-5447-8dca-d2e61ab2daae",
+          "4946a652-ab77-57b6-b9be-b19bdf57b023",
+          "4b486ad5-2e7b-5f94-ac2b-3029c8554d6d",
+          "4d72b1f2-dd05-5d44-8ff8-01ea97ce23a7",
+          "4dd9f249-c121-59ef-9bd8-8d62cb794349",
+          "52e68420-ac35-5485-8f9f-078739902978",
+          "5345fcad-3a06-5dcb-8637-cec6b5313a9e",
+          "54c5bcb2-d503-5e3d-b106-70fb5aebba26",
+          "55f6a5bd-1bd6-5260-a463-8dd60dee0790",
+          "57032843-3004-5ebe-bc5f-9f363d5e2efe",
+          "5a495b90-a691-524d-8f54-fde410a73de0",
+          "5a7a705b-a2d6-50c3-bdd8-00b80b92c1bf",
+          "5ddfe13c-d9fa-5d20-bd2f-8eeaa35da607",
+          "5e9a728e-d6be-5f68-adda-08c2c595b503",
+          "5eab389b-8ac6-5592-a621-e4bbc0360fe1",
+          "62554a40-fb1f-5610-9f64-6ceb3168cf95",
+          "6280cfc5-016a-5282-bb0b-78edade8ed3c",
+          "639e690f-8080-5a2e-9133-628ba8c76f83",
+          "69684dce-f843-531a-abef-acd048f32a41",
+          "6a905a67-521f-5d0f-acc6-d596b601f257",
+          "72ecdc59-cf8c-5e7c-be96-a4fb7f03c4ff",
+          "73f45823-43c6-5219-affd-ea59d30bdbf9",
+          "753b2fc1-89c1-504b-b20b-ec71d8c79dfc",
+          "77d6fda8-1cab-53ef-b226-b79ed92d7621",
+          "77f3d7f6-e181-597f-8778-305393d897eb",
+          "79558009-306d-5bf4-a6a9-e6087e9f12d3",
+          "79651987-0b2e-54e8-8036-622b7482211f",
+          "7ddb727e-71a2-52f4-8649-b31e8225c7df",
+          "7fbf3a29-db7b-5650-a68e-233337ac12da",
+          "87d5b92a-9fb0-56a6-9259-9dc82e7ae544",
+          "8c4d0fe5-0472-514f-9aba-48606e14c66f",
+          "8d26f84b-5847-54dd-9a86-775cef482ae8",
+          "8ffcf85b-0fb1-5fb9-bc86-0e9e7778e0c6",
+          "905d9d0d-4203-5047-868a-bd6058d724a7",
+          "916c5b26-fb87-5a4b-8805-c93a81bcac3b",
+          "94b2e2b1-3319-5d6a-a9ef-f96a188b8d07",
+          "97bb13c1-21a3-54a1-8ba0-15756f5de4d3",
+          "99fa86d5-ee7d-56fc-91e9-f7c77bbfd9d1",
+          "a3c9064d-f040-537f-a0b8-cfc539409be2",
+          "ab17e2d2-b9cc-5533-aa5b-4b5baff89be5",
+          "ab71dc38-f8b6-5a32-aa5e-f54350f3f7f9",
+          "afefb6ea-259f-5bf1-9049-e098b9a338ce",
+          "b20ca840-1610-5ec6-9c8f-3d29f554b42a",
+          "b20ecbce-8a39-51c1-91c6-7475979093ca",
+          "b23ba28b-b18b-575a-9647-a9e552b72a85",
+          "b4863ae1-89c6-50a6-ae2e-c198d694fbd0",
+          "b50c5815-028c-58e0-a9ba-5d6925812a29",
+          "b5cb78c4-21a7-5676-aca1-c6cf87f7753d",
+          "b6e217dc-d436-5754-b6d9-baa482fbfda5",
+          "b97aa1fb-4159-5bf7-b4e5-a4972b382411",
+          "bd386fff-9736-58ea-9a53-50005debc82c",
+          "bebcc862-30ad-595e-aa1f-f8a37d50c8c1",
+          "bf940ab7-49bf-5f26-8552-c01c1e4c22a3",
+          "c0515642-1c16-5c1d-aa2f-4c05e167fbb3",
+          "c17c669e-7460-5500-b070-6c0b24b3447e",
+          "c2f51018-5a81-5a71-a793-e492f7289a5f",
+          "c324e145-3e04-540f-a0b2-181e7c262c2c",
+          "c4013408-f7cc-56ff-9002-1ed0c90bffbc",
+          "c485f822-46bc-5dfe-bfa1-bbc9c2e9e9fd",
+          "c871c370-7121-554f-8282-181d9755d847",
+          "c89671e5-c87e-5eca-92f4-bac5382fa0e4",
+          "d3091057-bce0-5433-a681-58052ae11f42",
+          "d4c28673-f1f4-5ff4-8dc5-1eec79321f3b",
+          "e147a24b-da3c-5a65-ab5b-278c184b897e",
+          "e61b0747-54fd-52cd-ab86-8fa164ca37f9",
+          "f83c8ae7-7e1f-5ccb-b467-6f4c74e1b73c",
+          "f9c6a435-5a9d-5746-9e94-73fa26a3fc7e",
+          "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+          "fd633242-58b6-51ab-b4ef-d0f679064679",
+          "fdbf1d76-9c02-5a7f-b2e2-6f005e717bc9",
+          "fe107926-e570-5dc3-83ca-18ff8c733aa9",
+          "ff2700e4-c645-5155-b935-9b8cbe0bdaab"
+        ],
+        "original_characters": 7482,
+        "excerpt_characters": 1406
+      },
+      "global_ranking": "completed"
+    },
+    {
+      "question_id": "X03",
+      "mode": "C",
+      "run_id": "85aef7f1-6439-4347-a931-32134c130a32",
+      "status": "completed",
+      "error": null,
+      "preflight_tokens": 5129,
+      "sources": 27,
+      "answer_usage": {
+        "input_tokens": 4933,
+        "output_tokens": 10694,
+        "elapsed_ms": 266735,
+        "cost": null
+      },
+      "model_usage": {
+        "prompt_tokens": 4933,
+        "completion_tokens": 10694,
+        "total_tokens": 15627,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 7972
+        },
+        "provider_usage": {
+          "input_tokens": 4805,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 128,
+          "output_tokens": 10694,
+          "service_tier": "standard",
+          "output_tokens_details": {
+            "thinking_tokens": 7972
+          }
+        }
+      },
+      "selection_calls": 3,
+      "selection_cache_hits": 0,
+      "validation_repairs": 0,
+      "validation_errors": [],
+      "selection_usage": {
+        "prompt_tokens": 62453,
+        "completion_tokens": 36198,
+        "total_tokens": 98651
+      },
+      "graph_facts": 8,
+      "graph_relations": 0,
+      "projection": {
+        "projected_records": 14,
+        "fact_ids": [
+          "0004f20f-7002-5d66-acd0-74ac8b841361",
+          "0088eec5-0ba3-5466-aeda-286e594457cd",
+          "024b9acb-5dbe-55cf-9005-4c692ab3e9a6",
+          "05cf9ef5-0ae8-5052-9846-b6b232afcf3a",
+          "17df96b4-c917-547d-810a-77b47cd4ddb7",
+          "1ad50676-a0f6-5639-bdb9-699e00d7890d",
+          "1cfeaaec-179a-58fe-abed-4f79bea6debe",
+          "1d0d0c10-ffb8-54cf-8251-9e49c293b4e9",
+          "1dc2eb9e-9c12-5f41-aa00-c01b71d0f6ef",
+          "2063e380-930e-57d1-a85c-235df018c5a9",
+          "216062dd-d1fb-5d85-9f83-4c0d85321192",
+          "28e75394-a0f5-5a16-be54-bad71de0c4b6",
+          "2be8642a-5cd6-5d0f-90cf-be043e1739a1",
+          "2cb34925-f0e2-5737-866e-f665b20507f7",
+          "2d246e37-b189-566c-8739-12ff19461e35",
+          "2de22790-8749-5d54-b59d-bd383752e7e9",
+          "2e2ad2f5-6cdf-5c2a-9108-07451d381822",
+          "31282597-b745-59ba-b327-77b6941e6e4a",
+          "3593ef48-7436-5487-8c5d-1448172219cc",
+          "37992dc2-19d9-53eb-9253-dec585c256c0",
+          "408248fc-f91e-53d3-ad39-08dcb18fdbe4",
+          "427cc891-d37b-5cda-a0ef-611e378ccbc7",
+          "44e54d35-3ea3-5f4d-acc6-65a9c2d53be6",
+          "4b486ad5-2e7b-5f94-ac2b-3029c8554d6d",
+          "4d72b1f2-dd05-5d44-8ff8-01ea97ce23a7",
+          "5345fcad-3a06-5dcb-8637-cec6b5313a9e",
+          "544d9b7b-23cf-55db-8e84-3b240f9040d3",
+          "57032843-3004-5ebe-bc5f-9f363d5e2efe",
+          "5a495b90-a691-524d-8f54-fde410a73de0",
+          "62554a40-fb1f-5610-9f64-6ceb3168cf95",
+          "639e690f-8080-5a2e-9133-628ba8c76f83",
+          "6a905a67-521f-5d0f-acc6-d596b601f257",
+          "73f45823-43c6-5219-affd-ea59d30bdbf9",
+          "753b2fc1-89c1-504b-b20b-ec71d8c79dfc",
+          "79558009-306d-5bf4-a6a9-e6087e9f12d3",
+          "87d5b92a-9fb0-56a6-9259-9dc82e7ae544",
+          "8ffcf85b-0fb1-5fb9-bc86-0e9e7778e0c6",
+          "905d9d0d-4203-5047-868a-bd6058d724a7",
+          "916c5b26-fb87-5a4b-8805-c93a81bcac3b",
+          "ab71dc38-f8b6-5a32-aa5e-f54350f3f7f9",
+          "b20ca840-1610-5ec6-9c8f-3d29f554b42a",
+          "b4863ae1-89c6-50a6-ae2e-c198d694fbd0",
+          "be14023b-e936-5e97-816b-ee9e7e34de55",
+          "bf940ab7-49bf-5f26-8552-c01c1e4c22a3",
+          "c324e145-3e04-540f-a0b2-181e7c262c2c",
+          "c485f822-46bc-5dfe-bfa1-bbc9c2e9e9fd",
+          "c871c370-7121-554f-8282-181d9755d847",
+          "cada74a7-124f-57bb-b22d-3ec564e68cd1",
+          "d2367560-54ba-5140-97d5-8791492c3adc",
+          "e631f354-2a4e-5f03-beca-8e61b3b8fcc0",
+          "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+          "fe107926-e570-5dc3-83ca-18ff8c733aa9"
+        ],
+        "original_characters": 4181,
+        "excerpt_characters": 868
+      },
+      "global_ranking": "completed"
+    },
+    {
+      "question_id": "X01",
+      "mode": "B",
+      "run_id": "f74ff63e-ccc1-4524-b41c-65662e559811",
+      "status": "completed",
+      "error": null,
+      "preflight_tokens": 7999,
+      "sources": 27,
+      "answer_usage": {
+        "input_tokens": 6977,
+        "output_tokens": 15965,
+        "elapsed_ms": 213890,
+        "cost": null
+      },
+      "model_usage": {
+        "prompt_tokens": 6977,
+        "completion_tokens": 15965,
+        "total_tokens": 22942,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 13483
+        },
+        "provider_usage": {
+          "input_tokens": 6849,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 128,
+          "output_tokens": 15965,
+          "service_tier": "standard",
+          "output_tokens_details": {
+            "thinking_tokens": 13483
+          }
+        }
+      },
+      "selection_calls": 3,
+      "selection_cache_hits": 0,
+      "validation_repairs": 0,
+      "validation_errors": [],
+      "selection_usage": {
+        "prompt_tokens": 54314,
+        "completion_tokens": 25192,
+        "total_tokens": 79506
+      },
+      "graph_facts": 0,
+      "graph_relations": 0,
+      "projection": null,
+      "global_ranking": "completed"
+    },
+    {
+      "question_id": "X03",
+      "mode": "B",
+      "run_id": "ef7e8894-8cd7-4e3e-a7ad-61ac214149d9",
+      "status": "completed",
+      "error": null,
+      "preflight_tokens": 6468,
+      "sources": 23,
+      "answer_usage": {
+        "input_tokens": 5705,
+        "output_tokens": 6203,
+        "elapsed_ms": 259646,
+        "cost": null
+      },
+      "model_usage": {
+        "prompt_tokens": 5705,
+        "completion_tokens": 6203,
+        "total_tokens": 11908,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4708
+        },
+        "provider_usage": {
+          "input_tokens": 5449,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 256,
+          "output_tokens": 6203,
+          "service_tier": "standard",
+          "output_tokens_details": {
+            "thinking_tokens": 4708
+          }
+        }
+      },
+      "selection_calls": 3,
+      "selection_cache_hits": 0,
+      "validation_repairs": 0,
+      "validation_errors": [],
+      "selection_usage": {
+        "prompt_tokens": 60689,
+        "completion_tokens": 40962,
+        "total_tokens": 101651
+      },
+      "graph_facts": 0,
+      "graph_relations": 0,
+      "projection": null,
+      "global_ranking": "completed"
+    }
+  ],
+  "exact_excerpt_spans": 62,
+  "no_A_or_second_tier": true,
+  "warning": "Structural validation is not semantic grading."
+}

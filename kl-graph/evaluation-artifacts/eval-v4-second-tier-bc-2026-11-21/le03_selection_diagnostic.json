@@ -1,0 +1,41 @@
+{
+  "finding": "C的ALE2-S02进入全局候选，但未保留在全局输出组；最终2006 token远低于8192，不能归因于装入容量。B保留该段；C仅保留归属unknown的XLE2-06。",
+  "runs": [
+    {
+      "mode": "B",
+      "run_id": "aa976739-13d8-4fa0-a081-ed782333d94c",
+      "record_id": "ALE2-S02",
+      "in_first_pass_candidates": true,
+      "in_global_candidates": true,
+      "in_global_selected_groups": true,
+      "in_final_evidence": true,
+      "preflight_tokens": 2753,
+      "input_budget": 8192,
+      "relevant_final_sources": [
+        {
+          "id": "ALE2-S02",
+          "project_scope": "requested",
+          "content": "签署字段的复核可从输入与生成内容的对照入手。若输入缺少签署人，可同时查看落款、正文中的签署表述和输出字段，识别生成内容是否添加了来源中未提供的信息。模型仍可能在缺签署人时补内容，输出检查未完成；正式包APP-A-11尚未升级模板。排查时可保留生成内容和最终呈现内容，分别查看模型响应、模板渲染和输出处理各环节。签署区若显示通用占位文字，可结合字段值判断它是否只是页面提示。若生成内容已出现具体签署信息，可追查它最先出现在哪个环节。记录检查结果时，建议附上实际使用的包和模板版本，逐项注明检查到哪一层、还有哪些环节待核查，便于复跑时使用相同输入并定位差异。"
+        }
+      ]
+    },
+    {
+      "mode": "C",
+      "run_id": "ef661f61-1bc2-4367-8131-403b258e8052",
+      "record_id": "ALE2-S02",
+      "in_first_pass_candidates": true,
+      "in_global_candidates": true,
+      "in_global_selected_groups": false,
+      "in_final_evidence": false,
+      "preflight_tokens": 2006,
+      "input_budget": 8192,
+      "relevant_final_sources": [
+        {
+          "id": "XLE2-06",
+          "project_scope": "unknown",
+          "content": "正式APP-A-11模板未切换。"
+        }
+      ]
+    }
+  ]
+}

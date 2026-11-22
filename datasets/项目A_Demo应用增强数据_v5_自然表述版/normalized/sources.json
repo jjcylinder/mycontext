@@ -1,0 +1,452 @@
+[
+  {
+    "source_id": "D01",
+    "source_type": "document",
+    "title": "项目A设备交付登记",
+    "path": "corpus/documents/D01_项目A设备交付登记.md",
+    "occurred_at": "2026-11-09T09:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "D02",
+    "source_type": "document",
+    "title": "预调场地预约登记",
+    "path": "corpus/documents/D02_预调场地预约登记.md",
+    "occurred_at": "2026-11-09T10:00:00+08:00",
+    "project_hint": null
+  },
+  {
+    "source_id": "D03",
+    "source_type": "document",
+    "title": "项目B交付登记",
+    "path": "corpus/documents/D03_项目B交付登记.md",
+    "occurred_at": "2026-11-09T11:00:00+08:00",
+    "project_hint": "项目B"
+  },
+  {
+    "source_id": "D04",
+    "source_type": "document",
+    "title": "采购资料流转单",
+    "path": "corpus/documents/D04_采购资料流转单.md",
+    "occurred_at": "2026-11-12T09:00:00+08:00",
+    "project_hint": null
+  },
+  {
+    "source_id": "D05",
+    "source_type": "document",
+    "title": "预装问题记录",
+    "path": "corpus/documents/D05_预装问题记录.md",
+    "occurred_at": "2026-11-18T08:30:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "D06",
+    "source_type": "document",
+    "title": "模型构建登记",
+    "path": "corpus/documents/D06_模型构建登记.md",
+    "occurred_at": "2026-11-13T09:00:00+08:00",
+    "project_hint": null
+  },
+  {
+    "source_id": "D07",
+    "source_type": "document",
+    "title": "应用样例运行登记",
+    "path": "corpus/documents/D07_应用样例运行登记.md",
+    "occurred_at": "2026-11-14T09:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "D08",
+    "source_type": "document",
+    "title": "文档导出问题单",
+    "path": "corpus/documents/D08_文档导出问题单.md",
+    "occurred_at": "2026-11-16T09:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "D09",
+    "source_type": "document",
+    "title": "模型问题样本交接单",
+    "path": "corpus/documents/D09_模型问题样本交接单.md",
+    "occurred_at": "2026-11-16T10:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "D10",
+    "source_type": "document",
+    "title": "采集与标注批次登记",
+    "path": "corpus/documents/D10_采集与标注批次登记.md",
+    "occurred_at": "2026-11-16T11:00:00+08:00",
+    "project_hint": null
+  },
+  {
+    "source_id": "D11",
+    "source_type": "document",
+    "title": "OCR任务登记",
+    "path": "corpus/documents/D11_OCR任务登记.md",
+    "occurred_at": "2026-11-17T09:00:00+08:00",
+    "project_hint": null
+  },
+  {
+    "source_id": "D12",
+    "source_type": "document",
+    "title": "推理测试资源登记",
+    "path": "corpus/documents/D12_推理测试资源登记.md",
+    "occurred_at": "2026-11-17T10:00:00+08:00",
+    "project_hint": null
+  },
+  {
+    "source_id": "D13",
+    "source_type": "document",
+    "title": "现场支撑准备记录",
+    "path": "corpus/documents/D13_现场支撑准备记录.md",
+    "occurred_at": "2026-11-17T11:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "D14",
+    "source_type": "document",
+    "title": "服务调用记录摘录",
+    "path": "corpus/documents/D14_服务调用记录摘录.md",
+    "occurred_at": "2026-11-18T09:00:00+08:00",
+    "project_hint": null
+  },
+  {
+    "source_id": "D15",
+    "source_type": "document",
+    "title": "训练数据协调记录",
+    "path": "corpus/documents/D15_训练数据协调记录.md",
+    "occurred_at": "2026-11-18T10:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "G1",
+    "source_type": "chat",
+    "title": "联合预调群",
+    "path": "corpus/chat/messages.csv",
+    "project_hint": null
+  },
+  {
+    "source_id": "G2",
+    "source_type": "chat",
+    "title": "交付协作群",
+    "path": "corpus/chat/messages.csv",
+    "project_hint": null
+  },
+  {
+    "source_id": "G3",
+    "source_type": "chat",
+    "title": "模型应用联调群",
+    "path": "corpus/chat/messages.csv",
+    "project_hint": null
+  },
+  {
+    "source_id": "G4",
+    "source_type": "chat",
+    "title": "语料平台群",
+    "path": "corpus/chat/messages.csv",
+    "project_hint": null
+  },
+  {
+    "source_id": "M01",
+    "source_type": "meeting",
+    "title": "预调资源协调纪要",
+    "path": "corpus/meetings/M01_预调资源协调纪要.md",
+    "occurred_at": "2026-11-16T15:00:00+08:00",
+    "project_hint": null
+  },
+  {
+    "source_id": "M02",
+    "source_type": "meeting",
+    "title": "采购物流沟通纪要",
+    "path": "corpus/meetings/M02_采购物流沟通纪要.md",
+    "occurred_at": "2026-11-17T15:00:00+08:00",
+    "project_hint": null
+  },
+  {
+    "source_id": "M03",
+    "source_type": "meeting",
+    "title": "应用问题协调纪要",
+    "path": "corpus/meetings/M03_应用问题协调纪要.md",
+    "occurred_at": "2026-11-18T15:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "M04",
+    "source_type": "meeting",
+    "title": "语料处理协调纪要",
+    "path": "corpus/meetings/M04_语料处理协调纪要.md",
+    "occurred_at": "2026-11-19T15:00:00+08:00",
+    "project_hint": null
+  },
+  {
+    "source_id": "M05",
+    "source_type": "meeting",
+    "title": "项目A例会排期议题摘录",
+    "path": "corpus/meetings/M05_项目A例会排期议题摘录.md",
+    "occurred_at": "2026-11-20T15:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "M06",
+    "source_type": "meeting",
+    "title": "项目A例会性能议题摘录",
+    "path": "corpus/meetings/M06_项目A例会性能议题摘录.md",
+    "occurred_at": "2026-11-20T16:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "A00",
+    "source_type": "document",
+    "title": "应用运行登记",
+    "path": "corpus/documents/A00_应用运行登记.md",
+    "occurred_at": "2026-11-18T08:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "A01",
+    "source_type": "document",
+    "title": "应用角色协作登记",
+    "path": "corpus/documents/A01_应用角色协作登记.md",
+    "occurred_at": "2026-11-18T08:10:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "A02",
+    "source_type": "document",
+    "title": "应用Skill任务登记",
+    "path": "corpus/documents/A02_应用Skill任务登记.md",
+    "occurred_at": "2026-11-18T08:20:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "ATR0",
+    "source_type": "document",
+    "title": "文档翻译任务范围登记",
+    "path": "corpus/documents/ATR0_文档翻译任务范围登记.md",
+    "occurred_at": "2026-11-18T09:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "ATR1",
+    "source_type": "document",
+    "title": "文档翻译样例及调用摘录",
+    "path": "corpus/documents/ATR1_文档翻译样例及调用摘录.md",
+    "occurred_at": "2026-11-20T09:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "ATR2",
+    "source_type": "document",
+    "title": "文档翻译回归记录",
+    "path": "corpus/documents/ATR2_文档翻译回归记录.md",
+    "occurred_at": "2026-11-20T09:45:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "NTR",
+    "source_type": "meeting",
+    "title": "文档翻译联调议题摘录",
+    "path": "corpus/meetings/NTR_文档翻译联调议题摘录.md",
+    "occurred_at": "2026-11-20T09:50:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "ASU0",
+    "source_type": "document",
+    "title": "文档摘要任务范围登记",
+    "path": "corpus/documents/ASU0_文档摘要任务范围登记.md",
+    "occurred_at": "2026-11-18T10:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "ASU1",
+    "source_type": "document",
+    "title": "文档摘要样例及调用摘录",
+    "path": "corpus/documents/ASU1_文档摘要样例及调用摘录.md",
+    "occurred_at": "2026-11-20T10:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "ASU2",
+    "source_type": "document",
+    "title": "文档摘要回归记录",
+    "path": "corpus/documents/ASU2_文档摘要回归记录.md",
+    "occurred_at": "2026-11-20T10:45:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "NSU",
+    "source_type": "meeting",
+    "title": "文档摘要联调议题摘录",
+    "path": "corpus/meetings/NSU_文档摘要联调议题摘录.md",
+    "occurred_at": "2026-11-20T10:50:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "AAM0",
+    "source_type": "document",
+    "title": "晨间早报任务范围登记",
+    "path": "corpus/documents/AAM0_晨间早报任务范围登记.md",
+    "occurred_at": "2026-11-18T11:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "AAM1",
+    "source_type": "document",
+    "title": "晨间早报样例及调用摘录",
+    "path": "corpus/documents/AAM1_晨间早报样例及调用摘录.md",
+    "occurred_at": "2026-11-20T11:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "AAM2",
+    "source_type": "document",
+    "title": "晨间早报回归记录",
+    "path": "corpus/documents/AAM2_晨间早报回归记录.md",
+    "occurred_at": "2026-11-20T11:45:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "NAM",
+    "source_type": "meeting",
+    "title": "晨间早报联调议题摘录",
+    "path": "corpus/meetings/NAM_晨间早报联调议题摘录.md",
+    "occurred_at": "2026-11-20T11:50:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "ALE0",
+    "source_type": "document",
+    "title": "公函生成任务范围登记",
+    "path": "corpus/documents/ALE0_公函生成任务范围登记.md",
+    "occurred_at": "2026-11-18T12:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "ALE1",
+    "source_type": "document",
+    "title": "公函生成样例及调用摘录",
+    "path": "corpus/documents/ALE1_公函生成样例及调用摘录.md",
+    "occurred_at": "2026-11-20T12:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "ALE2",
+    "source_type": "document",
+    "title": "公函生成回归记录",
+    "path": "corpus/documents/ALE2_公函生成回归记录.md",
+    "occurred_at": "2026-11-20T12:45:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "NLE",
+    "source_type": "meeting",
+    "title": "公函生成联调议题摘录",
+    "path": "corpus/meetings/NLE_公函生成联调议题摘录.md",
+    "occurred_at": "2026-11-20T12:50:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "AWR0",
+    "source_type": "document",
+    "title": "周报生成任务范围登记",
+    "path": "corpus/documents/AWR0_周报生成任务范围登记.md",
+    "occurred_at": "2026-11-18T13:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "AWR1",
+    "source_type": "document",
+    "title": "周报生成样例及调用摘录",
+    "path": "corpus/documents/AWR1_周报生成样例及调用摘录.md",
+    "occurred_at": "2026-11-20T13:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "AWR2",
+    "source_type": "document",
+    "title": "周报生成回归记录",
+    "path": "corpus/documents/AWR2_周报生成回归记录.md",
+    "occurred_at": "2026-11-20T13:45:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "NWR",
+    "source_type": "meeting",
+    "title": "周报生成联调议题摘录",
+    "path": "corpus/meetings/NWR_周报生成联调议题摘录.md",
+    "occurred_at": "2026-11-20T13:50:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "APO0",
+    "source_type": "document",
+    "title": "文档润色任务范围登记",
+    "path": "corpus/documents/APO0_文档润色任务范围登记.md",
+    "occurred_at": "2026-11-18T14:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "APO1",
+    "source_type": "document",
+    "title": "文档润色样例及调用摘录",
+    "path": "corpus/documents/APO1_文档润色样例及调用摘录.md",
+    "occurred_at": "2026-11-20T14:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "APO2",
+    "source_type": "document",
+    "title": "文档润色回归记录",
+    "path": "corpus/documents/APO2_文档润色回归记录.md",
+    "occurred_at": "2026-11-20T14:45:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "NPO",
+    "source_type": "meeting",
+    "title": "文档润色联调议题摘录",
+    "path": "corpus/meetings/NPO_文档润色联调议题摘录.md",
+    "occurred_at": "2026-11-20T14:50:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "A03",
+    "source_type": "document",
+    "title": "候选配置发布核对",
+    "path": "corpus/documents/A03_候选配置发布核对.md",
+    "occurred_at": "2026-11-20T16:00:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "A04",
+    "source_type": "document",
+    "title": "问题样本接收登记",
+    "path": "corpus/documents/A04_问题样本接收登记.md",
+    "occurred_at": "2026-11-20T16:05:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "A05",
+    "source_type": "document",
+    "title": "演示环境交接记录",
+    "path": "corpus/documents/A05_演示环境交接记录.md",
+    "occurred_at": "2026-11-20T16:10:00+08:00",
+    "project_hint": "项目A"
+  },
+  {
+    "source_id": "GAPP",
+    "source_type": "chat",
+    "title": "应用联调群",
+    "path": "corpus/chat/app_messages.csv",
+    "project_hint": null
+  },
+  {
+    "source_id": "GREL",
+    "source_type": "chat",
+    "title": "应用模型发布群",
+    "path": "corpus/chat/app_messages.csv",
+    "project_hint": null
+  }
+]

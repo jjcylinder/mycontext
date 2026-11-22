@@ -1,0 +1,16 @@
+{
+  "completed_answers": 10,
+  "unique_question_mode_pairs": 10,
+  "modes": [
+    "B",
+    "C"
+  ],
+  "retries": 0,
+  "code_fingerprints_unchanged": true,
+  "all_final_estimates_within_budget": true,
+  "citation_ids_all_in_selected_evidence": true,
+  "tr04_identical_final_inputs": true,
+  "reviewer": "assistant",
+  "independent_blind_review": false,
+  "tr04_final_input_sha256": "e65d4037add8df3891b4f476d6cad7a4c1feb38a4b90b2bbaf5de584387772e7"
+}

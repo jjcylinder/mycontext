@@ -1,0 +1,154 @@
+{
+  "tokens": 8160,
+  "source_ids": [
+    "NTR-S03",
+    "ATR2-S04",
+    "T16-06",
+    "XTR3-05",
+    "T04-06",
+    "T04-07",
+    "XTR3-07",
+    "ASU2-S03",
+    "A05-S01",
+    "XSU3-02",
+    "XSU3-06",
+    "XSH1-06",
+    "XSH1-07",
+    "XSH1-04",
+    "XSH1-03",
+    "A03-S04",
+    "XSH1-01",
+    "XSH1-02",
+    "A03-S03",
+    "XSH1-08",
+    "A00-S01",
+    "XSU3-05",
+    "A03-S02",
+    "ATR2-S02",
+    "ATR1-S04",
+    "XTR2-04",
+    "T03-03",
+    "A00-S03",
+    "ALE2-S02",
+    "ALE2-S03",
+    "ALE0-S04",
+    "D07-S02",
+    "XSU1-01",
+    "XSU2-01",
+    "XSU2-05",
+    "ASU1-S02",
+    "ASU0-S03",
+    "XPO3-01",
+    "XPO3-02",
+    "XPO1-02",
+    "XPO1-04",
+    "APO1-S02",
+    "NLE-S03",
+    "ALE2-S04",
+    "XLE2-05",
+    "AAM1-S03",
+    "AAM0-S01",
+    "AAM2-S02",
+    "XAM2-02",
+    "AWR1-S03",
+    "AWR1-S04",
+    "AWR0-S02",
+    "XWR3-03",
+    "ATR0-S01",
+    "ATR0-S04",
+    "ATR2-S03",
+    "M03-S03",
+    "XTR3-06",
+    "A05-S03"
+  ],
+  "graph": {
+    "entities": [],
+    "facts": [
+      {
+        "type": "DELEGATE",
+        "text": "BUG-S11仍需由模型侧分析。",
+        "evidence_ids": [
+          "T04-06",
+          "T04-07"
+        ]
+      },
+      {
+        "id": "9e25ad8c-61ad-58e8-8701-8f3665dcf5ca",
+        "text": "[2026-11-20] 测试陈工说明，如果演示现场切新模型，需要重新核对受影响的Skill。",
+        "type": "GENERAL",
+        "occurred_at": "2026-11-20T16:25:00+08:00",
+        "confidence": 0.99,
+        "evidence_ids": [
+          "XSH1-06"
+        ],
+        "scope": "unknown",
+        "origin": "mycontext"
+      }
+    ],
+    "relations": []
+  },
+  "duties": [
+    {
+      "source": "T04-07",
+      "quote": "那张包含译义和凭空补内容的问题，模型侧还要分析",
+      "context_id": "T04-06",
+      "resolved_fact": {
+        "type": "DELEGATE",
+        "text": "BUG-S11仍需由模型侧分析。",
+        "evidence_ids": [
+          "T04-06",
+          "T04-07"
+        ]
+      },
+      "missing_before_check": true,
+      "covered_by": [
+        "T04-07"
+      ]
+    },
+    {
+      "source": "ATR0-S04",
+      "quote": "译义问题由应用提供期望答案后交模型林工分析",
+      "context_id": null,
+      "missing_before_check": false,
+      "covered_by": [
+        "ATR0-S04"
+      ]
+    },
+    {
+      "source": "ATR0-S04",
+      "quote": "格式及异常提示由应用周工处理",
+      "context_id": null,
+      "missing_before_check": false,
+      "covered_by": [
+        "ATR0-S04"
+      ]
+    },
+    {
+      "source": "ATR0-S04",
+      "quote": "整体回归由测试陈工组织",
+      "context_id": null,
+      "missing_before_check": false,
+      "covered_by": [
+        "ATR0-S04"
+      ]
+    },
+    {
+      "source": "XTR3-06",
+      "quote": "模型分析还等QA-A27的期望答案与判定说明",
+      "context_id": null,
+      "missing_before_check": false,
+      "covered_by": [
+        "XTR3-06"
+      ]
+    },
+    {
+      "source": "XTR3-07",
+      "quote": "我等待应用侧发布申请，不把预演复测记成正式上线",
+      "context_id": null,
+      "missing_before_check": true,
+      "covered_by": [
+        "XTR3-07"
+      ]
+    }
+  ]
+}

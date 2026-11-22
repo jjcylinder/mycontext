@@ -1,0 +1,1317 @@
+{
+  "status": "passed",
+  "scope": "dataset integrity and local import; not answer accuracy",
+  "checks_passed": 3362,
+  "profiles": {
+    "app_focus": {
+      "baseline_dataset_id": "project-a-v3-app_focus-feaf717960a77593",
+      "expanded_dataset_id": "project-a-v4-expanded-app_focus-d3af7d624eb6e2cb",
+      "changed_records": 141,
+      "before": {
+        "document": {
+          "records": 120,
+          "sources": 30,
+          "total_chars": 7326,
+          "record_median_chars": 53.5,
+          "record_max_chars": 158,
+          "source_median_chars": 221.0,
+          "source_min_chars": 151,
+          "source_max_chars": 413
+        },
+        "meeting": {
+          "records": 21,
+          "sources": 7,
+          "total_chars": 777,
+          "record_median_chars": 36,
+          "record_max_chars": 55,
+          "source_median_chars": 109,
+          "source_min_chars": 100,
+          "source_max_chars": 124
+        },
+        "chat": {
+          "records": 208,
+          "sources": 4,
+          "total_chars": 4450,
+          "record_median_chars": 21.0,
+          "record_max_chars": 44,
+          "source_median_chars": 649.0,
+          "source_min_chars": 178,
+          "source_max_chars": 2974
+        }
+      },
+      "after": {
+        "document": {
+          "records": 120,
+          "sources": 30,
+          "total_chars": 36516,
+          "record_median_chars": 295.0,
+          "record_max_chars": 406,
+          "source_median_chars": 1185.5,
+          "source_min_chars": 1085,
+          "source_max_chars": 1477
+        },
+        "meeting": {
+          "records": 21,
+          "sources": 7,
+          "total_chars": 7761,
+          "record_median_chars": 367,
+          "record_max_chars": 399,
+          "source_median_chars": 1126,
+          "source_min_chars": 1038,
+          "source_max_chars": 1172
+        },
+        "chat": {
+          "records": 208,
+          "sources": 4,
+          "total_chars": 4450,
+          "record_median_chars": 21.0,
+          "record_max_chars": 44,
+          "source_median_chars": 649.0,
+          "source_min_chars": 178,
+          "source_max_chars": 2974
+        }
+      }
+    },
+    "full_v3": {
+      "baseline_dataset_id": "project-a-v3-full_v3-fde016efc8e23846",
+      "expanded_dataset_id": "project-a-v4-expanded-full_v3-0375860cee17dece",
+      "changed_records": 193,
+      "before": {
+        "document": {
+          "records": 157,
+          "sources": 39,
+          "total_chars": 8751,
+          "record_median_chars": 49,
+          "record_max_chars": 158,
+          "source_median_chars": 182,
+          "source_min_chars": 129,
+          "source_max_chars": 413
+        },
+        "meeting": {
+          "records": 36,
+          "sources": 12,
+          "total_chars": 1267,
+          "record_median_chars": 34.0,
+          "record_max_chars": 55,
+          "source_median_chars": 106.0,
+          "source_min_chars": 85,
+          "source_max_chars": 124
+        },
+        "chat": {
+          "records": 304,
+          "sources": 6,
+          "total_chars": 6375,
+          "record_median_chars": 20.0,
+          "record_max_chars": 44,
+          "source_median_chars": 741.0,
+          "source_min_chars": 385,
+          "source_max_chars": 2974
+        }
+      },
+      "after": {
+        "document": {
+          "records": 157,
+          "sources": 39,
+          "total_chars": 46895,
+          "record_median_chars": 291,
+          "record_max_chars": 406,
+          "source_median_chars": 1176,
+          "source_min_chars": 1070,
+          "source_max_chars": 1477
+        },
+        "meeting": {
+          "records": 36,
+          "sources": 12,
+          "total_chars": 13372,
+          "record_median_chars": 372.5,
+          "record_max_chars": 406,
+          "source_median_chars": 1132.5,
+          "source_min_chars": 1038,
+          "source_max_chars": 1191
+        },
+        "chat": {
+          "records": 304,
+          "sources": 6,
+          "total_chars": 6375,
+          "record_median_chars": 20.0,
+          "record_max_chars": 44,
+          "source_median_chars": 741.0,
+          "source_min_chars": 385,
+          "source_max_chars": 2974
+        }
+      }
+    },
+    "full_with_report": {
+      "baseline_dataset_id": "project-a-v3-full_with_report-7c45261884449350",
+      "expanded_dataset_id": "project-a-v4-expanded-full_with_report-a247270351e5e8cb",
+      "changed_records": 193,
+      "before": {
+        "document": {
+          "records": 214,
+          "sources": 40,
+          "total_chars": 11810,
+          "record_median_chars": 49.0,
+          "record_max_chars": 402,
+          "source_median_chars": 185.5,
+          "source_min_chars": 129,
+          "source_max_chars": 3059
+        },
+        "meeting": {
+          "records": 36,
+          "sources": 12,
+          "total_chars": 1267,
+          "record_median_chars": 34.0,
+          "record_max_chars": 55,
+          "source_median_chars": 106.0,
+          "source_min_chars": 85,
+          "source_max_chars": 124
+        },
+        "chat": {
+          "records": 304,
+          "sources": 6,
+          "total_chars": 6375,
+          "record_median_chars": 20.0,
+          "record_max_chars": 44,
+          "source_median_chars": 741.0,
+          "source_min_chars": 385,
+          "source_max_chars": 2974
+        }
+      },
+      "after": {
+        "document": {
+          "records": 214,
+          "sources": 40,
+          "total_chars": 49954,
+          "record_median_chars": 282.0,
+          "record_max_chars": 406,
+          "source_median_chars": 1179.0,
+          "source_min_chars": 1070,
+          "source_max_chars": 3059
+        },
+        "meeting": {
+          "records": 36,
+          "sources": 12,
+          "total_chars": 13372,
+          "record_median_chars": 372.5,
+          "record_max_chars": 406,
+          "source_median_chars": 1132.5,
+          "source_min_chars": 1038,
+          "source_max_chars": 1191
+        },
+        "chat": {
+          "records": 304,
+          "sources": 6,
+          "total_chars": 6375,
+          "record_median_chars": 20.0,
+          "record_max_chars": 44,
+          "source_median_chars": 741.0,
+          "source_min_chars": 385,
+          "source_max_chars": 2974
+        }
+      }
+    }
+  },
+  "unchanged_file_sha256": {
+    "corpus/chat/app_messages.csv": "ef030a17136fc6f0c98366f23e48446aaa65f3226786e0490b58f666dcd5befa",
+    "corpus/chat/app_messages.jsonl": "6d480445b7c492a397c9671e835986271d7a2436f1a4f73833f5683450c727c4",
+    "corpus/chat/messages.csv": "ec1f2b9ce70ff5c6286959a66eef9c031259b983864550df29287ccec8cdfef9",
+    "corpus/chat/messages.jsonl": "d71b4396adc4d657519e4c185dfd31f3630ce7858ca7f97e48d85c2476c071de",
+    "corpus/chat/应用群聊阅读版.md": "d0275868256a8350729ba245089a5627f174335536d354fe31cd817d089ed3f3",
+    "corpus/chat/群聊阅读版.md": "975a0c84d6da60c698101c6b06b75f922573051e0d01878299e274a68d3ab85a",
+    "evaluation/questions.jsonl": "fafcd729126ff3718fab9e70f14503091a0104ecb8758d5678bc58a8548966e6",
+    "evaluation/reference_answers.jsonl": "c08c7d3e7da7a0701797b5bd5c251e88698da8ab531a1447f842729e57c4e6db",
+    "evaluation/应用关联参考.jsonl": "d9c4bd5f121fd9a22382b51f647e725b12e0d8c6c250d5f586941fabc785723b",
+    "evaluation/应用问题及参考依据.md": "4df885b5108978b8a97a795b53a077c7634dd01478c2db0ae7c5ed49ebeec623",
+    "evaluation/v2_reference/questions.jsonl": "b9fd7553f100ed52273769e7c9abc0e9f59e61ef79b73247949377b44d32c28e",
+    "evaluation/v2_reference/reference_answers.jsonl": "370aec6f278ebbbe211a5ffaac2911121ba98018512f9a3f85f36d59f63265d9",
+    "evaluation/v2_reference/关键关联参考.jsonl": "b268060273faad4ab8d22dbf7700ea8074d76fc74faa7c5be840ebd225f4033d",
+    "evaluation/v2_reference/运行记录模板.csv": "9d61f1c2bccfee863e3f4f2be23cf9b9adea49e00b2f04b804bec1fd9ab3e9f9",
+    "evaluation/v2_reference/项目例会演示问题.jsonl": "04559cbc1b6ee7337c2b90706495ce86af33ef915fe4de30ca1ebaf7205089dd",
+    "evaluation/v2_reference/题目及参考依据.md": "3f59a0fc55d003a5e9a5316a7c283010b41616562ad48d03a838c9f249fb7e66",
+    "normalized/seed_report_records.jsonl": "93279f8000ab209c1bf21b610e8aa56392ca0ccda8774db005e2403331e284b3",
+    "audit/周报原文_段落定位.md": "60c07528d08b2afda328d72d3eb04e06ea7d9e5c7981a4eda09f2902dcc59a99"
+  },
+  "native_dws_path": "/home/jcylinder/codex/mycontext/kl-graph/data/project_demo/expanded-v4-authoring/dws",
+  "native_chunks": {
+    "wiki": 120,
+    "minutes": 21,
+    "message": 20
+  },
+  "embedding_tokenizer_sha256": "48cea5d44424912a6fd1ea647bf4fe50b55ab8b1e5879c3275f80e339e8fae26",
+  "embedding_max_input": 512,
+  "chat_chunk_tokenizer": "cl100k_base",
+  "document_meeting_max_tokens": 415,
+  "full_document_meeting_max_tokens": 428,
+  "existing_chat_chunks_over_limit": [
+    {
+      "id": "6ff0ce7f-dd73-57d2-8dd4-0b473a69eb54",
+      "source_type": "message",
+      "tokens": 528,
+      "unit_id": null
+    },
+    {
+      "id": "6c34f898-6a9c-50fb-9543-ebda42403ed8",
+      "source_type": "message",
+      "tokens": 541,
+      "unit_id": null
+    },
+    {
+      "id": "5150d777-9803-59e8-9a06-42879738147e",
+      "source_type": "message",
+      "tokens": 542,
+      "unit_id": null
+    },
+    {
+      "id": "5b56ae71-84a5-5955-9f10-e4ba71825f86",
+      "source_type": "message",
+      "tokens": 688,
+      "unit_id": null
+    },
+    {
+      "id": "3be0265b-ce54-54e6-bd37-4759143b1d41",
+      "source_type": "message",
+      "tokens": 844,
+      "unit_id": null
+    },
+    {
+      "id": "ef713578-aefd-5f74-836f-6290deb49edf",
+      "source_type": "message",
+      "tokens": 802,
+      "unit_id": null
+    },
+    {
+      "id": "e6ed7afc-ede2-5d6d-a961-2e36b5e668fe",
+      "source_type": "message",
+      "tokens": 781,
+      "unit_id": null
+    },
+    {
+      "id": "55084dd4-d902-5ba3-9700-6b25a5b3ae9d",
+      "source_type": "message",
+      "tokens": 831,
+      "unit_id": null
+    },
+    {
+      "id": "72f77bc9-8b3c-5943-82e2-5fa650b61243",
+      "source_type": "message",
+      "tokens": 816,
+      "unit_id": null
+    },
+    {
+      "id": "57185725-f4c7-521a-afe8-b09b4052c68b",
+      "source_type": "message",
+      "tokens": 892,
+      "unit_id": null
+    },
+    {
+      "id": "8f1ae2f7-3270-5dad-a716-5111f452e01c",
+      "source_type": "message",
+      "tokens": 800,
+      "unit_id": null
+    },
+    {
+      "id": "e139e8f0-5733-58e9-ab15-23b11cc9e3a4",
+      "source_type": "message",
+      "tokens": 815,
+      "unit_id": null
+    },
+    {
+      "id": "c34acc37-3c51-53e3-8e30-86c1f6eb79a1",
+      "source_type": "message",
+      "tokens": 816,
+      "unit_id": null
+    },
+    {
+      "id": "a7838007-1bc8-580e-98d6-97328242687f",
+      "source_type": "message",
+      "tokens": 817,
+      "unit_id": null
+    },
+    {
+      "id": "013f81f5-a632-55dc-bdfc-7a6201db9095",
+      "source_type": "message",
+      "tokens": 809,
+      "unit_id": null
+    },
+    {
+      "id": "f73527ba-e80f-5738-ac16-56d3532f95f8",
+      "source_type": "message",
+      "tokens": 561,
+      "unit_id": null
+    },
+    {
+      "id": "cfaabc34-7aea-5dd2-93f5-0e0b23cee791",
+      "source_type": "message",
+      "tokens": 800,
+      "unit_id": null
+    }
+  ],
+  "chunk_token_counts": [
+    {
+      "id": "wiki:D06:7d1f2eaab19c50fa845e90f3d37a04bc:0",
+      "source_type": "wiki",
+      "tokens": 279,
+      "unit_id": "D06-S01"
+    },
+    {
+      "id": "wiki:D06:00f3b714117d578e9972e83cad59e382:0",
+      "source_type": "wiki",
+      "tokens": 263,
+      "unit_id": "D06-S02"
+    },
+    {
+      "id": "wiki:D06:595503c8290c5c6989de9533b8827e26:0",
+      "source_type": "wiki",
+      "tokens": 260,
+      "unit_id": "D06-S03"
+    },
+    {
+      "id": "wiki:D06:c0e51db07dd058268028003a0dc17fe3:0",
+      "source_type": "wiki",
+      "tokens": 275,
+      "unit_id": "D06-S04"
+    },
+    {
+      "id": "wiki:D07:414662afb5905a9995f181f6d351e466:0",
+      "source_type": "wiki",
+      "tokens": 274,
+      "unit_id": "D07-S01"
+    },
+    {
+      "id": "wiki:D07:d2df707af5e65a61b34521890a49e4be:0",
+      "source_type": "wiki",
+      "tokens": 287,
+      "unit_id": "D07-S02"
+    },
+    {
+      "id": "wiki:D07:2831c8bcdd0c5c638462764c6f6ce96a:0",
+      "source_type": "wiki",
+      "tokens": 275,
+      "unit_id": "D07-S03"
+    },
+    {
+      "id": "wiki:D07:3aec2c9983285fe1a4242230efa1222f:0",
+      "source_type": "wiki",
+      "tokens": 265,
+      "unit_id": "D07-S04"
+    },
+    {
+      "id": "wiki:D08:9a2685f97cad53e58aae91f50b564174:0",
+      "source_type": "wiki",
+      "tokens": 273,
+      "unit_id": "D08-S01"
+    },
+    {
+      "id": "wiki:D08:85b4858b791458df84ed0b4c8cdff222:0",
+      "source_type": "wiki",
+      "tokens": 267,
+      "unit_id": "D08-S02"
+    },
+    {
+      "id": "wiki:D08:533d4e22c0bb5a39a931fba480721fc5:0",
+      "source_type": "wiki",
+      "tokens": 253,
+      "unit_id": "D08-S03"
+    },
+    {
+      "id": "wiki:D08:211cfe94f5965beea6b0b20ab7e7f3da:0",
+      "source_type": "wiki",
+      "tokens": 267,
+      "unit_id": "D08-S04"
+    },
+    {
+      "id": "wiki:D09:12a9f15f6ccd59929d572c19a745379f:0",
+      "source_type": "wiki",
+      "tokens": 275,
+      "unit_id": "D09-S01"
+    },
+    {
+      "id": "wiki:D09:3f8a42ff23a85056a1a8ccfe5f08fecc:0",
+      "source_type": "wiki",
+      "tokens": 297,
+      "unit_id": "D09-S02"
+    },
+    {
+      "id": "wiki:D09:b99a2d5a5fc65a9882eaa6104c786934:0",
+      "source_type": "wiki",
+      "tokens": 284,
+      "unit_id": "D09-S03"
+    },
+    {
+      "id": "wiki:D09:81ca65b5013354d780cc189fe729514d:0",
+      "source_type": "wiki",
+      "tokens": 297,
+      "unit_id": "D09-S04"
+    },
+    {
+      "id": "wiki:A00:af5e58d86d245d91aae8d97050cbdb86:0",
+      "source_type": "wiki",
+      "tokens": 319,
+      "unit_id": "A00-S01"
+    },
+    {
+      "id": "wiki:A00:54869af58dac5a37aff09c51d9221518:0",
+      "source_type": "wiki",
+      "tokens": 303,
+      "unit_id": "A00-S02"
+    },
+    {
+      "id": "wiki:A00:755c95a220465c1f9917c699fe202029:0",
+      "source_type": "wiki",
+      "tokens": 292,
+      "unit_id": "A00-S03"
+    },
+    {
+      "id": "wiki:A00:1acb058574a7587c8a97ed1688a8f25c:0",
+      "source_type": "wiki",
+      "tokens": 297,
+      "unit_id": "A00-S04"
+    },
+    {
+      "id": "wiki:A01:01af4ac48c0d581ebf046282ddd29fb1:0",
+      "source_type": "wiki",
+      "tokens": 283,
+      "unit_id": "A01-S01"
+    },
+    {
+      "id": "wiki:A01:54e7b6bf3bdd590f949ac03697919a46:0",
+      "source_type": "wiki",
+      "tokens": 275,
+      "unit_id": "A01-S02"
+    },
+    {
+      "id": "wiki:A01:3e709ede971a5c6186e2aa7a7e4cee65:0",
+      "source_type": "wiki",
+      "tokens": 292,
+      "unit_id": "A01-S03"
+    },
+    {
+      "id": "wiki:A01:75f7906b46145c94975586ab75f28573:0",
+      "source_type": "wiki",
+      "tokens": 269,
+      "unit_id": "A01-S04"
+    },
+    {
+      "id": "wiki:A02:4a44ce308694538fad8e6d56cb565669:0",
+      "source_type": "wiki",
+      "tokens": 305,
+      "unit_id": "A02-S01"
+    },
+    {
+      "id": "wiki:A02:a4225e186a8e50f5a227ec5d6722a732:0",
+      "source_type": "wiki",
+      "tokens": 323,
+      "unit_id": "A02-S02"
+    },
+    {
+      "id": "wiki:A02:4b4c7d8bc5dc56e0abbd1e7f46a99d24:0",
+      "source_type": "wiki",
+      "tokens": 324,
+      "unit_id": "A02-S03"
+    },
+    {
+      "id": "wiki:A02:fc5101cad5175a12ba3c230f210b3966:0",
+      "source_type": "wiki",
+      "tokens": 314,
+      "unit_id": "A02-S04"
+    },
+    {
+      "id": "wiki:ATR0:8057b3b0ab8e594c8beb27fcacbec392:0",
+      "source_type": "wiki",
+      "tokens": 292,
+      "unit_id": "ATR0-S01"
+    },
+    {
+      "id": "wiki:ATR0:046f216c5e8e598c83fd8f11ee65d6f7:0",
+      "source_type": "wiki",
+      "tokens": 316,
+      "unit_id": "ATR0-S02"
+    },
+    {
+      "id": "wiki:ATR0:c44088a9ff875dc78edfc090ca568577:0",
+      "source_type": "wiki",
+      "tokens": 270,
+      "unit_id": "ATR0-S03"
+    },
+    {
+      "id": "wiki:ATR0:6769f43e226d58af9bee606ee4587a12:0",
+      "source_type": "wiki",
+      "tokens": 286,
+      "unit_id": "ATR0-S04"
+    },
+    {
+      "id": "wiki:D14:146bda45060d5d95bb443fbfc13cfe12:0",
+      "source_type": "wiki",
+      "tokens": 321,
+      "unit_id": "D14-S01"
+    },
+    {
+      "id": "wiki:D14:46b29664b291566ea019ad65ebc72b0c:0",
+      "source_type": "wiki",
+      "tokens": 308,
+      "unit_id": "D14-S02"
+    },
+    {
+      "id": "wiki:D14:bcc9488159e65b5693d724f7fde13622:0",
+      "source_type": "wiki",
+      "tokens": 305,
+      "unit_id": "D14-S03"
+    },
+    {
+      "id": "wiki:D14:22c6cf8aa80b55ac9769d7b78969e148:0",
+      "source_type": "wiki",
+      "tokens": 283,
+      "unit_id": "D14-S04"
+    },
+    {
+      "id": "wiki:ASU0:ba3798f366c157e0963e3a8384692906:0",
+      "source_type": "wiki",
+      "tokens": 271,
+      "unit_id": "ASU0-S01"
+    },
+    {
+      "id": "wiki:ASU0:c1baddf7ac735f85aac981ca9f238bbb:0",
+      "source_type": "wiki",
+      "tokens": 274,
+      "unit_id": "ASU0-S02"
+    },
+    {
+      "id": "wiki:ASU0:7e9506f6f48e52d2a1c0a4b672d7498d:0",
+      "source_type": "wiki",
+      "tokens": 278,
+      "unit_id": "ASU0-S03"
+    },
+    {
+      "id": "wiki:ASU0:629f791f5b7c5643b06d704c67f09126:0",
+      "source_type": "wiki",
+      "tokens": 282,
+      "unit_id": "ASU0-S04"
+    },
+    {
+      "id": "wiki:D15:fc29117e3dbc5b80b300510d562223af:0",
+      "source_type": "wiki",
+      "tokens": 273,
+      "unit_id": "D15-S01"
+    },
+    {
+      "id": "wiki:D15:c72addf460825f53ab9ef1960fedf804:0",
+      "source_type": "wiki",
+      "tokens": 266,
+      "unit_id": "D15-S02"
+    },
+    {
+      "id": "wiki:D15:85c9842e20ad51c4863b543a7622259a:0",
+      "source_type": "wiki",
+      "tokens": 267,
+      "unit_id": "D15-S03"
+    },
+    {
+      "id": "wiki:D15:66e7d6e770195461b7395c60e08cf14f:0",
+      "source_type": "wiki",
+      "tokens": 281,
+      "unit_id": "D15-S04"
+    },
+    {
+      "id": "wiki:AAM0:e3cfe363885b5bd392f32939f6607730:0",
+      "source_type": "wiki",
+      "tokens": 296,
+      "unit_id": "AAM0-S01"
+    },
+    {
+      "id": "wiki:AAM0:773259dfb6f55983a3a9e029a77a50a1:0",
+      "source_type": "wiki",
+      "tokens": 283,
+      "unit_id": "AAM0-S02"
+    },
+    {
+      "id": "wiki:AAM0:1725fa10904050429a4911d7c0b68ec1:0",
+      "source_type": "wiki",
+      "tokens": 283,
+      "unit_id": "AAM0-S03"
+    },
+    {
+      "id": "wiki:AAM0:a46501242543576e944f7d43e80513e9:0",
+      "source_type": "wiki",
+      "tokens": 291,
+      "unit_id": "AAM0-S04"
+    },
+    {
+      "id": "wiki:ALE0:776c0375e1005379a2530bfb5873498a:0",
+      "source_type": "wiki",
+      "tokens": 305,
+      "unit_id": "ALE0-S01"
+    },
+    {
+      "id": "wiki:ALE0:28ef8bd8a76e5b2ab80a3b4a28f3ac54:0",
+      "source_type": "wiki",
+      "tokens": 267,
+      "unit_id": "ALE0-S02"
+    },
+    {
+      "id": "wiki:ALE0:723ea92621ca5b378be7c6543e51e9f2:0",
+      "source_type": "wiki",
+      "tokens": 271,
+      "unit_id": "ALE0-S03"
+    },
+    {
+      "id": "wiki:ALE0:6c74da377c4c5d0bac108eb33c4cfb9d:0",
+      "source_type": "wiki",
+      "tokens": 292,
+      "unit_id": "ALE0-S04"
+    },
+    {
+      "id": "wiki:AWR0:9b3760a3b0b05fee92f986e169d8aeff:0",
+      "source_type": "wiki",
+      "tokens": 306,
+      "unit_id": "AWR0-S01"
+    },
+    {
+      "id": "wiki:AWR0:d50e3c1c63d15607896a865a09b7ef8c:0",
+      "source_type": "wiki",
+      "tokens": 282,
+      "unit_id": "AWR0-S02"
+    },
+    {
+      "id": "wiki:AWR0:e62b6e36b9995b2eb738a044375a1cfa:0",
+      "source_type": "wiki",
+      "tokens": 305,
+      "unit_id": "AWR0-S03"
+    },
+    {
+      "id": "wiki:AWR0:8f623016b0865bc1a2a1048510f5757a:0",
+      "source_type": "wiki",
+      "tokens": 294,
+      "unit_id": "AWR0-S04"
+    },
+    {
+      "id": "wiki:APO0:aadf6a10c6345b7186317a880bb81588:0",
+      "source_type": "wiki",
+      "tokens": 283,
+      "unit_id": "APO0-S01"
+    },
+    {
+      "id": "wiki:APO0:099c05c110e9530db72cc531453fd75f:0",
+      "source_type": "wiki",
+      "tokens": 282,
+      "unit_id": "APO0-S02"
+    },
+    {
+      "id": "wiki:APO0:7b766a6393dd58e2bdc09bf0eb1ae708:0",
+      "source_type": "wiki",
+      "tokens": 292,
+      "unit_id": "APO0-S03"
+    },
+    {
+      "id": "wiki:APO0:deb89724dcac5c0eac955788074e64f5:0",
+      "source_type": "wiki",
+      "tokens": 303,
+      "unit_id": "APO0-S04"
+    },
+    {
+      "id": "wiki:ATR1:87abe974302b5945a46a1ea790f1fd64:0",
+      "source_type": "wiki",
+      "tokens": 345,
+      "unit_id": "ATR1-S01"
+    },
+    {
+      "id": "wiki:ATR1:7be6b720af605584baf161b5144bc479:0",
+      "source_type": "wiki",
+      "tokens": 338,
+      "unit_id": "ATR1-S02"
+    },
+    {
+      "id": "wiki:ATR1:d167460fd85d5579b6975c2f480d64e8:0",
+      "source_type": "wiki",
+      "tokens": 335,
+      "unit_id": "ATR1-S03"
+    },
+    {
+      "id": "wiki:ATR1:1f351369046354acb1554b13a4d4f75e:0",
+      "source_type": "wiki",
+      "tokens": 314,
+      "unit_id": "ATR1-S04"
+    },
+    {
+      "id": "wiki:ATR2:7c0af39e13b85a1dbe61625ad5626051:0",
+      "source_type": "wiki",
+      "tokens": 287,
+      "unit_id": "ATR2-S01"
+    },
+    {
+      "id": "wiki:ATR2:af2d858f2e0450b9af94c04ef034eb72:0",
+      "source_type": "wiki",
+      "tokens": 303,
+      "unit_id": "ATR2-S02"
+    },
+    {
+      "id": "wiki:ATR2:ceccbc57a2d05f5ead76f9fd449db0e7:0",
+      "source_type": "wiki",
+      "tokens": 285,
+      "unit_id": "ATR2-S03"
+    },
+    {
+      "id": "wiki:ATR2:20656fdc1d04533ea24c864880b56fc0:0",
+      "source_type": "wiki",
+      "tokens": 285,
+      "unit_id": "ATR2-S04"
+    },
+    {
+      "id": "wiki:ASU1:43e293066b6e53cab06804c3f89cff7b:0",
+      "source_type": "wiki",
+      "tokens": 290,
+      "unit_id": "ASU1-S01"
+    },
+    {
+      "id": "wiki:ASU1:8a1f67987c195f5ca22e3687f6690d94:0",
+      "source_type": "wiki",
+      "tokens": 288,
+      "unit_id": "ASU1-S02"
+    },
+    {
+      "id": "wiki:ASU1:0132032d99df53b0a5ad5a41eaa4b936:0",
+      "source_type": "wiki",
+      "tokens": 310,
+      "unit_id": "ASU1-S03"
+    },
+    {
+      "id": "wiki:ASU1:2fc75490583550ebb33d512e8b9af17f:0",
+      "source_type": "wiki",
+      "tokens": 293,
+      "unit_id": "ASU1-S04"
+    },
+    {
+      "id": "wiki:ASU2:d2d76f057cff56679db82c60737c7fd1:0",
+      "source_type": "wiki",
+      "tokens": 263,
+      "unit_id": "ASU2-S01"
+    },
+    {
+      "id": "wiki:ASU2:3182941b08a35b10be9b38b090c0c471:0",
+      "source_type": "wiki",
+      "tokens": 290,
+      "unit_id": "ASU2-S02"
+    },
+    {
+      "id": "wiki:ASU2:6e10425561c3574f99dad7f1beb4b16b:0",
+      "source_type": "wiki",
+      "tokens": 305,
+      "unit_id": "ASU2-S03"
+    },
+    {
+      "id": "wiki:ASU2:f8be99a2169a5d1cbee5ad7a9202c383:0",
+      "source_type": "wiki",
+      "tokens": 288,
+      "unit_id": "ASU2-S04"
+    },
+    {
+      "id": "wiki:AAM1:af64edb249df5ae4a110aa9f87bc8cd0:0",
+      "source_type": "wiki",
+      "tokens": 320,
+      "unit_id": "AAM1-S01"
+    },
+    {
+      "id": "wiki:AAM1:4d450bea418f5dfda48df4c35ffe6f41:0",
+      "source_type": "wiki",
+      "tokens": 276,
+      "unit_id": "AAM1-S02"
+    },
+    {
+      "id": "wiki:AAM1:044819ff676c5368a518ffa62479c0c6:0",
+      "source_type": "wiki",
+      "tokens": 324,
+      "unit_id": "AAM1-S03"
+    },
+    {
+      "id": "wiki:AAM1:101bd2e142e5512e91971ddb8d72a0fd:0",
+      "source_type": "wiki",
+      "tokens": 288,
+      "unit_id": "AAM1-S04"
+    },
+    {
+      "id": "wiki:AAM2:98570a7d57cc5a2d9165e573125579ad:0",
+      "source_type": "wiki",
+      "tokens": 256,
+      "unit_id": "AAM2-S01"
+    },
+    {
+      "id": "wiki:AAM2:aebbf1ef34b657e9aa8525eab84b8db7:0",
+      "source_type": "wiki",
+      "tokens": 298,
+      "unit_id": "AAM2-S02"
+    },
+    {
+      "id": "wiki:AAM2:0b720851c7305b89be3cf0a2162ea21f:0",
+      "source_type": "wiki",
+      "tokens": 293,
+      "unit_id": "AAM2-S03"
+    },
+    {
+      "id": "wiki:AAM2:e3fdc13affd452a784ece1675281e352:0",
+      "source_type": "wiki",
+      "tokens": 272,
+      "unit_id": "AAM2-S04"
+    },
+    {
+      "id": "wiki:ALE1:58f494179a785db4a5bc36635ef029d9:0",
+      "source_type": "wiki",
+      "tokens": 302,
+      "unit_id": "ALE1-S01"
+    },
+    {
+      "id": "wiki:ALE1:ea7a2b56ab5c5ccfb5125723fcf434a4:0",
+      "source_type": "wiki",
+      "tokens": 281,
+      "unit_id": "ALE1-S02"
+    },
+    {
+      "id": "wiki:ALE1:35bf30332bd252bea6e6675036e2bb77:0",
+      "source_type": "wiki",
+      "tokens": 338,
+      "unit_id": "ALE1-S03"
+    },
+    {
+      "id": "wiki:ALE1:4b4770917f2e5c2da6503677c34b7804:0",
+      "source_type": "wiki",
+      "tokens": 303,
+      "unit_id": "ALE1-S04"
+    },
+    {
+      "id": "wiki:ALE2:7eb7212b56475ed59f2785b1e353fc0b:0",
+      "source_type": "wiki",
+      "tokens": 276,
+      "unit_id": "ALE2-S01"
+    },
+    {
+      "id": "wiki:ALE2:2e8b026200125c848da0d414f01d5706:0",
+      "source_type": "wiki",
+      "tokens": 276,
+      "unit_id": "ALE2-S02"
+    },
+    {
+      "id": "wiki:ALE2:08ec8b69ee6b5e0fa523cc714307951c:0",
+      "source_type": "wiki",
+      "tokens": 288,
+      "unit_id": "ALE2-S03"
+    },
+    {
+      "id": "wiki:ALE2:e5809cf448a4551c97f59d5559fd3be1:0",
+      "source_type": "wiki",
+      "tokens": 306,
+      "unit_id": "ALE2-S04"
+    },
+    {
+      "id": "wiki:AWR1:0a897b759c885fc389df9bd45908394a:0",
+      "source_type": "wiki",
+      "tokens": 339,
+      "unit_id": "AWR1-S01"
+    },
+    {
+      "id": "wiki:AWR1:2eb4ae484e4b59e89ea61d7362082331:0",
+      "source_type": "wiki",
+      "tokens": 305,
+      "unit_id": "AWR1-S02"
+    },
+    {
+      "id": "wiki:AWR1:dc34682837d85b56837f0b86d4fa0ade:0",
+      "source_type": "wiki",
+      "tokens": 327,
+      "unit_id": "AWR1-S03"
+    },
+    {
+      "id": "wiki:AWR1:0a883524c35c59c9866bfafb7f80ba89:0",
+      "source_type": "wiki",
+      "tokens": 290,
+      "unit_id": "AWR1-S04"
+    },
+    {
+      "id": "wiki:AWR2:611e55a15e6f59cda3d4e94928c4ec84:0",
+      "source_type": "wiki",
+      "tokens": 263,
+      "unit_id": "AWR2-S01"
+    },
+    {
+      "id": "wiki:AWR2:09fa3974cf0257c7a3065a2dad202e96:0",
+      "source_type": "wiki",
+      "tokens": 291,
+      "unit_id": "AWR2-S02"
+    },
+    {
+      "id": "wiki:AWR2:df87a621944453df972c7fdbd5c38f21:0",
+      "source_type": "wiki",
+      "tokens": 315,
+      "unit_id": "AWR2-S03"
+    },
+    {
+      "id": "wiki:AWR2:16732754677157be97200ee92719923d:0",
+      "source_type": "wiki",
+      "tokens": 283,
+      "unit_id": "AWR2-S04"
+    },
+    {
+      "id": "wiki:APO1:f47ef0d6b17b5fec8efc5d1a582f6553:0",
+      "source_type": "wiki",
+      "tokens": 305,
+      "unit_id": "APO1-S01"
+    },
+    {
+      "id": "wiki:APO1:5fd33a13c38a5372989678eb530b1cd9:0",
+      "source_type": "wiki",
+      "tokens": 291,
+      "unit_id": "APO1-S02"
+    },
+    {
+      "id": "wiki:APO1:e3d85aa51f145673acc7f588be307e7e:0",
+      "source_type": "wiki",
+      "tokens": 313,
+      "unit_id": "APO1-S03"
+    },
+    {
+      "id": "wiki:APO1:6870f1c33be05d3c822f3c6d5a43ec33:0",
+      "source_type": "wiki",
+      "tokens": 293,
+      "unit_id": "APO1-S04"
+    },
+    {
+      "id": "wiki:APO2:8621697d0ff3571ba165dd4d2aca8c3d:0",
+      "source_type": "wiki",
+      "tokens": 281,
+      "unit_id": "APO2-S01"
+    },
+    {
+      "id": "wiki:APO2:e2c91c0c8c2953e0af1060c4a233e80a:0",
+      "source_type": "wiki",
+      "tokens": 294,
+      "unit_id": "APO2-S02"
+    },
+    {
+      "id": "wiki:APO2:688905d7f3d9587da40ba25bd04d8a38:0",
+      "source_type": "wiki",
+      "tokens": 291,
+      "unit_id": "APO2-S03"
+    },
+    {
+      "id": "wiki:APO2:87ea30241ea15b628c3780b915addc91:0",
+      "source_type": "wiki",
+      "tokens": 295,
+      "unit_id": "APO2-S04"
+    },
+    {
+      "id": "wiki:A03:179d51d62fc05196b039548ffd17d50a:0",
+      "source_type": "wiki",
+      "tokens": 283,
+      "unit_id": "A03-S01"
+    },
+    {
+      "id": "wiki:A03:7212b55d0f1e5b9d807b1ff0f6dfff0e:0",
+      "source_type": "wiki",
+      "tokens": 316,
+      "unit_id": "A03-S02"
+    },
+    {
+      "id": "wiki:A03:419f562a60ec5ab4b88eebc924caebd6:0",
+      "source_type": "wiki",
+      "tokens": 304,
+      "unit_id": "A03-S03"
+    },
+    {
+      "id": "wiki:A03:6187908659855498abe2f2bd721563c3:0",
+      "source_type": "wiki",
+      "tokens": 309,
+      "unit_id": "A03-S04"
+    },
+    {
+      "id": "wiki:A04:8ec7adfd049e5628b40eb8b1816a2abe:0",
+      "source_type": "wiki",
+      "tokens": 290,
+      "unit_id": "A04-S01"
+    },
+    {
+      "id": "wiki:A04:f608373ed85d51789793f3b456dd4623:0",
+      "source_type": "wiki",
+      "tokens": 284,
+      "unit_id": "A04-S02"
+    },
+    {
+      "id": "wiki:A04:5751c2c61dbc5597a022f7739214f877:0",
+      "source_type": "wiki",
+      "tokens": 304,
+      "unit_id": "A04-S03"
+    },
+    {
+      "id": "wiki:A04:9edeef8e91ff5e1e8303d8a356ae0908:0",
+      "source_type": "wiki",
+      "tokens": 280,
+      "unit_id": "A04-S04"
+    },
+    {
+      "id": "wiki:A05:8a9e16e3110055538e3ec6ee74610852:0",
+      "source_type": "wiki",
+      "tokens": 298,
+      "unit_id": "A05-S01"
+    },
+    {
+      "id": "wiki:A05:68d7a32b15de5f2fa410f9774c5de2aa:0",
+      "source_type": "wiki",
+      "tokens": 271,
+      "unit_id": "A05-S02"
+    },
+    {
+      "id": "wiki:A05:f0fe64f3361f5d65a0834e5284667a36:0",
+      "source_type": "wiki",
+      "tokens": 268,
+      "unit_id": "A05-S03"
+    },
+    {
+      "id": "wiki:A05:a9790737dfca590caee1aec49119ed7b:0",
+      "source_type": "wiki",
+      "tokens": 270,
+      "unit_id": "A05-S04"
+    },
+    {
+      "id": "minutes:M03:summary-section:M03-S01",
+      "source_type": "minutes",
+      "tokens": 374,
+      "unit_id": "M03-S01"
+    },
+    {
+      "id": "minutes:M03:summary-section:M03-S02",
+      "source_type": "minutes",
+      "tokens": 409,
+      "unit_id": "M03-S02"
+    },
+    {
+      "id": "minutes:M03:summary-section:M03-S03",
+      "source_type": "minutes",
+      "tokens": 408,
+      "unit_id": "M03-S03"
+    },
+    {
+      "id": "minutes:NTR:summary-section:NTR-S01",
+      "source_type": "minutes",
+      "tokens": 393,
+      "unit_id": "NTR-S01"
+    },
+    {
+      "id": "minutes:NTR:summary-section:NTR-S02",
+      "source_type": "minutes",
+      "tokens": 400,
+      "unit_id": "NTR-S02"
+    },
+    {
+      "id": "minutes:NTR:summary-section:NTR-S03",
+      "source_type": "minutes",
+      "tokens": 415,
+      "unit_id": "NTR-S03"
+    },
+    {
+      "id": "minutes:NSU:summary-section:NSU-S01",
+      "source_type": "minutes",
+      "tokens": 370,
+      "unit_id": "NSU-S01"
+    },
+    {
+      "id": "minutes:NSU:summary-section:NSU-S02",
+      "source_type": "minutes",
+      "tokens": 406,
+      "unit_id": "NSU-S02"
+    },
+    {
+      "id": "minutes:NSU:summary-section:NSU-S03",
+      "source_type": "minutes",
+      "tokens": 407,
+      "unit_id": "NSU-S03"
+    },
+    {
+      "id": "minutes:NAM:summary-section:NAM-S01",
+      "source_type": "minutes",
+      "tokens": 352,
+      "unit_id": "NAM-S01"
+    },
+    {
+      "id": "minutes:NAM:summary-section:NAM-S02",
+      "source_type": "minutes",
+      "tokens": 352,
+      "unit_id": "NAM-S02"
+    },
+    {
+      "id": "minutes:NAM:summary-section:NAM-S03",
+      "source_type": "minutes",
+      "tokens": 385,
+      "unit_id": "NAM-S03"
+    },
+    {
+      "id": "minutes:NLE:summary-section:NLE-S01",
+      "source_type": "minutes",
+      "tokens": 366,
+      "unit_id": "NLE-S01"
+    },
+    {
+      "id": "minutes:NLE:summary-section:NLE-S02",
+      "source_type": "minutes",
+      "tokens": 379,
+      "unit_id": "NLE-S02"
+    },
+    {
+      "id": "minutes:NLE:summary-section:NLE-S03",
+      "source_type": "minutes",
+      "tokens": 365,
+      "unit_id": "NLE-S03"
+    },
+    {
+      "id": "minutes:NWR:summary-section:NWR-S01",
+      "source_type": "minutes",
+      "tokens": 372,
+      "unit_id": "NWR-S01"
+    },
+    {
+      "id": "minutes:NWR:summary-section:NWR-S02",
+      "source_type": "minutes",
+      "tokens": 408,
+      "unit_id": "NWR-S02"
+    },
+    {
+      "id": "minutes:NWR:summary-section:NWR-S03",
+      "source_type": "minutes",
+      "tokens": 397,
+      "unit_id": "NWR-S03"
+    },
+    {
+      "id": "minutes:NPO:summary-section:NPO-S01",
+      "source_type": "minutes",
+      "tokens": 358,
+      "unit_id": "NPO-S01"
+    },
+    {
+      "id": "minutes:NPO:summary-section:NPO-S02",
+      "source_type": "minutes",
+      "tokens": 383,
+      "unit_id": "NPO-S02"
+    },
+    {
+      "id": "minutes:NPO:summary-section:NPO-S03",
+      "source_type": "minutes",
+      "tokens": 390,
+      "unit_id": "NPO-S03"
+    },
+    {
+      "id": "6ff0ce7f-dd73-57d2-8dd4-0b473a69eb54",
+      "source_type": "message",
+      "tokens": 528,
+      "unit_id": null
+    },
+    {
+      "id": "6c34f898-6a9c-50fb-9543-ebda42403ed8",
+      "source_type": "message",
+      "tokens": 541,
+      "unit_id": null
+    },
+    {
+      "id": "5150d777-9803-59e8-9a06-42879738147e",
+      "source_type": "message",
+      "tokens": 542,
+      "unit_id": null
+    },
+    {
+      "id": "e12a8745-3676-5a73-865b-65e83600a1ec",
+      "source_type": "message",
+      "tokens": 486,
+      "unit_id": null
+    },
+    {
+      "id": "5b56ae71-84a5-5955-9f10-e4ba71825f86",
+      "source_type": "message",
+      "tokens": 688,
+      "unit_id": null
+    },
+    {
+      "id": "3be0265b-ce54-54e6-bd37-4759143b1d41",
+      "source_type": "message",
+      "tokens": 844,
+      "unit_id": null
+    },
+    {
+      "id": "ef713578-aefd-5f74-836f-6290deb49edf",
+      "source_type": "message",
+      "tokens": 802,
+      "unit_id": null
+    },
+    {
+      "id": "e6ed7afc-ede2-5d6d-a961-2e36b5e668fe",
+      "source_type": "message",
+      "tokens": 781,
+      "unit_id": null
+    },
+    {
+      "id": "55084dd4-d902-5ba3-9700-6b25a5b3ae9d",
+      "source_type": "message",
+      "tokens": 831,
+      "unit_id": null
+    },
+    {
+      "id": "72f77bc9-8b3c-5943-82e2-5fa650b61243",
+      "source_type": "message",
+      "tokens": 816,
+      "unit_id": null
+    },
+    {
+      "id": "57185725-f4c7-521a-afe8-b09b4052c68b",
+      "source_type": "message",
+      "tokens": 892,
+      "unit_id": null
+    },
+    {
+      "id": "8f1ae2f7-3270-5dad-a716-5111f452e01c",
+      "source_type": "message",
+      "tokens": 800,
+      "unit_id": null
+    },
+    {
+      "id": "e139e8f0-5733-58e9-ab15-23b11cc9e3a4",
+      "source_type": "message",
+      "tokens": 815,
+      "unit_id": null
+    },
+    {
+      "id": "c34acc37-3c51-53e3-8e30-86c1f6eb79a1",
+      "source_type": "message",
+      "tokens": 816,
+      "unit_id": null
+    },
+    {
+      "id": "a7838007-1bc8-580e-98d6-97328242687f",
+      "source_type": "message",
+      "tokens": 817,
+      "unit_id": null
+    },
+    {
+      "id": "013f81f5-a632-55dc-bdfc-7a6201db9095",
+      "source_type": "message",
+      "tokens": 809,
+      "unit_id": null
+    },
+    {
+      "id": "51512445-0feb-54f0-9669-dad81b6a2fbb",
+      "source_type": "message",
+      "tokens": 201,
+      "unit_id": null
+    },
+    {
+      "id": "f73527ba-e80f-5738-ac16-56d3532f95f8",
+      "source_type": "message",
+      "tokens": 561,
+      "unit_id": null
+    },
+    {
+      "id": "cfaabc34-7aea-5dd2-93f5-0e0b23cee791",
+      "source_type": "message",
+      "tokens": 800,
+      "unit_id": null
+    },
+    {
+      "id": "f652c63f-e546-589c-8287-77ca7d763fbd",
+      "source_type": "message",
+      "tokens": 393,
+      "unit_id": null
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+[
+  {
+    "q": "TR04",
+    "mode": "B",
+    "tokens": 8182,
+    "lost": [],
+    "added": [],
+    "paths": {}
+  },
+  {
+    "q": "TR04",
+    "mode": "C",
+    "tokens": 6969,
+    "lost": [],
+    "added": [
+      "D07-S01",
+      "D09-S01",
+      "T08-01",
+      "XTR3-01"
+    ],
+    "paths": {
+      "XTR3-07": {
+        "reply_path": [
+          "XTR3-07",
+          "XTR3-06",
+          "XTR3-05",
+          "XTR3-04",
+          "XTR3-03",
+          "XTR3-02",
+          "XTR3-01"
+        ],
+        "attachment_record": "ATR0-S01"
+      },
+      "XTR1-06": {
+        "reply_path": [
+          "XTR1-06",
+          "XTR1-05",
+          "XTR1-04",
+          "XTR1-03",
+          "XTR1-02",
+          "XTR1-01"
+        ],
+        "attachment_record": "ATR1-S01"
+      },
+      "XTR1-01": {
+        "reply_path": [
+          "XTR1-01"
+        ],
+        "attachment_record": "ATR1-S01"
+      },
+      "T16-03": {
+        "reply_path": [
+          "T16-03"
+        ],
+        "attachment_record": "D07-S01"
+      },
+      "T08-07": {
+        "reply_path": [
+          "T08-07",
+          "T08-04",
+          "T08-03",
+          "T08-02",
+          "T08-01"
+        ],
+        "attachment_record": "D09-S01"
+      }
+    }
+  },
+  {
+    "q": "AM03",
+    "mode": "B",
+    "tokens": 3177,
+    "lost": [],
+    "added": [],
+    "paths": {}
+  },
+  {
+    "q": "AM03",
+    "mode": "C",
+    "tokens": 3322,
+    "lost": [],
+    "added": [
+      "AAM0-S04",
+      "XAM3-01"
+    ],
+    "paths": {
+      "XAM3-05": {
+        "reply_path": [
+          "XAM3-05",
+          "XAM3-04",
+          "XAM3-03",
+          "XAM3-02",
+          "XAM3-01"
+        ],
+        "attachment_record": "AAM0-S04"
+      },
+      "XAM3-06": {
+        "reply_path": [
+          "XAM3-06",
+          "XAM3-05",
+          "XAM3-04",
+          "XAM3-03",
+          "XAM3-02",
+          "XAM3-01"
+        ],
+        "attachment_record": "AAM0-S04"
+      },
+      "XAM3-07": {
+        "reply_path": [
+          "XAM3-07",
+          "XAM3-06",
+          "XAM3-05",
+          "XAM3-04",
+          "XAM3-03",
+          "XAM3-02",
+          "XAM3-01"
+        ],
+        "attachment_record": "AAM0-S04"
+      },
+      "XAM3-04": {
+        "reply_path": [
+          "XAM3-04",
+          "XAM3-03",
+          "XAM3-02",
+          "XAM3-01"
+        ],
+        "attachment_record": "AAM0-S01"
+      }
+    }
+  },
+  {
+    "q": "PO03",
+    "mode": "B",
+    "tokens": 2703,
+    "lost": [],
+    "added": [],
+    "paths": {}
+  },
+  {
+    "q": "PO03",
+    "mode": "C",
+    "tokens": 2524,
+    "lost": [],
+    "added": [
+      "XPO2-01"
+    ],
+    "paths": {
+      "XPO2-07": {
+        "reply_path": [
+          "XPO2-07",
+          "XPO2-06",
+          "XPO2-05",
+          "XPO2-04",
+          "XPO2-03",
+          "XPO2-02",
+          "XPO2-01"
+        ],
+        "attachment_record": "APO1-S01"
+      }
+    }
+  },
+  {
+    "q": "X01",
+    "mode": "B",
+    "tokens": 8176,
+    "lost": [],
+    "added": [],
+    "paths": {}
+  },
+  {
+    "q": "X01",
+    "mode": "C",
+    "tokens": 8183,
+    "lost": [
+      "ATR1-S03"
+    ],
+    "added": [
+      "AAM0-S03",
+      "AWR2-S01",
+      "D08-S01"
+    ],
+    "paths": {}
+  },
+  {
+    "q": "X03",
+    "mode": "B",
+    "tokens": 7956,
+    "lost": [
+      "ASU2-S01"
+    ],
+    "added": [],
+    "paths": {}
+  },
+  {
+    "q": "X03",
+    "mode": "C",
+    "tokens": 8150,
+    "lost": [
+      "A04-S04",
+      "ASU0-S04"
+    ],
+    "added": [
+      "AWR0-S04"
+    ],
+    "paths": {}
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "wall_seconds": 313.11,
+  "observed_stages": [
+    {
+      "stage": "queued",
+      "seconds_since_submit": 0.01
+    },
+    {
+      "stage": "retrieving",
+      "seconds_since_submit": 1.03
+    },
+    {
+      "stage": "answering",
+      "seconds_since_submit": 166.26
+    }
+  ],
+  "traces": [
+    "c4e36a7e3b9845ffad461b1e8faf7724.json",
+    "e29b6eed56944ef28ebf2a2d08195ba4.json",
+    "e653aefe80ae4f2aa3384b6182b91cb5.json",
+    "5341f364fb3c466aad723ca7e91e7050.json",
+    "5d900e09ebef46efbd3afba2e85730b2.json",
+    "45303f2ecabf4693ba495f3ec18af65d.json",
+    "a8e55702b8404296a3738c09cdb25337.json",
+    "88d969214b114f1a95667fe69e0af8ca.json",
+    "eacb4eab15914525820eb8fb4f762de8.json",
+    "9170210241734ac48e3c92b490d01cbe.json"
+  ]
+}

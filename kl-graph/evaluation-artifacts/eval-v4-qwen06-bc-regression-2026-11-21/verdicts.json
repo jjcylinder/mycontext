@@ -1,0 +1,338 @@
+{
+  "method": "助手逐题对照参考要点与关键原文进行语义复核，接受等价证据；全部必要要点正确且无关键错误才计完整答对。参考证据ID组覆盖不能代替答案正确性。非独立盲评。",
+  "scope": "V4应用核查 + Qwen3-Embedding-0.6B/1024维；默认五题BC各一次；无A，无重试，运行期间未改代码或预算。",
+  "results": [
+    {
+      "question_id": "TR04",
+      "mode": "B",
+      "run_id": "8a427e3b-bc9a-4464-a3f8-9e50b51277e7",
+      "verdict": "partial",
+      "reason": "异常分支的应用责任和测试整体语义回归不完整；QA-A27与BUG-S11关联仍待核实。",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "应用继续处理异常分支及模型问题样本，测试补TR-X03及整体语义回归。",
+          "verdict": "partial",
+          "reason": "提到TR-X03和流程验证，但未落实应用处理异常分支的责任，测试整体语义回归不完整。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "模型需QA-A27期望答案和判定说明分析BUG-S11。",
+          "verdict": "partial",
+          "reason": "说明QA-A27缺期望答案和判定说明，但未明确用其分析BUG-S11，并将已有项目关联留待核实。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "发布需单独确认正式环境升级，目前无已发布结论。",
+          "verdict": "correct",
+          "reason": "说明项目A正式仍为旧包、本次未切包，后续正式发布须单独核对；未编造演示日期。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "TR04",
+      "mode": "C",
+      "run_id": "559c76d3-8f27-4fd6-9d4a-ad9f984ab825",
+      "verdict": "partial",
+      "reason": "与B使用完全相同的最终输入；仍遗漏应用异常分支责任及完整语义回归，样本和缺陷关联未落实。",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "应用继续处理异常分支及模型问题样本，测试补TR-X03及整体语义回归。",
+          "verdict": "partial",
+          "reason": "提到TR-X03和流程验证，但未落实应用处理异常分支的责任，测试整体语义回归不完整。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "模型需QA-A27期望答案和判定说明分析BUG-S11。",
+          "verdict": "partial",
+          "reason": "说明QA-A27缺期望答案和判定说明，但未明确用其分析BUG-S11，并将已有项目关联留待核实。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "发布需单独确认正式环境升级，目前无已发布结论。",
+          "verdict": "correct",
+          "reason": "说明项目A正式仍为旧包、本次未切包，后续正式发布须单独核对；未编造演示日期。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "AM03",
+      "mode": "B",
+      "run_id": "e7b72ac1-9102-472b-af4b-36abf151d785",
+      "verdict": "partial",
+      "reason": "有重跑和分工，但漏掉“新索引可查、旧REPORT仍用SN-AM07”的关键区别。",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "新索引能找到消息，不代表REPORT-AM0830使用了新快照。",
+          "verdict": "missing",
+          "reason": "未明确当前新索引已可检索消息，而REPORT-AM0830仍绑定旧快照；反而把消息补齐与产物关联留待核实。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "旧产物仍以SN-AM07将10点当确定安排，需要新快照重跑并核对截止前消息。",
+          "verdict": "partial",
+          "reason": "提到10:00确定措辞、07:50/08:10截止检查及重跑，但漏掉SN-AM07旧快照与既有产物的确定关系。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "依赖数据与应用协作，尚无新产物复核通过记录。",
+          "verdict": "correct",
+          "reason": "已说明数据提供新快照、应用重跑、测试复核的协作，且尚无重跑或新产物复核通过结论。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "AM03",
+      "mode": "C",
+      "run_id": "0c3fce79-14c0-4088-8aa8-6e8bbd79a500",
+      "verdict": "partial",
+      "reason": "有静态预览限制、重跑与分工，但仍把消息补齐、项目及产物关系留待核实，未说清旧快照链。",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "新索引能找到消息，不代表REPORT-AM0830使用了新快照。",
+          "verdict": "missing",
+          "reason": "未明确当前新索引已可检索消息，而REPORT-AM0830仍绑定旧快照；反而把消息补齐与产物关联留待核实。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "旧产物仍以SN-AM07将10点当确定安排，需要新快照重跑并核对截止前消息。",
+          "verdict": "partial",
+          "reason": "提到10:00确定措辞、07:50/08:10截止检查及重跑，但漏掉SN-AM07旧快照与既有产物的确定关系。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "依赖数据与应用协作，尚无新产物复核通过记录。",
+          "verdict": "correct",
+          "reason": "已说明数据提供新快照、应用重跑、测试复核的协作，且尚无重跑或新产物复核通过结论。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "PO03",
+      "mode": "B",
+      "run_id": "b3d55a75-32d1-4e9d-a64a-7e832dffb1dc",
+      "verdict": "partial",
+      "reason": "核心否定结论正确，范围和正式未升级正确；遗漏两组样例是否重叠未知。",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "两组检查范围不同，且未说明集合是否互斥，不能合为完整通过率。",
+          "verdict": "partial",
+          "reason": "正确拒绝把六条风格与两条数字检查合为完整通过，但未说明两个样例集合是否重叠/互斥未知。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "否定与条件检查尚未回归，事实问题仍存在。",
+          "verdict": "correct",
+          "reason": "明确POL-F08未关闭，否定和条件回归未完成。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "APP-A-12仅补数字检查，正式包未升级。",
+          "verdict": "correct",
+          "reason": "明确APP-A-12补充数字日期检查，正式环境检查器尚未升级；C另明确属于预演包。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "PO03",
+      "mode": "C",
+      "run_id": "2ea4831b-790e-4ecb-be2d-96450cef754e",
+      "verdict": "partial",
+      "reason": "预演范围、事实保真未过和正式未升级正确；全部参考证据组已进入输入，仍遗漏集合重叠判断。",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "两组检查范围不同，且未说明集合是否互斥，不能合为完整通过率。",
+          "verdict": "partial",
+          "reason": "正确拒绝把六条风格与两条数字检查合为完整通过，但未说明两个样例集合是否重叠/互斥未知。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "否定与条件检查尚未回归，事实问题仍存在。",
+          "verdict": "correct",
+          "reason": "明确POL-F08未关闭，否定和条件回归未完成。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "APP-A-12仅补数字检查，正式包未升级。",
+          "verdict": "correct",
+          "reason": "明确APP-A-12补充数字日期检查，正式环境检查器尚未升级；C另明确属于预演包。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "X01",
+      "mode": "B",
+      "run_id": "81dac93b-aff7-4e9e-968c-1b51304d427a",
+      "verdict": "partial",
+      "reason": "六类信息分散且不完整；缺摘要六例准入、晨报重跑和多项责任，公函与周报主要留待核实。",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "翻译：格式及一个异常提示局部通过，整体无准入；模型样本、分支回归和发布待办。",
+          "verdict": "partial",
+          "reason": "提到TR-X02阿语提示预演复测和TR-X03待验证，但格式通过、模型样本及整体待办未完整落实。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "摘要：显式固定六例限定预演准入，隐式路由与内容问题仍待处理。",
+          "verdict": "partial",
+          "reason": "提到SEM-S09未修复；未说明显式固定六例的限定预演准入。C还提到隐式两条漏调，仍把项目归属留待核实。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "早报：文件生成与静态预览可做，旧快照需重跑，未发送。",
+          "verdict": "partial",
+          "reason": "说明文件生成、静态预览及未发送，遗漏旧快照重跑。"
+        },
+        {
+          "fact_no": 4,
+          "reference_fact": "公函：模板局部通过、仅草稿审阅，签署人及检查待办。",
+          "verdict": "partial",
+          "reason": "提到LET-F06固定样例通过，但项目归属与仅草稿审阅范围未明确；B还提及签署人未检，C缺此项。"
+        },
+        {
+          "fact_no": 5,
+          "reference_fact": "周报：去重局部通过，周期和来源未修，尚无整体准入。",
+          "verdict": "partial",
+          "reason": "提到DEDUP-02去重局部通过，但项目归属、周期与来源缺陷和整体准入未完整说明；C另提月报样例不覆盖W21。"
+        },
+        {
+          "fact_no": 6,
+          "reference_fact": "润色：风格数字局部通过，事实保真未过，无任意文档准入。",
+          "verdict": "partial",
+          "reason": "提到POL-F08未修、风格评审局部通过，未完整覆盖数字通过及任意文档准入边界。"
+        },
+        {
+          "fact_no": 7,
+          "reference_fact": "按登记分工分配应用、测试、数据、发布和模型协作，不虚构个人承诺或日期。",
+          "verdict": "partial",
+          "reason": "主要将责任留待确认，未按登记完整分配应用、测试、数据、发布和模型协作。"
+        }
+      ],
+      "forbidden_errors_observed": [
+        "部分局部进展遗漏，见逐要点评审"
+      ]
+    },
+    {
+      "question_id": "X01",
+      "mode": "C",
+      "run_id": "5872167b-8177-46f1-9a30-d74ee3b5b022",
+      "verdict": "partial",
+      "reason": "补充了隐式路由及月报/周报边界，但仍缺摘要六例准入、晨报重跑、公函草稿范围及多数责任。",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "翻译：格式及一个异常提示局部通过，整体无准入；模型样本、分支回归和发布待办。",
+          "verdict": "partial",
+          "reason": "提到TR-X02阿语提示预演复测和TR-X03待验证，但格式通过、模型样本及整体待办未完整落实。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "摘要：显式固定六例限定预演准入，隐式路由与内容问题仍待处理。",
+          "verdict": "partial",
+          "reason": "提到SEM-S09未修复；未说明显式固定六例的限定预演准入。C还提到隐式两条漏调，仍把项目归属留待核实。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "早报：文件生成与静态预览可做，旧快照需重跑，未发送。",
+          "verdict": "partial",
+          "reason": "说明文件生成、静态预览及未发送，遗漏旧快照重跑。"
+        },
+        {
+          "fact_no": 4,
+          "reference_fact": "公函：模板局部通过、仅草稿审阅，签署人及检查待办。",
+          "verdict": "partial",
+          "reason": "提到LET-F06固定样例通过，但项目归属与仅草稿审阅范围未明确；B还提及签署人未检，C缺此项。"
+        },
+        {
+          "fact_no": 5,
+          "reference_fact": "周报：去重局部通过，周期和来源未修，尚无整体准入。",
+          "verdict": "partial",
+          "reason": "提到DEDUP-02去重局部通过，但项目归属、周期与来源缺陷和整体准入未完整说明；C另提月报样例不覆盖W21。"
+        },
+        {
+          "fact_no": 6,
+          "reference_fact": "润色：风格数字局部通过，事实保真未过，无任意文档准入。",
+          "verdict": "partial",
+          "reason": "提到POL-F08未修、风格评审局部通过，未完整覆盖数字通过及任意文档准入边界。"
+        },
+        {
+          "fact_no": 7,
+          "reference_fact": "按登记分工分配应用、测试、数据、发布和模型协作，不虚构个人承诺或日期。",
+          "verdict": "partial",
+          "reason": "主要将责任留待确认，未按登记完整分配应用、测试、数据、发布和模型协作。"
+        }
+      ],
+      "forbidden_errors_observed": [
+        "部分局部进展遗漏，见逐要点评审"
+      ]
+    },
+    {
+      "question_id": "X03",
+      "mode": "B",
+      "run_id": "c5d4b3ae-c758-41de-847f-3c03df976196",
+      "verdict": "partial",
+      "reason": "项目B/A及正式/预演区分正确；ROUTE仅部分覆盖，LANG/DEDUP范围及完整复用条件缺失。",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "已发布消息指项目B的APP-B-12；A正式仍APP-A-11。",
+          "verdict": "correct",
+          "reason": "明确已发布的是项目B的APP-B-12；A正式仍APP-A-11/M-A12，A的12包只绑定预演。A03-S03与XSH1-08提供等价支持。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "A预演APP-A-12包含候选ROUTE/LANG/DEDUP配置，各修补覆盖范围不同。",
+          "verdict": "partial",
+          "reason": "B仅说明ROUTE-03显式入口范围，遗漏LANG/DEDUP；C未完整说明三类候选配置及其覆盖范围。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "结果需按项目、环境、应用包、模型和用例范围关联。",
+          "verdict": "partial",
+          "reason": "指出项目/环境/包不一致且给出部分用例边界，但未完整提出按项目、环境、应用包、模型及用例范围逐项关联复用结果的条件。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "X03",
+      "mode": "C",
+      "run_id": "71807943-edeb-43d6-ba94-a43aad94e533",
+      "verdict": "partial",
+      "reason": "项目和正式/预演区分正确；未完整说明ROUTE/LANG/DEDUP配置范围和跨模型/用例复用条件。",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "已发布消息指项目B的APP-B-12；A正式仍APP-A-11。",
+          "verdict": "correct",
+          "reason": "明确已发布的是项目B的APP-B-12；A正式仍APP-A-11/M-A12，A的12包只绑定预演。A03-S03与XSH1-08提供等价支持。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "A预演APP-A-12包含候选ROUTE/LANG/DEDUP配置，各修补覆盖范围不同。",
+          "verdict": "partial",
+          "reason": "B仅说明ROUTE-03显式入口范围，遗漏LANG/DEDUP；C未完整说明三类候选配置及其覆盖范围。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "结果需按项目、环境、应用包、模型和用例范围关联。",
+          "verdict": "partial",
+          "reason": "指出项目/环境/包不一致且给出部分用例边界，但未完整提出按项目、环境、应用包、模型及用例范围逐项关联复用结果的条件。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    }
+  ]
+}

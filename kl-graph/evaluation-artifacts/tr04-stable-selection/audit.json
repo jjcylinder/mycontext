@@ -1,0 +1,135 @@
+{
+  "control": "grounded synthetic control passed",
+  "omissions": {
+    "remove_party": [
+      {
+        "status": "missing_party",
+        "object": "模型",
+        "missing": [
+          {
+            "quote": "译义问题由应用提供期望答案后交模型林工分析",
+            "evidence_ids": [
+              "ATR0-S04"
+            ]
+          },
+          {
+            "quote": "那张包含译义和凭空补内容的问题，模型侧还要分析",
+            "evidence_ids": [
+              "T04-07"
+            ]
+          },
+          {
+            "quote": "模型分析还等QA-A27的期望答案与判定说明",
+            "evidence_ids": [
+              "XTR3-06"
+            ]
+          }
+        ]
+      }
+    ],
+    "remove_wait": [
+      {
+        "status": "missing_duty",
+        "object": "模型",
+        "missing": [
+          {
+            "quote": "模型分析还等QA-A27的期望答案与判定说明",
+            "evidence_ids": [
+              "XTR3-06"
+            ]
+          }
+        ]
+      }
+    ],
+    "unknown": [
+      {
+        "status": "missing_duty",
+        "object": "模型",
+        "missing": [
+          {
+            "quote": "译义问题由应用提供期望答案后交模型林工分析",
+            "evidence_ids": [
+              "ATR0-S04"
+            ]
+          },
+          {
+            "quote": "那张包含译义和凭空补内容的问题，模型侧还要分析",
+            "evidence_ids": [
+              "T04-07"
+            ]
+          },
+          {
+            "quote": "模型分析还等QA-A27的期望答案与判定说明",
+            "evidence_ids": [
+              "XTR3-06"
+            ]
+          }
+        ]
+      }
+    ],
+    "remove_check": [
+      {
+        "status": "missing_duty",
+        "object": "测试",
+        "missing": [
+          {
+            "quote": "TR-X03在附件损坏分支尚未回归",
+            "evidence_ids": [
+              "ATR1-S04"
+            ]
+          },
+          {
+            "quote": "TR-X03的损坏附件分支还没有回归",
+            "evidence_ids": [
+              "XTR2-04"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "mutated_archive": [
+    {
+      "status": "missing_party",
+      "object": "模型",
+      "missing": [
+        {
+          "quote": "那张包含译义和凭空补内容的问题，模型侧还要分析",
+          "evidence_ids": [
+            "T04-07"
+          ]
+        },
+        {
+          "quote": "译义问题由应用提供期望答案后交模型林工分析",
+          "evidence_ids": [
+            "ATR0-S04"
+          ]
+        },
+        {
+          "quote": "模型分析还等QA-A27的期望答案与判定说明",
+          "evidence_ids": [
+            "XTR3-06"
+          ]
+        }
+      ]
+    }
+  ],
+  "scope_sample": {
+    "current_other_titles": [],
+    "historical_other_titles": [
+      "ALE0-S02",
+      "ALE0-S04",
+      "ALE1-S03",
+      "ALE2-S02",
+      "ASU0-S02",
+      "ASU0-S03",
+      "ASU1-S04",
+      "ASU2-S03",
+      "ASU2-S04",
+      "NLE-S02",
+      "NLE-S03",
+      "NSU-S02",
+      "NSU-S03"
+    ]
+  }
+}

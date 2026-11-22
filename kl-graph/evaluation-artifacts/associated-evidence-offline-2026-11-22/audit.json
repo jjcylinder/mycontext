@@ -1,0 +1,2801 @@
+{
+  "method": "Frozen native seed IDs, fused original ranks and archived global candidates. Compares source membership only; no generated answers.",
+  "cases": [
+    {
+      "case": "TR04",
+      "run_id": "4f8f9170-62f8-4d19-8201-b3799880478b",
+      "archived_joint_sources": 76,
+      "new_primary_sources": [
+        "A02-S01",
+        "M03-S02",
+        "NTR-S01",
+        "T08-02",
+        "ATR2-S03",
+        "A03-S02",
+        "ATR0-S02",
+        "A04-S01"
+      ],
+      "new_review_ids": [
+        "A03-S02",
+        "M03-S02",
+        "NTR-S01",
+        "T08-02"
+      ],
+      "paths": [
+        {
+          "source": "T04-06",
+          "source_fact": "34df8086-4131-5db0-b76b-0d4b3834d797",
+          "entity_id": "d335d80e-1c51-5429-af79-32b9536e7ee5",
+          "target_fact": "85327fdc-3f80-564e-b9db-039036181b76",
+          "target": "A02-S01",
+          "entity_name": "CASE-T17",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T04-06",
+          "source_fact": "34df8086-4131-5db0-b76b-0d4b3834d797",
+          "entity_id": "31c72528-c8ee-527d-9f52-cb4fd9d3d511",
+          "target_fact": "52e68420-ac35-5485-8f9f-078739902978",
+          "target": "M03-S02",
+          "entity_name": "BUG-S11",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T04-06",
+          "source_fact": "34df8086-4131-5db0-b76b-0d4b3834d797",
+          "entity_id": "31c72528-c8ee-527d-9f52-cb4fd9d3d511",
+          "target_fact": "5e9a728e-d6be-5f68-adda-08c2c595b503",
+          "target": "M03-S02",
+          "entity_name": "BUG-S11",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T04-06",
+          "source_fact": "34df8086-4131-5db0-b76b-0d4b3834d797",
+          "entity_id": "d335d80e-1c51-5429-af79-32b9536e7ee5",
+          "target_fact": "21b87d38-4abd-5496-9ccf-c1ba61d1ec8a",
+          "target": "NTR-S01",
+          "entity_name": "CASE-T17",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T04-06",
+          "source_fact": "34df8086-4131-5db0-b76b-0d4b3834d797",
+          "entity_id": "d335d80e-1c51-5429-af79-32b9536e7ee5",
+          "target_fact": "296d62e8-7bf4-5b27-8f04-5800bf525b64",
+          "target": "NTR-S01",
+          "entity_name": "CASE-T17",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XTR3-06",
+          "source_fact": "0d4a3b8b-5679-56e4-9a54-48c4cc67c259",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "4dd7998d-7e9d-575f-8a15-bcb83c99eed7",
+          "target": "T08-02",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XTR3-06",
+          "source_fact": "0d4a3b8b-5679-56e4-9a54-48c4cc67c259",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "aa1894d8-0c9e-5253-ab5a-1344ebbd2f69",
+          "target": "T08-02",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T04-06",
+          "source_fact": "34df8086-4131-5db0-b76b-0d4b3834d797",
+          "entity_id": "31c72528-c8ee-527d-9f52-cb4fd9d3d511",
+          "target_fact": "c324e145-3e04-540f-a0b2-181e7c262c2c",
+          "target": "ATR2-S03",
+          "entity_name": "BUG-S11",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XTR3-06",
+          "source_fact": "0d4a3b8b-5679-56e4-9a54-48c4cc67c259",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "1dc2eb9e-9c12-5f41-aa00-c01b71d0f6ef",
+          "target": "ATR2-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XTR3-02",
+          "source_fact": "205bec20-e0db-5381-b67a-da7f2adb2dcf",
+          "entity_id": "a364c3ea-fc98-5fba-b563-f26a27c75a87",
+          "target_fact": "7d7479c7-fe1d-5473-b4f9-421aaaf965b3",
+          "target": "A03-S02",
+          "entity_name": "TR-X02",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XTR3-06",
+          "source_fact": "0d4a3b8b-5679-56e4-9a54-48c4cc67c259",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "0ed2c9b8-11c4-5695-8871-307a2308733d",
+          "target": "ATR0-S02",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T04-06",
+          "source_fact": "34df8086-4131-5db0-b76b-0d4b3834d797",
+          "entity_id": "31c72528-c8ee-527d-9f52-cb4fd9d3d511",
+          "target_fact": "355b38d1-d241-5eb7-a045-5318e27e89ac",
+          "target": "ATR0-S02",
+          "entity_name": "BUG-S11",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XTR3-06",
+          "source_fact": "0d4a3b8b-5679-56e4-9a54-48c4cc67c259",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+          "target": "A04-S01",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XTR3-06",
+          "source_fact": "0d4a3b8b-5679-56e4-9a54-48c4cc67c259",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "69769bf2-90b7-5e64-abc7-c157ae5e625f",
+          "target": "A04-S01",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "AM03",
+      "run_id": "ae7556dc-0894-4473-8f46-df83a4005135",
+      "archived_joint_sources": 40,
+      "new_primary_sources": [
+        "AAM1-S01",
+        "AAM1-S03",
+        "D15-S03",
+        "AAM1-S04",
+        "M03-S03",
+        "D09-S04",
+        "D09-S03",
+        "ATR2-S03"
+      ],
+      "new_review_ids": [
+        "ATR2-S03",
+        "D09-S03",
+        "D09-S04",
+        "D15-S03",
+        "M03-S03"
+      ],
+      "paths": [
+        {
+          "source": "AAM0-S02",
+          "source_fact": "0c40b004-4b32-5246-a2de-f3578cd216bb",
+          "entity_id": "1332bb50-451c-5640-9008-a1c417ef552f",
+          "target_fact": "14138dbd-417e-5915-b26a-85153153d935",
+          "target": "AAM1-S01",
+          "entity_name": "IM-AM0750",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AAM0-S02",
+          "source_fact": "bb3749a8-9a57-5ce7-8858-8f99bacb6a64",
+          "entity_id": "62c0f1a1-e20f-5ff2-9c7b-8f58282a82b0",
+          "target_fact": "22d6e2a4-3bf6-50c4-af19-71d599194a6c",
+          "target": "AAM1-S01",
+          "entity_name": "DOC-AM01",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AAM0-S01",
+          "source_fact": "b689c5de-ecfb-5a43-987c-9e17b9b2d3b3",
+          "entity_id": "98d83613-57dc-5a00-b2e0-70887f1dda60",
+          "target_fact": "4df5f0b5-c077-597c-9e4e-91ecb4858541",
+          "target": "AAM1-S03",
+          "entity_name": "SN-AM07",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AAM0-S02",
+          "source_fact": "0c40b004-4b32-5246-a2de-f3578cd216bb",
+          "entity_id": "1332bb50-451c-5640-9008-a1c417ef552f",
+          "target_fact": "2c60bd11-7ad5-526c-8da1-66a69b6586cb",
+          "target": "AAM1-S03",
+          "entity_name": "IM-AM0750",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "D09-S01",
+          "source_fact": "1f57bfac-f90c-51a1-9902-e83a83e84625",
+          "entity_id": "05ede63f-f552-5571-a8fa-6568ad19bf5e",
+          "target_fact": "dff77c0c-54f6-5813-a249-0e7e6010e686",
+          "target": "D15-S03",
+          "entity_name": "模型团队",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "D09-S01",
+          "source_fact": "4875766e-e060-56f6-8f3b-d7fc237a99a7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "4f08de07-97fa-5853-8695-3efcaf44aea2",
+          "target": "D15-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AAM0-S02",
+          "source_fact": "0c40b004-4b32-5246-a2de-f3578cd216bb",
+          "entity_id": "1332bb50-451c-5640-9008-a1c417ef552f",
+          "target_fact": "5f856394-73cb-5a7a-81c0-3efa4cd64d66",
+          "target": "AAM1-S04",
+          "entity_name": "IM-AM0750",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AAM0-S01",
+          "source_fact": "b689c5de-ecfb-5a43-987c-9e17b9b2d3b3",
+          "entity_id": "98d83613-57dc-5a00-b2e0-70887f1dda60",
+          "target_fact": "790fb00c-4edc-5a78-b79b-98c2bb59d53c",
+          "target": "AAM1-S04",
+          "entity_name": "SN-AM07",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "D09-S01",
+          "source_fact": "4875766e-e060-56f6-8f3b-d7fc237a99a7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "439f9c20-9b3e-5afd-a73d-021f32b95b60",
+          "target": "M03-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "D09-S01",
+          "source_fact": "4875766e-e060-56f6-8f3b-d7fc237a99a7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "55ceb3d9-3132-58d2-8afa-5c9fd79af99b",
+          "target": "M03-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "D09-S01",
+          "source_fact": "1f57bfac-f90c-51a1-9902-e83a83e84625",
+          "entity_id": "05ede63f-f552-5571-a8fa-6568ad19bf5e",
+          "target_fact": "6f09fd32-420f-5b98-ae07-c47ea91ba333",
+          "target": "D09-S04",
+          "entity_name": "模型团队",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "D09-S01",
+          "source_fact": "1f57bfac-f90c-51a1-9902-e83a83e84625",
+          "entity_id": "10816c32-e4e0-5569-9d75-a65ff7f7c834",
+          "target_fact": "a773d817-9b7b-56e5-a41a-d93995a3d352",
+          "target": "D09-S03",
+          "entity_name": "应用",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "D09-S01",
+          "source_fact": "1f57bfac-f90c-51a1-9902-e83a83e84625",
+          "entity_id": "10816c32-e4e0-5569-9d75-a65ff7f7c834",
+          "target_fact": "b0297592-87f6-5d32-a45c-5d0df1c9c38b",
+          "target": "D09-S03",
+          "entity_name": "应用",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "D09-S01",
+          "source_fact": "4875766e-e060-56f6-8f3b-d7fc237a99a7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "1dc2eb9e-9c12-5f41-aa00-c01b71d0f6ef",
+          "target": "ATR2-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "D09-S01",
+          "source_fact": "4875766e-e060-56f6-8f3b-d7fc237a99a7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "bf940ab7-49bf-5f26-8552-c01c1e4c22a3",
+          "target": "ATR2-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "PO03",
+      "run_id": "ceadaaf0-80df-473b-b364-97cbf64f2cf5",
+      "archived_joint_sources": 30,
+      "new_primary_sources": [
+        "APO0-S01",
+        "APO0-S03",
+        "APO2-S02",
+        "ALE1-S04",
+        "XSH1-03",
+        "A03-S04",
+        "A04-S01",
+        "ALE0-S01"
+      ],
+      "new_review_ids": [
+        "A03-S04",
+        "A04-S01",
+        "ALE0-S01",
+        "ALE1-S04",
+        "APO0-S03",
+        "XSH1-03"
+      ],
+      "paths": [
+        {
+          "source": "XPO3-02",
+          "source_fact": "251b9122-5043-5ba3-a329-b85fe8ca1467",
+          "entity_id": "ec2c9ef8-f40b-59c7-9b41-8d5c33ed6d30",
+          "target_fact": "9fe7fb06-7286-5a79-87ef-514f53e1da61",
+          "target": "APO0-S01",
+          "entity_name": "CASE-P16",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XPO3-02",
+          "source_fact": "251b9122-5043-5ba3-a329-b85fe8ca1467",
+          "entity_id": "ec2c9ef8-f40b-59c7-9b41-8d5c33ed6d30",
+          "target_fact": "74e5c28a-d65c-573c-bded-69bc5b275c6f",
+          "target": "APO0-S01",
+          "entity_name": "CASE-P16",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XPO3-03",
+          "source_fact": "93569b67-46e9-5a40-84ff-f9edb0b4d8c6",
+          "entity_id": "270a7a7d-83b3-5b3d-9362-8d891a1fc8c1",
+          "target_fact": "43500723-7185-526e-91b3-2f04d37392df",
+          "target": "APO0-S03",
+          "entity_name": "POL-F08",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "APO1-S04",
+          "source_fact": "90319a19-4674-5782-a24c-f004c130080c",
+          "entity_id": "fde6f428-86ff-51a5-836d-14e6687869e5",
+          "target_fact": "4d72b1f2-dd05-5d44-8ff8-01ea97ce23a7",
+          "target": "APO2-S02",
+          "entity_name": "POL-LOCK01",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XPO3-03",
+          "source_fact": "93569b67-46e9-5a40-84ff-f9edb0b4d8c6",
+          "entity_id": "270a7a7d-83b3-5b3d-9362-8d891a1fc8c1",
+          "target_fact": "57032843-3004-5ebe-bc5f-9f363d5e2efe",
+          "target": "APO2-S02",
+          "entity_name": "POL-F08",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "APO1-S04",
+          "source_fact": "0f273cb5-8059-567b-affc-971ef743f199",
+          "entity_id": "5c77bda1-0308-5b00-b89a-76721c519613",
+          "target_fact": "32a8b59b-d582-54ba-9e9d-c9953544a0fa",
+          "target": "ALE1-S04",
+          "entity_name": "APP-A-12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "APO1-S04",
+          "source_fact": "0f273cb5-8059-567b-affc-971ef743f199",
+          "entity_id": "5c77bda1-0308-5b00-b89a-76721c519613",
+          "target_fact": "6e3c6aab-414e-527f-9f64-524b3f7a7e6b",
+          "target": "ALE1-S04",
+          "entity_name": "APP-A-12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "APO1-S04",
+          "source_fact": "0f273cb5-8059-567b-affc-971ef743f199",
+          "entity_id": "5c77bda1-0308-5b00-b89a-76721c519613",
+          "target_fact": "55912d3d-bfd4-5b1a-a12f-dc0712e9cbdf",
+          "target": "XSH1-03",
+          "entity_name": "APP-A-12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "APO1-S04",
+          "source_fact": "0f273cb5-8059-567b-affc-971ef743f199",
+          "entity_id": "5c77bda1-0308-5b00-b89a-76721c519613",
+          "target_fact": "0f483ed2-092e-5b7c-ad19-745414ea90b8",
+          "target": "A03-S04",
+          "entity_name": "APP-A-12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "APO1-S04",
+          "source_fact": "0f273cb5-8059-567b-affc-971ef743f199",
+          "entity_id": "5c77bda1-0308-5b00-b89a-76721c519613",
+          "target_fact": "f7f589c3-ba74-5a5a-b81d-73da31759da2",
+          "target": "A03-S04",
+          "entity_name": "APP-A-12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XPO3-03",
+          "source_fact": "93569b67-46e9-5a40-84ff-f9edb0b4d8c6",
+          "entity_id": "270a7a7d-83b3-5b3d-9362-8d891a1fc8c1",
+          "target_fact": "9d8f95ce-eccd-5302-96d9-8bd20e9b487c",
+          "target": "A04-S01",
+          "entity_name": "POL-F08",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XPO3-02",
+          "source_fact": "251b9122-5043-5ba3-a329-b85fe8ca1467",
+          "entity_id": "2e07d55f-ef4a-5daf-8510-4ec6a21b0687",
+          "target_fact": "c03abf35-5ff4-5e8b-bc6e-21a363b140db",
+          "target": "ALE0-S01",
+          "entity_name": "CASE-L08",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XPO3-02",
+          "source_fact": "251b9122-5043-5ba3-a329-b85fe8ca1467",
+          "entity_id": "2e07d55f-ef4a-5daf-8510-4ec6a21b0687",
+          "target_fact": "31c82cf9-bef2-5950-859d-b8ef0f3fa25a",
+          "target": "ALE0-S01",
+          "entity_name": "CASE-L08",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "X01",
+      "run_id": "5078d9a0-0159-4835-8f69-d93b8ac16ef6",
+      "archived_joint_sources": 99,
+      "new_primary_sources": [
+        "ASU2-S03",
+        "A05-S04",
+        "ASU0-S03",
+        "ASU2-S04",
+        "AWR0-S02",
+        "A04-S01",
+        "D15-S03",
+        "AWR2-S01"
+      ],
+      "new_review_ids": [
+        "ASU2-S03"
+      ],
+      "paths": [
+        {
+          "source": "A03-S01",
+          "source_fact": "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "1e2381a7-60ab-5f44-8c11-62ab87081c82",
+          "target": "ASU2-S03",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "966b7f2c-9c71-5897-9c02-3042c30fbeb1",
+          "target": "ASU2-S03",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A05-S03",
+          "source_fact": "5eab389b-8ac6-5592-a621-e4bbc0360fe1",
+          "entity_id": "0a2f7491-91d0-5be6-8730-1cd9b67f9a26",
+          "target_fact": "0004f20f-7002-5d66-acd0-74ac8b841361",
+          "target": "A05-S04",
+          "entity_name": "周报",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A05-S03",
+          "source_fact": "5eab389b-8ac6-5592-a621-e4bbc0360fe1",
+          "entity_id": "0a2f7491-91d0-5be6-8730-1cd9b67f9a26",
+          "target_fact": "cada74a7-124f-57bb-b22d-3ec564e68cd1",
+          "target": "A05-S04",
+          "entity_name": "周报",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "724d2f4e-91e4-5974-a70b-013a9fc5b806",
+          "target": "ASU0-S03",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU1-S04",
+          "source_fact": "0088eec5-0ba3-5466-aeda-286e594457cd",
+          "entity_id": "00a81893-b1f7-58bb-b18f-31c4e07a5f40",
+          "target_fact": "f89bc6ad-eba9-5e6a-974b-e1c166587237",
+          "target": "ASU0-S03",
+          "entity_name": "SU-NEG01",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR2-S03",
+          "source_fact": "2be8642a-5cd6-5d0f-90cf-be043e1739a1",
+          "entity_id": "d436c901-e590-5165-803c-599da5d625b0",
+          "target_fact": "c871c370-7121-554f-8282-181d9755d847",
+          "target": "ASU2-S04",
+          "entity_name": "ENV-A-DEMO",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XWR2-01",
+          "source_fact": "059caf71-b96a-5f3f-9efb-fb963fbabf97",
+          "entity_id": "f2d81c29-89ad-5805-9135-4040fb07428d",
+          "target_fact": "33f7eb7e-54d5-5804-8de6-4c7bdc9c7f1e",
+          "target": "AWR0-S02",
+          "entity_name": "R-06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XWR2-01",
+          "source_fact": "059caf71-b96a-5f3f-9efb-fb963fbabf97",
+          "entity_id": "f2d81c29-89ad-5805-9135-4040fb07428d",
+          "target_fact": "c6cc533b-b040-5083-98ec-9a36a5642730",
+          "target": "AWR0-S02",
+          "entity_name": "R-06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S02",
+          "source_fact": "0cf862a2-3a8d-5dcb-b689-b2f6821ff9e6",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+          "target": "A04-S01",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S02",
+          "source_fact": "0cf862a2-3a8d-5dcb-b689-b2f6821ff9e6",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "1b6692ac-508e-5e2c-b2ad-85f04fc040b1",
+          "target": "A04-S01",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S02",
+          "source_fact": "0cf862a2-3a8d-5dcb-b689-b2f6821ff9e6",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "dff77c0c-54f6-5813-a249-0e7e6010e686",
+          "target": "D15-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S02",
+          "source_fact": "0cf862a2-3a8d-5dcb-b689-b2f6821ff9e6",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "4f08de07-97fa-5853-8695-3efcaf44aea2",
+          "target": "D15-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XWR2-01",
+          "source_fact": "db686d9f-d69c-5703-90ba-af70de3a1678",
+          "entity_id": "38602bd0-d7a4-5e73-ac07-d560fbfedd8b",
+          "target_fact": "4f1ed298-bbc2-5140-95e1-3726b2f73e25",
+          "target": "AWR2-S01",
+          "entity_name": "DEDUP-02",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "X03",
+      "run_id": "34a92973-2d50-4207-b14c-e7bd5347e2c2",
+      "archived_joint_sources": 88,
+      "new_primary_sources": [
+        "NSU-S03",
+        "A03-S04",
+        "ASU2-S04",
+        "A03-S01",
+        "ATR2-S03",
+        "ASU2-S03",
+        "ASU2-S01",
+        "XTR2-01"
+      ],
+      "new_review_ids": [
+        "ASU2-S03",
+        "NSU-S03",
+        "XTR2-01"
+      ],
+      "paths": [
+        {
+          "source": "XSH1-01",
+          "source_fact": "50d91e6d-18d7-513e-9be8-6b4b4d32e42d",
+          "entity_id": "d436c901-e590-5165-803c-599da5d625b0",
+          "target_fact": "44d480a6-6f48-5873-8f3b-1e2cd93c3845",
+          "target": "NSU-S03",
+          "entity_name": "ENV-A-DEMO",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A00-S02",
+          "source_fact": "b6474bbf-7c6d-5226-a1a5-a517458a39ee",
+          "entity_id": "5c77bda1-0308-5b00-b89a-76721c519613",
+          "target_fact": "ed82087e-dbf2-584b-8a92-c5774ec7baaf",
+          "target": "A03-S04",
+          "entity_name": "APP-A-12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A00-S02",
+          "source_fact": "b6474bbf-7c6d-5226-a1a5-a517458a39ee",
+          "entity_id": "5c77bda1-0308-5b00-b89a-76721c519613",
+          "target_fact": "0f483ed2-092e-5b7c-ad19-745414ea90b8",
+          "target": "A03-S04",
+          "entity_name": "APP-A-12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XSH1-01",
+          "source_fact": "50d91e6d-18d7-513e-9be8-6b4b4d32e42d",
+          "entity_id": "d436c901-e590-5165-803c-599da5d625b0",
+          "target_fact": "c871c370-7121-554f-8282-181d9755d847",
+          "target": "ASU2-S04",
+          "entity_name": "ENV-A-DEMO",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A00-S02",
+          "source_fact": "65cda754-402e-5626-9a0f-0ce00175f11f",
+          "entity_id": "6fd1998c-54a6-536c-a0bc-2360797b9174",
+          "target_fact": "024b9acb-5dbe-55cf-9005-4c692ab3e9a6",
+          "target": "A03-S01",
+          "entity_name": "ROUTE-03",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A00-S02",
+          "source_fact": "65cda754-402e-5626-9a0f-0ce00175f11f",
+          "entity_id": "6fd1998c-54a6-536c-a0bc-2360797b9174",
+          "target_fact": "87d5b92a-9fb0-56a6-9259-9dc82e7ae544",
+          "target": "A03-S01",
+          "entity_name": "ROUTE-03",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A00-S02",
+          "source_fact": "647fdb29-9f2e-5f5e-aa2b-df671c04a5c2",
+          "entity_id": "9817c4e6-fcc8-50bb-998b-e6c01aa2fafb",
+          "target_fact": "2be8642a-5cd6-5d0f-90cf-be043e1739a1",
+          "target": "ATR2-S03",
+          "entity_name": "LANG-02",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XSU3-02",
+          "source_fact": "b7c0fc89-e0f3-5155-972f-b954c77938d3",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "1e2381a7-60ab-5f44-8c11-62ab87081c82",
+          "target": "ASU2-S03",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XSU3-02",
+          "source_fact": "b7c0fc89-e0f3-5155-972f-b954c77938d3",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "966b7f2c-9c71-5897-9c02-3042c30fbeb1",
+          "target": "ASU2-S03",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A00-S02",
+          "source_fact": "b6474bbf-7c6d-5226-a1a5-a517458a39ee",
+          "entity_id": "5c77bda1-0308-5b00-b89a-76721c519613",
+          "target_fact": "9967fb81-cc87-5463-bc0a-d07c177cfc94",
+          "target": "ASU2-S01",
+          "entity_name": "APP-A-12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A00-S02",
+          "source_fact": "b6474bbf-7c6d-5226-a1a5-a517458a39ee",
+          "entity_id": "5c77bda1-0308-5b00-b89a-76721c519613",
+          "target_fact": "9ea95ef0-4412-501c-9707-e3e15bb0f92e",
+          "target": "ASU2-S01",
+          "entity_name": "APP-A-12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A00-S02",
+          "source_fact": "647fdb29-9f2e-5f5e-aa2b-df671c04a5c2",
+          "entity_id": "9817c4e6-fcc8-50bb-998b-e6c01aa2fafb",
+          "target_fact": "9f3da408-5d31-5f4a-9ce9-262b7c0db964",
+          "target": "XTR2-01",
+          "entity_name": "LANG-02",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "SU04",
+      "run_id": "5cf12777-d838-438e-b193-7eb7db0019e1",
+      "archived_joint_sources": 41,
+      "new_primary_sources": [
+        "A04-S01",
+        "A04-S02",
+        "ASU0-S01",
+        "ASU1-S04",
+        "A03-S04",
+        "ASU0-S04",
+        "ATR2-S03",
+        "ATR0-S03"
+      ],
+      "new_review_ids": [
+        "A04-S01",
+        "ASU0-S01",
+        "ATR0-S03",
+        "ATR2-S03"
+      ],
+      "paths": [
+        {
+          "source": "NSU-S03",
+          "source_fact": "6aa9563b-0c62-56ac-99fa-abde9e9da59a",
+          "entity_id": "dfb7ad14-4f82-5899-be55-f0a8d7009a0a",
+          "target_fact": "1b6692ac-508e-5e2c-b2ad-85f04fc040b1",
+          "target": "A04-S01",
+          "entity_name": "SEM-S09",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NSU-S03",
+          "source_fact": "6aa9563b-0c62-56ac-99fa-abde9e9da59a",
+          "entity_id": "dfb7ad14-4f82-5899-be55-f0a8d7009a0a",
+          "target_fact": "362f0fe1-f22d-596e-b3f4-034070221bd4",
+          "target": "A04-S02",
+          "entity_name": "SEM-S09",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NSU-S03",
+          "source_fact": "6aa9563b-0c62-56ac-99fa-abde9e9da59a",
+          "entity_id": "dfb7ad14-4f82-5899-be55-f0a8d7009a0a",
+          "target_fact": "9ab9b5ab-adf3-505d-9fbf-570fd71817af",
+          "target": "A04-S02",
+          "entity_name": "SEM-S09",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XSU3-02",
+          "source_fact": "b7c0fc89-e0f3-5155-972f-b954c77938d3",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "d4311897-7284-511c-af87-b7184da49d6e",
+          "target": "ASU0-S01",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XSU3-02",
+          "source_fact": "b7c0fc89-e0f3-5155-972f-b954c77938d3",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "31282597-b745-59ba-b327-77b6941e6e4a",
+          "target": "ASU1-S04",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XSU3-02",
+          "source_fact": "b7c0fc89-e0f3-5155-972f-b954c77938d3",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "905d9d0d-4203-5047-868a-bd6058d724a7",
+          "target": "ASU1-S04",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XSU3-06",
+          "source_fact": "2df1a886-53b7-513a-a065-1e517ad96522",
+          "entity_id": "48b14cc7-f398-5dc8-a6b5-aa8dbb52da86",
+          "target_fact": "ed82087e-dbf2-584b-8a92-c5774ec7baaf",
+          "target": "A03-S04",
+          "entity_name": "M-A19",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NSU-S03",
+          "source_fact": "6aa9563b-0c62-56ac-99fa-abde9e9da59a",
+          "entity_id": "dfb7ad14-4f82-5899-be55-f0a8d7009a0a",
+          "target_fact": "c2f51018-5a81-5a71-a793-e492f7289a5f",
+          "target": "ASU0-S04",
+          "entity_name": "SEM-S09",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NSU-S03",
+          "source_fact": "6aa9563b-0c62-56ac-99fa-abde9e9da59a",
+          "entity_id": "dfb7ad14-4f82-5899-be55-f0a8d7009a0a",
+          "target_fact": "ff2700e4-c645-5155-b935-9b8cbe0bdaab",
+          "target": "ASU0-S04",
+          "entity_name": "SEM-S09",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NSU-S03",
+          "source_fact": "44d480a6-6f48-5873-8f3b-1e2cd93c3845",
+          "entity_id": "d436c901-e590-5165-803c-599da5d625b0",
+          "target_fact": "2be8642a-5cd6-5d0f-90cf-be043e1739a1",
+          "target": "ATR2-S03",
+          "entity_name": "ENV-A-DEMO",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NSU-S03",
+          "source_fact": "44d480a6-6f48-5873-8f3b-1e2cd93c3845",
+          "entity_id": "d436c901-e590-5165-803c-599da5d625b0",
+          "target_fact": "2125fcf0-f956-5278-b577-7ed91a3ba5a8",
+          "target": "ATR0-S03",
+          "entity_name": "ENV-A-DEMO",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XSU3-05",
+          "source_fact": "c7ba46e8-79f2-5673-a231-e6c55989641a",
+          "entity_id": "b6712e2f-d735-5311-971d-1e1c2a75f025",
+          "target_fact": "55f6a5bd-1bd6-5260-a463-8dd60dee0790",
+          "target": "ATR0-S03",
+          "entity_name": "ENV-A-PREVIEW",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "LE03",
+      "run_id": "fe8bfdba-7fc2-48b9-8c32-2658fac01954",
+      "archived_joint_sources": 44,
+      "new_primary_sources": [
+        "M03-S01",
+        "ALE0-S02",
+        "D08-S02",
+        "ALE1-S04",
+        "ATR2-S01",
+        "A04-S03",
+        "ATR0-S01",
+        "A04-S02"
+      ],
+      "new_review_ids": [
+        "A04-S02",
+        "A04-S03",
+        "ALE0-S02",
+        "ATR0-S01",
+        "ATR2-S01",
+        "D08-S02",
+        "M03-S01"
+      ],
+      "paths": [
+        {
+          "source": "NTR-S02",
+          "source_fact": "13cef26d-b894-5deb-84f5-f683dd9f72ed",
+          "entity_id": "1ba3b806-0ea8-58a2-8937-483c79f7665c",
+          "target_fact": "adea0f0d-b86a-58b8-ac91-c88513cf6a0a",
+          "target": "M03-S01",
+          "entity_name": "TPL-AR-02",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XLE2-02",
+          "source_fact": "f4231abd-c5c4-53ee-af41-08fab6ccd7b2",
+          "entity_id": "3fd7dbdd-704c-592a-97c7-0fc19884a08e",
+          "target_fact": "df67b442-140f-527c-a554-9fcd3297c59b",
+          "target": "ALE0-S02",
+          "entity_name": "LET-F06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XLE2-02",
+          "source_fact": "f4231abd-c5c4-53ee-af41-08fab6ccd7b2",
+          "entity_id": "3fd7dbdd-704c-592a-97c7-0fc19884a08e",
+          "target_fact": "43812c96-eaad-5aef-91bc-f43a79d6626c",
+          "target": "ALE0-S02",
+          "entity_name": "LET-F06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NTR-S02",
+          "source_fact": "13cef26d-b894-5deb-84f5-f683dd9f72ed",
+          "entity_id": "1ba3b806-0ea8-58a2-8937-483c79f7665c",
+          "target_fact": "329b4ea2-60ad-5ee1-b0bb-b3f3433da493",
+          "target": "D08-S02",
+          "entity_name": "TPL-AR-02",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NTR-S02",
+          "source_fact": "e1f1a078-5a40-5baa-85f4-d14216c867d0",
+          "entity_id": "d394db0b-9ba2-5103-8407-d0af89705057",
+          "target_fact": "dccda7fa-2dad-519a-840f-886a8eeaae11",
+          "target": "D08-S02",
+          "entity_name": "BUG-F04",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XLE2-02",
+          "source_fact": "f4231abd-c5c4-53ee-af41-08fab6ccd7b2",
+          "entity_id": "3fd7dbdd-704c-592a-97c7-0fc19884a08e",
+          "target_fact": "fc9607b2-e338-544d-a5ab-9b3b23e54721",
+          "target": "ALE1-S04",
+          "entity_name": "LET-F06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NTR-S02",
+          "source_fact": "13cef26d-b894-5deb-84f5-f683dd9f72ed",
+          "entity_id": "02493021-6226-583b-bb70-39b670882ef2",
+          "target_fact": "369bbe19-1799-5d24-b1dd-413b1937f704",
+          "target": "ATR2-S01",
+          "entity_name": "TR-SET12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NTR-S02",
+          "source_fact": "13cef26d-b894-5deb-84f5-f683dd9f72ed",
+          "entity_id": "02493021-6226-583b-bb70-39b670882ef2",
+          "target_fact": "97bb13c1-21a3-54a1-8ba0-15756f5de4d3",
+          "target": "ATR2-S01",
+          "entity_name": "TR-SET12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XLE2-02",
+          "source_fact": "f4231abd-c5c4-53ee-af41-08fab6ccd7b2",
+          "entity_id": "3fd7dbdd-704c-592a-97c7-0fc19884a08e",
+          "target_fact": "2495a4fa-487f-56c5-bc38-d202c7dab8d6",
+          "target": "A04-S03",
+          "entity_name": "LET-F06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NTR-S02",
+          "source_fact": "13cef26d-b894-5deb-84f5-f683dd9f72ed",
+          "entity_id": "02493021-6226-583b-bb70-39b670882ef2",
+          "target_fact": "1338d208-22ef-591a-8855-b7983bd7852b",
+          "target": "ATR0-S01",
+          "entity_name": "TR-SET12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NTR-S02",
+          "source_fact": "13cef26d-b894-5deb-84f5-f683dd9f72ed",
+          "entity_id": "02493021-6226-583b-bb70-39b670882ef2",
+          "target_fact": "28fe38e2-c3d0-5c64-bd9e-3687ac9651fa",
+          "target": "ATR0-S01",
+          "entity_name": "TR-SET12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "APO2-S02",
+          "source_fact": "57032843-3004-5ebe-bc5f-9f363d5e2efe",
+          "entity_id": "270a7a7d-83b3-5b3d-9362-8d891a1fc8c1",
+          "target_fact": "25389c54-3987-5cf8-8970-c52ef79165ed",
+          "target": "A04-S02",
+          "entity_name": "POL-F08",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "APO2-S02",
+          "source_fact": "57032843-3004-5ebe-bc5f-9f363d5e2efe",
+          "entity_id": "270a7a7d-83b3-5b3d-9362-8d891a1fc8c1",
+          "target_fact": "2b84ccab-a5c9-512d-9079-3e310b3ac522",
+          "target": "A04-S02",
+          "entity_name": "POL-F08",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "WR04",
+      "run_id": "5d1eb04b-92cf-484a-bd59-31ed96659d66",
+      "archived_joint_sources": 37,
+      "new_primary_sources": [
+        "NWR-S02",
+        "AWR0-S02",
+        "A02-S03",
+        "AWR2-S03",
+        "A00-S02",
+        "XWR1-05"
+      ],
+      "new_review_ids": [
+        "AWR0-S02",
+        "NWR-S02"
+      ],
+      "paths": [
+        {
+          "source": "AWR1-S02",
+          "source_fact": "204aecf1-fcd2-524a-99e5-7d60a55c4aa9",
+          "entity_id": "f2d81c29-89ad-5805-9135-4040fb07428d",
+          "target_fact": "4776dacc-5150-5919-9ba7-fe395f233286",
+          "target": "NWR-S02",
+          "entity_name": "R-06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XWR2-07",
+          "source_fact": "459efb14-6e95-53c1-abd2-a0553c117195",
+          "entity_id": "4797093d-1651-552b-8c82-445168b9320f",
+          "target_fact": "32830e79-d729-5479-aabb-29d3b8e98042",
+          "target": "NWR-S02",
+          "entity_name": "CASE-R06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AWR1-S02",
+          "source_fact": "204aecf1-fcd2-524a-99e5-7d60a55c4aa9",
+          "entity_id": "f2d81c29-89ad-5805-9135-4040fb07428d",
+          "target_fact": "33f7eb7e-54d5-5804-8de6-4c7bdc9c7f1e",
+          "target": "AWR0-S02",
+          "entity_name": "R-06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AWR1-S02",
+          "source_fact": "75734076-920f-5edd-a880-fb3147776e40",
+          "entity_id": "8f8836ba-7f5d-5ad1-8142-57f749edc2ae",
+          "target_fact": "7e10ed11-e72c-5e8d-bf4f-bd93ddecb5fe",
+          "target": "AWR0-S02",
+          "entity_name": "IM-W19",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XWR2-07",
+          "source_fact": "459efb14-6e95-53c1-abd2-a0553c117195",
+          "entity_id": "4797093d-1651-552b-8c82-445168b9320f",
+          "target_fact": "b21196b5-0981-5642-ab0a-0cf2ca9d4282",
+          "target": "A02-S03",
+          "entity_name": "CASE-R06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XWR2-07",
+          "source_fact": "459efb14-6e95-53c1-abd2-a0553c117195",
+          "entity_id": "4797093d-1651-552b-8c82-445168b9320f",
+          "target_fact": "85125111-94b5-5115-bfdf-74c54f083289",
+          "target": "A02-S03",
+          "entity_name": "CASE-R06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AWR1-S02",
+          "source_fact": "75734076-920f-5edd-a880-fb3147776e40",
+          "entity_id": "8f8836ba-7f5d-5ad1-8142-57f749edc2ae",
+          "target_fact": "4889a9ff-6a3f-5675-b81c-88dfc0186309",
+          "target": "AWR2-S03",
+          "entity_name": "IM-W19",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AWR1-S02",
+          "source_fact": "75734076-920f-5edd-a880-fb3147776e40",
+          "entity_id": "8f8836ba-7f5d-5ad1-8142-57f749edc2ae",
+          "target_fact": "d454477a-efba-55b6-92a3-367405fe8e08",
+          "target": "AWR2-S03",
+          "entity_name": "IM-W19",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XWR2-01",
+          "source_fact": "db686d9f-d69c-5703-90ba-af70de3a1678",
+          "entity_id": "38602bd0-d7a4-5e73-ac07-d560fbfedd8b",
+          "target_fact": "ee40f2f8-c93e-58f6-b6f7-39aec26d86fc",
+          "target": "A00-S02",
+          "entity_name": "DEDUP-02",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AWR1-S02",
+          "source_fact": "75734076-920f-5edd-a880-fb3147776e40",
+          "entity_id": "8f8836ba-7f5d-5ad1-8142-57f749edc2ae",
+          "target_fact": "d01dce53-4b7d-5edf-8341-784cbe71757c",
+          "target": "XWR1-05",
+          "entity_name": "IM-W19",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "X05",
+      "run_id": "cd0b0ee3-7329-408a-8dab-9da79602ebae",
+      "archived_joint_sources": 100,
+      "new_primary_sources": [
+        "XSH2-05",
+        "ASU0-S04",
+        "ATR2-S03",
+        "M03-S03",
+        "ATR0-S02",
+        "T04-06",
+        "T04-07",
+        "A04-S02"
+      ],
+      "new_review_ids": [
+        "T04-06",
+        "T04-07",
+        "XSH2-05"
+      ],
+      "paths": [
+        {
+          "source": "A04-S01",
+          "source_fact": "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "21e72b54-1f59-5be7-902f-c45ef331994e",
+          "target": "XSH2-05",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A04-S01",
+          "source_fact": "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "3eca7db8-4589-56c8-91d0-299388a0d494",
+          "target": "XSH2-05",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A04-S01",
+          "source_fact": "1b6692ac-508e-5e2c-b2ad-85f04fc040b1",
+          "entity_id": "dfb7ad14-4f82-5899-be55-f0a8d7009a0a",
+          "target_fact": "ff2700e4-c645-5155-b935-9b8cbe0bdaab",
+          "target": "ASU0-S04",
+          "entity_name": "SEM-S09",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A04-S01",
+          "source_fact": "1b6692ac-508e-5e2c-b2ad-85f04fc040b1",
+          "entity_id": "dfb7ad14-4f82-5899-be55-f0a8d7009a0a",
+          "target_fact": "c2f51018-5a81-5a71-a793-e492f7289a5f",
+          "target": "ASU0-S04",
+          "entity_name": "SEM-S09",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A04-S01",
+          "source_fact": "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "1dc2eb9e-9c12-5f41-aa00-c01b71d0f6ef",
+          "target": "ATR2-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A04-S01",
+          "source_fact": "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "bf940ab7-49bf-5f26-8552-c01c1e4c22a3",
+          "target": "ATR2-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A04-S01",
+          "source_fact": "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "439f9c20-9b3e-5afd-a73d-021f32b95b60",
+          "target": "M03-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A04-S01",
+          "source_fact": "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "55ceb3d9-3132-58d2-8afa-5c9fd79af99b",
+          "target": "M03-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A04-S01",
+          "source_fact": "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "0ed2c9b8-11c4-5695-8871-307a2308733d",
+          "target": "ATR0-S02",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A04-S01",
+          "source_fact": "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "0cf862a2-3a8d-5dcb-b689-b2f6821ff9e6",
+          "target": "ATR0-S02",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XTR3-05",
+          "source_fact": "0360a32c-13d3-54d5-853b-771635eee51f",
+          "entity_id": "31c72528-c8ee-527d-9f52-cb4fd9d3d511",
+          "target_fact": "34df8086-4131-5db0-b76b-0d4b3834d797",
+          "target": "T04-06",
+          "entity_name": "BUG-S11",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T17-07",
+          "source_fact": "7c03d3b4-9be5-52ac-8ce1-30eb4ab895e1",
+          "entity_id": "c115fd52-8020-575e-a41e-aea1454a5a27",
+          "target_fact": "0f17c8ca-acb7-5de1-8e8b-33f41cf8a9b0",
+          "target": "T04-07",
+          "entity_name": "模型侧",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A04-S01",
+          "source_fact": "1b6692ac-508e-5e2c-b2ad-85f04fc040b1",
+          "entity_id": "dfb7ad14-4f82-5899-be55-f0a8d7009a0a",
+          "target_fact": "9ab9b5ab-adf3-505d-9fbf-570fd71817af",
+          "target": "A04-S02",
+          "entity_name": "SEM-S09",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A04-S01",
+          "source_fact": "1b6692ac-508e-5e2c-b2ad-85f04fc040b1",
+          "entity_id": "dfb7ad14-4f82-5899-be55-f0a8d7009a0a",
+          "target_fact": "362f0fe1-f22d-596e-b3f4-034070221bd4",
+          "target": "A04-S02",
+          "entity_name": "SEM-S09",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "X07",
+      "run_id": "32fdff41-03ab-435a-b43c-9f3f412fc977",
+      "archived_joint_sources": 89,
+      "new_primary_sources": [
+        "XTR3-05",
+        "ATR1-S04",
+        "XTR3-06",
+        "A03-S04",
+        "APO1-S04",
+        "ATR2-S02",
+        "T04-06",
+        "ASU2-S04"
+      ],
+      "new_review_ids": [
+        "T04-06",
+        "XTR3-05",
+        "XTR3-06"
+      ],
+      "paths": [
+        {
+          "source": "ATR2-S03",
+          "source_fact": "c324e145-3e04-540f-a0b2-181e7c262c2c",
+          "entity_id": "31c72528-c8ee-527d-9f52-cb4fd9d3d511",
+          "target_fact": "0360a32c-13d3-54d5-853b-771635eee51f",
+          "target": "XTR3-05",
+          "entity_name": "BUG-S11",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XTR2-01",
+          "source_fact": "9f3da408-5d31-5f4a-9ce9-262b7c0db964",
+          "entity_id": "9817c4e6-fcc8-50bb-998b-e6c01aa2fafb",
+          "target_fact": "2def28a5-9ec1-5e15-82ad-4995804bbdac",
+          "target": "ATR1-S04",
+          "entity_name": "LANG-02",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S02",
+          "source_fact": "4b552b12-c4f2-5c8f-9d37-90274a0c4a02",
+          "entity_id": "9ee61c77-39ce-5245-9204-b85ab3852e06",
+          "target_fact": "0f57f8cc-fc4d-5991-8122-d4780ed689b1",
+          "target": "ATR1-S04",
+          "entity_name": "TR-X03",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR2-S03",
+          "source_fact": "1dc2eb9e-9c12-5f41-aa00-c01b71d0f6ef",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "0d4a3b8b-5679-56e4-9a54-48c4cc67c259",
+          "target": "XTR3-06",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR2-S03",
+          "source_fact": "1dc2eb9e-9c12-5f41-aa00-c01b71d0f6ef",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "2eb84611-4c53-5ae9-a70a-4062da4795ea",
+          "target": "XTR3-06",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S03",
+          "source_fact": "55f6a5bd-1bd6-5260-a463-8dd60dee0790",
+          "entity_id": "5c77bda1-0308-5b00-b89a-76721c519613",
+          "target_fact": "f7f589c3-ba74-5a5a-b81d-73da31759da2",
+          "target": "A03-S04",
+          "entity_name": "APP-A-12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S03",
+          "source_fact": "55f6a5bd-1bd6-5260-a463-8dd60dee0790",
+          "entity_id": "5c77bda1-0308-5b00-b89a-76721c519613",
+          "target_fact": "0f483ed2-092e-5b7c-ad19-745414ea90b8",
+          "target": "A03-S04",
+          "entity_name": "APP-A-12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S03",
+          "source_fact": "55f6a5bd-1bd6-5260-a463-8dd60dee0790",
+          "entity_id": "5c77bda1-0308-5b00-b89a-76721c519613",
+          "target_fact": "0f273cb5-8059-567b-affc-971ef743f199",
+          "target": "APO1-S04",
+          "entity_name": "APP-A-12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S02",
+          "source_fact": "4b552b12-c4f2-5c8f-9d37-90274a0c4a02",
+          "entity_id": "9ee61c77-39ce-5245-9204-b85ab3852e06",
+          "target_fact": "afefb6ea-259f-5bf1-9049-e098b9a338ce",
+          "target": "ATR2-S02",
+          "entity_name": "TR-X03",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S02",
+          "source_fact": "7d7479c7-fe1d-5473-b4f9-421aaaf965b3",
+          "entity_id": "a364c3ea-fc98-5fba-b563-f26a27c75a87",
+          "target_fact": "c0515642-1c16-5c1d-aa2f-4c05e167fbb3",
+          "target": "ATR2-S02",
+          "entity_name": "TR-X02",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR2-S03",
+          "source_fact": "c324e145-3e04-540f-a0b2-181e7c262c2c",
+          "entity_id": "31c72528-c8ee-527d-9f52-cb4fd9d3d511",
+          "target_fact": "34df8086-4131-5db0-b76b-0d4b3834d797",
+          "target": "T04-06",
+          "entity_name": "BUG-S11",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S03",
+          "source_fact": "2125fcf0-f956-5278-b577-7ed91a3ba5a8",
+          "entity_id": "d436c901-e590-5165-803c-599da5d625b0",
+          "target_fact": "c871c370-7121-554f-8282-181d9755d847",
+          "target": "ASU2-S04",
+          "entity_name": "ENV-A-DEMO",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "TR03",
+      "run_id": "54e409b5-490e-4606-8360-0abc151716e6",
+      "archived_joint_sources": 35,
+      "new_primary_sources": [
+        "ATR0-S02",
+        "ATR1-S02",
+        "ATR2-S03",
+        "A00-S02",
+        "ATR2-S02",
+        "XSH2-05",
+        "A00-S01",
+        "ASU2-S04"
+      ],
+      "new_review_ids": [
+        "A00-S01",
+        "A00-S02",
+        "ASU2-S04",
+        "XSH2-05"
+      ],
+      "paths": [
+        {
+          "source": "A04-S03",
+          "source_fact": "1ce7f0c0-5f1d-5d3d-b310-c37204c596bd",
+          "entity_id": "5ae0acc3-d1e1-5fbb-ae5c-63bdaf704a0a",
+          "target_fact": "f9c6a435-5a9d-5746-9e94-73fa26a3fc7e",
+          "target": "ATR0-S02",
+          "entity_name": "ERR-LANG-T02",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XTR3-06",
+          "source_fact": "0d4a3b8b-5679-56e4-9a54-48c4cc67c259",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "0ed2c9b8-11c4-5695-8871-307a2308733d",
+          "target": "ATR0-S02",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S03",
+          "source_fact": "2125fcf0-f956-5278-b577-7ed91a3ba5a8",
+          "entity_id": "69b99610-0ec8-53f7-b77e-195d06b39334",
+          "target_fact": "181bda56-2888-50c7-ae74-8f762b1b346f",
+          "target": "ATR1-S02",
+          "entity_name": "APP-A-11",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S03",
+          "source_fact": "2125fcf0-f956-5278-b577-7ed91a3ba5a8",
+          "entity_id": "69b99610-0ec8-53f7-b77e-195d06b39334",
+          "target_fact": "62c96181-8fe6-5cbe-898b-08b60f1fe3bb",
+          "target": "ATR1-S02",
+          "entity_name": "APP-A-11",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S03",
+          "source_fact": "77d6fda8-1cab-53ef-b226-b79ed92d7621",
+          "entity_id": "9817c4e6-fcc8-50bb-998b-e6c01aa2fafb",
+          "target_fact": "2be8642a-5cd6-5d0f-90cf-be043e1739a1",
+          "target": "ATR2-S03",
+          "entity_name": "LANG-02",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XTR1-08",
+          "source_fact": "a93bd7fc-9577-57ef-8410-b15fdc4da3ff",
+          "entity_id": "31c72528-c8ee-527d-9f52-cb4fd9d3d511",
+          "target_fact": "c324e145-3e04-540f-a0b2-181e7c262c2c",
+          "target": "ATR2-S03",
+          "entity_name": "BUG-S11",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S03",
+          "source_fact": "55f6a5bd-1bd6-5260-a463-8dd60dee0790",
+          "entity_id": "b6712e2f-d735-5311-971d-1e1c2a75f025",
+          "target_fact": "801d9a92-957d-543b-9b6e-d697bc8ca7db",
+          "target": "A00-S02",
+          "entity_name": "ENV-A-PREVIEW",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S03",
+          "source_fact": "77d6fda8-1cab-53ef-b226-b79ed92d7621",
+          "entity_id": "9817c4e6-fcc8-50bb-998b-e6c01aa2fafb",
+          "target_fact": "647fdb29-9f2e-5f5e-aa2b-df671c04a5c2",
+          "target": "A00-S02",
+          "entity_name": "LANG-02",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR1-S04",
+          "source_fact": "4474b356-cce7-5625-999f-f65402b18aeb",
+          "entity_id": "a364c3ea-fc98-5fba-b563-f26a27c75a87",
+          "target_fact": "c0515642-1c16-5c1d-aa2f-4c05e167fbb3",
+          "target": "ATR2-S02",
+          "entity_name": "TR-X02",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR1-S04",
+          "source_fact": "0f57f8cc-fc4d-5991-8122-d4780ed689b1",
+          "entity_id": "9ee61c77-39ce-5245-9204-b85ab3852e06",
+          "target_fact": "afefb6ea-259f-5bf1-9049-e098b9a338ce",
+          "target": "ATR2-S02",
+          "entity_name": "TR-X03",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XTR3-06",
+          "source_fact": "0d4a3b8b-5679-56e4-9a54-48c4cc67c259",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "8a6108b4-3695-5742-aa7b-c68f63299914",
+          "target": "XSH2-05",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XTR3-06",
+          "source_fact": "0d4a3b8b-5679-56e4-9a54-48c4cc67c259",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "21e72b54-1f59-5be7-902f-c45ef331994e",
+          "target": "XSH2-05",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S03",
+          "source_fact": "2125fcf0-f956-5278-b577-7ed91a3ba5a8",
+          "entity_id": "d436c901-e590-5165-803c-599da5d625b0",
+          "target_fact": "e631f354-2a4e-5f03-beca-8e61b3b8fcc0",
+          "target": "A00-S01",
+          "entity_name": "ENV-A-DEMO",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S03",
+          "source_fact": "2125fcf0-f956-5278-b577-7ed91a3ba5a8",
+          "entity_id": "d436c901-e590-5165-803c-599da5d625b0",
+          "target_fact": "05cf9ef5-0ae8-5052-9846-b6b232afcf3a",
+          "target": "A00-S01",
+          "entity_name": "ENV-A-DEMO",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ATR0-S03",
+          "source_fact": "2125fcf0-f956-5278-b577-7ed91a3ba5a8",
+          "entity_id": "d436c901-e590-5165-803c-599da5d625b0",
+          "target_fact": "c871c370-7121-554f-8282-181d9755d847",
+          "target": "ASU2-S04",
+          "entity_name": "ENV-A-DEMO",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "SU03",
+      "run_id": "ee6fd8d3-5c29-435e-adb1-ab34f4c5fd17",
+      "archived_joint_sources": 44,
+      "new_primary_sources": [
+        "ASU2-S01",
+        "ASU2-S03",
+        "ASU0-S02",
+        "ASU1-S01",
+        "A05-S01",
+        "NSU-S02",
+        "ASU0-S03",
+        "NSU-S01"
+      ],
+      "new_review_ids": [
+        "ASU0-S03",
+        "ASU2-S03",
+        "NSU-S01",
+        "NSU-S02"
+      ],
+      "paths": [
+        {
+          "source": "ASU1-S04",
+          "source_fact": "31282597-b745-59ba-b327-77b6941e6e4a",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "9967fb81-cc87-5463-bc0a-d07c177cfc94",
+          "target": "ASU2-S01",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU1-S04",
+          "source_fact": "31282597-b745-59ba-b327-77b6941e6e4a",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "9ea95ef0-4412-501c-9707-e3e15bb0f92e",
+          "target": "ASU2-S01",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU1-S04",
+          "source_fact": "31282597-b745-59ba-b327-77b6941e6e4a",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "1e2381a7-60ab-5f44-8c11-62ab87081c82",
+          "target": "ASU2-S03",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU1-S04",
+          "source_fact": "31282597-b745-59ba-b327-77b6941e6e4a",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "966b7f2c-9c71-5897-9c02-3042c30fbeb1",
+          "target": "ASU2-S03",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU1-S04",
+          "source_fact": "905d9d0d-4203-5047-868a-bd6058d724a7",
+          "entity_id": "6fd1998c-54a6-536c-a0bc-2360797b9174",
+          "target_fact": "adedc8ad-21c5-55a7-a0a8-578174c00b0a",
+          "target": "ASU0-S02",
+          "entity_name": "ROUTE-03",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU1-S04",
+          "source_fact": "905d9d0d-4203-5047-868a-bd6058d724a7",
+          "entity_id": "6fd1998c-54a6-536c-a0bc-2360797b9174",
+          "target_fact": "257c39c4-126b-5855-9e29-0d5b02eed88a",
+          "target": "ASU0-S02",
+          "entity_name": "ROUTE-03",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU1-S04",
+          "source_fact": "0088eec5-0ba3-5466-aeda-286e594457cd",
+          "entity_id": "00a81893-b1f7-58bb-b18f-31c4e07a5f40",
+          "target_fact": "0196b65c-719c-5ef9-95a2-df6a0b5ae08b",
+          "target": "ASU1-S01",
+          "entity_name": "SU-NEG01",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU1-S04",
+          "source_fact": "0088eec5-0ba3-5466-aeda-286e594457cd",
+          "entity_id": "00a81893-b1f7-58bb-b18f-31c4e07a5f40",
+          "target_fact": "7d9e13b1-acae-5712-9bd1-38709ec737ba",
+          "target": "ASU1-S01",
+          "entity_name": "SU-NEG01",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU1-S04",
+          "source_fact": "31282597-b745-59ba-b327-77b6941e6e4a",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "e5320090-ff41-5f46-92d2-d72c574aeef8",
+          "target": "A05-S01",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU1-S04",
+          "source_fact": "31282597-b745-59ba-b327-77b6941e6e4a",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "9d531373-7c22-51ce-a7b3-3d25dcfa8012",
+          "target": "A05-S01",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU1-S04",
+          "source_fact": "31282597-b745-59ba-b327-77b6941e6e4a",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "270500d8-1967-5a27-a352-686b9008132d",
+          "target": "NSU-S02",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU1-S04",
+          "source_fact": "31282597-b745-59ba-b327-77b6941e6e4a",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "46a39fce-5d18-5ff9-9fee-02dac740bc78",
+          "target": "NSU-S02",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU1-S04",
+          "source_fact": "0088eec5-0ba3-5466-aeda-286e594457cd",
+          "entity_id": "00a81893-b1f7-58bb-b18f-31c4e07a5f40",
+          "target_fact": "724d2f4e-91e4-5974-a70b-013a9fc5b806",
+          "target": "ASU0-S03",
+          "entity_name": "SU-NEG01",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU1-S04",
+          "source_fact": "0088eec5-0ba3-5466-aeda-286e594457cd",
+          "entity_id": "00a81893-b1f7-58bb-b18f-31c4e07a5f40",
+          "target_fact": "f89bc6ad-eba9-5e6a-974b-e1c166587237",
+          "target": "ASU0-S03",
+          "entity_name": "SU-NEG01",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU0-S01",
+          "source_fact": "077144fd-df33-571d-b9a4-4c5f1d436d47",
+          "entity_id": "3a11b534-0e44-59a2-a229-3f1cc88d9d14",
+          "target_fact": "273fee42-8ca0-57d2-a4d8-edc213a49364",
+          "target": "NSU-S01",
+          "entity_name": "CASE-S24",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU0-S01",
+          "source_fact": "077144fd-df33-571d-b9a4-4c5f1d436d47",
+          "entity_id": "3a11b534-0e44-59a2-a229-3f1cc88d9d14",
+          "target_fact": "b496e866-78b7-5f56-b841-42c75d34c771",
+          "target": "NSU-S01",
+          "entity_name": "CASE-S24",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "AM04",
+      "run_id": "d9090506-89c5-4543-a5e5-da6b13cb708e",
+      "archived_joint_sources": 29,
+      "new_primary_sources": [],
+      "new_review_ids": [],
+      "paths": []
+    },
+    {
+      "case": "LE04",
+      "run_id": "1cdf921a-a672-41cd-8fbb-374b2e2710a3",
+      "archived_joint_sources": 44,
+      "new_primary_sources": [
+        "APO0-S01",
+        "ALE0-S02",
+        "D07-S02",
+        "XLE3-05",
+        "ATR2-S03",
+        "A04-S03",
+        "A00-S02",
+        "ATR0-S03"
+      ],
+      "new_review_ids": [
+        "A00-S02",
+        "A04-S03",
+        "ALE0-S02",
+        "APO0-S01",
+        "ATR0-S03",
+        "ATR2-S03",
+        "D07-S02",
+        "XLE3-05"
+      ],
+      "paths": [
+        {
+          "source": "XPO3-02",
+          "source_fact": "251b9122-5043-5ba3-a329-b85fe8ca1467",
+          "entity_id": "ec2c9ef8-f40b-59c7-9b41-8d5c33ed6d30",
+          "target_fact": "b6dc8e16-1d89-5eeb-aca0-e5315f2b2c16",
+          "target": "APO0-S01",
+          "entity_name": "CASE-P16",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XPO3-02",
+          "source_fact": "251b9122-5043-5ba3-a329-b85fe8ca1467",
+          "entity_id": "ec2c9ef8-f40b-59c7-9b41-8d5c33ed6d30",
+          "target_fact": "74e5c28a-d65c-573c-bded-69bc5b275c6f",
+          "target": "APO0-S01",
+          "entity_name": "CASE-P16",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ALE1-S04",
+          "source_fact": "fc9607b2-e338-544d-a5ab-9b3b23e54721",
+          "entity_id": "3fd7dbdd-704c-592a-97c7-0fc19884a08e",
+          "target_fact": "43812c96-eaad-5aef-91bc-f43a79d6626c",
+          "target": "ALE0-S02",
+          "entity_name": "LET-F06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ALE1-S04",
+          "source_fact": "fc9607b2-e338-544d-a5ab-9b3b23e54721",
+          "entity_id": "3fd7dbdd-704c-592a-97c7-0fc19884a08e",
+          "target_fact": "df67b442-140f-527c-a554-9fcd3297c59b",
+          "target": "ALE0-S02",
+          "entity_name": "LET-F06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XPO3-02",
+          "source_fact": "251b9122-5043-5ba3-a329-b85fe8ca1467",
+          "entity_id": "2e07d55f-ef4a-5daf-8510-4ec6a21b0687",
+          "target_fact": "8b434192-9ff2-5a77-bb05-8dbba6bf55bc",
+          "target": "D07-S02",
+          "entity_name": "CASE-L08",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ALE0-S01",
+          "source_fact": "31c82cf9-bef2-5950-859d-b8ef0f3fa25a",
+          "entity_id": "03d0c85e-9bcf-586a-b5c5-65adae6f56e8",
+          "target_fact": "5ef57697-dded-56c1-83cc-f0e9866b5546",
+          "target": "D07-S02",
+          "entity_name": "DEMO-A-L",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ALE1-S04",
+          "source_fact": "c67ccb62-4e48-57d6-985d-32ef735dbc12",
+          "entity_id": "d6629c53-7797-5467-9765-298d1e60765f",
+          "target_fact": "c61bb708-ea2f-51cc-b841-bb65d20d41b5",
+          "target": "XLE3-05",
+          "entity_name": "LET-S08",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T17-01",
+          "source_fact": "c09e1382-acbf-568d-8070-ec8b60a1f87c",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "1dc2eb9e-9c12-5f41-aa00-c01b71d0f6ef",
+          "target": "ATR2-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T17-01",
+          "source_fact": "c09e1382-acbf-568d-8070-ec8b60a1f87c",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "bf940ab7-49bf-5f26-8552-c01c1e4c22a3",
+          "target": "ATR2-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ALE1-S04",
+          "source_fact": "fc9607b2-e338-544d-a5ab-9b3b23e54721",
+          "entity_id": "3fd7dbdd-704c-592a-97c7-0fc19884a08e",
+          "target_fact": "2495a4fa-487f-56c5-bc38-d202c7dab8d6",
+          "target": "A04-S03",
+          "entity_name": "LET-F06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ALE1-S04",
+          "source_fact": "32a8b59b-d582-54ba-9e9d-c9953544a0fa",
+          "entity_id": "5c77bda1-0308-5b00-b89a-76721c519613",
+          "target_fact": "b6474bbf-7c6d-5226-a1a5-a517458a39ee",
+          "target": "A00-S02",
+          "entity_name": "APP-A-12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XSU3-05",
+          "source_fact": "c7ba46e8-79f2-5673-a231-e6c55989641a",
+          "entity_id": "b6712e2f-d735-5311-971d-1e1c2a75f025",
+          "target_fact": "17fea75d-03f7-5d67-a3dd-6fabe9190eb4",
+          "target": "A00-S02",
+          "entity_name": "ENV-A-PREVIEW",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ALE1-S04",
+          "source_fact": "32a8b59b-d582-54ba-9e9d-c9953544a0fa",
+          "entity_id": "5c77bda1-0308-5b00-b89a-76721c519613",
+          "target_fact": "55f6a5bd-1bd6-5260-a463-8dd60dee0790",
+          "target": "ATR0-S03",
+          "entity_name": "APP-A-12",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ALE1-S04",
+          "source_fact": "32a8b59b-d582-54ba-9e9d-c9953544a0fa",
+          "entity_id": "5c77bda1-0308-5b00-b89a-76721c519613",
+          "target_fact": "77d6fda8-1cab-53ef-b226-b79ed92d7621",
+          "target": "ATR0-S03",
+          "entity_name": "APP-A-12",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "WR03",
+      "run_id": "c7149d32-4af4-4315-80f6-bce7c674af4a",
+      "archived_joint_sources": 26,
+      "new_primary_sources": [
+        "XWR1-03",
+        "D07-S03",
+        "XWR1-01",
+        "AWR0-S02",
+        "AWR1-S01",
+        "AWR2-S02",
+        "AWR2-S03",
+        "A00-S02"
+      ],
+      "new_review_ids": [
+        "AWR0-S02",
+        "D07-S03",
+        "XWR1-01",
+        "XWR1-03"
+      ],
+      "paths": [
+        {
+          "source": "AWR1-S04",
+          "source_fact": "13d83a45-6aa0-5031-aec6-6284ea7634a2",
+          "entity_id": "ad41971a-912b-5356-88cd-52863645ae55",
+          "target_fact": "43782157-582b-58ec-9ead-4cb068088ff0",
+          "target": "XWR1-03",
+          "entity_name": "CASE-W21",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AWR1-S04",
+          "source_fact": "13d83a45-6aa0-5031-aec6-6284ea7634a2",
+          "entity_id": "ad41971a-912b-5356-88cd-52863645ae55",
+          "target_fact": "e53851bc-8e25-59b5-9634-0eb227b2105c",
+          "target": "XWR1-03",
+          "entity_name": "CASE-W21",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NWR-S02",
+          "source_fact": "32830e79-d729-5479-aabb-29d3b8e98042",
+          "entity_id": "4797093d-1651-552b-8c82-445168b9320f",
+          "target_fact": "0c17eddf-3878-5bd7-a277-eb4503337641",
+          "target": "D07-S03",
+          "entity_name": "CASE-R06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S03",
+          "source_fact": "2ec3d4ad-adfe-5b9d-b428-2b3565fb7d92",
+          "entity_id": "9d626f31-df7e-54dd-a2c7-97d658e7df23",
+          "target_fact": "22da096e-01d4-56ff-b0df-faac95f4dae0",
+          "target": "D07-S03",
+          "entity_name": "DEMO-A-R",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NWR-S02",
+          "source_fact": "4776dacc-5150-5919-9ba7-fe395f233286",
+          "entity_id": "f2d81c29-89ad-5805-9135-4040fb07428d",
+          "target_fact": "418dfed6-10a1-5fb3-92c7-b68d60a85496",
+          "target": "XWR1-01",
+          "entity_name": "R-06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NWR-S02",
+          "source_fact": "4776dacc-5150-5919-9ba7-fe395f233286",
+          "entity_id": "f2d81c29-89ad-5805-9135-4040fb07428d",
+          "target_fact": "33f7eb7e-54d5-5804-8de6-4c7bdc9c7f1e",
+          "target": "AWR0-S02",
+          "entity_name": "R-06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NWR-S02",
+          "source_fact": "4776dacc-5150-5919-9ba7-fe395f233286",
+          "entity_id": "f2d81c29-89ad-5805-9135-4040fb07428d",
+          "target_fact": "c6cc533b-b040-5083-98ec-9a36a5642730",
+          "target": "AWR0-S02",
+          "entity_name": "R-06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NWR-S02",
+          "source_fact": "4776dacc-5150-5919-9ba7-fe395f233286",
+          "entity_id": "f2d81c29-89ad-5805-9135-4040fb07428d",
+          "target_fact": "9f98f014-9810-52ca-994c-6eda7b6aef84",
+          "target": "AWR1-S01",
+          "entity_name": "R-06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AWR1-S02",
+          "source_fact": "75734076-920f-5edd-a880-fb3147776e40",
+          "entity_id": "8f8836ba-7f5d-5ad1-8142-57f749edc2ae",
+          "target_fact": "c471c3fc-5d15-5ea4-8bea-656a30505603",
+          "target": "AWR1-S01",
+          "entity_name": "IM-W19",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AWR1-S02",
+          "source_fact": "75734076-920f-5edd-a880-fb3147776e40",
+          "entity_id": "8f8836ba-7f5d-5ad1-8142-57f749edc2ae",
+          "target_fact": "6a905a67-521f-5d0f-acc6-d596b601f257",
+          "target": "AWR2-S02",
+          "entity_name": "IM-W19",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AWR1-S02",
+          "source_fact": "75734076-920f-5edd-a880-fb3147776e40",
+          "entity_id": "8f8836ba-7f5d-5ad1-8142-57f749edc2ae",
+          "target_fact": "4889a9ff-6a3f-5675-b81c-88dfc0186309",
+          "target": "AWR2-S03",
+          "entity_name": "IM-W19",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AWR1-S02",
+          "source_fact": "75734076-920f-5edd-a880-fb3147776e40",
+          "entity_id": "8f8836ba-7f5d-5ad1-8142-57f749edc2ae",
+          "target_fact": "d454477a-efba-55b6-92a3-367405fe8e08",
+          "target": "AWR2-S03",
+          "entity_name": "IM-W19",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NWR-S02",
+          "source_fact": "4776dacc-5150-5919-9ba7-fe395f233286",
+          "entity_id": "38602bd0-d7a4-5e73-ac07-d560fbfedd8b",
+          "target_fact": "ee40f2f8-c93e-58f6-b6f7-39aec26d86fc",
+          "target": "A00-S02",
+          "entity_name": "DEDUP-02",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "PO04",
+      "run_id": "25e8da45-3f53-4846-8afb-f38f4b039a43",
+      "archived_joint_sources": 52,
+      "new_primary_sources": [
+        "APO0-S01",
+        "D07-S02",
+        "APO1-S01",
+        "AWR0-S01",
+        "D07-S03",
+        "XWR1-03",
+        "APO1-S04",
+        "ALE0-S03"
+      ],
+      "new_review_ids": [
+        "AWR0-S01",
+        "D07-S02",
+        "D07-S03",
+        "XWR1-03"
+      ],
+      "paths": [
+        {
+          "source": "A02-S03",
+          "source_fact": "464fff73-7c8d-5c7d-a22e-3c46197887f3",
+          "entity_id": "ec2c9ef8-f40b-59c7-9b41-8d5c33ed6d30",
+          "target_fact": "b6dc8e16-1d89-5eeb-aca0-e5315f2b2c16",
+          "target": "APO0-S01",
+          "entity_name": "CASE-P16",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S02",
+          "source_fact": "c4953249-f796-5214-b465-a4afe58b1863",
+          "entity_id": "2e07d55f-ef4a-5daf-8510-4ec6a21b0687",
+          "target_fact": "8f81bf98-f853-57e4-9839-62459a60a9ee",
+          "target": "APO0-S01",
+          "entity_name": "CASE-L08",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S02",
+          "source_fact": "43a3b712-d91c-5171-9dfe-73cc4b444cdd",
+          "entity_id": "03d0c85e-9bcf-586a-b5c5-65adae6f56e8",
+          "target_fact": "5ef57697-dded-56c1-83cc-f0e9866b5546",
+          "target": "D07-S02",
+          "entity_name": "DEMO-A-L",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S02",
+          "source_fact": "43a3b712-d91c-5171-9dfe-73cc4b444cdd",
+          "entity_id": "03d0c85e-9bcf-586a-b5c5-65adae6f56e8",
+          "target_fact": "a6067bf0-dfc8-5824-8887-b5d7e39bb008",
+          "target": "D07-S02",
+          "entity_name": "DEMO-A-L",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XPO1-02",
+          "source_fact": "4bad87d8-4f94-5c22-896a-669aa1c7487f",
+          "entity_id": "cb6ab629-4c1b-51f0-8719-eeed5a7a0b39",
+          "target_fact": "06a609a7-2f09-587b-a85c-e0bfdf19bc3d",
+          "target": "APO1-S01",
+          "entity_name": "POL-X01",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XPO1-02",
+          "source_fact": "4bad87d8-4f94-5c22-896a-669aa1c7487f",
+          "entity_id": "cb6ab629-4c1b-51f0-8719-eeed5a7a0b39",
+          "target_fact": "1996286c-b7f1-5b50-8c7e-379e40caf628",
+          "target": "APO1-S01",
+          "entity_name": "POL-X01",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S03",
+          "source_fact": "2ec3d4ad-adfe-5b9d-b428-2b3565fb7d92",
+          "entity_id": "7be16050-e182-5e0b-b132-779c1bcacd13",
+          "target_fact": "0307adc6-7ad2-5a5b-966d-0427580c3285",
+          "target": "AWR0-S01",
+          "entity_name": "report-writer",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S03",
+          "source_fact": "46af64e0-f3ca-57e8-b134-84dbf5757ba8",
+          "entity_id": "ad41971a-912b-5356-88cd-52863645ae55",
+          "target_fact": "3c64b640-38b0-5c06-90f6-e80db6aec6d4",
+          "target": "AWR0-S01",
+          "entity_name": "CASE-W21",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S03",
+          "source_fact": "85125111-94b5-5115-bfdf-74c54f083289",
+          "entity_id": "4797093d-1651-552b-8c82-445168b9320f",
+          "target_fact": "0c17eddf-3878-5bd7-a277-eb4503337641",
+          "target": "D07-S03",
+          "entity_name": "CASE-R06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S03",
+          "source_fact": "2ec3d4ad-adfe-5b9d-b428-2b3565fb7d92",
+          "entity_id": "9d626f31-df7e-54dd-a2c7-97d658e7df23",
+          "target_fact": "22da096e-01d4-56ff-b0df-faac95f4dae0",
+          "target": "D07-S03",
+          "entity_name": "DEMO-A-R",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S03",
+          "source_fact": "46af64e0-f3ca-57e8-b134-84dbf5757ba8",
+          "entity_id": "ad41971a-912b-5356-88cd-52863645ae55",
+          "target_fact": "43782157-582b-58ec-9ead-4cb068088ff0",
+          "target": "XWR1-03",
+          "entity_name": "CASE-W21",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S03",
+          "source_fact": "2ec3d4ad-adfe-5b9d-b428-2b3565fb7d92",
+          "entity_id": "7be16050-e182-5e0b-b132-779c1bcacd13",
+          "target_fact": "e53851bc-8e25-59b5-9634-0eb227b2105c",
+          "target": "XWR1-03",
+          "entity_name": "report-writer",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XPO2-02",
+          "source_fact": "3e9900a6-0100-55f8-992c-e2e45e63cc5b",
+          "entity_id": "485f2465-0911-5503-b1df-e6e03057df42",
+          "target_fact": "aa0f4198-5162-5709-a7f4-cbf3a5717e8a",
+          "target": "APO1-S04",
+          "entity_name": "STYLE-P06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XPO2-02",
+          "source_fact": "3e9900a6-0100-55f8-992c-e2e45e63cc5b",
+          "entity_id": "485f2465-0911-5503-b1df-e6e03057df42",
+          "target_fact": "48b608e7-26fe-55c6-93a4-e2dd415f852e",
+          "target": "APO1-S04",
+          "entity_name": "STYLE-P06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NLE-S03",
+          "source_fact": "4da85283-7f86-5506-855f-a17a1aa6a220",
+          "entity_id": "d6629c53-7797-5467-9765-298d1e60765f",
+          "target_fact": "e6c616a7-f948-5ddf-8135-66a31d4e7df3",
+          "target": "ALE0-S03",
+          "entity_name": "LET-S08",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "NLE-S03",
+          "source_fact": "4da85283-7f86-5506-855f-a17a1aa6a220",
+          "entity_id": "d6629c53-7797-5467-9765-298d1e60765f",
+          "target_fact": "2ce1dc62-60ad-5816-82b9-61e343139be0",
+          "target": "ALE0-S03",
+          "entity_name": "LET-S08",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "X02",
+      "run_id": "2d9dc71f-d292-49aa-bc3e-b2f0fe3afaad",
+      "archived_joint_sources": 107,
+      "new_primary_sources": [
+        "A03-S04",
+        "A00-S02",
+        "ASU1-S04",
+        "A05-S01",
+        "D06-S01",
+        "ASU2-S04",
+        "T12-04",
+        "ASU0-S03"
+      ],
+      "new_review_ids": [
+        "D06-S01",
+        "T12-04"
+      ],
+      "paths": [
+        {
+          "source": "XSH2-08",
+          "source_fact": "bb6cd9c3-af74-589a-a670-d1a8581a7a6d",
+          "entity_id": "48b14cc7-f398-5dc8-a6b5-aa8dbb52da86",
+          "target_fact": "ed82087e-dbf2-584b-8a92-c5774ec7baaf",
+          "target": "A03-S04",
+          "entity_name": "M-A19",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A00-S03",
+          "source_fact": "cb00cb76-1567-5435-9df1-f81ec77eed28",
+          "entity_id": "96bb3609-5498-5a55-94fa-f443a2786e33",
+          "target_fact": "d318e35f-f7b4-5776-bdef-264bbb28a285",
+          "target": "A03-S04",
+          "entity_name": "EVAL-62",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XSU3-05",
+          "source_fact": "c7ba46e8-79f2-5673-a231-e6c55989641a",
+          "entity_id": "b6712e2f-d735-5311-971d-1e1c2a75f025",
+          "target_fact": "801d9a92-957d-543b-9b6e-d697bc8ca7db",
+          "target": "A00-S02",
+          "entity_name": "ENV-A-PREVIEW",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "024b9acb-5dbe-55cf-9005-4c692ab3e9a6",
+          "entity_id": "6fd1998c-54a6-536c-a0bc-2360797b9174",
+          "target_fact": "65cda754-402e-5626-9a0f-0ce00175f11f",
+          "target": "A00-S02",
+          "entity_name": "ROUTE-03",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "31282597-b745-59ba-b327-77b6941e6e4a",
+          "target": "ASU1-S04",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "024b9acb-5dbe-55cf-9005-4c692ab3e9a6",
+          "entity_id": "6fd1998c-54a6-536c-a0bc-2360797b9174",
+          "target_fact": "905d9d0d-4203-5047-868a-bd6058d724a7",
+          "target": "ASU1-S04",
+          "entity_name": "ROUTE-03",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "e9bca9d9-2644-550c-8f53-4b77e2564e4f",
+          "target": "A05-S01",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "9d531373-7c22-51ce-a7b3-3d25dcfa8012",
+          "target": "A05-S01",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "D06-S02",
+          "source_fact": "396269d4-24bd-5890-92ad-0561895c06be",
+          "entity_id": "2a894bc5-5c6d-519f-8591-8e7eb24c6f9d",
+          "target_fact": "835575cd-b47a-5fb3-a048-9703afd4d026",
+          "target": "D06-S01",
+          "entity_name": "项目A",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XSU3-06",
+          "source_fact": "c6196731-35b4-5bc8-a80a-62881783a391",
+          "entity_id": "dfb7ad14-4f82-5899-be55-f0a8d7009a0a",
+          "target_fact": "73f45823-43c6-5219-affd-ea59d30bdbf9",
+          "target": "ASU2-S04",
+          "entity_name": "SEM-S09",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A00-S03",
+          "source_fact": "cb00cb76-1567-5435-9df1-f81ec77eed28",
+          "entity_id": "96bb3609-5498-5a55-94fa-f443a2786e33",
+          "target_fact": "8c352e00-8dbd-5d14-8e7a-3cc60d02d8c9",
+          "target": "T12-04",
+          "entity_name": "EVAL-62",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XSU3-06",
+          "source_fact": "c6196731-35b4-5bc8-a80a-62881783a391",
+          "entity_id": "dfb7ad14-4f82-5899-be55-f0a8d7009a0a",
+          "target_fact": "ba9e6d4d-3a88-501e-a674-e2d98db1cc78",
+          "target": "ASU0-S03",
+          "entity_name": "SEM-S09",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "724d2f4e-91e4-5974-a70b-013a9fc5b806",
+          "target": "ASU0-S03",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "X04",
+      "run_id": "01198eee-a212-45da-89ec-8d001c238de8",
+      "archived_joint_sources": 122,
+      "new_primary_sources": [
+        "XSH2-05",
+        "A04-S01",
+        "ATR0-S02",
+        "ASU0-S02",
+        "XSU1-05",
+        "T04-07",
+        "D09-S03",
+        "ASU1-S04"
+      ],
+      "new_review_ids": [
+        "T04-06",
+        "T04-07",
+        "XSH2-05",
+        "XSU1-05"
+      ],
+      "paths": [
+        {
+          "source": "D09-S01",
+          "source_fact": "4875766e-e060-56f6-8f3b-d7fc237a99a7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "8a6108b4-3695-5742-aa7b-c68f63299914",
+          "target": "XSH2-05",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "D09-S01",
+          "source_fact": "4875766e-e060-56f6-8f3b-d7fc237a99a7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "21e72b54-1f59-5be7-902f-c45ef331994e",
+          "target": "XSH2-05",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "D09-S01",
+          "source_fact": "4875766e-e060-56f6-8f3b-d7fc237a99a7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+          "target": "A04-S01",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "D09-S01",
+          "source_fact": "4875766e-e060-56f6-8f3b-d7fc237a99a7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "69769bf2-90b7-5e64-abc7-c157ae5e625f",
+          "target": "A04-S01",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "D09-S01",
+          "source_fact": "4875766e-e060-56f6-8f3b-d7fc237a99a7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "0ed2c9b8-11c4-5695-8871-307a2308733d",
+          "target": "ATR0-S02",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A04-S03",
+          "source_fact": "1ce7f0c0-5f1d-5d3d-b310-c37204c596bd",
+          "entity_id": "5ae0acc3-d1e1-5fbb-ae5c-63bdaf704a0a",
+          "target_fact": "f9c6a435-5a9d-5746-9e94-73fa26a3fc7e",
+          "target": "ATR0-S02",
+          "entity_name": "ERR-LANG-T02",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "024b9acb-5dbe-55cf-9005-4c692ab3e9a6",
+          "entity_id": "6fd1998c-54a6-536c-a0bc-2360797b9174",
+          "target_fact": "257c39c4-126b-5855-9e29-0d5b02eed88a",
+          "target": "ASU0-S02",
+          "entity_name": "ROUTE-03",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "024b9acb-5dbe-55cf-9005-4c692ab3e9a6",
+          "entity_id": "6fd1998c-54a6-536c-a0bc-2360797b9174",
+          "target_fact": "adedc8ad-21c5-55a7-a0a8-578174c00b0a",
+          "target": "ASU0-S02",
+          "entity_name": "ROUTE-03",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "024b9acb-5dbe-55cf-9005-4c692ab3e9a6",
+          "entity_id": "6fd1998c-54a6-536c-a0bc-2360797b9174",
+          "target_fact": "00f8a5b7-c7e6-5f90-9b2f-547798f3c47e",
+          "target": "XSU1-05",
+          "entity_name": "ROUTE-03",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "024b9acb-5dbe-55cf-9005-4c692ab3e9a6",
+          "entity_id": "6fd1998c-54a6-536c-a0bc-2360797b9174",
+          "target_fact": "3ac11962-cc0b-593e-b3e2-2dc12ecc42f1",
+          "target": "XSU1-05",
+          "entity_name": "ROUTE-03",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T17-07",
+          "source_fact": "7c03d3b4-9be5-52ac-8ce1-30eb4ab895e1",
+          "entity_id": "c115fd52-8020-575e-a41e-aea1454a5a27",
+          "target_fact": "0f17c8ca-acb7-5de1-8e8b-33f41cf8a9b0",
+          "target": "T04-07",
+          "entity_name": "模型侧",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XSH2-03",
+          "source_fact": "553846db-5814-5c60-b816-889c73d6e1af",
+          "entity_id": "10816c32-e4e0-5569-9d75-a65ff7f7c834",
+          "target_fact": "a773d817-9b7b-56e5-a41a-d93995a3d352",
+          "target": "D09-S03",
+          "entity_name": "应用",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "XSH2-03",
+          "source_fact": "553846db-5814-5c60-b816-889c73d6e1af",
+          "entity_id": "10816c32-e4e0-5569-9d75-a65ff7f7c834",
+          "target_fact": "b0297592-87f6-5d32-a45c-5d0df1c9c38b",
+          "target": "D09-S03",
+          "entity_name": "应用",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "31282597-b745-59ba-b327-77b6941e6e4a",
+          "target": "ASU1-S04",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "024b9acb-5dbe-55cf-9005-4c692ab3e9a6",
+          "entity_id": "6fd1998c-54a6-536c-a0bc-2360797b9174",
+          "target_fact": "905d9d0d-4203-5047-868a-bd6058d724a7",
+          "target": "ASU1-S04",
+          "entity_name": "ROUTE-03",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "X06",
+      "run_id": "ae286564-af69-4946-abdd-cdd1c8f1df8b",
+      "archived_joint_sources": 44,
+      "new_primary_sources": [
+        "AWR0-S03",
+        "AWR0-S01",
+        "XWR1-05",
+        "XWR1-01",
+        "AWR1-S03",
+        "XWR2-01",
+        "D07-S03",
+        "XWR1-02"
+      ],
+      "new_review_ids": [
+        "AWR0-S01",
+        "AWR0-S03",
+        "D07-S03",
+        "XWR1-01",
+        "XWR1-02",
+        "XWR1-05",
+        "XWR2-01"
+      ],
+      "paths": [
+        {
+          "source": "A04-S03",
+          "source_fact": "59b481c8-cddc-545f-8003-8495b8a44bf2",
+          "entity_id": "aceb7c27-43c4-55df-a56d-92931b69b7e3",
+          "target_fact": "01d80c08-9ee7-51eb-a939-77a76ff9ed6d",
+          "target": "AWR0-S03",
+          "entity_name": "WR-T03",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A04-S03",
+          "source_fact": "84e9d113-542d-5916-b7be-eb5094a5f43f",
+          "entity_id": "cabea81a-041f-5e00-9c87-326843097a01",
+          "target_fact": "4156a5a7-490e-5bcd-9ada-afcc88e25047",
+          "target": "AWR0-S03",
+          "entity_name": "WR-S04",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S03",
+          "source_fact": "2ec3d4ad-adfe-5b9d-b428-2b3565fb7d92",
+          "entity_id": "7be16050-e182-5e0b-b132-779c1bcacd13",
+          "target_fact": "0307adc6-7ad2-5a5b-966d-0427580c3285",
+          "target": "AWR0-S01",
+          "entity_name": "report-writer",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S03",
+          "source_fact": "46af64e0-f3ca-57e8-b134-84dbf5757ba8",
+          "entity_id": "ad41971a-912b-5356-88cd-52863645ae55",
+          "target_fact": "3c64b640-38b0-5c06-90f6-e80db6aec6d4",
+          "target": "AWR0-S01",
+          "entity_name": "CASE-W21",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AWR0-S02",
+          "source_fact": "7e10ed11-e72c-5e8d-bf4f-bd93ddecb5fe",
+          "entity_id": "8f8836ba-7f5d-5ad1-8142-57f749edc2ae",
+          "target_fact": "d01dce53-4b7d-5edf-8341-784cbe71757c",
+          "target": "XWR1-05",
+          "entity_name": "IM-W19",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A05-S04",
+          "source_fact": "0004f20f-7002-5d66-acd0-74ac8b841361",
+          "entity_id": "0a2f7491-91d0-5be6-8730-1cd9b67f9a26",
+          "target_fact": "418dfed6-10a1-5fb3-92c7-b68d60a85496",
+          "target": "XWR1-01",
+          "entity_name": "周报",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A05-S04",
+          "source_fact": "0004f20f-7002-5d66-acd0-74ac8b841361",
+          "entity_id": "0a2f7491-91d0-5be6-8730-1cd9b67f9a26",
+          "target_fact": "87847be9-0ae4-5503-bb34-0c7943581735",
+          "target": "XWR1-01",
+          "entity_name": "周报",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S03",
+          "source_fact": "2ec3d4ad-adfe-5b9d-b428-2b3565fb7d92",
+          "entity_id": "7be16050-e182-5e0b-b132-779c1bcacd13",
+          "target_fact": "3076782f-b31d-55e1-a576-331589711855",
+          "target": "AWR1-S03",
+          "entity_name": "report-writer",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S03",
+          "source_fact": "46af64e0-f3ca-57e8-b134-84dbf5757ba8",
+          "entity_id": "ad41971a-912b-5356-88cd-52863645ae55",
+          "target_fact": "08878e58-ef7a-54f2-9814-a52c91f61d0a",
+          "target": "AWR1-S03",
+          "entity_name": "CASE-W21",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AWR0-S02",
+          "source_fact": "33f7eb7e-54d5-5804-8de6-4c7bdc9c7f1e",
+          "entity_id": "f2d81c29-89ad-5805-9135-4040fb07428d",
+          "target_fact": "059caf71-b96a-5f3f-9efb-fb963fbabf97",
+          "target": "XWR2-01",
+          "entity_name": "R-06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S03",
+          "source_fact": "85125111-94b5-5115-bfdf-74c54f083289",
+          "entity_id": "4797093d-1651-552b-8c82-445168b9320f",
+          "target_fact": "0c17eddf-3878-5bd7-a277-eb4503337641",
+          "target": "D07-S03",
+          "entity_name": "CASE-R06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A02-S03",
+          "source_fact": "2ec3d4ad-adfe-5b9d-b428-2b3565fb7d92",
+          "entity_id": "9d626f31-df7e-54dd-a2c7-97d658e7df23",
+          "target_fact": "22da096e-01d4-56ff-b0df-faac95f4dae0",
+          "target": "D07-S03",
+          "entity_name": "DEMO-A-R",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AWR0-S02",
+          "source_fact": "0fb66480-ccdd-5441-bf13-95c051416117",
+          "entity_id": "ea1477bc-8f85-5e7e-b719-f0f616e280a1",
+          "target_fact": "4a04b614-fbbb-5e8d-8b43-c5ce59ded807",
+          "target": "XWR1-02",
+          "entity_name": "DOC-W01",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "AWR0-S02",
+          "source_fact": "0fb66480-ccdd-5441-bf13-95c051416117",
+          "entity_id": "664745c2-2701-5e80-93f4-88fecdd57f90",
+          "target_fact": "83787ab7-a686-5113-9415-b78aa2963acb",
+          "target": "XWR1-02",
+          "entity_name": "FWD-W01",
+          "edge_type": "ABOUT"
+        }
+      ]
+    },
+    {
+      "case": "X08",
+      "run_id": "f1d2a0d4-3ceb-4d6f-a951-d49e62594f6c",
+      "archived_joint_sources": 91,
+      "new_primary_sources": [
+        "ASU1-S01",
+        "XTR3-06",
+        "ASU0-S01",
+        "D15-S03",
+        "XTR2-07",
+        "A04-S01",
+        "A05-S01",
+        "ATR0-S02"
+      ],
+      "new_review_ids": [
+        "ASU1-S01",
+        "ATR0-S02",
+        "D15-S03",
+        "XTR2-07",
+        "XTR3-06"
+      ],
+      "paths": [
+        {
+          "source": "ASU1-S04",
+          "source_fact": "0088eec5-0ba3-5466-aeda-286e594457cd",
+          "entity_id": "00a81893-b1f7-58bb-b18f-31c4e07a5f40",
+          "target_fact": "1c2603a2-159f-5044-af8f-c12a61fed059",
+          "target": "ASU1-S01",
+          "entity_name": "SU-NEG01",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU1-S04",
+          "source_fact": "0088eec5-0ba3-5466-aeda-286e594457cd",
+          "entity_id": "00a81893-b1f7-58bb-b18f-31c4e07a5f40",
+          "target_fact": "0196b65c-719c-5ef9-95a2-df6a0b5ae08b",
+          "target": "ASU1-S01",
+          "entity_name": "SU-NEG01",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T08-02",
+          "source_fact": "4dd7998d-7e9d-575f-8a15-bcb83c99eed7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "0d4a3b8b-5679-56e4-9a54-48c4cc67c259",
+          "target": "XTR3-06",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T08-02",
+          "source_fact": "4dd7998d-7e9d-575f-8a15-bcb83c99eed7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "2eb84611-4c53-5ae9-a70a-4062da4795ea",
+          "target": "XTR3-06",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "d4311897-7284-511c-af87-b7184da49d6e",
+          "target": "ASU0-S01",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "ASU2-S02",
+          "source_fact": "265ee2f7-c620-537f-a63f-a8e4dbcb60de",
+          "entity_id": "21bcadf1-3807-5c59-9b3c-4e3b54631466",
+          "target_fact": "3ac39dd9-dfaf-563f-af70-d09ec7e9bb2d",
+          "target": "ASU0-S01",
+          "entity_name": "SU-IM04",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T08-02",
+          "source_fact": "4dd7998d-7e9d-575f-8a15-bcb83c99eed7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "dff77c0c-54f6-5813-a249-0e7e6010e686",
+          "target": "D15-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T08-02",
+          "source_fact": "4dd7998d-7e9d-575f-8a15-bcb83c99eed7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "4f08de07-97fa-5853-8695-3efcaf44aea2",
+          "target": "D15-S03",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T08-02",
+          "source_fact": "4dd7998d-7e9d-575f-8a15-bcb83c99eed7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "39cbdb02-b046-5901-8c15-61227fc208f9",
+          "target": "XTR2-07",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T08-02",
+          "source_fact": "4dd7998d-7e9d-575f-8a15-bcb83c99eed7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "a985cf8a-4169-51af-9c44-aeebaf19e655",
+          "target": "XTR2-07",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T08-02",
+          "source_fact": "4dd7998d-7e9d-575f-8a15-bcb83c99eed7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+          "target": "A04-S01",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T08-02",
+          "source_fact": "4dd7998d-7e9d-575f-8a15-bcb83c99eed7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "69769bf2-90b7-5e64-abc7-c157ae5e625f",
+          "target": "A04-S01",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "9d531373-7c22-51ce-a7b3-3d25dcfa8012",
+          "target": "A05-S01",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "A03-S01",
+          "source_fact": "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+          "entity_id": "a1fc597b-6f6f-5866-aaf0-e6c0c4ad91ef",
+          "target_fact": "e5320090-ff41-5f46-92d2-d72c574aeef8",
+          "target": "A05-S01",
+          "entity_name": "SU-EX06",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T08-02",
+          "source_fact": "4dd7998d-7e9d-575f-8a15-bcb83c99eed7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "0ed2c9b8-11c4-5695-8871-307a2308733d",
+          "target": "ATR0-S02",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        },
+        {
+          "source": "T08-02",
+          "source_fact": "4dd7998d-7e9d-575f-8a15-bcb83c99eed7",
+          "entity_id": "89bdf04c-793e-5269-a322-d1d3866790f4",
+          "target_fact": "0cf862a2-3a8d-5dcb-b689-b2f6821ff9e6",
+          "target": "ATR0-S02",
+          "entity_name": "QA-A27",
+          "edge_type": "ABOUT"
+        }
+      ]
+    }
+  ]
+}

@@ -304,6 +304,7 @@ def _expand_compact_result(raw: dict) -> dict:
         "type": "entity_type",
     }
     FACT_MAP = {
+        "原句": "source_quote",
         "主体": "subject_entity",
         "客体": "object_entity",
         "内容": "fact_text",
@@ -467,6 +468,7 @@ class ExtractedFact(BaseModel):
         default="",
         description="DEPRECATED — no longer extracted. Kept for old cache compat."
     )
+    source_quote: str | None = Field(default=None, description="Verbatim supporting passage from the target body")
     fact_text: str = Field(
         description="Natural language statement preserving all specifics"
     )
@@ -538,6 +540,11 @@ FACT RULES:
   attachment is a completed action. Neither is a directed ACTION_ITEM.
 - Use DELEGATE only to report or record established ownership or division of
   work when nobody is being asked in the utterance.
+- A reply identifies the addressee of a message. Assign ownership only when the
+  target names or commits the actor. Leave an unstated assignee unspecified.
+- Preserve the direction of delivery or binding: distinguish the delivered item,
+  its destination and the actor. Keep an omitted actor unspecified.
+- Return 原句 with the verbatim supporting sentence(s) from the target, including conditions and negation.
 - Each fact is a single, atomic claim
 - Preserve ALL specific details (numbers, dates, versions, decisions)
 - Include temporal bounds (生效/失效) if the message indicates when something started/ended
@@ -608,6 +615,9 @@ SYSTEM_PROMPT_CN = """你是一个知识抽取助手。
 - “我去确认”“我来处理”“我催一下”是发送者自己的计划；“文件发你了”或文件附件是已完成动作。
   两者都不是发给接收人的ACTION_ITEM。
 - 仅在陈述或记录已经确定的职责、归属或分工，且当前话语没有在要求某人做事时，才使用DELEGATE。
+- 回复关系只标明对话对象。仅在目标原文明示执行人或当事人承诺时记录职责，执行人未说明时留空。
+- 交付和绑定要保留方向，区分交付物、接收方和执行者，原文省略执行者时保留省略。
+- 用原句字段逐字引用目标正文中支撑该事实的完整句子，保留前提和否定。
 - 每条事实是单一原子性声明
 - 保留所有具体细节（数字、日期、版本、决策）
 - 如消息指出时间范围，填写生效/失效
@@ -678,6 +688,7 @@ BATCH_USER_PROMPT_TEMPLATE = """<MESSAGES>
         "主体": "...",
         "客体": "...",
         "内容": "完整陈述",
+        "原句": "目标正文中的原句",
         "事类": "STATUS",
         "置信": 0.9
       }}]

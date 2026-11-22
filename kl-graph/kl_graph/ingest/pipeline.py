@@ -2432,6 +2432,7 @@ class IngestionPipeline:
         chunk_ts: int = 0,
         extraction_item_id: str | None = None,
         state_chunk_ids: list[str] | None = None,
+        target_content: str = "",
     ) -> list[Edge]:
         """Build the STATES + ABOUT edges for one raw fact (pure, no I/O).
 
@@ -2470,6 +2471,13 @@ class IngestionPipeline:
         fact_id = _fact_id(extraction_item_id or msg_id, fact_text)
         edges: list[Edge] = []
 
+        quote = raw_fact.get("source_quote")
+        anchor = None
+        if isinstance(quote, str) and quote.strip():
+            start = target_content.find(quote)
+            if start >= 0 and target_content.find(quote, start + 1) < 0:
+                anchor = {"source_quote": {"quote": quote, "start": start, "end": start + len(quote)}}
+
         # STATES: fact → source chunk
         for state_chunk_id in state_chunk_ids or [msg_id]:
             edges.append(
@@ -2479,6 +2487,7 @@ class IngestionPipeline:
                     target_type="chunk",
                     target_id=state_chunk_id,
                     edge_type=EdgeType.STATES,
+                    properties=anchor if state_chunk_id == msg_id else None,
                 )
             )
 
@@ -2638,6 +2647,7 @@ class IngestionPipeline:
                                     item.id, project_facts=True
                                 )
                             ],
+                            target_content=item.content,
                         )
                     )
 

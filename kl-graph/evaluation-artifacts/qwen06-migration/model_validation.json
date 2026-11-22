@@ -1,0 +1,36 @@
+{
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "dimensions": 1024,
+  "device": "cpu",
+  "weight_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "load_seconds": 9.758160564000718,
+  "request_seconds": 12.793386927998654,
+  "request_text_count": 4,
+  "usage": {
+    "prompt_tokens": 1000,
+    "total_tokens": 1000
+  },
+  "unit_norm_verified": true,
+  "finite_verified": true,
+  "toy_retrieval_similarities": [
+    0.7424806830882974,
+    0.3372790744629687
+  ],
+  "v4_native_chunks": 161,
+  "v4_max_chunk_tokens": 938,
+  "v4_max_chunk_id": "57185725-f4c7-521a-afe8-b09b4052c68b",
+  "runtime_max_input_tokens": 8192,
+  "no_truncation": true,
+  "max_rss_mib": 3883.5234375,
+  "model_weight_sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+  "code_tests": {
+    "passed": 34,
+    "deselected": 2,
+    "subtests_passed": 7
+  },
+  "cpu_threads": 2,
+  "native_embedding_batch_size": 2,
+  "native_embedding_concurrency": 1,
+  "native_embedding_timeout_seconds": 120,
+  "native_ingestion_wait_timeout_seconds": 7200
+}

@@ -1,0 +1,14 @@
+{
+  "effective_answer_count": 10,
+  "business_question_count": 5,
+  "modes": [
+    "B",
+    "C"
+  ],
+  "input_budget": 8192,
+  "all_global_reviews_completed": true,
+  "all_final_original_texts_preserved": true,
+  "shared_base_retrieval_equal": true,
+  "x03_initial_candidates_and_rankings_identical": true,
+  "unit_tests_passed": 18
+}

@@ -1,0 +1,66 @@
+{
+  "selected_before_results": true,
+  "question_ids": [
+    "SU04",
+    "LE03",
+    "WR04",
+    "X05",
+    "X07"
+  ],
+  "selection_basis": "按剩余eval问题的能力类型选择，不依据本轮答案或成绩；3道单Skill题和2道跨Skill题。",
+  "not_an_unseen_holdout": "原20题历史上已有使用，属于冻结实现后新增的回归覆盖，不是独立盲测。",
+  "questions": [
+    {
+      "question_id": "SU04",
+      "split": "eval",
+      "skill": "摘要",
+      "question": "前方临场换一份带否定条款的新文件，能否沿用摘要六例的准入？",
+      "cutoff": "2026-11-20",
+      "profile": "app_focus",
+      "selection_reason": "新文件及否定条款是否可以沿用固定六例准入；检查适用范围与事实约束。"
+    },
+    {
+      "question_id": "LE03",
+      "split": "eval",
+      "skill": "公函",
+      "question": "“模板三个样例通过”是否可以关闭公函Skill的所有缺陷？",
+      "cutoff": "2026-11-20",
+      "profile": "app_focus",
+      "selection_reason": "模板局部修复能否覆盖其他公函缺陷；检查不同根因和未闭环项。"
+    },
+    {
+      "question_id": "WR04",
+      "split": "eval",
+      "skill": "周报",
+      "question": "修完去重后，下一轮周报回归应覆盖哪些项目？",
+      "cutoff": "2026-11-20",
+      "profile": "app_focus",
+      "selection_reason": "去重之外的周报回归范围；检查取数、来源、风险内容及配套验证的完整性。"
+    },
+    {
+      "question_id": "X05",
+      "split": "eval",
+      "skill": "跨Skill",
+      "question": "QA-A27是否覆盖了本轮所有应用badcase？应用林工和模型林工分别还需做什么？",
+      "cutoff": "2026-11-20",
+      "profile": "app_focus",
+      "selection_reason": "样本包覆盖范围及应用/模型同名角色分工；检查对象关联与身份归属。"
+    },
+    {
+      "question_id": "X07",
+      "split": "eval",
+      "skill": "跨Skill",
+      "question": "共同的ROUTE-03与LANG-02补丁经过部分测试，影响分析应覆盖哪些Skill，现有证据确认了哪些？",
+      "cutoff": "2026-11-20",
+      "profile": "app_focus",
+      "selection_reason": "共享路由和语言补丁跨Skill影响；检查关联召回、已验证与潜在影响的边界。"
+    }
+  ],
+  "rules": [
+    "每题BC各一次，无A",
+    "无成功答案替换；技术失败只重试对应失败题并留档",
+    "参考答案全部调用结束后才用于评分",
+    "模型、语料、截止、检索与回答实现冻结",
+    "保留原默认五题，第二梯队仅显式启用"
+  ]
+}

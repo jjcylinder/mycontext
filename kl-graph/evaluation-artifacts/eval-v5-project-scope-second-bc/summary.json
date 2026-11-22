@@ -1,0 +1,102 @@
+{
+  "dataset": "project-a-v5-natural-app_focus-4f98497fe04be748",
+  "rubric": "V5-rubric-1",
+  "aggregate": {
+    "B": {
+      "points": 14,
+      "possible": 15,
+      "all_points": 4,
+      "passed": 4,
+      "n": 5
+    },
+    "C": {
+      "points": 14,
+      "possible": 15,
+      "all_points": 4,
+      "passed": 4,
+      "n": 5
+    }
+  },
+  "scores": {
+    "SU04": {
+      "B": {
+        "points": 3,
+        "possible": 3,
+        "all_points": true,
+        "passed": true,
+        "extra": ""
+      },
+      "C": {
+        "points": 2,
+        "possible": 3,
+        "all_points": false,
+        "passed": false,
+        "extra": ""
+      }
+    },
+    "LE03": {
+      "B": {
+        "points": 3,
+        "possible": 3,
+        "all_points": true,
+        "passed": true,
+        "extra": ""
+      },
+      "C": {
+        "points": 3,
+        "possible": 3,
+        "all_points": true,
+        "passed": true,
+        "extra": ""
+      }
+    },
+    "WR04": {
+      "B": {
+        "points": 3,
+        "possible": 3,
+        "all_points": true,
+        "passed": true,
+        "extra": ""
+      },
+      "C": {
+        "points": 3,
+        "possible": 3,
+        "all_points": true,
+        "passed": true,
+        "extra": ""
+      }
+    },
+    "X05": {
+      "B": {
+        "points": 2,
+        "possible": 3,
+        "all_points": false,
+        "passed": false,
+        "extra": ""
+      },
+      "C": {
+        "points": 3,
+        "possible": 3,
+        "all_points": true,
+        "passed": true,
+        "extra": ""
+      }
+    },
+    "X07": {
+      "B": {
+        "points": 3,
+        "possible": 3,
+        "all_points": true,
+        "passed": true,
+        "extra": ""
+      },
+      "C": {
+        "points": 3,
+        "possible": 3,
+        "all_points": true,
+        "passed": true,
+        "extra": ""
+      }
+    }
+  }
+}

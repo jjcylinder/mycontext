@@ -1,0 +1,484 @@
+[
+  {
+    "archive": "eval-tr04-v4-pro-c",
+    "tokens": 8167,
+    "ids": [
+      "ATR0-S04",
+      "T04-06",
+      "T04-07",
+      "XTR3-06",
+      "XTR3-07",
+      "T08-02",
+      "T08-03",
+      "T08-04",
+      "NTR-S03",
+      "ATR2-S04",
+      "T16-06",
+      "XTR3-05",
+      "ASU2-S03",
+      "A05-S01",
+      "XSU3-02",
+      "XSU3-06",
+      "XSH1-06",
+      "XSH1-07",
+      "XSH1-04",
+      "XSH1-03",
+      "A03-S04",
+      "XSH1-01",
+      "XSH1-02",
+      "A03-S03",
+      "XSH1-08",
+      "A00-S01",
+      "XSU3-05",
+      "A03-S02",
+      "ATR2-S02",
+      "ATR1-S04",
+      "XTR2-04",
+      "T03-03",
+      "A00-S03",
+      "ALE2-S02",
+      "ALE2-S03",
+      "ALE0-S04",
+      "D07-S02",
+      "XSU1-01",
+      "XSU2-01",
+      "XSU2-05",
+      "ASU1-S02",
+      "ASU0-S03",
+      "XPO3-01",
+      "XPO3-02",
+      "XPO1-02",
+      "XPO1-04",
+      "APO1-S02",
+      "NLE-S03",
+      "ALE2-S04",
+      "XLE2-05",
+      "AAM1-S03",
+      "AAM0-S01",
+      "AAM2-S02",
+      "XAM2-02",
+      "ATR0-S01",
+      "ATR2-S03",
+      "M03-S03",
+      "D15-S01",
+      "D15-S04",
+      "T16-07"
+    ],
+    "duties": [
+      {
+        "source": "ATR0-S04",
+        "quote": "译义问题由应用提供期望答案后交模型林工分析",
+        "context_id": null,
+        "missing_before_check": false,
+        "covered_by": [
+          "ATR0-S04"
+        ]
+      },
+      {
+        "source": "ATR0-S04",
+        "quote": "格式及异常提示由应用周工处理",
+        "context_id": null,
+        "missing_before_check": false,
+        "covered_by": [
+          "ATR0-S04"
+        ]
+      },
+      {
+        "source": "ATR0-S04",
+        "quote": "整体回归由测试陈工组织",
+        "context_id": null,
+        "missing_before_check": false,
+        "covered_by": [
+          "ATR0-S04"
+        ]
+      },
+      {
+        "source": "T04-07",
+        "quote": "那张包含译义和凭空补内容的问题，模型侧还要分析",
+        "context_id": "T04-06",
+        "resolved_fact": {
+          "type": "DELEGATE",
+          "text": "BUG-S11仍需由模型侧分析。",
+          "evidence_ids": [
+            "T04-06",
+            "T04-07"
+          ]
+        },
+        "missing_before_check": false,
+        "covered_by": [
+          "T04-07"
+        ]
+      },
+      {
+        "source": "XTR3-06",
+        "quote": "模型分析还等QA-A27的期望答案与判定说明",
+        "context_id": null,
+        "resolved_fact": {
+          "type": "STATUS",
+          "text": "模型分析还等QA-A27的期望答案与判定说明",
+          "handoff": {
+            "type": "WAITS_FOR",
+            "waiting_party": null,
+            "waiting_activity": "模型分析",
+            "reported_by": "模型林工",
+            "provider": null,
+            "deliverable": "QA-A27的期望答案与判定说明",
+            "quote": "模型分析还等QA-A27的期望答案与判定说明",
+            "source_id": "XTR3-06"
+          },
+          "evidence_ids": [
+            "XTR3-06"
+          ]
+        },
+        "missing_before_check": false,
+        "covered_by": [
+          "XTR3-06"
+        ]
+      },
+      {
+        "source": "XTR3-07",
+        "quote": "我等待应用侧发布申请，不把预演复测记成正式上线",
+        "context_id": null,
+        "resolved_fact": {
+          "type": "STATUS",
+          "text": "我等待应用侧发布申请，不把预演复测记成正式上线",
+          "handoff": {
+            "type": "WAITS_FOR",
+            "waiting_party": "发布孙工",
+            "waiting_activity": "我",
+            "reported_by": "发布孙工",
+            "provider": "应用侧",
+            "deliverable": "发布申请",
+            "quote": "我等待应用侧发布申请，不把预演复测记成正式上线",
+            "source_id": "XTR3-07"
+          },
+          "evidence_ids": [
+            "XTR3-07"
+          ]
+        },
+        "missing_before_check": false,
+        "covered_by": [
+          "XTR3-07"
+        ]
+      },
+      {
+        "source": "T08-04",
+        "quote": "我补这两列，当前还不是可训练性检查通过",
+        "context_id": "T08-03",
+        "evidence_ids": [
+          "T08-02",
+          "T08-03",
+          "T08-04"
+        ],
+        "fact_id": "48bbcd8f-3a9c-51e7-9f25-d69e2cd6ecf1",
+        "resolved_fact": {
+          "type": "DECISION",
+          "text": "[2026-11-18] 应用协调计划补充QA-A27的判定说明列。",
+          "evidence_ids": [
+            "T08-02",
+            "T08-03",
+            "T08-04"
+          ]
+        },
+        "missing_before_check": false,
+        "covered_by": [
+          "T08-04"
+        ]
+      },
+      {
+        "source": "T08-04",
+        "quote": "我补这两列，当前还不是可训练性检查通过",
+        "context_id": "T08-03",
+        "evidence_ids": [
+          "T08-02",
+          "T08-03",
+          "T08-04"
+        ],
+        "fact_id": "afe9189f-6068-5889-ab09-f009a0c446da",
+        "resolved_fact": {
+          "type": "DECISION",
+          "text": "[2026-11-18] 应用协调计划补充QA-A27的期望答案列。",
+          "evidence_ids": [
+            "T08-02",
+            "T08-03",
+            "T08-04"
+          ]
+        },
+        "missing_before_check": false,
+        "covered_by": [
+          "T08-04"
+        ]
+      }
+    ],
+    "handoffs": [
+      {
+        "type": "WAITS_FOR",
+        "waiting_party": null,
+        "waiting_activity": "模型分析",
+        "reported_by": "模型林工",
+        "provider": null,
+        "deliverable": "QA-A27的期望答案与判定说明",
+        "quote": "模型分析还等QA-A27的期望答案与判定说明",
+        "source_id": "XTR3-06"
+      },
+      {
+        "type": "WAITS_FOR",
+        "waiting_party": "发布孙工",
+        "waiting_activity": "我",
+        "reported_by": "发布孙工",
+        "provider": "应用侧",
+        "deliverable": "发布申请",
+        "quote": "我等待应用侧发布申请，不把预演复测记成正式上线",
+        "source_id": "XTR3-07"
+      }
+    ],
+    "synthetic_display_check": "针对回复链“已收到QA-A27，先检查字段。 → 输入和实际输出有了，但期望答案、判定说明还缺。”，应用协调表示：“我补这两列，当前还不是可训练性检查通过”。",
+    "repeat_identical": true,
+    "model_calls": 0
+  },
+  {
+    "archive": "eval-tr04-v4-pro-grounded-c",
+    "tokens": 8097,
+    "ids": [
+      "ATR0-S04",
+      "T04-06",
+      "T04-07",
+      "XTR3-06",
+      "XTR3-07",
+      "T08-02",
+      "T08-03",
+      "T08-04",
+      "T16-06",
+      "T04-04",
+      "ATR2-S01",
+      "NTR-S03",
+      "ATR2-S04",
+      "T16-01",
+      "T16-02",
+      "T16-05",
+      "T16-07",
+      "D15-S04",
+      "XSH1-06",
+      "A03-S04",
+      "A03-S01",
+      "ASU1-S04",
+      "NSU-S02",
+      "ASU0-S02",
+      "NLE-S02",
+      "ALE0-S02",
+      "ALE1-S03",
+      "XLE2-01",
+      "XLE2-02",
+      "XSH1-01",
+      "XSH1-02",
+      "A03-S03",
+      "XSH1-08",
+      "XTR2-05",
+      "ATR2-S03",
+      "XTR2-07",
+      "M03-S03",
+      "XTR3-05",
+      "A00-S01",
+      "T03-01",
+      "T03-03",
+      "XSH1-04",
+      "T12-04",
+      "A00-S03",
+      "D06-S02",
+      "A05-S01",
+      "ASU2-S03",
+      "XSU3-02",
+      "XSU3-07",
+      "ALE2-S02",
+      "XLE2-04",
+      "XLE3-05",
+      "ALE0-S04",
+      "NLE-S03",
+      "ATR2-S02",
+      "XTR2-04",
+      "XTR3-02",
+      "ATR0-S01",
+      "NSU-S03",
+      "ASU2-S04",
+      "ASU0-S03",
+      "XSH2-03",
+      "XSH2-04",
+      "A04-S01",
+      "A04-S02",
+      "D08-S01",
+      "D08-S02",
+      "M03-S01"
+    ],
+    "duties": [
+      {
+        "source": "ATR0-S04",
+        "quote": "译义问题由应用提供期望答案后交模型林工分析",
+        "context_id": null,
+        "missing_before_check": false,
+        "covered_by": [
+          "ATR0-S04"
+        ]
+      },
+      {
+        "source": "ATR0-S04",
+        "quote": "格式及异常提示由应用周工处理",
+        "context_id": null,
+        "missing_before_check": false,
+        "covered_by": [
+          "ATR0-S04"
+        ]
+      },
+      {
+        "source": "ATR0-S04",
+        "quote": "整体回归由测试陈工组织",
+        "context_id": null,
+        "missing_before_check": false,
+        "covered_by": [
+          "ATR0-S04"
+        ]
+      },
+      {
+        "source": "T04-07",
+        "quote": "那张包含译义和凭空补内容的问题，模型侧还要分析",
+        "context_id": "T04-06",
+        "resolved_fact": {
+          "type": "DELEGATE",
+          "text": "BUG-S11仍需由模型侧分析。",
+          "evidence_ids": [
+            "T04-06",
+            "T04-07"
+          ]
+        },
+        "missing_before_check": false,
+        "covered_by": [
+          "T04-07"
+        ]
+      },
+      {
+        "source": "XTR3-06",
+        "quote": "模型分析还等QA-A27的期望答案与判定说明",
+        "context_id": null,
+        "resolved_fact": {
+          "type": "STATUS",
+          "text": "模型分析还等QA-A27的期望答案与判定说明",
+          "handoff": {
+            "type": "WAITS_FOR",
+            "waiting_party": null,
+            "waiting_activity": "模型分析",
+            "reported_by": "模型林工",
+            "provider": null,
+            "deliverable": "QA-A27的期望答案与判定说明",
+            "quote": "模型分析还等QA-A27的期望答案与判定说明",
+            "source_id": "XTR3-06"
+          },
+          "evidence_ids": [
+            "XTR3-06"
+          ]
+        },
+        "missing_before_check": false,
+        "covered_by": [
+          "XTR3-06"
+        ]
+      },
+      {
+        "source": "XTR3-07",
+        "quote": "我等待应用侧发布申请，不把预演复测记成正式上线",
+        "context_id": null,
+        "resolved_fact": {
+          "type": "STATUS",
+          "text": "我等待应用侧发布申请，不把预演复测记成正式上线",
+          "handoff": {
+            "type": "WAITS_FOR",
+            "waiting_party": "发布孙工",
+            "waiting_activity": "我",
+            "reported_by": "发布孙工",
+            "provider": "应用侧",
+            "deliverable": "发布申请",
+            "quote": "我等待应用侧发布申请，不把预演复测记成正式上线",
+            "source_id": "XTR3-07"
+          },
+          "evidence_ids": [
+            "XTR3-07"
+          ]
+        },
+        "missing_before_check": false,
+        "covered_by": [
+          "XTR3-07"
+        ]
+      },
+      {
+        "source": "T08-04",
+        "quote": "我补这两列，当前还不是可训练性检查通过",
+        "context_id": "T08-03",
+        "evidence_ids": [
+          "T08-02",
+          "T08-03",
+          "T08-04"
+        ],
+        "fact_id": "48bbcd8f-3a9c-51e7-9f25-d69e2cd6ecf1",
+        "resolved_fact": {
+          "type": "DECISION",
+          "text": "[2026-11-18] 应用协调计划补充QA-A27的判定说明列。",
+          "evidence_ids": [
+            "T08-02",
+            "T08-03",
+            "T08-04"
+          ]
+        },
+        "missing_before_check": false,
+        "covered_by": [
+          "T08-04"
+        ]
+      },
+      {
+        "source": "T08-04",
+        "quote": "我补这两列，当前还不是可训练性检查通过",
+        "context_id": "T08-03",
+        "evidence_ids": [
+          "T08-02",
+          "T08-03",
+          "T08-04"
+        ],
+        "fact_id": "afe9189f-6068-5889-ab09-f009a0c446da",
+        "resolved_fact": {
+          "type": "DECISION",
+          "text": "[2026-11-18] 应用协调计划补充QA-A27的期望答案列。",
+          "evidence_ids": [
+            "T08-02",
+            "T08-03",
+            "T08-04"
+          ]
+        },
+        "missing_before_check": false,
+        "covered_by": [
+          "T08-04"
+        ]
+      }
+    ],
+    "handoffs": [
+      {
+        "type": "WAITS_FOR",
+        "waiting_party": null,
+        "waiting_activity": "模型分析",
+        "reported_by": "模型林工",
+        "provider": null,
+        "deliverable": "QA-A27的期望答案与判定说明",
+        "quote": "模型分析还等QA-A27的期望答案与判定说明",
+        "source_id": "XTR3-06"
+      },
+      {
+        "type": "WAITS_FOR",
+        "waiting_party": "发布孙工",
+        "waiting_activity": "我",
+        "reported_by": "发布孙工",
+        "provider": "应用侧",
+        "deliverable": "发布申请",
+        "quote": "我等待应用侧发布申请，不把预演复测记成正式上线",
+        "source_id": "XTR3-07"
+      }
+    ],
+    "synthetic_display_check": "针对回复链“已收到QA-A27，先检查字段。 → 输入和实际输出有了，但期望答案、判定说明还缺。”，应用协调表示：“我补这两列，当前还不是可训练性检查通过”。",
+    "repeat_identical": true,
+    "model_calls": 0
+  }
+]

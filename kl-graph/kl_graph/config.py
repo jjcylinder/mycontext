@@ -67,6 +67,7 @@ class EmbeddingServiceConfig(_ConfigModel):
     api_key: str
     dim: int
     send_dimensions: bool
+    query_instruction: str = ""
 
 
 class LLMFlashServiceConfig(_ConfigModel):

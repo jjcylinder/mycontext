@@ -1,0 +1,183 @@
+{
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "dimensions": 1024,
+  "dataset_id": "project-a-v4-expanded-app_focus-d3af7d624eb6e2cb",
+  "graph_directory": "/home/jcylinder/codex/mycontext/kl-graph/data/project_demo/v4-longform-runtime/datasets/project-a-v4-expanded-app_focus-d3af7d624eb6e2cb/graph-abc47ce2060b88a7",
+  "ready": {
+    "native_run_id": "df8e5059-9af9-4a12-95e0-c09e80c21728",
+    "counts": {
+      "units_discovered": 349,
+      "units_skipped": 0,
+      "units_processed": 349,
+      "chunks_created": 161,
+      "extraction_total": 349,
+      "extraction_succeeded": 349,
+      "extraction_failed": 0
+    },
+    "knowledge": {
+      "messages": 20,
+      "entities": 182,
+      "facts": 965,
+      "edges": 3013
+    },
+    "elapsed_ms": 1966426,
+    "graph_backend": "sqlite",
+    "vector_backend": "zvec"
+  },
+  "business_question_evaluation_run": false,
+  "tables": {
+    "units": 349,
+    "chunks": 161,
+    "entities": 182,
+    "facts": 965,
+    "edges": 3013
+  },
+  "distinct_lineage_units": 349,
+  "vector_counts": {
+    "chunks": 161,
+    "entities": 182,
+    "facts": 965
+  },
+  "search_checks": {
+    "chunks": {
+      "collection": "chunks",
+      "results": [
+        {
+          "id": "project-a-demo-v3:wiki:A03:419f562a60ec5ab4b88eebc924caebd6:0",
+          "point_id": "b4781dae-fcfc-5b3f-b3f8-d27b6e8e5307",
+          "score": 0.5167114734649658,
+          "payload": {
+            "chunk_id": "project-a-demo-v3:wiki:A03:419f562a60ec5ab4b88eebc924caebd6:0",
+            "source_type": "wiki",
+            "source_ref": "corpus/documents/A03_候选配置发布核对.md#A03-S03",
+            "content": "查看发布材料时，可按项目和环境定位，再核对记录中的应用配置及模型标识。APP-A-12仅绑定ENV-A-PREVIEW。ENV-A-DEMO仍为APP-A-11，模型仍为M-A12；项目B的APP-B-12已发布不能替代项目A发布记录。若从应用详情页开始查阅，可先确认页面对应的环境，再查看绑定关系和发布历史分别提供了哪些信息。绑定关系可供核对环境指向，发布记录可供查阅对应项目的发布操作。查找记录时，若不同项目的应用标识较为相近，可将项目标识加入查询条件，打开记录后再核对其中的应用和环境。若页面只显示当前配置，可在核对材料里注明页面所能支持的范围。需要确认某次发布时，可继续沿同一项目的发布历史定位，并把查到的记录与环境信息关联起来，方便后续复核。",
+            "timestamp": 1795161600000
+          }
+        },
+        {
+          "id": "project-a-demo-v3:wiki:ASU2:f8be99a2169a5d1cbee5ad7a9202c383:0",
+          "point_id": "03ac2b92-8c2d-51e7-8724-18bafe809eb7",
+          "score": 0.5089764595031738,
+          "payload": {
+            "chunk_id": "project-a-demo-v3:wiki:ASU2:f8be99a2169a5d1cbee5ad7a9202c383:0",
+            "source_type": "wiki",
+            "source_ref": "corpus/documents/ASU2_文档摘要回归记录.md#ASU2-S04",
+            "content": "维护回归记录时，可按待处理问题、环境状态和验收范围分别查阅对应依据。跟进问题时，可先确认触发条件以及可用于定位的请求和响应。查阅环境状态时，可通过环境记录核对当前版本，涉及演示安排的说明可标明适用环境和使用范围，以便后续查阅。SEM-S09与隐式路由仍待处理；正式ENV-A-DEMO未升级。限定预演准入不代表摘要全量验收。若后续需要讨论验收范围，可从预期使用场景倒查现有样例能覆盖哪些输入和调用方式，再明确其余场景需要补充哪些核查材料。对待处理问题，可记下下一次复核所需的输入条件和可观察现象。待取得对应证据后，可逐项核对处理情况，并据此更新相关状态，方便查阅者追溯状态变化所依据的记录。",
+            "timestamp": 1795142700000
+          }
+        },
+        {
+          "id": "project-a-demo-v3:wiki:D15:66e7d6e770195461b7395c60e08cf14f:0",
+          "point_id": "2fa8e1e0-7610-5054-a60d-f1aa3cbb3867",
+          "score": 0.5083237886428833,
+          "payload": {
+            "chunk_id": "project-a-demo-v3:wiki:D15:66e7d6e770195461b7395c60e08cf14f:0",
+            "source_type": "wiki",
+            "source_ref": "corpus/documents/D15_训练数据协调记录.md#D15-S04",
+            "content": "安排版本工作时，可先把能够开展的准备事项列入过程计划，并注明各项工作依赖哪些信息。准备事项可包括梳理拟关注的能力、盘点可用于观察能力表现的样例，以及整理后续讨论需要的材料。12月版本模型结果能力目标及量化指标尚需共同明确，当前只能给出过程计划。讨论目标时，可先对齐希望观察到的行为变化及其适用场景，再判断哪些变化能够用稳定的口径衡量。若提出候选指标，可同时说明样本范围、计算方式以及用于比较的基准，便于判断该指标是否能反映关注的能力。过程计划可记录目标和指标的待讨论事项，以及口径明确后需要回看的工作安排。若候选口径发生变化，可据此复核样本准备和结果核查安排。",
+            "timestamp": 1794967200000
+          }
+        }
+      ],
+      "latency_ms": 1046,
+      "embed_ms": 1020,
+      "search_ms": 26
+    },
+    "facts": {
+      "collection": "facts",
+      "results": [
+        {
+          "id": "c227192a-2256-5474-a939-b40c02613542",
+          "point_id": "4e6d8be9-3e96-56c7-a619-b7f9b04a185d",
+          "score": 0.6027700901031494,
+          "payload": {
+            "fact_id": "c227192a-2256-5474-a939-b40c02613542",
+            "text": "[2026-11-19] 项目A当前最优版本仍为1112。",
+            "fact_type": "STATUS",
+            "timestamp": 1795050000000,
+            "confidence": 0.99,
+            "source_chunk_id": "project-a-demo-v3:e12a8745-3676-5a73-865b-65e83600a1ec",
+            "source_unit_id": "T12-06",
+            "extraction_item_id": "64b461b7-0263-5004-b5b3-cdb63d501325"
+          }
+        },
+        {
+          "id": "916c5b26-fb87-5a4b-8805-c93a81bcac3b",
+          "point_id": "143df0c3-23c5-566a-a07d-ce897fc8df02",
+          "score": 0.5272657871246338,
+          "payload": {
+            "fact_id": "916c5b26-fb87-5a4b-8805-c93a81bcac3b",
+            "text": "[2026-11-20] APP-B-12的发布不能替代项目A的发布记录。",
+            "fact_type": "GENERAL",
+            "timestamp": 1795161600000,
+            "confidence": 1.0,
+            "source_chunk_id": "project-a-demo-v3:wiki:A03:419f562a60ec5ab4b88eebc924caebd6:0",
+            "source_unit_id": null,
+            "extraction_item_id": "6e763a47-1396-5c89-8c29-1e4bc1f55188"
+          }
+        },
+        {
+          "id": "8ddbf199-0c9b-5d47-b62f-f291accfb42b",
+          "point_id": "d9cdde02-fb6d-5637-878d-edbf71733b6a",
+          "score": 0.5214152336120605,
+          "payload": {
+            "fact_id": "8ddbf199-0c9b-5d47-b62f-f291accfb42b",
+            "text": "[2026-11-19] 前方联络询问模型协调，项目A当前最优版本是否仍为1112。",
+            "fact_type": "REQUEST",
+            "timestamp": 1795050000000,
+            "confidence": 0.99,
+            "source_chunk_id": "project-a-demo-v3:e12a8745-3676-5a73-865b-65e83600a1ec",
+            "source_unit_id": "T12-05",
+            "extraction_item_id": "a8e7b35d-8bc4-598d-916c-13a6807e1c4f"
+          }
+        }
+      ],
+      "latency_ms": 994,
+      "embed_ms": 987,
+      "search_ms": 7
+    },
+    "entities": {
+      "collection": "entities",
+      "results": [
+        {
+          "id": "2a894bc5-5c6d-519f-8591-8e7eb24c6f9d",
+          "point_id": "1812fefd-f2f9-5056-9bf1-ad6a3be4b391",
+          "score": 0.4631088972091675,
+          "payload": {
+            "entity_id": "2a894bc5-5c6d-519f-8591-8e7eb24c6f9d",
+            "name": "项目A",
+            "entity_type": "Project",
+            "mention_count": 7
+          }
+        },
+        {
+          "id": "da54ba28-1ea4-5990-9315-fcaddf8af0e2",
+          "point_id": "8994e752-d4ff-5aa8-9151-3e986294d976",
+          "score": 0.4084341526031494,
+          "payload": {
+            "entity_id": "da54ba28-1ea4-5990-9315-fcaddf8af0e2",
+            "name": "12月版本",
+            "entity_type": "Unknown",
+            "mention_count": 1
+          }
+        },
+        {
+          "id": "0de5c77e-f2d7-5428-8f9d-77fd4604c56c",
+          "point_id": "e291f31d-6034-5584-92ae-25563e4d7012",
+          "score": 0.40721094608306885,
+          "payload": {
+            "entity_id": "0de5c77e-f2d7-5428-8f9d-77fd4604c56c",
+            "name": "正式APP-A-11模板",
+            "entity_type": "Document",
+            "mention_count": 1
+          }
+        }
+      ],
+      "latency_ms": 1017,
+      "embed_ms": 1013,
+      "search_ms": 4
+    }
+  },
+  "ui_http_status": 200,
+  "old_v3_index_preserved": true
+}

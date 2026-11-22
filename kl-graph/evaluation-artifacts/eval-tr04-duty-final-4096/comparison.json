@@ -1,0 +1,600 @@
+{
+  "before-B": {
+    "run_id": "a98705c0-67e9-4d72-ba4f-8dc7a5964de1",
+    "elapsed_s": 161.4,
+    "candidates": 333,
+    "candidate_hash": "f5a279c765516864dd3096f04f35c72d96ab21c7967eee72b5767afd5831ed30",
+    "initial_requests": [
+      "9c969937a32637094cb017e710de4475aa1f43cf2ae213680eeffce5cb6709dd",
+      "4d79b59a352e75d4a78902f066248343031886f4628137b87be3510d01dbb810",
+      "14cdab0140faa17c822a74fd9e36f6c6b16714aabbe2251a9b87345f5bffb0a9"
+    ],
+    "calls": 5,
+    "cached": 0,
+    "selection_output_uncached": 6381,
+    "peak_logical_output": 1556,
+    "used_sources": [
+      "XSH1-03",
+      "XSH1-08",
+      "XTR2-05",
+      "ASU2-S03",
+      "A03-S03",
+      "A03-S04",
+      "A03-S01",
+      "XSH1-04",
+      "T12-04",
+      "T16-07",
+      "XSH1-07",
+      "XSH1-06",
+      "ATR2-S02",
+      "XTR3-05",
+      "ATR2-S03",
+      "ATR2-S04",
+      "NTR-S03",
+      "A05-S03",
+      "ALE2-S04",
+      "XLE2-05",
+      "XLE2-06",
+      "AWR0-S03",
+      "XWR1-07",
+      "XWR3-06",
+      "ATR2-S01",
+      "NPO-S03",
+      "XPO3-06",
+      "XPO3-07",
+      "XWR2-01",
+      "XWR2-07",
+      "XWR2-08",
+      "XWR3-08",
+      "XWR3-07",
+      "XLE2-01",
+      "XLE2-02",
+      "XLE2-04",
+      "XLE3-05",
+      "XLE3-06",
+      "XLE2-08",
+      "XTR1-01",
+      "XTR1-06",
+      "XTR2-02",
+      "XAM2-06",
+      "XAM2-08",
+      "XAM3-02",
+      "XAM3-04",
+      "XSH2-03",
+      "XSH2-02",
+      "XSH2-04",
+      "XSH2-05",
+      "A04-S01",
+      "AAM2-S04",
+      "NAM-S03",
+      "XTR3-06"
+    ],
+    "tokens_final_input": 7598,
+    "graph_and_answer": [
+      {
+        "trace": "b9c2932e11864b7ca40e7a87791eaa7b.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 1240,
+        "thought": null,
+        "relative_seconds": 15.1
+      },
+      {
+        "trace": "9b4a067283b949dcb088d71311d1fa07.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 1146,
+        "thought": null,
+        "relative_seconds": 15.4
+      },
+      {
+        "trace": "f8b7687942fb4ec2ab26888752cbe254.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 922,
+        "thought": null,
+        "relative_seconds": 20.0
+      },
+      {
+        "trace": "ad9d86120e924487b0d111549c251d7c.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 1556,
+        "thought": null,
+        "relative_seconds": 26.7
+      },
+      {
+        "trace": "8ff02bcb4f6e4f1d959966a564a1ecc8.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 1517,
+        "thought": null,
+        "relative_seconds": 34.4
+      },
+      {
+        "trace": "6311ba4f8636485abe2def6f8dc71823.json",
+        "stage": "answer",
+        "thinking": {
+          "type": "enabled"
+        },
+        "effort": {
+          "effort": "high"
+        },
+        "limit": 65536,
+        "out": 23423,
+        "thought": 20877,
+        "relative_seconds": 155.1
+      }
+    ],
+    "repair_attempts": 0
+  },
+  "before-C": {
+    "run_id": "dedbb738-50f3-448c-a091-30d0dc0941e1",
+    "elapsed_s": 108.06,
+    "candidates": 333,
+    "candidate_hash": "f5a279c765516864dd3096f04f35c72d96ab21c7967eee72b5767afd5831ed30",
+    "initial_requests": [
+      "9c969937a32637094cb017e710de4475aa1f43cf2ae213680eeffce5cb6709dd",
+      "4d79b59a352e75d4a78902f066248343031886f4628137b87be3510d01dbb810",
+      "14cdab0140faa17c822a74fd9e36f6c6b16714aabbe2251a9b87345f5bffb0a9"
+    ],
+    "calls": 5,
+    "cached": 3,
+    "selection_output_uncached": 2195,
+    "peak_logical_output": 1277,
+    "used_sources": [
+      "ATR0-S03",
+      "A03-S03",
+      "ATR2-S01",
+      "T04-01",
+      "T04-02",
+      "T04-03",
+      "ATR2-S02",
+      "ATR1-S04",
+      "T04-06",
+      "T04-07",
+      "ATR2-S03",
+      "ATR2-S04",
+      "NTR-S03",
+      "NSU-S02",
+      "XSH1-03",
+      "XSH1-04",
+      "XTR3-06",
+      "XTR2-07",
+      "T16-02",
+      "T16-07",
+      "D15-S04",
+      "A03-S04",
+      "XSH1-08",
+      "XPO2-07",
+      "XLE2-06",
+      "XWR3-02",
+      "XWR2-07",
+      "XWR2-08",
+      "XWR3-07",
+      "XLE3-05",
+      "XLE3-06",
+      "XTR2-04",
+      "XTR1-06",
+      "XPO2-06",
+      "XPO3-05",
+      "XAM2-08",
+      "XAM3-02",
+      "XAM3-04",
+      "ASU2-S04",
+      "XSH1-06",
+      "XTR3-07",
+      "XTR3-05",
+      "XSH1-07",
+      "A03-S01",
+      "XSU1-05",
+      "ASU2-S03",
+      "A05-S03",
+      "A05-S04",
+      "AAM2-S04",
+      "XSH2-03",
+      "XSH2-04",
+      "A01-S01",
+      "A01-S03",
+      "XLE1-06",
+      "XLE3-08",
+      "XSU2-04",
+      "XSU1-07",
+      "XPO3-06",
+      "XPO1-02",
+      "T16-06",
+      "T16-08"
+    ],
+    "tokens_final_input": 7897,
+    "graph_and_answer": [
+      {
+        "trace": "1cd235fc032e41498df5f946d5d7b22a.json",
+        "stage": "graph",
+        "thinking": {
+          "type": "enabled"
+        },
+        "effort": {
+          "effort": "high"
+        },
+        "limit": 16384,
+        "out": 1531,
+        "thought": 1465,
+        "relative_seconds": 10.0
+      },
+      {
+        "trace": "b837eb7b692c4252b12f778d9094f74d.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 1277,
+        "thought": null,
+        "relative_seconds": 23.4
+      },
+      {
+        "trace": "b54f2fdc008b417697e853aa193c3d8b.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 918,
+        "thought": null,
+        "relative_seconds": 28.3
+      },
+      {
+        "trace": "2b21c291791241de95da2bd0cca2c872.json",
+        "stage": "answer",
+        "thinking": {
+          "type": "enabled"
+        },
+        "effort": {
+          "effort": "high"
+        },
+        "limit": 65536,
+        "out": 14064,
+        "thought": 11776,
+        "relative_seconds": 103.2
+      }
+    ],
+    "repair_attempts": 0
+  },
+  "off-B": {
+    "run_id": "f218ff8f-8bec-4101-a827-bca02e754622",
+    "elapsed_s": 159.04,
+    "candidates": 333,
+    "candidate_hash": "27d7836397fc65ff9a69457fa5eb132f97c9104b4030d718b0d6cd079d3f8dd5",
+    "initial_requests": [
+      "9c969937a32637094cb017e710de4475aa1f43cf2ae213680eeffce5cb6709dd",
+      "eca5b8570fc1a4322faeac3ed63a816b1d5b2c4602dc06c45b802b1c9536e6cf",
+      "4d79b59a352e75d4a78902f066248343031886f4628137b87be3510d01dbb810",
+      "8719dd3298fc104254fdc5195ef48f55ba7b13c709aeb08f1f95989a87396c5b",
+      "14cdab0140faa17c822a74fd9e36f6c6b16714aabbe2251a9b87345f5bffb0a9"
+    ],
+    "calls": 7,
+    "cached": 0,
+    "selection_output_uncached": 9863,
+    "peak_logical_output": 2361,
+    "used_sources": [
+      "XSH1-08",
+      "XSH1-02",
+      "A03-S04",
+      "A03-S02",
+      "XWR3-03",
+      "XPO2-07",
+      "XLE2-06",
+      "A05-S04",
+      "A05-S03",
+      "T16-06",
+      "XTR3-02",
+      "XTR3-03",
+      "XTR3-05",
+      "ATR2-S02",
+      "ATR1-S04",
+      "ASU2-S03",
+      "XSU3-05",
+      "XSU3-06",
+      "XAM3-01",
+      "XAM3-06",
+      "XAM3-07",
+      "AAM2-S04",
+      "NAM-S03",
+      "APO2-S02",
+      "A04-S02",
+      "ALE2-S04",
+      "NLE-S03",
+      "XLE3-08",
+      "T03-01",
+      "T03-05",
+      "XSH1-04",
+      "XSH1-05",
+      "XSH2-02",
+      "XSH2-03",
+      "XSH2-05",
+      "AWR1-S04",
+      "NWR-S03",
+      "XWR3-02",
+      "XWR3-04",
+      "XWR3-07",
+      "XWR3-08",
+      "XLE2-02",
+      "XLE2-04",
+      "XLE3-05",
+      "XLE3-06",
+      "XLE3-03",
+      "XPO1-02",
+      "XPO1-04",
+      "XPO1-08",
+      "APO1-S01"
+    ],
+    "tokens_final_input": 7544,
+    "graph_and_answer": [
+      {
+        "trace": "c5db5c70ae334f968dc1252b6087fe8c.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 1129,
+        "thought": null,
+        "relative_seconds": 16.3
+      },
+      {
+        "trace": "a32cc2a4cc82485fb322e18347828f0f.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 1332,
+        "thought": null,
+        "relative_seconds": 16.8
+      },
+      {
+        "trace": "f1d27f91d1b84f5bb7ffba61a652de94.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 1123,
+        "thought": null,
+        "relative_seconds": 20.7
+      },
+      {
+        "trace": "aab6c15427b9477cb120619353699890.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 1313,
+        "thought": null,
+        "relative_seconds": 22.6
+      },
+      {
+        "trace": "0ce8facad91e4c2bbee3071fc8c253ba.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 1758,
+        "thought": null,
+        "relative_seconds": 28.7
+      },
+      {
+        "trace": "cebb541e11214eafb080c2dc86dd7066.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 847,
+        "thought": null,
+        "relative_seconds": 34.2
+      },
+      {
+        "trace": "59e8baca4bee4dda8d1bebc75753a034.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 2361,
+        "thought": null,
+        "relative_seconds": 43.3
+      },
+      {
+        "trace": "616433fb407d456e8fbf3f6bb9c6126f.json",
+        "stage": "answer",
+        "thinking": {
+          "type": "enabled"
+        },
+        "effort": {
+          "effort": "high"
+        },
+        "limit": 65536,
+        "out": 20105,
+        "thought": 17478,
+        "relative_seconds": 151.4
+      }
+    ],
+    "repair_attempts": 2
+  },
+  "off-C": {
+    "run_id": "7c41b01d-c0ce-4f89-8aca-95e50ca12c4a",
+    "elapsed_s": 154.12,
+    "candidates": 333,
+    "candidate_hash": "f5a279c765516864dd3096f04f35c72d96ab21c7967eee72b5767afd5831ed30",
+    "initial_requests": [
+      "9c969937a32637094cb017e710de4475aa1f43cf2ae213680eeffce5cb6709dd",
+      "4d79b59a352e75d4a78902f066248343031886f4628137b87be3510d01dbb810",
+      "14cdab0140faa17c822a74fd9e36f6c6b16714aabbe2251a9b87345f5bffb0a9"
+    ],
+    "calls": 5,
+    "cached": 3,
+    "selection_output_uncached": 2578,
+    "peak_logical_output": 1758,
+    "used_sources": [
+      "ATR0-S04",
+      "T04-06",
+      "T04-07",
+      "XSH1-06",
+      "XSH1-04",
+      "XSH1-07",
+      "NAM-S03",
+      "AAM2-S04",
+      "NLE-S03",
+      "ALE2-S04",
+      "A03-S03",
+      "XSH1-08",
+      "T16-07",
+      "T12-04",
+      "A05-S03",
+      "A05-S04",
+      "ATR2-S02",
+      "A03-S02",
+      "ATR1-S04",
+      "XPO2-07",
+      "APO2-S04",
+      "XWR3-02",
+      "XWR3-03",
+      "XWR3-04",
+      "XWR3-08",
+      "XLE2-01",
+      "XLE2-02",
+      "XLE2-04",
+      "XLE2-07",
+      "XLE2-08",
+      "XPO1-02",
+      "XPO1-04",
+      "XPO1-08",
+      "XSU1-05",
+      "XSU1-07",
+      "XSU2-04",
+      "XAM1-06",
+      "XAM1-07",
+      "XAM2-06",
+      "XAM2-08",
+      "XSH2-02",
+      "XSH2-03",
+      "XSH2-04",
+      "XSH2-05",
+      "NTR-S03",
+      "ASU2-S04",
+      "NSU-S03",
+      "XSU3-05",
+      "XLE3-03",
+      "XLE3-06",
+      "XLE3-08",
+      "XPO3-02",
+      "XPO3-03",
+      "XPO3-05",
+      "XPO3-06",
+      "XAM3-03",
+      "XAM3-04",
+      "XAM3-05",
+      "ATR1-S03",
+      "XTR1-06",
+      "XTR2-04",
+      "XTR2-05",
+      "XAM3-06",
+      "XAM3-07",
+      "AWR0-S03",
+      "AWR2-S03",
+      "XTR3-07",
+      "A03-S04",
+      "XSH1-05",
+      "A03-S01",
+      "XWR3-07"
+    ],
+    "tokens_final_input": 7959,
+    "graph_and_answer": [
+      {
+        "trace": "6535266f76494459ab520ddf35836b79.json",
+        "stage": "graph",
+        "thinking": {
+          "type": "enabled"
+        },
+        "effort": {
+          "effort": "high"
+        },
+        "limit": 16384,
+        "out": 1129,
+        "thought": 1079,
+        "relative_seconds": 9.3
+      },
+      {
+        "trace": "006a930ae6ae4f0fa918f9f3269ba071.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 1211,
+        "thought": null,
+        "relative_seconds": 24.1
+      },
+      {
+        "trace": "55d1e2fea88f4031bffde5012394462d.json",
+        "stage": "select",
+        "thinking": {
+          "type": "disabled"
+        },
+        "effort": null,
+        "limit": 4096,
+        "out": 1367,
+        "thought": null,
+        "relative_seconds": 31.0
+      },
+      {
+        "trace": "fd6c4d974c584b09ad7c6e24f1684cf6.json",
+        "stage": "answer",
+        "thinking": {
+          "type": "enabled"
+        },
+        "effort": {
+          "effort": "high"
+        },
+        "limit": 65536,
+        "out": 22676,
+        "thought": 19958,
+        "relative_seconds": 147.3
+      }
+    ],
+    "repair_attempts": 0
+  }
+}

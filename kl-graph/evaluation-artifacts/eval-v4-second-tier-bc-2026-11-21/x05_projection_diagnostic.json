@@ -1,0 +1,194 @@
+{
+  "record_id": "A04-S01",
+  "run_id": "7520d40b-8571-4560-acc5-7a85c3c087e8",
+  "original": "查阅登记时，可先对照包内目录和实际可打开的材料，区分样本是否收录、内容是否可读，以及是否具备据此作出判定的条件。QA-A27仍缺期望答案和判定说明，覆盖部分翻译与公函模型问题。新摘要SEM-S09和润色POL-F08尚未补入该包。对已收录但缺少判定依据的样本，可按各自的输入与任务要求核对需要补充的内容。翻译问题可关注关键信息是否保留、术语是否一致，公函问题可关注格式和措辞是否符合该条请求。若表达允许有多种写法，建议在判定说明中写清哪些要素必须保留、哪些差异可以接受，便于复核时理解判定口径。对暂未收录的材料，可在目录上单列待补项，待归入后再核对文件及对应关系，避免仅凭材料名称推断包内覆盖范围。",
+  "model_excerpt": "QA-A27仍缺期望答案和判定说明，覆盖部分翻译与公函模型问题。",
+  "native_facts": [
+    {
+      "id": "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+      "text": "[2026-11-20] QA-A27覆盖部分翻译模型问题。",
+      "type": "STATUS",
+      "occurred_at": "2026-11-20T16:05:00+08:00",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "A04-S01"
+      ],
+      "scope": "requested",
+      "origin": "mycontext"
+    },
+    {
+      "id": "09530a48-b138-5066-9f16-0cc286d9c851",
+      "text": "[2026-11-20] 对已收录但缺少判定依据的样本，可根据各自的输入和任务要求核对需要补充的内容。",
+      "type": "GENERAL",
+      "occurred_at": "2026-11-20T16:05:00+08:00",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "A04-S01"
+      ],
+      "scope": "requested",
+      "origin": "mycontext"
+    },
+    {
+      "id": "1b6692ac-508e-5e2c-b2ad-85f04fc040b1",
+      "text": "[2026-11-20] 新摘要样本SEM-S09尚未补入QA-A27。",
+      "type": "STATUS",
+      "occurred_at": "2026-11-20T16:05:00+08:00",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "A04-S01"
+      ],
+      "scope": "requested",
+      "origin": "mycontext"
+    },
+    {
+      "id": "22328808-7c56-5496-be6e-59942ee495fc",
+      "text": "[2026-11-20] QA-A27仍缺判定说明。",
+      "type": "STATUS",
+      "occurred_at": "2026-11-20T16:05:00+08:00",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "A04-S01"
+      ],
+      "scope": "requested",
+      "origin": "mycontext"
+    },
+    {
+      "id": "69769bf2-90b7-5e64-abc7-c157ae5e625f",
+      "text": "[2026-11-20] QA-A27覆盖部分公函模型问题。",
+      "type": "STATUS",
+      "occurred_at": "2026-11-20T16:05:00+08:00",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "A04-S01"
+      ],
+      "scope": "requested",
+      "origin": "mycontext"
+    },
+    {
+      "id": "81ce895f-7574-5b4e-8c5a-7deb454b7114",
+      "text": "[2026-11-20] 翻译问题可核查关键信息是否保留和术语是否一致。",
+      "type": "GENERAL",
+      "occurred_at": "2026-11-20T16:05:00+08:00",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "A04-S01"
+      ],
+      "scope": "requested",
+      "origin": "mycontext"
+    },
+    {
+      "id": "9d8f95ce-eccd-5302-96d9-8bd20e9b487c",
+      "text": "[2026-11-20] 润色样本POL-F08尚未补入QA-A27。",
+      "type": "STATUS",
+      "occurred_at": "2026-11-20T16:05:00+08:00",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "A04-S01"
+      ],
+      "scope": "requested",
+      "origin": "mycontext"
+    },
+    {
+      "id": "b436e3a1-d9f7-57d4-aed6-c3ac35742a1e",
+      "text": "[2026-11-20] 查阅样本登记时，可对照包内目录和实际可打开的材料，核对样本收录情况、内容可读性和判定条件。",
+      "type": "GENERAL",
+      "occurred_at": "2026-11-20T16:05:00+08:00",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "A04-S01"
+      ],
+      "scope": "requested",
+      "origin": "mycontext"
+    },
+    {
+      "id": "bbba2984-8f13-5261-8fda-3af413151aeb",
+      "text": "[2026-11-20] QA-A27仍缺期望答案。",
+      "type": "STATUS",
+      "occurred_at": "2026-11-20T16:05:00+08:00",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "A04-S01"
+      ],
+      "scope": "requested",
+      "origin": "mycontext"
+    },
+    {
+      "id": "d2db181d-8462-512c-b9c9-72ed390ba210",
+      "text": "[2026-11-20] 公函问题可核查格式和措辞是否符合具体请求。",
+      "type": "GENERAL",
+      "occurred_at": "2026-11-20T16:05:00+08:00",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "A04-S01"
+      ],
+      "scope": "requested",
+      "origin": "mycontext"
+    },
+    {
+      "id": "dc7ba432-bc61-5ce5-9b44-4edaa78a08c0",
+      "text": "[2026-11-20] 暂未收录的材料可在目录中单列为待补项，归入后再核对文件和对应关系。",
+      "type": "GENERAL",
+      "occurred_at": "2026-11-20T16:05:00+08:00",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "A04-S01"
+      ],
+      "scope": "requested",
+      "origin": "mycontext"
+    },
+    {
+      "id": "ec0050e7-fc0b-5f0f-a80a-2de5538fdf27",
+      "text": "[2026-11-20] 允许多种表达时，建议在判定说明中写明必须保留的要素和可接受的差异。",
+      "type": "OPINION",
+      "occurred_at": "2026-11-20T16:05:00+08:00",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "A04-S01"
+      ],
+      "scope": "requested",
+      "origin": "mycontext"
+    }
+  ],
+  "lost_fact_checks": [
+    {
+      "fact": {
+        "id": "1b6692ac-508e-5e2c-b2ad-85f04fc040b1",
+        "text": "[2026-11-20] 新摘要样本SEM-S09尚未补入QA-A27。",
+        "type": "STATUS",
+        "occurred_at": "2026-11-20T16:05:00+08:00",
+        "confidence": 1.0,
+        "evidence_ids": [
+          "A04-S01"
+        ],
+        "scope": "requested",
+        "origin": "mycontext"
+      },
+      "codes": [
+        "QA-A27",
+        "SEM-S09"
+      ],
+      "any_single_sentence_has_all_codes": false
+    },
+    {
+      "fact": {
+        "id": "9d8f95ce-eccd-5302-96d9-8bd20e9b487c",
+        "text": "[2026-11-20] 润色样本POL-F08尚未补入QA-A27。",
+        "type": "STATUS",
+        "occurred_at": "2026-11-20T16:05:00+08:00",
+        "confidence": 1.0,
+        "evidence_ids": [
+          "A04-S01"
+        ],
+        "scope": "requested",
+        "origin": "mycontext"
+      },
+      "codes": [
+        "POL-F08",
+        "QA-A27"
+      ],
+      "any_single_sentence_has_all_codes": false
+    }
+  ],
+  "reproduced_with_frozen_projection": true,
+  "finding": "原生已正确抽取两个未入包事实并回指A04-S01；投影要求事实所有编号同在单句。事实将“该包”还原为QA-A27，原文后句只有SEM-S09/POL-F08及“该包”，没有QA-A27，故两事实没有匹配句。后句以“新摘要”开头，未命中相邻限定保留规则，造成语义遗漏。"
+}

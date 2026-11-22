@@ -1,0 +1,20 @@
+{
+  "wall_seconds": 130.43,
+  "observed_stages": [
+    {
+      "stage": "queued",
+      "seconds_since_submit": 0.01
+    },
+    {
+      "stage": "retrieving",
+      "seconds_since_submit": 1.01
+    },
+    {
+      "stage": "answering",
+      "seconds_since_submit": 12.07
+    }
+  ],
+  "traces": [
+    "ea248596a4814fb08af6f12fe73c62ee.json"
+  ]
+}

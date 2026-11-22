@@ -1,0 +1,48 @@
+{
+  "dataset_id": "project_a_application_v4_expanded",
+  "cutoff": "2026-11-20T23:59:00+08:00",
+  "cutoff_basis": "用户指定",
+  "status": "扩写语料与实际 DWS 导出校验通过；未重建原生图谱；尚未运行长文版 B/C 回归",
+  "primary_focus": "应用Skill进展核查，其次模型依赖；不是六类Skill的功能实测",
+  "profiles": {
+    "app_focus": {
+      "records": [
+        "normalized/application_focus.jsonl"
+      ],
+      "purpose": "六类应用及必要模型背景；扩写正文；B/C 使用相同输入"
+    },
+    "full_v3": {
+      "records": [
+        "normalized/records.jsonl"
+      ],
+      "purpose": "兼容原 profile 名称；选取当前版本的全部模拟业务材料"
+    },
+    "full_with_report": {
+      "records": [
+        "normalized/records.jsonl",
+        "normalized/seed_report_records.jsonl"
+      ],
+      "purpose": "扩写模拟材料加原样保留的非模拟周报；外发限制不变"
+    }
+  },
+  "schema": "Demo自定义原文中间格式，不是MyContext DWS",
+  "excluded": [
+    "evaluation/",
+    "audit/",
+    "tools/",
+    "README.md",
+    "dataset.json"
+  ],
+  "dedup": "各profile只选一个；corpus、application_added、focus和records是替代或重叠表示，不混合导入",
+  "reuse": "保留原记录身份、元数据和原始断言；仅扩写模拟文档及会议正文；聊天和评测材料不变",
+  "baseline_dataset_id": "project_a_application_v3",
+  "expansion": {
+    "generator": "project_demo.expand_dataset",
+    "source": "/mnt/c/Users/jcyli/Downloads/项目A_Demo应用增强数据_v3",
+    "source_sha256": "846f94f901bcc25d62344be0f2c3be55d00a1d252ecbf7d560ca8bc3cf35b8f0",
+    "generation_audit": "/home/jcylinder/codex/mycontext/kl-graph/data/project_demo/expanded-v4-authoring",
+    "approved_sources": 51,
+    "changed_records": 193,
+    "evaluation_seen_by_author": false
+  }
+}

@@ -1,0 +1,959 @@
+[
+  {
+    "question_id": "SU04",
+    "mode": "B",
+    "run_id": "75982c92-b5c0-4ab3-8b3e-ed71ae85c594",
+    "elapsed_ms": 73303,
+    "answer_usage": {
+      "input_tokens": 17663,
+      "output_tokens": 699,
+      "elapsed_ms": 73303,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 0,
+    "actual_rerank_usage": {
+      "prompt_tokens": 86501,
+      "completion_tokens": 1629,
+      "total_tokens": 88130
+    },
+    "global_ranking": "completed",
+    "global_input_count": 3681,
+    "global_candidate_count": 13,
+    "stage_counts": {
+      "candidates": 194,
+      "ranked": 9,
+      "selected": 9
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 2777,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "固定六例之外的新文件不在当前准入范围。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "SEM-S09对条件否定的保真尚未解决，新文件应另做内容核查。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "须核对APP-A-12/M-A12和预演入口，不能顺便切换候选模型。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": null,
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "SU04",
+    "mode": "C",
+    "run_id": "316f4aec-ec81-4e01-9e6c-abbdb8c5cb21",
+    "elapsed_ms": 67874,
+    "answer_usage": {
+      "input_tokens": 17261,
+      "output_tokens": 797,
+      "elapsed_ms": 67874,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 1,
+    "actual_rerank_usage": {
+      "prompt_tokens": 50289,
+      "completion_tokens": 1070,
+      "total_tokens": 51359
+    },
+    "global_ranking": "completed",
+    "global_input_count": 4263,
+    "global_candidate_count": 41,
+    "stage_counts": {
+      "candidates": 242,
+      "ranked": 11,
+      "selected": 11
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 2336,
+    "used_graph_facts": 6,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "固定六例之外的新文件不在当前准入范围。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "SEM-S09对条件否定的保真尚未解决，新文件应另做内容核查。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "须核对APP-A-12/M-A12和预演入口，不能顺便切换候选模型。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": {
+      "projected_records": 10,
+      "fact_ids": [
+        "0088eec5-0ba3-5466-aeda-286e594457cd",
+        "1c2603a2-159f-5044-af8f-c12a61fed059",
+        "1d0d0c10-ffb8-54cf-8251-9e49c293b4e9",
+        "2063e380-930e-57d1-a85c-235df018c5a9",
+        "251ee964-c797-5386-bc38-39cefd7a4a7b",
+        "25389c54-3987-5cf8-8970-c52ef79165ed",
+        "28e75394-a0f5-5a16-be54-bad71de0c4b6",
+        "2b84ccab-a5c9-512d-9079-3e310b3ac522",
+        "2de22790-8749-5d54-b59d-bd383752e7e9",
+        "31282597-b745-59ba-b327-77b6941e6e4a",
+        "362f0fe1-f22d-596e-b3f4-034070221bd4",
+        "3b5abe1a-4225-5b80-a2ff-622c38544977",
+        "5345fcad-3a06-5dcb-8637-cec6b5313a9e",
+        "5ddfe13c-d9fa-5d20-bd2f-8eeaa35da607",
+        "639e690f-8080-5a2e-9133-628ba8c76f83",
+        "724d2f4e-91e4-5974-a70b-013a9fc5b806",
+        "7385278f-980e-5c67-ae80-593b4f305c37",
+        "73f45823-43c6-5219-affd-ea59d30bdbf9",
+        "786bf65a-1042-510e-997f-6404199a6e06",
+        "8ffcf85b-0fb1-5fb9-bc86-0e9e7778e0c6",
+        "905d9d0d-4203-5047-868a-bd6058d724a7",
+        "916c5b26-fb87-5a4b-8805-c93a81bcac3b",
+        "966b7f2c-9c71-5897-9c02-3042c30fbeb1",
+        "9ab9b5ab-adf3-505d-9fbf-570fd71817af",
+        "b2959151-a98d-5888-96a6-33931835d8ea",
+        "b4863ae1-89c6-50a6-ae2e-c198d694fbd0",
+        "ba9e6d4d-3a88-501e-a674-e2d98db1cc78",
+        "c17c669e-7460-5500-b070-6c0b24b3447e",
+        "c2f51018-5a81-5a71-a793-e492f7289a5f",
+        "c485f822-46bc-5dfe-bfa1-bbc9c2e9e9fd",
+        "c871c370-7121-554f-8282-181d9755d847",
+        "cd6cb67d-e957-51a5-9069-0c4eab7b93f2",
+        "e5320090-ff41-5f46-92d2-d72c574aeef8",
+        "e9bca9d9-2644-550c-8f53-4b77e2564e4f",
+        "ed256235-47b9-5965-b518-fce0e189013e",
+        "f89bc6ad-eba9-5e6a-974b-e1c166587237",
+        "fdc0fc5d-1c7d-57d6-b8c2-73ea6c61fb41",
+        "ff2700e4-c645-5155-b935-9b8cbe0bdaab"
+      ],
+      "original_characters": 3021,
+      "excerpt_characters": 622
+    },
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "LE03",
+    "mode": "B",
+    "run_id": "aa976739-13d8-4fa0-a081-ed782333d94c",
+    "elapsed_ms": 71349,
+    "answer_usage": {
+      "input_tokens": 17645,
+      "output_tokens": 743,
+      "elapsed_ms": 71349,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 0,
+    "actual_rerank_usage": {
+      "prompt_tokens": 94530,
+      "completion_tokens": 1338,
+      "total_tokens": 95868
+    },
+    "global_ranking": "completed",
+    "global_input_count": 3426,
+    "global_candidate_count": 15,
+    "stage_counts": {
+      "candidates": 237,
+      "ranked": 12,
+      "selected": 12
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 2753,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "三例只覆盖预演包缺文号默认值问题LET-F06。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "LET-S08签署人问题与输出检查仍未完成。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "正式环境模板未升级，版本也不同。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": null,
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "LE03",
+    "mode": "C",
+    "run_id": "ef661f61-1bc2-4367-8131-403b258e8052",
+    "elapsed_ms": 54050,
+    "answer_usage": {
+      "input_tokens": 16918,
+      "output_tokens": 683,
+      "elapsed_ms": 54050,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 1,
+    "actual_rerank_usage": {
+      "prompt_tokens": 55176,
+      "completion_tokens": 729,
+      "total_tokens": 55905
+    },
+    "global_ranking": "completed",
+    "global_input_count": 4502,
+    "global_candidate_count": 46,
+    "stage_counts": {
+      "candidates": 273,
+      "ranked": 13,
+      "selected": 13
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 2006,
+    "used_graph_facts": 3,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "三例只覆盖预演包缺文号默认值问题LET-F06。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "LET-S08签署人问题与输出检查仍未完成。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "正式环境模板未升级，版本也不同。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": {
+      "projected_records": 7,
+      "fact_ids": [
+        "01245bd8-7548-5e80-994e-afde88486cbc",
+        "0b18335f-25d2-5b03-bedd-81048a437023",
+        "1cfeaaec-179a-58fe-abed-4f79bea6debe",
+        "214c7bfa-ce30-5099-9095-b6b05e667e1f",
+        "2ce1dc62-60ad-5816-82b9-61e343139be0",
+        "2d246e37-b189-566c-8739-12ff19461e35",
+        "312639fa-918f-55ad-9b02-2ddd526e528b",
+        "3276d6a6-405b-5894-8520-a61f9207669a",
+        "32a8b59b-d582-54ba-9e9d-c9953544a0fa",
+        "39c3efe5-f62c-56cf-8183-931b9fcdf555",
+        "40a5a9d1-ef0c-5471-9cd5-bf4c57bd3622",
+        "466d1aaa-10f5-53ae-88b8-f955e0fed5bc",
+        "54970236-d1c9-5f0f-8bf4-0f56ba97e007",
+        "6e3c6aab-414e-527f-9f64-524b3f7a7e6b",
+        "72ecdc59-cf8c-5e7c-be96-a4fb7f03c4ff",
+        "937e8fe0-b5bb-56a7-b59e-f8c156a73105",
+        "99fa86d5-ee7d-56fc-91e9-f7c77bbfd9d1",
+        "b97aa1fb-4159-5bf7-b4e5-a4972b382411",
+        "be14023b-e936-5e97-816b-ee9e7e34de55",
+        "c67ccb62-4e48-57d6-985d-32ef735dbc12",
+        "e5487f7b-cf1a-53ec-8a0e-4b1ea88c169c",
+        "e6c616a7-f948-5ddf-8135-66a31d4e7df3",
+        "ee5b8e66-dab6-5a81-8336-35b1284cd8e4",
+        "f2051155-16c7-5f0e-9ddb-3b8244e23b02",
+        "fc9607b2-e338-544d-a5ab-9b3b23e54721"
+      ],
+      "original_characters": 2158,
+      "excerpt_characters": 448
+    },
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "WR04",
+    "mode": "B",
+    "run_id": "9d477aab-b4f8-44fd-9ab7-a63c49b8f639",
+    "elapsed_ms": 88300,
+    "answer_usage": {
+      "input_tokens": 18153,
+      "output_tokens": 1063,
+      "elapsed_ms": 88300,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 0,
+    "actual_rerank_usage": {
+      "prompt_tokens": 92809,
+      "completion_tokens": 2267,
+      "total_tokens": 95076
+    },
+    "global_ranking": "completed",
+    "global_input_count": 5111,
+    "global_candidate_count": 20,
+    "stage_counts": {
+      "candidates": 181,
+      "ranked": 12,
+      "selected": 12
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 3260,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "校验实际查询与week的11月16—20日窗口一致，排除月初事件。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "确保IM-W19进入证据并保留PO待确认；旧R-06关闭状态不重复。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "核对实际应用包与完整证据，再评估整体报告。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": null,
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "WR04",
+    "mode": "C",
+    "run_id": "b1a8f094-e679-451d-8b94-c68414d282c1",
+    "elapsed_ms": 73183,
+    "answer_usage": {
+      "input_tokens": 17983,
+      "output_tokens": 1016,
+      "elapsed_ms": 73183,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 1,
+    "actual_rerank_usage": {
+      "prompt_tokens": 48146,
+      "completion_tokens": 1115,
+      "total_tokens": 49261
+    },
+    "global_ranking": "completed",
+    "global_input_count": 3891,
+    "global_candidate_count": 35,
+    "stage_counts": {
+      "candidates": 192,
+      "ranked": 16,
+      "selected": 16
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 3038,
+    "used_graph_facts": 8,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "校验实际查询与week的11月16—20日窗口一致，排除月初事件。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "确保IM-W19进入证据并保留PO待确认；旧R-06关闭状态不重复。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "核对实际应用包与完整证据，再评估整体报告。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": {
+      "projected_records": 8,
+      "fact_ids": [
+        "01d80c08-9ee7-51eb-a939-77a76ff9ed6d",
+        "09a9a393-f954-5b9c-a7bd-c3452027c8d8",
+        "12a3dfcb-6475-5dda-b8d7-ebbf1f7c056e",
+        "13d83a45-6aa0-5031-aec6-6284ea7634a2",
+        "18542b58-aad4-5250-addf-34dfbb3c682c",
+        "24fdfb3c-c230-50da-9cdf-e632278aebef",
+        "3076782f-b31d-55e1-a576-331589711855",
+        "4156a5a7-490e-5bcd-9ada-afcc88e25047",
+        "4889a9ff-6a3f-5675-b81c-88dfc0186309",
+        "4f1ed298-bbc2-5140-95e1-3726b2f73e25",
+        "69684dce-f843-531a-abef-acd048f32a41",
+        "8d26f84b-5847-54dd-9a86-775cef482ae8",
+        "91462ab4-79dc-5934-a7c8-1541bebf4190",
+        "92090cac-ba78-5eda-bc5a-5dfcf8eb36d7",
+        "9f98f014-9810-52ca-994c-6eda7b6aef84",
+        "b50c5815-028c-58e0-a9ba-5d6925812a29",
+        "b5211280-7895-5cdd-824d-311240dcc170",
+        "bd386fff-9736-58ea-9a53-50005debc82c",
+        "bebcc862-30ad-595e-aa1f-f8a37d50c8c1",
+        "c471c3fc-5d15-5ea4-8bea-656a30505603",
+        "c5ee2eff-682b-59bc-9073-e13d5a2fe1b4",
+        "c89671e5-c87e-5eca-92f4-bac5382fa0e4",
+        "d3091057-bce0-5433-a681-58052ae11f42",
+        "d454477a-efba-55b6-92a3-367405fe8e08",
+        "d78822d7-c824-54a2-98ff-eea9368b99c4",
+        "e61b0747-54fd-52cd-ab86-8fa164ca37f9",
+        "ff606bf9-7dcc-52d8-be55-fddd773d712a"
+      ],
+      "original_characters": 2575,
+      "excerpt_characters": 607
+    },
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "X05",
+    "mode": "B",
+    "run_id": "902e0608-5d6e-4cc4-acc8-54cd945c8a3d",
+    "elapsed_ms": 181582,
+    "answer_usage": {
+      "input_tokens": 22890,
+      "output_tokens": 1740,
+      "elapsed_ms": 181582,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 0,
+    "actual_rerank_usage": {
+      "prompt_tokens": 119911,
+      "completion_tokens": 5994,
+      "total_tokens": 125905
+    },
+    "global_ranking": "completed",
+    "global_input_count": 17873,
+    "global_candidate_count": 92,
+    "stage_counts": {
+      "candidates": 348,
+      "ranked": 48,
+      "selected": 35
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 7938,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "QA-A27覆盖部分翻译公函问题，仍缺期望答案与判定说明；摘要润色新记录未并入。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "应用林工负责接入派发等应用环节，补齐样本需应用与测试协作；模型林工负责样本检查与模型评测。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "两个林工是不同角色，问题包提交不代表可训练性或修复效果通过。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": null,
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "X05",
+    "mode": "C",
+    "run_id": "7520d40b-8571-4560-acc5-7a85c3c087e8",
+    "elapsed_ms": 108374,
+    "answer_usage": {
+      "input_tokens": 22057,
+      "output_tokens": 1762,
+      "elapsed_ms": 108374,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 2,
+    "actual_rerank_usage": {
+      "prompt_tokens": 27513,
+      "completion_tokens": 2042,
+      "total_tokens": 29555
+    },
+    "global_ranking": "completed",
+    "global_input_count": 10403,
+    "global_candidate_count": 109,
+    "stage_counts": {
+      "candidates": 348,
+      "ranked": 52,
+      "selected": 52
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 6989,
+    "used_graph_facts": 12,
+    "used_graph_relations": 2,
+    "reference_fact_coverage": [
+      {
+        "text": "QA-A27覆盖部分翻译公函问题，仍缺期望答案与判定说明；摘要润色新记录未并入。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "应用林工负责接入派发等应用环节，补齐样本需应用与测试协作；模型林工负责样本检查与模型评测。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "两个林工是不同角色，问题包提交不代表可训练性或修复效果通过。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": {
+      "projected_records": 33,
+      "fact_ids": [
+        "0088eec5-0ba3-5466-aeda-286e594457cd",
+        "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+        "0b18335f-25d2-5b03-bedd-81048a437023",
+        "0c8853ef-73ea-5868-bcfc-ce59852486a1",
+        "0cf862a2-3a8d-5dcb-b689-b2f6821ff9e6",
+        "0ed2c9b8-11c4-5695-8871-307a2308733d",
+        "0f273cb5-8059-567b-affc-971ef743f199",
+        "0f57f8cc-fc4d-5991-8122-d4780ed689b1",
+        "17df96b4-c917-547d-810a-77b47cd4ddb7",
+        "1982ecaf-0e67-5729-832f-5362d151ea3a",
+        "1ce7f0c0-5f1d-5d3d-b310-c37204c596bd",
+        "1cfeaaec-179a-58fe-abed-4f79bea6debe",
+        "1dc2eb9e-9c12-5f41-aa00-c01b71d0f6ef",
+        "1f57bfac-f90c-51a1-9902-e83a83e84625",
+        "2063e380-930e-57d1-a85c-235df018c5a9",
+        "2125fcf0-f956-5278-b577-7ed91a3ba5a8",
+        "214c7bfa-ce30-5099-9095-b6b05e667e1f",
+        "22328808-7c56-5496-be6e-59942ee495fc",
+        "2495a4fa-487f-56c5-bc38-d202c7dab8d6",
+        "25389c54-3987-5cf8-8970-c52ef79165ed",
+        "257b6fca-fd71-5b39-a66f-28e6bcbd44f2",
+        "265382ea-ca01-58a0-951a-820c2a850040",
+        "29229795-4748-5515-a6ac-6122ae23a1d4",
+        "2b84ccab-a5c9-512d-9079-3e310b3ac522",
+        "2be8642a-5cd6-5d0f-90cf-be043e1739a1",
+        "2cb34925-f0e2-5737-866e-f665b20507f7",
+        "2d246e37-b189-566c-8739-12ff19461e35",
+        "2def28a5-9ec1-5e15-82ad-4995804bbdac",
+        "312639fa-918f-55ad-9b02-2ddd526e528b",
+        "31282597-b745-59ba-b327-77b6941e6e4a",
+        "3276d6a6-405b-5894-8520-a61f9207669a",
+        "355b38d1-d241-5eb7-a045-5318e27e89ac",
+        "3593ef48-7436-5487-8c5d-1448172219cc",
+        "362f0fe1-f22d-596e-b3f4-034070221bd4",
+        "37992dc2-19d9-53eb-9253-dec585c256c0",
+        "39c3efe5-f62c-56cf-8183-931b9fcdf555",
+        "3b5abe1a-4225-5b80-a2ff-622c38544977",
+        "40a5a9d1-ef0c-5471-9cd5-bf4c57bd3622",
+        "427cc891-d37b-5cda-a0ef-611e378ccbc7",
+        "428ae928-dfed-5447-8dca-d2e61ab2daae",
+        "4474b356-cce7-5625-999f-f65402b18aeb",
+        "466d1aaa-10f5-53ae-88b8-f955e0fed5bc",
+        "4875766e-e060-56f6-8f3b-d7fc237a99a7",
+        "4889a9ff-6a3f-5675-b81c-88dfc0186309",
+        "48b608e7-26fe-55c6-93a4-e2dd415f852e",
+        "4946a652-ab77-57b6-b9be-b19bdf57b023",
+        "4b0c43e6-69fa-5ce1-bf7c-8ff4e3762a44",
+        "4b486ad5-2e7b-5f94-ac2b-3029c8554d6d",
+        "4d72b1f2-dd05-5d44-8ff8-01ea97ce23a7",
+        "4dd9f249-c121-59ef-9bd8-8d62cb794349",
+        "4ebbe997-1013-54bd-9d4c-9763bb509101",
+        "4f08de07-97fa-5853-8695-3efcaf44aea2",
+        "4f1ed298-bbc2-5140-95e1-3726b2f73e25",
+        "5345fcad-3a06-5dcb-8637-cec6b5313a9e",
+        "55f6a5bd-1bd6-5260-a463-8dd60dee0790",
+        "57032843-3004-5ebe-bc5f-9f363d5e2efe",
+        "5780cf0b-033b-5564-a09e-bdb994cc6046",
+        "59b481c8-cddc-545f-8003-8495b8a44bf2",
+        "5a495b90-a691-524d-8f54-fde410a73de0",
+        "5a7a705b-a2d6-50c3-bdd8-00b80b92c1bf",
+        "5ddfe13c-d9fa-5d20-bd2f-8eeaa35da607",
+        "62554a40-fb1f-5610-9f64-6ceb3168cf95",
+        "6280cfc5-016a-5282-bb0b-78edade8ed3c",
+        "639e690f-8080-5a2e-9133-628ba8c76f83",
+        "69769bf2-90b7-5e64-abc7-c157ae5e625f",
+        "6a905a67-521f-5d0f-acc6-d596b601f257",
+        "6ef212ea-f306-5f68-9990-8d36d352436e",
+        "72ecdc59-cf8c-5e7c-be96-a4fb7f03c4ff",
+        "73f45823-43c6-5219-affd-ea59d30bdbf9",
+        "753b2fc1-89c1-504b-b20b-ec71d8c79dfc",
+        "77d6fda8-1cab-53ef-b226-b79ed92d7621",
+        "77f3d7f6-e181-597f-8778-305393d897eb",
+        "7ddb727e-71a2-52f4-8649-b31e8225c7df",
+        "84e9d113-542d-5916-b7be-eb5094a5f43f",
+        "8ffcf85b-0fb1-5fb9-bc86-0e9e7778e0c6",
+        "90319a19-4674-5782-a24c-f004c130080c",
+        "905d9d0d-4203-5047-868a-bd6058d724a7",
+        "91462ab4-79dc-5934-a7c8-1541bebf4190",
+        "99fa86d5-ee7d-56fc-91e9-f7c77bbfd9d1",
+        "9ab9b5ab-adf3-505d-9fbf-570fd71817af",
+        "9e123464-ad96-5030-93e6-52af85a86791",
+        "a3c9064d-f040-537f-a0b8-cfc539409be2",
+        "a5d11afe-d723-5115-999e-9c484fc764cb",
+        "ab17e2d2-b9cc-5533-aa5b-4b5baff89be5",
+        "aececd1b-f4a9-5a67-82b7-f5605a2b064e",
+        "b20ca840-1610-5ec6-9c8f-3d29f554b42a",
+        "b23ba28b-b18b-575a-9647-a9e552b72a85",
+        "b8a8eda2-0997-53e7-b47a-980eba68f985",
+        "b97aa1fb-4159-5bf7-b4e5-a4972b382411",
+        "bbba2984-8f13-5261-8fda-3af413151aeb",
+        "be14023b-e936-5e97-816b-ee9e7e34de55",
+        "bf940ab7-49bf-5f26-8552-c01c1e4c22a3",
+        "c17c669e-7460-5500-b070-6c0b24b3447e",
+        "c2f51018-5a81-5a71-a793-e492f7289a5f",
+        "c324e145-3e04-540f-a0b2-181e7c262c2c",
+        "c4013408-f7cc-56ff-9002-1ed0c90bffbc",
+        "c871c370-7121-554f-8282-181d9755d847",
+        "d318e35f-f7b4-5776-bdef-264bbb28a285",
+        "d454477a-efba-55b6-92a3-367405fe8e08",
+        "d4c28673-f1f4-5ff4-8dc5-1eec79321f3b",
+        "d62ad8f6-77b4-59a6-8608-e38711eb8f41",
+        "dff77c0c-54f6-5813-a249-0e7e6010e686",
+        "e5320090-ff41-5f46-92d2-d72c574aeef8",
+        "e8cbb876-495d-5541-820f-094905e5b23a",
+        "e9bca9d9-2644-550c-8f53-4b77e2564e4f",
+        "ed82087e-dbf2-584b-8a92-c5774ec7baaf",
+        "ee5b8e66-dab6-5a81-8336-35b1284cd8e4",
+        "f6972371-2247-5797-a6e4-77f19b2abb76",
+        "f7f589c3-ba74-5a5a-b81d-73da31759da2",
+        "f9c6a435-5a9d-5746-9e94-73fa26a3fc7e",
+        "fdbf1d76-9c02-5a7f-b2e2-6f005e717bc9",
+        "fdc0fc5d-1c7d-57d6-b8c2-73ea6c61fb41",
+        "fe107926-e570-5dc3-83ca-18ff8c733aa9",
+        "ff2700e4-c645-5155-b935-9b8cbe0bdaab"
+      ],
+      "original_characters": 9925,
+      "excerpt_characters": 1886
+    },
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "X07",
+    "mode": "B",
+    "run_id": "b7d193aa-ed9f-4d7e-9a4c-1e7b68e6bfe0",
+    "elapsed_ms": 162723,
+    "answer_usage": {
+      "input_tokens": 22921,
+      "output_tokens": 1871,
+      "elapsed_ms": 162723,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 0,
+    "actual_rerank_usage": {
+      "prompt_tokens": 104564,
+      "completion_tokens": 4785,
+      "total_tokens": 109349
+    },
+    "global_ranking": "completed",
+    "global_input_count": 14651,
+    "global_candidate_count": 52,
+    "stage_counts": {
+      "candidates": 230,
+      "ranked": 36,
+      "selected": 27
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 7987,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "ROUTE-03确认显式摘要六例，不是六类入口全部验证，隐式摘要仍漏调。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "LANG-02确认翻译TR-X02，TR-X03以及摘要公函目标语言路径尚无对应回归。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "其他Skill只有潜在配置影响，需按实际入口补回归，不能断言全部修好或全部受损。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": null,
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "X07",
+    "mode": "C",
+    "run_id": "f2e22485-ca6d-4ebf-86c8-2218fc28ca89",
+    "elapsed_ms": 144499,
+    "answer_usage": {
+      "input_tokens": 20883,
+      "output_tokens": 2025,
+      "elapsed_ms": 144499,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 1,
+    "actual_rerank_usage": {
+      "prompt_tokens": 57980,
+      "completion_tokens": 3946,
+      "total_tokens": 61926
+    },
+    "global_ranking": "completed",
+    "global_input_count": 8833,
+    "global_candidate_count": 82,
+    "stage_counts": {
+      "candidates": 254,
+      "ranked": 39,
+      "selected": 39
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 5868,
+    "used_graph_facts": 6,
+    "used_graph_relations": 3,
+    "reference_fact_coverage": [
+      {
+        "text": "ROUTE-03确认显式摘要六例，不是六类入口全部验证，隐式摘要仍漏调。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "LANG-02确认翻译TR-X02，TR-X03以及摘要公函目标语言路径尚无对应回归。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "其他Skill只有潜在配置影响，需按实际入口补回归，不能断言全部修好或全部受损。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": {
+      "projected_records": 33,
+      "fact_ids": [
+        "0088eec5-0ba3-5466-aeda-286e594457cd",
+        "01245bd8-7548-5e80-994e-afde88486cbc",
+        "024b9acb-5dbe-55cf-9005-4c692ab3e9a6",
+        "09a9a393-f954-5b9c-a7bd-c3452027c8d8",
+        "0f273cb5-8059-567b-affc-971ef743f199",
+        "0f57f8cc-fc4d-5991-8122-d4780ed689b1",
+        "13d83a45-6aa0-5031-aec6-6284ea7634a2",
+        "17fea75d-03f7-5d67-a3dd-6fabe9190eb4",
+        "18542b58-aad4-5250-addf-34dfbb3c682c",
+        "1cfeaaec-179a-58fe-abed-4f79bea6debe",
+        "1d0d0c10-ffb8-54cf-8251-9e49c293b4e9",
+        "1d8bebf2-243e-5428-a5f8-bce0eb0629eb",
+        "1dc2eb9e-9c12-5f41-aa00-c01b71d0f6ef",
+        "1e3efe9c-40f9-5199-8758-beec873668c6",
+        "2063e380-930e-57d1-a85c-235df018c5a9",
+        "26ddae8e-3dea-5c5d-a123-f9e6c997e6c0",
+        "28e75394-a0f5-5a16-be54-bad71de0c4b6",
+        "2be8642a-5cd6-5d0f-90cf-be043e1739a1",
+        "2d246e37-b189-566c-8739-12ff19461e35",
+        "2d30922b-25f0-5593-a514-4a9b98c1ce01",
+        "2de22790-8749-5d54-b59d-bd383752e7e9",
+        "2def28a5-9ec1-5e15-82ad-4995804bbdac",
+        "2ec3d4ad-adfe-5b9d-b428-2b3565fb7d92",
+        "3076782f-b31d-55e1-a576-331589711855",
+        "312639fa-918f-55ad-9b02-2ddd526e528b",
+        "31282597-b745-59ba-b327-77b6941e6e4a",
+        "3472e7e0-6179-593a-b7c7-61396759fd1a",
+        "3593ef48-7436-5487-8c5d-1448172219cc",
+        "369bbe19-1799-5d24-b1dd-413b1937f704",
+        "3730cbbc-0a43-5898-8ae9-21d7f1a45230",
+        "37992dc2-19d9-53eb-9253-dec585c256c0",
+        "408248fc-f91e-53d3-ad39-08dcb18fdbe4",
+        "43a3b712-d91c-5171-9dfe-73cc4b444cdd",
+        "4474b356-cce7-5625-999f-f65402b18aeb",
+        "464fff73-7c8d-5c7d-a22e-3c46197887f3",
+        "46af64e0-f3ca-57e8-b134-84dbf5757ba8",
+        "48b608e7-26fe-55c6-93a4-e2dd415f852e",
+        "4b3bc8c3-8739-5a65-99af-31c1dea63c81",
+        "4b486ad5-2e7b-5f94-ac2b-3029c8554d6d",
+        "4b552b12-c4f2-5c8f-9d37-90274a0c4a02",
+        "4d72b1f2-dd05-5d44-8ff8-01ea97ce23a7",
+        "5345fcad-3a06-5dcb-8637-cec6b5313a9e",
+        "53de590b-72a2-504b-be0e-06eadabe9c0d",
+        "54c5bcb2-d503-5e3d-b106-70fb5aebba26",
+        "57032843-3004-5ebe-bc5f-9f363d5e2efe",
+        "5780cf0b-033b-5564-a09e-bdb994cc6046",
+        "57dea62a-6613-5d63-b80b-b0da6080d31f",
+        "5a495b90-a691-524d-8f54-fde410a73de0",
+        "5a7a705b-a2d6-50c3-bdd8-00b80b92c1bf",
+        "5ddfe13c-d9fa-5d20-bd2f-8eeaa35da607",
+        "5f856394-73cb-5a7a-81c0-3efa4cd64d66",
+        "639e690f-8080-5a2e-9133-628ba8c76f83",
+        "647fdb29-9f2e-5f5e-aa2b-df671c04a5c2",
+        "65cda754-402e-5626-9a0f-0ce00175f11f",
+        "6a6cb258-911a-5ef5-80b7-b0b956865a4b",
+        "73f45823-43c6-5219-affd-ea59d30bdbf9",
+        "753b2fc1-89c1-504b-b20b-ec71d8c79dfc",
+        "77fe6b23-59ee-535a-9db9-9431096ef0bd",
+        "790fb00c-4edc-5a78-b79b-98c2bb59d53c",
+        "79558009-306d-5bf4-a6a9-e6087e9f12d3",
+        "7d7479c7-fe1d-5473-b4f9-421aaaf965b3",
+        "7ddb727e-71a2-52f4-8649-b31e8225c7df",
+        "7fbf3a29-db7b-5650-a68e-233337ac12da",
+        "85125111-94b5-5115-bfdf-74c54f083289",
+        "85327fdc-3f80-564e-b9db-039036181b76",
+        "86d818a3-2605-56d3-a91d-51f69ad2f7dd",
+        "87d5b92a-9fb0-56a6-9259-9dc82e7ae544",
+        "8c3caefc-5c77-508a-9834-db98f2e1e75c",
+        "8ffcf85b-0fb1-5fb9-bc86-0e9e7778e0c6",
+        "90319a19-4674-5782-a24c-f004c130080c",
+        "905d9d0d-4203-5047-868a-bd6058d724a7",
+        "916c5b26-fb87-5a4b-8805-c93a81bcac3b",
+        "937e8fe0-b5bb-56a7-b59e-f8c156a73105",
+        "93b20734-baf8-5a01-9b79-413310024e49",
+        "97bb13c1-21a3-54a1-8ba0-15756f5de4d3",
+        "99916768-592d-54b4-946e-e2271c344e0f",
+        "9e123464-ad96-5030-93e6-52af85a86791",
+        "ab17e2d2-b9cc-5533-aa5b-4b5baff89be5",
+        "ab71dc38-f8b6-5a32-aa5e-f54350f3f7f9",
+        "af3f989a-e11f-5c09-a481-ee6781cbb642",
+        "afefb6ea-259f-5bf1-9049-e098b9a338ce",
+        "b20ca840-1610-5ec6-9c8f-3d29f554b42a",
+        "b21196b5-0981-5642-ab0a-0cf2ca9d4282",
+        "b4863ae1-89c6-50a6-ae2e-c198d694fbd0",
+        "b6474bbf-7c6d-5226-a1a5-a517458a39ee",
+        "b97aa1fb-4159-5bf7-b4e5-a4972b382411",
+        "be14023b-e936-5e97-816b-ee9e7e34de55",
+        "bf940ab7-49bf-5f26-8552-c01c1e4c22a3",
+        "c0515642-1c16-5c1d-aa2f-4c05e167fbb3",
+        "c17c669e-7460-5500-b070-6c0b24b3447e",
+        "c2f51018-5a81-5a71-a793-e492f7289a5f",
+        "c324e145-3e04-540f-a0b2-181e7c262c2c",
+        "c4013408-f7cc-56ff-9002-1ed0c90bffbc",
+        "c485f822-46bc-5dfe-bfa1-bbc9c2e9e9fd",
+        "c4953249-f796-5214-b465-a4afe58b1863",
+        "c5ee2eff-682b-59bc-9073-e13d5a2fe1b4",
+        "c75d5bd2-1693-593e-83df-c8e948566d07",
+        "c871c370-7121-554f-8282-181d9755d847",
+        "d318e35f-f7b4-5776-bdef-264bbb28a285",
+        "e147a24b-da3c-5a65-ab5b-278c184b897e",
+        "e320aed9-36a6-5647-b9a4-0ee838862c6d",
+        "e5320090-ff41-5f46-92d2-d72c574aeef8",
+        "e61b0747-54fd-52cd-ab86-8fa164ca37f9",
+        "e647050d-6811-548b-b0c1-f406bdb42cfc",
+        "e9bca9d9-2644-550c-8f53-4b77e2564e4f",
+        "ed82087e-dbf2-584b-8a92-c5774ec7baaf",
+        "ee40f2f8-c93e-58f6-b6f7-39aec26d86fc",
+        "f2051155-16c7-5f0e-9ddb-3b8244e23b02",
+        "f6972371-2247-5797-a6e4-77f19b2abb76",
+        "f7f589c3-ba74-5a5a-b81d-73da31759da2",
+        "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+        "fe107926-e570-5dc3-83ca-18ff8c733aa9",
+        "ff2700e4-c645-5155-b935-9b8cbe0bdaab"
+      ],
+      "original_characters": 10337,
+      "excerpt_characters": 2171
+    },
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  }
+]

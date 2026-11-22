@@ -1,0 +1,381 @@
+[
+  {
+    "question_id": "TR04",
+    "mode": "C",
+    "run_id": "a15ad6ba-4c22-4f57-90f1-88b2809aafbd",
+    "preflight_tokens": 5299,
+    "selected_records": 37,
+    "omitted_necessary_groups": 10,
+    "audit_batches": 1,
+    "audit_added_groups": 5,
+    "audit_new_sources": [
+      "A03-S01",
+      "D06-S01",
+      "D06-S03",
+      "D08-S02",
+      "D09-S02",
+      "T12-01",
+      "T12-07"
+    ],
+    "audit_new_sources_in_final_input": [
+      "A03-S01",
+      "D06-S01",
+      "D06-S03",
+      "D08-S02",
+      "D09-S02",
+      "T12-01",
+      "T12-07"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [
+      "A03-S04",
+      "D09-S03",
+      "D09-S02"
+    ],
+    "projection_counts": {
+      "projected": 81,
+      "full_text_unmatched_facts": 40,
+      "no_projection": 0
+    }
+  },
+  {
+    "question_id": "TR04",
+    "mode": "B",
+    "run_id": "684dbecc-77b3-4c60-a403-9ee9e8cf0461",
+    "preflight_tokens": 8154,
+    "selected_records": 31,
+    "omitted_necessary_groups": 9,
+    "audit_batches": 1,
+    "audit_added_groups": 6,
+    "audit_new_sources": [
+      "A04-S01",
+      "A04-S03",
+      "D06-S01",
+      "D06-S02",
+      "D08-S01",
+      "NTR-S03"
+    ],
+    "audit_new_sources_in_final_input": [
+      "A04-S01",
+      "A04-S03",
+      "D06-S01",
+      "D08-S01"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [],
+    "projection_counts": {
+      "projected": 0,
+      "full_text_unmatched_facts": 0,
+      "no_projection": 0
+    }
+  },
+  {
+    "question_id": "AM03",
+    "mode": "B",
+    "run_id": "e6ca3af9-62a2-439a-8b44-5d33a934a8fa",
+    "preflight_tokens": 3177,
+    "selected_records": 12,
+    "omitted_necessary_groups": 3,
+    "audit_batches": 1,
+    "audit_added_groups": 2,
+    "audit_new_sources": [
+      "AAM2-S02",
+      "XAM3-05",
+      "XAM3-06",
+      "XAM3-07"
+    ],
+    "audit_new_sources_in_final_input": [
+      "AAM2-S02",
+      "XAM3-05",
+      "XAM3-06",
+      "XAM3-07"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [],
+    "projection_counts": {
+      "projected": 0,
+      "full_text_unmatched_facts": 0,
+      "no_projection": 0
+    }
+  },
+  {
+    "question_id": "AM03",
+    "mode": "C",
+    "run_id": "29f185fb-198c-4500-b3e6-9a4fc1d28e1b",
+    "preflight_tokens": 3381,
+    "selected_records": 14,
+    "omitted_necessary_groups": 0,
+    "audit_batches": 0,
+    "audit_added_groups": 0,
+    "audit_new_sources": [],
+    "audit_new_sources_in_final_input": [],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [
+      "AAM1-S01",
+      "NAM-S02",
+      "AAM2-S02",
+      "AAM2-S03",
+      "AAM1-S04",
+      "AAM1-S03",
+      "AAM1-S02"
+    ],
+    "projection_counts": {
+      "projected": 76,
+      "full_text_unmatched_facts": 36,
+      "no_projection": 0
+    }
+  },
+  {
+    "question_id": "PO03",
+    "mode": "B",
+    "run_id": "c63a1694-7750-4594-9a9f-0ce01f33c78c",
+    "preflight_tokens": 2756,
+    "selected_records": 9,
+    "omitted_necessary_groups": 2,
+    "audit_batches": 1,
+    "audit_added_groups": 1,
+    "audit_new_sources": [
+      "XPO2-07"
+    ],
+    "audit_new_sources_in_final_input": [
+      "XPO2-07"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [],
+    "projection_counts": {
+      "projected": 0,
+      "full_text_unmatched_facts": 0,
+      "no_projection": 0
+    }
+  },
+  {
+    "question_id": "PO03",
+    "mode": "C",
+    "run_id": "9543dd30-43ce-490a-8709-3bca44580535",
+    "preflight_tokens": 2978,
+    "selected_records": 11,
+    "omitted_necessary_groups": 2,
+    "audit_batches": 1,
+    "audit_added_groups": 0,
+    "audit_new_sources": [],
+    "audit_new_sources_in_final_input": [],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [
+      "APO1-S01",
+      "APO1-S02",
+      "APO2-S04",
+      "APO0-S01",
+      "APO2-S01",
+      "APO1-S04"
+    ],
+    "projection_counts": {
+      "projected": 69,
+      "full_text_unmatched_facts": 28,
+      "no_projection": 0
+    }
+  },
+  {
+    "question_id": "X01",
+    "mode": "B",
+    "run_id": "6970ed4e-6cd7-4a56-bb41-c9313812cf93",
+    "preflight_tokens": 8142,
+    "selected_records": 28,
+    "omitted_necessary_groups": 25,
+    "audit_batches": 1,
+    "audit_added_groups": 20,
+    "audit_new_sources": [
+      "A00-S01",
+      "A01-S01",
+      "A02-S03",
+      "A04-S01",
+      "A04-S02",
+      "A04-S03",
+      "AAM0-S01",
+      "AAM0-S02",
+      "AAM0-S03",
+      "AAM1-S03",
+      "ALE0-S01",
+      "ALE2-S01",
+      "APO0-S01",
+      "APO0-S02",
+      "APO1-S01",
+      "APO1-S02",
+      "AWR0-S02",
+      "AWR1-S03",
+      "AWR2-S01",
+      "D07-S02",
+      "D08-S03",
+      "D09-S02",
+      "NSU-S01",
+      "XLE3-05",
+      "XLE3-06"
+    ],
+    "audit_new_sources_in_final_input": [
+      "A04-S01",
+      "AAM0-S03",
+      "D09-S02"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [],
+    "projection_counts": {
+      "projected": 0,
+      "full_text_unmatched_facts": 0,
+      "no_projection": 0
+    }
+  },
+  {
+    "question_id": "X01",
+    "mode": "C",
+    "run_id": "034924b2-c8ec-4a7c-9756-2f60533cd1f6",
+    "preflight_tokens": 8136,
+    "selected_records": 49,
+    "omitted_necessary_groups": 27,
+    "audit_batches": 1,
+    "audit_added_groups": 20,
+    "audit_new_sources": [
+      "A02-S03",
+      "A03-S02",
+      "A04-S02",
+      "A04-S03",
+      "AAM0-S01",
+      "AAM0-S02",
+      "AAM0-S03",
+      "AAM1-S03",
+      "ALE0-S01",
+      "ALE1-S03",
+      "APO0-S02",
+      "APO1-S01",
+      "APO1-S02",
+      "ASU2-S04",
+      "ATR1-S01",
+      "AWR1-S01",
+      "D08-S03",
+      "XLE3-06",
+      "XWR1-05",
+      "XWR2-02",
+      "XWR3-05",
+      "XWR3-06"
+    ],
+    "audit_new_sources_in_final_input": [
+      "A04-S03",
+      "AAM0-S02",
+      "AAM0-S03",
+      "ALE1-S03",
+      "ASU2-S04",
+      "ATR1-S01",
+      "AWR1-S01",
+      "XWR2-02"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [
+      "AWR1-S01",
+      "A03-S04",
+      "AAM2-S02",
+      "AAM2-S03",
+      "AAM1-S04",
+      "ATR1-S01",
+      "APO1-S04",
+      "A05-S01",
+      "A00-S02",
+      "AWR1-S03",
+      "APO2-S04",
+      "APO0-S01"
+    ],
+    "projection_counts": {
+      "projected": 84,
+      "full_text_unmatched_facts": 37,
+      "no_projection": 0
+    }
+  },
+  {
+    "question_id": "X03",
+    "mode": "B",
+    "run_id": "3efb6046-ea5b-426a-a8c2-3eb7147777bd",
+    "preflight_tokens": 8161,
+    "selected_records": 29,
+    "omitted_necessary_groups": 18,
+    "audit_batches": 1,
+    "audit_added_groups": 11,
+    "audit_new_sources": [
+      "A04-S01",
+      "A05-S02",
+      "AAM0-S01",
+      "AAM1-S03",
+      "ALE0-S04",
+      "ALE1-S04",
+      "APO1-S02",
+      "ASU0-S03",
+      "ASU2-S01",
+      "ATR0-S03",
+      "ATR1-S04",
+      "AWR1-S02",
+      "XSH2-06",
+      "XSH2-07"
+    ],
+    "audit_new_sources_in_final_input": [
+      "A05-S02",
+      "ALE1-S04",
+      "ASU2-S01"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [],
+    "projection_counts": {
+      "projected": 0,
+      "full_text_unmatched_facts": 0,
+      "no_projection": 0
+    }
+  },
+  {
+    "question_id": "X03",
+    "mode": "C",
+    "run_id": "03930526-ae39-4263-8b01-7cae22a18024",
+    "preflight_tokens": 8095,
+    "selected_records": 52,
+    "omitted_necessary_groups": 17,
+    "audit_batches": 1,
+    "audit_added_groups": 11,
+    "audit_new_sources": [
+      "A02-S03",
+      "A05-S02",
+      "ALE0-S01",
+      "ALE0-S04",
+      "ALE1-S04",
+      "APO1-S02",
+      "ASU2-S01",
+      "ATR0-S01",
+      "ATR1-S04",
+      "AWR1-S02",
+      "XSH2-07"
+    ],
+    "audit_new_sources_in_final_input": [
+      "A02-S03",
+      "A05-S02",
+      "ALE1-S04",
+      "APO1-S02",
+      "ASU2-S01",
+      "ATR0-S01",
+      "ATR1-S04",
+      "AWR1-S02",
+      "XSH2-07"
+    ],
+    "unreviewed_retained_groups": 0,
+    "selected_projection_fallbacks": [
+      "ALE2-S04",
+      "A03-S04",
+      "AAM2-S02",
+      "AAM1-S04",
+      "AAM2-S03",
+      "AWR1-S02",
+      "APO1-S04",
+      "A05-S01",
+      "A00-S02",
+      "APO1-S02",
+      "APO2-S04"
+    ],
+    "projection_counts": {
+      "projected": 89,
+      "full_text_unmatched_facts": 42,
+      "no_projection": 0
+    }
+  }
+]

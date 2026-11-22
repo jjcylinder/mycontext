@@ -1,0 +1,24 @@
+{
+  "B": {
+    "fully_correct": 0,
+    "partially_correct": 5,
+    "mean_original_records": 19,
+    "logical_rerank_calls": 16,
+    "cache_hits": 0,
+    "actual_rerank_calls_in_effective_runs": 16,
+    "graph_hints_in_global_ranking": 0,
+    "complete_reference_sets_in_candidates": 12,
+    "complete_reference_sets_in_final_input": 2
+  },
+  "C": {
+    "fully_correct": 2,
+    "partially_correct": 3,
+    "mean_original_records": 20,
+    "logical_rerank_calls": 17,
+    "cache_hits": 8,
+    "actual_rerank_calls_in_effective_runs": 9,
+    "graph_hints_in_global_ranking": 153,
+    "complete_reference_sets_in_candidates": 14,
+    "complete_reference_sets_in_final_input": 4
+  }
+}

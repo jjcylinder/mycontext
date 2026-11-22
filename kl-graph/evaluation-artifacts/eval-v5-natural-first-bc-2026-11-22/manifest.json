@@ -1,0 +1,28 @@
+{
+  "profile": "app_focus",
+  "split": "eval",
+  "modes": [
+    "B",
+    "C"
+  ],
+  "second_tier": false,
+  "question_ids": [
+    "TR04",
+    "AM03",
+    "PO03",
+    "X01",
+    "X03"
+  ],
+  "grading_rubric": {
+    "version": "V5-rubric-1",
+    "eval_questions": 20,
+    "eval_points": 64,
+    "sha256": {
+      "questions.jsonl": "fafcd729126ff3718fab9e70f14503091a0104ecb8758d5678bc58a8548966e6",
+      "reference_answers.jsonl": "66ddbad8061a7e778539eb2190e394d2e2140a5cc683895b0cbd27b83f2a0724",
+      "应用关联参考.jsonl": "0a7b305266782f4a930f4768780aa5e4f4ec24bec0568796ecc2ee5e4d1656bf",
+      "应用问题及参考依据.md": "56ad53e0b962ae14b2217a00d181482dce587811155c406e591fa7609a544088"
+    }
+  },
+  "dataset_id": "project-a-v5-natural-app_focus-4f98497fe04be748"
+}

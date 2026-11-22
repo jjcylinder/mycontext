@@ -1,0 +1,142 @@
+{
+  "interpretation": "两梯队为同一检索/回答实现，不重复的10题描述性合并；不是20题全量，也非独立盲测。",
+  "tiers": {
+    "first": {
+      "B": {
+        "questions": 5,
+        "fully_correct": 3,
+        "partially_correct": 2,
+        "incorrect": 0,
+        "technical_failures": 0,
+        "fully_correct_rate": 0.6,
+        "fully_correct_reference_points": 14,
+        "reference_points": 19,
+        "mean_preflight_tokens": 5956.2,
+        "mean_elapsed_seconds": 129.252,
+        "mean_selected_records": 23.4,
+        "logical_rerank_calls": 15,
+        "rank_cache_hits": 0,
+        "actual_rerank_calls": 15,
+        "global_ranking_completed": 5,
+        "graph_facts_in_final_input": 0,
+        "graph_relations_in_final_input": 0,
+        "projected_record_occurrences": 0,
+        "projection_fact_occurrences": 0,
+        "projected_original_characters": 0,
+        "projected_excerpt_characters": 0,
+        "reference_groups_in_candidates": 18,
+        "reference_groups_in_selected_sources": 7
+      },
+      "C": {
+        "questions": 5,
+        "fully_correct": 5,
+        "partially_correct": 0,
+        "incorrect": 0,
+        "technical_failures": 0,
+        "fully_correct_rate": 1.0,
+        "fully_correct_reference_points": 19,
+        "reference_points": 19,
+        "mean_preflight_tokens": 4163.2,
+        "mean_elapsed_seconds": 105.531,
+        "mean_selected_records": 29.6,
+        "logical_rerank_calls": 15,
+        "rank_cache_hits": 6,
+        "actual_rerank_calls": 9,
+        "global_ranking_completed": 5,
+        "graph_facts_in_final_input": 29,
+        "graph_relations_in_final_input": 0,
+        "projected_record_occurrences": 108,
+        "projection_fact_occurrences": 348,
+        "projected_original_characters": 32725,
+        "projected_excerpt_characters": 6058,
+        "reference_groups_in_candidates": 18,
+        "reference_groups_in_selected_sources": 8
+      }
+    },
+    "second": {
+      "B": {
+        "questions": 5,
+        "fully_correct": 5,
+        "partially_correct": 0,
+        "incorrect": 0,
+        "technical_failures": 0,
+        "fully_correct_rate": 1.0,
+        "fully_correct_reference_points": 15,
+        "reference_points": 15,
+        "mean_preflight_tokens": 4943,
+        "mean_elapsed_seconds": 115.451,
+        "mean_selected_records": 19,
+        "logical_rerank_calls": 15,
+        "rank_cache_hits": 0,
+        "actual_rerank_calls": 15,
+        "global_ranking_completed": 5,
+        "graph_facts_in_final_input": 0,
+        "graph_relations_in_final_input": 0,
+        "projected_record_occurrences": 0,
+        "projection_fact_occurrences": 0,
+        "projected_original_characters": 0,
+        "projected_excerpt_characters": 0,
+        "reference_groups_in_candidates": 15,
+        "reference_groups_in_selected_sources": 7,
+        "answer_input_tokens": 99272,
+        "answer_output_tokens": 6116,
+        "actual_rerank_usage": {
+          "prompt_tokens": 498315,
+          "completion_tokens": 16013,
+          "total_tokens": 514328
+        }
+      },
+      "C": {
+        "questions": 5,
+        "fully_correct": 3,
+        "partially_correct": 2,
+        "incorrect": 0,
+        "technical_failures": 0,
+        "fully_correct_rate": 0.6,
+        "fully_correct_reference_points": 13,
+        "reference_points": 15,
+        "mean_preflight_tokens": 4047.4,
+        "mean_elapsed_seconds": 89.596,
+        "mean_selected_records": 26.2,
+        "logical_rerank_calls": 15,
+        "rank_cache_hits": 6,
+        "actual_rerank_calls": 9,
+        "global_ranking_completed": 5,
+        "graph_facts_in_final_input": 35,
+        "graph_relations_in_final_input": 5,
+        "projected_record_occurrences": 91,
+        "projection_fact_occurrences": 317,
+        "projected_original_characters": 28016,
+        "projected_excerpt_characters": 5734,
+        "reference_groups_in_candidates": 15,
+        "reference_groups_in_selected_sources": 8,
+        "answer_input_tokens": 95102,
+        "answer_output_tokens": 6283,
+        "actual_rerank_usage": {
+          "prompt_tokens": 239104,
+          "completion_tokens": 8902,
+          "total_tokens": 248006
+        }
+      }
+    }
+  },
+  "combined": {
+    "B": {
+      "questions": 10,
+      "fully_correct": 8,
+      "fully_correct_rate": 0.8,
+      "partially_correct": 2,
+      "fully_correct_reference_points": 29,
+      "reference_points": 34
+    },
+    "C": {
+      "questions": 10,
+      "fully_correct": 8,
+      "fully_correct_rate": 0.8,
+      "partially_correct": 2,
+      "fully_correct_reference_points": 32,
+      "reference_points": 34
+    }
+  },
+  "final_input_reduction_second_tier": 0.1811855148695124
+}

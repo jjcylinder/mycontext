@@ -1,0 +1,1054 @@
+[
+  {
+    "question_id": "TR04",
+    "mode": "B",
+    "run_id": "916ea554-86d1-44c4-9b86-1638700f6d76",
+    "elapsed_ms": 140008,
+    "answer_usage": {
+      "input_tokens": 22201,
+      "output_tokens": 1542,
+      "elapsed_ms": 140008,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 0,
+    "actual_rerank_usage": {
+      "prompt_tokens": 108491,
+      "completion_tokens": 3679,
+      "total_tokens": 112170
+    },
+    "global_ranking": "completed",
+    "global_input_count": 9650,
+    "global_candidate_count": 47,
+    "stage_counts": {
+      "candidates": 333,
+      "ranked": 33,
+      "selected": 33
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 7253,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "应用继续处理异常分支及模型问题样本，测试补TR-X03及整体语义回归。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "模型需QA-A27期望答案和判定说明分析BUG-S11。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "发布需单独确认正式环境升级，目前无已发布结论。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": null,
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "TR04",
+    "mode": "C",
+    "run_id": "39653970-0edc-449b-a5c5-9574b73e879b",
+    "elapsed_ms": 84043,
+    "answer_usage": {
+      "input_tokens": 18631,
+      "output_tokens": 1518,
+      "elapsed_ms": 84043,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 2,
+    "actual_rerank_usage": {
+      "prompt_tokens": 23490,
+      "completion_tokens": 1182,
+      "total_tokens": 24672
+    },
+    "global_ranking": "completed",
+    "global_input_count": 6460,
+    "global_candidate_count": 66,
+    "stage_counts": {
+      "candidates": 333,
+      "ranked": 25,
+      "selected": 25
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 3665,
+    "used_graph_facts": 7,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "应用继续处理异常分支及模型问题样本，测试补TR-X03及整体语义回归。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "模型需QA-A27期望答案和判定说明分析BUG-S11。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "发布需单独确认正式环境升级，目前无已发布结论。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": {
+      "projected_records": 14,
+      "fact_ids": [
+        "07866c32-2bfc-5144-89c6-12feea3f5ddc",
+        "0f57f8cc-fc4d-5991-8122-d4780ed689b1",
+        "1338d208-22ef-591a-8855-b7983bd7852b",
+        "1d0d0c10-ffb8-54cf-8251-9e49c293b4e9",
+        "1d6f35b1-2bc6-5f37-ad52-7d9dc4519e73",
+        "2125fcf0-f956-5278-b577-7ed91a3ba5a8",
+        "26ddae8e-3dea-5c5d-a123-f9e6c997e6c0",
+        "28e75394-a0f5-5a16-be54-bad71de0c4b6",
+        "28fe38e2-c3d0-5c64-bd9e-3687ac9651fa",
+        "2de22790-8749-5d54-b59d-bd383752e7e9",
+        "2def28a5-9ec1-5e15-82ad-4995804bbdac",
+        "3241f6e3-af7a-566c-990c-73a5921226b3",
+        "369bbe19-1799-5d24-b1dd-413b1937f704",
+        "3730cbbc-0a43-5898-8ae9-21d7f1a45230",
+        "4474b356-cce7-5625-999f-f65402b18aeb",
+        "4ebbe997-1013-54bd-9d4c-9763bb509101",
+        "4f08de07-97fa-5853-8695-3efcaf44aea2",
+        "53dea747-26c4-59da-9cf8-f26219bc3df1",
+        "54c5bcb2-d503-5e3d-b106-70fb5aebba26",
+        "55f6a5bd-1bd6-5260-a463-8dd60dee0790",
+        "5a7a705b-a2d6-50c3-bdd8-00b80b92c1bf",
+        "69bf5252-b890-5162-b3bb-17b6640ab350",
+        "6a6cb258-911a-5ef5-80b7-b0b956865a4b",
+        "6ef212ea-f306-5f68-9990-8d36d352436e",
+        "77d6fda8-1cab-53ef-b226-b79ed92d7621",
+        "77fe6b23-59ee-535a-9db9-9431096ef0bd",
+        "7ddb727e-71a2-52f4-8649-b31e8225c7df",
+        "7ed9cfdc-16cb-597d-90b4-16808ce748ae",
+        "85327fdc-3f80-564e-b9db-039036181b76",
+        "916c5b26-fb87-5a4b-8805-c93a81bcac3b",
+        "97bb13c1-21a3-54a1-8ba0-15756f5de4d3",
+        "a3c9064d-f040-537f-a0b8-cfc539409be2",
+        "ab17e2d2-b9cc-5533-aa5b-4b5baff89be5",
+        "aececd1b-f4a9-5a67-82b7-f5605a2b064e",
+        "af3f989a-e11f-5c09-a481-ee6781cbb642",
+        "afefb6ea-259f-5bf1-9049-e098b9a338ce",
+        "b4863ae1-89c6-50a6-ae2e-c198d694fbd0",
+        "c0515642-1c16-5c1d-aa2f-4c05e167fbb3",
+        "c4013408-f7cc-56ff-9002-1ed0c90bffbc",
+        "c485f822-46bc-5dfe-bfa1-bbc9c2e9e9fd",
+        "c82fb83b-2e49-563b-bd00-7a8a67eac774",
+        "d2377a89-d698-5b14-b864-22338db31663",
+        "d318e35f-f7b4-5776-bdef-264bbb28a285",
+        "d9fef6a1-7f34-5c52-a72c-9897118927bf",
+        "dff77c0c-54f6-5813-a249-0e7e6010e686",
+        "e197f887-9073-5cd3-aa71-2c876738fa82",
+        "ed82087e-dbf2-584b-8a92-c5774ec7baaf",
+        "f238a60f-af62-552b-88ac-76694e8deb10",
+        "f7f589c3-ba74-5a5a-b81d-73da31759da2"
+      ],
+      "original_characters": 4379,
+      "excerpt_characters": 957
+    },
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "AM03",
+    "mode": "B",
+    "run_id": "3a2d953d-de88-4624-ab33-a737e2bc877c",
+    "elapsed_ms": 76915,
+    "answer_usage": {
+      "input_tokens": 18365,
+      "output_tokens": 885,
+      "elapsed_ms": 76915,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 0,
+    "actual_rerank_usage": {
+      "prompt_tokens": 87456,
+      "completion_tokens": 1786,
+      "total_tokens": 89242
+    },
+    "global_ranking": "completed",
+    "global_input_count": 4207,
+    "global_candidate_count": 17,
+    "stage_counts": {
+      "candidates": 197,
+      "ranked": 14,
+      "selected": 14
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 3469,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "新索引能找到消息，不代表REPORT-AM0830使用了新快照。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "旧产物仍以SN-AM07将10点当确定安排，需要新快照重跑并核对截止前消息。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "依赖数据与应用协作，尚无新产物复核通过记录。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": null,
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "AM03",
+    "mode": "C",
+    "run_id": "f6364e1d-b683-4e56-be1d-dddf29d1359e",
+    "elapsed_ms": 66537,
+    "answer_usage": {
+      "input_tokens": 17384,
+      "output_tokens": 898,
+      "elapsed_ms": 66537,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 1,
+    "actual_rerank_usage": {
+      "prompt_tokens": 47394,
+      "completion_tokens": 1067,
+      "total_tokens": 48461
+    },
+    "global_ranking": "completed",
+    "global_input_count": 3863,
+    "global_candidate_count": 38,
+    "stage_counts": {
+      "candidates": 222,
+      "ranked": 16,
+      "selected": 16
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 2460,
+    "used_graph_facts": 5,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "新索引能找到消息，不代表REPORT-AM0830使用了新快照。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "旧产物仍以SN-AM07将10点当确定安排，需要新快照重跑并核对截止前消息。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "依赖数据与应用协作，尚无新产物复核通过记录。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": {
+      "projected_records": 10,
+      "fact_ids": [
+        "020758d2-064c-59f1-af09-110b989d422c",
+        "22d6e2a4-3bf6-50c4-af19-71d599194a6c",
+        "265382ea-ca01-58a0-951a-820c2a850040",
+        "29229795-4748-5515-a6ac-6122ae23a1d4",
+        "2c60bd11-7ad5-526c-8da1-66a69b6586cb",
+        "2e557368-3fe5-56b2-aa59-c2a10b8a57f6",
+        "3593ef48-7436-5487-8c5d-1448172219cc",
+        "37992dc2-19d9-53eb-9253-dec585c256c0",
+        "3ebca961-8275-5f1a-abd1-11377aa32ef4",
+        "4b486ad5-2e7b-5f94-ac2b-3029c8554d6d",
+        "4dd9f249-c121-59ef-9bd8-8d62cb794349",
+        "56fa555c-1970-5ac6-b0c0-b4299a4ed314",
+        "57dea62a-6613-5d63-b80b-b0da6080d31f",
+        "5f856394-73cb-5a7a-81c0-3efa4cd64d66",
+        "624c6efe-be20-535e-8dac-d5a6587e2e62",
+        "790fb00c-4edc-5a78-b79b-98c2bb59d53c",
+        "7fbf3a29-db7b-5650-a68e-233337ac12da",
+        "7fe3c534-edb3-5f0c-81e4-d7b7a8e71328",
+        "8fbd1cbe-136f-50cc-bedf-1f10179c19a0",
+        "b23ba28b-b18b-575a-9647-a9e552b72a85",
+        "b4cce00e-c16e-5e2f-afa5-84fb183747c7",
+        "b689c5de-ecfb-5a43-987c-9e17b9b2d3b3",
+        "c3cc7b08-e718-5216-8ec9-a83554553cf1",
+        "d4c28673-f1f4-5ff4-8dc5-1eec79321f3b",
+        "e147a24b-da3c-5a65-ab5b-278c184b897e",
+        "e647050d-6811-548b-b0c1-f406bdb42cfc",
+        "fdbf1d76-9c02-5a7f-b2e2-6f005e717bc9",
+        "fe107926-e570-5dc3-83ca-18ff8c733aa9"
+      ],
+      "original_characters": 3109,
+      "excerpt_characters": 580
+    },
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "PO03",
+    "mode": "B",
+    "run_id": "f3112393-59ac-4444-a5eb-f723fada9f9e",
+    "elapsed_ms": 65833,
+    "answer_usage": {
+      "input_tokens": 17814,
+      "output_tokens": 678,
+      "elapsed_ms": 65833,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 0,
+    "actual_rerank_usage": {
+      "prompt_tokens": 82703,
+      "completion_tokens": 1332,
+      "total_tokens": 84035
+    },
+    "global_ranking": "completed",
+    "global_input_count": 2987,
+    "global_candidate_count": 11,
+    "stage_counts": {
+      "candidates": 176,
+      "ranked": 11,
+      "selected": 11
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 2920,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "两组检查范围不同，且未说明集合是否互斥，不能合为完整通过率。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "否定与条件检查尚未回归，事实问题仍存在。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "APP-A-12仅补数字检查，正式包未升级。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": null,
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "PO03",
+    "mode": "C",
+    "run_id": "11467b57-0d7e-4735-a10d-5a3c6b402124",
+    "elapsed_ms": 70797,
+    "answer_usage": {
+      "input_tokens": 17426,
+      "output_tokens": 688,
+      "elapsed_ms": 70797,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 1,
+    "actual_rerank_usage": {
+      "prompt_tokens": 42033,
+      "completion_tokens": 1066,
+      "total_tokens": 43099
+    },
+    "global_ranking": "completed",
+    "global_input_count": 3100,
+    "global_candidate_count": 29,
+    "stage_counts": {
+      "candidates": 198,
+      "ranked": 15,
+      "selected": 15
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 2492,
+    "used_graph_facts": 6,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "两组检查范围不同，且未说明集合是否互斥，不能合为完整通过率。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "否定与条件检查尚未回归，事实问题仍存在。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "APP-A-12仅补数字检查，正式包未升级。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": {
+      "projected_records": 11,
+      "fact_ids": [
+        "0f273cb5-8059-567b-affc-971ef743f199",
+        "22088e9a-012f-51e7-81b3-7cdd708dd2eb",
+        "25389c54-3987-5cf8-8970-c52ef79165ed",
+        "2b84ccab-a5c9-512d-9079-3e310b3ac522",
+        "362f0fe1-f22d-596e-b3f4-034070221bd4",
+        "3b5abe1a-4225-5b80-a2ff-622c38544977",
+        "428ae928-dfed-5447-8dca-d2e61ab2daae",
+        "48b608e7-26fe-55c6-93a4-e2dd415f852e",
+        "4946a652-ab77-57b6-b9be-b19bdf57b023",
+        "4d72b1f2-dd05-5d44-8ff8-01ea97ce23a7",
+        "57032843-3004-5ebe-bc5f-9f363d5e2efe",
+        "6280cfc5-016a-5282-bb0b-78edade8ed3c",
+        "74e5c28a-d65c-573c-bded-69bc5b275c6f",
+        "753b2fc1-89c1-504b-b20b-ec71d8c79dfc",
+        "7970c98d-388a-540b-a7b1-2a3f61bd633b",
+        "7b103179-836b-559c-9f0c-74721565a276",
+        "90319a19-4674-5782-a24c-f004c130080c",
+        "93b20734-baf8-5a01-9b79-413310024e49",
+        "9ab9b5ab-adf3-505d-9fbf-570fd71817af",
+        "9fe7fb06-7286-5a79-87ef-514f53e1da61",
+        "a0ffdce3-3afa-5af0-bfb6-0bc88a5257c3",
+        "a3eff5be-a584-5ba4-9e50-c8d6840706c5",
+        "a5154d4b-fdbc-5812-9a18-11eb6fbb9e3b",
+        "b6dc8e16-1d89-5eeb-aca0-e5315f2b2c16",
+        "caecbd81-733f-5982-b93f-61f8602cce1c",
+        "d7e92fd0-a2b8-55c2-b026-d726b157c153",
+        "da312c92-d621-57bb-8749-9ff795d5d659",
+        "e6c9ce27-d616-54e0-b34f-90331a0baedc",
+        "eab489f4-11fe-53fc-bdcb-41978f0638b9",
+        "f6972371-2247-5797-a6e4-77f19b2abb76",
+        "fdc0fc5d-1c7d-57d6-b8c2-73ea6c61fb41"
+      ],
+      "original_characters": 3273,
+      "excerpt_characters": 513
+    },
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "X01",
+    "mode": "B",
+    "run_id": "ac02158a-008a-4a8e-9210-244d94157371",
+    "elapsed_ms": 177371,
+    "answer_usage": {
+      "input_tokens": 23015,
+      "output_tokens": 2012,
+      "elapsed_ms": 177371,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 0,
+    "actual_rerank_usage": {
+      "prompt_tokens": 105158,
+      "completion_tokens": 5596,
+      "total_tokens": 110754
+    },
+    "global_ranking": "completed",
+    "global_input_count": 18406,
+    "global_candidate_count": 74,
+    "stage_counts": {
+      "candidates": 206,
+      "ranked": 48,
+      "selected": 29
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 8075,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "翻译：格式及一个异常提示局部通过，整体无准入；模型样本、分支回归和发布待办。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      },
+      {
+        "text": "摘要：显式固定六例限定预演准入，隐式路由与内容问题仍待处理。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "早报：文件生成与静态预览可做，旧快照需重跑，未发送。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      },
+      {
+        "text": "公函：模板局部通过、仅草稿审阅，签署人及检查待办。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "周报：去重局部通过，周期和来源未修，尚无整体准入。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": false
+        }
+      },
+      {
+        "text": "润色：风格数字局部通过，事实保真未过，无任意文档准入。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "按登记分工分配应用、测试、数据、发布和模型协作，不虚构个人承诺或日期。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": null,
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "X01",
+    "mode": "C",
+    "run_id": "f3834ab7-947f-499a-896f-d7be42ef8265",
+    "elapsed_ms": 155629,
+    "answer_usage": {
+      "input_tokens": 21766,
+      "output_tokens": 2195,
+      "elapsed_ms": 155629,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 1,
+    "actual_rerank_usage": {
+      "prompt_tokens": 57319,
+      "completion_tokens": 3931,
+      "total_tokens": 61250
+    },
+    "global_ranking": "completed",
+    "global_input_count": 10238,
+    "global_candidate_count": 98,
+    "stage_counts": {
+      "candidates": 237,
+      "ranked": 51,
+      "selected": 51
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 6743,
+    "used_graph_facts": 5,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "翻译：格式及一个异常提示局部通过，整体无准入；模型样本、分支回归和发布待办。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "摘要：显式固定六例限定预演准入，隐式路由与内容问题仍待处理。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "早报：文件生成与静态预览可做，旧快照需重跑，未发送。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "公函：模板局部通过、仅草稿审阅，签署人及检查待办。",
+        "complete_reference_set": {
+          "candidates": false,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "周报：去重局部通过，周期和来源未修，尚无整体准入。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "润色：风格数字局部通过，事实保真未过，无任意文档准入。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "按登记分工分配应用、测试、数据、发布和模型协作，不虚构个人承诺或日期。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": {
+      "projected_records": 40,
+      "fact_ids": [
+        "0004f20f-7002-5d66-acd0-74ac8b841361",
+        "0088eec5-0ba3-5466-aeda-286e594457cd",
+        "020758d2-064c-59f1-af09-110b989d422c",
+        "024b9acb-5dbe-55cf-9005-4c692ab3e9a6",
+        "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+        "0c8853ef-73ea-5868-bcfc-ce59852486a1",
+        "0f273cb5-8059-567b-affc-971ef743f199",
+        "0f57f8cc-fc4d-5991-8122-d4780ed689b1",
+        "1d0d0c10-ffb8-54cf-8251-9e49c293b4e9",
+        "1dc2eb9e-9c12-5f41-aa00-c01b71d0f6ef",
+        "2063e380-930e-57d1-a85c-235df018c5a9",
+        "2125fcf0-f956-5278-b577-7ed91a3ba5a8",
+        "214c7bfa-ce30-5099-9095-b6b05e667e1f",
+        "22328808-7c56-5496-be6e-59942ee495fc",
+        "265382ea-ca01-58a0-951a-820c2a850040",
+        "28e75394-a0f5-5a16-be54-bad71de0c4b6",
+        "29229795-4748-5515-a6ac-6122ae23a1d4",
+        "2be8642a-5cd6-5d0f-90cf-be043e1739a1",
+        "2de22790-8749-5d54-b59d-bd383752e7e9",
+        "2def28a5-9ec1-5e15-82ad-4995804bbdac",
+        "2e2ad2f5-6cdf-5c2a-9108-07451d381822",
+        "3076782f-b31d-55e1-a576-331589711855",
+        "31282597-b745-59ba-b327-77b6941e6e4a",
+        "32a8b59b-d582-54ba-9e9d-c9953544a0fa",
+        "3593ef48-7436-5487-8c5d-1448172219cc",
+        "369bbe19-1799-5d24-b1dd-413b1937f704",
+        "37992dc2-19d9-53eb-9253-dec585c256c0",
+        "39c3efe5-f62c-56cf-8183-931b9fcdf555",
+        "408248fc-f91e-53d3-ad39-08dcb18fdbe4",
+        "40a5a9d1-ef0c-5471-9cd5-bf4c57bd3622",
+        "428ae928-dfed-5447-8dca-d2e61ab2daae",
+        "4474b356-cce7-5625-999f-f65402b18aeb",
+        "4889a9ff-6a3f-5675-b81c-88dfc0186309",
+        "48b608e7-26fe-55c6-93a4-e2dd415f852e",
+        "4946a652-ab77-57b6-b9be-b19bdf57b023",
+        "4b0c43e6-69fa-5ce1-bf7c-8ff4e3762a44",
+        "4b486ad5-2e7b-5f94-ac2b-3029c8554d6d",
+        "4d72b1f2-dd05-5d44-8ff8-01ea97ce23a7",
+        "4dd9f249-c121-59ef-9bd8-8d62cb794349",
+        "4ebbe997-1013-54bd-9d4c-9763bb509101",
+        "4f08de07-97fa-5853-8695-3efcaf44aea2",
+        "4f1ed298-bbc2-5140-95e1-3726b2f73e25",
+        "52e68420-ac35-5485-8f9f-078739902978",
+        "5345fcad-3a06-5dcb-8637-cec6b5313a9e",
+        "53dea747-26c4-59da-9cf8-f26219bc3df1",
+        "54c5bcb2-d503-5e3d-b106-70fb5aebba26",
+        "55f6a5bd-1bd6-5260-a463-8dd60dee0790",
+        "56fa555c-1970-5ac6-b0c0-b4299a4ed314",
+        "57032843-3004-5ebe-bc5f-9f363d5e2efe",
+        "5780cf0b-033b-5564-a09e-bdb994cc6046",
+        "57dea62a-6613-5d63-b80b-b0da6080d31f",
+        "5a495b90-a691-524d-8f54-fde410a73de0",
+        "5a7a705b-a2d6-50c3-bdd8-00b80b92c1bf",
+        "5ddfe13c-d9fa-5d20-bd2f-8eeaa35da607",
+        "5e9a728e-d6be-5f68-adda-08c2c595b503",
+        "5eab389b-8ac6-5592-a621-e4bbc0360fe1",
+        "5f856394-73cb-5a7a-81c0-3efa4cd64d66",
+        "62554a40-fb1f-5610-9f64-6ceb3168cf95",
+        "6280cfc5-016a-5282-bb0b-78edade8ed3c",
+        "639e690f-8080-5a2e-9133-628ba8c76f83",
+        "69684dce-f843-531a-abef-acd048f32a41",
+        "69769bf2-90b7-5e64-abc7-c157ae5e625f",
+        "6a905a67-521f-5d0f-acc6-d596b601f257",
+        "6e3c6aab-414e-527f-9f64-524b3f7a7e6b",
+        "6ef212ea-f306-5f68-9990-8d36d352436e",
+        "724d2f4e-91e4-5974-a70b-013a9fc5b806",
+        "72ecdc59-cf8c-5e7c-be96-a4fb7f03c4ff",
+        "753b2fc1-89c1-504b-b20b-ec71d8c79dfc",
+        "77d6fda8-1cab-53ef-b226-b79ed92d7621",
+        "790fb00c-4edc-5a78-b79b-98c2bb59d53c",
+        "79558009-306d-5bf4-a6a9-e6087e9f12d3",
+        "79651987-0b2e-54e8-8036-622b7482211f",
+        "7ddb727e-71a2-52f4-8649-b31e8225c7df",
+        "7ed9cfdc-16cb-597d-90b4-16808ce748ae",
+        "7fbf3a29-db7b-5650-a68e-233337ac12da",
+        "87d5b92a-9fb0-56a6-9259-9dc82e7ae544",
+        "8c4d0fe5-0472-514f-9aba-48606e14c66f",
+        "8d26f84b-5847-54dd-9a86-775cef482ae8",
+        "90319a19-4674-5782-a24c-f004c130080c",
+        "905d9d0d-4203-5047-868a-bd6058d724a7",
+        "91462ab4-79dc-5934-a7c8-1541bebf4190",
+        "916c5b26-fb87-5a4b-8805-c93a81bcac3b",
+        "93b20734-baf8-5a01-9b79-413310024e49",
+        "94b2e2b1-3319-5d6a-a9ef-f96a188b8d07",
+        "97bb13c1-21a3-54a1-8ba0-15756f5de4d3",
+        "99fa86d5-ee7d-56fc-91e9-f7c77bbfd9d1",
+        "9e123464-ad96-5030-93e6-52af85a86791",
+        "a3c9064d-f040-537f-a0b8-cfc539409be2",
+        "ab17e2d2-b9cc-5533-aa5b-4b5baff89be5",
+        "ab71dc38-f8b6-5a32-aa5e-f54350f3f7f9",
+        "aececd1b-f4a9-5a67-82b7-f5605a2b064e",
+        "b20ca840-1610-5ec6-9c8f-3d29f554b42a",
+        "b20ecbce-8a39-51c1-91c6-7475979093ca",
+        "b23ba28b-b18b-575a-9647-a9e552b72a85",
+        "b4863ae1-89c6-50a6-ae2e-c198d694fbd0",
+        "b50c5815-028c-58e0-a9ba-5d6925812a29",
+        "b5cb78c4-21a7-5676-aca1-c6cf87f7753d",
+        "b6e217dc-d436-5754-b6d9-baa482fbfda5",
+        "ba9e6d4d-3a88-501e-a674-e2d98db1cc78",
+        "bbba2984-8f13-5261-8fda-3af413151aeb",
+        "bd386fff-9736-58ea-9a53-50005debc82c",
+        "bebcc862-30ad-595e-aa1f-f8a37d50c8c1",
+        "bf940ab7-49bf-5f26-8552-c01c1e4c22a3",
+        "c17c669e-7460-5500-b070-6c0b24b3447e",
+        "c2f51018-5a81-5a71-a793-e492f7289a5f",
+        "c324e145-3e04-540f-a0b2-181e7c262c2c",
+        "c4013408-f7cc-56ff-9002-1ed0c90bffbc",
+        "c485f822-46bc-5dfe-bfa1-bbc9c2e9e9fd",
+        "c5ee2eff-682b-59bc-9073-e13d5a2fe1b4",
+        "c67ccb62-4e48-57d6-985d-32ef735dbc12",
+        "c89671e5-c87e-5eca-92f4-bac5382fa0e4",
+        "cada74a7-124f-57bb-b22d-3ec564e68cd1",
+        "d2367560-54ba-5140-97d5-8791492c3adc",
+        "d3091057-bce0-5433-a681-58052ae11f42",
+        "d318e35f-f7b4-5776-bdef-264bbb28a285",
+        "d454477a-efba-55b6-92a3-367405fe8e08",
+        "d4c28673-f1f4-5ff4-8dc5-1eec79321f3b",
+        "d9fef6a1-7f34-5c52-a72c-9897118927bf",
+        "dff77c0c-54f6-5813-a249-0e7e6010e686",
+        "e147a24b-da3c-5a65-ab5b-278c184b897e",
+        "e5320090-ff41-5f46-92d2-d72c574aeef8",
+        "e5487f7b-cf1a-53ec-8a0e-4b1ea88c169c",
+        "e647050d-6811-548b-b0c1-f406bdb42cfc",
+        "e9bca9d9-2644-550c-8f53-4b77e2564e4f",
+        "ed82087e-dbf2-584b-8a92-c5774ec7baaf",
+        "f6972371-2247-5797-a6e4-77f19b2abb76",
+        "f7f589c3-ba74-5a5a-b81d-73da31759da2",
+        "f83c8ae7-7e1f-5ccb-b467-6f4c74e1b73c",
+        "f89bc6ad-eba9-5e6a-974b-e1c166587237",
+        "fc9607b2-e338-544d-a5ab-9b3b23e54721",
+        "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+        "fd633242-58b6-51ab-b4ef-d0f679064679",
+        "fdbf1d76-9c02-5a7f-b2e2-6f005e717bc9",
+        "fe107926-e570-5dc3-83ca-18ff8c733aa9",
+        "ff2700e4-c645-5155-b935-9b8cbe0bdaab"
+      ],
+      "original_characters": 12023,
+      "excerpt_characters": 2261
+    },
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "X03",
+    "mode": "B",
+    "run_id": "9d223834-50f4-4bf7-bd5a-79ded21f6ed2",
+    "elapsed_ms": 186132,
+    "answer_usage": {
+      "input_tokens": 23006,
+      "output_tokens": 1946,
+      "elapsed_ms": 186132,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 0,
+    "actual_rerank_usage": {
+      "prompt_tokens": 112959,
+      "completion_tokens": 5862,
+      "total_tokens": 118821
+    },
+    "global_ranking": "completed",
+    "global_input_count": 17825,
+    "global_candidate_count": 80,
+    "stage_counts": {
+      "candidates": 263,
+      "ranked": 50,
+      "selected": 30
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 8064,
+    "used_graph_facts": 0,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "已发布消息指项目B的APP-B-12；A正式仍APP-A-11。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "A预演APP-A-12包含候选ROUTE/LANG/DEDUP配置，各修补覆盖范围不同。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      },
+      {
+        "text": "结果需按项目、环境、应用包、模型和用例范围关联。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": null,
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  },
+  {
+    "question_id": "X03",
+    "mode": "C",
+    "run_id": "e09c159d-0d47-409e-a2cf-fd6871cf15ad",
+    "elapsed_ms": 150650,
+    "answer_usage": {
+      "input_tokens": 20463,
+      "output_tokens": 1948,
+      "elapsed_ms": 150650,
+      "cost": null
+    },
+    "logical_rerank_calls": 3,
+    "cache_hits": 1,
+    "actual_rerank_usage": {
+      "prompt_tokens": 62677,
+      "completion_tokens": 3946,
+      "total_tokens": 66623
+    },
+    "global_ranking": "completed",
+    "global_input_count": 9325,
+    "global_candidate_count": 92,
+    "stage_counts": {
+      "candidates": 293,
+      "ranked": 41,
+      "selected": 41
+    },
+    "input_budget": 8192,
+    "preflight_tokens": 5456,
+    "used_graph_facts": 6,
+    "used_graph_relations": 0,
+    "reference_fact_coverage": [
+      {
+        "text": "已发布消息指项目B的APP-B-12；A正式仍APP-A-11。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "A预演APP-A-12包含候选ROUTE/LANG/DEDUP配置，各修补覆盖范围不同。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": false,
+          "selected": false
+        }
+      },
+      {
+        "text": "结果需按项目、环境、应用包、模型和用例范围关联。",
+        "complete_reference_set": {
+          "candidates": true,
+          "ranked": true,
+          "selected": true
+        }
+      }
+    ],
+    "token_count_method": "configured_tiktoken_with_framing_reserve",
+    "fact_projection": {
+      "projected_records": 33,
+      "fact_ids": [
+        "0085d67b-0cef-518d-8530-cfbf4f7d934e",
+        "0088eec5-0ba3-5466-aeda-286e594457cd",
+        "01245bd8-7548-5e80-994e-afde88486cbc",
+        "020758d2-064c-59f1-af09-110b989d422c",
+        "024b9acb-5dbe-55cf-9005-4c692ab3e9a6",
+        "0749cdea-ae5e-58a1-ae28-e487b5cf761c",
+        "09a9a393-f954-5b9c-a7bd-c3452027c8d8",
+        "0f273cb5-8059-567b-affc-971ef743f199",
+        "0fa2f1c1-39a8-596f-a398-0abb108b881a",
+        "13d83a45-6aa0-5031-aec6-6284ea7634a2",
+        "17df96b4-c917-547d-810a-77b47cd4ddb7",
+        "18542b58-aad4-5250-addf-34dfbb3c682c",
+        "1cfeaaec-179a-58fe-abed-4f79bea6debe",
+        "1d0d0c10-ffb8-54cf-8251-9e49c293b4e9",
+        "2063e380-930e-57d1-a85c-235df018c5a9",
+        "2125fcf0-f956-5278-b577-7ed91a3ba5a8",
+        "22328808-7c56-5496-be6e-59942ee495fc",
+        "28e75394-a0f5-5a16-be54-bad71de0c4b6",
+        "2cb34925-f0e2-5737-866e-f665b20507f7",
+        "2d246e37-b189-566c-8739-12ff19461e35",
+        "2de22790-8749-5d54-b59d-bd383752e7e9",
+        "312639fa-918f-55ad-9b02-2ddd526e528b",
+        "31282597-b745-59ba-b327-77b6941e6e4a",
+        "3593ef48-7436-5487-8c5d-1448172219cc",
+        "369bbe19-1799-5d24-b1dd-413b1937f704",
+        "37992dc2-19d9-53eb-9253-dec585c256c0",
+        "427cc891-d37b-5cda-a0ef-611e378ccbc7",
+        "4889a9ff-6a3f-5675-b81c-88dfc0186309",
+        "48b608e7-26fe-55c6-93a4-e2dd415f852e",
+        "4b486ad5-2e7b-5f94-ac2b-3029c8554d6d",
+        "4b552b12-c4f2-5c8f-9d37-90274a0c4a02",
+        "4d72b1f2-dd05-5d44-8ff8-01ea97ce23a7",
+        "5345fcad-3a06-5dcb-8637-cec6b5313a9e",
+        "54c5bcb2-d503-5e3d-b106-70fb5aebba26",
+        "55f6a5bd-1bd6-5260-a463-8dd60dee0790",
+        "56fa555c-1970-5ac6-b0c0-b4299a4ed314",
+        "57032843-3004-5ebe-bc5f-9f363d5e2efe",
+        "5780cf0b-033b-5564-a09e-bdb994cc6046",
+        "57dea62a-6613-5d63-b80b-b0da6080d31f",
+        "5a495b90-a691-524d-8f54-fde410a73de0",
+        "5a7a705b-a2d6-50c3-bdd8-00b80b92c1bf",
+        "5ddfe13c-d9fa-5d20-bd2f-8eeaa35da607",
+        "5f856394-73cb-5a7a-81c0-3efa4cd64d66",
+        "624c6efe-be20-535e-8dac-d5a6587e2e62",
+        "62554a40-fb1f-5610-9f64-6ceb3168cf95",
+        "639e690f-8080-5a2e-9133-628ba8c76f83",
+        "69684dce-f843-531a-abef-acd048f32a41",
+        "69769bf2-90b7-5e64-abc7-c157ae5e625f",
+        "6a905a67-521f-5d0f-acc6-d596b601f257",
+        "73f45823-43c6-5219-affd-ea59d30bdbf9",
+        "753b2fc1-89c1-504b-b20b-ec71d8c79dfc",
+        "77d6fda8-1cab-53ef-b226-b79ed92d7621",
+        "790fb00c-4edc-5a78-b79b-98c2bb59d53c",
+        "79558009-306d-5bf4-a6a9-e6087e9f12d3",
+        "7d7479c7-fe1d-5473-b4f9-421aaaf965b3",
+        "7ddb727e-71a2-52f4-8649-b31e8225c7df",
+        "7fbf3a29-db7b-5650-a68e-233337ac12da",
+        "87d5b92a-9fb0-56a6-9259-9dc82e7ae544",
+        "8c3caefc-5c77-508a-9834-db98f2e1e75c",
+        "8d26f84b-5847-54dd-9a86-775cef482ae8",
+        "8ffcf85b-0fb1-5fb9-bc86-0e9e7778e0c6",
+        "90319a19-4674-5782-a24c-f004c130080c",
+        "905d9d0d-4203-5047-868a-bd6058d724a7",
+        "916c5b26-fb87-5a4b-8805-c93a81bcac3b",
+        "936b7f1e-a104-55e2-afab-b6165b95b514",
+        "937e8fe0-b5bb-56a7-b59e-f8c156a73105",
+        "93b20734-baf8-5a01-9b79-413310024e49",
+        "97bb13c1-21a3-54a1-8ba0-15756f5de4d3",
+        "9e123464-ad96-5030-93e6-52af85a86791",
+        "a173ff8a-0ac8-5492-9f34-1aef34c30d89",
+        "a3c9064d-f040-537f-a0b8-cfc539409be2",
+        "ab17e2d2-b9cc-5533-aa5b-4b5baff89be5",
+        "b20ca840-1610-5ec6-9c8f-3d29f554b42a",
+        "b4863ae1-89c6-50a6-ae2e-c198d694fbd0",
+        "b50c5815-028c-58e0-a9ba-5d6925812a29",
+        "b97aa1fb-4159-5bf7-b4e5-a4972b382411",
+        "bbba2984-8f13-5261-8fda-3af413151aeb",
+        "bd386fff-9736-58ea-9a53-50005debc82c",
+        "be14023b-e936-5e97-816b-ee9e7e34de55",
+        "bebcc862-30ad-595e-aa1f-f8a37d50c8c1",
+        "c17c669e-7460-5500-b070-6c0b24b3447e",
+        "c29277ed-02a4-55d4-9766-0b3ade3c3d50",
+        "c2f51018-5a81-5a71-a793-e492f7289a5f",
+        "c4013408-f7cc-56ff-9002-1ed0c90bffbc",
+        "c485f822-46bc-5dfe-bfa1-bbc9c2e9e9fd",
+        "c871c370-7121-554f-8282-181d9755d847",
+        "c89671e5-c87e-5eca-92f4-bac5382fa0e4",
+        "d3091057-bce0-5433-a681-58052ae11f42",
+        "d318e35f-f7b4-5776-bdef-264bbb28a285",
+        "d454477a-efba-55b6-92a3-367405fe8e08",
+        "db0766ba-0656-5fdf-bddb-c805a303fe56",
+        "dbc1967a-3b2e-5731-95f7-fc86756b53d2",
+        "e147a24b-da3c-5a65-ab5b-278c184b897e",
+        "e320aed9-36a6-5647-b9a4-0ee838862c6d",
+        "e5320090-ff41-5f46-92d2-d72c574aeef8",
+        "e61b0747-54fd-52cd-ab86-8fa164ca37f9",
+        "e647050d-6811-548b-b0c1-f406bdb42cfc",
+        "e9bca9d9-2644-550c-8f53-4b77e2564e4f",
+        "ed82087e-dbf2-584b-8a92-c5774ec7baaf",
+        "f2051155-16c7-5f0e-9ddb-3b8244e23b02",
+        "f6972371-2247-5797-a6e4-77f19b2abb76",
+        "f7f589c3-ba74-5a5a-b81d-73da31759da2",
+        "fc994147-445f-58a5-bea2-f474a9ffb9ec",
+        "fe107926-e570-5dc3-83ca-18ff8c733aa9",
+        "ff2700e4-c645-5155-b935-9b8cbe0bdaab"
+      ],
+      "original_characters": 9941,
+      "excerpt_characters": 1747
+    },
+    "global_review_method": "originals",
+    "global_review_batches": 1
+  }
+]

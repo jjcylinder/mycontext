@@ -108,7 +108,8 @@ COMMUNITY_VECTOR_PATH = vector_store_path(
 COMMUNITY_QDRANT_PATH = str(DATA_DIR / "qdrant_communities")
 
 PORT = _cli_port if _cli_port is not None else int(cfg.server.port)
-if not 1 <= PORT <= 65535:
+# An explicit CLI port of zero lets a local caller request an OS-assigned port.
+if not 1 <= PORT <= 65535 and _cli_port != 0:
     raise ValueError(f"server port must be between 1 and 65535, got {PORT}")
 
 
@@ -3297,21 +3298,19 @@ def _fact_context_impl(req: ContextRequest):
 
     fact_id = req.fact_id
 
-    # Get fact (exact or prefix match)
-    fact = state.sqlite_conn.execute(
-        "SELECT id, text, fact_type, timestamp, confidence, source_chunk_id FROM facts WHERE id = ?",
-        (fact_id,),
-    ).fetchone()
+    from kl_graph.query.fact_evidence import SOURCE_QUOTE_SQL, stored_fact_support
+
+    query = ("SELECT f.id, f.text, f.fact_type, f.timestamp, f.confidence, f.source_chunk_id, "
+             "f.source_unit_id, " + SOURCE_QUOTE_SQL + " FROM facts f WHERE ")
+    fact = state.sqlite_conn.execute(query + "f.id = ?", (fact_id,)).fetchone()
     if not fact:
-        fact = state.sqlite_conn.execute(
-            "SELECT id, text, fact_type, timestamp, confidence, source_chunk_id FROM facts WHERE id LIKE ?",
-            (f"{fact_id}%",),
-        ).fetchone()
+        fact = state.sqlite_conn.execute(query + "f.id LIKE ?", (f"{fact_id}%",)).fetchone()
     if not fact:
         raise HTTPException(404, f"Fact not found: {fact_id}")
 
     fact_id_full = fact[0]
     source_chunk_id = fact[5]
+    support = stored_fact_support(state.sqlite_conn, fact[1], source_chunk_id, fact[6], fact[7])
 
     # Resolve the fact's source against the universal ``chunks`` table (works
     # for any source_type). Chat is just ``source_type == "message"``, so this is
@@ -3382,6 +3381,7 @@ def _fact_context_impl(req: ContextRequest):
             "timestamp": fact[3],
             "confidence": fact[4],
         },
+        "source_evidence": support,
         # Universal provenance: the source chunk, whatever its source_type.
         "source_chunk": {
             "id": chunk[0],

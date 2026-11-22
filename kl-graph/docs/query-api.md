@@ -42,7 +42,7 @@ gate is enabled and a full improvement refreshes them.
 | `/neighbors` | Batch exact graph-neighbor reads with filters and pagination |
 | `/community` | List communities or read one community summary |
 | `/members` | List the entity or fact members of a community |
-| `/context` | Read a fact, its source chunk, entities, and nearby chat context |
+| `/context` | Read a fact, its source quotations and reply dependencies, its chunk, entities and nearby chat context |
 | `/timeline` | Read an entity's facts over time |
 | `/requests` | Read requests addressed to the configured current user on one day |
 | `/todos` | Read actionable items addressed to the configured current user on one day |
@@ -381,6 +381,27 @@ members include text, type, and timestamp.
 Accepts a full fact ID or an unambiguous ID prefix. Returns `fact`, universal
 `source_chunk`, related `entities`, and—when the source is chat—a
 `source_message` view plus nearby messages in `surrounding`.
+
+`source_evidence` gives the provenance of the requested fact. `primary_unit_id`
+identifies the target source unit when it can be resolved. Each item in
+`quotes` contains the source text in `quote` and its half-open character range
+`[start, end)`, together with the unit or chunk ID. Use `offset_basis` to
+select the corresponding body (`extraction_target_content` or `source_chunk`).
+A validated verbatim anchor, when present, appears in `target_quote`.
+
+| `source_evidence.status` | How to read the quotations |
+| --- | --- |
+| `located` | The reader located supporting sentences in the primary body. |
+| `whole_source` | The reader supplied the whole primary body. This includes self-contained chat messages. |
+| `reply_context` | The first quotation is the target message. Subsequent quotations follow its explicit reply chain, each with its own source and speaker when available. |
+| `incomplete_context` | The target and any resolved replies are available. The reader could not resolve all required context. |
+| `chunk_only` | The reader could only establish chunk-level provenance. `primary_unit_id` is null and offsets refer to chunk content. |
+| `unavailable` | The reader could not recover a source body. `quotes` is empty. |
+
+Nearby messages in `surrounding` provide conversational context. The quotations
+in `source_evidence` identify the material actually traced for the fact.
+Agreement between offsets and source text establishes provenance. Assessing the
+claim and its qualifications still requires reading that text. [Evidence reader](../kl_graph/query/fact_evidence.py)
 
 ### `POST /chunk`
 

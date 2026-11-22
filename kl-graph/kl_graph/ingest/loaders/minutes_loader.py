@@ -6,6 +6,9 @@ content is spread across several records in ``records.jsonl``:
 
   - ``document_unit`` / ``minutes_summary`` — a clean markdown recap (high
     signal): background, decisions, per-topic discussion.
+  - ``document_unit`` / ``minutes_summary_section`` — one source-addressable
+    excerpt of meeting notes. Each excerpt keeps its record ID under the shared
+    meeting scope and carries optional ``data.source_record`` provenance.
   - ``document_unit`` / ``minutes_transcription_page`` — a page of the raw
     transcript. NOTE: the flattened ``data.text`` for these is broken (only
     ``[<ms>]`` markers with blank speaker lines), so we rebuild the transcript
@@ -31,6 +34,7 @@ from kl_graph.ingest.loaders.base import (
     iter_records,
     load_scopes,
     scope_title,
+    source_record,
     to_unix_ms,
 )
 from kl_graph.models.types import Chunk
@@ -113,6 +117,7 @@ def load_minutes(minutes_dir: Path) -> list[Chunk]:
     # Bucket every record by its meeting scope so a meeting's summary,
     # transcript pages, keywords and todos are assembled together.
     summaries: dict[str, str] = {}
+    sections: dict[str, list[tuple[str, str, dict]]] = {}
     pages: dict[str, list[tuple[int, list[str]]]] = {}
     keywords: dict[str, list[str]] = {}
     todos: dict[str, list[str]] = {}
@@ -127,6 +132,11 @@ def load_minutes(minutes_dir: Path) -> list[Chunk]:
             body = (data.get("text") or "").strip()
             if body:
                 summaries[scope_id] = body
+        elif kind == "minutes_summary_section":
+            unit_id = rec.get("id")
+            body = (data.get("text") or "").strip()
+            if isinstance(unit_id, str) and unit_id and body:
+                sections.setdefault(scope_id, []).append((unit_id, body, source_record(data)))
         elif kind == "minutes_transcription_page":
             lines = _transcript_lines(data.get("segments") or [])
             if lines:
@@ -142,7 +152,7 @@ def load_minutes(minutes_dir: Path) -> list[Chunk]:
                 todos[scope_id] = items
 
     chunks: list[Chunk] = []
-    meeting_ids = set(summaries) | set(pages)
+    meeting_ids = dict.fromkeys((*summaries, *pages, *sections))
     for scope_id in meeting_ids:
         scope = scopes.get(scope_id)
         title = scope_title(scope) or "会议纪要"
@@ -151,6 +161,22 @@ def load_minutes(minutes_dir: Path) -> list[Chunk]:
         # Trailing scope-id segment is the meeting task uuid; use as stable key.
         mid = scope_id.split(":", 1)[-1] if ":" in scope_id else scope_id
         base_meta = {"unit_id": mid, "title": title, "meeting_id": mid}
+
+        for unit_id, body, provenance in sections.get(scope_id, []):
+            section_ts = to_unix_ms(provenance.get("occurred_at"))
+            formatted_ts = format_ts(section_ts)
+            header = f"# {title} · {formatted_ts}" if formatted_ts else f"# {title}"
+            chunks.append(Chunk(
+                id=f"minutes:{mid}:summary-section:{unit_id}",
+                content=f"{header}\n\n{body}",
+                source_type="minutes",
+                timestamp=section_ts,
+                source_ref=provenance.get("source_locator") or url,
+                metadata={
+                    **base_meta, "unit_id": unit_id, "record_id": unit_id,
+                    "part": "summary", "source_record": provenance,
+                },
+            ))
 
         # ── Summary chunk (fold in keywords + action items) ──────────────
         summary = summaries.get(scope_id, "")

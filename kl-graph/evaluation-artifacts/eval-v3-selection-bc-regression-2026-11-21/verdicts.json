@@ -1,0 +1,76 @@
+{
+  "review_method": "逐题对照合成参考事实，接受语义等价证据；本次助手复核，非独立业务验收。完整答对要求覆盖全部必要事实并有引用支持。",
+  "retry_policy": "PO03 B 首次 HTTP 504 保留于 runs.jsonl；同模型、同预算重试答卷来自 ../eval-v3-selection-po03-retry-2026-11-21/runs.jsonl。",
+  "results": [
+    {
+      "question_id": "TR04",
+      "mode": "B",
+      "run_id": "aa9365b2-ec16-4331-bdfc-e36c31ab2c50",
+      "verdict": "partial",
+      "reason": "说明应用、测试、模型、发布分工，但未完整落实 QA-A27 的期望答案和判定说明；把 TR-X03 归属仍留待核实。"
+    },
+    {
+      "question_id": "TR04",
+      "mode": "C",
+      "run_id": "4314eea8-9b9e-400a-80bb-a860b1cdc938",
+      "verdict": "partial",
+      "reason": "明确项目 A 正式未切包及发布申请，但缺模型问题样本和 QA-A27 交接要求，未确认 TR-X03 的回归待办。"
+    },
+    {
+      "question_id": "AM03",
+      "mode": "B",
+      "run_id": "f1bb8c94-1e75-429c-8071-421fafbf1be7",
+      "verdict": "partial",
+      "reason": "找到 SN-AM07 和旧晨报将 10:00 当确定安排的证据，说明需要重生成；缺少已补索引的具体状态与数据、应用协作分工。"
+    },
+    {
+      "question_id": "AM03",
+      "mode": "C",
+      "run_id": "259ba77b-bb3c-4958-8fe8-3b0b3c511931",
+      "verdict": "partial",
+      "reason": "保留截止时间、静态预览和未授权发送的限制；没有完整说明旧产物 SN-AM07 与新索引的区别，也未交代协作分工。"
+    },
+    {
+      "question_id": "PO03",
+      "mode": "B",
+      "run_id": "11feab0a-f137-418c-bdb7-e8b2e14a5cd6",
+      "verdict": "partial",
+      "reason": "正确区分风格与数字检查，指出 POL-F08、否定条件未回归及正式未升级；未说明两组样例是否重叠尚不明确。"
+    },
+    {
+      "question_id": "PO03",
+      "mode": "C",
+      "run_id": "2b6b3418-8e09-4668-82a7-a0877d21f97d",
+      "verdict": "partial",
+      "reason": "正确区分风格与数字检查，指出 POL-F08、否定条件未回归及正式未升级；未说明两组样例是否重叠尚不明确。"
+    },
+    {
+      "question_id": "X01",
+      "mode": "B",
+      "run_id": "8362fe2e-b74e-4369-82a7-016901a2791d",
+      "verdict": "partial",
+      "reason": "保留翻译格式、摘要限定预演、晨报静态预览及部分责任；遗漏公函，其他 Skill 的局部通过、准入和待办仍不齐全。"
+    },
+    {
+      "question_id": "X01",
+      "mode": "C",
+      "run_id": "3fff2f27-f651-4b15-bc48-1041c34f12ac",
+      "verdict": "partial",
+      "reason": "补入公函模板、草稿范围和签署问题，以及周报去重局部通过；缺翻译具体进展、晨报旧快照重跑及责任分工。"
+    },
+    {
+      "question_id": "X03",
+      "mode": "B",
+      "run_id": "49b4bfef-f09e-4df1-8560-5ab70f9eca5b",
+      "verdict": "partial",
+      "reason": "正确区分项目 B 已发布与项目 A 正式未升级，限定摘要预演范围；缺 LANG/DEDUP 等候选配置各自的验证边界。"
+    },
+    {
+      "question_id": "X03",
+      "mode": "C",
+      "run_id": "3f1b731b-8e7b-419f-b536-0a9dd669946c",
+      "verdict": "partial",
+      "reason": "正确区分项目、环境及版本，说明更换 M-A19 要重新验证；缺 ROUTE/LANG/DEDUP 各自覆盖范围的完整对照。"
+    }
+  ]
+}

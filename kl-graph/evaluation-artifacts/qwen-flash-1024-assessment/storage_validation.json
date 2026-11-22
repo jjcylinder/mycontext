@@ -1,0 +1,23 @@
+{
+  "dimensions": 1024,
+  "cloud_api_tested": false,
+  "reason": "No DASHSCOPE_API_KEY configured in current process",
+  "collections": {
+    "chunks": {
+      "stored": 2,
+      "nearest": "p1",
+      "verified_dimensions": 1024
+    },
+    "facts": {
+      "stored": 2,
+      "nearest": "p1",
+      "verified_dimensions": 1024
+    },
+    "entities": {
+      "stored": 2,
+      "nearest": "p1",
+      "verified_dimensions": 1024
+    }
+  },
+  "reopen_verified": true
+}

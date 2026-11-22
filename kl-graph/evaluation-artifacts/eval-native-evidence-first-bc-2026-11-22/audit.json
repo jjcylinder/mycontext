@@ -1,0 +1,706 @@
+{
+  "rows": [
+    {
+      "question": "TR04",
+      "mode": "B",
+      "run_id": "0b1a7c89-a8a2-44dc-89d6-a75f590edffc",
+      "elapsed_s": 165.463,
+      "created_at": "2026-11-22T02:50:51.516295+00:00",
+      "finished_at": "2026-11-22T02:53:40.728820+00:00",
+      "prompt_sha256": "08da9cd9489afd5b497d6bcbd71f2f89fddeff498db242dd08e8df4e42848c99",
+      "final_tokens_estimate": 8076,
+      "budget": 8192,
+      "input_tokens": 23014,
+      "output_tokens": 1540,
+      "sources": 30,
+      "cited_sources": 28,
+      "source_spans": 0,
+      "projected": 0,
+      "used_facts": 0,
+      "used_relations": 0,
+      "native_queries": 0,
+      "native_latency_ms": null,
+      "native_fact_candidates": 0,
+      "native_participant_links": 0,
+      "ranking_status": "completed",
+      "ranking_actual": 4,
+      "ranking_cached": 0,
+      "selection_usage": {
+        "prompt_tokens": 142172,
+        "completion_tokens": 5005
+      },
+      "reference_source_sets": [
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        },
+        {
+          "in_candidates": true,
+          "in_final": false,
+          "cited_anywhere": false
+        },
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        }
+      ],
+      "full_points": 2,
+      "total_points": 3,
+      "verdict": "部分"
+    },
+    {
+      "question": "TR04",
+      "mode": "C",
+      "run_id": "4f8f9170-62f8-4d19-8201-b3799880478b",
+      "elapsed_s": 127.775,
+      "created_at": "2026-11-22T02:53:41.246347+00:00",
+      "finished_at": "2026-11-22T02:55:51.893886+00:00",
+      "prompt_sha256": "d45b3b43daeb9ca75917a79df170d487c805e2de89913760b691e3932a26ea6a",
+      "final_tokens_estimate": 6806,
+      "budget": 8192,
+      "input_tokens": 21805,
+      "output_tokens": 1506,
+      "sources": 42,
+      "cited_sources": 36,
+      "source_spans": 27,
+      "projected": 27,
+      "used_facts": 0,
+      "used_relations": 5,
+      "native_queries": 1,
+      "native_latency_ms": 11991,
+      "native_fact_candidates": 45,
+      "native_participant_links": 53,
+      "ranking_status": "completed",
+      "ranking_actual": 3,
+      "ranking_cached": 1,
+      "selection_usage": {
+        "prompt_tokens": 92420,
+        "completion_tokens": 3152
+      },
+      "reference_source_sets": [
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        },
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        },
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        }
+      ],
+      "full_points": 3,
+      "total_points": 3,
+      "verdict": "完整"
+    },
+    {
+      "question": "AM03",
+      "mode": "B",
+      "run_id": "9a2009c0-aa7e-4083-8abf-2e4d225a68be",
+      "elapsed_s": 85.77,
+      "created_at": "2026-11-22T02:55:52.396012+00:00",
+      "finished_at": "2026-11-22T02:57:20.057668+00:00",
+      "prompt_sha256": "51e4af6504d66e830fb723b00ab4832c4841719fdb48e82a4ec1952bb0b2b406",
+      "final_tokens_estimate": 3387,
+      "budget": 8192,
+      "input_tokens": 18279,
+      "output_tokens": 839,
+      "sources": 13,
+      "cited_sources": 10,
+      "source_spans": 0,
+      "projected": 0,
+      "used_facts": 0,
+      "used_relations": 0,
+      "native_queries": 0,
+      "native_latency_ms": null,
+      "native_fact_candidates": 0,
+      "native_participant_links": 0,
+      "ranking_status": "completed",
+      "ranking_actual": 4,
+      "ranking_cached": 0,
+      "selection_usage": {
+        "prompt_tokens": 107125,
+        "completion_tokens": 1928
+      },
+      "reference_source_sets": [
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        },
+        {
+          "in_candidates": true,
+          "in_final": false,
+          "cited_anywhere": false
+        },
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": false
+        }
+      ],
+      "full_points": 3,
+      "total_points": 3,
+      "verdict": "完整"
+    },
+    {
+      "question": "AM03",
+      "mode": "C",
+      "run_id": "ae7556dc-0894-4473-8f46-df83a4005135",
+      "elapsed_s": 61.106,
+      "created_at": "2026-11-22T02:57:20.331010+00:00",
+      "finished_at": "2026-11-22T02:58:22.438012+00:00",
+      "prompt_sha256": "a55d042e48b180fa3b8d8de5f97627fc7fa8e398b7b69925dded3d6a2986c510",
+      "final_tokens_estimate": 2894,
+      "budget": 8192,
+      "input_tokens": 17796,
+      "output_tokens": 902,
+      "sources": 13,
+      "cited_sources": 10,
+      "source_spans": 4,
+      "projected": 4,
+      "used_facts": 0,
+      "used_relations": 1,
+      "native_queries": 1,
+      "native_latency_ms": 9718,
+      "native_fact_candidates": 48,
+      "native_participant_links": 36,
+      "ranking_status": "completed",
+      "ranking_actual": 2,
+      "ranking_cached": 1,
+      "selection_usage": {
+        "prompt_tokens": 50686,
+        "completion_tokens": 969
+      },
+      "reference_source_sets": [
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        },
+        {
+          "in_candidates": true,
+          "in_final": false,
+          "cited_anywhere": false
+        },
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": false
+        }
+      ],
+      "full_points": 3,
+      "total_points": 3,
+      "verdict": "完整"
+    },
+    {
+      "question": "PO03",
+      "mode": "B",
+      "run_id": "44f50ce3-e2ba-4552-a0b9-753559f99a06",
+      "elapsed_s": 71.464,
+      "created_at": "2026-11-22T02:58:22.821008+00:00",
+      "finished_at": "2026-11-22T02:59:35.647260+00:00",
+      "prompt_sha256": "cabbe632b82651481c63c03f21329dd8ad4f81e9398381592f53fc207d77afd7",
+      "final_tokens_estimate": 2741,
+      "budget": 8192,
+      "input_tokens": 17630,
+      "output_tokens": 639,
+      "sources": 9,
+      "cited_sources": 7,
+      "source_spans": 0,
+      "projected": 0,
+      "used_facts": 0,
+      "used_relations": 0,
+      "native_queries": 0,
+      "native_latency_ms": null,
+      "native_fact_candidates": 0,
+      "native_participant_links": 0,
+      "ranking_status": "completed",
+      "ranking_actual": 4,
+      "ranking_cached": 0,
+      "selection_usage": {
+        "prompt_tokens": 102130,
+        "completion_tokens": 1518
+      },
+      "reference_source_sets": [
+        {
+          "in_candidates": true,
+          "in_final": false,
+          "cited_anywhere": false
+        },
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        },
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": false
+        }
+      ],
+      "full_points": 2,
+      "total_points": 3,
+      "verdict": "部分",
+      "diagnostic_sources": {
+        "XPO2-03": {
+          "in_candidates": true,
+          "in_ranked_groups": false,
+          "in_final_input": false
+        }
+      }
+    },
+    {
+      "question": "PO03",
+      "mode": "C",
+      "run_id": "ceadaaf0-80df-473b-b364-97cbf64f2cf5",
+      "elapsed_s": 63.931,
+      "created_at": "2026-11-22T02:59:36.154611+00:00",
+      "finished_at": "2026-11-22T03:00:41.467994+00:00",
+      "prompt_sha256": "ef6bc4bd34af582544d150f546ec0543d6a17a948f4e0bf3f14d97ef81e90d4c",
+      "final_tokens_estimate": 2827,
+      "budget": 8192,
+      "input_tokens": 17727,
+      "output_tokens": 749,
+      "sources": 14,
+      "cited_sources": 10,
+      "source_spans": 4,
+      "projected": 4,
+      "used_facts": 0,
+      "used_relations": 0,
+      "native_queries": 1,
+      "native_latency_ms": 9733,
+      "native_fact_candidates": 45,
+      "native_participant_links": 41,
+      "ranking_status": "completed",
+      "ranking_actual": 3,
+      "ranking_cached": 1,
+      "selection_usage": {
+        "prompt_tokens": 66087,
+        "completion_tokens": 948
+      },
+      "reference_source_sets": [
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": false
+        },
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        },
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": false
+        }
+      ],
+      "full_points": 2,
+      "total_points": 3,
+      "verdict": "部分",
+      "diagnostic_sources": {
+        "XPO2-03": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": true
+        }
+      }
+    },
+    {
+      "question": "X01",
+      "mode": "B",
+      "run_id": "50698ec5-a569-4088-8e5b-2aedbdb81f00",
+      "elapsed_s": 234.202,
+      "created_at": "2026-11-22T03:00:41.733346+00:00",
+      "finished_at": "2026-11-22T03:04:41.267088+00:00",
+      "prompt_sha256": "7b3a6720a331fe54fde8ba535e5b737a404bc288549f3d89e99894239884c1c8",
+      "final_tokens_estimate": 8142,
+      "budget": 8192,
+      "input_tokens": 23077,
+      "output_tokens": 1964,
+      "sources": 28,
+      "cited_sources": 28,
+      "source_spans": 0,
+      "projected": 0,
+      "used_facts": 0,
+      "used_relations": 0,
+      "native_queries": 0,
+      "native_latency_ms": null,
+      "native_fact_candidates": 0,
+      "native_participant_links": 0,
+      "ranking_status": "completed",
+      "ranking_actual": 4,
+      "ranking_cached": 0,
+      "selection_usage": {
+        "prompt_tokens": 149511,
+        "completion_tokens": 8249
+      },
+      "reference_source_sets": [
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        },
+        {
+          "in_candidates": true,
+          "in_final": false,
+          "cited_anywhere": false
+        },
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        },
+        {
+          "in_candidates": false,
+          "in_final": false,
+          "cited_anywhere": false
+        },
+        {
+          "in_candidates": true,
+          "in_final": false,
+          "cited_anywhere": false
+        },
+        {
+          "in_candidates": true,
+          "in_final": false,
+          "cited_anywhere": false
+        },
+        {
+          "in_candidates": true,
+          "in_final": false,
+          "cited_anywhere": false
+        }
+      ],
+      "full_points": 6,
+      "total_points": 7,
+      "verdict": "部分",
+      "diagnostic_sources": {
+        "ATR0-S04": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": false
+        },
+        "ASU0-S04": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": false
+        },
+        "AAM0-S04": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": false
+        },
+        "ALE0-S04": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": false
+        },
+        "AWR0-S04": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": false
+        },
+        "APO0-S04": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": false
+        }
+      }
+    },
+    {
+      "question": "X01",
+      "mode": "C",
+      "run_id": "5078d9a0-0159-4835-8f69-d93b8ac16ef6",
+      "elapsed_s": 188.776,
+      "created_at": "2026-11-22T03:04:41.605063+00:00",
+      "finished_at": "2026-11-22T03:07:55.218416+00:00",
+      "prompt_sha256": "9f0934c2885b80460e321290d190da347daf4c1c9a42484ee1d6c7ce722392c2",
+      "final_tokens_estimate": 8192,
+      "budget": 8192,
+      "input_tokens": 23183,
+      "output_tokens": 2344,
+      "sources": 54,
+      "cited_sources": 50,
+      "source_spans": 38,
+      "projected": 38,
+      "used_facts": 0,
+      "used_relations": 0,
+      "native_queries": 1,
+      "native_latency_ms": 7927,
+      "native_fact_candidates": 39,
+      "native_participant_links": 40,
+      "ranking_status": "completed",
+      "ranking_actual": 3,
+      "ranking_cached": 1,
+      "selection_usage": {
+        "prompt_tokens": 97407,
+        "completion_tokens": 5668
+      },
+      "reference_source_sets": [
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        },
+        {
+          "in_candidates": true,
+          "in_final": false,
+          "cited_anywhere": false
+        },
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        },
+        {
+          "in_candidates": false,
+          "in_final": false,
+          "cited_anywhere": false
+        },
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        },
+        {
+          "in_candidates": true,
+          "in_final": false,
+          "cited_anywhere": false
+        },
+        {
+          "in_candidates": true,
+          "in_final": false,
+          "cited_anywhere": false
+        }
+      ],
+      "full_points": 7,
+      "total_points": 7,
+      "verdict": "完整",
+      "diagnostic_sources": {
+        "ATR0-S04": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": true
+        },
+        "ASU0-S04": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": true
+        },
+        "AAM0-S04": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": true
+        },
+        "ALE0-S04": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": true
+        },
+        "AWR0-S04": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": true
+        },
+        "APO0-S04": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": true
+        }
+      }
+    },
+    {
+      "question": "X03",
+      "mode": "B",
+      "run_id": "3f8da3a7-25da-4b36-b850-09baa84664b6",
+      "elapsed_s": 213.137,
+      "created_at": "2026-11-22T03:07:55.316984+00:00",
+      "finished_at": "2026-11-22T03:11:33.498773+00:00",
+      "prompt_sha256": "0aafe4f362e1658ed01dbae80ef04cf9f76e2aee95951c57708b27d94a647f51",
+      "final_tokens_estimate": 8184,
+      "budget": 8192,
+      "input_tokens": 23121,
+      "output_tokens": 2000,
+      "sources": 29,
+      "cited_sources": 29,
+      "source_spans": 0,
+      "projected": 0,
+      "used_facts": 0,
+      "used_relations": 0,
+      "native_queries": 0,
+      "native_latency_ms": null,
+      "native_fact_candidates": 0,
+      "native_participant_links": 0,
+      "ranking_status": "completed",
+      "ranking_actual": 4,
+      "ranking_cached": 0,
+      "selection_usage": {
+        "prompt_tokens": 156044,
+        "completion_tokens": 7321
+      },
+      "reference_source_sets": [
+        {
+          "in_candidates": true,
+          "in_final": false,
+          "cited_anywhere": false
+        },
+        {
+          "in_candidates": true,
+          "in_final": false,
+          "cited_anywhere": false
+        },
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        }
+      ],
+      "full_points": 2,
+      "total_points": 3,
+      "verdict": "部分",
+      "diagnostic_sources": {
+        "A03-S02": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": false
+        },
+        "ATR1-S04": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": false
+        }
+      }
+    },
+    {
+      "question": "X03",
+      "mode": "C",
+      "run_id": "34a92973-2d50-4207-b14c-e7bd5347e2c2",
+      "elapsed_s": 172.096,
+      "created_at": "2026-11-22T03:11:33.915851+00:00",
+      "finished_at": "2026-11-22T03:14:30.974510+00:00",
+      "prompt_sha256": "e81669fc92f8cbcab71e31d0fc637ee71ab7db3d4542c7873222d6ad5a7449ba",
+      "final_tokens_estimate": 8142,
+      "budget": 8192,
+      "input_tokens": 23131,
+      "output_tokens": 1904,
+      "sources": 51,
+      "cited_sources": 37,
+      "source_spans": 33,
+      "projected": 33,
+      "used_facts": 0,
+      "used_relations": 0,
+      "native_queries": 1,
+      "native_latency_ms": 12376,
+      "native_fact_candidates": 37,
+      "native_participant_links": 55,
+      "ranking_status": "completed",
+      "ranking_actual": 3,
+      "ranking_cached": 1,
+      "selection_usage": {
+        "prompt_tokens": 98150,
+        "completion_tokens": 5039
+      },
+      "reference_source_sets": [
+        {
+          "in_candidates": true,
+          "in_final": false,
+          "cited_anywhere": false
+        },
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        },
+        {
+          "in_candidates": true,
+          "in_final": true,
+          "cited_anywhere": true
+        }
+      ],
+      "full_points": 3,
+      "total_points": 3,
+      "verdict": "完整",
+      "diagnostic_sources": {
+        "A03-S02": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": true
+        },
+        "ATR1-S04": {
+          "in_candidates": true,
+          "in_ranked_groups": true,
+          "in_final_input": true
+        }
+      }
+    }
+  ],
+  "summary": {
+    "B": {
+      "mean_seconds": 154.0072,
+      "mean_tokens": 6106,
+      "mean_sources": 21.8,
+      "totals": {
+        "ranking_actual": 20,
+        "ranking_cached": 0,
+        "used_facts": 0,
+        "used_relations": 0,
+        "projected": 0,
+        "source_spans": 0,
+        "native_queries": 0,
+        "input_tokens": 105121,
+        "output_tokens": 6982
+      },
+      "selection_usage": {
+        "prompt_tokens": 656982,
+        "completion_tokens": 24021
+      },
+      "fully_correct": 1,
+      "partial": 4,
+      "full_points": 15,
+      "total_points": 19
+    },
+    "C": {
+      "mean_seconds": 122.7368,
+      "mean_tokens": 5772.2,
+      "mean_sources": 34.8,
+      "totals": {
+        "ranking_actual": 14,
+        "ranking_cached": 5,
+        "used_facts": 0,
+        "used_relations": 6,
+        "projected": 106,
+        "source_spans": 106,
+        "native_queries": 5,
+        "input_tokens": 103642,
+        "output_tokens": 7405
+      },
+      "selection_usage": {
+        "prompt_tokens": 404750,
+        "completion_tokens": 15776
+      },
+      "fully_correct": 4,
+      "partial": 1,
+      "full_points": 18,
+      "total_points": 19
+    }
+  },
+  "wall_seconds": 1419.458215,
+  "checks": [
+    "代码指纹一致",
+    "10份答卷顺序及状态正确",
+    "输入与入选原文或精确节选一致",
+    "节选字符位置准确",
+    "所有引用属于实际输入",
+    "最终消息估算未超各题预算"
+  ],
+  "review_method": "助手对照冻结参考及本次首份成功答卷和实际输入，接受等价证据。命题的必要限定与角色分工须在答卷出现。未独立盲评。"
+}

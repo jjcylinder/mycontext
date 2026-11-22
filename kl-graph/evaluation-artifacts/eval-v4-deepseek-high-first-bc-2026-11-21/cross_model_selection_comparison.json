@@ -1,0 +1,295 @@
+{
+  "note": "只读比较既有正式答卷；观察性证据，未进行固定输入/分批的因果消融。",
+  "rows": [
+    {
+      "question_id": "TR04",
+      "mode": "C",
+      "ChatGPT": {
+        "candidate_count": 333,
+        "batch_input_counts": [
+          30750,
+          24426
+        ],
+        "batch_count": 2,
+        "initial_groups": 18,
+        "initial_unique_sources": 45,
+        "final_source_count": 37,
+        "final_input_count": 5299
+      },
+      "DeepSeek": {
+        "candidate_count": 333,
+        "batch_input_counts": [
+          54616
+        ],
+        "batch_count": 1,
+        "initial_groups": 8,
+        "initial_unique_sources": 21,
+        "final_source_count": 20,
+        "final_input_count": 3388
+      },
+      "candidate_set_equal": true,
+      "candidate_order_equal": true
+    },
+    {
+      "question_id": "TR04",
+      "mode": "B",
+      "ChatGPT": {
+        "candidate_count": 333,
+        "batch_input_counts": [
+          30750,
+          24426
+        ],
+        "batch_count": 2,
+        "initial_groups": 21,
+        "initial_unique_sources": 50,
+        "final_source_count": 31,
+        "final_input_count": 8154
+      },
+      "DeepSeek": {
+        "candidate_count": 333,
+        "batch_input_counts": [
+          54616
+        ],
+        "batch_count": 1,
+        "initial_groups": 7,
+        "initial_unique_sources": 19,
+        "final_source_count": 18,
+        "final_input_count": 4942
+      },
+      "candidate_set_equal": true,
+      "candidate_order_equal": true
+    },
+    {
+      "question_id": "AM03",
+      "mode": "B",
+      "ChatGPT": {
+        "candidate_count": 197,
+        "batch_input_counts": [
+          30848,
+          8413
+        ],
+        "batch_count": 2,
+        "initial_groups": 9,
+        "initial_unique_sources": 13,
+        "final_source_count": 12,
+        "final_input_count": 3177
+      },
+      "DeepSeek": {
+        "candidate_count": 197,
+        "batch_input_counts": [
+          38700
+        ],
+        "batch_count": 1,
+        "initial_groups": 6,
+        "initial_unique_sources": 22,
+        "final_source_count": 18,
+        "final_input_count": 3832
+      },
+      "candidate_set_equal": true,
+      "candidate_order_equal": true
+    },
+    {
+      "question_id": "AM03",
+      "mode": "C",
+      "ChatGPT": {
+        "candidate_count": 222,
+        "batch_input_counts": [
+          30848,
+          12471
+        ],
+        "batch_count": 2,
+        "initial_groups": 10,
+        "initial_unique_sources": 14,
+        "final_source_count": 14,
+        "final_input_count": 3381
+      },
+      "DeepSeek": {
+        "candidate_count": 222,
+        "batch_input_counts": [
+          42758
+        ],
+        "batch_count": 1,
+        "initial_groups": 6,
+        "initial_unique_sources": 13,
+        "final_source_count": 18,
+        "final_input_count": 3933
+      },
+      "candidate_set_equal": true,
+      "candidate_order_equal": true
+    },
+    {
+      "question_id": "PO03",
+      "mode": "B",
+      "ChatGPT": {
+        "candidate_count": 176,
+        "batch_input_counts": [
+          30939,
+          4743
+        ],
+        "batch_count": 2,
+        "initial_groups": 6,
+        "initial_unique_sources": 10,
+        "final_source_count": 9,
+        "final_input_count": 2756
+      },
+      "DeepSeek": {
+        "candidate_count": 176,
+        "batch_input_counts": [
+          35118
+        ],
+        "batch_count": 1,
+        "initial_groups": 5,
+        "initial_unique_sources": 9,
+        "final_source_count": 9,
+        "final_input_count": 2412
+      },
+      "candidate_set_equal": true,
+      "candidate_order_equal": true
+    },
+    {
+      "question_id": "PO03",
+      "mode": "C",
+      "ChatGPT": {
+        "candidate_count": 198,
+        "batch_input_counts": [
+          30939,
+          7760
+        ],
+        "batch_count": 2,
+        "initial_groups": 8,
+        "initial_unique_sources": 12,
+        "final_source_count": 11,
+        "final_input_count": 2978
+      },
+      "DeepSeek": {
+        "candidate_count": 198,
+        "batch_input_counts": [
+          38135
+        ],
+        "batch_count": 1,
+        "initial_groups": 6,
+        "initial_unique_sources": 13,
+        "final_source_count": 14,
+        "final_input_count": 3313
+      },
+      "candidate_set_equal": true,
+      "candidate_order_equal": true
+    },
+    {
+      "question_id": "X01",
+      "mode": "B",
+      "ChatGPT": {
+        "candidate_count": 206,
+        "batch_input_counts": [
+          30686,
+          11987
+        ],
+        "batch_count": 2,
+        "initial_groups": 38,
+        "initial_unique_sources": 76,
+        "final_source_count": 28,
+        "final_input_count": 8142
+      },
+      "DeepSeek": {
+        "candidate_count": 206,
+        "batch_input_counts": [
+          42099
+        ],
+        "batch_count": 1,
+        "initial_groups": 13,
+        "initial_unique_sources": 32,
+        "final_source_count": 27,
+        "final_input_count": 7999
+      },
+      "candidate_set_equal": true,
+      "candidate_order_equal": true
+    },
+    {
+      "question_id": "X01",
+      "mode": "C",
+      "ChatGPT": {
+        "candidate_count": 237,
+        "batch_input_counts": [
+          30686,
+          16492
+        ],
+        "batch_count": 2,
+        "initial_groups": 40,
+        "initial_unique_sources": 84,
+        "final_source_count": 49,
+        "final_input_count": 8136
+      },
+      "DeepSeek": {
+        "candidate_count": 237,
+        "batch_input_counts": [
+          46604
+        ],
+        "batch_count": 1,
+        "initial_groups": 6,
+        "initial_unique_sources": 27,
+        "final_source_count": 32,
+        "final_input_count": 5709
+      },
+      "candidate_set_equal": true,
+      "candidate_order_equal": true
+    },
+    {
+      "question_id": "X03",
+      "mode": "B",
+      "ChatGPT": {
+        "candidate_count": 263,
+        "batch_input_counts": [
+          30759,
+          20452
+        ],
+        "batch_count": 2,
+        "initial_groups": 34,
+        "initial_unique_sources": 67,
+        "final_source_count": 29,
+        "final_input_count": 8161
+      },
+      "DeepSeek": {
+        "candidate_count": 263,
+        "batch_input_counts": [
+          50650
+        ],
+        "batch_count": 1,
+        "initial_groups": 12,
+        "initial_unique_sources": 31,
+        "final_source_count": 23,
+        "final_input_count": 6468
+      },
+      "candidate_set_equal": true,
+      "candidate_order_equal": true
+    },
+    {
+      "question_id": "X03",
+      "mode": "C",
+      "ChatGPT": {
+        "candidate_count": 293,
+        "batch_input_counts": [
+          30759,
+          23054
+        ],
+        "batch_count": 2,
+        "initial_groups": 36,
+        "initial_unique_sources": 63,
+        "final_source_count": 52,
+        "final_input_count": 8095
+      },
+      "DeepSeek": {
+        "candidate_count": 293,
+        "batch_input_counts": [
+          53252
+        ],
+        "batch_count": 1,
+        "initial_groups": 13,
+        "initial_unique_sources": 33,
+        "final_source_count": 27,
+        "final_input_count": 5129
+      },
+      "candidate_set_equal": true,
+      "candidate_order_equal": false
+    }
+  ]
+}

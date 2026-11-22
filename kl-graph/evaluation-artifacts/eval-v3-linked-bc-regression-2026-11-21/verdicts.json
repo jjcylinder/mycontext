@@ -1,0 +1,77 @@
+{
+  "method": "助手逐题对照全部参考要点与原文，接受语义等价证据；完整正确需答全必要要点且无关键归属错误。非独立盲评。",
+  "evaluation_scope": "固定五题 B/C；未运行 A。五题已用于迭代调试，不代表独立泛化验收。",
+  "x03_replay": "初版 X03 C 的全局复核因窗口跳过；第一次来源合并仍超窗的诊断答卷未计分。最终采用 retry2，冻结原候选及全部分批重排结果，只补做无损表格下的全局复核及回答，其余九份执行路径未变。",
+  "results": [
+    {
+      "question_id": "TR04",
+      "mode": "B",
+      "run_id": "4351253d-8221-4849-b6de-9dda78edc2db",
+      "verdict": "partial",
+      "reason": "已找到 TR-X03、QA-A27 和正式环境未切包，但将补齐 QA-A27 期望答案与判定说明分派给测试；D09-S03/ATR0-S04 登记应由应用补齐。整体协调未完整且存在职责归属问题。"
+    },
+    {
+      "question_id": "TR04",
+      "mode": "C",
+      "run_id": "12c75e60-02de-42cb-98dd-66240f754d9e",
+      "verdict": "partial",
+      "reason": "正确说明 QA-A27 由应用补齐后交模型分析、TR-X03 未回归与正式未升级；未明确安排整体语义回归，应用侧异常分支后续任务表述仍不完整。"
+    },
+    {
+      "question_id": "AM03",
+      "mode": "B",
+      "run_id": "f14ead03-19d9-4e4c-a408-99d86515059d",
+      "verdict": "partial",
+      "reason": "说明旧快照、10:00 被写成确定安排及重跑要求；仍把新索引状态与协作消息的项目归属留待核实，未交代数据与应用协作分工。"
+    },
+    {
+      "question_id": "AM03",
+      "mode": "C",
+      "run_id": "f3c19b3a-5177-480b-9e6e-ed664160358d",
+      "verdict": "partial",
+      "reason": "清楚区分新索引可检索与 REPORT-AM0830 仍用旧快照，正确说明重跑及截止口径；仍未落实数据与应用协作，第三项参考事实不完整。"
+    },
+    {
+      "question_id": "PO03",
+      "mode": "B",
+      "run_id": "f8732fa0-ef61-4551-877a-cafa4a52045e",
+      "verdict": "partial",
+      "reason": "区分行文与数字检查且指出否定条件未回归及正式未升级；未说明两组样例是否重叠未知，并把 APP-A-12 与本项目预演的对应关系留待核实。"
+    },
+    {
+      "question_id": "PO03",
+      "mode": "C",
+      "run_id": "3db76b8d-c9a6-44c7-9b22-8bc54b64bde7",
+      "verdict": "correct",
+      "reason": "完整说明检查口径不同、集合是否重叠未知，POL-F08 和否定条件未回归，以及 APP-A-12 预演数字检查与正式未升级；全部三项参考事实已覆盖。"
+    },
+    {
+      "question_id": "X01",
+      "mode": "B",
+      "run_id": "5cbb4133-491b-4e5a-b6f7-cda88d788243",
+      "verdict": "partial",
+      "reason": "已覆盖六类，摘要与公函范围、部分责任较完整；仍缺翻译局部通过、晨报旧快照重跑及其他 Skill 的责任分工。"
+    },
+    {
+      "question_id": "X01",
+      "mode": "C",
+      "run_id": "d5b2344b-af8d-4dc4-9922-6005e11820f6",
+      "verdict": "partial",
+      "reason": "已列出六类局部进展及润色限制；仍缺翻译异常分支、摘要隐式路由和内容未决、公函草稿准入详情、晨报重跑和大部分责任。该题若干方面弱于 B。"
+    },
+    {
+      "question_id": "X03",
+      "mode": "B",
+      "run_id": "d64e4616-0140-4e47-b7bd-8b43edaa1a31",
+      "verdict": "partial",
+      "reason": "正确区分项目 B 发布和项目 A 正式未升级，列出 LANG、DEDUP 的部分边界和限定预演配置；未补齐 ROUTE-03 的覆盖边界。"
+    },
+    {
+      "question_id": "X03",
+      "mode": "C",
+      "run_id": "51f82b05-7d8a-4984-b1c2-84a420f658e3",
+      "verdict": "correct",
+      "reason": "修复全局输入窗口后，完整区分项目、正式/预演、应用包和模型，列出 ROUTE/LANG/DEDUP 各自的验证范围，并说明更换模型不能沿用旧组合结果；全部三项参考事实已覆盖。"
+    }
+  ]
+}

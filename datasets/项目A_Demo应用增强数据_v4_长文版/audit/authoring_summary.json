@@ -1,0 +1,64 @@
+{
+  "approved_sources": 51,
+  "generation_calls": 54,
+  "review_calls": 52,
+  "author_prompt_sha256": "83bf07f2ff222551e0611335e77fe4f8d0b624b56ebc7c40fed7dacdaf8a9775",
+  "review_prompt_sha256": "ac3338e27ea316759669371888d317deb937507b7be13940c8d13b6d4863904b",
+  "model": "chatgpt-codex-default",
+  "review_independence": "separate model requests, same model family; not independent human review",
+  "evaluation_sent_to_author": false,
+  "audit_directory": "/home/jcylinder/codex/mycontext/kl-graph/data/project_demo/expanded-v4-authoring",
+  "manual_excerpt_spot_checks": [
+    "ATR0",
+    "NAM",
+    "D05",
+    "A02",
+    "AAM0",
+    "ALE0",
+    "ASU1",
+    "ASU2",
+    "ALE1",
+    "AWR1"
+  ],
+  "model_usage": {
+    "prompt_tokens": 1688493,
+    "completion_tokens": 46464,
+    "total_tokens": 1734957
+  },
+  "implementation_sha256": {
+    "project_demo/expand_dataset.py": "ff4fcca14fc2a1039b8c0fc456c0e5c3e872c810c6f62f298d297f59c3525b98",
+    "project_demo/validate_expanded_dataset.py": "410a6731ca9830ef263246d3062719031c26b90fa8a845192ba1f8db5c46cfd2",
+    "project_demo/dataset.py": "0083a785c34e1797808e24e28e385ac7d1a3ca265084be6ebfc20c833170fc48",
+    "project_demo/answer.py": "8bc66d08a492e31dc53cf9447d75dc420fe4ae0b653ef7a1270766dd03e634b4",
+    "project_demo/selection.py": "1768874dedbed3e5f33451bded640ac7e4afcc64a774451d483e7ec35d907b2d",
+    "project_demo/context.py": "e8baea274c3903e616599266a3d5936e8bb5aa04801ff03446e7196e3012642b"
+  },
+  "business_evaluation": {
+    "run": false,
+    "default_question_ids": [
+      "TR04",
+      "AM03",
+      "PO03",
+      "X01",
+      "X03"
+    ],
+    "modes": [
+      "B",
+      "C"
+    ]
+  },
+  "code_validation": {
+    "passed": 16,
+    "deselected": 2,
+    "command": ".venv/bin/python -m pytest -q tests/project_demo/test_dataset.py tests/project_demo/test_workbench.py -k 'not all_originals and not answer_baselines_share_scope_and_retrieval_budget'"
+  },
+  "semantic_revisions": [
+    {
+      "source_id": "NLE",
+      "record_id": "NLE-S03",
+      "issue": "将形成可用草稿的前置条件扩大到形成任何草稿",
+      "resolved": true
+    }
+  ],
+  "normalized_chat_lines_byte_identical": true
+}

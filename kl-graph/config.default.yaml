@@ -37,6 +37,8 @@ services:
     # Whether to request `dim` explicitly; leave false for servers such as vLLM
     # that reject the Matryoshka `dimensions` request field.
     send_dimensions: ${oc.env:KL_EMBED_SEND_DIMENSIONS,0}
+    # Optional Qwen retrieval instruction; applied only to query vectors.
+    query_instruction: ${oc.env:KL_EMBED_QUERY_INSTRUCTION,""}
 
   # Low-latency chat-completion service used for extraction and synthesis.
   llm_flash:

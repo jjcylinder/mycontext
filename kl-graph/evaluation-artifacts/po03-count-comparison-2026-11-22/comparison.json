@@ -1,0 +1,30 @@
+[
+  {
+    "groups": [
+      {
+        "group": "POL-NUM02",
+        "count": 2,
+        "unit": "条",
+        "check": "数字日期检查",
+        "result": "通过",
+        "source": "APO2-S01",
+        "quote": "预演包POL-NUM02数字日期检查两条通过"
+      },
+      {
+        "group": "STYLE-P06",
+        "count": 6,
+        "unit": "条",
+        "check": "行文评审",
+        "result": "通过",
+        "source": "APO2-S01",
+        "quote": "STYLE-P06六条行文评审通过"
+      }
+    ],
+    "membership": "当前计数依据未确定两组样例是否重叠，去重后的样例总数未知。",
+    "distinct_samples": null,
+    "criterion": "按各组引文核对检查内容；当前计数依据未建立统一的完整验收标准。",
+    "evidence_ids": [
+      "APO2-S01"
+    ]
+  }
+]

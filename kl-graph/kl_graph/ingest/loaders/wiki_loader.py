@@ -15,7 +15,7 @@ import uuid
 from pathlib import Path
 
 from kl_graph.ingest.chunker import chunk_text
-from kl_graph.ingest.loaders.base import iter_records, load_scopes, scope_title
+from kl_graph.ingest.loaders.base import iter_records, load_scopes, scope_title, source_record, to_unix_ms
 from kl_graph.models.types import Chunk
 
 # Rough char budget per chunk (~1 char ≈ 1 token for Chinese; avoids a
@@ -61,22 +61,27 @@ def load_wiki(wiki_dir: Path) -> list[Chunk]:
         unit_id = str(rec.get("id") or f"wiki-node:{node_id}")
         unit_key = uuid.uuid5(uuid.NAMESPACE_URL, unit_id).hex
         title = scope_title(scope)
-        url = data.get("docUrl")
+        provenance = source_record(data)
+        url = data.get("docUrl") or provenance.get("source_locator")
+        timestamp = to_unix_ms(provenance.get("occurred_at"))
         parts = _split_markdown(body)
         for i, part in enumerate(parts):
+            metadata = {
+                "unit_id": unit_id,
+                "record_id": unit_id,
+                "node_id": node_id,
+                "title": title,
+                "seg_idx": i,
+                "n_segments": len(parts),
+            }
+            if provenance:
+                metadata["source_record"] = provenance
             chunks.append(Chunk(
                 id=f"wiki:{node_id}:{unit_key}:{i}",
                 content=part,
                 source_type="wiki",
-                timestamp=0,
+                timestamp=timestamp,
                 source_ref=url,
-                metadata={
-                    "unit_id": unit_id,
-                    "record_id": unit_id,
-                    "node_id": node_id,
-                    "title": title,
-                    "seg_idx": i,
-                    "n_segments": len(parts),
-                },
+                metadata=metadata,
             ))
     return chunks

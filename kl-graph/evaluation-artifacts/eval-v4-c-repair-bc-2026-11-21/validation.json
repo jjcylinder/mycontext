@@ -1,0 +1,32 @@
+{
+  "completed_answers": 10,
+  "unique_question_mode_pairs": 10,
+  "modes": [
+    "B",
+    "C"
+  ],
+  "retries": 0,
+  "code_fingerprints_unchanged": true,
+  "all_final_estimates_within_budget": true,
+  "all_global_reviews_completed": true,
+  "citation_ids_all_in_selected_evidence": true,
+  "final_prompt_matches_selected_evidence_or_exact_excerpt": true,
+  "projected_record_occurrences": 108,
+  "validated_source_spans": 122,
+  "tr04_identical_final_inputs": false,
+  "model_input_sha256": {
+    "TR04B": "7f1d51b5a9275eb9a805c9a77924142b83ffe6d06bc06f0cc4603c6f18bbbe33",
+    "TR04C": "e053a14778626de9ca80aaf2e928c8620568f5372107d7dc3fac30748f7c63ce",
+    "AM03B": "9aa8e58137bda6b5689ad18d3a1b6b1295d79c1a2873939667104787933c1922",
+    "AM03C": "5d9ca0b3f0deb166c1d6f049f489aaaad10f650029078fc93c5d89956a2f991a",
+    "PO03B": "93a5bf688e27e887323082a73f61de3876a0851ea9bfe609dc33e38732fd97a8",
+    "PO03C": "7b7c348f95d7bf34759414771f8a430d88735b358da2d6281d1c82239d574c8d",
+    "X01B": "ae68577831d3fc5f2083caf4d7d8fd09f7bf36fc947fc5a1e8a66041f16b9948",
+    "X01C": "b1c7d32ca1ab31cbdfe9fe86697d3c6e415e4a39f07e5f53c0e3534e22e81bb6",
+    "X03B": "24f8c3f00daa7f3a87b66ee7143d15a15b06c4a09603645793850605f1be6874",
+    "X03C": "2bca37dbd81e0829b4f3a5bcc346ccc1ac2e25e83cf5fb11b1bb60aff8da52eb"
+  },
+  "reviewer": "assistant",
+  "independent_blind_review": false,
+  "caveat": "Exact offsets and valid citations do not by themselves prove semantic completeness or entailment."
+}

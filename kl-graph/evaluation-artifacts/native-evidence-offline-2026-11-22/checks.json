@@ -1,0 +1,769 @@
+{
+  "date": "2026-11-22",
+  "dataset": "项目A_Demo应用增强数据_v4_长文版 / app_focus",
+  "graph": "graph-abc47ce2060b88a7",
+  "evidence_budget": 8192,
+  "procedure": "复用 ChatGPT 保真修复 v2 两梯队的 candidate_ranking 候选、最终 groups 和 pre_audit_groups，按当前代码从只读图谱重新读取原文节选及回复依赖，使用原有模型预算重新装入证据。两种冻结排序分别回放，不重新询问模型。列明参考证据组在装入结束后核对，允许业务评审使用等价证据。未复现新在线召回和选证，未生成或评分新答案。回放未附加额外事实文本；实际端到端输入以线上运行记录为准。",
+  "fixed_seed_checks": {
+    "method": "固定单条原生事实命中，调用实际 query_context；从当前历史 SQLite 图谱读取参与边、节选和依赖。",
+    "T08-04": {
+      "native_about": 1,
+      "support_ids": [
+        "T08-04",
+        "T08-03",
+        "T08-02"
+      ]
+    },
+    "A04-S01": {
+      "native_about": 2,
+      "negative_preserved": true
+    },
+    "XTR2-01": {
+      "claim_sent_to_ranking": "LANG-02已经给预演包。",
+      "native_about": 1
+    },
+    "XTR2-08": {
+      "claim_sent_to_ranking": "把异常分支和模型问题分别留在对应单里。",
+      "native_about": 1
+    }
+  },
+  "source_archives": [
+    "eval-v4-fidelity-v2-first-bc-2026-11-21",
+    "eval-v4-fidelity-v2-second-bc-2026-11-21"
+  ],
+  "source_sha256": {
+    "kl_graph/query/fact_evidence.py": "c5b765594656c7c55e8ac73e0ceddfe07b692923d19e736f96c47ce61ebdfed6",
+    "kl_graph/query/source_graph.py": "3100695255b31be64919fa45d0903be03d5814c60252f084f6de1789faccbac8",
+    "kl_graph/ingest/llm_extractor.py": "1d7dd7891400bf96122cfffe8dc3460901ab056b4bed42a0c4872175bd3611f8",
+    "kl_graph/ingest/extraction_strategy.py": "fd9ca373e7535f0c6906dd8297a346886133bab6e5bb45964fac7c1a2d3f10a3",
+    "kl_graph/ingest/pipeline.py": "8a0876ee44ba1eaf32d4f55ac33c19a3ccf3a5bdc4339fdf1f157d5191a2d289",
+    "kl_server.py": "d08eb653b4e341c8768159e8c7d5700e55521ecb3e6424a164dffe53bb8c72ce",
+    "project_demo/app.py": "96f494e23c5f03309d2654ce6a312cb7524330b844b255f96f914be85b36f446",
+    "project_demo/context.py": "4288976bf7b0d13c7affdaa71c431ac47efb874a2624cbe8f76936a1f516dc1c",
+    "project_demo/answer.py": "9a350d33a105be7cd2e1e579fb50617ca174b1fedf36819b91407c6449fb17ac",
+    "project_demo/selection.py": "164f0769ca79b64f8e173766d23bb0506140c7f7efcecb2d15f050e2331c3b28"
+  },
+  "native_location_status": {
+    "located": 487,
+    "whole_source": 356,
+    "reply_context": 111,
+    "incomplete_context": 11
+  },
+  "replays": [
+    {
+      "question": "TR04",
+      "mode": "C",
+      "audit": {
+        "historical_omitted_groups": 10,
+        "new_review_candidates": 10
+      },
+      "groups": {
+        "sources": 37,
+        "preflight_tokens": 4757,
+        "historical_sources_retained": 37,
+        "dependent_sources": 0,
+        "lost_source_ids": [],
+        "historical_reference_groups": [
+          1,
+          2,
+          3
+        ],
+        "replay_reference_groups": [
+          1,
+          2,
+          3
+        ]
+      },
+      "pre_audit_groups": {
+        "sources": 30,
+        "preflight_tokens": 3803,
+        "historical_sources_retained": 30,
+        "dependent_sources": 0,
+        "lost_source_ids": [
+          "A03-S01",
+          "D06-S01",
+          "D06-S03",
+          "D08-S02",
+          "D09-S02",
+          "T12-01",
+          "T12-07"
+        ],
+        "historical_reference_groups": [
+          1,
+          2,
+          3
+        ],
+        "replay_reference_groups": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "question": "TR04",
+      "mode": "B",
+      "audit": {
+        "historical_omitted_groups": 9,
+        "new_review_candidates": 9
+      },
+      "groups": {
+        "sources": 31,
+        "preflight_tokens": 8134,
+        "historical_sources_retained": 31,
+        "dependent_sources": 0,
+        "lost_source_ids": [],
+        "historical_reference_groups": [
+          1,
+          2
+        ],
+        "replay_reference_groups": [
+          1,
+          2
+        ]
+      },
+      "pre_audit_groups": {
+        "sources": 32,
+        "preflight_tokens": 7998,
+        "historical_sources_retained": 27,
+        "dependent_sources": 0,
+        "lost_source_ids": [
+          "A04-S01",
+          "A04-S03",
+          "D06-S01",
+          "D08-S01"
+        ],
+        "historical_reference_groups": [
+          1,
+          2
+        ],
+        "replay_reference_groups": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "question": "AM03",
+      "mode": "B",
+      "audit": {
+        "historical_omitted_groups": 3,
+        "new_review_candidates": 3
+      },
+      "groups": {
+        "sources": 12,
+        "preflight_tokens": 3157,
+        "historical_sources_retained": 12,
+        "dependent_sources": 0,
+        "lost_source_ids": [],
+        "historical_reference_groups": [
+          1,
+          3
+        ],
+        "replay_reference_groups": [
+          1,
+          3
+        ]
+      },
+      "pre_audit_groups": {
+        "sources": 8,
+        "preflight_tokens": 2631,
+        "historical_sources_retained": 8,
+        "dependent_sources": 0,
+        "lost_source_ids": [
+          "AAM2-S02",
+          "XAM3-05",
+          "XAM3-06",
+          "XAM3-07"
+        ],
+        "historical_reference_groups": [
+          1,
+          3
+        ],
+        "replay_reference_groups": [
+          1
+        ]
+      }
+    },
+    {
+      "question": "AM03",
+      "mode": "C",
+      "audit": {
+        "historical_omitted_groups": 0,
+        "new_review_candidates": 0
+      },
+      "groups": {
+        "sources": 14,
+        "preflight_tokens": 3046,
+        "historical_sources_retained": 14,
+        "dependent_sources": 1,
+        "lost_source_ids": [],
+        "historical_reference_groups": [
+          1,
+          3
+        ],
+        "replay_reference_groups": [
+          1,
+          3
+        ]
+      },
+      "pre_audit_groups": {
+        "sources": 14,
+        "preflight_tokens": 3046,
+        "historical_sources_retained": 14,
+        "dependent_sources": 1,
+        "lost_source_ids": [],
+        "historical_reference_groups": [
+          1,
+          3
+        ],
+        "replay_reference_groups": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "question": "PO03",
+      "mode": "B",
+      "audit": {
+        "historical_omitted_groups": 2,
+        "new_review_candidates": 2
+      },
+      "groups": {
+        "sources": 9,
+        "preflight_tokens": 2736,
+        "historical_sources_retained": 9,
+        "dependent_sources": 0,
+        "lost_source_ids": [],
+        "historical_reference_groups": [
+          2,
+          3
+        ],
+        "replay_reference_groups": [
+          2,
+          3
+        ]
+      },
+      "pre_audit_groups": {
+        "sources": 8,
+        "preflight_tokens": 2641,
+        "historical_sources_retained": 8,
+        "dependent_sources": 0,
+        "lost_source_ids": [
+          "XPO2-07"
+        ],
+        "historical_reference_groups": [
+          2,
+          3
+        ],
+        "replay_reference_groups": [
+          2
+        ]
+      }
+    },
+    {
+      "question": "PO03",
+      "mode": "C",
+      "audit": {
+        "historical_omitted_groups": 2,
+        "new_review_candidates": 2
+      },
+      "groups": {
+        "sources": 13,
+        "preflight_tokens": 2689,
+        "historical_sources_retained": 11,
+        "dependent_sources": 2,
+        "lost_source_ids": [],
+        "historical_reference_groups": [
+          2,
+          3
+        ],
+        "replay_reference_groups": [
+          2,
+          3
+        ]
+      },
+      "pre_audit_groups": {
+        "sources": 13,
+        "preflight_tokens": 2689,
+        "historical_sources_retained": 11,
+        "dependent_sources": 2,
+        "lost_source_ids": [],
+        "historical_reference_groups": [
+          2,
+          3
+        ],
+        "replay_reference_groups": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "question": "X01",
+      "mode": "B",
+      "audit": {
+        "historical_omitted_groups": 25,
+        "new_review_candidates": 22
+      },
+      "groups": {
+        "sources": 28,
+        "preflight_tokens": 8122,
+        "historical_sources_retained": 28,
+        "dependent_sources": 0,
+        "lost_source_ids": [],
+        "historical_reference_groups": [],
+        "replay_reference_groups": [],
+        "four_sources": []
+      },
+      "pre_audit_groups": {
+        "sources": 28,
+        "preflight_tokens": 8183,
+        "historical_sources_retained": 23,
+        "dependent_sources": 0,
+        "lost_source_ids": [
+          "A04-S01",
+          "AAM0-S03",
+          "D09-S02",
+          "D09-S03",
+          "D15-S03"
+        ],
+        "historical_reference_groups": [],
+        "replay_reference_groups": [],
+        "four_sources": [
+          "ALE0-S04",
+          "APO0-S04"
+        ]
+      }
+    },
+    {
+      "question": "X01",
+      "mode": "C",
+      "audit": {
+        "historical_omitted_groups": 27,
+        "new_review_candidates": 27
+      },
+      "groups": {
+        "sources": 49,
+        "preflight_tokens": 8116,
+        "historical_sources_retained": 49,
+        "dependent_sources": 0,
+        "lost_source_ids": [],
+        "historical_reference_groups": [
+          3,
+          5
+        ],
+        "replay_reference_groups": [
+          3,
+          5
+        ],
+        "four_sources": [
+          "AAM1-S04",
+          "ALE0-S04",
+          "AAM0-S04",
+          "APO0-S04"
+        ]
+      },
+      "pre_audit_groups": {
+        "sources": 45,
+        "preflight_tokens": 7738,
+        "historical_sources_retained": 41,
+        "dependent_sources": 0,
+        "lost_source_ids": [
+          "A04-S03",
+          "AAM0-S02",
+          "AAM0-S03",
+          "ALE1-S03",
+          "ASU2-S04",
+          "ATR1-S01",
+          "AWR1-S01",
+          "XWR2-02"
+        ],
+        "historical_reference_groups": [
+          3,
+          5
+        ],
+        "replay_reference_groups": [
+          3,
+          5
+        ],
+        "four_sources": [
+          "AAM1-S04",
+          "ALE0-S04",
+          "AAM0-S04",
+          "APO0-S04"
+        ]
+      }
+    },
+    {
+      "question": "X03",
+      "mode": "B",
+      "audit": {
+        "historical_omitted_groups": 18,
+        "new_review_candidates": 16
+      },
+      "groups": {
+        "sources": 29,
+        "preflight_tokens": 8141,
+        "historical_sources_retained": 29,
+        "dependent_sources": 0,
+        "lost_source_ids": [],
+        "historical_reference_groups": [
+          2,
+          3
+        ],
+        "replay_reference_groups": [
+          2,
+          3
+        ]
+      },
+      "pre_audit_groups": {
+        "sources": 29,
+        "preflight_tokens": 8165,
+        "historical_sources_retained": 26,
+        "dependent_sources": 0,
+        "lost_source_ids": [
+          "A05-S02",
+          "ALE1-S04",
+          "ASU2-S01"
+        ],
+        "historical_reference_groups": [
+          2,
+          3
+        ],
+        "replay_reference_groups": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "question": "X03",
+      "mode": "C",
+      "audit": {
+        "historical_omitted_groups": 17,
+        "new_review_candidates": 15
+      },
+      "groups": {
+        "sources": 52,
+        "preflight_tokens": 8075,
+        "historical_sources_retained": 52,
+        "dependent_sources": 1,
+        "lost_source_ids": [],
+        "historical_reference_groups": [
+          2,
+          3
+        ],
+        "replay_reference_groups": [
+          2,
+          3
+        ]
+      },
+      "pre_audit_groups": {
+        "sources": 43,
+        "preflight_tokens": 6597,
+        "historical_sources_retained": 43,
+        "dependent_sources": 1,
+        "lost_source_ids": [
+          "A02-S03",
+          "A05-S02",
+          "ALE1-S04",
+          "APO1-S02",
+          "ASU2-S01",
+          "ATR0-S01",
+          "ATR1-S04",
+          "AWR1-S02",
+          "XSH2-07"
+        ],
+        "historical_reference_groups": [
+          2,
+          3
+        ],
+        "replay_reference_groups": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "question": "LE03",
+      "mode": "B",
+      "audit": {
+        "historical_omitted_groups": 4,
+        "new_review_candidates": 4
+      },
+      "groups": {
+        "sources": 9,
+        "preflight_tokens": 2871,
+        "historical_sources_retained": 9,
+        "dependent_sources": 0,
+        "lost_source_ids": [],
+        "historical_reference_groups": [
+          1,
+          2
+        ],
+        "replay_reference_groups": [
+          1,
+          2
+        ],
+        "formal_version_present": true
+      },
+      "pre_audit_groups": {
+        "sources": 7,
+        "preflight_tokens": 2316,
+        "historical_sources_retained": 7,
+        "dependent_sources": 0,
+        "lost_source_ids": [
+          "A05-S04",
+          "ALE1-S03"
+        ],
+        "historical_reference_groups": [
+          1,
+          2
+        ],
+        "replay_reference_groups": [
+          1,
+          2
+        ],
+        "formal_version_present": true
+      }
+    },
+    {
+      "question": "LE03",
+      "mode": "C",
+      "audit": {
+        "historical_omitted_groups": 3,
+        "new_review_candidates": 2
+      },
+      "groups": {
+        "sources": 10,
+        "preflight_tokens": 1842,
+        "historical_sources_retained": 10,
+        "dependent_sources": 0,
+        "lost_source_ids": [],
+        "historical_reference_groups": [
+          1,
+          2
+        ],
+        "replay_reference_groups": [
+          1,
+          2
+        ],
+        "formal_version_present": true
+      },
+      "pre_audit_groups": {
+        "sources": 8,
+        "preflight_tokens": 1465,
+        "historical_sources_retained": 8,
+        "dependent_sources": 0,
+        "lost_source_ids": [
+          "A04-S01",
+          "ALE0-S03"
+        ],
+        "historical_reference_groups": [
+          1,
+          2
+        ],
+        "replay_reference_groups": [
+          1,
+          2
+        ],
+        "formal_version_present": true
+      }
+    },
+    {
+      "question": "X05",
+      "mode": "B",
+      "audit": {
+        "historical_omitted_groups": 27,
+        "new_review_candidates": 27
+      },
+      "groups": {
+        "sources": 29,
+        "preflight_tokens": 8028,
+        "historical_sources_retained": 29,
+        "dependent_sources": 0,
+        "lost_source_ids": [],
+        "historical_reference_groups": [
+          1
+        ],
+        "replay_reference_groups": [
+          1
+        ],
+        "full_negative_present": true
+      },
+      "pre_audit_groups": {
+        "sources": 28,
+        "preflight_tokens": 7949,
+        "historical_sources_retained": 28,
+        "dependent_sources": 0,
+        "lost_source_ids": [
+          "XWR3-06"
+        ],
+        "historical_reference_groups": [
+          1
+        ],
+        "replay_reference_groups": [
+          1
+        ],
+        "full_negative_present": true
+      }
+    },
+    {
+      "question": "X05",
+      "mode": "C",
+      "audit": {
+        "historical_omitted_groups": 21,
+        "new_review_candidates": 20
+      },
+      "groups": {
+        "sources": 62,
+        "preflight_tokens": 8191,
+        "historical_sources_retained": 52,
+        "dependent_sources": 9,
+        "lost_source_ids": [
+          "A00-S03",
+          "A03-S04",
+          "ATR0-S03",
+          "ATR2-S02",
+          "XTR2-04"
+        ],
+        "historical_reference_groups": [
+          1,
+          3
+        ],
+        "replay_reference_groups": [
+          1,
+          3
+        ],
+        "full_negative_present": true
+      },
+      "pre_audit_groups": {
+        "sources": 44,
+        "preflight_tokens": 6014,
+        "historical_sources_retained": 37,
+        "dependent_sources": 3,
+        "lost_source_ids": [
+          "A00-S03",
+          "A03-S04",
+          "ALE1-S03",
+          "ALE2-S03",
+          "APO1-S01",
+          "APO1-S02",
+          "ASU0-S03",
+          "ASU1-S03",
+          "ATR1-S03",
+          "AWR1-S03",
+          "T17-07",
+          "XAM2-06",
+          "XAM2-08",
+          "XLE2-05",
+          "XSH2-02",
+          "XSH2-07",
+          "XSU1-04",
+          "XSU1-05",
+          "XTR1-08",
+          "XWR2-02"
+        ],
+        "historical_reference_groups": [
+          1,
+          3
+        ],
+        "replay_reference_groups": [
+          1,
+          3
+        ],
+        "full_negative_present": true
+      }
+    }
+  ],
+  "support": {
+    "T08-04": {
+      "primary_unit_id": "T08-04",
+      "status": "reply_context",
+      "quotes": [
+        {
+          "unit_id": "T08-04",
+          "start": 0,
+          "end": 58,
+          "quote": "[群聊: 模型应用联调群] 应用协调 · 2026-11-18 10:09\n我补这两列，当前还不是可训练性检查通过。",
+          "speaker": "应用协调"
+        },
+        {
+          "unit_id": "T08-03",
+          "start": 0,
+          "end": 61,
+          "quote": "[群聊: 模型应用联调群] 模型协调 · 2026-11-18 10:06\n输入和实际输出有了，但期望答案、判定说明还缺。",
+          "speaker": "模型协调"
+        },
+        {
+          "unit_id": "T08-02",
+          "start": 0,
+          "end": 54,
+          "quote": "[群聊: 模型应用联调群] 模型协调 · 2026-11-18 10:03\n已收到QA-A27，先检查字段。",
+          "speaker": "模型协调"
+        }
+      ],
+      "offset_basis": "extraction_target_content",
+      "source_id": "project-a-demo-v3",
+      "source_type": "message"
+    },
+    "A04-S01": {
+      "primary_unit_id": "A04-S01",
+      "status": "located",
+      "quotes": [
+        {
+          "unit_id": "A04-S01",
+          "start": 56,
+          "end": 115,
+          "quote": "QA-A27仍缺期望答案和判定说明，覆盖部分翻译与公函模型问题。新摘要SEM-S09和润色POL-F08尚未补入该包。",
+          "chunk_id": "project-a-demo-v3:wiki:A04:8ec7adfd049e5628b40eb8b1816a2abe:0"
+        }
+      ],
+      "offset_basis": "source_chunk",
+      "source_id": "project-a-demo-v3",
+      "source_type": "wiki"
+    },
+    "XTR2-01": {
+      "primary_unit_id": "XTR2-01",
+      "status": "whole_source",
+      "quotes": [
+        {
+          "unit_id": "XTR2-01",
+          "start": 0,
+          "end": 50,
+          "quote": "[群聊: 应用联调群] 应用周工 · 2026-11-20 09:20\nLANG-02已经给预演包。",
+          "speaker": "应用周工"
+        }
+      ],
+      "offset_basis": "extraction_target_content",
+      "source_id": "project-a-demo-v3",
+      "source_type": "message"
+    },
+    "XTR2-08": {
+      "primary_unit_id": "XTR2-08",
+      "status": "whole_source",
+      "quotes": [
+        {
+          "unit_id": "XTR2-08",
+          "start": 0,
+          "end": 55,
+          "quote": "[群聊: 应用联调群] 应用林工 · 2026-11-20 09:27\n把异常分支和模型问题分别留在对应单里。",
+          "speaker": "应用林工"
+        }
+      ],
+      "offset_basis": "extraction_target_content",
+      "source_id": "project-a-demo-v3",
+      "source_type": "message"
+    }
+  },
+  "tests": {
+    "passed": 159,
+    "additional_subtests_passed": 7,
+    "excluded_A": 2,
+    "failed": 1,
+    "preexisting_failure": "test_every_registered_route_is_covered",
+    "reproduced_using_HEAD_server_and_route_tests": true
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "method": "助手逐题对照冻结参考要点、原文及实际输入节选的语义复核；接受等价证据。全部必要要点齐全且无关键错误才计完整答对；与上一轮同口径。非独立盲评。",
+  "scope": "V4长文版/Qwen3-Embedding-0.6B/1024维；本次固定梯队五题BC各一次，无A、失败、重试；运行期间代码与预算冻结。",
+  "results": [
+    {
+      "question_id": "SU04",
+      "mode": "B",
+      "run_id": "8877272b-a47a-4504-b8a6-35755ff5d3e8",
+      "verdict": "correct",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "固定六例之外的新文件不在当前准入范围。",
+          "verdict": "correct",
+          "reason": "明确固定六例及已审核版本的准入边界，现场新文件须单独核对与批准。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "SEM-S09对条件否定的保真尚未解决，新文件应另做内容核查。",
+          "verdict": "correct",
+          "reason": "保留SEM-S09否定、条件保真问题，须按原文核对新文件内容，未以入Skill代替忠实度通过。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "须核对APP-A-12/M-A12和预演入口，不能顺便切换候选模型。",
+          "verdict": "correct",
+          "reason": "明确准入配置为ENV-A-PREVIEW/APP-A-12/M-A12，并要求核对输入与实际操作，不将准入外推其他模型。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "SU04",
+      "mode": "C",
+      "run_id": "fd1c4cb6-45d9-4a13-9df6-649d7a53be6f",
+      "verdict": "correct",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "固定六例之外的新文件不在当前准入范围。",
+          "verdict": "correct",
+          "reason": "明确固定六例及已审核版本的准入边界，现场新文件须单独核对与批准。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "SEM-S09对条件否定的保真尚未解决，新文件应另做内容核查。",
+          "verdict": "correct",
+          "reason": "保留SEM-S09否定、条件保真问题，须按原文核对新文件内容，未以入Skill代替忠实度通过。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "须核对APP-A-12/M-A12和预演入口，不能顺便切换候选模型。",
+          "verdict": "correct",
+          "reason": "明确准入配置为ENV-A-PREVIEW/APP-A-12/M-A12，并要求核对输入与实际操作，不将准入外推其他模型。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "LE03",
+      "mode": "B",
+      "run_id": "0437630b-dd27-4174-9248-c255b29a32db",
+      "verdict": "correct",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "三例只覆盖预演包缺文号默认值问题LET-F06。",
+          "verdict": "correct",
+          "reason": "三例仅证明预演APP-A-12的LET-F06缺文号默认值局部修复。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "LET-S08签署人问题与输出检查仍未完成。",
+          "verdict": "correct",
+          "reason": "LET-S08无依据补签署人及输出检查均未完成，不可整体关闭。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "正式环境模板未升级，版本也不同。",
+          "verdict": "correct",
+          "reason": "明确正式APP-A-11尚未升级模板，预演结果不能证明正式验收。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "LE03",
+      "mode": "C",
+      "run_id": "3bfcf978-bcfc-418b-80e6-96ae0da66998",
+      "verdict": "correct",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "三例只覆盖预演包缺文号默认值问题LET-F06。",
+          "verdict": "correct",
+          "reason": "三例仅证明预演APP-A-12的LET-F06缺文号默认值局部修复。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "LET-S08签署人问题与输出检查仍未完成。",
+          "verdict": "correct",
+          "reason": "LET-S08无依据补签署人及输出检查均未完成，不可整体关闭。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "正式环境模板未升级，版本也不同。",
+          "verdict": "correct",
+          "reason": "明确正式APP-A-11尚未升级模板，预演结果不能证明正式验收。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "WR04",
+      "mode": "B",
+      "run_id": "340e9650-db6e-4c10-a472-24ee322da165",
+      "verdict": "correct",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "校验实际查询与week的11月16—20日窗口一致，排除月初事件。",
+          "verdict": "correct",
+          "reason": "核对period=week实际查询11月16—20日，排除11月5日等月初事件。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "确保IM-W19进入证据并保留PO待确认；旧R-06关闭状态不重复。",
+          "verdict": "correct",
+          "reason": "检查IM-W19进入最终模型与正文，保留PO-47未回签/SH-17待确认，同时对R-06原文转发去重。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "核对实际应用包与完整证据，再评估整体报告。",
+          "verdict": "correct",
+          "reason": "要求实际环境应用包与全链路证据核对，再评估整体报告，未用去重局部通过代替整体准入。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "WR04",
+      "mode": "C",
+      "run_id": "ae86a6c2-dcd0-47ca-9158-5139e4cbd9de",
+      "verdict": "correct",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "校验实际查询与week的11月16—20日窗口一致，排除月初事件。",
+          "verdict": "correct",
+          "reason": "核对period=week实际查询11月16—20日，排除11月5日等月初事件。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "确保IM-W19进入证据并保留PO待确认；旧R-06关闭状态不重复。",
+          "verdict": "correct",
+          "reason": "检查IM-W19进入最终模型与正文，保留PO-47未回签/SH-17待确认，同时对R-06原文转发去重。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "核对实际应用包与完整证据，再评估整体报告。",
+          "verdict": "correct",
+          "reason": "要求实际环境应用包与全链路证据核对，再评估整体报告，未用去重局部通过代替整体准入。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "X05",
+      "mode": "B",
+      "run_id": "189b3b6c-e8dc-47bc-9c54-63684d775516",
+      "verdict": "correct",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "QA-A27覆盖部分翻译公函问题，仍缺期望答案与判定说明；摘要润色新记录未并入。",
+          "verdict": "correct",
+          "reason": "明确QA-A27部分翻译公函覆盖、缺期望答案与判定说明，SEM-S09/POL-F08未入包。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "应用林工负责接入派发等应用环节，补齐样本需应用与测试协作；模型林工负责样本检查与模型评测。",
+          "verdict": "correct",
+          "reason": "区分应用接入派发、应用侧补样本与测试复核、模型样本检查及评测职责。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "两个林工是不同角色，问题包提交不代表可训练性或修复效果通过。",
+          "verdict": "correct",
+          "reason": "明确U21应用林工与U26模型林工为不同负责人，材料补齐后才可完成可训练性检查，没有把提交当作修复通过。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "X05",
+      "mode": "C",
+      "run_id": "e6bc8c75-f3f6-44d6-a390-ccb0de9cd70d",
+      "verdict": "correct",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "QA-A27覆盖部分翻译公函问题，仍缺期望答案与判定说明；摘要润色新记录未并入。",
+          "verdict": "correct",
+          "reason": "明确QA-A27只含部分翻译公函问题、缺期望答案与判定说明，SEM-S09和POL-F08尚未入包。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "应用林工负责接入派发等应用环节，补齐样本需应用与测试协作；模型林工负责样本检查与模型评测。",
+          "verdict": "correct",
+          "reason": "明确U21接入派发和应用侧工作、测试复核，U26样本检查和模型评测；不将团队补包义务擅自归为个人承诺。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "两个林工是不同角色，问题包提交不代表可训练性或修复效果通过。",
+          "verdict": "correct",
+          "reason": "两位林工按不同ID职责区分，提交问题包不代表可训练性检查或修复效果通过。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "X07",
+      "mode": "B",
+      "run_id": "d1456fdd-0386-4678-a824-fd7cce587e25",
+      "verdict": "correct",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "ROUTE-03确认显式摘要六例，不是六类入口全部验证，隐式摘要仍漏调。",
+          "verdict": "correct",
+          "reason": "ROUTE-03仅确认显式摘要六例，隐式2/4和内容问题仍在，缺全入口覆盖。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "LANG-02确认翻译TR-X02，TR-X03以及摘要公函目标语言路径尚无对应回归。",
+          "verdict": "correct",
+          "reason": "LANG-02仅确认TR-X02，TR-X03和摘要公函目标语言路径缺回归。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "其他Skill只有潜在配置影响，需按实际入口补回归，不能断言全部修好或全部受损。",
+          "verdict": "correct",
+          "reason": "影响分析覆盖六类Skill并按实际入口、版本、模型补回归，未把共享补丁当成效果共享。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    },
+    {
+      "question_id": "X07",
+      "mode": "C",
+      "run_id": "031f7b06-f713-4af9-8fb8-934bb7e5bd3b",
+      "verdict": "correct",
+      "facts": [
+        {
+          "fact_no": 1,
+          "reference_fact": "ROUTE-03确认显式摘要六例，不是六类入口全部验证，隐式摘要仍漏调。",
+          "verdict": "correct",
+          "reason": "ROUTE-03仅确认显式摘要六例，隐式2/4和内容问题仍在，缺全入口覆盖。"
+        },
+        {
+          "fact_no": 2,
+          "reference_fact": "LANG-02确认翻译TR-X02，TR-X03以及摘要公函目标语言路径尚无对应回归。",
+          "verdict": "correct",
+          "reason": "LANG-02仅确认TR-X02，TR-X03和摘要公函目标语言路径缺回归。"
+        },
+        {
+          "fact_no": 3,
+          "reference_fact": "其他Skill只有潜在配置影响，需按实际入口补回归，不能断言全部修好或全部受损。",
+          "verdict": "correct",
+          "reason": "影响分析覆盖六类Skill并按实际入口、版本、模型补回归，未把共享补丁当成效果共享。"
+        }
+      ],
+      "forbidden_errors_observed": []
+    }
+  ]
+}

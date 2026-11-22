@@ -223,6 +223,42 @@ Edges connect any two nodes where the semantics permit. Each edge stores `(sourc
 | **ABOUT** | fact → entity | The fact concerns this entity (subject or object). |
 | **PART_OF** | chunk → scope | This chunk belongs to this scope (conversation, document, etc.). |
 
+A primary `STATES` edge may carry a `source_quote` in its properties. The quotation
+must occur exactly once in the extraction target. Its half-open character offsets
+refer to the extraction target body, including any loader framing. Supporting
+chunk edges do not inherit those offsets. Existing edges without this annotation
+remain readable. The source evidence query can locate supporting sentences in a
+document or follow explicit replies for a context-dependent message. The target
+and its contextual sources retain separate identities and quotations.
+
+The source-aware v7 extractor asks for the target's own words, with conditions
+and negation intact. A reply establishes who was addressed. Recording an owner
+requires a named actor or a commitment in the target. For a delivery or binding,
+the extractor distinguishes the item, its destination and the actor. These rules
+apply to new extraction.
+
+At query time, a caller can supply visible source units and ask for evidence
+for a set of candidates. The reader resolves each hit's stored `ABOUT` edges,
+including participants outside the bounded retrieval response. It checks
+participants against the source quotations. A person link also requires an
+identifiable speaker at the primary source. For long documents and minutes,
+the reader locates complete sentences for eligible facts and retains adjacent
+qualifications. An unlocated eligible fact causes the candidate to use its
+full text. For chat, the reader retains the message and follows explicit replies
+when an identifier or a reference needs earlier context. The result carries
+the source IDs, character spans and reply dependencies used to assemble the
+answer input. The same reader works with existing facts lacking a stored
+quotation. [Source and participant lookup](../kl_graph/query/source_graph.py) · [Evidence lookup](../kl_graph/query/fact_evidence.py)
+
+For a question about combining counts, the query layer can compare named
+groups using stored status facts and the source passages actually selected for
+the answer. It reports the counting unit, check and source of each observation.
+The acceptance criterion and evidence of common or distinct sample identity
+are separate. A distinct-sample total requires complete passed-sample rosters
+or an explicit disjointness statement and counts of samples. The comparison
+is scoped to this read and consumes spare answer budget after ordinary evidence
+selection. It is never persisted as a membership edge.
+
 ### Similarity Edges (created by periodic improvement)
 
 | Edge | Source → Target | Semantics |

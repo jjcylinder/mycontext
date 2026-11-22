@@ -1,0 +1,38 @@
+{
+  "requested_order": "C first, then B",
+  "completed_before_handoff": [
+    [
+      "TR04",
+      "B"
+    ],
+    [
+      "TR04",
+      "C"
+    ],
+    [
+      "AM03",
+      "B"
+    ],
+    [
+      "AM03",
+      "C"
+    ],
+    [
+      "PO03",
+      "B"
+    ],
+    [
+      "PO03",
+      "C"
+    ]
+  ],
+  "already_submitted_X01": {
+    "C": "55569035-290d-4ab6-8269-988d8e248895",
+    "B": "f74ff63e-ccc1-4524-b41c-65662e559811"
+  },
+  "new_request_order": [
+    "X03 C",
+    "X03 B"
+  ],
+  "note": "X01 requests were already submitted before the old scheduler was stopped; they are preserved, not duplicated. No new B submitted until all C complete."
+}

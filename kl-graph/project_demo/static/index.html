@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>重点项目进展核查</title>
+    <link rel="stylesheet" href="/assets/app.css" />
+    <script defer src="/assets/app.js"></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <div><div class="brand-name">重点项目进展核查</div><div class="brand-caption">项目工作台</div></div>
+      </div>
+    </header>
+
+    <div class="workspace">
+      <aside class="sidebar" aria-label="项目资料">
+        <div class="scope-panel">
+          <div class="scope-heading"><span>项目</span><strong>项目A</strong></div>
+          <label class="field-label" for="profile-select">数据范围</label>
+          <select id="profile-select" disabled><option>正在读取数据配置</option></select>
+          <p class="scope-status" id="profile-status" aria-live="polite"></p>
+          <button type="button" class="button secondary import-button" id="import-button" disabled>导入资料</button>
+        </div>
+        <div class="source-panel">
+          <div class="sidebar-heading"><h2>资料来源</h2><span id="source-count"></span></div>
+          <div id="source-list" class="source-list"><p class="muted">导入后可浏览来源。</p></div>
+          <button type="button" class="button quiet" id="more-sources" hidden>加载更多来源</button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="tab-list" role="tablist" aria-label="工作台视图">
+          <button type="button" id="tab-check" role="tab" aria-selected="true" aria-controls="check-panel">项目核查</button>
+          <button type="button" id="tab-context" role="tab" aria-selected="false" aria-controls="context-panel" tabindex="-1">上下文查看</button>
+          <button type="button" id="tab-compare" role="tab" aria-selected="false" aria-controls="compare-panel" tabindex="-1">方案对比</button>
+        </div>
+
+        <section class="panel" id="check-panel" role="tabpanel" aria-labelledby="tab-check">
+          <div class="page-heading">
+            <h1>项目核查</h1>
+            <p>提问并查看支撑结论的群聊、会议和工作资料。</p>
+          </div>
+          <form id="check-form" class="card question-card">
+            <label for="question" class="field-label">核查问题</label>
+            <textarea id="question" rows="3" maxlength="3000" required placeholder="例如：各应用 Skill 哪些进展已验证，还有哪些待协调事项？"></textarea>
+            <div class="examples" aria-label="示例问题">
+              <button type="button" class="example" data-question="请梳理项目A各应用 Skill 的关键进展、重要变更、未决问题和待协调事项，并说明各自可演示范围。">六类 Skill 例会核查</button>
+              <button type="button" class="example" data-question="数据团队说晨报所需消息已补齐，为什么现有晨报还不能直接作为例会依据？">晨报的证据与时效</button>
+              <button type="button" class="example" data-question="应用包已发布，为什么项目A正式环境不能直接沿用预演结果？">预演和正式环境</button>
+            </div>
+            <div class="form-actions">
+              <div class="mode-field"><label for="mode-select">核查方案</label><select id="mode-select"><option value="C">企业上下文</option><option value="B">原文检索</option><option value="A">全量原文</option></select></div>
+              <button type="submit" class="button primary" id="check-button" disabled>开始核查</button>
+            </div>
+          </form>
+          <div id="check-result" class="result-area" aria-live="polite"></div>
+        </section>
+
+        <section class="panel" id="context-panel" role="tabpanel" aria-labelledby="tab-context" hidden>
+          <div class="page-heading"><h1>上下文查看</h1><p>查看从资料中提取的实体、关系和事实，以及对应的原文证据。</p></div>
+          <div class="card context-card">
+            <div class="context-toolbar">
+              <div class="context-switch" aria-label="上下文类型">
+                <button type="button" data-view="graph" aria-pressed="true">关系图</button>
+                <button type="button" data-view="entities" aria-pressed="false">实体</button>
+                <button type="button" data-view="relations" aria-pressed="false">关系</button>
+                <button type="button" data-view="facts" aria-pressed="false">事实</button>
+              </div>
+              <label class="search-field"><span class="visually-hidden">筛选上下文</span><input type="search" id="context-search" placeholder="按名称或内容筛选" /></label>
+            </div>
+            <div id="context-status" class="context-status" role="status"></div>
+            <div class="context-layout">
+              <div class="context-list-column"><div id="context-list" class="context-list"></div><button type="button" class="button quiet" id="more-context" hidden>加载更多</button></div>
+              <div class="context-main">
+                <section id="context-graph" class="context-graph" aria-label="上下文关系图" hidden></section>
+                <div id="context-detail" class="context-detail"><p class="muted">选择一项查看详情和依据。</p></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="compare-panel" role="tabpanel" aria-labelledby="tab-compare" hidden>
+          <div class="page-heading"><h1>方案对比</h1><p>使用同一数据范围和问题，比较原文检索与企业上下文的答案、证据和耗时。</p></div>
+          <form id="compare-form" class="card compare-form">
+            <label class="field-label" for="compare-question">对比问题</label>
+            <textarea id="compare-question" rows="2" maxlength="3000" required placeholder="输入需要对比的同一个问题"></textarea>
+            <div class="form-actions"><button type="submit" class="button primary" id="compare-button" disabled>运行可用方案</button></div>
+          </form>
+          <div class="compare-grid" id="compare-results" aria-live="polite"></div>
+        </section>
+      </main>
+    </div>
+
+    <dialog class="evidence-dialog" id="evidence-dialog" aria-labelledby="evidence-heading">
+      <header class="drawer-header">
+        <h2 id="evidence-heading">原文证据</h2>
+        <div class="drawer-actions">
+          <button type="button" class="button secondary" id="back-evidence" hidden>返回原文列表</button>
+          <button type="button" class="button secondary" id="close-evidence">关闭</button>
+        </div>
+      </header>
+      <div class="drawer-content" id="evidence-content" aria-live="polite"></div>
+    </dialog>
+  </body>
+</html>
