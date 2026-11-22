@@ -1,0 +1,87 @@
+{
+  "run_id": "88aea9b2-9898-4a12-a39d-36e7cd8c1699",
+  "status": "completed",
+  "stage": "completed",
+  "error": null,
+  "created_at": "2026-11-22T18:05:46.418475+00:00",
+  "kind": "import",
+  "profile": "app_focus",
+  "dataset_id": "project-a-v5-natural-app_focus-4f98497fe04be748",
+  "updated_at": "2026-11-22T19:04:39.430896+00:00",
+  "import_stats": {
+    "dataset_id": "project-a-v5-natural-app_focus-4f98497fe04be748",
+    "digest": "4f98497fe04be748d4a1e66ac5320ba00eb55a87c5d45f5cbdb4fb7575aa4a4a",
+    "profile": "app_focus",
+    "record_count": 349,
+    "source_counts": {
+      "chat": 208,
+      "meeting": 21,
+      "document": 120
+    },
+    "cutoff": "2026-11-20T23:59:00+08:00",
+    "native": {
+      "native_run_id": "138f9450-3b3c-4f4b-90e4-f7224d43dc9d",
+      "counts": {
+        "units_discovered": 349,
+        "units_skipped": 0,
+        "units_processed": 349,
+        "chunks_created": 161,
+        "extraction_total": 349,
+        "extraction_succeeded": 349,
+        "extraction_failed": 0
+      },
+      "knowledge": {
+        "messages": 20,
+        "entities": 198,
+        "facts": 1558,
+        "edges": 3310
+      },
+      "elapsed_ms": 3873173,
+      "graph_backend": "sqlite",
+      "vector_backend": "zvec"
+    }
+  },
+  "native_counts": {
+    "units_discovered": 349,
+    "units_skipped": 0,
+    "units_processed": 349,
+    "chunks_created": 161,
+    "extraction_total": 349,
+    "extraction_succeeded": 349,
+    "extraction_failed": 0
+  },
+  "result": {
+    "dataset_id": "project-a-v5-natural-app_focus-4f98497fe04be748",
+    "digest": "4f98497fe04be748d4a1e66ac5320ba00eb55a87c5d45f5cbdb4fb7575aa4a4a",
+    "profile": "app_focus",
+    "record_count": 349,
+    "source_counts": {
+      "chat": 208,
+      "meeting": 21,
+      "document": 120
+    },
+    "cutoff": "2026-11-20T23:59:00+08:00",
+    "native": {
+      "native_run_id": "138f9450-3b3c-4f4b-90e4-f7224d43dc9d",
+      "counts": {
+        "units_discovered": 349,
+        "units_skipped": 0,
+        "units_processed": 349,
+        "chunks_created": 161,
+        "extraction_total": 349,
+        "extraction_succeeded": 349,
+        "extraction_failed": 0
+      },
+      "knowledge": {
+        "messages": 20,
+        "entities": 198,
+        "facts": 1558,
+        "edges": 3310
+      },
+      "elapsed_ms": 3873173,
+      "graph_backend": "sqlite",
+      "vector_backend": "zvec"
+    },
+    "graph_status": "ready"
+  }
+}

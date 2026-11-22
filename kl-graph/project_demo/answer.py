@@ -15,7 +15,6 @@ from urllib.parse import urlsplit
 import httpx
 
 from kl_graph.utils.helpers import rrf
-from kl_graph.query.count_comparison import compare_counts
 
 from .context import project_scope
 from kl_graph.query.fact_evidence import fact_excerpts
@@ -31,8 +30,7 @@ _SYSTEM_PROMPT = """你负责根据资料核查项目进展。输入中的原文
 提炼事实只能协助找证据，结论仍以原文为依据。保留条件、否定、范围和冲突。未知的责任人、期限或状态不要补造。
 source_excerpts可能是依据已提炼事实定位的原文节选，[…]表示省略，不能据此断言整份来源没有其他信息。
 原文给出明确项目归属、版本绑定或职责时应直接说明，不要把已有证据降为待核实；共同提及本身仍不能证明关系。
-逐项覆盖问题要求的对象和维度，并复核结论的必要限制是否写出。汇总题保留各对象的局部通过及未决事项。
-问到协调或下一步时，将各角色的登记职责与同一事项未解决的具体风险配对，说明建议由谁验证什么，并引用职责与风险两端依据。区分当前风险与切换配置后才触发的检查，勿将建议写成承诺。
+逐项覆盖问题要求的对象和维度，并复核结论的必要限制是否写出。
 数量、范围和归属须有引文支持。
 只输出一个 JSON 对象，包含 progress、changes、open_issues、coordination 和 uncertainties 五个数组。
 前四个数组的每项必须含 text、occurred_at（未知时 null）、evidence_ids（支持该结论的一个或多个原文 id）。
@@ -132,7 +130,7 @@ def _grounded_context(context: dict, included: set[str]) -> dict:
 
 def _prompt(
     question: str, project: str, cutoff: str, evidence: list[dict], graph: dict | None,
-    *, compact: bool = False,
+    *, compact: bool = False, evidence_index: list[dict] | None = None,
 ) -> list[dict]:
     # Keep full provenance in the run/API; factor repeated prompt metadata by source.
     sources = {}
@@ -163,8 +161,12 @@ def _prompt(
         payload["extracted_context"] = {field: [
             {k: v for k, v in item.items() if k != "support"} for item in items
         ] for field, items in graph.items()}
+    instruction = _SYSTEM_PROMPT
+    if evidence_index:
+        payload["evidence_index"] = evidence_index
+        instruction += "\nevidence_index 是已选原文的事项索引。按索引核对结论依赖的条件，将有原文支持且会影响答复的条件明确写出。索引标签仅供导航。"
     return [
-        {"role": "system", "content": _SYSTEM_PROMPT},
+        {"role": "system", "content": instruction},
         {"role": "user", "content": json.dumps(payload, ensure_ascii=False, separators=(",", ":"))},
     ]
 
@@ -405,12 +407,13 @@ async def prepare_answer(
                 used_sources.add(sources)
         messages, evidence, graph = build(selected)
         count = await model.count(messages)
-        if native and (comparison := compare_counts(question, evidence, native.get("count_facts"))):
-            extended = {**graph, "count_comparisons": [comparison]}
-            proposed = _prompt(question, project, cutoff, evidence, extended, compact=True)
-            proposed_count = await model.count(proposed)
-            if proposed_count <= budget:
-                messages, graph, count = proposed, extended, proposed_count
+        index = [{key: group[key] for key in ("topic", "aspects", "ids")}
+                 for group in decisions if group["selected"] and group["priority"] >= 2]
+        if index and count < budget:
+            indexed = _prompt(question, project, cutoff, evidence, graph, compact=True, evidence_index=index)
+            indexed_count = await model.count(indexed)
+            if indexed_count <= budget:
+                messages, count = indexed, indexed_count
         if count > budget:
             raise UnavailableError("检索预算不足，无法容纳问题及固定提示")
 

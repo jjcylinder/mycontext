@@ -22,10 +22,7 @@ aspects（本组支持的核查事项名称数组）、reason（简短理由）�
 引用、回复或互相补足的记录可组成一个证据组；单条足够时使用单条。
 组内每条都应有必要性，重复内容优选信息更完整的一条。不要把同一对象的所有资料打成大组。
 一组只保留支持一个或几个紧密相关结论的最小配套原文；同一原文可支持不同组。
-汇总问题应覆盖材料中不同业务对象的完成、未决、适用范围和责任。
-topic使用原文中稳定的业务对象名或编号，不要把测试、模型、发布等事项拼进同一对象的主题名。
-汇总多个业务对象时，topic优先使用问题要求的一级业务对象名称；不要把每个缺陷、用例编号都拆成独立topic。
-aspects从以下事项中选择：完成状态、未决问题、适用范围、责任分工、变更、归属、冲突。
+topic使用原文中稳定的业务对象名或编号。aspects按问题和原文填写，同一事项使用一致的名称。
 同一业务对象使用同一topic；直接回答问题的必要限制与主结论同为priority=3。
 只列相关证据，按重要性排序，最多20组。不得只覆盖高频对象而遗漏问题要求的其他对象。
 图谱线索仅用于找配套原文，共同来源或共同提及不证明业务关系。结论以原文为准。
@@ -57,29 +54,6 @@ def _compact_sources(message: dict) -> dict:
     payload["records"] = [[row.get(field) for field in columns] for row in rows]
     payload["sources"] = {ref: {"source_id": key[0], "title": key[1]} for key, ref in sources.items()}
     return {"role": "user", "content": json.dumps(payload, ensure_ascii=False, separators=(",", ":"))}
-
-
-def audit_candidates(initial, ranked, records, project):
-    """Keep direct claims, broken bundles and qualifications without a scoped counterpart."""
-    selected = {key for group in ranked for key in group["ids"]}
-    covered = {}
-    for group in ranked:
-        for aspect in group["aspects"]:
-            covered.setdefault((group["topic"], aspect), set()).update(group["ids"])
-    dropped = [g for g in initial if g["priority"] >= 2 and not set(g["ids"]) <= selected]
-    review = []
-    for group in dropped:
-        missing = set(group["ids"]) - selected
-        scoped = any(project_scope(records[key], project) == "requested" for key in missing)
-        if group["priority"] == 3 or selected.intersection(group["ids"]):
-            review.append(group)
-            continue
-        for aspect in group["aspects"]:
-            peers = covered.get((group["topic"], aspect), set())
-            if not peers or (scoped and not any(project_scope(records[key], project) == "requested" for key in peers)):
-                review.append(group)
-                break
-    return dropped, review
 
 
 async def rank_evidence(model, question: str, project: str, cutoff: str,
@@ -267,7 +241,8 @@ async def rank_evidence(model, question: str, project: str, cutoff: str,
     # rather than trusting topic/aspect labels or the ranker's own summary.
     before_audit = deepcopy(groups)
     selected_ids = {key for group in groups for key in group["ids"]}
-    dropped, omitted = audit_candidates(batch_groups, groups, records, project)
+    omitted = [group for group in batch_groups
+               if group["priority"] >= 2 and not selected_ids.issuperset(group["ids"])]
     joint_by_id = {row["id"]: row for row in joint}
     selected_rows = [row for row in joint if row["id"] in selected_ids]
 
@@ -279,7 +254,8 @@ async def rank_evidence(model, question: str, project: str, cutoff: str,
             "\n这是证据遗漏审计。selected_ids中的证据已保留，omitted_groups是初筛认为必要、"
             "但最终复核未完整保留的证据组。初筛理由仅作线索，不是事实。逐项对照实际原文，"
             "检查遗漏组是否提供尚未覆盖的必要事实、否定、例外、范围、版本、时间或责任。"
-            "尤其检查归属明确的来源是否被缺上下文的聊天替代，不能仅凭结论措辞相似视为等价。"
+            "只有已选原文足以支持同一结论及其成立条件时才算覆盖，主题或事项标签相同不足以判定重复。"
+            "核对归属明确的来源是否被缺上下文的聊天替代。"
             "只输出需要补入的最小配套证据组，已充分支持、重复或无关的组不要补入；无遗漏返回空groups。"
             "不得改写或删除已选组，补充组必须含至少一个尚未保留的ID，可带已有ID补足指代或出处。"
             "按必要性排序，覆盖所有必要遗漏，不受前述最多20组限制。"
@@ -326,7 +302,7 @@ async def rank_evidence(model, question: str, project: str, cutoff: str,
             added.append(group)
     return {"groups": groups, "batch_groups": batch_groups, "calls": calls,
             "pre_audit_groups": before_audit,
-            "coverage_audit": {"omitted_groups": len(dropped), "review_candidates": len(omitted), "review_batches": len(audit_windows),
+            "coverage_audit": {"omitted_groups": len(omitted), "review_candidates": len(omitted), "review_batches": len(audit_windows),
                                "added_groups": added, "unreviewed_retained_groups": retained},
             "global_ranking": global_status, "global_input_count": global_input_count,
             "global_compacted": global_compacted, "global_candidate_count": len(joint),

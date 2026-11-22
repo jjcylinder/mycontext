@@ -1,0 +1,128 @@
+{
+  "completed": 40,
+  "questions": 20,
+  "total_points_per_mode": 64,
+  "rubric": "V5-rubric-1",
+  "results": {
+    "B": {
+      "points": 48,
+      "all_points": 9,
+      "passed": 8,
+      "avg_seconds": 130.3,
+      "median_seconds": 105.3
+    },
+    "C": {
+      "points": 50,
+      "all_points": 10,
+      "passed": 9,
+      "avg_seconds": 113.5,
+      "median_seconds": 98.1
+    }
+  },
+  "both_pass": [
+    "SU03",
+    "LE03",
+    "LE04",
+    "WR03",
+    "PO04",
+    "X02"
+  ],
+  "only_B": [
+    "X03",
+    "X04"
+  ],
+  "only_C": [
+    "AM03",
+    "AM04",
+    "X06"
+  ],
+  "both_fail": [
+    "TR03",
+    "TR04",
+    "SU04",
+    "WR04",
+    "PO03",
+    "X01",
+    "X05",
+    "X07",
+    "X08"
+  ],
+  "tiers": {
+    "默认五题": {
+      "questions": [
+        "TR04",
+        "AM03",
+        "PO03",
+        "X01",
+        "X03"
+      ],
+      "B": 1,
+      "C": 1
+    },
+    "第二梯队": {
+      "questions": [
+        "SU04",
+        "LE03",
+        "WR04",
+        "X05",
+        "X07"
+      ],
+      "B": 1,
+      "C": 1
+    },
+    "其余十题": {
+      "questions": [
+        "TR03",
+        "SU03",
+        "AM04",
+        "LE04",
+        "WR03",
+        "PO04",
+        "X02",
+        "X04",
+        "X06",
+        "X08"
+      ],
+      "B": 6,
+      "C": 7
+    }
+  },
+  "elapsed_seconds": 4909.1,
+  "comparison_to_previous": {
+    "B": {
+      "previous_passed": 12,
+      "newly_passed": [
+        "X04"
+      ],
+      "newly_failed": [
+        "AM04",
+        "TR03",
+        "WR04",
+        "X07",
+        "X08"
+      ]
+    },
+    "C": {
+      "previous_passed": 17,
+      "newly_passed": [
+        "WR03"
+      ],
+      "newly_failed": [
+        "SU04",
+        "TR03",
+        "TR04",
+        "X01",
+        "X03",
+        "X04",
+        "X05",
+        "X07",
+        "X08"
+      ]
+    }
+  },
+  "mean_final_input_tokens": {
+    "B": 5941.5,
+    "C": 6666.5
+  },
+  "build_seconds": 3873.173
+}

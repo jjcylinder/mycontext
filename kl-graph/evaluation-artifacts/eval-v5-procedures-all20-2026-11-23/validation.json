@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "requests": 40,
+    "supplied_records_across_runs": 850,
+    "cited_answer_items": 392,
+    "completed": 40
+  },
+  "all_citations_in_supplied_evidence": true,
+  "supplied_evidence_within_cutoff_and_matches_originals": true,
+  "no_code_drift": true,
+  "order_per_question": [
+    "B",
+    "C"
+  ],
+  "all_final_outputs_reparsed_with_their_actual_visible_excerpts": true
+}

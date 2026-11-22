@@ -1,0 +1,91 @@
+{
+  "completed": 40,
+  "questions": 20,
+  "total_points_per_mode": 64,
+  "rubric": "V5-rubric-1",
+  "results": {
+    "B": {
+      "points": 51,
+      "all_points": 12,
+      "passed": 12,
+      "avg_seconds": 136.9,
+      "median_seconds": 111.9
+    },
+    "C": {
+      "points": 62,
+      "all_points": 18,
+      "passed": 17,
+      "avg_seconds": 118.4,
+      "median_seconds": 117.2
+    }
+  },
+  "both_pass": [
+    "TR03",
+    "SU03",
+    "AM04",
+    "LE03",
+    "LE04",
+    "PO04",
+    "X02",
+    "X03",
+    "X07",
+    "X08"
+  ],
+  "only_B": [
+    "WR03",
+    "WR04"
+  ],
+  "only_C": [
+    "TR04",
+    "SU04",
+    "AM03",
+    "X01",
+    "X04",
+    "X05",
+    "X06"
+  ],
+  "both_fail": [
+    "PO03"
+  ],
+  "tiers": {
+    "默认五题": {
+      "questions": [
+        "TR04",
+        "AM03",
+        "PO03",
+        "X01",
+        "X03"
+      ],
+      "B": 1,
+      "C": 4
+    },
+    "第二梯队": {
+      "questions": [
+        "SU04",
+        "LE03",
+        "WR04",
+        "X05",
+        "X07"
+      ],
+      "B": 3,
+      "C": 4
+    },
+    "其余十题": {
+      "questions": [
+        "TR03",
+        "SU03",
+        "AM04",
+        "LE04",
+        "WR03",
+        "PO04",
+        "X02",
+        "X04",
+        "X06",
+        "X08"
+      ],
+      "B": 8,
+      "C": 9
+    }
+  },
+  "elapsed_seconds": 5116.1
+}

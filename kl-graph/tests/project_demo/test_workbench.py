@@ -54,6 +54,21 @@ async def test_answer_baselines_share_scope_and_retrieval_budget(monkeypatch):
 
 
 @pytest.mark.asyncio
+async def test_legacy_count_facts_do_not_change_answer_input(monkeypatch):
+    monkeypatch.setattr(answer_module, "rank_evidence", fake_rank)
+    records = {"report": record("report", "甲组2个样例功能验收通过；乙组2个样例功能验收通过。",
+                                source_type="document", project_hint="项目A")}
+    legacy = {"source_evidence": {"dependencies": {}, "audit": {}, "projections": {},
+                                  "count_facts": {"report": [["甲组", 2, "个样例", "功能验收"],
+                                                             ["乙组", 2, "个样例", "功能验收"]]}}}
+    args = ("甲组和乙组合计涉及多少个样例？", "项目A", "2026-11-20", records)
+    b, *_ = await prepare_answer(settings(), "B", *args, vector_refs=["report"])
+    c, evidence, _, _ = await prepare_answer(settings(), "C", *args, legacy, vector_refs=["report"])
+    assert [row["id"] for row in evidence] == ["report"]
+    assert c == b
+
+
+@pytest.mark.asyncio
 async def test_b_and_c_share_hybrid_originals_and_only_c_adds_graph(tmp_path, monkeypatch):
     monkeypatch.setattr(answer_module, "rank_evidence", fake_rank)
     records = {
@@ -138,6 +153,8 @@ async def test_compact_input_preserves_full_text_time_scope_and_source_lookup(mo
     )
     payload = json.loads(messages[1]["content"])
     assert len(payload["sources"]) == 1
+    assert {i for group in payload["evidence_index"] for i in group["ids"]} == set(rows)
+    assert all(set(group) == {"topic", "aspects", "ids"} for group in payload["evidence_index"])
     for excerpt in payload["source_excerpts"]:
         original = rows[excerpt["id"]]
         assert excerpt["content"] == original["content"]
@@ -146,7 +163,8 @@ async def test_compact_input_preserves_full_text_time_scope_and_source_lookup(mo
         assert payload["sources"][excerpt["source"]]["source_id"] == original["source_id"]
     assert all(row["source_locator"] for row in evidence)
     assert coverage["preflight_tokens"] < await settings().count(
-        answer_module._prompt("发布范围", "项目A", "2026-11-20", evidence, {}))
+        answer_module._prompt("发布范围", "项目A", "2026-11-20", evidence, {},
+                              evidence_index=payload["evidence_index"]))
 
 
 @pytest.mark.asyncio
@@ -285,7 +303,14 @@ async def test_selected_reply_charged_with_its_grounding_sources(monkeypatch):
                                                     rows, graph, vector_refs=["reply"])
     assert [row["id"] for row in evidence] == ["reply", "parent"]
     assert coverage["evidence_selection"]["packed_dependencies"] == {"reply": ["parent"]}
-    smaller = replace(model, evidence_budget=coverage["preflight_tokens"] - 1)
+    base = answer_module._prompt("什么范围", "项目A", "2026-11-20", evidence, {}, compact=True)
+    base_tokens = await model.count(base)
+    assert base_tokens < coverage["preflight_tokens"]
+    exact = replace(model, evidence_budget=base_tokens)
+    messages, same, _, _ = await prepare_answer(exact, "C", "什么范围", "项目A", "2026-11-20",
+                                               rows, graph, vector_refs=["reply"])
+    assert messages == base and same == evidence
+    smaller = replace(model, evidence_budget=base_tokens - 1)
     _, evidence, _, _ = await prepare_answer(smaller, "C", "什么范围", "项目A", "2026-11-20",
                                               rows, graph, vector_refs=["reply"])
     assert not evidence

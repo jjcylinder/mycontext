@@ -218,21 +218,32 @@ async def test_more_aspect_labels_do_not_override_semantic_order():
 
 
 @pytest.mark.asyncio
-async def test_already_covered_supplement_does_not_trigger_another_model_call():
-    rows = {key: {"title": "来源", "source_id": "doc", "content": key} for key in ("primary", "extra")}
-    calls = []
+async def test_audit_compares_same_label_sources_before_treating_a_condition_as_covered():
+    texts = {"primary": "夜间访客须登记。", "duplicate": "夜间来访者需要登记。",
+             "extra": "夜间送货须预约。", "noise": "大楼去年落成。"}
+    rows = {key: {"title": "通知", "source_id": "doc", "content": text} for key, text in texts.items()}
+    stages = []
     def group(key, priority):
-        return {"ids": [key], "priority": priority, "topic": "验收", "aspects": ["范围"], "reason": "范围"}
+        return {"ids": [key], "priority": priority, "topic": "大楼", "aspects": ["夜间通行"], "reason": texts[key]}
     async def count(messages):
         return 10
     async def complete(messages):
-        calls.append(messages)
-        groups = [group("primary", 3)]
-        if len(calls) == 1:
-            groups.append(group("extra", 2))
+        payload = json.loads(messages[1]["content"])
+        if "omitted_groups" in payload:
+            stages.append("audit")
+            assert payload["selected_ids"] == ["primary"]
+            assert [g["ids"] for g in payload["omitted_groups"]] == [["duplicate"], ["extra"]]
+            assert {r["content"] for r in payload["records"]} == {texts[k] for k in ("primary", "duplicate", "extra")}
+            groups = [group("extra", 2)]
+        elif not stages:
+            stages.append("initial")
+            groups = [group("primary", 3), group("duplicate", 2), group("extra", 2), group("noise", 1)]
+        else:
+            stages.append("global")
+            groups = [group("primary", 3)]
         return json.dumps({"groups": groups}), {}
     model = SimpleNamespace(context_window=1000, max_output=20, count=count, complete=complete)
-    result = await rank_evidence(model, "验收范围", "项目A", "2026-11-20", rows, list(rows))
-    assert len(calls) == 2
-    assert result["coverage_audit"]["omitted_groups"] == 1
-    assert result["coverage_audit"]["review_candidates"] == 0
+    result = await rank_evidence(model, "夜间通行有哪些要求？", "项目A", "2026-11-20", rows, list(rows))
+    assert stages == ["initial", "global", "audit"]
+    assert result["coverage_audit"]["review_candidates"] == 2
+    assert [g["ids"] for g in result["groups"]] == [["primary"], ["extra"]]

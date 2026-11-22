@@ -2,6 +2,22 @@
 
 本文对照原分析中「三、这些上下文如何存储和持续更新」下的「4．完整工作图谱：节点、边和属性」及其 4.1–4.7 节。原分析和当前工作区使用相同的上游基线 `23c6f609fb1d392f922e19dae7bee174075a2569`。本文最后也简要对照原分析的「四、Agent 如何使用这些信息」。[原分析第 4 节](</mnt/c/Users/jcyli/Downloads/MyContext_主要场景与具体实现分析.md:243>)
 
+## 当前 V5 实现与评测基线（2026-11-23）
+
+当前工作区已恢复到 C 整题通过 **17/20** 的版本。本轮使用 V5 自然表述版的应用核查材料（`app_focus`）。349 条原始记录包括 208 条群聊、120 段文档和 21 段会议记录；原生索引包含 161 个片段、926 条事实、190 个实体和 2,663 条边。回答模型别名为 `chatgpt-codex-default`，原文向量模型为本地 Qwen3-Embedding-0.6B（1,024 维）。B、C 的最终输入预算均为 8,192 token。版本可按该轮清单中的 27 个源码哈希核对。[导入记录](kl-graph/evaluation-artifacts/eval-v5-all20-2026-11-23/import.json) · [配置与源码清单](kl-graph/evaluation-artifacts/eval-v5-all20-2026-11-23/manifest.json)
+
+| V5 正式评测 | B 原文混合检索 | C 企业上下文 |
+| --- | ---: | ---: |
+| 必要要点得分 | 51/64 | 62/64 |
+| 必要要点全部答对 | 12/20 | 18/20 |
+| 整题通过 | 12/20 | 17/20 |
+
+按冻结口径 `V5-rubric-1`，整题通过还要求答卷没有与材料冲突或缺乏依据的实质性附加结论。每题先 B 后 C，各运行一次。7 题仅 C 通过，2 题仅 B 通过。这个差距衡量的是事实定位、关联查询、选证与作答共同作用后的端到端结果。单独衡量共享实体查询时，已有两题开关对照：X06 从 2/3 升至 3/3，TR03 两组均为 2/3。X06 的关键来源在两组的复核输入中都出现过，开启查询后才与配套材料一起入选。[20 题正式报告](kl-graph/evaluation-artifacts/eval-v5-all20-2026-11-23/report.md) · [关联查询开关对照](kl-graph/evaluation-artifacts/eval-v5-association-tr03-x06/report.md)
+
+**当前三个失分点。** WR03 的三个要点均答对，另称“未给出修正责任人”，与原文冲突。WR04 得 2/3，能复述历史包版本，却漏写下一轮应核对实际运行的应用包。PO03 得 2/3，区分了两类检查的口径，却漏答两组样例是否重叠及去重后总数未知。当前实现没有针对题号或计数题型的专门补答逻辑。[逐题评分](kl-graph/evaluation-artifacts/eval-v5-all20-2026-11-23/review.csv)
+
+**实验与当前实现的边界。** 后续实验在文档与纪要抽取中增加了 `PROCEDURE` 方法事实，也将“不确定事项”改为绑定问句片段的结构化输出，C 整题通过 9/20。两项改动都已回退。当前仍可讨论 WR03 的通用作答约束，即把“信息缺失”的判断限定在实际核查过的证据范围；这项改进尚待在 17/20 基线上独立验证。WR04 尚无经验证能稳定改善它的通用修复。[实验版报告](kl-graph/evaluation-artifacts/eval-v5-procedures-all20-2026-11-23/report.md) · [WR03 与 WR04 修复分析](WR03与WR04通用修复可行性分析.md)
+
 ## 相对原生 MyContext 的修改：数据层与应用层
 
 原生 MyContext 已经能抽取事实和实体，通过 `ABOUT` 记录事实涉及的实体，通过 `STATES` 追溯来源片段，并支持向量检索与图谱查询。相对于上游基线 `23c6f609`，数据层的主要改动是让事实和关系能回到可核验的原文；新增的项目核查 Demo 则决定针对一个问题选哪些证据、怎样装入回答。[图谱设计](kl-graph/docs/graph-design.md)
@@ -10,11 +26,11 @@
 
 | 环节 | 增强版的改动 |
 | --- | --- |
-| 原文导入与定位 | 为群聊、文档和会议保留来源定位信息。文档可使用来源记录的发生时间，同一场会议的不同段落可保留独立记录 ID，从事实能查回某条消息或具体段落。[来源加载器](mycontext/kl-graph/kl_graph/ingest/loaders) |
+| 原文导入与定位 | 为群聊、文档和会议保留来源定位信息。文档可使用来源记录的发生时间，同一场会议的不同段落可保留独立记录 ID，从事实能查回某条消息或具体段落。[来源加载器](kl-graph/kl_graph/ingest/loaders) |
 | 新事实抽取与写入 | 抽取提示要求保留交付方向、否定、适用条件和责任依据。引文能在目标正文中唯一匹配时，将逐字引文及字符位置写入主 `STATES` 边。当前评测复用了已建事实库，因此其成绩不能单独衡量新抽取提示的效果。[抽取提示](kl-graph/kl_graph/ingest/llm_extractor.py) · [事实写入](kl-graph/kl_graph/ingest/pipeline.py) |
 | 已有事实回查原文 | 核对事实所属记录，用合格事实定位文档和会议的原句，保留必要的相邻限定；定位不全时保留该条全文。聊天保留完整消息，遇到依赖上文的指代时可沿显式回复链补齐。已有的 `/context` 接口增加了 `source_evidence`，其他应用也能读取这些依据。[证据定位](kl-graph/kl_graph/query/fact_evidence.py) · [接口实现](kl-graph/kl_server.py) |
 | 图谱关系与关联原文 | 回查命中事实已有的 `ABOUT` 边，用引文和发言身份核实参与实体。沿同一来源、线程、回复或附件联系寻找相关原文时，保留查找路径，便于核验候选记录如何进入查询结果。[关系与来源回查](kl-graph/kl_graph/query/source_graph.py) · [参与实体核验](kl-graph/kl_graph/query/fact_evidence.py) |
-| 计数与向量适配 | 对明确询问合计、去重的问题，比较计数范围及样例重叠情况。向量查询增加可配置的模型指令，当前 Demo 配套使用本地 Qwen3-Embedding-0.6B 的 1,024 维索引。[计数比较](kl-graph/kl_graph/query/count_comparison.py) · [向量适配](kl-graph/kl_graph/ingest/embedder.py) |
+| 向量适配 | 向量查询支持可配置的模型指令，当前 Demo 配套使用本地 Qwen3-Embedding-0.6B 的 1,024 维索引。[向量适配](kl-graph/kl_graph/ingest/embedder.py) |
 
 ### 应用层改了什么
 
@@ -24,16 +40,22 @@
 | B、C 检索方案 | B、C 共用原文关键词和向量检索，融合两路排名。C 额外调用原生 `/ask`，将图谱指向的原文与已有候选按记录 ID 去重，并读取数据层准备的原句和回复依赖。[查询调用](kl-graph/project_demo/context.py) · [候选合并](kl-graph/project_demo/answer.py) |
 | 选证与装入 | **分批初筛、生成证据组、全局复核、遗漏复核和按预算装入，均由 Demo 编排。** B、C 共用这段流程。C 在全局复核时还会合入图谱事实及明确关系引用的原文，并在容量允许时附上图谱线索。[选证与预算实现](kl-graph/project_demo/selection.py) |
 | 回答与评测 | 回答模型生成项目进展、变化、未决事项、协同及不确定项。Demo 校验引用 ID 是否在实际输入中，保存输入、选证决定与答卷。评测另行核对答案语义，分别记录必要要点和整份答卷的结果。[回答与引用校验](kl-graph/project_demo/answer.py) · [评测入口](kl-graph/project_demo/evaluate.py) |
-| 资料与图谱界面 | 增加资料来源浏览、记录详情及返回导航，支持查看实体、事实、关系及支撑原文。缺少索引时，界面可用编号和语句生成候选关联；这类浏览关系来自应用侧规则。[上下文浏览](kl-graph/project_demo/context.py) · [前端实现](mycontext/kl-graph/project_demo/static) |
+| 资料与图谱界面 | 数据范围选择器仅展示应用核查材料（`app_focus`）。增加资料来源浏览、记录详情及返回导航，支持查看实体、事实、关系及支撑原文。缺少索引时，界面可用编号和语句生成候选关联；这类浏览关系来自应用侧规则。[上下文浏览](kl-graph/project_demo/context.py) · [前端实现](kl-graph/project_demo/static) |
 
-### 用 X04 和 X07 看两层如何配合
+### 两类关联查询如何找原文
+
+一种查询沿同一文档、会话线程、显式回复或附件引用找相关记录，保存来源之间的路径。对项目归属不明的聊天，还可沿同线程回复追到归属明确的附件；回答阶段把归属依据与对应消息一起核算预算。[来源扩展与附件归属](kl-graph/kl_graph/query/source_graph.py) · [归属材料装入](kl-graph/project_demo/answer.py)
+
+另一种查询实际沿两条持久化的 `ABOUT` 边查找共享实体的事实。从最多 16 条种子来源起步，仅考虑活跃的非人员实体；实体名称须同时出现在两端各自的事实与原文中，且参与边通过引文核验。关联事实超过 64 条的实体跳过，以免宽泛主题带回大量无关材料。结合实体数、问句与事实的字面相关性、种子来源数及原文混合检索排名，最多选 8 条目标来源。查询路径记录在 `coverage.graph.associated_fact_paths`。这条路径可以解释两份材料为何被放在一起；责任、因果及验收结论仍须回到原文判断。[共享实体查询](kl-graph/kl_graph/query/associated_sources.py) · [Demo 调用与记录](kl-graph/project_demo/context.py)
+
+### V4 历史实例：用 X04 和 X07 看两层如何配合
 
 - **X04：数据层找到原句，Demo 把它装入回答。** `A04-S04` 有 278 字，库中对应 7 条事实。其中 2 条用于定位同一段 45 字原文，最终被 C 引用。另看全题候选，初筛推荐了 101 条不同原文，Demo 利用图谱出处补回 21 条，让 122 条进入全局复核。这是对整题的统计，与单条记录的引文定位分别计数。[X04 完整问答过程](MyContext_X04完整问答过程.md)
 - **X07：证据已找到，在最终装入时落选。** C 的重排识别了候选包上已有润色局部回归的证据，但对应证据组因预算落选。回答模型随后把输入中缺少材料扩大为“缺少回归证据”。B、C 对题库三个必要要点均得 3/3；复核整份答卷时，B 通过，C 因这项额外误述未通过。[X07 证据流转与评语](kl-graph/evaluation-artifacts/eval-native-evidence-second-bc-2026-11-22/report.md)
 
 因此，B/C 结果衡量的是两者共用 Demo 选证与回答流程时，C 接入事实、图谱及原文依据后的端到端表现。定位成败时，可分别核对数据层找到了什么、Demo 最终装入了什么，以及回答实际引用了什么。
 
-## 原生事实如何进入当前 C 的回答（2026-11-22）
+## 原生事实如何进入当前 C 的回答
 
 ### 方案 C 全流程
 
@@ -66,7 +88,7 @@ flowchart TD
     V --> S["原文向量排名"]
     K --> R["按两份排名融合原文候选"]
     S --> R
-    V --> G["原生图谱查询：检索事实与片段，核实参与实体，沿回复或附件等线索扩展来源"]
+    V --> G["原生图谱查询：检索事实与片段，核实参与实体，沿来源链接及共享实体的 ABOUT 边扩展候选"]
     R --> M["按原文 ID 合并候选、去重"]
     G --> M
     M --> P["数据层按候选来源准备证据"]
@@ -77,17 +99,19 @@ flowchart TD
     T --> J
     N --> J
     J --> B["连同依赖按组装入最终输入预算"]
-    B --> X["余量允许时，补有出处的相关事实、关系或适用的计数比较"]
-    X --> A["回答模型读取问题和已装入的证据，生成结论、待办及不确定项"]
+    B --> X["余量允许时，补有出处的相关事实或关系"]
+    X --> I["B、C 在预算容许时附已选证据的事项索引"]
+    I --> A["回答模型读取问题和已装入的证据，生成结论、待办及不确定项"]
     A --> Z["检查结构与引用 ID，保存答卷、实际输入和选证记录"]
 ```
 
 - **两条召回路径。** B、C 共用关键词与原文向量的倒数排名融合（RRF）。C 还通过原生 `/ask` 取得图谱候选，回查事实来源和参与关系。图谱可以带来原文检索漏掉的来源；同一来源在两条路径上命中时只保留一份，图谱命中本身不额外加分。图中的分支表示信息来源。[查询入口](kl-graph/project_demo/app.py) · [原生图谱回查](kl-graph/project_demo/context.py) · [融合与装入](kl-graph/project_demo/answer.py)
 - **按来源准备引文。** 系统批量读取与候选原文关联的事实。在至少 160 个字符的非聊天记录里，状态、决策、待办等业务事实，以及含业务编号的事实，可用于定位。多条事实可命中同一句。一条记录有合格事实定位失败时，就保留该记录的全文供后续选择。聊天保留原话，遇到指代时沿明确的回复关系补上下文。[原文定位与回退](kl-graph/kl_graph/query/fact_evidence.py)
-- **选证与预算。** 分批初筛读候选原文；跨批复核可使用事实定位的节选和有依据的图谱提示。重排窗口不足时可用分组笔记辅助排序，最终证据来自原文。选证完成后，按优先级、覆盖情况与剩余空间装入证据组。当前评测的最终输入预算上限为 8,192 token，包含提示和问题。若问题确实需要合计或去重，还可根据已选证据补充计算口径和样例重叠情况。[重排及遗漏复核](kl-graph/project_demo/selection.py) · [计数比较](kl-graph/kl_graph/query/count_comparison.py)
-- **回答与核验。** 最终模型输出进展、变化、未决问题、协同事项和不确定项。程序检查结论是否引用了实际提供的证据 ID。判断引文是否足以支持结论、是否漏掉关键限定，仍属于语义评审。[生成与记录](kl-graph/project_demo/app.py) · [引用校验](kl-graph/project_demo/answer.py)
+- **选证与预算。** 分批初筛读候选原文。跨批复核可使用事实定位的节选和有依据的图谱提示。重排窗口不足时可用分组笔记辅助排序，最终证据来自原文。初筛优先级为 2 或 3 的组，只要全局复核后有来源落选，就对照已选原文核实其结论及成立条件是否已覆盖。单组与已选原文合计仍超出复核窗口时，原组保留到预算装入阶段。最后按优先级、覆盖情况与剩余空间装入证据组。当前评测的最终输入预算上限为 8,192 token，包含提示和问题。[重排及遗漏复核](kl-graph/project_demo/selection.py)
+- **事项索引。** 完成装入后，B、C 取已选且优先级至少为 2 的证据组，预算允许时将其 `topic`、`aspects` 和原文 `ids` 作为 `evidence_index` 附入最终请求。回答模型借此核对条件，事实依据仍来自原文。初筛或复核时生成的 `reason` 不在该索引中。[事项索引与提示](kl-graph/project_demo/answer.py)
+- **回答与核验。** 最终模型输出进展、变化、未决问题、协同事项和不确定项。前四类逐项检查文本、时间字段格式和引用 ID；引用必须来自实际输入。`uncertainties` 接受字符串数组，当前只校验该字段的格式。判断引文是否足以支持结论、是否漏掉关键限定，仍属于语义评审。[生成与记录](kl-graph/project_demo/app.py) · [引用校验](kl-graph/project_demo/answer.py)
 
-#### 三、X04 从提问到答卷的实际过程
+#### 三、V4 历史实例：X04 从提问到答卷的实际过程
 
 > 哪些应用问题已有证据优先由应用处理，哪些需要模型协作或继续定位？
 
@@ -135,7 +159,7 @@ flowchart TD
 
 ### 事实、关系与原文的对应
 
-C 在项目和截止时间允许的材料中，用原生事实定位原文，用原生 `ABOUT` 边核对参与实体，再将可引用的材料交给 Demo。当前 V4 长文库沿用 ChatGPT 已抽取的 965 条事实、182 个实体和 3,013 条边。此次线上验证复用了该库，新抽取规则的效果须与已有库的查询效果分别看待。[图谱设计](kl-graph/docs/graph-design.md) · [建库记录](kl-graph/evaluation-artifacts/eval-native-evidence-first-bc-2026-11-22/import.json)
+C 在项目和截止时间允许的材料中，用原生事实定位原文，用原生 `ABOUT` 边核对参与实体，再将可引用的材料交给 Demo。上述 V4 实例沿用 ChatGPT 已抽取的 965 条事实、182 个实体和 3,013 条边。此次线上验证复用了该库，新抽取规则的效果须与已有库的查询效果分别看待。[图谱设计](kl-graph/docs/graph-design.md) · [建库记录](kl-graph/evaluation-artifacts/eval-native-evidence-first-bc-2026-11-22/import.json)
 
 ```mermaid
 flowchart TB
@@ -168,7 +192,7 @@ flowchart TB
 
 例如，群聊中“我补这两列”这句话的责任人取自该条消息的发言人，两列指什么和涉及哪个样本包则需分别回看上游消息。离线检查记录了 `T08-04 → T08-03 → T08-02` 三个出处。原生 `POST /context` 可按单条事实查看这些依据；Demo 通过同一查询库按本轮候选批量读取节选和回复依赖。[原生证据实现](kl-graph/kl_graph/query/fact_evidence.py) · [来源与参与实体](kl-graph/kl_graph/query/source_graph.py) · [离线记录](kl-graph/evaluation-artifacts/native-evidence-offline-2026-11-22/checks.json)
 
-默认五题端到端实测为 **B 完整 1/5，C 完整 4/5**。X01 的六份分工材料均进入两边的候选和排序结果。最终 B 装入 28 条来源，六份分工均落选；C 装入 54 条，其中 38 条为事实定位的节选，六份分工全部被引用。该题 C 最终另附的事实和关系条数均为零。可直接观察到的是同一预算内保留的证据更完整，事实定位、图谱召回和排序各自贡献了多少仍待单独对照。[五题报告与判分依据](kl-graph/evaluation-artifacts/eval-native-evidence-first-bc-2026-11-22/report.md)
+在这轮 V4 默认五题中，端到端实测为 **B 完整 1/5，C 完整 4/5**。X01 的六份分工材料均进入两边的候选和排序结果。最终 B 装入 28 条来源，六份分工均落选；C 装入 54 条，其中 38 条为事实定位的节选，六份分工全部被引用。该题 C 最终另附的事实和关系条数均为零。可直接观察到的是同一预算内保留的证据更完整，事实定位、图谱召回和排序各自贡献了多少仍待单独对照。[五题报告与判分依据](kl-graph/evaluation-artifacts/eval-native-evidence-first-bc-2026-11-22/report.md)
 
 ## 逐节对照
 
@@ -200,6 +224,8 @@ flowchart TB
         C2["另一片段"]
         S["Scope · 来源容器<br/>id · scope_type<br/>title"]
         F -->|ABOUT| E
+        F2["另一来源的事实 Fact"] -->|ABOUT| E
+        F2 -->|STATES| C2
         F -->|STATES| C
         C -->|"MENTIONS<br/>AUTHORED_BY"| E
         C -->|PART_OF| S
@@ -223,7 +249,7 @@ flowchart TB
     classDef native fill:#edf2ff,stroke:#7189ba,color:#162644;
     classDef demo fill:#e7f6ee,stroke:#54876e,color:#12382b;
     classDef source fill:#fff3da,stroke:#a17936,color:#483115;
-    class F,E,C,C2,S native;
+    class F,F2,E,C,C2,S native;
     class R,BA,BB demo;
     class U source;
 ```
@@ -262,11 +288,11 @@ flowchart LR
 - `SU-EX06` 通过验证关联指向 `APP-A-12`。两条摘要记录也提到 `M-A12`，图中以虚线表示规则识别到的共同提及。[文档摘要回归记录 ASU2-S01](</mnt/c/Users/jcyli/Downloads/项目A_Demo应用增强数据_v3/corpus/documents/ASU2_文档摘要回归记录.md:9>) · [摘要联调纪要 NSU-S02](</mnt/c/Users/jcyli/Downloads/项目A_Demo应用增强数据_v3/corpus/meetings/NSU_文档摘要联调议题摘录.md:13>)
 - 别名和同名对象也用来源限定。`SK-TR` 有「文档翻译」「翻译线」和 `doc-translator` 等显式别名，联调纪要把它关联到 `CASE-T17`。应用林工 `U21` 与模型林工 `U26` 按资料中明确的角色和编号分别识别。该规则适用于这类带标识的资料，只有「林工」时仍需更多依据。[Skill 任务登记](</mnt/c/Users/jcyli/Downloads/项目A_Demo应用增强数据_v3/corpus/documents/A02_应用Skill任务登记.md>) · [翻译联调纪要](</mnt/c/Users/jcyli/Downloads/项目A_Demo应用增强数据_v3/corpus/meetings/NTR_文档翻译联调议题摘录.md>) · [角色协作登记](</mnt/c/Users/jcyli/Downloads/项目A_Demo应用增强数据_v3/corpus/documents/A01_应用角色协作登记.md>)
 
-对 `app_focus` 的 349 条原文重算，应用层图谱得到 **84 个实体、101 条关联**。其中 **84 条是共同提及**，**17 条是由句式规则识别的业务关联**，包括 6 条 Skill–任务、3 条模型引用、3 条验证关联、2 条部署绑定、2 条项目归属和 1 条协作关联。`clause_reference` 记录的是规则识别方式。验证是否通过、审批是否生效、谁实际承担责任，仍需读对应原文。这些数字是早期V3模拟资料的应用层输出；当前V4真实模型运行及默认五题结果见下文，不能混用两阶段统计。[实体与关系计算](kl-graph/project_demo/context.py) · [工作台列表查询](kl-graph/project_demo/context.py)
+对 `app_focus` 的 349 条原文重算，应用层图谱得到 **84 个实体、101 条关联**。其中 **84 条是共同提及**，**17 条是由句式规则识别的业务关联**，包括 6 条 Skill–任务、3 条模型引用、3 条验证关联、2 条部署绑定、2 条项目归属和 1 条协作关联。`clause_reference` 记录的是规则识别方式。验证是否通过、审批是否生效、谁实际承担责任，仍需读对应原文。这些数字是早期V3模拟资料的应用层输出。V5 正式评测使用的原生图谱规模见文首。[实体与关系计算](kl-graph/project_demo/context.py) · [工作台列表查询](kl-graph/project_demo/context.py)
 
 ## 与「四、Agent 如何使用这些信息」的关系
 
-项目核查的 C 方案调用原生 `/ask` 获取事实和片段候选，关闭该接口的最终答案合成。原生查询代码在 Demo 提供的资料范围内返回精确引文、回复依赖及有据的参与关系。Demo 将入选原文交给统一回答模型，并可用剩余预算附加有来源的事实与关系。A 使用全量原文，B 使用原文检索，供同题对照。原分析中个人画像和数字分身的供给链路属于另一部分，本次工作集中于项目证据核查。[原分析第四章](</mnt/c/Users/jcyli/Downloads/MyContext_主要场景与具体实现分析.md:473>) · [C 方案查询](kl-graph/project_demo/context.py) · [核查和引用校验](kl-graph/project_demo/app.py)
+项目核查的 C 方案调用原生 `/ask` 获取事实和片段候选，关闭该接口的最终答案合成。原生查询代码在 Demo 提供的资料范围内返回精确引文、回复依赖及有据的参与关系。Demo 将入选原文交给统一回答模型，并可用剩余预算附加有来源的事实与关系。“方案对比”页和本轮正式评测使用 B 原文检索、C 企业上下文。“项目核查”页单次提问时还可选择 A 全量原文。原分析中个人画像和数字分身的供给链路属于另一部分，本次工作集中于项目证据核查。[原分析第四章](</mnt/c/Users/jcyli/Downloads/MyContext_主要场景与具体实现分析.md:473>) · [C 方案查询](kl-graph/project_demo/context.py) · [核查和引用校验](kl-graph/project_demo/app.py)
 
 
 ## 历史版本的证据处理及验证（2026-11-21）
@@ -310,16 +336,18 @@ flowchart TB
 
 代码依据：Demo导入在[runtime.py](kl-graph/project_demo/runtime.py)明确设置`improve_mode=off`；完整消歧位于[entity_disambiguation.py](kl-graph/kl_graph/periodic/entity_disambiguation.py)，由周期优化调用。[名称归一](kl-graph/kl_graph/ingest/pipeline.py)与[应用层编号/别名](kl-graph/project_demo/context.py)属于另外两层机制。
 
-对当前V4运行库`graph-abc47ce2060b88a7/knowledge.db`只读核查：182个实体、3013条边，边类型为ABOUT、AUTHORED_BY、MENTIONS、PART_OF、REPLY_TO、STATES、TEMPORAL，`ENTITY_SIMILAR`为0。2026-11-21 旧版第一梯队的 C 5/5 和当前第一梯队的 C 4/5 都是在周期消歧关闭时取得的。后续若要处理跨群简称、同名人员、无编号对象，需要专门验证候选关联和误合并；本次仅核实与记录，没有启用或重建消歧流程。
+V5 当前索引中有 921 条 `ABOUT` 边、926 条 `STATES` 边，`ENTITY_SIMILAR` 为 0。沿共享实体查证是使用已有参与边的查询操作，运行时无需周期消歧。[关联查询实现](kl-graph/kl_graph/query/associated_sources.py)
+
+对历史 V4 运行库`graph-abc47ce2060b88a7/knowledge.db`只读核查：182个实体、3013条边，边类型为ABOUT、AUTHORED_BY、MENTIONS、PART_OF、REPLY_TO、STATES、TEMPORAL，`ENTITY_SIMILAR`为0。2026-11-21 旧版第一梯队的 C 5/5 和 2026-11-22 V4 第一梯队的 C 4/5 都是在周期消歧关闭时取得的。后续若要处理跨群简称、同名人员、无编号对象，需要专门验证候选关联和误合并；本次仅核实与记录，没有启用或重建消歧流程。
 
 
-## 第二梯队验证补充（2026-11-21）
+## V4 历史第二梯队验证（2026-11-21）
 
 同版实现继续运行固定SU04、LE03、WR04、X05、X07五题，B完整5/5，C完整3/5，后者在LE03、X05部分答对；无A、失败或重试。与第一梯队合并，10题完整回答率两组均80%，不能把第一梯队优势解释为稳定整体优势。C平均最终消息仍比B少18.1%。
 
 LE03暴露全局重排会丢弃已召回的关键正式版本证据；X05则是原生事实正确，但“所有编号须在同一句”的原文定位规则丢失含“该包”指代的未入包句。这说明事实提炼、原文节选和语义完整性必须分别验证：精确字符出处与更多来源不能保证关键限定保留。本轮没有开启原生实体消歧，也未在测试中修复这两处新问题；后续需验证跨句指代、必要限定覆盖和全文回退。[完整对照与复现](kl-graph/evaluation-artifacts/eval-v4-second-tier-bc-2026-11-21/report.md)
 
-## 事实保真与必要证据保护（最终v2，2026-11-21）
+## V4 历史验证：事实保真与必要证据保护（2026-11-21）
 
 跨句事实现在回查连续原文句组；任一合格业务事实无法可靠定位则使用完整原文，`fact_projection_audit`记录未匹配原因。全局重排后B/C共同进行必要遗漏复核，装入不再奖励粗粒度事项标签数量，而按必要性、覆盖与语义顺序在相同预算内选证。流程图已同步，持久化图谱schema及实体消歧状态未变。
 

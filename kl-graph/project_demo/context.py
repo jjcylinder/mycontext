@@ -325,7 +325,7 @@ async def query_context(
             related, association_paths = related_evidence(conn, eligible, scopes, seeds, original_ids, question)
             facts.extend(related)
             references = list(dict.fromkeys([*references, *(key for fact in related for key in fact["evidence_ids"])]))
-            evidence = source_evidence(conn, eligible, [*original_ids, *references], question=question)
+            evidence = source_evidence(conn, eligible, [*original_ids, *references])
             evidence["project_paths"] = attachment_project_paths(records, scopes, [*original_ids, *references])
     except sqlite3.Error as error:
         raise ContextUnavailable("无法读取事实对应的原文依据") from error

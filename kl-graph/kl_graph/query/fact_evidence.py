@@ -6,8 +6,6 @@ import json
 import re
 from collections import defaultdict
 
-from .count_comparison import asks_for_combined_count, observed_count_fact
-
 _SENTENCE = re.compile(r"[^。！？!?\n]+[。！？!?\n]*")
 _DATE = re.compile(r"^\[\d{4}-\d{2}-\d{2}\]\s*")
 _CODE = re.compile(r"[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+")
@@ -228,11 +226,9 @@ def stored_fact_support(conn, text, chunk_id, primary, source_quote=None):
 
 
 def source_evidence(conn, records, candidates, *, question=""):
-    """Batch read facts for requested source units. The caller supplies the as-of, in-scope bodies."""
+    """Read evidence from in-scope bodies. Archived callers may still pass question."""
     facts = []
     dependencies = defaultdict(dict)
-    counts = defaultdict(list)
-    compare = asks_for_combined_count(question)
     ids = list(dict.fromkeys(key for key in candidates if key in records))
     for start in range(0, len(ids), 400):
         batch = ids[start:start + 400]
@@ -246,8 +242,6 @@ def source_evidence(conn, records, candidates, *, question=""):
             ORDER BY cu.unit_id, f.id
         """, batch)
         for key, fid, kind, text, anchor in rows:
-            if compare and kind == "STATUS" and (observation := observed_count_fact(text)):
-                counts[key].append(observation)
             if records[key].get("source_type") in {"chat", "message"}:
                 support = fact_support(text, key, records.get)
                 if support["status"] == "reply_context":
@@ -256,11 +250,8 @@ def source_evidence(conn, records, candidates, *, question=""):
                 facts.append({"id": fid, "text": text, "type": kind, "source_quote": anchor, "evidence_ids": [key]})
     audit = {}
     excerpts = fact_excerpts(records, facts, audit=audit)
-    result = {"projections": excerpts, "audit": audit,
-              "dependencies": {key: list(parents) for key, parents in dependencies.items()}}
-    if counts:
-        result["count_facts"] = dict(counts)
-    return result
+    return {"projections": excerpts, "audit": audit,
+            "dependencies": {key: list(parents) for key, parents in dependencies.items()}}
 
 
 def grounded_graph(facts, entities, records):

@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "requests": 40,
+    "supplied_records_across_runs": 1064,
+    "cited_answer_items": 418,
+    "completed": 40
+  },
+  "all_citations_in_supplied_evidence": true,
+  "supplied_evidence_within_cutoff_and_matches_originals": true,
+  "no_code_drift": true,
+  "order_per_question": [
+    "B",
+    "C"
+  ]
+}
