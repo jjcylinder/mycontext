@@ -1,0 +1,16 @@
+{
+  "dataset": "project-a-v5-natural-app_focus-4f98497fe04be748",
+  "digest": "4f98497fe04be748d4a1e66ac5320ba00eb55a87c5d45f5cbdb4fb7575aa4a4a",
+  "index": "graph-3c10b57b3e8ace49",
+  "cutoff": "2026-11-20T23:59:00+08:00",
+  "model": "chatgpt-codex-default",
+  "modes": [
+    "F",
+    "G"
+  ],
+  "policy": "rank",
+  "g_ranking": "light",
+  "budget": 8192,
+  "rubric_sha256": "6e61e39b53b880bd0594bf977bc0c62cb0432d48416c4cf249c9c0c95cacc605",
+  "questions_sha256": "fe984bafc6df83c9f9648c51c4f5f9f7809a5326c85f3441e6dfde1254e7be5d"
+}

@@ -11,8 +11,10 @@ import os
 import time
 from collections.abc import Awaitable, Callable
 from contextlib import asynccontextmanager
+from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
+from random import SystemRandom
 from typing import Literal
 from uuid import UUID, uuid4
 
@@ -20,7 +22,7 @@ import uvicorn
 from fastapi import APIRouter, FastAPI, HTTPException, Query
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import AwareDatetime, BaseModel, ConfigDict, Field
 
 from .answer import AnswerModel, UnavailableError, evidence_view, fuse_originals, parse_answer, prepare_answer, rank_originals
 from .context import ContextUnavailable, list_context, query_context, query_original_vectors, visible_records
@@ -48,6 +50,18 @@ class CheckRequest(BaseModel):
     project_id: Literal["项目A"] = "项目A"
     mode: Literal["A", "B", "C"]
     question: str = Field(min_length=1, max_length=3000)
+
+
+class ExperimentRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    dataset_id: str
+    project_id: str = Field(default="项目A", min_length=1, max_length=120)
+    question: str = Field(min_length=1, max_length=3000)
+    cutoff: AwareDatetime | None = None
+    evidence_policy: Literal["rank", "facet_novelty"] = "rank"
+    graph_delivery: Literal["bundled", "separate"] = "bundled"
+    generate_answers: bool = False
+    modes: list[Literal["B", "F", "G"]] = Field(default_factory=lambda: ["B", "F", "G"], min_length=1, max_length=3)
 
 
 def _timestamp() -> str:
@@ -256,6 +270,51 @@ class Demo:
         return {**answer, "model": self.model.model, "usage": metrics, "coverage": coverage,
                 "evidence": evidence, "context": used_graph, "cutoff": dataset.cutoff}
 
+    async def experiment(self, run: dict) -> dict:
+        from .evidence_packing import RANK_CONSTANT, WINDOW, pack
+        from .evidence_retrieval import retrieve
+
+        dataset = self.get_dataset(run["dataset_id"])
+        graph = self.graph(dataset)
+        if not graph.ready:
+            raise UnavailableError("实验所需的原文、事实及图谱索引尚未就绪")
+        if not self.permit_model(dataset, graph_is_local()):
+            raise UnavailableError("当前服务仅允许对原周报使用本机检索")
+        if (run["generate_answers"] or self.model.tokenize_url) and not self.permit_model(dataset, self.model.local):
+            raise UnavailableError("当前服务仅允许向本机模型发送原周报")
+        if run["generate_answers"] and not self.model.configured:
+            raise UnavailableError("未配置实验的最终回答模型")
+
+        question, project, cutoff = run["question"], run["project_id"], run["cutoff"]
+        self.update(run, stage="retrieving")
+        modes = run["modes"]
+        records, snapshot, audit = await retrieve(await graph.start(), graph.data_dir, dataset, question, project,
+                                                  modes, cutoff, policy=run.get("evidence_policy", "rank"))
+        self.update(run, stage="packing", retrieval=audit, snapshot=asdict(snapshot), rank_constant=RANK_CONSTANT, window=WINDOW,
+                    index=graph.data_dir.name, dataset_digest=dataset.digest, answer_model=self.model.model)
+        groups = {}
+        for mode in modes:
+            groups[mode] = await pack(self.model, mode, question, project, cutoff, records, snapshot,
+                                      graph_delivery=run.get("graph_delivery", "bundled"))
+        self.update(run, groups=groups)
+        review = []
+        if run["generate_answers"]:
+            for mode, group in groups.items():
+                self.update(run, stage="answering", active_mode=mode)
+                raw, usage = await self.model.complete(group["messages"])
+                group.update(raw_answer=raw, usage=usage)
+                self.update(run, groups=groups)
+                group["answer"] = parse_answer(raw, set(group["source_ids"]))
+                self.update(run, groups=groups)
+            modes = list(groups)
+            SystemRandom().shuffle(modes)
+            mapping = dict(zip(("甲", "乙", "丙")[:len(modes)], modes, strict=True))
+            review = [dict(label=label, answer=groups[mode]["answer"]) for label, mode in mapping.items()]
+            self.update(run, review_key=mapping)
+        summaries = {mode: {key: group[key] for key in ("input_sha256", "input_tokens", "input_limit", "source_ids")}
+                     for mode, group in groups.items()}
+        return {"groups": summaries, "anonymous_answers": review}
+
     def get_dataset(self, dataset_id: str) -> Dataset:
         if dataset_id not in self.datasets:
             raise HTTPException(404, "数据集未导入，或资料内容已变化，请重新导入")
@@ -271,7 +330,7 @@ def _cost(input_tokens: int | None, output_tokens: int | None) -> float | None:
 
 
 def _public(run: dict) -> dict:
-    return {key: value for key, value in run.items() if key not in {"model_input", "model_output"}}
+    return {key: value for key, value in run.items() if key not in {"model_input", "model_output", "review_key", "groups", "retrieval", "snapshot"}}
 
 
 def create_app(
@@ -330,6 +389,24 @@ def create_app(
         return _public(demo.launch(
             demo.check, kind="check", profile=dataset.profile, dataset_id=dataset.id,
             mode=request.mode, project_id=request.project_id, question=question, cutoff=dataset.cutoff,
+        ))
+
+    @app.post("/demo/experiments/bfg", status_code=202)
+    async def experiment(request: ExperimentRequest):
+        dataset = demo.get_dataset(request.dataset_id)
+        question = request.question.strip()
+        project = request.project_id.strip()
+        if not question or not project:
+            raise HTTPException(422, "问题和目标项目均不能为空")
+        if request.cutoff and request.cutoff > datetime.fromisoformat(dataset.cutoff):
+            raise HTTPException(422, "核查时点晚于数据集截止时间")
+        if len(set(request.modes)) != len(request.modes):
+            raise HTTPException(422, "实验方案重复")
+        return _public(demo.launch(
+            demo.experiment, kind="bfg", profile=dataset.profile, dataset_id=dataset.id,
+            project_id=project, question=question, cutoff=request.cutoff.isoformat() if request.cutoff else dataset.cutoff,
+            generate_answers=request.generate_answers, modes=request.modes, evidence_policy=request.evidence_policy,
+            graph_delivery=request.graph_delivery,
         ))
 
     @app.get("/demo/evidence/{record_id}")

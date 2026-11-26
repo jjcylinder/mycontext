@@ -1,0 +1,41 @@
+﻿题号,版本,原子项,评分口径,输入覆盖,输入依据,答卷覆盖,答卷位置
+FG01,light,1.1,晨报使用的旧快照消息水位落后,1,XAM2-02 XAM2-03 XAM2-06,1,progress/0 open_issues/0
+FG01,light,1.2,来源后来已可检索,0,,0,
+FG01,light,1.3,原晨报没有重跑,1,XAM2-02 XAM2-03,1,open_issues/0
+FG01,light,2.1,周报实际窗口错误,1,AWR2-S02,1,open_issues/1
+FG01,light,2.2,周报只查文档,1,XWR1-05,1,open_issues/1
+FG01,light,2.3,待回签消息本来可检索,1,XWR1-05,1,open_issues/1
+FG01,light,3.1,两项分别登记,1,XAM2-03 AWR2-S02 XWR1-07,1,progress/0
+FG01,light,3.2,分别修复,1,XAM2-03 XAM2-06 XWR2-08,1,open_issues/0 coordination/0
+FG01,light,3.3,分别回归,1,XAM2-02 XAM2-06 AWR2-S04,0,
+FG01,light,3.4,可复用来源核查方法,1,XAM2-03 XAM2-06 AWR0-S03 AWR2-S04,0,
+FG01,vector,1.1,晨报使用的旧快照消息水位落后,1,XSH2-06 XSH2-07,1,open_issues/0
+FG01,vector,1.2,来源后来已可检索,1,XSH2-06 XSH2-07,1,open_issues/0
+FG01,vector,1.3,原晨报没有重跑,1,XSH2-07,1,open_issues/0
+FG01,vector,2.1,周报实际窗口错误,1,AWR2-S02,1,open_issues/0
+FG01,vector,2.2,周报只查文档,1,XWR1-05,0,
+FG01,vector,2.3,待回签消息本来可检索,1,XWR1-05,0,
+FG01,vector,3.1,两项分别登记,1,XSH2-07 AWR2-S02,1,open_issues/0
+FG01,vector,3.2,分别修复,1,XSH2-07 AWR2-S04,1,open_issues/0 open_issues/1
+FG01,vector,3.3,分别回归,1,XSH2-07 XAM2-02 AWR2-S04,1,uncertainties/0 coordination/0
+FG01,vector,3.4,可复用来源核查方法,1,XSH2-07 AWR0-S03 AWR2-S04,0,
+FG06,light,1.1,摘要走文档摘要入口,1,ASU1-S03,1,progress/0
+FG06,light,1.2,使用A的12包,1,ASU1-S02,1,progress/0
+FG06,light,1.3,将客户未确认写成已确认,1,ASU1-S01 ASU1-S02,1,changes/0
+FG06,light,2.1,润色走文档润色入口,1,APO1-S03,1,progress/1
+FG06,light,2.2,使用A的11包,1,APO1-S02,1,progress/1
+FG06,light,2.3,拟定改成确定,1,APO1-S01 APO1-S02,1,changes/1
+FG06,light,2.4,丢失随发货调整的条件,1,APO1-S01 APO1-S02,1,changes/1
+FG06,light,3.1,两份成对材料可用于分析,1,ASU1-S01 ASU1-S02 ASU1-S03 APO1-S01 APO1-S02 APO1-S03,1,open_issues/0 coordination/0
+FG06,light,3.2,不能用一次调用代替两项回归,1,ASU1-S03 APO1-S03 A03-S04,1,open_issues/1
+FG06,light,3.3,尚无修复通过结论,1,ASU1-S02 XPO2-05 ASU0-S04,1,open_issues/1 uncertainties/1
+FG06,vector,1.1,摘要走文档摘要入口,1,ASU1-S03,1,changes/0
+FG06,vector,1.2,使用A的12包,1,ASU1-S02,1,changes/0
+FG06,vector,1.3,将客户未确认写成已确认,1,ASU1-S01 ASU1-S02,1,changes/0
+FG06,vector,2.1,润色走文档润色入口,1,APO1-S03,1,changes/1
+FG06,vector,2.2,使用A的11包,1,APO1-S02,1,changes/1
+FG06,vector,2.3,拟定改成确定,1,APO1-S01 APO1-S02,1,changes/1
+FG06,vector,2.4,丢失随发货调整的条件,1,APO1-S01 APO1-S02,1,changes/1
+FG06,vector,3.1,两份成对材料可用于分析,1,ASU1-S01 ASU1-S02 ASU1-S03 APO1-S01 APO1-S02 APO1-S03,1,changes/0 changes/1 open_issues/0
+FG06,vector,3.2,不能用一次调用代替两项回归,1,ASU1-S03 APO1-S03 A03-S04,1,open_issues/1
+FG06,vector,3.3,尚无修复通过结论,1,ASU2-S04 APO1-S04,1,open_issues/1

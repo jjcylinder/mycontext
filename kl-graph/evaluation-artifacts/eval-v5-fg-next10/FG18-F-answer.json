@@ -1,0 +1,54 @@
+{
+  "input_sha256": "a0acb093537323fa33aad64e77d9011b47897281dd0cf82f7a0dce52d9da6d78",
+  "provenance": "new",
+  "attempts": [
+    {
+      "raw": "{\n  \"progress\": [\n    {\n      \"text\": \"项目前方汇总称有四类场景，《应用样例运行登记》明确记载现有登记列出三项。所给节选可具名确认其中一项为 DEMO-A-R「工作记录生成月报」（月报线），任务 CASE-R06。\",\n      \"occurred_at\": \"2026-11-14T09:00:00+08:00\",\n      \"evidence_ids\": [\"D07-S03\", \"D07-S04\"]\n    }\n  ],\n  \"changes\": [\n    {\n      \"text\": \"周报另有任务登记，SK-WR 对应 weekly-report，本轮用例为 CASE-W21，生成 11 月 16 日至 20 日的项目周报。它与月报 CASE-R06 共用 report-writer，但任务、统计窗口和测试周期不同，周报为 period=week，月报为 period=month。\",\n      \"occurred_at\": \"2026-11-18T13:00:00+08:00\",\n      \"evidence_ids\": [\"A02-S03\", \"AWR0-S01\"]\n    }\n  ],\n  \"open_issues\": [\n    {\n      \"text\": \"不能凭共用写作入口把周报补作运行登记第四项。新增六类只属于本次 Demo 的模拟应用验证范围，登记说明明确记载原周报所称的第四类业务场景仍未知。\",\n      \"occurred_at\": \"2026-11-18T08:20:00+08:00\",\n      \"evidence_ids\": [\"D07-S04\", \"A02-S03\", \"A02-S04\", \"AWR0-S01\"]\n    }\n  ],\n  \"coordination\": [],\n  \"uncertainties\": [\n    \"所给《应用样例运行登记》节选仅展示月报条目的明细，其余两项的名称和编号需查阅登记原文。\",\n    \"第四类业务场景的名称及其与运行条目的对应关系，需依据前方原周报的场景列举或补充材料核实。\"\n  ]\n}",
+      "usage": {
+        "prompt_tokens": 23083,
+        "completion_tokens": 471,
+        "total_tokens": 23554
+      },
+      "seconds": 14.936
+    }
+  ],
+  "answer": {
+    "progress": [
+      {
+        "text": "项目前方汇总称有四类场景，《应用样例运行登记》明确记载现有登记列出三项。所给节选可具名确认其中一项为 DEMO-A-R「工作记录生成月报」（月报线），任务 CASE-R06。",
+        "occurred_at": "2026-11-14T09:00:00+08:00",
+        "evidence_ids": [
+          "D07-S03",
+          "D07-S04"
+        ]
+      }
+    ],
+    "changes": [
+      {
+        "text": "周报另有任务登记，SK-WR 对应 weekly-report，本轮用例为 CASE-W21，生成 11 月 16 日至 20 日的项目周报。它与月报 CASE-R06 共用 report-writer，但任务、统计窗口和测试周期不同，周报为 period=week，月报为 period=month。",
+        "occurred_at": "2026-11-18T13:00:00+08:00",
+        "evidence_ids": [
+          "A02-S03",
+          "AWR0-S01"
+        ]
+      }
+    ],
+    "open_issues": [
+      {
+        "text": "不能凭共用写作入口把周报补作运行登记第四项。新增六类只属于本次 Demo 的模拟应用验证范围，登记说明明确记载原周报所称的第四类业务场景仍未知。",
+        "occurred_at": "2026-11-18T08:20:00+08:00",
+        "evidence_ids": [
+          "D07-S04",
+          "A02-S03",
+          "A02-S04",
+          "AWR0-S01"
+        ]
+      }
+    ],
+    "coordination": [],
+    "uncertainties": [
+      "所给《应用样例运行登记》节选仅展示月报条目的明细，其余两项的名称和编号需查阅登记原文。",
+      "第四类业务场景的名称及其与运行条目的对应关系，需依据前方原周报的场景列举或补充材料核实。"
+    ]
+  }
+}

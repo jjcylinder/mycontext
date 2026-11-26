@@ -5,6 +5,7 @@ from __future__ import annotations
 import sqlite3
 from collections import defaultdict
 from datetime import datetime
+from functools import cache
 
 from .fact_evidence import SOURCE_QUOTE_SQL
 
@@ -110,7 +111,9 @@ def read_graph(conn, records, scopes, fact_ids, chunk_ids, participants):
     return list(native_entities.values()), facts, refs, len(fact_rows) - len(facts)
 
 
-def expand_source_links(records: dict[str, dict], seeds: list[str]) -> tuple[list[str], list[dict]]:
+def expand_source_links(
+    records: dict[str, dict], seeds: list[str], *, include_known_links: bool = False,
+) -> tuple[list[str], list[dict]]:
     """Follow exact source/thread, reply and attachment references, without inferring facts."""
     scopes = defaultdict(list)
     sources = defaultdict(list)
@@ -128,27 +131,53 @@ def expand_source_links(records: dict[str, dict], seeds: list[str]) -> tuple[lis
             scopes[value].append(key)
         if row.get("source_id"):
             sources[row["source_id"]].append(key)
+    @cache
+    def explicit_links(key):
+        row = records[key]
+        links = []
+        if row.get("reply_to") in records:
+            links.append((row["reply_to"], "reply_to"))
+        for ref in row.get("attachment_refs") or []:
+            if isinstance(ref, str):
+                targets = [ref] if ref in records else sources.get(ref, ())
+                links.extend((target, "attachment") for target in targets)
+        return tuple(dict.fromkeys(links))
+
+    # Index actual outgoing references for both traversal directions. Only a
+    # forward reference or common scope can discover a previously unseen unit.
+    inverse_kind = {"reply_to": "has_reply", "attachment": "referenced_by_attachment"}
     selected = dict.fromkeys(key for key in seeds if key in records)
     queue = list(selected)
     paths = []
     expanded_scopes = set()
     for key in queue:
         row = records[key]
-        neighbors = []
+        scope_links = []
         value = scope(row)
         if value and value not in expanded_scopes:
             expanded_scopes.add(value)
-            neighbors.extend((ref, "same_" + value[0]) for ref in scopes[value])
-        if row.get("reply_to") in records:
-            neighbors.append((row["reply_to"], "reply_to"))
-        for ref in row.get("attachment_refs") or []:
-            if isinstance(ref, str):
-                neighbors.extend((target, "attachment") for target in ([ref] if ref in records else sources[ref]))
-        for ref, kind in neighbors:
-            if ref in selected:
+            scope_links = [(ref, "same_" + value[0]) for ref in scopes[value]]
+        explicit = explicit_links(key)
+        if include_known_links:
+            targets = {target for target, _ in explicit}
+            neighbors = list(explicit)
+            for ref, kind in scope_links:
+                if ref == key or ref in targets:
+                    continue
+                reverse = [(ref, inverse_kind[k]) for target, k in explicit_links(ref) if target == key]
+                if not reverse:
+                    neighbors.append((ref, kind))
+                elif ref not in selected:
+                    neighbors.extend(reverse)
+        else:
+            neighbors = [*scope_links, *explicit]
+
+        for ref, kind in dict.fromkeys(neighbors):
+            if ref not in selected:
+                selected[ref] = None
+                queue.append(ref)
+            elif not include_known_links or ref == key:
                 continue
-            selected[ref] = None
-            queue.append(ref)
             paths.append({"from": key, "to": ref, "type": kind})
     return list(selected), paths
 

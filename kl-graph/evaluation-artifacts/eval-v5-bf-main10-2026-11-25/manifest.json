@@ -1,0 +1,85 @@
+{
+  "dataset_id": "project-a-v5-natural-app_focus-4f98497fe04be748",
+  "model": "chatgpt-codex-default",
+  "grading_rubric": {
+    "version": "V5-rubric-1",
+    "eval_questions": 20,
+    "eval_points": 64,
+    "sha256": {
+      "questions.jsonl": "fafcd729126ff3718fab9e70f14503091a0104ecb8758d5678bc58a8548966e6",
+      "reference_answers.jsonl": "66ddbad8061a7e778539eb2190e394d2e2140a5cc683895b0cbd27b83f2a0724",
+      "应用关联参考.jsonl": "0a7b305266782f4a930f4768780aa5e4f4ec24bec0568796ecc2ee5e4d1656bf",
+      "应用问题及参考依据.md": "56ad53e0b962ae14b2217a00d181482dce587811155c406e591fa7609a544088"
+    }
+  },
+  "question_ids": [
+    "AM03",
+    "AM04",
+    "LE03",
+    "LE04",
+    "PO03",
+    "SU03",
+    "SU04",
+    "TR03",
+    "TR04",
+    "X07"
+  ],
+  "modes": [
+    "B",
+    "F"
+  ],
+  "evidence_policy": "rank",
+  "input_limit": 8192,
+  "reused": {
+    "TR04": {
+      "B": {
+        "file": "eval-v5-bfg-light-default5-2026-11-25/TR04-B.json",
+        "input_sha256": "b69108158f6d626550673f75e11bc4377e7887dbea03cd068272a244c4c09d75"
+      },
+      "F": {
+        "file": "eval-v5-bfg-light-default5-2026-11-25/TR04-F.json",
+        "input_sha256": "918658280979dee9be7bc735a30199ddf0b83e4b7adae187d0a95051242079d3"
+      }
+    },
+    "AM03": {
+      "B": {
+        "file": "eval-v5-bfg-light-default5-2026-11-25/AM03-B.json",
+        "input_sha256": "cf1966c52e07fe4d5aa6d2b53d6eaf00e32da4518b2511537aaf490029675c2d"
+      },
+      "F": {
+        "file": "eval-v5-bfg-light-default5-2026-11-25/AM03-F.json",
+        "input_sha256": "12b10a5c1e9b1680bbe29740358cab3641116d5eb84a54d032354d6e536efcc3"
+      }
+    },
+    "PO03": {
+      "B": {
+        "file": "eval-v5-bfg-light-default5-2026-11-25/PO03-B.json",
+        "input_sha256": "a7bac4353240194a872af4607a6d15ea401b77d4711ef8805bb18cee60cab3e5"
+      },
+      "F": {
+        "file": "eval-v5-bfg-light-default5-2026-11-25/PO03-F.json",
+        "input_sha256": "1f43b073df9cf0cbdaf9b89fe3a3735a8a48a7cddd0a9e57633a5ae84417e2d0"
+      }
+    }
+  },
+  "runs": {
+    "TR03": "1a1d850a-6b78-4945-92a0-228e58b37e01",
+    "SU03": "91ae7b40-f0f7-48c5-9d46-ca211321dfec",
+    "SU04": "ef1f070d-0fc0-4457-97e5-a9ba1fbbebf1",
+    "AM04": "92e01788-b3c0-48eb-af8e-523cbcdee9da",
+    "LE03": "b6b114eb-4710-4ba8-8b06-b7e09bdb2e9d",
+    "LE04": "903c2790-de9d-4476-8ad7-f574d55e23f1",
+    "X07": "fd49c66f-a047-4daf-96dc-70a5ec0dfe04"
+  },
+  "code_sha256": {
+    "project_demo/evidence_retrieval.py": "73273b1e9276bb7a9459c1cd121bd7775cba80c9943d2f5987326d4511048c47",
+    "project_demo/evidence_packing.py": "132975a7ba9398f0e80fb01864d46e9dcf4878cd1cc8b18cd2ad63f75b8dffd6",
+    "project_demo/answer.py": "76fb4e98e9f4d2b5768f14370072d94772d439f1094e23b44fe142b8e391c2e4",
+    "project_demo/app.py": "b6215e8bea22c1a2926c1667e8533f9c928901401de1bbbcb70c46d5bd7e34fa",
+    "kl_graph/query/fact_evidence.py": "13c8f3b62c9ef022a54e8b3c674eca3f5cfdb2bdcc515cc2d7705a7055b78755",
+    "kl_graph/query/source_graph.py": "d982eef1e859ba5061f183c9a5fb2ab1cc305c220f8b1ab23153df5fa46ede81",
+    "project_demo/codex_bridge.py": "3fab2d6ec208623ea2bebabbb516563f610d59b8a1d9a323a629e3a417ab867f",
+    "project_demo/path_ranking.py": "4c2bec8f8d4c055c7f803e4df39a0895e1a09af41703d3ca20d5c9b48423f689",
+    "project_demo/query_facets.py": "b66f58536f6026bfc6e35547c76ace207c59fddea66f4b1f03e0cbf6a12d5849"
+  }
+}

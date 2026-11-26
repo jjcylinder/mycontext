@@ -146,7 +146,7 @@ def _prompt(
                 excerpt["representation"] = "fact_supported_verbatim_excerpt"
             excerpt.update({key: row[key] for key in (
                 "occurred_at", "available_at", "project_scope", "project_hint", "speaker",
-                "reply_to", "thread_id", "attachment_refs", "project_basis",
+                "reply_to", "thread_id", "attachment_refs", "project_basis", "source_ranges", "paths",
             ) if row.get(key) is not None and row.get(key) != []})
             excerpts.append(excerpt)
     else:

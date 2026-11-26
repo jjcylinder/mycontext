@@ -4,6 +4,28 @@
 
 项目 A 的本地核查工作台基于 MyContext `23c6f609`，支持查阅材料、比较 B/C 核查答卷和追溯引用。仓库提供 V4 和 V5 的模拟材料。
 
+## B、F、G 简化对照实验
+
+在已导入资料且索引就绪的工作台，打开本机服务的 `/docs`，调用 `POST /demo/experiments/bfg`。先从 `GET /demo/profiles` 取已加载配置的 `dataset_id`。下例默认只生成三组的最终回答输入，适合开发题离线审核。原文、事实和实体检索使用建库时的向量配置。G 对候选路径采用轻量排序，结合起点排名、关系具体程度与终点引句的 BM25。
+
+```json
+{
+  "dataset_id": "替换为已导入的数据集标识",
+  "project_id": "项目A",
+  "question": "目前哪些交付项仍需复验，依据是什么？",
+  "modes": ["B", "F", "G"],
+  "generate_answers": false
+}
+```
+
+接口返回运行 ID，用 `GET /demo/runs/{run_id}` 查询进度和结果。需要答卷时将 `generate_answers` 设为 `true`，每个请求的方案各调用一次同一回答模型。业务评审使用结果中的 `anonymous_answers`，原文引用可回查。只运行 F 可传 `"modes": ["F"]`，此时只查原文与事实。可选的 `cutoff` 接受带时区的 ISO 时间，默认采用数据集截止时间。
+
+在运行目录 `runs/{run_id}.json` 中，`retrieval` 保存各榜名次及事实出处，`snapshot` 保存可回放的区间与路径，`groups` 保存每组的最终消息、输入指纹、预算取舍及用量，`review_key` 保存答卷的匿名映射。历史 B/C 评测继续使用 `/demo/check`，两组结果应分别统计。[固定规则与实验参数](../../企业上下文能力验证.md)
+
+G 的 `graph_delivery` 默认值为 `bundled`，用于复现冻结评测。可传 `"graph_delivery": "separate"` 对照原文与关系分开装入的效果。此时原文、事实、图谱按目标来源各投一次排名分；若各路命中不同区间，合并试装，精简候选只使用其对应通道的排名。关系单独按图谱榜名次竞争，入选时一并交付路径、匹配依据和各步引句。只装入目标原文时不会在回答输入中附上该路径。完整候选保存在运行记录的 `snapshot.paths`。B、F 使用各自原有的规则。[十题固定候选离线对照](../evaluation-artifacts/eval-v5-fg-separate-inputs/report.md)
+
+简化实验的 `evidence_policy` 默认值为 `rank`。可传 `"evidence_policy": "facet_novelty"` 复现按明确对象补查、按新增覆盖与文本重复程度装入的实验。`retrieval.facet_queries` 记录分项查询，`groups[方案].decisions` 记录候选匹配的对象及每次试装的分数。[默认五题的输入与答卷对照](../evaluation-artifacts/eval-v5-bfg-facets-default5-2026-11-25/report.md)
+
 ## 启动
 
 从 `mycontext/kl-graph` 目录执行。已有虚拟环境可直接运行最后一条命令。

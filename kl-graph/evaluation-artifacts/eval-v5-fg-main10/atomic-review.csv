@@ -1,0 +1,151 @@
+﻿题号,方案,原子项,评分口径,输入覆盖,输入依据,答卷覆盖,答卷位置
+FG01,F,1.1,晨报使用的旧快照消息水位落后,1,AAM2-S02,1,open_issues/1
+FG01,F,1.2,来源后来已可检索,0,,0,
+FG01,F,1.3,原晨报没有重跑,1,AAM2-S02 XAM2-08,1,open_issues/1 uncertainties/0
+FG01,F,2.1,周报实际窗口错误,1,AWR2-S02,1,open_issues/2
+FG01,F,2.2,周报只查文档,1,XWR1-05,0,
+FG01,F,2.3,待回签消息本来可检索,1,XWR1-05,0,
+FG01,F,3.1,两项分别登记,1,AAM2-S02 AWR2-S02,1,open_issues/0
+FG01,F,3.2,分别修复,1,XAM2-08 AWR2-S04,1,open_issues/1 open_issues/2
+FG01,F,3.3,分别回归,1,AAM2-S02 AWR2-S04,1,open_issues/1 open_issues/2
+FG01,F,3.4,可复用来源核查方法,1,AAM2-S02 AWR0-S03,0,
+FG01,G,1.1,晨报使用的旧快照消息水位落后,1,XAM2-02 XAM2-03 XAM2-06,1,progress/0 open_issues/0
+FG01,G,1.2,来源后来已可检索,0,,0,
+FG01,G,1.3,原晨报没有重跑,1,XAM2-02 XAM2-03,1,open_issues/0
+FG01,G,2.1,周报实际窗口错误,1,AWR2-S02,1,open_issues/1
+FG01,G,2.2,周报只查文档,1,XWR1-05,1,open_issues/1
+FG01,G,2.3,待回签消息本来可检索,1,XWR1-05,1,open_issues/1
+FG01,G,3.1,两项分别登记,1,XAM2-03 AWR2-S02 XWR1-07,1,progress/0
+FG01,G,3.2,分别修复,1,XAM2-03 XAM2-06 XWR2-08,1,open_issues/0 coordination/0
+FG01,G,3.3,分别回归,1,XAM2-02 XAM2-06 AWR2-S04,0,
+FG01,G,3.4,可复用来源核查方法,1,XAM2-03 XAM2-06 AWR0-S03 AWR2-S04,0,
+FG02,F,1.1,通过范围是导出格式,1,T04-04,1,progress/0
+FG02,F,1.2,译义偏差或擅自增补仍待处理,1,T04-06,1,open_issues/0
+FG02,F,2.1,把交接包与这条翻译问题对应,1,XTR2-07 A04-S01,1,progress/1
+FG02,F,2.2,有问题输入,1,D09-S03,1,progress/1
+FG02,F,2.3,有实际模型输出,1,D09-S03,1,progress/1
+FG02,F,3.1,应用须补期望答案,1,D09-S03,1,coordination/0
+FG02,F,3.2,应用须补判定说明,1,D09-S03,1,coordination/0
+FG02,F,3.3,补齐后模型组才能完成可训练性检查,1,D15-S03,1,coordination/0
+FG02,G,1.1,通过范围是导出格式,1,T04-04,1,progress/0
+FG02,G,1.2,译义偏差或擅自增补仍待处理,1,T04-06,1,open_issues/0
+FG02,G,2.1,把交接包与这条翻译问题对应,1,XTR2-07 A04-S01,1,progress/1
+FG02,G,2.2,有问题输入,1,D09-S03,1,progress/1
+FG02,G,2.3,有实际模型输出,1,D09-S03,1,progress/1
+FG02,G,3.1,应用须补期望答案,1,D09-S03,1,coordination/0
+FG02,G,3.2,应用须补判定说明,1,D09-S03,1,coordination/0
+FG02,G,3.3,补齐后模型组才能完成可训练性检查,1,D09-S03 XTR3-06 T08-04,1,coordination/0
+FG03,F,1.1,纳入07:50消息,1,AAM1-S01 XAM3-06,1,open_issues/0
+FG03,F,1.2,该消息暂缓按十点发邀,1,AAM1-S01,1,changes/0
+FG03,F,2.1,08:10只提议下午且待反馈,1,AAM1-S01,1,open_issues/0
+FG03,F,2.2,该消息排除在08:00版外,1,AAM1-S01 XAM3-07,1,open_issues/0
+FG03,F,3.1,指出旧稿把十点当作确定安排,1,AAM1-S02 AAM1-S01,1,changes/0
+FG03,F,3.2,改为时段待应用确认,1,AAM1-S01,1,changes/0
+FG03,G,1.1,纳入07:50消息,1,AAM1-S01 XAM3-06,1,open_issues/0
+FG03,G,1.2,该消息暂缓按十点发邀,1,AAM1-S01,1,changes/0
+FG03,G,2.1,08:10只提议下午且待反馈,1,AAM1-S01,1,open_issues/0
+FG03,G,2.2,该消息排除在08:00版外,1,AAM1-S01 XAM3-07,1,open_issues/0
+FG03,G,3.1,指出旧稿把十点当作确定安排,1,AAM1-S02 AAM1-S01,1,changes/0
+FG03,G,3.2,改为时段待应用确认,1,AAM1-S01,1,changes/0
+FG04,F,1.1,通过的任务是项目B的EVAL-72,1,T12-01 D06-S03,1,changes/0
+FG04,F,1.2,截图归入项目B回放,1,T12-03 D14-S03,1,progress/0
+FG04,F,2.1,调用B的发布服务,1,D14-S03,1,progress/0
+FG04,F,2.2,返回构建是M-B19,1,D14-S03,1,progress/0
+FG04,F,3.1,A候选对应EVAL-62,1,D14-S02,1,progress/1
+FG04,F,3.2,该评测仍在进行,1,T12-04,1,open_issues/0
+FG04,F,3.3,不能用B的截图给A签通过,1,T12-03 D14-S02 T12-04,1,open_issues/0
+FG04,G,1.1,通过的任务是项目B的EVAL-72,1,T12-01 T12-02 T12-03,0,
+FG04,G,1.2,截图归入项目B回放,1,T12-02 T12-03,1,progress/0
+FG04,G,2.1,调用B的发布服务,0,,0,
+FG04,G,2.2,返回构建是M-B19,1,T12-02,1,progress/0
+FG04,G,3.1,A候选对应EVAL-62,1,D14-S02,1,progress/1
+FG04,G,3.2,该评测仍在进行,1,T12-04,1,open_issues/0
+FG04,G,3.3,不能用B的截图给A签通过,1,T12-02 D14-S02 T12-04,1,open_issues/0
+FG05,F,1.1,原通报与转发是同一预装风险,1,AWR1-S01 AWR0-S02,1,progress/0
+FG05,F,1.2,该风险已解除,1,AWR1-S01,1,progress/0
+FG05,F,1.3,台账只计一次,1,AWR1-S01 AWR1-S02,1,progress/0
+FG05,F,2.1,采购回签仍未完成,1,AWR1-S01,1,open_issues/0
+FG05,F,2.2,对应发货待确认,1,AWR1-S01,1,open_issues/0
+FG05,F,2.3,该风险单列,1,AWR1-S01 AWR0-S02,1,open_issues/0
+FG05,F,3.1,第二版已去重,1,AWR1-S02,1,changes/0
+FG05,F,3.2,第二版漏掉采购消息,1,AWR1-S02,1,open_issues/1
+FG05,F,3.3,不能签全部解除,1,AWR1-S01 AWR1-S02,1,open_issues/1
+FG05,G,1.1,原通报与转发是同一预装风险,1,AWR1-S01 AWR0-S02,1,progress/0
+FG05,G,1.2,该风险已解除,1,AWR1-S01,1,progress/0
+FG05,G,1.3,台账只计一次,1,AWR1-S01 AWR1-S02,1,progress/0
+FG05,G,2.1,采购回签仍未完成,1,AWR1-S01,1,open_issues/0
+FG05,G,2.2,对应发货待确认,1,AWR1-S01,1,open_issues/0
+FG05,G,2.3,该风险单列,1,AWR1-S01 AWR0-S02,1,open_issues/0
+FG05,G,3.1,第二版已去重,1,AWR1-S02,1,changes/0
+FG05,G,3.2,第二版漏掉采购消息,1,AWR1-S02,1,open_issues/1
+FG05,G,3.3,不能签全部解除,1,AWR1-S01 AWR1-S02,1,open_issues/1
+FG06,F,1.1,摘要走文档摘要入口,1,ASU1-S03,1,progress/0
+FG06,F,1.2,使用A的12包,1,ASU1-S02,1,progress/0
+FG06,F,1.3,将客户未确认写成已确认,1,ASU1-S02 ASU1-S03,1,changes/0
+FG06,F,2.1,润色走文档润色入口,0,,0,
+FG06,F,2.2,使用A的11包,1,APO1-S02,1,progress/1
+FG06,F,2.3,拟定改成确定,1,APO1-S01 APO1-S02,1,changes/1
+FG06,F,2.4,丢失随发货调整的条件,1,APO1-S01 APO1-S02,1,changes/1
+FG06,F,3.1,两份成对材料可用于分析,1,ASU1-S02 ASU1-S03 APO1-S01 APO1-S02,1,open_issues/0 open_issues/2
+FG06,F,3.2,不能用一次调用代替两项回归,1,ASU1-S03 APO1-S02 A03-S04,1,open_issues/3
+FG06,F,3.3,尚无修复通过结论,1,ASU2-S04 XPO2-05,1,open_issues/1 open_issues/2
+FG06,G,1.1,摘要走文档摘要入口,1,ASU1-S03,1,progress/0
+FG06,G,1.2,使用A的12包,1,ASU1-S02,1,progress/0
+FG06,G,1.3,将客户未确认写成已确认,1,ASU1-S01 ASU1-S02,1,changes/0
+FG06,G,2.1,润色走文档润色入口,1,APO1-S03,1,progress/1
+FG06,G,2.2,使用A的11包,1,APO1-S02,1,progress/1
+FG06,G,2.3,拟定改成确定,1,APO1-S01 APO1-S02,1,changes/1
+FG06,G,2.4,丢失随发货调整的条件,1,APO1-S01 APO1-S02,1,changes/1
+FG06,G,3.1,两份成对材料可用于分析,1,ASU1-S01 ASU1-S02 ASU1-S03 APO1-S01 APO1-S02 APO1-S03,1,open_issues/0 coordination/0
+FG06,G,3.2,不能用一次调用代替两项回归,1,ASU1-S03 APO1-S03 A03-S04,1,open_issues/1
+FG06,G,3.3,尚无修复通过结论,1,ASU1-S02 XPO2-05 ASU0-S04,1,open_issues/1 uncertainties/1
+FG07,F,1.1,六条通过的是行文风格评审,1,APO0-S02 APO1-S04,1,progress/0
+FG07,F,1.2,两条通过的是数字日期检查,1,APO1-S04,1,progress/0
+FG07,F,1.3,现有材料无法判定两组样例交集或去重样例数,1,APO0-S02 APO1-S04 XPO2-03,1,uncertainties/0
+FG07,F,2.1,条件或否定保真仍待回归,1,APO0-S02 APO1-S04,1,open_issues/0
+FG07,F,2.2,改变原文确定性的问题尚未关闭,1,A04-S02 XPO1-04,1,open_issues/0
+FG07,F,3.1,预演包新增的检查限于数字日期,1,APO1-S04 APO2-S01,1,changes/0
+FG07,F,3.2,正式包尚未升级,1,XPO2-07,1,changes/0
+FG07,F,3.3,局部检查结果不足以外推润色整体通过,1,XPO2-03 APO1-S04,1,progress/0
+FG07,G,1.1,六条通过的是行文风格评审,1,APO0-S02 APO1-S04,1,progress/0
+FG07,G,1.2,两条通过的是数字日期检查,1,APO1-S04,1,progress/0
+FG07,G,1.3,现有材料无法判定两组样例交集或去重样例数,1,APO0-S02 APO1-S04 XPO2-03,0,
+FG07,G,2.1,条件或否定保真仍待回归,1,APO0-S02 APO1-S04,1,open_issues/0
+FG07,G,2.2,改变原文确定性的问题尚未关闭,1,A04-S02 XPO1-04,1,open_issues/0
+FG07,G,3.1,预演包新增的检查限于数字日期,1,APO1-S04 APO2-S01,1,changes/0
+FG07,G,3.2,正式包尚未升级,1,XPO2-07,1,changes/0
+FG07,G,3.3,局部检查结果不足以外推润色整体通过,1,XPO2-03 APO1-S04,1,progress/0
+FG08,F,1.1,模型原始输出出现该名字,1,ALE1-S03,1,progress/0
+FG08,F,1.2,输入没有签署人,1,ALE1-S01,1,progress/0
+FG08,F,1.3,模板没有默认签署人,1,ALE1-S03,1,progress/0
+FG08,F,2.1,实际签署人未确认,1,ALE1-S01 ALE2-S04,1,open_issues/0
+FG08,F,2.2,签署日期未确认,1,ALE1-S01 ALE2-S04,1,open_issues/0
+FG08,F,2.3,须由前方确认,1,ALE2-S04,1,open_issues/0
+FG08,F,3.1,限带草稿和待补标识的人工审阅,1,ALE2-S03,1,progress/1
+FG08,F,3.2,不能对外发送,1,ALE2-S03,1,progress/1
+FG08,G,1.1,模型原始输出出现该名字,1,ALE1-S03,1,progress/0
+FG08,G,1.2,输入没有签署人,1,ALE1-S01,1,progress/0
+FG08,G,1.3,模板没有默认签署人,1,ALE1-S03,1,progress/0
+FG08,G,2.1,实际签署人未确认,1,ALE1-S01 ALE2-S04,1,open_issues/0
+FG08,G,2.2,签署日期未确认,1,ALE1-S01 ALE2-S04,1,open_issues/0
+FG08,G,2.3,须由前方确认,1,ALE2-S04,1,open_issues/0
+FG08,G,3.1,限带草稿和待补标识的人工审阅,1,ALE2-S03,1,progress/1
+FG08,G,3.2,不能对外发送,1,ALE2-S03,1,progress/1
+FG09,F,1.1,显式选择文档摘要入口,1,A05-S01,1,progress/0
+FG09,F,2.1,使用A预演环境,1,A05-S01,1,progress/0
+FG09,F,2.2,应用是APP-A-12,1,A05-S01,1,progress/0
+FG09,F,2.3,模型是M-A12,1,A05-S01,1,progress/0
+FG09,F,3.1,准入仅覆盖已审六例,1,A05-S01,1,progress/0
+FG09,F,3.2,未经审核不能临时换输入,1,A05-S01 ASU2-S03,1,coordination/0
+FG09,G,1.1,显式选择文档摘要入口,1,A05-S01,1,progress/0
+FG09,G,2.1,使用A预演环境,1,A05-S01,1,progress/0
+FG09,G,2.2,应用是APP-A-12,1,A05-S01,1,progress/0
+FG09,G,2.3,模型是M-A12,1,A05-S01,1,progress/0
+FG09,G,3.1,准入仅覆盖已审六例,1,A05-S01,1,progress/0
+FG09,G,3.2,未经审核不能临时换输入,1,A05-S01 ASU2-S03,1,coordination/0
+FG10,F,1.1,发布消息属于项目B,1,XSH1-01,1,changes/0
+FG10,F,2.1,A正式演示环境仍用11包,1,XSH1-02,1,progress/0
+FG10,F,3.1,A的12包用于预演环境,1,XSH1-02,1,progress/1
+FG10,G,1.1,发布消息属于项目B,1,XSH1-01,1,changes/0
+FG10,G,2.1,A正式演示环境仍用11包,1,XSH1-02,1,progress/0
+FG10,G,3.1,A的12包用于预演环境,1,XSH1-02,1,progress/1

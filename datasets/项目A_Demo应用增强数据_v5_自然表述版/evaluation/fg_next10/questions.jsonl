@@ -1,0 +1,10 @@
+{"question_id": "FG11", "split": "eval", "skill": "训练协作", "question": "语料群说“别和这27条混为一个需求”。交接单应拆成哪两项，各缺什么？被追问的供数截止日，现在能填吗？", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG12", "split": "eval", "skill": "交付协调", "question": "前方在会上追问“究竟交付什么模型和应用”，还提到生成图片。回客户前在等哪两份说明？图片或视频能承诺吗？12月版本现在能给出哪种计划？", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG13", "split": "eval", "skill": "翻译", "question": "测试说“没有译文，返回了中文提示”。请从这次调用还原正文解析、翻译入口和正常应答模型各发生了什么。提示是谁生成的，这项修复应记在哪张问题单？", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG14", "split": "eval", "skill": "公函", "question": "公函复测后，一位林工要输入和原始输出，另一位说检查器做完再补回归。交接单应把这两件事分别交给谁？已经验证的模板修复又归谁？", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG15", "split": "eval", "skill": "发布与评测", "question": "交付清单要分列项目 A 的业务体验、A 候选模型评测、项目 B 的业务回放。请把各次实际服务和返回构建填对，并指出哪一行可以核对前方说的“1112”。", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG16", "split": "eval", "skill": "周报", "question": "第二版周报仍写“发货风险全部解除”。采购单待回签的消息，是索引找不到、取数没送给模型，还是模型读到后漏写？修复后应留下什么，才有依据把问题转给模型侧？", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG17", "split": "eval", "skill": "摘要", "question": "一条“压成三点”只留下解析事件，另一条交付安排却生成了摘要。能用后一条的成功调用认定前一条一定是模型选路错了吗？要对齐前一次的哪两类记录？", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG18", "split": "eval", "skill": "演示交付", "question": "前方说有四类场景，交接同事打算把“周报”填作运行登记的第四项，因为它和月报共用写作入口。现有登记能列出哪三项？第四项能这样补吗？", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG19", "split": "eval", "skill": "环境配置", "question": "测试要复现项目 A 预演环境的应用行为。请填好运行单上的应用包和模型服务，以及路由、语言、去重三项配置。", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG20", "split": "eval", "skill": "协作分工", "question": "新场景要建回归单，需先确认客户说的业务场景、收齐群消息和文档、界定测试范围并留回归记录。这三件事各找谁？", "cutoff": "2026-11-20", "profile": "app_focus"}

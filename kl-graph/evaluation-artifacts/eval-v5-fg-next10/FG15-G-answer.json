@@ -1,0 +1,53 @@
+{
+  "input_sha256": "3c038ed9d5dea9dfb72684dcea9798b378e29ad46e29d45483cfc062d517c027",
+  "provenance": "new",
+  "attempts": [
+    {
+      "raw": "{\n  \"progress\": [\n    {\n      \"text\": \"项目 A 业务体验｜APP-A-REPLAY 实际访问 service-a-stable，返回构建 M-A12。这一行可核对前方说的“1112”。构建登记明确将“1112”绑定到 M-A12，并列为项目 A 当前最优版本。11 月 19 日模型协调确认 M-A12 不变，应用协调确认该入口仍访问稳定服务。\",\n      \"occurred_at\": \"2026-11-18T09:00:00+08:00\",\n      \"evidence_ids\": [\"D14-S01\", \"D06-S01\", \"T12-05\", \"T12-06\", \"T12-07\"]\n    },\n    {\n      \"text\": \"项目 A 候选模型评测｜EVAL-62 实际访问 service-a-candidate，返回构建 M-A19。截至 11 月 20 日仍在评测，尚未决定用它替换正式稳定模型，也未据此确认业务回归通过。\",\n      \"occurred_at\": \"2026-11-18T09:00:00+08:00\",\n      \"evidence_ids\": [\"D14-S02\", \"A00-S03\", \"XSH1-04\"]\n    },\n    {\n      \"text\": \"项目 B 业务回放｜调用流水和回归截图归档在 APP-B-REPLAY，实际返回构建 M-B19。该次调用的服务名待核实。\",\n      \"occurred_at\": \"2026-11-19T09:03:00+08:00\",\n      \"evidence_ids\": [\"T12-02\", \"T12-03\"]\n    }\n  ],\n  \"changes\": [],\n  \"open_issues\": [],\n  \"coordination\": [],\n  \"uncertainties\": [\n    \"项目 B 的 APP-B-REPLAY 需核对同次调用的服务名。T12-01 提到 EVAL-72 通过及 release 服务更新，现有节选未将该服务与返回 M-B19 的回放调用绑定。\"\n  ]\n}",
+      "usage": {
+        "prompt_tokens": 23232,
+        "completion_tokens": 462,
+        "total_tokens": 23694
+      },
+      "seconds": 14.948
+    }
+  ],
+  "answer": {
+    "progress": [
+      {
+        "text": "项目 A 业务体验｜APP-A-REPLAY 实际访问 service-a-stable，返回构建 M-A12。这一行可核对前方说的“1112”。构建登记明确将“1112”绑定到 M-A12，并列为项目 A 当前最优版本。11 月 19 日模型协调确认 M-A12 不变，应用协调确认该入口仍访问稳定服务。",
+        "occurred_at": "2026-11-18T09:00:00+08:00",
+        "evidence_ids": [
+          "D14-S01",
+          "D06-S01",
+          "T12-05",
+          "T12-06",
+          "T12-07"
+        ]
+      },
+      {
+        "text": "项目 A 候选模型评测｜EVAL-62 实际访问 service-a-candidate，返回构建 M-A19。截至 11 月 20 日仍在评测，尚未决定用它替换正式稳定模型，也未据此确认业务回归通过。",
+        "occurred_at": "2026-11-18T09:00:00+08:00",
+        "evidence_ids": [
+          "D14-S02",
+          "A00-S03",
+          "XSH1-04"
+        ]
+      },
+      {
+        "text": "项目 B 业务回放｜调用流水和回归截图归档在 APP-B-REPLAY，实际返回构建 M-B19。该次调用的服务名待核实。",
+        "occurred_at": "2026-11-19T09:03:00+08:00",
+        "evidence_ids": [
+          "T12-02",
+          "T12-03"
+        ]
+      }
+    ],
+    "changes": [],
+    "open_issues": [],
+    "coordination": [],
+    "uncertainties": [
+      "项目 B 的 APP-B-REPLAY 需核对同次调用的服务名。T12-01 提到 EVAL-72 通过及 release 服务更新，现有节选未将该服务与返回 M-B19 的回放调用绑定。"
+    ]
+  }
+}

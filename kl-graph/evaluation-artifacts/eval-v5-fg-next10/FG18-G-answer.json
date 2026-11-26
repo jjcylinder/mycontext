@@ -1,0 +1,46 @@
+{
+  "input_sha256": "dcd3be28f3c90908612c462d32e34cc1b97559d0f670d2d55ce0e696a3afac73",
+  "provenance": "new",
+  "attempts": [
+    {
+      "raw": "{\n  \"progress\": [\n    {\n      \"text\": \"项目A前方汇总称有四类业务场景，现有《应用样例运行登记》列出三项：文档翻译（翻译线，DEMO-A-T / CASE-T17）、邮电部阿语公文写作（公文线，DEMO-A-L / CASE-L08）、工作记录生成月报（月报线，DEMO-A-R / CASE-R06）。\",\n      \"occurred_at\": \"2026-11-14T09:00:00+08:00\",\n      \"evidence_ids\": [\"D07-S04\", \"A02-S01\", \"D07-S02\", \"D07-S03\"]\n    }\n  ],\n  \"changes\": [],\n  \"open_issues\": [\n    {\n      \"text\": \"第四项应标为待核实，不能因共用 report-writer 就填入“周报”。周报（SK-WR / CASE-W21）属于本次 Demo 的模拟应用验证范围，按 period=week 生成11月16日至20日的项目周报。原月报 CASE-R06 按 period=month 运行，两者分别测试，任务和统计窗口不同。新增六类模拟验证范围不能用于补齐前方汇总中的第四类。\",\n      \"occurred_at\": \"2026-11-18T13:00:00+08:00\",\n      \"evidence_ids\": [\"D07-S04\", \"A02-S03\", \"A02-S04\", \"AWR0-S01\"]\n    }\n  ],\n  \"coordination\": [],\n  \"uncertainties\": [\n    \"截至2026年11月20日，前方原汇总所称第四类业务场景仍未知，需由原文中的明确场景描述或补充材料确认。\"\n  ]\n}",
+      "usage": {
+        "prompt_tokens": 23192,
+        "completion_tokens": 402,
+        "total_tokens": 23594
+      },
+      "seconds": 14.001
+    }
+  ],
+  "answer": {
+    "progress": [
+      {
+        "text": "项目A前方汇总称有四类业务场景，现有《应用样例运行登记》列出三项：文档翻译（翻译线，DEMO-A-T / CASE-T17）、邮电部阿语公文写作（公文线，DEMO-A-L / CASE-L08）、工作记录生成月报（月报线，DEMO-A-R / CASE-R06）。",
+        "occurred_at": "2026-11-14T09:00:00+08:00",
+        "evidence_ids": [
+          "D07-S04",
+          "A02-S01",
+          "D07-S02",
+          "D07-S03"
+        ]
+      }
+    ],
+    "changes": [],
+    "open_issues": [
+      {
+        "text": "第四项应标为待核实，不能因共用 report-writer 就填入“周报”。周报（SK-WR / CASE-W21）属于本次 Demo 的模拟应用验证范围，按 period=week 生成11月16日至20日的项目周报。原月报 CASE-R06 按 period=month 运行，两者分别测试，任务和统计窗口不同。新增六类模拟验证范围不能用于补齐前方汇总中的第四类。",
+        "occurred_at": "2026-11-18T13:00:00+08:00",
+        "evidence_ids": [
+          "D07-S04",
+          "A02-S03",
+          "A02-S04",
+          "AWR0-S01"
+        ]
+      }
+    ],
+    "coordination": [],
+    "uncertainties": [
+      "截至2026年11月20日，前方原汇总所称第四类业务场景仍未知，需由原文中的明确场景描述或补充材料确认。"
+    ]
+  }
+}

@@ -1,0 +1,211 @@
+﻿question,point,atom,criterion,mode,input_support,source_ids,answer_coverage,answer_json_pointers
+TR04,1,1.1,应用负责跟进翻译异常提示分支,B,1,ATR0-S04,1,/answer/coordination/0
+TR04,1,1.1,应用负责跟进翻译异常提示分支,F,1,ATR0-S04,1,/answer/coordination/0
+TR04,1,1.1,应用负责跟进翻译异常提示分支,G,1,ATR0-S04,1,/answer/coordination/0
+TR04,1,1.2,应用负责补交模型所需的译义样本材料,B,1,ATR0-S04,1,/answer/coordination/0
+TR04,1,1.2,应用负责补交模型所需的译义样本材料,F,1,ATR0-S04,1,/answer/coordination/2
+TR04,1,1.2,应用负责补交模型所需的译义样本材料,G,1,ATR0-S04,1,/answer/coordination/2
+TR04,1,1.3,测试须补做损坏附件分支回归,B,0,-,0,-
+TR04,1,1.3,测试须补做损坏附件分支回归,F,0,-,0,-
+TR04,1,1.3,测试须补做损坏附件分支回归,G,0,-,0,-
+TR04,1,1.4,测试须回归正常翻译的译义,B,1,ATR0-S04 M03-S02,1,/answer/coordination/1
+TR04,1,1.4,测试须回归正常翻译的译义,F,1,ATR0-S04 M03-S02,1,/answer/coordination/1
+TR04,1,1.4,测试须回归正常翻译的译义,G,1,ATR0-S04 M03-S02,1,/answer/coordination/1
+TR04,2,2.1,分析译义偏差需要应用给出期望译文,B,1,ATR0-S04,1,/answer/coordination/2
+TR04,2,2.1,分析译义偏差需要应用给出期望译文,F,1,ATR0-S04,1,/answer/coordination/2
+TR04,2,2.1,分析译义偏差需要应用给出期望译文,G,1,ATR0-S04,1,/answer/coordination/2
+TR04,2,2.2,分析译义偏差需要说明判定依据（例如哪些原意必须保留）,B,1,ATR0-S04,1,/answer/coordination/2
+TR04,2,2.2,分析译义偏差需要说明判定依据（例如哪些原意必须保留）,F,1,ATR0-S04,1,/answer/coordination/2
+TR04,2,2.2,分析译义偏差需要说明判定依据（例如哪些原意必须保留）,G,1,ATR0-S04,1,/answer/coordination/2
+TR04,3,3.1,预演复测通过仅适用于预演环境,B,1,XTR3-07,1,/answer/coordination/3
+TR04,3,3.1,预演复测通过仅适用于预演环境,F,1,XTR3-07,1,/answer/coordination/3
+TR04,3,3.1,预演复测通过仅适用于预演环境,G,1,XTR3-07,1,/answer/coordination/3
+TR04,3,3.2,正式环境升级须由发布侧另行核实,B,1,XTR3-07 XSH1-01,1,/answer/coordination/3
+TR04,3,3.2,正式环境升级须由发布侧另行核实,F,1,XTR3-07 XSH1-01,1,/answer/coordination/3
+TR04,3,3.2,正式环境升级须由发布侧另行核实,G,1,XTR3-07 XSH1-01,1,/answer/coordination/3
+AM03,1,1.1,补齐索引后能检索到撤回消息,B,1,XAM2-01,1,/answer/changes/0
+AM03,1,1.1,补齐索引后能检索到撤回消息,F,1,XAM2-01,1,/answer/changes/0
+AM03,1,1.1,补齐索引后能检索到撤回消息,G,1,XAM2-01,1,/answer/changes/0
+AM03,1,1.2,现有晨报仍使用旧快照,B,1,XAM2-03,1,/answer/open_issues/0
+AM03,1,1.2,现有晨报仍使用旧快照,F,1,XAM2-03,1,/answer/changes/0
+AM03,1,1.2,现有晨报仍使用旧快照,G,1,XAM2-03,1,/answer/changes/0
+AM03,2,2.1,截止前撤回十点安排的消息漏入旧快照,B,1,XAM1-06 AAM2-S02,1,/answer/changes/0
+AM03,2,2.1,截止前撤回十点安排的消息漏入旧快照,F,1,XAM1-06 AAM2-S02,1,/answer/open_issues/0
+AM03,2,2.1,截止前撤回十点安排的消息漏入旧快照,G,1,XAM1-06 AAM2-S02,1,/answer/open_issues/0
+AM03,2,2.2,旧正文仍把十点写成确定安排,B,1,AAM2-S02,1,/answer/open_issues/0
+AM03,2,2.2,旧正文仍把十点写成确定安排,F,1,AAM2-S02,1,/answer/open_issues/0
+AM03,2,2.2,旧正文仍把十点写成确定安排,G,1,AAM2-S02,1,/answer/open_issues/0
+AM03,2,2.3,须切换新快照重新生成,B,1,XAM2-07,1,/answer/coordination/0
+AM03,2,2.3,须切换新快照重新生成,F,1,XAM2-07,1,/answer/coordination/0
+AM03,2,2.3,须切换新快照重新生成,G,1,XAM2-07,1,/answer/coordination/0
+AM03,2,2.4,须核对重跑是否纳入截止前的撤回消息,B,1,XAM3-06,1,/answer/coordination/0
+AM03,2,2.4,须核对重跑是否纳入截止前的撤回消息,F,1,XAM3-06,1,/answer/coordination/0
+AM03,2,2.4,须核对重跑是否纳入截止前的撤回消息,G,1,XAM3-06,1,/answer/coordination/0
+AM03,3,3.1,数据侧负责恢复来源可见性,B,1,XAM2-01 XAM2-07 AAM0-S04,1,/answer/coordination/0
+AM03,3,3.1,数据侧负责恢复来源可见性,F,1,XAM2-01 XAM2-07 AAM0-S04,1,/answer/coordination/0
+AM03,3,3.1,数据侧负责恢复来源可见性,G,1,XAM2-01 XAM2-07 AAM0-S04,1,/answer/coordination/0
+AM03,3,3.2,应用侧负责执行重跑,B,1,XAM2-07,1,/answer/coordination/0
+AM03,3,3.2,应用侧负责执行重跑,F,1,XAM2-07,1,/answer/coordination/0
+AM03,3,3.2,应用侧负责执行重跑,G,1,XAM2-07,1,/answer/coordination/0
+AM03,3,3.3,重跑产物须交测试复核,B,1,XAM3-06,1,/answer/coordination/0
+AM03,3,3.3,重跑产物须交测试复核,F,1,XAM3-06,1,/answer/coordination/0
+AM03,3,3.3,重跑产物须交测试复核,G,1,XAM3-06,1,/answer/coordination/0
+AM03,3,3.4,截至核查时点尚无新版复核通过记录,B,1,XAM3-02 XAM3-06,1,/answer/uncertainties/0
+AM03,3,3.4,截至核查时点尚无新版复核通过记录,F,1,XAM3-02 XAM3-06,1,/answer/open_issues/1
+AM03,3,3.4,截至核查时点尚无新版复核通过记录,G,1,XAM3-02 XAM3-06,1,/answer/uncertainties/0
+PO03,1,1.1,六条通过的是行文风格评审,B,1,APO0-S02 APO1-S04,1,/answer/progress/0
+PO03,1,1.1,六条通过的是行文风格评审,F,1,APO0-S02 APO1-S04,1,/answer/progress/0
+PO03,1,1.1,六条通过的是行文风格评审,G,1,APO0-S02 APO1-S04,1,/answer/progress/0
+PO03,1,1.2,两条通过的是数字日期检查,B,1,APO1-S04,1,/answer/progress/0
+PO03,1,1.2,两条通过的是数字日期检查,F,1,APO1-S04,1,/answer/progress/0
+PO03,1,1.2,两条通过的是数字日期检查,G,1,APO1-S04,1,/answer/progress/0
+PO03,1,1.3,现有材料无法判定两组样例交集或去重样例数,B,1,APO0-S02 APO1-S04 XPO2-03,0,-
+PO03,1,1.3,现有材料无法判定两组样例交集或去重样例数,F,1,APO0-S02 APO1-S04 XPO2-03,1,/answer/uncertainties/0
+PO03,1,1.3,现有材料无法判定两组样例交集或去重样例数,G,1,APO0-S02 APO1-S04 XPO2-03,0,-
+PO03,2,2.1,条件或否定保真仍待回归,B,1,APO2-S02,1,/answer/open_issues/0
+PO03,2,2.1,条件或否定保真仍待回归,F,1,APO0-S02 APO1-S04,1,/answer/open_issues/0
+PO03,2,2.1,条件或否定保真仍待回归,G,1,APO0-S02 APO1-S04,1,/answer/open_issues/0
+PO03,2,2.2,改变原文确定性的问题尚未关闭,B,1,APO2-S02,1,/answer/open_issues/0
+PO03,2,2.2,改变原文确定性的问题尚未关闭,F,1,A04-S02 XPO1-04,1,/answer/open_issues/0
+PO03,2,2.2,改变原文确定性的问题尚未关闭,G,1,A04-S02 XPO1-04,1,/answer/open_issues/0
+PO03,3,3.1,预演包新增的检查限于数字日期,B,1,APO1-S04 APO2-S01,1,/answer/changes/0
+PO03,3,3.1,预演包新增的检查限于数字日期,F,1,APO1-S04 APO2-S01,1,/answer/changes/0
+PO03,3,3.1,预演包新增的检查限于数字日期,G,1,APO1-S04 APO2-S01,1,/answer/changes/0
+PO03,3,3.2,正式包尚未升级,B,1,XPO2-07,1,/answer/changes/0
+PO03,3,3.2,正式包尚未升级,F,1,XPO2-07,1,/answer/changes/0
+PO03,3,3.2,正式包尚未升级,G,1,XPO2-07,1,/answer/changes/0
+PO03,3,3.3,局部检查结果不足以外推润色整体通过,B,1,XPO2-03 APO1-S04,1,/answer/progress/0
+PO03,3,3.3,局部检查结果不足以外推润色整体通过,F,1,XPO2-03 APO1-S04,1,/answer/progress/0
+PO03,3,3.3,局部检查结果不足以外推润色整体通过,G,1,XPO2-03 APO1-S04,1,/answer/progress/0
+X01,1,1.1,翻译格式样例复测通过,B,1,XTR3-02,1,/answer/progress/0
+X01,1,1.1,翻译格式样例复测通过,F,0,-,0,-
+X01,1,1.1,翻译格式样例复测通过,G,0,-,0,-
+X01,1,1.2,一个翻译异常提示分支已局部复测通过（接受 TR-X02 的正确复测结果）,B,1,XTR3-02,1,/answer/progress/0
+X01,1,1.2,一个翻译异常提示分支已局部复测通过（接受 TR-X02 的正确复测结果）,F,1,XTR2-02,1,/answer/progress/0
+X01,1,1.2,一个翻译异常提示分支已局部复测通过（接受 TR-X02 的正确复测结果）,G,0,-,0,-
+X01,1,1.3,翻译译义分析样本仍缺判定材料,B,1,ATR2-S03,1,/answer/open_issues/0
+X01,1,1.3,翻译译义分析样本仍缺判定材料,F,1,ATR2-S03,1,/answer/open_issues/0
+X01,1,1.3,翻译译义分析样本仍缺判定材料,G,1,A04-S01,1,/answer/coordination/1
+X01,1,1.4,损坏附件分支结果仍待核,B,1,ATR0-S01 XTR3-02,1,/answer/progress/0
+X01,1,1.4,损坏附件分支结果仍待核,F,0,-,0,-
+X01,1,1.4,损坏附件分支结果仍待核,G,0,-,0,-
+X01,1,1.5,翻译语言补丁尚未部署正式环境,B,1,ATR2-S03,1,/answer/open_issues/0
+X01,1,1.5,翻译语言补丁尚未部署正式环境,F,1,ATR2-S03,1,/answer/open_issues/0
+X01,1,1.5,翻译语言补丁尚未部署正式环境,G,0,-,0,-
+X01,1,1.6,翻译整体尚未获得演示准入,B,1,ATR2-S04,1,/answer/open_issues/0
+X01,1,1.6,翻译整体尚未获得演示准入,F,1,ATR2-S04,1,/answer/progress/0
+X01,1,1.6,翻译整体尚未获得演示准入,G,1,ATR2-S04,1,/answer/changes/2
+X01,2,2.1,摘要预演准入只涵盖已审定的固定六例,B,1,A05-S01,1,/answer/changes/0
+X01,2,2.1,摘要预演准入只涵盖已审定的固定六例,F,1,A05-S01,1,/answer/changes/1
+X01,2,2.1,摘要预演准入只涵盖已审定的固定六例,G,1,A05-S01,1,/answer/changes/1
+X01,2,2.2,该准入要求使用显式摘要入口,B,1,A05-S01,1,/answer/changes/0
+X01,2,2.2,该准入要求使用显式摘要入口,F,1,A05-S01,1,/answer/changes/1
+X01,2,2.2,该准入要求使用显式摘要入口,G,1,A05-S01,1,/answer/changes/1
+X01,2,2.3,隐式调用仍会漏派发,B,1,ASU1-S04,1,/answer/open_issues/1
+X01,2,2.3,隐式调用仍会漏派发,F,1,ASU1-S04,1,/answer/open_issues/1
+X01,2,2.3,隐式调用仍会漏派发,G,1,ASU1-S04,1,/answer/open_issues/3
+X01,2,2.4,已经进入摘要的样例仍有内容保真问题,B,1,ASU1-S04 ASU2-S04,1,/answer/open_issues/1
+X01,2,2.4,已经进入摘要的样例仍有内容保真问题,F,1,ASU1-S04 ASU2-S04,1,/answer/open_issues/1
+X01,2,2.4,已经进入摘要的样例仍有内容保真问题,G,1,ASU1-S04 ASU2-S04,1,/answer/open_issues/3
+X01,3,3.1,晨报已经生成文件,B,0,-,0,-
+X01,3,3.1,晨报已经生成文件,F,0,-,0,-
+X01,3,3.1,晨报已经生成文件,G,0,-,0,-
+X01,3,3.2,晨报可展示静态预览,B,0,-,0,-
+X01,3,3.2,晨报可展示静态预览,F,0,-,0,-
+X01,3,3.2,晨报可展示静态预览,G,0,-,0,-
+X01,3,3.3,晨报须替换旧快照重跑,B,0,-,0,-
+X01,3,3.3,晨报须替换旧快照重跑,F,0,-,0,-
+X01,3,3.3,晨报须替换旧快照重跑,G,0,-,0,-
+X01,3,3.4,晨报尚未自动发送,B,0,-,0,-
+X01,3,3.4,晨报尚未自动发送,F,0,-,0,-
+X01,3,3.4,晨报尚未自动发送,G,0,-,0,-
+X01,4,4.1,公函模板已有局部修补,B,0,-,0,-
+X01,4,4.1,公函模板已有局部修补,F,0,-,0,-
+X01,4,4.1,公函模板已有局部修补,G,0,-,0,-
+X01,4,4.2,公函演示仅限草稿人工审阅,B,1,A05-S02,1,/answer/changes/1
+X01,4,4.2,公函演示仅限草稿人工审阅,F,1,A05-S02,1,/answer/changes/2
+X01,4,4.2,公函演示仅限草稿人工审阅,G,1,A05-S02,1,/answer/changes/1
+X01,4,4.3,公函缺签署人时仍须处理补写问题,B,0,-,0,-
+X01,4,4.3,公函缺签署人时仍须处理补写问题,F,0,-,0,-
+X01,4,4.3,公函缺签署人时仍须处理补写问题,G,0,-,0,-
+X01,4,4.4,公函输出检查尚待完成,B,0,-,0,-
+X01,4,4.4,公函输出检查尚待完成,F,0,-,0,-
+X01,4,4.4,公函输出检查尚待完成,G,0,-,0,-
+X01,5,5.1,周报去重子项通过,B,1,XWR3-02,1,/answer/progress/2
+X01,5,5.1,周报去重子项通过,F,1,XWR3-02,1,/answer/progress/2
+X01,5,5.1,周报去重子项通过,G,1,XWR3-02,1,/answer/progress/1
+X01,5,5.2,周报统计窗口问题未修,B,1,XWR3-02,1,/answer/open_issues/2
+X01,5,5.2,周报统计窗口问题未修,F,1,XWR3-02,1,/answer/open_issues/2
+X01,5,5.2,周报统计窗口问题未修,G,1,XWR3-02,1,/answer/open_issues/2
+X01,5,5.3,周报消息来源漏取未修,B,1,XWR3-02 XSH2-02,1,/answer/open_issues/2
+X01,5,5.3,周报消息来源漏取未修,F,1,XWR3-02 XSH2-02,1,/answer/open_issues/2
+X01,5,5.3,周报消息来源漏取未修,G,1,XWR3-02 XSH2-02,1,/answer/open_issues/2
+X01,5,5.4,周报整体尚未准入,B,1,A05-S03,1,/answer/open_issues/2
+X01,5,5.4,周报整体尚未准入,F,1,A05-S03,1,/answer/open_issues/2
+X01,5,5.4,周报整体尚未准入,G,1,A05-S03,1,/answer/changes/2
+X01,6,6.1,润色已有行文风格评审通过记录,B,1,XPO2-02,0,-
+X01,6,6.1,润色已有行文风格评审通过记录,F,1,XPO2-02,1,/answer/progress/3
+X01,6,6.1,润色已有行文风格评审通过记录,G,0,-,0,-
+X01,6,6.2,润色已有数字日期检查通过记录,B,0,-,0,-
+X01,6,6.2,润色已有数字日期检查通过记录,F,1,XPO2-01,1,/answer/progress/3
+X01,6,6.2,润色已有数字日期检查通过记录,G,0,-,0,-
+X01,6,6.3,润色的事实保真尚有明确未解决的缺口,B,0,-,0,-
+X01,6,6.3,润色的事实保真尚有明确未解决的缺口,F,0,-,0,-
+X01,6,6.3,润色的事实保真尚有明确未解决的缺口,G,0,-,0,-
+X01,6,6.4,润色的局部结果不可扩展至任意文档,B,0,-,0,-
+X01,6,6.4,润色的局部结果不可扩展至任意文档,F,0,-,0,-
+X01,6,6.4,润色的局部结果不可扩展至任意文档,G,0,-,0,-
+X01,7,7.1,把应用侧与至少一项具体待办对应,B,1,A01-S01 XSH2-02,1,/answer/coordination/0
+X01,7,7.1,把应用侧与至少一项具体待办对应,F,1,A01-S01 XSH2-02,1,/answer/coordination/0
+X01,7,7.1,把应用侧与至少一项具体待办对应,G,1,A01-S01 XSH2-02,1,/answer/coordination/0
+X01,7,7.2,把测试侧与至少一项具体待办对应,B,1,XWR3-08,1,/answer/coordination/0
+X01,7,7.2,把测试侧与至少一项具体待办对应,F,1,XWR3-08,1,/answer/coordination/1
+X01,7,7.2,把测试侧与至少一项具体待办对应,G,1,XWR3-08,1,/answer/coordination/0
+X01,7,7.3,把数据侧与至少一项具体待办对应,B,0,-,0,-
+X01,7,7.3,把数据侧与至少一项具体待办对应,F,0,-,0,-
+X01,7,7.3,把数据侧与至少一项具体待办对应,G,0,-,0,-
+X01,7,7.4,把发布侧与至少一项具体待办对应,B,0,-,0,-
+X01,7,7.4,把发布侧与至少一项具体待办对应,F,0,-,0,-
+X01,7,7.4,把发布侧与至少一项具体待办对应,G,0,-,0,-
+X01,7,7.5,把模型侧与至少一项具体待办对应,B,1,M03-S02,1,/answer/coordination/1
+X01,7,7.5,把模型侧与至少一项具体待办对应,F,1,M03-S02,1,/answer/coordination/2
+X01,7,7.5,把模型侧与至少一项具体待办对应,G,1,M03-S02,1,/answer/coordination/1
+X03,1,1.1,已发布的 12 包属于项目 B,B,1,XSH1-01,1,/answer/progress/0
+X03,1,1.1,已发布的 12 包属于项目 B,F,1,XSH1-01,1,/answer/progress/0
+X03,1,1.1,已发布的 12 包属于项目 B,G,1,XSH1-01,1,/answer/progress/0
+X03,1,1.2,项目 A 正式环境仍用 11 包,B,1,A03-S03,1,/answer/progress/0
+X03,1,1.2,项目 A 正式环境仍用 11 包,F,1,A03-S03,1,/answer/progress/0
+X03,1,1.2,项目 A 正式环境仍用 11 包,G,1,A03-S03,1,/answer/progress/0
+X03,2,2.1,预演路由仅验证已测入口,B,1,A05-S01 XSH1-06,1,/answer/open_issues/0
+X03,2,2.1,预演路由仅验证已测入口,F,1,A05-S01 XSH1-06,1,/answer/changes/2
+X03,2,2.1,预演路由仅验证已测入口,G,1,A05-S01 XSH1-06,1,/answer/changes/0
+X03,2,2.2,翻译加密异常提示已在预演复测（接受 TR-X02）,B,1,XTR3-02,1,/answer/progress/2
+X03,2,2.2,翻译加密异常提示已在预演复测（接受 TR-X02）,F,1,XTR3-02,1,/answer/progress/2
+X03,2,2.2,翻译加密异常提示已在预演复测（接受 TR-X02）,G,1,XTR3-02,1,/answer/progress/3
+X03,2,2.3,翻译损坏附件分支仍待验证（接受 TR-X03）,B,0,-,0,-
+X03,2,2.3,翻译损坏附件分支仍待验证（接受 TR-X03）,F,1,ATR2-S02,1,/answer/progress/2
+X03,2,2.3,翻译损坏附件分支仍待验证（接受 TR-X03）,G,0,-,0,-
+X03,2,2.4,摘要目标语言路径尚待验证,B,0,-,0,-
+X03,2,2.4,摘要目标语言路径尚待验证,F,0,-,0,-
+X03,2,2.4,摘要目标语言路径尚待验证,G,0,-,0,-
+X03,2,2.5,公函目标语言路径尚待验证,B,0,-,0,-
+X03,2,2.5,公函目标语言路径尚待验证,F,0,-,0,-
+X03,2,2.5,公函目标语言路径尚待验证,G,0,-,0,-
+X03,2,2.6,周报去重仅有预演环境的局部验证,B,0,-,0,-
+X03,2,2.6,周报去重仅有预演环境的局部验证,F,1,XWR3-03,1,/answer/progress/4
+X03,2,2.6,周报去重仅有预演环境的局部验证,G,1,XWR3-03,1,/answer/changes/0
+X03,3,3.1,沿用验证结论须匹配所属项目,B,1,A03-S03 XSH1-01,1,/answer/progress/0
+X03,3,3.1,沿用验证结论须匹配所属项目,F,1,A03-S03 XSH1-01,1,/answer/progress/0
+X03,3,3.1,沿用验证结论须匹配所属项目,G,1,A03-S03 XSH1-01,1,/answer/progress/0
+X03,3,3.2,沿用验证结论须匹配实际环境,B,1,A03-S03 A05-S01,1,/answer/progress/0
+X03,3,3.2,沿用验证结论须匹配实际环境,F,1,A03-S03 A05-S01,1,/answer/progress/0
+X03,3,3.2,沿用验证结论须匹配实际环境,G,1,A03-S03 A05-S01,1,/answer/progress/0
+X03,3,3.3,沿用验证结论须匹配应用包,B,1,A03-S03 A05-S01,1,/answer/progress/0
+X03,3,3.3,沿用验证结论须匹配应用包,F,1,A03-S03 A05-S01,1,/answer/progress/0
+X03,3,3.3,沿用验证结论须匹配应用包,G,1,A03-S03 A05-S01,1,/answer/progress/0
+X03,3,3.4,沿用验证结论须匹配模型配置,B,1,A05-S01 XSH1-06,1,/answer/changes/0
+X03,3,3.4,沿用验证结论须匹配模型配置,F,1,A05-S01 XSH1-06,1,/answer/open_issues/3
+X03,3,3.4,沿用验证结论须匹配模型配置,G,1,A05-S01 XSH1-06,1,/answer/open_issues/0
+X03,3,3.5,沿用验证结论须匹配已验用例范围,B,1,A05-S01 XSH1-06,1,/answer/progress/1
+X03,3,3.5,沿用验证结论须匹配已验用例范围,F,1,A05-S01 XSH1-06,1,/answer/progress/1
+X03,3,3.5,沿用验证结论须匹配已验用例范围,G,1,A05-S01 XSH1-06,1,/answer/progress/1

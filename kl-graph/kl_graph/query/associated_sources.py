@@ -31,6 +31,14 @@ class _Hop(NamedTuple):
     text: str
 
 
+def entity_name_pattern(name):
+    """Match a stored entity name without treating a longer identifier as the same object."""
+    pattern = re.escape(name)
+    if name.isascii():
+        pattern = r"(?<![a-z0-9_-])" + pattern + r"(?![a-z0-9_-])"
+    return re.compile(pattern, re.I | re.ASCII)
+
+
 def _associated_sources(conn, records, seeds, original_ids, question):
     """Return witnessed paths to additional sources, without inferring a business relation.
 
@@ -56,10 +64,7 @@ def _associated_sources(conn, records, seeds, original_ids, question):
         if not name or len(name.strip()) < 2:
             continue
         if eid not in patterns:
-            pattern = re.escape(name)
-            if name.isascii():
-                pattern = r"(?<![a-z0-9_-])" + pattern + r"(?![a-z0-9_-])"
-            patterns[eid] = re.compile(pattern, re.I | re.ASCII)
+            patterns[eid] = entity_name_pattern(name)
         match = patterns[eid].search
         if match(claim) and match(records[unit]['content']):
             anchors[eid].setdefault(unit, fid)

@@ -185,6 +185,7 @@ def _work_graph(records: dict[str, dict], project_id: str) -> tuple[list[dict], 
 
 async def query_original_vectors(
     base_url: str, data_dir: Path, question: str, records: dict[str, dict], *, timeout: float = 30,
+    allow_empty: bool = False,
 ) -> list[str]:
     """Rank original records from native dense chunk hits and their lineage."""
     path = data_dir / "knowledge.db"
@@ -203,7 +204,7 @@ async def query_original_vectors(
     if (not isinstance(answer, dict) or answer.get("collection") != "chunks"
             or not isinstance(answer.get("results"), list)):
         raise ContextUnavailable("原文向量查询返回了无法识别的数据")
-    if not answer["results"]:
+    if not answer["results"] and not allow_empty:
         raise ContextUnavailable("当前数据集的原文向量索引为空")
     chunk_ids = []
     for hit in answer["results"]:

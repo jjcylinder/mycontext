@@ -1,0 +1,82 @@
+{
+  "input_sha256": "f2b2b3f662d49a68a21c7cd94b52748f308c89ce9d4bbb4a10282d0df06f3b00",
+  "provenance": "new",
+  "attempts": [
+    {
+      "raw": "{\n  \"progress\": [\n    {\n      \"text\": \"11 月 19 日归档的这批截图来自项目 B 的回归回放 APP-B-REPLAY，实际访问 service-b-release，返回构建 M-B19。\",\n      \"occurred_at\": \"2026-11-19T09:06:00+08:00\",\n      \"evidence_ids\": [\"T12-02\", \"T12-03\", \"D14-S03\"]\n    },\n    {\n      \"text\": \"项目 A 的业务体验走 APP-A-REPLAY，访问 service-a-stable，返回 M-A12（版本标签 1112）。项目 A 第六轮候选 M-A19 已完成训练并提交 EVAL-62，该评测实际访问 service-a-candidate，返回 M-A19。\",\n      \"occurred_at\": \"2026-11-19T09:18:00+08:00\",\n      \"evidence_ids\": [\"T12-05\", \"T12-06\", \"T12-07\", \"D14-S01\", \"D06-S01\", \"D06-S02\", \"T03-01\", \"D14-S02\"]\n    }\n  ],\n  \"changes\": [\n    {\n      \"text\": \"模型协调在群里通报的 EVAL-72 通过和 release 服务更新，归属项目 B 的 M-B19 和 service-b-release。\",\n      \"occurred_at\": \"2026-11-19T09:00:00+08:00\",\n      \"evidence_ids\": [\"T12-01\", \"T12-02\", \"D06-S03\", \"D14-S03\"]\n    }\n  ],\n  \"open_issues\": [\n    {\n      \"text\": \"截至 11 月 20 日截止时，不能凭这批截图给项目 A 的 M-A19 签通过。截图验证的是项目 B 的回归，项目 A 的 EVAL-62 仍无最终结果，M-A19 尚未获准替换稳定模型。项目 A 已通过的摘要六例仅覆盖预演环境的 APP-A-12 + M-A12，正式演示环境仍为 APP-A-11 + M-A12。\",\n      \"occurred_at\": \"2026-11-20T16:23:00+08:00\",\n      \"evidence_ids\": [\"D14-S03\", \"A00-S03\", \"XSU3-06\", \"XSH1-04\", \"NSU-S02\", \"XSH1-03\", \"A03-S03\"]\n    }\n  ],\n  \"coordination\": [\n    {\n      \"text\": \"测试要求在记录里保留完整构建号。如果演示现场切换模型，须重新核对摘要六例和受影响的 Skill，现有通过结论仅适用于登记配置。\",\n      \"occurred_at\": \"2026-11-20T16:25:00+08:00\",\n      \"evidence_ids\": [\"T12-08\", \"XSH1-03\", \"XSH1-05\", \"XSH1-06\"]\n    }\n  ],\n  \"uncertainties\": []\n}",
+      "usage": {
+        "prompt_tokens": 23132,
+        "completion_tokens": 675,
+        "total_tokens": 23807
+      },
+      "seconds": 21.791
+    }
+  ],
+  "answer": {
+    "progress": [
+      {
+        "text": "11 月 19 日归档的这批截图来自项目 B 的回归回放 APP-B-REPLAY，实际访问 service-b-release，返回构建 M-B19。",
+        "occurred_at": "2026-11-19T09:06:00+08:00",
+        "evidence_ids": [
+          "T12-02",
+          "T12-03",
+          "D14-S03"
+        ]
+      },
+      {
+        "text": "项目 A 的业务体验走 APP-A-REPLAY，访问 service-a-stable，返回 M-A12（版本标签 1112）。项目 A 第六轮候选 M-A19 已完成训练并提交 EVAL-62，该评测实际访问 service-a-candidate，返回 M-A19。",
+        "occurred_at": "2026-11-19T09:18:00+08:00",
+        "evidence_ids": [
+          "T12-05",
+          "T12-06",
+          "T12-07",
+          "D14-S01",
+          "D06-S01",
+          "D06-S02",
+          "T03-01",
+          "D14-S02"
+        ]
+      }
+    ],
+    "changes": [
+      {
+        "text": "模型协调在群里通报的 EVAL-72 通过和 release 服务更新，归属项目 B 的 M-B19 和 service-b-release。",
+        "occurred_at": "2026-11-19T09:00:00+08:00",
+        "evidence_ids": [
+          "T12-01",
+          "T12-02",
+          "D06-S03",
+          "D14-S03"
+        ]
+      }
+    ],
+    "open_issues": [
+      {
+        "text": "截至 11 月 20 日截止时，不能凭这批截图给项目 A 的 M-A19 签通过。截图验证的是项目 B 的回归，项目 A 的 EVAL-62 仍无最终结果，M-A19 尚未获准替换稳定模型。项目 A 已通过的摘要六例仅覆盖预演环境的 APP-A-12 + M-A12，正式演示环境仍为 APP-A-11 + M-A12。",
+        "occurred_at": "2026-11-20T16:23:00+08:00",
+        "evidence_ids": [
+          "D14-S03",
+          "A00-S03",
+          "XSU3-06",
+          "XSH1-04",
+          "NSU-S02",
+          "XSH1-03",
+          "A03-S03"
+        ]
+      }
+    ],
+    "coordination": [
+      {
+        "text": "测试要求在记录里保留完整构建号。如果演示现场切换模型，须重新核对摘要六例和受影响的 Skill，现有通过结论仅适用于登记配置。",
+        "occurred_at": "2026-11-20T16:25:00+08:00",
+        "evidence_ids": [
+          "T12-08",
+          "XSH1-03",
+          "XSH1-05",
+          "XSH1-06"
+        ]
+      }
+    ],
+    "uncertainties": []
+  }
+}

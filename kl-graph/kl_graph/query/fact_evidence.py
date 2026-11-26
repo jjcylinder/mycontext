@@ -11,7 +11,16 @@ _DATE = re.compile(r"^\[\d{4}-\d{2}-\d{2}\]\s*")
 _CODE = re.compile(r"[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+")
 _BUSINESS_TYPES = {"STATUS", "DECISION", "DELEGATE", "ACTION_ITEM", "CAUSAL", "REQUEST"}
 _ANAPHORA = re.compile(r"该(?:包|项|版本|项目|方案|记录|样本|文件|对象|配置|环境|问题|任务|结果)|上述|前述|其中|这些|此项|其余")
-_REPLY_REFERENCE = re.compile(r"这[几两三四一]?([项列条步点个]|部分)|那[个项包]|上述|前述|该包|these|those", re.I)
+# Discourse references are shared by all fact readers, independent of the question,
+# project or object being discussed. A temporal/location word alone is insufficient.
+_REPLY_REFERENCE = re.compile(
+    r"这[几两三四一]?(?:项|列|条|步|点|个|部分)|那[个项包]|上述|前述|该包|these|those"
+    r"|(?:上文|前文|上面|前面|之前|此前|刚才)(?:所(?:述|列|示|指)|(?:所|已经|有)?"
+    r"(?:说|提|讲|写|约定|确认|指定|讨论)(?:过|到|及|好|明)?的)"
+    r"|(?:上一条|前一条|上条)(?:消息|回复|记录|里|中|的)"
+    r"|(?:按照|按|照|沿用|参照|采用|根据)(?:上|前)一(?:个|次|版|轮|份|项|条|组|套)",
+    re.I,
+)
 
 
 # SQLite is the authoritative store for source provenance on every graph backend.
@@ -67,7 +76,8 @@ def _located(text, sentences, content, anchor):
     return indices
 
 
-def _spans(sentences, selected):
+def qualified_spans(sentences, selected):
+    """Keep adjacent antecedents and qualifications with selected text spans."""
     selected = set(selected)
     for i in list(selected):
         if i and (_ANAPHORA.search(sentences[i][0]) or re.match(
@@ -115,7 +125,7 @@ def fact_excerpts(records: dict[str, dict], facts: list[dict], *, audit: dict | 
                           "status": "full_text_unmatched_facts" if unmatched else "no_projection"}
         if unmatched or not selected:
             continue
-        spans = _spans(sentences, selected)
+        spans = qualified_spans(sentences, selected)
         excerpt = "\n[…]\n".join(content[s["start"]:s["end"]] for s in spans)
         if len(excerpt) < len(content):
             projections[key] = {"content": excerpt, "spans": spans, "fact_ids": sorted(set(matched)),
@@ -123,6 +133,22 @@ def fact_excerpts(records: dict[str, dict], facts: list[dict], *, audit: dict | 
             if audit is not None:
                 audit[key]["status"] = "projected"
     return projections
+
+
+def _claim_fragments(text):
+    """Literal context supplied by extraction, excluding date framing and punctuation."""
+    chinese = re.findall(r"[\u3400-\u9fff]+", _DATE.sub("", text))
+    return {part[i:i + 4] for part in chinese for i in range(len(part) - 3)}
+
+
+def _valid_reply_parent(row, parent):
+    if not parent or not row.get("conversation_id") or parent.get("conversation_id") != row["conversation_id"]:
+        return False
+    if row.get("thread_id") and parent.get("thread_id") and row["thread_id"] != parent["thread_id"]:
+        return False
+    child_time, parent_time = row.get("timestamp"), parent.get("timestamp")
+    return not (isinstance(child_time, (int, float)) and isinstance(parent_time, (int, float))
+                and parent_time > child_time)
 
 
 def fact_support(text, primary, get_record, source_quote=None):
@@ -136,7 +162,7 @@ def fact_support(text, primary, get_record, source_quote=None):
     indices = []
     if not chat:
         sentences = list(_SENTENCE.finditer(body))
-        indices = _spans(sentences, _located(_DATE.sub("", text), sentences, body, source_quote))
+        indices = qualified_spans(sentences, _located(_DATE.sub("", text), sentences, body, source_quote))
     quotes = [{"unit_id": primary, "start": span["start"], "end": span["end"],
                "quote": body[span["start"]:span["end"]]} for span in indices]
     status = "located" if quotes else "whole_source"
@@ -148,24 +174,24 @@ def fact_support(text, primary, get_record, source_quote=None):
         missing = set(_CODE.findall(text)) - set(_CODE.findall(body))
         needs_parent = bool(_REPLY_REFERENCE.search(body))
         seen = {primary}
-        while missing or needs_parent:
+        # A stored fact may name an object supplied only by its reply parent,
+        # even when the child contains no recognizable reference wording.
+        unmatched = {part for part in _claim_fragments(text) if part not in body}
+        while missing or needs_parent or unmatched:
             parent_id = row.get("reply_to")
             parent = get_record(parent_id) if parent_id and parent_id not in seen else None
-            if not parent or not row.get("conversation_id") or parent.get("conversation_id") != row["conversation_id"]:
-                status = "incomplete_context"
-                break
-            if isinstance(row.get("timestamp"), (int, float)) and isinstance(parent.get("timestamp"), (int, float)):
-                if parent["timestamp"] > row["timestamp"]:
+            if not _valid_reply_parent(row, parent):
+                if missing or needs_parent:
                     status = "incomplete_context"
-                    break
-            if row.get("thread_id") and parent.get("thread_id") and row["thread_id"] != parent["thread_id"]:
-                status = "incomplete_context"
+                break
+            if not missing and not needs_parent and not any(part in parent["content"] for part in unmatched):
                 break
             seen.add(parent_id)
             body = parent["content"]
             quotes.append({"unit_id": parent_id, "start": 0, "end": len(body), "quote": body})
             if speaker := parent.get("speaker"):
                 quotes[-1]["speaker"] = speaker
+            unmatched = {part for part in unmatched if part not in body}
             missing.difference_update(_CODE.findall(body))
             needs_parent = bool(_REPLY_REFERENCE.search(body))
             row = parent
@@ -225,29 +251,45 @@ def stored_fact_support(conn, text, chunk_id, primary, source_quote=None):
     return support
 
 
-def source_evidence(conn, records, candidates, *, question=""):
-    """Read evidence from in-scope bodies. Archived callers may still pass question."""
-    facts = []
-    dependencies = defaultdict(dict)
-    ids = list(dict.fromkeys(key for key in candidates if key in records))
+def source_facts(conn, records, candidates=None, *, fact_ids=None):
+    """Read precise provenance by source IDs or by independently retrieved fact IDs."""
+    if (candidates is None) == (fact_ids is None):
+        raise ValueError("Supply one set of source IDs or fact IDs")
+    if fact_ids is not None:
+        ids = list(dict.fromkeys(fact_ids))
+        column = "f.id"
+    else:
+        ids = list(dict.fromkeys(key for key in candidates if key in records))
+        column = "cu.unit_id"
     for start in range(0, len(ids), 400):
         batch = ids[start:start + 400]
         marks = ",".join("?" for _ in batch)
         rows = conn.execute(f"""
             SELECT cu.unit_id, f.id, f.fact_type, f.text, {SOURCE_QUOTE_SQL}
             FROM chunk_units cu JOIN facts f ON f.source_chunk_id = cu.chunk_id
-            WHERE cu.unit_id IN ({marks}) AND (
+            WHERE {column} IN ({marks}) AND (
                 f.source_unit_id = cu.unit_id OR (NULLIF(f.source_unit_id, '') IS NULL AND
                 (SELECT count(*) FROM chunk_units other WHERE other.chunk_id = cu.chunk_id) = 1))
             ORDER BY cu.unit_id, f.id
         """, batch)
         for key, fid, kind, text, anchor in rows:
-            if records[key].get("source_type") in {"chat", "message"}:
-                support = fact_support(text, key, records.get)
-                if support["status"] == "reply_context":
-                    dependencies[key].update(dict.fromkeys(q["unit_id"] for q in support["quotes"][1:]))
-            else:
-                facts.append({"id": fid, "text": text, "type": kind, "source_quote": anchor, "evidence_ids": [key]})
+            if key not in records:
+                continue
+            yield {"id": fid, "text": text, "type": kind, "source_quote": anchor, "evidence_ids": [key]}
+
+
+def source_evidence(conn, records, candidates, *, question=""):
+    """Read evidence from in-scope bodies. Archived callers may still pass question."""
+    facts = []
+    dependencies = defaultdict(dict)
+    for fact in source_facts(conn, records, candidates):
+        key = fact["evidence_ids"][0]
+        if records[key].get("source_type") in {"chat", "message"}:
+            support = fact_support(fact["text"], key, records.get)
+            if support["status"] == "reply_context":
+                dependencies[key].update(dict.fromkeys(q["unit_id"] for q in support["quotes"][1:]))
+        else:
+            facts.append(fact)
     audit = {}
     excerpts = fact_excerpts(records, facts, audit=audit)
     return {"projections": excerpts, "audit": audit,

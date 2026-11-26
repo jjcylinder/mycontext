@@ -1,0 +1,60 @@
+{
+  "input_sha256": "a8360942ab96ff276e9a178fc5e15c2c5f43b40e69bf6411b0809bb151bdc2b3",
+  "answer": {
+    "progress": [
+      {
+        "text": "截至2026年11月20日23:59，项目A不能报“润色八条完整通过”。可报“STYLE-P06六个样例通过行文与语气评审，预演包中POL-NUM02两条数字与日期检查通过”。两组检查覆盖范围不同，不能合并计算润色完整通过率。",
+        "occurred_at": "2026-11-20T14:50:00+08:00",
+        "evidence_ids": [
+          "APO0-S02",
+          "APO2-S01",
+          "NPO-S02",
+          "XPO2-03"
+        ]
+      }
+    ],
+    "changes": [
+      {
+        "text": "APP-A-12已加入数字与日期检查。本次补充仅覆盖数字与日期，不能替代条件检查。联调群发布侧反馈正式版本APP-A-11尚未升级。",
+        "occurred_at": "2026-11-20T14:26:00+08:00",
+        "evidence_ids": [
+          "APO1-S04",
+          "XPO2-06",
+          "XPO2-07"
+        ]
+      }
+    ],
+    "open_issues": [
+      {
+        "text": "POL-LOCK01事实约束回归尚未完成，仍需验证拟定程度、否定、适用条件和确认状态是否保留。已有样例保留了“12月10日”，却把“尚未确认”改成“已获确认”。润色问题POL-F08已有成对原文、输出和调用摘录，尚无修复通过结论。",
+        "occurred_at": "2026-11-20T16:05:00+08:00",
+        "evidence_ids": [
+          "APO0-S02",
+          "APO1-S04",
+          "XPO1-04",
+          "APO0-S03",
+          "A04-S02"
+        ]
+      },
+      {
+        "text": "现有结果只支持报告风格改善和数字检查的局部进展，尚不足以确认原文事实完整保留。项目A尚未获得任意文档自动润色准入。",
+        "occurred_at": "2026-11-20T14:50:00+08:00",
+        "evidence_ids": [
+          "APO2-S03",
+          "APO2-S04",
+          "NPO-S03"
+        ]
+      }
+    ],
+    "coordination": [],
+    "uncertainties": []
+  },
+  "usage": {
+    "prompt_tokens": 23181,
+    "completion_tokens": 547,
+    "total_tokens": 23728
+  },
+  "historical_seconds": 18.53,
+  "provenance": "eval-v5-bfg-light-default5-2026-11-25/PO03-G.json",
+  "attempts": []
+}

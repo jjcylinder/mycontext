@@ -1,0 +1,10 @@
+{"question_id": "FG01", "split": "eval", "skill": "跨Skill", "question": "晨报漏更新与周报漏PO风险都是信息遗漏，是否可以登记为同一个缺陷？", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG02", "split": "eval", "skill": "翻译", "question": "导出排版复测通过后，模型组还要跟哪一项翻译问题？这条问题进了哪份交接材料，里面已经有什么？应用还要补什么，模型组随后才能做什么？", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG03", "split": "eval", "skill": "晨报", "question": "数据组答应交新快照和源时间清单。测试收到重跑晨报时，该用哪两条群消息检查 08:00 的取材边界，旧稿中的会邀安排应怎样改？", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG04", "split": "eval", "skill": "跨Skill", "question": "模型协调群说评测通过、release 服务已更新，测试也归档了截图。这批截图来自哪个项目的哪次回放，实际调的是哪个服务、返回哪个构建？能据此给项目 A 的 19 版候选签通过吗？", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG05", "split": "eval", "skill": "周报", "question": "预装延期解除的通报在周报里出现两次，群里还有一条采购单回签消息。台账里应合并哪两条、单列哪件事？第二版写的发货风险总状态能签认吗？", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG06", "split": "eval", "skill": "跨Skill", "question": "两份反馈都说“12 月 10 日现场支撑”的确定程度被改了。一份是把材料压成摘要，一份是把已有稿子改得更顺。请按入口、应用包和实际改错的措辞区分两次调用。已有材料能支持怎样的排查，能否合用一次回归结论？", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG07", "split": "eval", "skill": "润色", "question": "六条风格评审和两条数字检查通过，能否报“润色八条完整通过”？", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG08", "split": "eval", "skill": "公函", "question": "起草页上的“示例部长甲”能确认为本次实际签署人吗？请说明这个名字从哪儿来、签署人和日期还要怎样核实，以及现在能否对外发送。", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG09", "split": "eval", "skill": "摘要", "question": "现场要按已审过的六条摘要样例做预演。操作人员应打开哪个入口，使用哪套环境、应用和模型？可以临时换一份输入吗？", "cutoff": "2026-11-20", "profile": "app_focus"}
+{"question_id": "FG10", "split": "eval", "skill": "跨Skill", "question": "群里说“12 包已经发布”。这条发布应该记在哪个项目？项目 A 的正式演示环境和预演环境现在各用哪个应用包？", "cutoff": "2026-11-20", "profile": "app_focus"}

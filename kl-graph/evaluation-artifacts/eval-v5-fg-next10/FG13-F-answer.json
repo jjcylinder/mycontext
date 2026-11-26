@@ -1,0 +1,82 @@
+{
+  "input_sha256": "5c14ccb45e9a8b611e92978a281ffdc5db1038c9f68fcd8302802a6c297fc6ad",
+  "provenance": "new",
+  "attempts": [
+    {
+      "raw": "{\n  \"progress\": [\n    {\n      \"text\": \"项目A的 TR-X02 请求将法语文档译成阿语。模拟附件 FR-LOCK-02 走了 encrypted_document 分支，解析未取得正文。该样例使用模拟文件标识，没有真实加密附件。\",\n      \"occurred_at\": \"2026-11-20T09:00:00+08:00\",\n      \"evidence_ids\": [\"ATR1-S01\", \"ATR1-S03\", \"XTR1-03\"]\n    },\n    {\n      \"text\": \"同次模拟调用未进入翻译 Skill（skill_enter.doc-translator=false），也未调用正常应答模型（normal_answer_model_called=false），因此没有生成译文。\",\n      \"occurred_at\": \"2026-11-20T09:00:00+08:00\",\n      \"evidence_ids\": [\"ATR1-S02\", \"ATR1-S03\", \"XTR1-05\"]\n    },\n    {\n      \"text\": \"中文提示由 APP-A-11 的应用异常提示渲染器生成。周工确认 LANG-01 在该分支固定使用中文，事件记录为 error_renderer.language=zh，实际输出为“文件加密，无法读取，请提供密码或解密后的文件。”\",\n      \"occurred_at\": \"2026-11-20T09:10:00+08:00\",\n      \"evidence_ids\": [\"ATR1-S02\", \"ATR1-S03\", \"XTR1-06\"]\n    }\n  ],\n  \"changes\": [\n    {\n      \"text\": \"APP-A-12/LANG-02 修复了 TR-X02 的异常提示语言，测试复测确认该加密分支返回阿语提示。\",\n      \"occurred_at\": \"2026-11-20T09:21:00+08:00\",\n      \"evidence_ids\": [\"ATR1-S04\", \"XTR2-02\", \"A03-S02\"]\n    }\n  ],\n  \"open_issues\": [\n    {\n      \"text\": \"本次修复未覆盖损坏附件 TR-X03，该分支尚未回归。测试通报正式环境尚未安装异常提示补丁，翻译 Skill 整体尚未获得对客演示准入。\",\n      \"occurred_at\": \"2026-11-20T09:45:00+08:00\",\n      \"evidence_ids\": [\"ATR1-S04\", \"XTR3-05\", \"ATR2-S04\", \"A03-S02\"]\n    }\n  ],\n  \"coordination\": [\n    {\n      \"text\": \"这项修复应记在 ERR-LANG-T02（加密文档异常提示语言），由应用周工处理。BUG-S11 单独跟踪译义偏差及凭空新增内容，BUG-F04 跟踪排版。\",\n      \"occurred_at\": \"2026-11-20T09:12:00+08:00\",\n      \"evidence_ids\": [\"ATR0-S02\", \"ATR0-S04\", \"XTR1-08\", \"D08-S03\"]\n    }\n  ],\n  \"uncertainties\": []\n}",
+      "usage": {
+        "prompt_tokens": 23144,
+        "completion_tokens": 687,
+        "total_tokens": 23831
+      },
+      "seconds": 20.429
+    }
+  ],
+  "answer": {
+    "progress": [
+      {
+        "text": "项目A的 TR-X02 请求将法语文档译成阿语。模拟附件 FR-LOCK-02 走了 encrypted_document 分支，解析未取得正文。该样例使用模拟文件标识，没有真实加密附件。",
+        "occurred_at": "2026-11-20T09:00:00+08:00",
+        "evidence_ids": [
+          "ATR1-S01",
+          "ATR1-S03",
+          "XTR1-03"
+        ]
+      },
+      {
+        "text": "同次模拟调用未进入翻译 Skill（skill_enter.doc-translator=false），也未调用正常应答模型（normal_answer_model_called=false），因此没有生成译文。",
+        "occurred_at": "2026-11-20T09:00:00+08:00",
+        "evidence_ids": [
+          "ATR1-S02",
+          "ATR1-S03",
+          "XTR1-05"
+        ]
+      },
+      {
+        "text": "中文提示由 APP-A-11 的应用异常提示渲染器生成。周工确认 LANG-01 在该分支固定使用中文，事件记录为 error_renderer.language=zh，实际输出为“文件加密，无法读取，请提供密码或解密后的文件。”",
+        "occurred_at": "2026-11-20T09:10:00+08:00",
+        "evidence_ids": [
+          "ATR1-S02",
+          "ATR1-S03",
+          "XTR1-06"
+        ]
+      }
+    ],
+    "changes": [
+      {
+        "text": "APP-A-12/LANG-02 修复了 TR-X02 的异常提示语言，测试复测确认该加密分支返回阿语提示。",
+        "occurred_at": "2026-11-20T09:21:00+08:00",
+        "evidence_ids": [
+          "ATR1-S04",
+          "XTR2-02",
+          "A03-S02"
+        ]
+      }
+    ],
+    "open_issues": [
+      {
+        "text": "本次修复未覆盖损坏附件 TR-X03，该分支尚未回归。测试通报正式环境尚未安装异常提示补丁，翻译 Skill 整体尚未获得对客演示准入。",
+        "occurred_at": "2026-11-20T09:45:00+08:00",
+        "evidence_ids": [
+          "ATR1-S04",
+          "XTR3-05",
+          "ATR2-S04",
+          "A03-S02"
+        ]
+      }
+    ],
+    "coordination": [
+      {
+        "text": "这项修复应记在 ERR-LANG-T02（加密文档异常提示语言），由应用周工处理。BUG-S11 单独跟踪译义偏差及凭空新增内容，BUG-F04 跟踪排版。",
+        "occurred_at": "2026-11-20T09:12:00+08:00",
+        "evidence_ids": [
+          "ATR0-S02",
+          "ATR0-S04",
+          "XTR1-08",
+          "D08-S03"
+        ]
+      }
+    ],
+    "uncertainties": []
+  }
+}

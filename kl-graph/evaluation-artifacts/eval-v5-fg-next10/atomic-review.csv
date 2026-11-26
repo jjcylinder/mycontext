@@ -1,0 +1,133 @@
+﻿题号,方案,原子项,评分口径,输入覆盖,输入依据,答卷覆盖,答卷位置
+FG11,F,1.1,法律DPO单列,1,T17-03,1,open_issues/1
+FG11,F,1.2,法律项缺think语料,1,T17-03,1,open_issues/1
+FG11,F,2.1,27条QA已提交,1,T08-01 D09-S01,1,progress/0
+FG11,F,2.2,缺期望答案,1,T17-01,1,open_issues/0
+FG11,F,2.3,缺判定说明,1,T17-01,1,open_issues/0
+FG11,F,3.1,需结合最晚部署时间,1,T17-04,1,open_issues/2
+FG11,F,3.2,暂无最终供数日,1,T17-05,1,open_issues/2
+FG11,G,1.1,法律DPO单列,1,T17-03,1,changes/0
+FG11,G,1.2,法律项缺think语料,1,T17-03,1,open_issues/1
+FG11,G,2.1,27条QA已提交,1,T08-01 D09-S01,1,progress/0
+FG11,G,2.2,缺期望答案,1,T17-01,1,open_issues/0
+FG11,G,2.3,缺判定说明,1,T17-01,1,open_issues/0
+FG11,G,3.1,需结合最晚部署时间,1,T17-04,1,open_issues/2
+FG11,G,3.2,暂无最终供数日,1,T17-05,1,open_issues/2
+FG12,F,1.1,模型能力目标说明待出,1,T16-02,1,coordination/0
+FG12,F,1.2,应用场景说明待补,1,T16-03,1,coordination/0
+FG12,F,2.1,识别所提生成能力未列入四项增强,1,T16-04 T16-05,1,changes/0
+FG12,F,2.2,不能承诺文生图或视频,1,T16-05,1,changes/0
+FG12,F,3.1,可给过程计划,1,T16-02,1,progress/0
+FG12,F,3.2,结果能力目标待定,1,T16-07,1,progress/0
+FG12,F,3.3,量化指标待定,1,T16-07,1,progress/0
+FG12,G,1.1,模型能力目标说明待出,1,T16-02,1,coordination/0
+FG12,G,1.2,应用场景说明待补,1,T16-03,1,coordination/0
+FG12,G,2.1,识别所提生成能力未列入四项增强,1,T16-04 T16-05,1,changes/0
+FG12,G,2.2,不能承诺文生图或视频,1,T16-05,1,changes/0
+FG12,G,3.1,可给过程计划,1,T16-02,1,progress/0
+FG12,G,3.2,结果能力目标待定,1,T16-07,1,progress/0
+FG12,G,3.3,量化指标待定,1,T16-07,1,progress/0
+FG13,F,1.1,附件触发加密分支,1,ATR1-S01,1,progress/0
+FG13,F,1.2,未得到正文,1,ATR1-S01,1,progress/0
+FG13,F,2.1,未进入翻译Skill,1,ATR1-S03,1,progress/1
+FG13,F,2.2,正常应答模型未调用,1,ATR1-S03,1,progress/1
+FG13,F,3.1,由应用异常提示渲染器生成,1,XTR1-06 ATR1-S03,1,progress/2
+FG13,F,3.2,归入异常提示语言问题,1,ATR0-S02,1,coordination/0
+FG13,F,3.3,与译义问题分单,1,XTR1-08 ATR0-S02,1,coordination/0
+FG13,G,1.1,附件触发加密分支,1,ATR1-S01,1,progress/0
+FG13,G,1.2,未得到正文,1,ATR1-S01,1,progress/0
+FG13,G,2.1,未进入翻译Skill,1,ATR1-S03,1,progress/1
+FG13,G,2.2,正常应答模型未调用,1,ATR1-S03,1,progress/1
+FG13,G,3.1,由应用异常提示渲染器生成,1,XTR1-06 ATR1-S03,1,progress/2
+FG13,G,3.2,归入异常提示语言问题,1,ATR0-S02,1,coordination/0
+FG13,G,3.3,与译义问题分单,1,XTR1-08 ATR0-S02,1,coordination/0
+FG14,F,1.1,样本分析归模型林工,1,ALE0-S04,1,coordination/0
+FG14,F,1.2,需模型输入和原始输出配对,1,XLE2-05,1,coordination/0
+FG14,F,1.3,用于排查无依据落款,1,XLE2-04 XLE2-05,1,coordination/0
+FG14,F,2.1,检查器归应用林工,1,ALE0-S04,1,coordination/1
+FG14,F,2.2,检查器完成后补回归,1,XLE2-07,1,coordination/1
+FG14,F,3.1,文号模板归应用周工,1,ALE0-S04 XLE1-06,1,changes/0
+FG14,F,3.2,预演中三个样例验证不再回填,1,XLE2-01 XLE2-02,1,progress/0
+FG14,G,1.1,样本分析归模型林工,1,ALE0-S04,1,coordination/0
+FG14,G,1.2,需模型输入和原始输出配对,1,XLE2-05,1,coordination/0
+FG14,G,1.3,用于排查无依据落款,1,XLE2-04 XLE2-05,1,coordination/0
+FG14,G,2.1,检查器归应用林工,1,ALE0-S04,1,coordination/1
+FG14,G,2.2,检查器完成后补回归,1,XLE2-07,1,coordination/1
+FG14,G,3.1,文号模板归应用周工,1,ALE0-S04 XLE1-06,1,changes/0
+FG14,G,3.2,预演中三个样例验证不再回填,1,XLE2-01 XLE2-02,1,progress/0
+FG15,F,1.1,A体验服务为service-a-stable,1,D14-S01,1,progress/0
+FG15,F,1.2,返回M-A12,1,D14-S01,1,progress/0
+FG15,F,1.3,1112归到A业务体验的M-A12,1,T12-05 T12-06 D14-S01,1,progress/0
+FG15,F,2.1,A候选评测服务为service-a-candidate,1,D14-S02,1,progress/1
+FG15,F,2.2,返回M-A19,1,D14-S02,1,progress/1
+FG15,F,3.1,B回放服务为service-b-release,1,D06-S03 T12-02,1,progress/2
+FG15,F,3.2,返回M-B19,1,T12-02,1,progress/2
+FG15,G,1.1,A体验服务为service-a-stable,1,D14-S01,1,progress/0
+FG15,G,1.2,返回M-A12,1,D14-S01,1,progress/0
+FG15,G,1.3,1112归到A业务体验的M-A12,1,T12-05 T12-06 D14-S01,1,progress/0
+FG15,G,2.1,A候选评测服务为service-a-candidate,1,D14-S02,1,progress/1
+FG15,G,2.2,返回M-A19,1,D14-S02,1,progress/1
+FG15,G,3.1,B回放服务为service-b-release,0,,0,
+FG15,G,3.2,返回M-B19,1,T12-02,1,progress/2
+FG16,F,1.1,消息在索引中可查,1,XWR1-05,1,progress/0
+FG16,F,1.2,采购单未回签,1,AWR1-S01,1,progress/1
+FG16,F,1.3,发货仍待确认,1,AWR1-S01,1,progress/1
+FG16,F,2.1,实际请求只查文档,1,XWR1-05 XWR2-05,1,progress/0
+FG16,F,2.2,最终模型未收到该消息,1,AWR2-S03,1,progress/0
+FG16,F,2.3,优先修应用取数,1,AWR2-S03,1,progress/0
+FG16,F,3.1,保留修复后的实际输入证据包,1,XWR3-05,1,coordination/1
+FG16,F,3.2,依据齐全后复测是否仍误判,1,XWR3-06,1,coordination/2
+FG16,G,1.1,消息在索引中可查,1,XWR1-05,1,progress/0
+FG16,G,1.2,采购单未回签,1,AWR1-S01,1,progress/1
+FG16,G,1.3,发货仍待确认,1,AWR1-S01,1,progress/1
+FG16,G,2.1,实际请求只查文档,1,XWR1-05 XWR2-05,1,progress/0
+FG16,G,2.2,最终模型未收到该消息,1,AWR2-S03,1,progress/0
+FG16,G,2.3,优先修应用取数,1,AWR2-S03,1,progress/0
+FG16,G,3.1,保留修复后的实际输入证据包,1,XWR3-05,1,coordination/0
+FG16,G,3.2,依据齐全后复测是否仍误判,1,XWR3-06,1,coordination/1
+FG17,F,1.1,前次有解析事件,1,XSU1-01,1,progress/0
+FG17,F,1.2,前次未见摘要入口事件,1,XSU1-01,1,progress/0
+FG17,F,2.1,交付安排调用进入摘要Skill,1,ASU1-S03,1,progress/1
+FG17,F,2.2,已进入输入的限定在输出中丢失,1,ASU1-S03 ASU1-S02,1,progress/1
+FG17,F,3.1,现有记录不能唯一归因模型选路,1,A04-S04,1,open_issues/0
+FG17,F,3.2,要取同次模型选路输出,1,A04-S04 XSU1-04,1,coordination/0
+FG17,F,3.3,要取同次应用实际派发记录,1,A04-S04 XSU1-04,1,coordination/0
+FG17,G,1.1,前次有解析事件,1,XSU1-01,1,progress/0
+FG17,G,1.2,前次未见摘要入口事件,1,XSU1-01,1,progress/0
+FG17,G,2.1,交付安排调用进入摘要Skill,1,ASU1-S03,1,progress/1
+FG17,G,2.2,已进入输入的限定在输出中丢失,1,ASU1-S03 ASU1-S02,0,
+FG17,G,3.1,现有记录不能唯一归因模型选路,1,A04-S04,1,open_issues/0
+FG17,G,3.2,要取同次模型选路输出,1,A04-S04 XSU1-04,1,coordination/0
+FG17,G,3.3,要取同次应用实际派发记录,1,A04-S04 XSU1-04,1,coordination/0
+FG18,F,1.1,法语文档翻阿语,0,,0,
+FG18,F,1.2,邮电部阿语公文写作,0,,0,
+FG18,F,1.3,工作记录生成月报,1,D07-S03,1,progress/0
+FG18,F,2.1,两者共用报表处理入口,1,A02-S03,1,changes/0
+FG18,F,2.2,周期或用例有区别,1,A02-S03,1,changes/0
+FG18,F,3.1,登记未提供第四项,1,D07-S04,1,open_issues/0
+FG18,F,3.2,没有依据认定第四项是周报,1,A02-S04 A02-S03,1,open_issues/0
+FG18,G,1.1,法语文档翻阿语,0,,0,
+FG18,G,1.2,邮电部阿语公文写作,1,D07-S02,1,progress/0
+FG18,G,1.3,工作记录生成月报,1,D07-S03,1,progress/0
+FG18,G,2.1,两者共用报表处理入口,1,A02-S03,1,open_issues/0
+FG18,G,2.2,周期或用例有区别,1,A02-S03,1,open_issues/0
+FG18,G,3.1,登记未提供第四项,1,D07-S04,1,open_issues/0
+FG18,G,3.2,没有依据认定第四项是周报,1,A02-S04 A02-S03,1,open_issues/0
+FG19,F,1.1,应用包为APP-A-12,1,A00-S02,1,progress/0
+FG19,F,1.2,模型服务为service-a-stable,1,A00-S02,1,progress/0
+FG19,F,2.1,路由为ROUTE-03,1,A00-S02,1,progress/0
+FG19,F,2.2,语言约束为LANG-02,1,A00-S02,1,progress/0
+FG19,F,3.1,去重为DEDUP-02,1,A00-S02,1,progress/0
+FG19,G,1.1,应用包为APP-A-12,1,A00-S02,1,progress/0
+FG19,G,1.2,模型服务为service-a-stable,1,A00-S02,1,progress/0
+FG19,G,2.1,路由为ROUTE-03,1,A00-S02,1,progress/0
+FG19,G,2.2,语言约束为LANG-02,1,A00-S02,1,progress/0
+FG19,G,3.1,去重为DEDUP-02,1,A00-S02,1,progress/0
+FG20,F,1.1,场景确认归前方赵工,1,A01-S02,1,coordination/0
+FG20,F,2.1,材料采集归数据吴工,1,A01-S02,1,coordination/1
+FG20,F,3.1,测试范围归测试陈工,1,A01-S02,1,coordination/2
+FG20,F,3.2,回归记录归测试陈工,1,A01-S02,1,coordination/2
+FG20,G,1.1,场景确认归前方赵工,1,A01-S02,1,coordination/0
+FG20,G,2.1,材料采集归数据吴工,1,A01-S02,1,coordination/1
+FG20,G,3.1,测试范围归测试陈工,1,A01-S02,1,coordination/2
+FG20,G,3.2,回归记录归测试陈工,1,A01-S02,1,coordination/2

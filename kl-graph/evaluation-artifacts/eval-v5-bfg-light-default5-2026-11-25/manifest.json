@@ -1,0 +1,46 @@
+{
+  "dataset_id": "project-a-v5-natural-app_focus-4f98497fe04be748",
+  "model": "chatgpt-codex-default",
+  "grading_rubric": {
+    "version": "V5-rubric-1",
+    "eval_questions": 20,
+    "eval_points": 64,
+    "sha256": {
+      "questions.jsonl": "fafcd729126ff3718fab9e70f14503091a0104ecb8758d5678bc58a8548966e6",
+      "reference_answers.jsonl": "66ddbad8061a7e778539eb2190e394d2e2140a5cc683895b0cbd27b83f2a0724",
+      "应用关联参考.jsonl": "0a7b305266782f4a930f4768780aa5e4f4ec24bec0568796ecc2ee5e4d1656bf",
+      "应用问题及参考依据.md": "56ad53e0b962ae14b2217a00d181482dce587811155c406e591fa7609a544088"
+    }
+  },
+  "modes": [
+    "B",
+    "F",
+    "G"
+  ],
+  "question_ids": [
+    "TR04",
+    "AM03",
+    "PO03",
+    "X01",
+    "X03"
+  ],
+  "path_ranking": "light",
+  "runs": {
+    "TR04": "33283920-43c4-4724-aad4-2cfd19357dd2",
+    "AM03": "03fb3245-7432-4e31-aa73-29766ced65b8",
+    "PO03": "b166e01e-8ed3-4efc-a541-fc638359a2ec",
+    "X01": "a65e1221-b2aa-49a5-9af0-859e02c4694e",
+    "X03": "6ce88b96-be2d-4499-81c4-b97c9162c9db"
+  },
+  "code_sha256": {
+    "project_demo/evidence_retrieval.py": "296a7784b112d8f5fa9b06d0dd341e25ad3d30974595f4828e9da634f830fd54",
+    "project_demo/evidence_packing.py": "92db460243500bd2ce86d9bb007d9c1a4c2161d419fc24a4058dfefc739185da",
+    "project_demo/answer.py": "76fb4e98e9f4d2b5768f14370072d94772d439f1094e23b44fe142b8e391c2e4",
+    "project_demo/app.py": "d1be1f282d369e1ace82e284420fb12fae616a322c9d679ec9d715cc36d2c565",
+    "kl_graph/query/fact_evidence.py": "13c8f3b62c9ef022a54e8b3c674eca3f5cfdb2bdcc515cc2d7705a7055b78755",
+    "kl_graph/query/source_graph.py": "d982eef1e859ba5061f183c9a5fb2ab1cc305c220f8b1ab23153df5fa46ede81",
+    "project_demo/codex_bridge.py": "3fab2d6ec208623ea2bebabbb516563f610d59b8a1d9a323a629e3a417ab867f",
+    "project_demo/path_ranking.py": "4c2bec8f8d4c055c7f803e4df39a0895e1a09af41703d3ca20d5c9b48423f689"
+  },
+  "record_count": 349
+}

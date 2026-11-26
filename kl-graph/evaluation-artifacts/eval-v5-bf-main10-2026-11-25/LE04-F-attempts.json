@@ -1,0 +1,16 @@
+{
+  "input_sha256": "d90ef2b8caaf3260a58a40d4dcfd4f04f90aba49d447d54035bd367d95cf5a8e",
+  "attempts": [
+    {
+      "attempt": 1,
+      "valid": false,
+      "error": "progress 中存在未提供给模型的引用",
+      "raw_archived": false
+    },
+    {
+      "attempt": 2,
+      "valid": true,
+      "seconds": 30.72
+    }
+  ]
+}

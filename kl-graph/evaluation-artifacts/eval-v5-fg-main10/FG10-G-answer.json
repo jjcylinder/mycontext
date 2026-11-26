@@ -1,0 +1,59 @@
+{
+  "input_sha256": "4b90020ebfbc559c1a798377af5fdd903089ea9c565c72e5b6ad723986f8b7d3",
+  "provenance": "new",
+  "attempts": [
+    {
+      "raw": "{\n  \"progress\": [\n    {\n      \"text\": \"截至 2026 年 11 月 20 日，项目 A 的正式演示环境 ENV-A-DEMO 仍使用 APP-A-11。\",\n      \"occurred_at\": \"2026-11-20T16:21:00+08:00\",\n      \"evidence_ids\": [\"A03-S03\", \"XSH1-02\"]\n    },\n    {\n      \"text\": \"项目 A 的预演环境 ENV-A-PREVIEW 使用 APP-A-12。APP-A-12 仅绑定该预演环境。\",\n      \"occurred_at\": \"2026-11-20T16:21:00+08:00\",\n      \"evidence_ids\": [\"A03-S03\", \"A00-S02\", \"XSH1-02\"]\n    }\n  ],\n  \"changes\": [\n    {\n      \"text\": \"群里所说的“12 包已经发布”应记入项目 B，发布的应用包是 APP-B-12。\",\n      \"occurred_at\": null,\n      \"evidence_ids\": [\"XSH1-01\", \"A03-S03\"]\n    }\n  ],\n  \"open_issues\": [\n    {\n      \"text\": \"项目 A 本次未发起正式演示环境切包。\",\n      \"occurred_at\": \"2026-11-20T16:27:00+08:00\",\n      \"evidence_ids\": [\"XSH1-08\"]\n    }\n  ],\n  \"coordination\": [],\n  \"uncertainties\": [\"现有节选确认项目 B 的 APP-B-12 已发布，具体发布时间未见于所给材料。\"]\n}",
+      "usage": {
+        "prompt_tokens": 23247,
+        "completion_tokens": 360,
+        "total_tokens": 23607
+      },
+      "seconds": 15.389
+    }
+  ],
+  "answer": {
+    "progress": [
+      {
+        "text": "截至 2026 年 11 月 20 日，项目 A 的正式演示环境 ENV-A-DEMO 仍使用 APP-A-11。",
+        "occurred_at": "2026-11-20T16:21:00+08:00",
+        "evidence_ids": [
+          "A03-S03",
+          "XSH1-02"
+        ]
+      },
+      {
+        "text": "项目 A 的预演环境 ENV-A-PREVIEW 使用 APP-A-12。APP-A-12 仅绑定该预演环境。",
+        "occurred_at": "2026-11-20T16:21:00+08:00",
+        "evidence_ids": [
+          "A03-S03",
+          "A00-S02",
+          "XSH1-02"
+        ]
+      }
+    ],
+    "changes": [
+      {
+        "text": "群里所说的“12 包已经发布”应记入项目 B，发布的应用包是 APP-B-12。",
+        "occurred_at": null,
+        "evidence_ids": [
+          "XSH1-01",
+          "A03-S03"
+        ]
+      }
+    ],
+    "open_issues": [
+      {
+        "text": "项目 A 本次未发起正式演示环境切包。",
+        "occurred_at": "2026-11-20T16:27:00+08:00",
+        "evidence_ids": [
+          "XSH1-08"
+        ]
+      }
+    ],
+    "coordination": [],
+    "uncertainties": [
+      "现有节选确认项目 B 的 APP-B-12 已发布，具体发布时间未见于所给材料。"
+    ]
+  }
+}

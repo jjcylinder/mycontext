@@ -1,0 +1,143 @@
+﻿question,point,atom,criterion,mode,input_support,source_ids,answer_coverage,answer_json_pointers
+TR03,1,1.1,确认加密附件提示已在该分支复测通过,B,1,ATR1-S04 XTR1-03,1,/answer/progress/0
+TR03,1,1.2,复测限定项目A预演12包,B,1,ATR0-S03 A00-S02,1,/answer/progress/0
+TR03,1,1.3,复测限定候选语言修补配置,B,1,ATR1-S04,1,/answer/progress/0
+TR03,2,2.1,损坏附件分支尚未回归,B,1,ATR1-S04,1,/answer/open_issues/1
+TR03,2,2.2,项目A正式环境仍为11包,B,1,ATR0-S03,1,/answer/open_issues/0
+TR03,2,2.3,正式环境的现行语言配置为LANG-01或唯一等价描述,B,1,ATR0-S03 ATR1-S02 XTR1-06 ATR2-S03,0,-
+TR03,3,3.1,正常译义问题仍未因提示修补关闭,B,1,ATR2-S03 XTR1-08,1,/answer/open_issues/2
+TR03,1,1.1,确认加密附件提示已在该分支复测通过,F,1,ATR1-S04 XTR1-03,1,/answer/progress/0
+TR03,1,1.2,复测限定项目A预演12包,F,1,ATR0-S03 A00-S02,1,/answer/progress/0
+TR03,1,1.3,复测限定候选语言修补配置,F,1,ATR1-S04,1,/answer/progress/0
+TR03,2,2.1,损坏附件分支尚未回归,F,1,ATR1-S04,1,/answer/open_issues/0
+TR03,2,2.2,项目A正式环境仍为11包,F,1,ATR0-S03,1,/answer/changes/0
+TR03,2,2.3,正式环境的现行语言配置为LANG-01或唯一等价描述,F,1,A00-S01,1,/answer/changes/0
+TR03,3,3.1,正常译义问题仍未因提示修补关闭,F,1,ATR2-S03 XTR1-08,1,/answer/open_issues/1
+TR04,1,1.1,应用负责跟进翻译异常提示分支,B,1,ATR0-S04,1,/answer/coordination/0
+TR04,1,1.2,应用负责补交模型所需的译义样本材料,B,1,ATR0-S04,1,/answer/coordination/0
+TR04,1,1.3,测试须补做损坏附件分支回归,B,0,-,0,-
+TR04,1,1.4,测试须回归正常翻译的译义,B,1,ATR0-S04 M03-S02,1,/answer/coordination/1
+TR04,2,2.1,分析译义偏差需要应用给出期望译文,B,1,ATR0-S04,1,/answer/coordination/2
+TR04,2,2.2,分析译义偏差需要说明判定依据（例如哪些原意必须保留）,B,1,ATR0-S04,1,/answer/coordination/2
+TR04,3,3.1,预演复测通过仅适用于预演环境,B,1,XTR3-07,1,/answer/coordination/3
+TR04,3,3.2,正式环境升级须由发布侧另行核实,B,1,XTR3-07 XSH1-01,1,/answer/coordination/3
+TR04,1,1.1,应用负责跟进翻译异常提示分支,F,1,ATR0-S04,1,/answer/coordination/0
+TR04,1,1.2,应用负责补交模型所需的译义样本材料,F,1,ATR0-S04,1,/answer/coordination/2
+TR04,1,1.3,测试须补做损坏附件分支回归,F,0,-,0,-
+TR04,1,1.4,测试须回归正常翻译的译义,F,1,ATR0-S04 M03-S02,1,/answer/coordination/1
+TR04,2,2.1,分析译义偏差需要应用给出期望译文,F,1,ATR0-S04,1,/answer/coordination/2
+TR04,2,2.2,分析译义偏差需要说明判定依据（例如哪些原意必须保留）,F,1,ATR0-S04,1,/answer/coordination/2
+TR04,3,3.1,预演复测通过仅适用于预演环境,F,1,XTR3-07,1,/answer/coordination/3
+TR04,3,3.2,正式环境升级须由发布侧另行核实,F,1,XTR3-07 XSH1-01,1,/answer/coordination/3
+SU03,1,1.1,显式六例同时经调用和内容复核,B,1,ASU1-S04,1,/answer/progress/0
+SU03,1,1.2,隐式2/4仅统计进入功能,B,1,ASU1-S04,1,/answer/progress/0
+SU03,2,2.1,进入摘要功能仍可能丢失条件或否定,B,1,ASU1-S04 XSU3-06,1,/answer/open_issues/0
+SU03,2,2.2,8/10至多是调用口径，不能视为质量通过率,B,1,ASU1-S04,1,/answer/progress/0
+SU03,3,3.1,准入只限显式固定六例,B,1,XSU3-02 XSU3-03,1,/answer/coordination/0
+SU03,3,3.2,准入限于已登记的预演配置,B,1,XSH1-03 XSU3-02,1,/answer/coordination/0
+SU03,1,1.1,显式六例同时经调用和内容复核,F,1,ASU1-S04,1,/answer/progress/0
+SU03,1,1.2,隐式2/4仅统计进入功能,F,1,ASU1-S04,1,/answer/progress/0
+SU03,2,2.1,进入摘要功能仍可能丢失条件或否定,F,1,ASU1-S04 XSU3-06,1,/answer/open_issues/0
+SU03,2,2.2,8/10至多是调用口径，不能视为质量通过率,F,1,ASU1-S04,1,/answer/progress/0
+SU03,3,3.1,准入只限显式固定六例,F,1,XSU3-02 XSU3-03,1,/answer/progress/1
+SU03,3,3.2,准入限于已登记的预演配置,F,1,XSH1-03 XSU3-02,1,/answer/progress/0 /answer/progress/1
+SU04,1,1.1,临时换文件超出现有固定样例准入,B,1,ASU2-S03 XSU3-07,1,/answer/progress/0
+SU04,1,1.2,新文件必须另行核查,B,1,ASU2-S03 XSU3-07,1,/answer/progress/0
+SU04,2,2.1,新文件须单独核查否定或条件的保真,B,1,ASU1-S01 ASU1-S02 XSU3-06,1,/answer/progress/0 /answer/open_issues/0 /answer/uncertainties/0
+SU04,3,3.1,必须保留已验证的预演入口,B,1,A05-S01 XSU3-05,1,/answer/progress/0
+SU04,3,3.2,准入绑定原应用包和模型组合,B,1,A05-S01 XSH1-03,1,/answer/progress/0
+SU04,3,3.3,更换候选模型须重新验证,B,1,A05-S01 XSH1-04,0,-
+SU04,1,1.1,临时换文件超出现有固定样例准入,F,1,ASU2-S03 XSU3-07,1,/answer/progress/0
+SU04,1,1.2,新文件必须另行核查,F,1,ASU2-S03 XSU3-07,1,/answer/progress/0
+SU04,2,2.1,新文件须单独核查否定或条件的保真,F,1,ASU1-S01 ASU1-S02 XSU3-06,1,/answer/open_issues/0
+SU04,3,3.1,必须保留已验证的预演入口,F,1,A05-S01 XSU3-05,1,/answer/progress/0
+SU04,3,3.2,准入绑定原应用包和模型组合,F,1,A05-S01 XSH1-03,1,/answer/progress/0
+SU04,3,3.3,更换候选模型须重新验证,F,1,XSH1-05 XSH1-06,0,-
+AM03,1,1.1,补齐索引后能检索到撤回消息,B,1,XAM2-01,1,/answer/changes/0
+AM03,1,1.2,现有晨报仍使用旧快照,B,1,XAM2-03,1,/answer/open_issues/0
+AM03,2,2.1,截止前撤回十点安排的消息漏入旧快照,B,1,XAM1-06 AAM2-S02,1,/answer/changes/0
+AM03,2,2.2,旧正文仍把十点写成确定安排,B,1,AAM2-S02,1,/answer/open_issues/0
+AM03,2,2.3,须切换新快照重新生成,B,1,XAM2-07,1,/answer/coordination/0
+AM03,2,2.4,须核对重跑是否纳入截止前的撤回消息,B,1,XAM3-06,1,/answer/coordination/0
+AM03,3,3.1,数据侧负责恢复来源可见性,B,1,XAM2-01 XAM2-07 AAM0-S04,1,/answer/coordination/0
+AM03,3,3.2,应用侧负责执行重跑,B,1,XAM2-07,1,/answer/coordination/0
+AM03,3,3.3,重跑产物须交测试复核,B,1,XAM3-06,1,/answer/coordination/0
+AM03,3,3.4,截至核查时点尚无新版复核通过记录,B,1,XAM3-02 XAM3-06,1,/answer/uncertainties/0
+AM03,1,1.1,补齐索引后能检索到撤回消息,F,1,XAM2-01,1,/answer/changes/0
+AM03,1,1.2,现有晨报仍使用旧快照,F,1,XAM2-03,1,/answer/changes/0
+AM03,2,2.1,截止前撤回十点安排的消息漏入旧快照,F,1,XAM1-06 AAM2-S02,1,/answer/open_issues/0
+AM03,2,2.2,旧正文仍把十点写成确定安排,F,1,AAM2-S02,1,/answer/open_issues/0
+AM03,2,2.3,须切换新快照重新生成,F,1,XAM2-07,1,/answer/coordination/0
+AM03,2,2.4,须核对重跑是否纳入截止前的撤回消息,F,1,XAM3-06,1,/answer/coordination/0
+AM03,3,3.1,数据侧负责恢复来源可见性,F,1,XAM2-01 XAM2-07 AAM0-S04,1,/answer/coordination/0
+AM03,3,3.2,应用侧负责执行重跑,F,1,XAM2-07,1,/answer/coordination/0
+AM03,3,3.3,重跑产物须交测试复核,F,1,XAM3-06,1,/answer/coordination/0
+AM03,3,3.4,截至核查时点尚无新版复核通过记录,F,1,XAM3-02 XAM3-06,1,/answer/open_issues/1
+AM04,1,1.1,已生成的文件仅支持静态预览,B,1,AAM2-S01 AAM2-S04,1,/answer/progress/0
+AM04,2,2.1,须重跑并核对07:50消息被纳入,B,1,AAM2-S02 XAM3-06,1,/answer/open_issues/1
+AM04,2,2.2,须核对08:10消息不进入08:00截止的这一版,B,1,XAM3-07,1,/answer/open_issues/1
+AM04,3,3.1,本次执行人工预览,B,1,XAM3-04,1,/answer/progress/0
+AM04,3,3.2,自动发送未请求或未触发,B,1,AAM1-S04 XAM3-03,1,/answer/progress/1
+AM04,1,1.1,已生成的文件仅支持静态预览,F,1,AAM2-S01 AAM2-S04,1,/answer/progress/0
+AM04,2,2.1,须重跑并核对07:50消息被纳入,F,1,AAM2-S02 XAM2-07,1,/answer/open_issues/0
+AM04,2,2.2,须核对08:10消息不进入08:00截止的这一版,F,1,AAM0-S01 AAM1-S01 AAM2-S02,1,/answer/open_issues/0
+AM04,3,3.1,本次执行人工预览,F,1,XAM3-04,1,/answer/progress/0
+AM04,3,3.2,自动发送未请求或未触发,F,1,AAM1-S04 XAM3-03,1,/answer/progress/1
+LE03,1,1.1,三个固定缺文号样例验证了不再回填默认文号,B,1,XLE2-01 XLE2-02,1,/answer/progress/0
+LE03,1,1.2,该局部修补仅在预演模板验证,B,1,XLE2-01 XLE2-02,1,/answer/progress/0
+LE03,2,2.1,签署人仍可能被无依据补写,B,1,XLE2-04 ALE1-S03,1,/answer/open_issues/0
+LE03,2,2.2,输出检查仍未完成,B,1,XLE2-04,1,/answer/open_issues/0
+LE03,3,3.1,正式包仍用旧模板,B,1,XLE2-06,1,/answer/open_issues/1
+LE03,3,3.2,预演模板的通过结果不可当作正式验证,B,1,XLE2-06 XLE2-08 XLE2-01,1,/answer/open_issues/1
+LE03,1,1.1,三个固定缺文号样例验证了不再回填默认文号,F,1,XLE2-01 XLE2-02,1,/answer/progress/0
+LE03,1,1.2,该局部修补仅在预演模板验证,F,1,XLE2-01 XLE2-02,1,/answer/progress/0
+LE03,2,2.1,签署人仍可能被无依据补写,F,1,XLE2-04 ALE1-S03,1,/answer/open_issues/0
+LE03,2,2.2,输出检查仍未完成,F,1,XLE2-04,1,/answer/open_issues/0
+LE03,3,3.1,正式包仍用旧模板,F,1,XLE2-06,1,/answer/open_issues/1
+LE03,3,3.2,预演模板的通过结果不可当作正式验证,F,1,XLE2-06 XLE2-08 XLE2-01,1,/answer/open_issues/1
+LE04,1,1.1,文号缺真实依据，须留待补,B,1,ALE1-S01 XLE3-02,1,/answer/progress/0 /answer/coordination/0
+LE04,1,1.2,签署人缺真实依据，须留待补,B,1,ALE1-S01 XLE3-08,1,/answer/progress/0 /answer/open_issues/0
+LE04,1,1.3,签署日期缺真实依据，须留待补,B,1,ALE1-S01 XLE3-08,1,/answer/open_issues/0
+LE04,2,2.1,应用侧负责输出检查和回归,B,1,NLE-S03 XLE3-06,1,/answer/coordination/1
+LE04,2,2.2,模型侧负责分析无依据落款,B,1,ALE0-S04,1,/answer/coordination/1
+LE04,2,2.3,前方负责确认真实业务字段,B,1,NLE-S03,1,/answer/coordination/2
+LE04,3,3.1,展示限于人工审阅草稿，未获正式交付或外发准入,B,1,XLE3-02 XLE3-03,1,/answer/progress/0
+LE04,1,1.1,文号缺真实依据，须留待补,F,1,ALE1-S01 XLE3-02,1,/answer/progress/0 /answer/coordination/0
+LE04,1,1.2,签署人缺真实依据，须留待补,F,1,ALE1-S01 XLE3-08,1,/answer/progress/1
+LE04,1,1.3,签署日期缺真实依据，须留待补,F,1,ALE1-S01 XLE3-08,1,/answer/progress/1
+LE04,2,2.1,应用侧负责输出检查和回归,F,1,NLE-S03 XLE3-06,1,/answer/coordination/2
+LE04,2,2.2,模型侧负责分析无依据落款,F,1,ALE0-S04,1,/answer/coordination/2
+LE04,2,2.3,前方负责确认真实业务字段,F,1,NLE-S03,1,/answer/coordination/1
+LE04,3,3.1,展示限于人工审阅草稿，未获正式交付或外发准入,F,1,XLE3-02 XLE3-03,1,/answer/progress/0
+PO03,1,1.1,六条通过的是行文风格评审,B,1,APO0-S02 APO1-S04,1,/answer/progress/0
+PO03,1,1.2,两条通过的是数字日期检查,B,1,APO1-S04,1,/answer/progress/0
+PO03,1,1.3,现有材料无法判定两组样例交集或去重样例数,B,1,APO0-S02 APO1-S04 XPO2-03,0,-
+PO03,2,2.1,条件或否定保真仍待回归,B,1,APO2-S02,1,/answer/open_issues/0
+PO03,2,2.2,改变原文确定性的问题尚未关闭,B,1,APO2-S02,1,/answer/open_issues/0
+PO03,3,3.1,预演包新增的检查限于数字日期,B,1,APO1-S04 APO2-S01,1,/answer/changes/0
+PO03,3,3.2,正式包尚未升级,B,1,XPO2-07,1,/answer/changes/0
+PO03,3,3.3,局部检查结果不足以外推润色整体通过,B,1,XPO2-03 APO1-S04,1,/answer/progress/0
+PO03,1,1.1,六条通过的是行文风格评审,F,1,APO0-S02 APO1-S04,1,/answer/progress/0
+PO03,1,1.2,两条通过的是数字日期检查,F,1,APO1-S04,1,/answer/progress/0
+PO03,1,1.3,现有材料无法判定两组样例交集或去重样例数,F,1,APO0-S02 APO1-S04 XPO2-03,1,/answer/uncertainties/0
+PO03,2,2.1,条件或否定保真仍待回归,F,1,APO0-S02 APO1-S04,1,/answer/open_issues/0
+PO03,2,2.2,改变原文确定性的问题尚未关闭,F,1,A04-S02 XPO1-04,1,/answer/open_issues/0
+PO03,3,3.1,预演包新增的检查限于数字日期,F,1,APO1-S04 APO2-S01,1,/answer/changes/0
+PO03,3,3.2,正式包尚未升级,F,1,XPO2-07,1,/answer/changes/0
+PO03,3,3.3,局部检查结果不足以外推润色整体通过,F,1,XPO2-03 APO1-S04,1,/answer/progress/0
+X07,1,1.1,路由已验证显式摘要六例,B,1,A03-S01 ASU1-S04,1,/answer/progress/0
+X07,1,1.2,隐式摘要入口仍有漏调,B,1,ASU1-S04,1,/answer/open_issues/0
+X07,1,1.3,不能把已测路由效果扩大至六类入口,B,1,A03-S01 XSH1-07,1,/answer/uncertainties/0
+X07,2,2.1,语言补丁只确认加密翻译附件的提示,B,1,ATR1-S04,1,/answer/progress/1
+X07,2,2.2,损坏附件路径尚未验证,B,1,ATR1-S04,1,/answer/open_issues/1
+X07,2,2.3,摘要目标语言路径尚未验证,B,0,-,0,-
+X07,2,2.4,公函目标语言路径尚未验证,B,0,-,0,-
+X07,3,3.1,共享配置的潜在影响需与各入口的实际验证范围区分,B,1,A03-S01 A03-S04 XSH1-07,1,/answer/changes/0 /answer/uncertainties/0
+X07,1,1.1,路由已验证显式摘要六例,F,1,A03-S01 ASU1-S04,1,/answer/progress/0
+X07,1,1.2,隐式摘要入口仍有漏调,F,1,ASU1-S04,1,/answer/progress/0
+X07,1,1.3,不能把已测路由效果扩大至六类入口,F,1,A03-S01 XSH1-07,1,/answer/open_issues/0
+X07,2,2.1,语言补丁只确认加密翻译附件的提示,F,1,ATR1-S04,1,/answer/progress/1
+X07,2,2.2,损坏附件路径尚未验证,F,1,ATR1-S04,1,/answer/open_issues/0
+X07,2,2.3,摘要目标语言路径尚未验证,F,1,A03-S02,1,/answer/open_issues/0
+X07,2,2.4,公函目标语言路径尚未验证,F,1,A03-S02,1,/answer/open_issues/0
+X07,3,3.1,共享配置的潜在影响需与各入口的实际验证范围区分,F,1,A03-S01 A03-S04 XSH1-07,1,/answer/open_issues/0
