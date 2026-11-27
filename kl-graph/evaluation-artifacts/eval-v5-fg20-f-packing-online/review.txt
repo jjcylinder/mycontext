@@ -1,0 +1,21 @@
+# In frozen atom order. p progress, c changes, o open_issues, t coordination, u uncertainties; - omitted.
+FG01 p0 - o0 o1 o1 o1 p0 t0 t0 -
+FG02 p0 o0 c0 c0 c0 t0 t0 t0
+FG03 o0 o0 o0 o0 c0 c0
+FG04 p0 p0 p0 p0 p2 o0 o0
+FG05 p0 p0 p0 p1 p1 p1 c0 o0+o1 o0
+FG06 c0 c0 c0 - c1 c1 c1 o0+o1 o2 o0+o1
+FG07 p0 p0 - o0 o0 c0 c0 o1
+FG08 p0 p0 p0 p0+u0 u0 t0 p1 p1
+FG09 p0 p0 p0 p0 p0 t0
+FG10 c0 p0 p1
+FG11 c0 o1 p0 o0 o0 o2 o2
+FG12 t0 t0 c0 c0 p0 p0 p0
+FG13 p0 p0 p0 p0 p1 t0 t0
+FG14 t0 t0 t0 t1 t1 c0 p0
+FG15 p0 p0 p0 p1 p1 p2 p2
+FG16 p0 p1 p1 p0 p0 p0+t0 t0 t1
+FG17 p0 p0 p1 p1 o0 t0 t0
+FG18 - p0 p0 o0 o0 u1+o0 o0
+FG19 p0 p0 p0 p0 p0
+FG20 t0 t1 t2 t2

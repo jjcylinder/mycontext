@@ -1,0 +1,67 @@
+{
+  "input_sha256": "434d6a471e577cfae3861f42e4705be474c0b45984d25f0108594734e6730a4f",
+  "attempts": [
+    {
+      "raw": "{\n  \"progress\": [\n    {\n      \"text\": \"项目 A 预演运行单填写为：环境 ENV-A-PREVIEW，应用包 APP-A-12，模型服务 service-a-stable（模型 M-A12），路由 ROUTE-03，语言约束 LANG-02，去重 DEDUP-02。后三项为预演登记的候选配置。\",\n      \"occurred_at\": \"2026-11-18T08:00:00+08:00\",\n      \"evidence_ids\": [\"A00-S02\", \"A05-S01\"]\n    },\n    {\n      \"text\": \"复现已核过的摘要行为时，显式选择文档摘要，使用 SU-EX06 的六条已审核固定输入。六条均在 APP-A-12/M-A12 完成路由和内容复核，限定预演准入仅覆盖这六条。\",\n      \"occurred_at\": \"2026-11-20T16:10:00+08:00\",\n      \"evidence_ids\": [\"ASU2-S01\", \"NSU-S02\", \"A05-S01\"]\n    }\n  ],\n  \"changes\": [\n    {\n      \"text\": \"截至 11 月 20 日，APP-A-12 仅绑定 ENV-A-PREVIEW。项目 A 正式演示环境 ENV-A-DEMO 仍用 APP-A-11 和 M-A12，本次未发起正式切包。\",\n      \"occurred_at\": \"2026-11-20T16:27:00+08:00\",\n      \"evidence_ids\": [\"A03-S03\", \"XSH1-08\"]\n    }\n  ],\n  \"open_issues\": [\n    {\n      \"text\": \"ROUTE-03 的验证仅覆盖已测入口。摘要仍有遗漏原文限定条件和部分隐式摘要请求未进入摘要功能的问题，整体验收待确认。\",\n      \"occurred_at\": \"2026-11-20T16:26:00+08:00\",\n      \"evidence_ids\": [\"XSH1-07\", \"NSU-S03\"]\n    },\n    {\n      \"text\": \"M-A19 仍在 EVAL-62 候选评测中，使用 service-a-candidate。若现场更换模型，需重新核对六条摘要样例及受影响的 Skill，现有通过结论仅覆盖登记配置。\",\n      \"occurred_at\": \"2026-11-20T16:25:00+08:00\",\n      \"evidence_ids\": [\"D14-S02\", \"XSH1-04\", \"XSH1-06\", \"A03-S04\"]\n    }\n  ],\n  \"coordination\": [],\n  \"uncertainties\": []\n}",
+      "usage": {
+        "prompt_tokens": 23079,
+        "completion_tokens": 594,
+        "total_tokens": 23673
+      },
+      "seconds": 17.79
+    }
+  ],
+  "answer": {
+    "progress": [
+      {
+        "text": "项目 A 预演运行单填写为：环境 ENV-A-PREVIEW，应用包 APP-A-12，模型服务 service-a-stable（模型 M-A12），路由 ROUTE-03，语言约束 LANG-02，去重 DEDUP-02。后三项为预演登记的候选配置。",
+        "occurred_at": "2026-11-18T08:00:00+08:00",
+        "evidence_ids": [
+          "A00-S02",
+          "A05-S01"
+        ]
+      },
+      {
+        "text": "复现已核过的摘要行为时，显式选择文档摘要，使用 SU-EX06 的六条已审核固定输入。六条均在 APP-A-12/M-A12 完成路由和内容复核，限定预演准入仅覆盖这六条。",
+        "occurred_at": "2026-11-20T16:10:00+08:00",
+        "evidence_ids": [
+          "ASU2-S01",
+          "NSU-S02",
+          "A05-S01"
+        ]
+      }
+    ],
+    "changes": [
+      {
+        "text": "截至 11 月 20 日，APP-A-12 仅绑定 ENV-A-PREVIEW。项目 A 正式演示环境 ENV-A-DEMO 仍用 APP-A-11 和 M-A12，本次未发起正式切包。",
+        "occurred_at": "2026-11-20T16:27:00+08:00",
+        "evidence_ids": [
+          "A03-S03",
+          "XSH1-08"
+        ]
+      }
+    ],
+    "open_issues": [
+      {
+        "text": "ROUTE-03 的验证仅覆盖已测入口。摘要仍有遗漏原文限定条件和部分隐式摘要请求未进入摘要功能的问题，整体验收待确认。",
+        "occurred_at": "2026-11-20T16:26:00+08:00",
+        "evidence_ids": [
+          "XSH1-07",
+          "NSU-S03"
+        ]
+      },
+      {
+        "text": "M-A19 仍在 EVAL-62 候选评测中，使用 service-a-candidate。若现场更换模型，需重新核对六条摘要样例及受影响的 Skill，现有通过结论仅覆盖登记配置。",
+        "occurred_at": "2026-11-20T16:25:00+08:00",
+        "evidence_ids": [
+          "D14-S02",
+          "XSH1-04",
+          "XSH1-06",
+          "A03-S04"
+        ]
+      }
+    ],
+    "coordination": [],
+    "uncertainties": []
+  }
+}

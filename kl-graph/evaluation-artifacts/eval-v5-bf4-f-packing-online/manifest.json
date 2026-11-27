@@ -1,0 +1,32 @@
+{
+ "cases": [
+  "BF18",
+  "BF13",
+  "BF07",
+  "BF20"
+ ],
+ "model": "chatgpt-codex-default",
+ "reasoning": "low",
+ "requested_max_tokens": 1800,
+ "evidence_budget": 8192,
+ "max_invalid_output_retries": 1,
+ "frozen_rubric_sha256": "79f3498b66f2fb1d7683eed59a2a790ac5b1c67a35c2f3e0547d9e1c56d50ced",
+ "hashes": {
+  "BF18": {
+   "old": "cbec1bd58d1a9a3bed43a0156d94689c55b5eff291138bed9feb48369be14916",
+   "new": "9ecd21a78fb17d06f5d45271e19d8509c0c91f41215b591972ea607fd361669c"
+  },
+  "BF13": {
+   "old": "6eab22d9374ea5513fa327a5559265100ca2e56b84cfa7a320e1fbedeee81f18",
+   "new": "85be9332f1b310d354fb3d3b86799c061714fad6a8710df8ceeba1e574e65e8f"
+  },
+  "BF07": {
+   "old": "c558ff8414665d81de61576d7de8d22bb7b8761c9381b9c56f281256eddb6510",
+   "new": "3188acbe38e2519cb8aead95d296a66bbd24085557882d613a33700b547434f5"
+  },
+  "BF20": {
+   "old": "4897fdb672feb77d1d6b42fdbaa71edfec15b2eb4b629ffa6ccc06119f75b733",
+   "new": "8d49a7b3cf65746e9d4a6024e0ebf9a9a354d878e96a9d6c63b3b1609d4c7680"
+  }
+ }
+}

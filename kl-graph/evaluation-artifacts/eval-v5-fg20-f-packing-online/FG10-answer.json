@@ -1,0 +1,49 @@
+{
+  "input_sha256": "69ca4dbbb2a9ade55beaa70ed925fdeeefc6e6334cfcb001688b648ba8fbc800",
+  "attempts": [
+    {
+      "raw": "{\n  \"progress\": [\n    {\n      \"text\": \"截至 2026 年 11 月 20 日 23:59，项目 A 的正式演示环境 ENV-A-DEMO 仍使用 APP-A-11，模型仍为 M-A12。本次未发起正式环境切包。\",\n      \"occurred_at\": \"2026-11-20T16:27:00+08:00\",\n      \"evidence_ids\": [\"A03-S03\", \"XSH1-02\", \"XSH1-08\"]\n    },\n    {\n      \"text\": \"项目 A 的预演环境 ENV-A-PREVIEW 使用 APP-A-12。APP-A-12 仅绑定该预演环境。\",\n      \"occurred_at\": \"2026-11-20T16:21:00+08:00\",\n      \"evidence_ids\": [\"A03-S03\", \"A00-S02\", \"XSH1-02\"]\n    }\n  ],\n  \"changes\": [\n    {\n      \"text\": \"群里提到的“12 包已经发布”应记在项目 B，已发布的应用包是 APP-B-12。\",\n      \"occurred_at\": \"2026-11-20T16:20:00+08:00\",\n      \"evidence_ids\": [\"XSH1-01\", \"A03-S03\"]\n    }\n  ],\n  \"open_issues\": [],\n  \"coordination\": [],\n  \"uncertainties\": []\n}",
+      "usage": {
+        "prompt_tokens": 23116,
+        "completion_tokens": 317,
+        "total_tokens": 23433
+      },
+      "seconds": 11.78
+    }
+  ],
+  "answer": {
+    "progress": [
+      {
+        "text": "截至 2026 年 11 月 20 日 23:59，项目 A 的正式演示环境 ENV-A-DEMO 仍使用 APP-A-11，模型仍为 M-A12。本次未发起正式环境切包。",
+        "occurred_at": "2026-11-20T16:27:00+08:00",
+        "evidence_ids": [
+          "A03-S03",
+          "XSH1-02",
+          "XSH1-08"
+        ]
+      },
+      {
+        "text": "项目 A 的预演环境 ENV-A-PREVIEW 使用 APP-A-12。APP-A-12 仅绑定该预演环境。",
+        "occurred_at": "2026-11-20T16:21:00+08:00",
+        "evidence_ids": [
+          "A03-S03",
+          "A00-S02",
+          "XSH1-02"
+        ]
+      }
+    ],
+    "changes": [
+      {
+        "text": "群里提到的“12 包已经发布”应记在项目 B，已发布的应用包是 APP-B-12。",
+        "occurred_at": "2026-11-20T16:20:00+08:00",
+        "evidence_ids": [
+          "XSH1-01",
+          "A03-S03"
+        ]
+      }
+    ],
+    "open_issues": [],
+    "coordination": [],
+    "uncertainties": []
+  }
+}

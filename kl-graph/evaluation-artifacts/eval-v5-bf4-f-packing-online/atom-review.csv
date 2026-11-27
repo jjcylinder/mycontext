@@ -1,0 +1,115 @@
+﻿case,version,label,point,atom,criterion,covered,pointers
+BF18,old,A,1,1.1,晨报使用的旧快照消息水位落后,1,/answer/progress/0
+BF18,old,A,1,1.2,来源后来已可检索,0,
+BF18,old,A,1,1.3,原晨报没有重跑,1,/answer/uncertainties/0
+BF18,old,A,2,2.1,周报实际窗口错误,1,/answer/open_issues/1
+BF18,old,A,2,2.2,周报只查文档,0,
+BF18,old,A,2,2.3,待回签消息本来可检索,0,
+BF18,old,A,3,3.1,两项分别登记,1,/answer/progress/0
+BF18,old,A,3,3.2,分别修复,1,/answer/open_issues/0 /answer/open_issues/1
+BF18,old,A,3,3.3,分别回归,1,/answer/progress/0
+BF18,old,A,3,3.4,可复用来源核查方法,0,
+BF18,new,B,1,1.1,晨报使用的旧快照消息水位落后,1,/answer/progress/0
+BF18,new,B,1,1.2,来源后来已可检索,0,
+BF18,new,B,1,1.3,原晨报没有重跑,1,/answer/coordination/0 /answer/uncertainties/0
+BF18,new,B,2,2.1,周报实际窗口错误,1,/answer/open_issues/1
+BF18,new,B,2,2.2,周报只查文档,1,/answer/open_issues/1
+BF18,new,B,2,2.3,待回签消息本来可检索,1,/answer/open_issues/1
+BF18,new,B,3,3.1,两项分别登记,1,/answer/progress/0
+BF18,new,B,3,3.2,分别修复,1,/answer/coordination/0 /answer/coordination/1
+BF18,new,B,3,3.3,分别回归,1,/answer/coordination/0 /answer/coordination/1
+BF18,new,B,3,3.4,可复用来源核查方法,0,
+BF13,old,B,1,1.1,翻译格式样例复测通过,0,
+BF13,old,B,1,1.2,一个翻译异常提示分支已局部复测通过（接受 TR-X02 的正确复测结果）,1,/answer/progress/0
+BF13,old,B,1,1.3,翻译译义分析样本仍缺判定材料,1,/answer/open_issues/0
+BF13,old,B,1,1.4,损坏附件分支结果仍待核,0,
+BF13,old,B,1,1.5,翻译语言补丁尚未部署正式环境,1,/answer/open_issues/0
+BF13,old,B,1,1.6,翻译整体尚未获得演示准入,1,/answer/open_issues/0
+BF13,old,B,2,2.1,摘要预演准入只涵盖已审定的固定六例,1,/answer/changes/1
+BF13,old,B,2,2.2,该准入要求使用显式摘要入口,1,/answer/changes/1
+BF13,old,B,2,2.3,隐式调用仍会漏派发,1,/answer/open_issues/4
+BF13,old,B,2,2.4,已经进入摘要的样例仍有内容保真问题,1,/answer/open_issues/4
+BF13,old,B,3,3.1,晨报已经生成文件,0,
+BF13,old,B,3,3.2,晨报可展示静态预览,0,
+BF13,old,B,3,3.3,晨报须替换旧快照重跑,0,
+BF13,old,B,3,3.4,晨报尚未自动发送,0,
+BF13,old,B,4,4.1,公函模板已有局部修补,0,
+BF13,old,B,4,4.2,公函演示仅限草稿人工审阅,1,/answer/changes/2
+BF13,old,B,4,4.3,公函缺签署人时仍须处理补写问题,0,
+BF13,old,B,4,4.4,公函输出检查尚待完成,0,
+BF13,old,B,5,5.1,周报去重子项通过,1,/answer/progress/2
+BF13,old,B,5,5.2,周报统计窗口问题未修,1,/answer/coordination/2
+BF13,old,B,5,5.3,周报消息来源漏取未修,1,/answer/coordination/2
+BF13,old,B,5,5.4,周报整体尚未准入,1,/answer/open_issues/2
+BF13,old,B,6,6.1,润色已有行文风格评审通过记录,1,/answer/progress/3
+BF13,old,B,6,6.2,润色已有数字日期检查通过记录,1,/answer/progress/3
+BF13,old,B,6,6.3,润色的事实保真尚有明确未解决的缺口,0,
+BF13,old,B,6,6.4,润色的局部结果不可扩展至任意文档,0,
+BF13,old,B,7,7.1,把应用侧与至少一项具体待办对应,1,/answer/coordination/0
+BF13,old,B,7,7.2,把测试侧与至少一项具体待办对应,1,/answer/coordination/2
+BF13,old,B,7,7.3,把数据侧与至少一项具体待办对应,0,
+BF13,old,B,7,7.4,把发布侧与至少一项具体待办对应,0,
+BF13,old,B,7,7.5,把模型侧与至少一项具体待办对应,1,/answer/coordination/1
+BF13,new,A,1,1.1,翻译格式样例复测通过,1,/answer/progress/0
+BF13,new,A,1,1.2,一个翻译异常提示分支已局部复测通过（接受 TR-X02 的正确复测结果）,1,/answer/progress/0
+BF13,new,A,1,1.3,翻译译义分析样本仍缺判定材料,1,/answer/open_issues/0
+BF13,new,A,1,1.4,损坏附件分支结果仍待核,0,
+BF13,new,A,1,1.5,翻译语言补丁尚未部署正式环境,1,/answer/open_issues/0
+BF13,new,A,1,1.6,翻译整体尚未获得演示准入,1,/answer/open_issues/0
+BF13,new,A,2,2.1,摘要预演准入只涵盖已审定的固定六例,1,/answer/changes/1
+BF13,new,A,2,2.2,该准入要求使用显式摘要入口,1,/answer/changes/1
+BF13,new,A,2,2.3,隐式调用仍会漏派发,1,/answer/progress/1
+BF13,new,A,2,2.4,已经进入摘要的样例仍有内容保真问题,1,/answer/progress/1 /answer/open_issues/1
+BF13,new,A,3,3.1,晨报已经生成文件,0,
+BF13,new,A,3,3.2,晨报可展示静态预览,0,
+BF13,new,A,3,3.3,晨报须替换旧快照重跑,0,
+BF13,new,A,3,3.4,晨报尚未自动发送,0,
+BF13,new,A,4,4.1,公函模板已有局部修补,0,
+BF13,new,A,4,4.2,公函演示仅限草稿人工审阅,1,/answer/changes/2
+BF13,new,A,4,4.3,公函缺签署人时仍须处理补写问题,0,
+BF13,new,A,4,4.4,公函输出检查尚待完成,0,
+BF13,new,A,5,5.1,周报去重子项通过,1,/answer/progress/2
+BF13,new,A,5,5.2,周报统计窗口问题未修,1,/answer/coordination/0
+BF13,new,A,5,5.3,周报消息来源漏取未修,1,/answer/coordination/0
+BF13,new,A,5,5.4,周报整体尚未准入,1,/answer/open_issues/2
+BF13,new,A,6,6.1,润色已有行文风格评审通过记录,1,/answer/progress/3
+BF13,new,A,6,6.2,润色已有数字日期检查通过记录,1,/answer/progress/3
+BF13,new,A,6,6.3,润色的事实保真尚有明确未解决的缺口,0,
+BF13,new,A,6,6.4,润色的局部结果不可扩展至任意文档,0,
+BF13,new,A,7,7.1,把应用侧与至少一项具体待办对应,1,/answer/coordination/0
+BF13,new,A,7,7.2,把测试侧与至少一项具体待办对应,1,/answer/coordination/0
+BF13,new,A,7,7.3,把数据侧与至少一项具体待办对应,0,
+BF13,new,A,7,7.4,把发布侧与至少一项具体待办对应,0,
+BF13,new,A,7,7.5,把模型侧与至少一项具体待办对应,1,/answer/coordination/2
+BF07,old,A,1,1.1,三个固定缺文号样例验证了不再回填默认文号,1,/answer/progress/0
+BF07,old,A,1,1.2,该局部修补仅在预演模板验证,1,/answer/progress/0
+BF07,old,A,2,2.1,签署人仍可能被无依据补写,1,/answer/open_issues/1
+BF07,old,A,2,2.2,输出检查仍未完成,1,/answer/open_issues/1
+BF07,old,A,3,3.1,正式包仍用旧模板,1,/answer/open_issues/0
+BF07,old,A,3,3.2,预演模板的通过结果不可当作正式验证,1,/answer/open_issues/0
+BF07,new,B,1,1.1,三个固定缺文号样例验证了不再回填默认文号,1,/answer/progress/0
+BF07,new,B,1,1.2,该局部修补仅在预演模板验证,1,/answer/progress/0
+BF07,new,B,2,2.1,签署人仍可能被无依据补写,1,/answer/open_issues/0
+BF07,new,B,2,2.2,输出检查仍未完成,1,/answer/open_issues/0
+BF07,new,B,3,3.1,正式包仍用旧模板,1,/answer/changes/0
+BF07,new,B,3,3.2,预演模板的通过结果不可当作正式验证,1,/answer/progress/0 /answer/changes/0 /answer/uncertainties/0
+BF20,old,B,1,1.1,无统一达标日期依据,1,/answer/open_issues/0
+BF20,old,B,1,1.2,无已批准的模型修复提升目标,1,/answer/open_issues/2
+BF20,old,B,2,2.1,样例集合不同,1,/answer/progress/1 /answer/progress/2
+BF20,old,B,2,2.2,入口不同,1,/answer/progress/0
+BF20,old,B,2,2.3,指标口径不同,1,/answer/progress/2
+BF20,old,B,2,2.4,环境不同,1,/answer/changes/0 /answer/progress/1
+BF20,old,B,2,2.5,不能合计六类总通过率,1,/answer/open_issues/0
+BF20,old,B,3,3.1,可报已验证的局部进展,1,/answer/progress/1 /answer/progress/2
+BF20,old,B,3,3.2,可报限定准入,1,/answer/progress/1 /answer/changes/0
+BF20,old,B,3,3.3,可报待办及未决，不编造承诺,1,/answer/open_issues/1 /answer/open_issues/2
+BF20,new,A,1,1.1,无统一达标日期依据,1,/answer/progress/0
+BF20,new,A,1,1.2,无已批准的模型修复提升目标,1,/answer/open_issues/0
+BF20,new,A,2,2.1,样例集合不同,1,/answer/progress/1 /answer/progress/2 /answer/progress/4
+BF20,new,A,2,2.2,入口不同,1,/answer/progress/0 /answer/progress/1
+BF20,new,A,2,2.3,指标口径不同,1,/answer/progress/2 /answer/progress/4
+BF20,new,A,2,2.4,环境不同,1,/answer/changes/0
+BF20,new,A,2,2.5,不能合计六类总通过率,1,/answer/progress/0
+BF20,new,A,3,3.1,可报已验证的局部进展,1,/answer/progress/1 /answer/progress/2
+BF20,new,A,3,3.2,可报限定准入,1,/answer/progress/1 /answer/changes/0
+BF20,new,A,3,3.3,可报待办及未决，不编造承诺,1,/answer/open_issues/0 /answer/open_issues/1

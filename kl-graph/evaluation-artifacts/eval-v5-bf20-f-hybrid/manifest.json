@@ -1,0 +1,13 @@
+{
+  "dataset_digest": "4f98497fe04be748d4a1e66ac5320ba00eb55a87c5d45f5cbdb4fb7575aa4a4a",
+  "index": "graph-3c10b57b3e8ace49",
+  "cutoff": "2026-11-20T23:59:00+08:00",
+  "model": "chatgpt-codex-default",
+  "budget": 8192,
+  "mode": "F",
+  "policy": "rank",
+  "fact_depth": 200,
+  "dense_rankings": "from original scored runs",
+  "max_delivery_attempts": 2,
+  "frozen_atoms_sha256": "79f3498b66f2fb1d7683eed59a2a790ac5b1c67a35c2f3e0547d9e1c56d50ced"
+}

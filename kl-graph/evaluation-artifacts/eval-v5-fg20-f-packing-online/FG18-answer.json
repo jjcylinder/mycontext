@@ -1,0 +1,45 @@
+{
+  "input_sha256": "6d242ef65080bbe759dfb456596d15d641e2bd89a41925f039b090f36d86dd43",
+  "attempts": [
+    {
+      "raw": "{\n  \"progress\": [\n    {\n      \"text\": \"前方汇总称有四类场景。现有运行登记记载了三项，所供节选能明确列出其中两项：DEMO-A-L 邮电部阿语公文写作（公文线，CASE-L08）和 DEMO-A-R 工作记录生成月报（月报线，CASE-R06）。\",\n      \"occurred_at\": \"2026-11-14T09:00:00+08:00\",\n      \"evidence_ids\": [\"D07-S04\", \"D07-S02\", \"D07-S03\"]\n    }\n  ],\n  \"changes\": [],\n  \"open_issues\": [\n    {\n      \"text\": \"不能凭共用写作入口把周报填为第四项。周报 SK-WR（CASE-W21，period=week）与月报（CASE-R06，period=month）共用 report-writer，但任务、统计窗口和测试用例各自独立。新增六类属于本次 Demo 的模拟应用验证范围，原周报所述的第四类业务场景仍待核实。\",\n      \"occurred_at\": \"2026-11-18T13:00:00+08:00\",\n      \"evidence_ids\": [\"A02-S03\", \"AWR0-S01\", \"A02-S04\", \"D07-S04\"]\n    }\n  ],\n  \"coordination\": [],\n  \"uncertainties\": [\n    \"所供运行登记节选缺少三项中的另一项明细，其名称和编号待查原登记。\",\n    \"前方汇总所指的第四类业务场景待查原文的场景列举。\"\n  ]\n}",
+      "usage": {
+        "prompt_tokens": 23059,
+        "completion_tokens": 395,
+        "total_tokens": 23454
+      },
+      "seconds": 13.98
+    }
+  ],
+  "answer": {
+    "progress": [
+      {
+        "text": "前方汇总称有四类场景。现有运行登记记载了三项，所供节选能明确列出其中两项：DEMO-A-L 邮电部阿语公文写作（公文线，CASE-L08）和 DEMO-A-R 工作记录生成月报（月报线，CASE-R06）。",
+        "occurred_at": "2026-11-14T09:00:00+08:00",
+        "evidence_ids": [
+          "D07-S04",
+          "D07-S02",
+          "D07-S03"
+        ]
+      }
+    ],
+    "changes": [],
+    "open_issues": [
+      {
+        "text": "不能凭共用写作入口把周报填为第四项。周报 SK-WR（CASE-W21，period=week）与月报（CASE-R06，period=month）共用 report-writer，但任务、统计窗口和测试用例各自独立。新增六类属于本次 Demo 的模拟应用验证范围，原周报所述的第四类业务场景仍待核实。",
+        "occurred_at": "2026-11-18T13:00:00+08:00",
+        "evidence_ids": [
+          "A02-S03",
+          "AWR0-S01",
+          "A02-S04",
+          "D07-S04"
+        ]
+      }
+    ],
+    "coordination": [],
+    "uncertainties": [
+      "所供运行登记节选缺少三项中的另一项明细，其名称和编号待查原登记。",
+      "前方汇总所指的第四类业务场景待查原文的场景列举。"
+    ]
+  }
+}

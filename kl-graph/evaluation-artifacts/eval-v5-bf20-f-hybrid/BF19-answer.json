@@ -1,0 +1,131 @@
+{
+  "input_sha256": "cc7c9ac887c91ca9f39e2bec59d4d3945592d4b77193f7f5079faf229e35ce0b",
+  "attempts": [
+    {
+      "raw": "{\n  \"progress\": [\n    {\n      \"text\": \"文档摘要（doc-summarizer）：ROUTE-03下，显式用例SU-EX06的6条请求全部进入摘要Skill，且均通过人工内容复核。隐式用例SU-IM04仅2/4进入，另2条未进入。进入的样例中，SU-NEG01仍有内容问题。派发和摘要内容质量须分别核查。\",\n      \"occurred_at\": \"2026-11-20T10:45:00+08:00\",\n      \"evidence_ids\": [\"A03-S01\", \"ASU1-S04\", \"ASU2-S02\", \"ASU0-S02\"]\n    },\n    {\n      \"text\": \"文档翻译：LANG-02在ENV-A-PREVIEW/APP-A-12验证了加密文件分支TR-X02，返回阿语提示，指引用户提供未加密副本。已确认的是该异常提示的局部修复，翻译Skill整体尚未获得对客演示准入。\",\n      \"occurred_at\": \"2026-11-20T09:45:00+08:00\",\n      \"evidence_ids\": [\"ATR0-S03\", \"ATR1-S04\", \"ATR2-S04\", \"A03-S02\"]\n    },\n    {\n      \"text\": \"周报生成（report-writer）：DEDUP-02仅对DOC-W01/FWD-W01的去重回归通过。共用report-writer的CASE-R06月报格式也通过测试，但该结果未覆盖CASE-W21周报的窗口与消息召回。错报记录确认最终模型未收到IM-W19，证据优先指向应用取数范围。这些记录未验证ROUTE-03或LANG-02对周报的影响。\",\n      \"occurred_at\": \"2026-11-20T13:45:00+08:00\",\n      \"evidence_ids\": [\"AWR0-S01\", \"AWR1-S04\", \"AWR2-S03\"]\n    },\n    {\n      \"text\": \"文档润色：APP-A-12的POL-NUM02两条数字日期检查通过，STYLE-P06六条行文评审通过。行文评审未检查相关事实约束，POL-LOCK01尚未完成回归。这些结果未验证两项共用补丁对润色的影响。\",\n      \"occurred_at\": \"2026-11-20T14:00:00+08:00\",\n      \"evidence_ids\": [\"APO1-S04\"]\n    },\n    {\n      \"text\": \"公函已有LET-F06模板默认值的应用侧证据。晨间早报已有来源查询、同步与索引可见性、任务配置和截止时间的核查分工。两类记录均未确认ROUTE-03或LANG-02的回归效果。\",\n      \"occurred_at\": null,\n      \"evidence_ids\": [\"A04-S03\", \"AAM0-S04\", \"A03-S01\", \"A03-S02\"]\n    }\n  ],\n  \"changes\": [\n    {\n      \"text\": \"项目A的ENV-A-PREVIEW绑定APP-A-12，仍调用service-a-stable。候选配置包含路由补丁ROUTE-03、语言约束补丁LANG-02及去重补丁DEDUP-02。登记的正常体验入口为ENV-A-DEMO/APP-A-11。\",\n      \"occurred_at\": \"2026-11-18T09:00:00+08:00\",\n      \"evidence_ids\": [\"A00-S02\", \"ATR0-S03\"]\n    },\n    {\n      \"text\": \"影响分析应覆盖六类Skill，包括文档翻译、文档摘要、公函、晨间早报、周报生成和文档润色。若切换APP-A-12，应逐Skill核查实际入口与派发、来源、语义和输出格式，并检查涉及的目标语言及异常分支。若更换M-A19，已有APP-A-12/M-A12结果不自动沿用，EVAL-62仍在进行。\",\n      \"occurred_at\": \"2026-11-20T16:00:00+08:00\",\n      \"evidence_ids\": [\"A03-S01\", \"A03-S02\", \"A03-S04\", \"ATR0-S03\", \"ASU0-S02\", \"A04-S03\", \"AAM0-S04\", \"AWR0-S01\", \"APO1-S04\"]\n    }\n  ],\n  \"open_issues\": [\n    {\n      \"text\": \"ROUTE-03用于摘要显式入口及部分Skill派发，尚无六类Skill全部入口的调用覆盖报告。摘要隐式入口的漏派发与已进入Skill后的内容问题均需继续核查。\",\n      \"occurred_at\": \"2026-11-20T16:00:00+08:00\",\n      \"evidence_ids\": [\"A03-S01\", \"ASU1-S04\", \"ASU2-S02\"]\n    },\n    {\n      \"text\": \"LANG-02尚未回归翻译损坏附件分支TR-X03，摘要与公函的目标语言路径尚无对应回归结果。LANG-02尚未部署ENV-A-DEMO。翻译BUG-S11仍未解决，QA-A27缺少期望答案和判定说明。\",\n      \"occurred_at\": \"2026-11-20T16:00:00+08:00\",\n      \"evidence_ids\": [\"A03-S02\", \"ATR1-S04\", \"ATR2-S03\"]\n    },\n    {\n      \"text\": \"周报尚未获得整体准入，需修正统计周期和来源，再复核合并后的关键风险及其证据。\",\n      \"occurred_at\": \"2026-11-20T13:45:00+08:00\",\n      \"evidence_ids\": [\"AWR2-S04\"]\n    }\n  ],\n  \"coordination\": [\n    {\n      \"text\": \"应用林工负责Skill接入及ROUTE配置。测试陈工复核摘要忠实度并组织翻译整体回归。应用周工处理翻译格式及异常提示。译义问题由应用提供期望答案后交模型林工分析，模型林工协助分析摘要SEM-S09需要准确输入输出和应用裁剪记录。\",\n      \"occurred_at\": null,\n      \"evidence_ids\": [\"A01-S01\", \"ASU0-S04\", \"ATR0-S04\"]\n    }\n  ],\n  \"uncertainties\": [\n    \"所给材料未逐一列出ROUTE-03已验证的其他Skill入口及其实际派发去向，无法确认六类Skill各自的完整覆盖范围。\",\n    \"所给材料未能确认LANG-02对晨间早报、周报生成和文档润色各自的影响，也不足以确认六类Skill在两补丁同时启用时的整体验证结果。\"\n  ]\n}",
+      "usage": {
+        "prompt_tokens": 23107,
+        "completion_tokens": 1545,
+        "total_tokens": 24652
+      },
+      "seconds": 294.25
+    }
+  ],
+  "answer": {
+    "progress": [
+      {
+        "text": "文档摘要（doc-summarizer）：ROUTE-03下，显式用例SU-EX06的6条请求全部进入摘要Skill，且均通过人工内容复核。隐式用例SU-IM04仅2/4进入，另2条未进入。进入的样例中，SU-NEG01仍有内容问题。派发和摘要内容质量须分别核查。",
+        "occurred_at": "2026-11-20T10:45:00+08:00",
+        "evidence_ids": [
+          "A03-S01",
+          "ASU1-S04",
+          "ASU2-S02",
+          "ASU0-S02"
+        ]
+      },
+      {
+        "text": "文档翻译：LANG-02在ENV-A-PREVIEW/APP-A-12验证了加密文件分支TR-X02，返回阿语提示，指引用户提供未加密副本。已确认的是该异常提示的局部修复，翻译Skill整体尚未获得对客演示准入。",
+        "occurred_at": "2026-11-20T09:45:00+08:00",
+        "evidence_ids": [
+          "ATR0-S03",
+          "ATR1-S04",
+          "ATR2-S04",
+          "A03-S02"
+        ]
+      },
+      {
+        "text": "周报生成（report-writer）：DEDUP-02仅对DOC-W01/FWD-W01的去重回归通过。共用report-writer的CASE-R06月报格式也通过测试，但该结果未覆盖CASE-W21周报的窗口与消息召回。错报记录确认最终模型未收到IM-W19，证据优先指向应用取数范围。这些记录未验证ROUTE-03或LANG-02对周报的影响。",
+        "occurred_at": "2026-11-20T13:45:00+08:00",
+        "evidence_ids": [
+          "AWR0-S01",
+          "AWR1-S04",
+          "AWR2-S03"
+        ]
+      },
+      {
+        "text": "文档润色：APP-A-12的POL-NUM02两条数字日期检查通过，STYLE-P06六条行文评审通过。行文评审未检查相关事实约束，POL-LOCK01尚未完成回归。这些结果未验证两项共用补丁对润色的影响。",
+        "occurred_at": "2026-11-20T14:00:00+08:00",
+        "evidence_ids": [
+          "APO1-S04"
+        ]
+      },
+      {
+        "text": "公函已有LET-F06模板默认值的应用侧证据。晨间早报已有来源查询、同步与索引可见性、任务配置和截止时间的核查分工。两类记录均未确认ROUTE-03或LANG-02的回归效果。",
+        "occurred_at": null,
+        "evidence_ids": [
+          "A04-S03",
+          "AAM0-S04",
+          "A03-S01",
+          "A03-S02"
+        ]
+      }
+    ],
+    "changes": [
+      {
+        "text": "项目A的ENV-A-PREVIEW绑定APP-A-12，仍调用service-a-stable。候选配置包含路由补丁ROUTE-03、语言约束补丁LANG-02及去重补丁DEDUP-02。登记的正常体验入口为ENV-A-DEMO/APP-A-11。",
+        "occurred_at": "2026-11-18T09:00:00+08:00",
+        "evidence_ids": [
+          "A00-S02",
+          "ATR0-S03"
+        ]
+      },
+      {
+        "text": "影响分析应覆盖六类Skill，包括文档翻译、文档摘要、公函、晨间早报、周报生成和文档润色。若切换APP-A-12，应逐Skill核查实际入口与派发、来源、语义和输出格式，并检查涉及的目标语言及异常分支。若更换M-A19，已有APP-A-12/M-A12结果不自动沿用，EVAL-62仍在进行。",
+        "occurred_at": "2026-11-20T16:00:00+08:00",
+        "evidence_ids": [
+          "A03-S01",
+          "A03-S02",
+          "A03-S04",
+          "ATR0-S03",
+          "ASU0-S02",
+          "A04-S03",
+          "AAM0-S04",
+          "AWR0-S01",
+          "APO1-S04"
+        ]
+      }
+    ],
+    "open_issues": [
+      {
+        "text": "ROUTE-03用于摘要显式入口及部分Skill派发，尚无六类Skill全部入口的调用覆盖报告。摘要隐式入口的漏派发与已进入Skill后的内容问题均需继续核查。",
+        "occurred_at": "2026-11-20T16:00:00+08:00",
+        "evidence_ids": [
+          "A03-S01",
+          "ASU1-S04",
+          "ASU2-S02"
+        ]
+      },
+      {
+        "text": "LANG-02尚未回归翻译损坏附件分支TR-X03，摘要与公函的目标语言路径尚无对应回归结果。LANG-02尚未部署ENV-A-DEMO。翻译BUG-S11仍未解决，QA-A27缺少期望答案和判定说明。",
+        "occurred_at": "2026-11-20T16:00:00+08:00",
+        "evidence_ids": [
+          "A03-S02",
+          "ATR1-S04",
+          "ATR2-S03"
+        ]
+      },
+      {
+        "text": "周报尚未获得整体准入，需修正统计周期和来源，再复核合并后的关键风险及其证据。",
+        "occurred_at": "2026-11-20T13:45:00+08:00",
+        "evidence_ids": [
+          "AWR2-S04"
+        ]
+      }
+    ],
+    "coordination": [
+      {
+        "text": "应用林工负责Skill接入及ROUTE配置。测试陈工复核摘要忠实度并组织翻译整体回归。应用周工处理翻译格式及异常提示。译义问题由应用提供期望答案后交模型林工分析，模型林工协助分析摘要SEM-S09需要准确输入输出和应用裁剪记录。",
+        "occurred_at": null,
+        "evidence_ids": [
+          "A01-S01",
+          "ASU0-S04",
+          "ATR0-S04"
+        ]
+      }
+    ],
+    "uncertainties": [
+      "所给材料未逐一列出ROUTE-03已验证的其他Skill入口及其实际派发去向，无法确认六类Skill各自的完整覆盖范围。",
+      "所给材料未能确认LANG-02对晨间早报、周报生成和文档润色各自的影响，也不足以确认六类Skill在两补丁同时启用时的整体验证结果。"
+    ]
+  }
+}

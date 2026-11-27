@@ -1,0 +1,9 @@
+atom,criterion,input_support,source_ids,answer_coverage,answer_location
+1.1,通过范围是导出格式,1,T04-02 T04-04 T04-06,1,progress/0
+1.2,译义偏差或擅自增补仍待处理,1,T04-06 T04-07,1,open_issues/0
+2.1,把交接包与这条翻译问题对应,1,A04-S01 T08-02 T08-06,1,progress/1
+2.2,有问题输入,0,,0,
+2.3,有实际模型输出,0,,0,
+3.1,应用须补期望答案,1,A04-S01 ATR0-S04 T08-04,1,coordination/0
+3.2,应用须补判定说明,1,A04-S01 XTR3-06 T08-04,1,coordination/0
+3.3,补齐后模型组才能完成可训练性检查,1,A04-S01 XTR3-06 T08-04,1,open_issues/1 + coordination/0

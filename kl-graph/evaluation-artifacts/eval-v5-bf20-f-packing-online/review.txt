@@ -1,0 +1,21 @@
+# Answer pointers in frozen atom order. p progress, c changes, o open_issues, t coordination, u uncertainties; - omitted.
+BF01 p0 p0 p0 o1 o0 o0 o2
+BF02 t0 t2 - t1 t2 t2 t3 t3
+BF03 p0 p0 o1 p0 t0 p1
+BF04 p0 p0 o0 p0 p0 o2
+BF05 c0 p0+c0 o0 o0 o1 o1 t0 t0 t0 u0
+BF06 p0 o1 o1 p0 p1
+BF07 p0 p0 c1+o0 o0 c0 c0
+BF08 p0+t0 o0 o0 t2 t2 t1 p0
+BF09 p1 p1 p1 p1 p1 p2 o0 o1
+BF10 o0 o0 o1 o3 o2 - o1+t0 o3
+BF11 p0 p0 - o0 o0 c0 c0 p1
+BF12 p0 p0 t0 o0 o1 o1 c0 p1
+BF13 p0 p0 o0 - o0 o0 c1 c1 p1 p1+o1 - - - - - c2 - - p2 t1 t1 o3 p3 p3 - - t0 t1 - - t2
+BF14 p0 p0 p0+o1 - - o3 p0 p2 t2 t2
+BF15 p0 p0 c0 p2 p2 - - p5 p0 p0+p1 c1 c1 p1+p2
+BF16 p0 p2 p1 p1 o3 o0 o1 o0 o2 o1+o2 u0 o1 o1 u0
+BF17 p0 o0 o0 p0 p0 t0 o0 t2 t2 t0+t2 o0 o0
+BF18 p1 - o0 p2 p2 p2 p0 o0+o1 p0+o0+o1 -
+BF19 p1 p1 u0 p2 p2 o0 o0 p0+u0+u1
+BF20 p0 p0 p1+p2+p4 p0 p2+p4 p1+c0 p0+u0 p1+p2 p1+c1 o1+t1
